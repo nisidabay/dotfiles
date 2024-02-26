@@ -1,0 +1,48 @@
+# OFFLINEIMAP
+# unmailboxes *
+set folder="/home/nisidabay/Mail/gmail/"
+set spoolfile=+INBOX
+
+# SMTP settings
+set smtp_url = 'smtps://nisidabay@gmail.com@smtp.gmail.com'
+set smtp_pass = 'mtlx ture qpqf lesf'
+set sendmail="/usr/sbin/sendmail"
+set from = 'nisidabay@gmail.com'
+set realname = 'Carlos Lacaci Moya'
+
+# IMAP settings
+set imap_user = 'nisidabay@gmail.com'
+set imap_pass = 'mtlx ture qpqf lesf'
+set imap_authenticators = 'login'
+set imap_keepalive = 300
+
+
+# Account settings
+set mbox_type=Maildir
+
+mailboxes =INBOX \
+=[Gmail].Importantes \
+=[Gmail].Destacados \
+=[Gmail].Sergio \
+=[Gmail].Borradores \
+=[Gmail].Drafts \
+=[Gmail].Enviados \
+=[Gmail].Importantes \
+=[Gmail].Papelera \
+=[Gmail].Sergio \
+=[Gmail].Spam \
+=ALICIA \
+=AXA \
+=BBVA \
+=Carlos \
+="CASA GRANADA" \
+="Compras Online" \
+="Junk E-mail" \
+=Mac \
+=Notes \
+=Python \
+=Sergio \
+=Trash \
+="Venta Chalet"
+
+
