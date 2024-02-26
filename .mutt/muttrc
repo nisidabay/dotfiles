@@ -1,0 +1,7 @@
+# Accounts
+# source ~/.mutt/accounts/gmail
+#
+source ~/.mutt/accounts/gmail-local
+source ~/.mutt/colors
+source ~/.mutt/mappings
+source ~/.mutt/settings
