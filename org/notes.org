@@ -1,0 +1,27 @@
+* Miscellanea 
+** TECO, Emacs
+The doriginal version of Emacs was a set of editing macros written to run under the TECO
+editor. Originally, the name TECO stood for "Tape Editor and Corrector". Later, the official
+name was changed to "Text Editor and Corrector".
+
+* Computer notes
+
+* Emacs is a simple abbreviation for "Editing Macros".
+** Lisp (LIST Processing - 1950)
+** Lisp His and Minor Modes
+Major modes in Emacs control how buﬀers behave. So, if
+you want to edit Python code and you visit a ﬁle in Emacs
+called helloworld.py, then Emacs will know, through a cen-
+tralized register that maps file extensions to major modes,
+that this is a Python file and it should use the Python major
+mode. Each buﬀer will always have a major mode.
+
+It’s important to remember that each buffer can have just
+one major mode. Minor modes, by contrast, are typically
+optional add-ons that you enable for some (or all) of your
+buffers. One example is ﬂyspell mode, a minor mode that spell
+checks text as you write.
+The major mode is always displayed in the modeline. Some
+minor modes are also displayed in the modeline, but usually
+only the ones that alter the buﬀer or how you interact with
+it in some way.

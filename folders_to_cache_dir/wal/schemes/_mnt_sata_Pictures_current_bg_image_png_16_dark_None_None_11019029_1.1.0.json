@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/mnt/sata/Pictures/current_bg_image.png",
+    "alpha": "100",
+    "special": {
+        "background": "#000709",
+        "foreground": "#bfc1c1",
+        "cursor": "#bfc1c1"
+    },
+    "colors": {
+        "color0": "#000709",
+        "color1": "#563b49",
+        "color2": "#3f4a53",
+        "color3": "#6d2b35",
+        "color4": "#7b3949",
+        "color5": "#9c3c4a",
+        "color6": "#b4424c",
+        "color7": "#7f8384",
+        "color8": "#3f4546",
+        "color9": "#734F62",
+        "color10": "#55636F",
+        "color11": "#923A47",
+        "color12": "#A44D62",
+        "color13": "#D15063",
+        "color14": "#F05966",
+        "color15": "#bfc1c1"
+    }
+}

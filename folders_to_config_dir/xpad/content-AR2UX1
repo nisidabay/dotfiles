@@ -1,0 +1,20 @@
+│ def convert_images(ext: str, new_ext: str) -> None:
+  28   │     """ Convert images by extension """
+  29   │ 
+  30   │     working_dir = Path.cwd()
+  31   │     temp_dir = working_dir / "temp_dir"
+  32   │     temp_dir.mkdir(exist_ok=True)
+  33   │ 
+  34   │     if files := [
+  35   │             file for file in working_dir.iterdir()
+  36   │             if file.suffix.endswith(f"{ext}")
+  37   │     ]:
+  38   │         with cf.ThreadPoolExecutor() as exec:
+  39   │             tasks = [
+  40   │                 exec.submit(rename_images, file, temp_dir, new_ext)
+  41   │                 for file in files
+  42   │             ]
+  43   │             for i, _ in enumerate(cf.as_completed(tasks)):
+  44   │                 print(f"[{i+1}] image(s) renamed from [{ext}] to [{new_ext}]")
+  45   │     else:
+  46   │         print("[!] No images found!")

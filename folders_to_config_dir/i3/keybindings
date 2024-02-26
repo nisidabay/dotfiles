@@ -1,0 +1,116 @@
+# Super key
+ = super key
+
+# Start terminal
+ + Return 
+
+# Kill focused window
+ + c
+
+# Rofi menu
+ + d
+ + t
+
+# Exit menu on bottom right:
+ + Shift + e
+
+# Lock the system
+ + l
+
+# Reload the configuration file
+ + Shift + c
+
+# Restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+ + Shift + r
+
+# i3 keybinding list
+ + F1
+
+# Git cheatsheet
+ + F2
+# Ctrl-p cheatsheet
+ + F3
+# Cheat_sh cheatsheet
+ + F4
+#
+# Honza snippets cheatsheet
+ + F5
+
+
+# Change window focus
+ + j focus left
+ + k focus right
+ + u focus up
+ + i focus down
+
+# Move a focused window
+ + Shift + j move left
+ + Shift + k move right
+ + Shift + u move up
+ + Shift + i move down
+
+# Split in horizontal orientation
+ + v 
+
+# Split in vertical orientation
+ + h 
+
+# Enter fullscreen 
+ + f fullscreen toggle
+
+# Change container layout (stacked, tabbed, toggle split)
+ + s layout stacking
+ + g layout tabbed
+ + e layout toggle split
+
+# Toggle tiling / floating
+ + Shift + space floating toggle
+
+# Change focus between tiling / floating windows
+ + space focus mode_toggle
+
+# Focus the parent container
+ + a focus parent
+
+# Open new empty workspace
+ + Shift + n
+
+# Resize mode
+ + r mode "resize"
+        
+ + j shrink width 
+ + k grow width 
+ + u grow height 
+ + i shrink height 
+
+# Resize mode back to normal
+ + Return 
+ + Escape 
+ + r mode "default"
+
+# Applications shortcuts
+ + n exec nemo 
+ + m exec evolution 
+ + w exec firefox
+ + x exec musikcube 
+ + Shift + t exec tor-browser-en
+
+ + z exec zettlr
+ + shift + g galculator
+ + Shift + z calendar
+
+ + Up exec vifm
+ + Left exec youtube-viewer
+ + Right exec calcurse
+ + Down exec xpad
+
+ + Shift + a audacity
+ + Shift + Up geany
+ + Shift + Left transmission-gtk
+ + Shift + Right zeal
+ + Shift + Down c calibre
+ + Ctrl + m exec alsamixer
+
+F12 exec "scrot ~/%Y-%m-%d-%T-screenshot.png" exec notify-send "Snapshot taken"
+
+

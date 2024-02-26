@@ -1,0 +1,3 @@
+Compilar math.h con gcc
+
+gcc source.c -o main -lm

@@ -1,0 +1,3 @@
+Insertar imagen en vimwiki usando markdown
+
+![titulo](.Pictures/image1.jpg)

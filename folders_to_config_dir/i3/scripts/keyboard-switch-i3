@@ -1,0 +1,41 @@
+#!/usr/bin/bash
+
+# i3 Keyboard Layout Indicator Script
+
+# This script displays the current keyboard layout using xkblayout-state
+# and shows an icon representing the layout.
+
+# Get the current keyboard layout using xkblayout-state.
+KBD=$(/usr/bin/xkblayout-state print '%s')
+
+# Display the corresponding flag icon for the current layout.
+case "$KBD" in
+    "us")
+        FLAG_ICON="🇺🇸"   # United States flag
+        keyboard="US"
+        ;;
+    "es")
+        FLAG_ICON="🇪🇸"  # Spanish flag
+        keyboard="ES"
+        ;;
+    *)
+        FLAG_ICON="$KBD"  # Use the layout code if no flag icon is defined.
+        ;;
+esac
+
+# Handle click events
+case $BLOCK_BUTTON in
+    1)
+        # Left click: Show layout information
+        notify-send "Keyboard: $keyboard"
+        ;;
+    2|3)
+        # Right click: Switch keyboard layout using the layout_switch.sh script
+        # $TERMINAL -e "/home/nisidabay/bin/change_keyboard.sh"
+        "$HOME/.config/i3/scripts/zen_change_keyboard.sh"
+        ;;
+    *)
+        # Default action for other clicks: Display layout icon
+        echo "$FLAG_ICON"
+        ;;
+esac

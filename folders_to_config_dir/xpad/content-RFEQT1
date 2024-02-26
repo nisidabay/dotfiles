@@ -1,0 +1,21 @@
+Tkinter notes
+
+Super
+--------
+tk.Tk.__init__(self, *args, **kwargs)
+It's the same as:
+super().__init__(self, *args, **kwargs)
+
+Fonts
+--------
+from tkinter import font as tkfont
+widget = tkfont.Font(family="Helvetica", size=18,weight="bold",
+slant="italic")
+or:
+widget(font("Helvetica 18 bold")
+
+Grid
+------
+Grid doesn't allow to to expand the whole frame.
+container = tk.Frame(self)
+container.pack(side="top", fill="both",expand=True)

@@ -1,0 +1,903 @@
+* Spacemacs and Doom emacs
+Spacemacs and Doom Emacs are both popular Emacs configurations that aim to
+enhance the Emacs experience by providing pre-configured settings, keybindings,
+and packages. While they share some similarities, there are also notable
+differences between the two.
+
+Spacemacs is an Emacs *distribution* that combines the best features of Emacs
+and Vim. It provides a user-friendly interface and a curated set of packages,
+making it suitable for both Emacs and Vim users. Spacemacs offers a
+comprehensive set of keybindings, including many Vim keybindings, to provide a
+familiar editing experience for Vim users. It also includes a layer system that
+allows users to easily enable or disable specific features or packages.
+
+Doom emacs is a *configuration* framework for Emacs that focuses on performance
+and minimalism. It aims to provide a fast and lightweight Emacs setup while
+still offering a rich set of features. Doom Emacs uses a modular approach,
+allowing users to easily customize their configuration by enabling or disabling
+specific modules. It also follows a Vim-like keybinding style, making it
+appealing to Vim users.
+
+Here are some key differences between Spacemacs and Doom Emacs:
+
+: Spacemacs aims to provide a comprehensive and user-friendly Emacs experience,
+combining the best of Emacs and Vim. Doom Emacs, on the other hand, focuses on
+performance and minimalism, providing a lightweight and fast Emacs setup.
+
+: Both Spacemacs and Doom Emacs offer Vim-like keybindings, but there may be
+some differences in specific keybindings. Spacemacs aims to provide a wide range
+of Vim keybindings out of the box, while Doom Emacs follows a more minimalistic
+approach.
+
+: Spacemacs uses its own package management system called "Spacelpa," which is
+built on top of Emacs' *package.el.* Doom Emacs, on the other hand, uses the
+popular package manager *"straight.el"* for package management.
+
+: Both Spacemacs and Doom Emacs allow customization, but they have different
+approaches. Spacemacs uses a layer system that allows users to enable or disable
+specific features or packages easily. Doom Emacs uses a modular approach, where
+users can enable or disable specific modules to customize their configuration.
+
+
+* Lisp primitive functions
+Lisp uses functions where other languages would use operators, that is, for
+arithmetic, comparison, and logic.
+
+*** Table. Primitive functions
+|------------+------------------------------|
+| Category   | Functions                    |
+|------------+------------------------------|
+| Arithmetic | +, -, *, /                   |
+|            | % (remainder)                |
+|            | 1+ (increment)               |
+|            | 1- (decrement)               |
+|            | max, min                     |
+|------------+------------------------------|
+| Comparison | >, <, >=, <=                 |
+|            | /= (not equal)               |   
+|            | = (for numbers & characters) |
+|            | equal (for complex objects)  |
+|------------+------------------------------|
+| Logic      | and, or, not                 |
+|------------+------------------------------|
+
+** Arithmetic Functions with Multiple Arguments
+Functions like *+, -, *, and /* in Lisp can accept an arbitrary number of
+arguments. This means you can use these functions with more than two operands,
+
+For instance, (+ 1 2 3 4) would sum up all four numbers.
+
+** Floating Point and Integer Arithmetic:
+Lisp is dynamically typed and decides whether to perform integer or floating
+point arithmetic based on the types of the arguments. If at least one argument
+is a floating point number, the result is also a floating point number.
+
+For example: (/ 7.0 4) results in 1.75 (floating point division). (/ 7 4)
+results in 1 (integer division, with the remainder truncated).
+
+All the arithmetic functions except 1+, 1-, and % can take arbitrarily many
+arguments, as can and and or. An arithmetic function returns floating point
+values only if at least one argument is a floating point number, so for example,
+(/ 7.0 4) returns 1.75, and (/ 7 4) returns 1.
+
+Notice that integer division truncates the remainder.
+
+It may seem inefficient or syntactically ugly to use functions for everything.
+How- ever, one of the main merits of Lisp is that the core of the language is
+small and easy to interpret efficiently. In addition, the syntax is not as much
+of a problem if you have support tools such as Emacs’s Lisp modes to help you.
+
+** Logical Functions
+Similar to certain arithmetic functions, and and or can also take multiple
+arguments. These are evaluated from left to right, and Lisp uses short-circuit
+evaluation, meaning and stops evaluating as soon as it encounters a nil, and or
+stops as soon as it encounters a non-nil value.
+
+** Efficiency and Syntax of Lisp
+It might seem that using functions for operations commonly represented by
+operators in other languages could be less efficient or syntactically
+cumbersome. However, Lisp's design with a small core of powerful functions
+allows it to be interpreted efficiently. Additionally, the uniform syntax
+(everything is a function or list) makes the language simpler and more
+consistent. This consistency is a strength of Lisp, making it easier to
+understand and manipulate code programmatically.
+Tools like Emacs's Lisp modes significantly aid in writing and managing Lisp
+code, making the syntax feel more natural and less of an obstacle.
+
+Lisp's approach, where "code is data" (and vice versa), allows for powerful
+metaprogramming capabilities and a high degree of flexibility in how functions
+are used and combined. This approach, while different from more conventional
+programming languages, offers unique advantages, particularly in areas like
+artificial intelligence, symbolic computation, and rapid prototyping.
+
+* Statement blocks
+In Lisp, a "statement block" is not a concept in the same way as it is in other
+languages like C, Java, or Python. Lisp is built around the idea of expressions
+rather than statements. However, Lisp does provide constructs that allow you to
+execute a sequence of expressions, one after another, which is similar to a
+statement block in other languages.
+
+The most common constructs for creating these sequence of expressions in Lisp
+are *progn*, *let*, *dolist*, and *dotimes*. Let's go through each with examples:
+
+** progn
+
+The progn construct allows you to group a series of expressions. All expressions
+are evaluated, but only the result of the last expression is returned.
+
+#+begin_src emacs-lisp
+  (progn
+    (print "This is the first statement")
+    (print "This is the second statement")
+    ;; the last expression's value is returned
+    (+ 2 3))
+#+end_src
+
+#+RESULTS:
+: 5
+
+
+** let
+The let form uses nested lists, but because it's a special form, only certain
+elements get evaluated.
+
+In general, LET looks like this:
+*(let (bindings) forms)*
+
+where bindings is any number of two-element lists -- each list containing a
+symbol and a value -- and forms is any number of Lisp forms. The forms are
+evaluated, in order, using the values established by the bindings. LET returns
+the value(s) returned by the last form.
+
+Indentation doesn't affect the operation of LET, but proper indentation does
+improve readability.
+
+#+begin_src emacs-lisp
+(let ((a 3)
+(b 4)
+(c 5))
+(* (+ a b) c))
+#+end_src
+
+#+RESULTS:
+: 35
+a
+Error: Unbound variable
+b
+Error: Unbound variable
+c
+Error: Unbound variable
+
+The above LET form defines values for the symbols A, B, and C, then uses these
+as variables in an arithmetic calculation. The calculation's result is also the
+result of the LET form.
+
+NOTE THAT NONE OF THE VARIABLES DEFINED IN THE LET HAVE A VALUE AFTER LISP HAS
+FINISHED EVALUATING THE FORM.
+
+
+If you define a variable using SETQ and then name the same variable in a LET
+form, the value defined by LET supersedes the other value during evaluation of
+the LET:
+
+#+begin_src emacs-lisp
+(setq a 89)
+#+end_src
+
+#+RESULTS:
+: 89
+
+#+begin_src emacs-lisp
+(let ((a 3))
+(+ a 2))
+#+end_src
+
+#+RESULTS:
+: 5
+
+#+begin_src emacs-lisp
+a
+#+end_src
+
+#+RESULTS:
+: 89
+
+Unlike SETQ, which assigns values in left-to-right order, LET binds variables
+all at the same time:
+
+#+begin_src emacs-lisp
+(setq w 77)
+#+end_src
+
+#+RESULTS:
+: 77
+
+#+begin_src emacs-lisp
+(let ((w 8)
+(x w))
+(+ w x))
+#+end_src
+
+#+RESULTS:
+: 85
+
+LET bound W to 8 and X to W. Because these bindings happened at the same time, W
+still had its value of 77.
+Lisp has a variation of LET, called LET*, that does perform bindings in order:
+(setq u 37)
+37
+#+begin_src emacs-lisp
+(let* ((v 4)
+(u v))
+(+ u v))
+#+end_src
+
+
+The let construct is used for binding variables. It also acts like a block
+because all expressions inside the let are evaluated in sequence.
+
+
+#+begin_src emacs-lisp
+(let ((x 5)
+      (y 3))
+  (print (+ x y))  ; Prints 8
+  (* x y))         ; Returns 15
+#+end_src
+
+#+RESULTS:
+: 15
+
+** dolist
+
+The dolist macro iterates over each element of a list, executing a block of code
+for each element.
+
+#+BEGIN_SRC emacs-lisp 
+(with-output-to-string
+  (dolist (number '(1 2 3 4))
+    (princ (format "%d\n" (* number 2)))))
+#+END_SRC
+
+#+RESULTS:
+: 2
+: 4
+: 6
+: 8
+
+** dotimes
+
+The dotimes macro is a looping construct that iterates a specified number of
+times.
+#+BEGIN_SRC emacs-lisp 
+(with-output-to-string
+  (dotimes (i 4)
+    (princ (format "Iteration %d\n" i))))
+#+END_SRC
+
+#+RESULTS:
+: Iteration 0
+: Iteration 1
+: Iteration 2
+: Iteration 3
+
+** cond
+
+The cond construct provides a way to execute different blocks of code based on
+conditions, similar to if-else statements in other languages.
+
+
+#+begin_src emacs-lisp
+(cond
+  ((> 3 2)
+   (print "3 is greater than 2"))
+  (t
+   (print "This won't be printed")))
+#+end_src
+
+#+RESULTS:
+: 3 is greater than 2
+
+
+These examples illustrate how Lisp uses different constructs to achieve
+something similar to statement blocks in other languages. Each construct serves
+a specific purpose, whether it's for looping, conditional execution, or just
+grouping expressions together.
+
+* Single quote character(')
+The single quote character (') in Lisp has a very specific and important role:
+it is used for quoting. Quoting is a way to tell the Lisp interpreter to treat
+the following expression as a literal value, rather than evaluating it as it
+would normally do.
+
+In Lisp, when you write an expression, the default behavior is for the
+interpreter to evaluate it. For example, if you write (1 2 3), Lisp will try to
+call the function 1 with 2 and 3 as arguments, which will likely result in an
+error since 1 is not a function.
+
+The quote (') changes this behavior. It tells Lisp to interpret the expression
+that follows as a literal list (or a literal symbol, or a literal whatever)
+rather than as code to be executed. Here are some examples to illustrate this:
+
+    - Quoting a List:
+        Without quote: (1 2 3) tries to call 1 as a function.
+        With quote: '(1 2 3) is interpreted as a list containing the numbers 1, 2, and 3.
+
+     - Quoting a Symbol:
+        Without quote: my-symbol might be interpreted as a variable and Lisp
+        will attempt to return its value. With quote: 'my-symbol is treated as
+        the symbol itself, not its value.
+
+     - Preventing Evaluation:
+        Quoting is often used to prevent the evaluation of an expression. For
+        example, if you have a function call (my-function arg1 arg2), and you
+        want to pass this function call as a list to another function without
+        calling it, you would quote it: (another-function '(my-function arg1
+        arg2)).
+
+In summary, the single quote in Lisp is a way to prevent evaluation and to treat
+the following expression as a literal value. This is fundamental in Lisp's macro
+system and list processing capabilities, as it allows you to manipulate code as
+data.
+
+* Atoms
+In Lisp, an "atom" is a fundamental concept representing any value that is not a
+cons cell (short for "constructive cell"). Cons cells are the basic building
+blocks of lists in Lisp. Therefore, an atom is essentially anything that is not
+a list or a pair. 
+
+Examples of Atoms:
+  - Numbers: All types of numbers (integers, floating-point numbers, etc.).
+  - Symbols: Symbols are like identifiers and can be used as variable names,
+    function names, etc.
+  - Strings: Sequences of characters enclosed in double quotes.
+  - Characters: Individual characters.
+  - Nil: The special symbol nil, representing both the logical value false and the
+    empty list.
+  - Other Literal Data: Such as keywords (e.g., :keyword) and other types
+    depending on the Lisp dialect.
+
+Atoms in Lists:
+In a Lisp list, atoms are the elements that are not themselves lists. For
+example, in the list (1 2 3), each of 1, 2, and 3 is an atom. But in the list
+((1 2) (3 4)), neither (1 2) nor (3 4) are atoms because they are lists
+(though 1, 2, 3, and 4 are atoms).
+
+Checking for Atoms:
+Lisp provides a function, typically named atom, to check if a given value is
+an atom. For example,
+
+#+begin_src emacs-lisp
+(atom 'a)
+#+end_src
+
+#+RESULTS:
+: t
+
+#+begin_src emacs-lisp
+(atom '(a b))
+#+end_src
+
+#+RESULTS:
+
+In summary, in Lisp, AN ATOM IS ANYTHING THAT IS NOT A PAIR OR A LIST. This
+includes numbers, symbols, strings, characters, and the special symbol nil.
+Understanding atoms is key to grasping how Lisp handles data structures,
+particularly lists.
+
+* defvar and defparameter
+Initialization Behavior:
+defvar: Does not change the variable's value if it already exists.
+defparameter: Always sets the variable to the given value.
+
+    Use Cases: Use defvar when you want to declare a global variable that should
+        retain its value once set, even across multiple evaluations of the
+        defvar form. This is useful for variables where a default value is
+        sufficient unless explicitly changed. Use defparameter for variables
+        that you expect to reinitialize regularly. This is often used for
+        configuration variables that might change as the program runs or as part
+        of the program's initialization process.
+
+Example in Context
+
+;; Using defvar
+#+begin_src emacs-lisp
+  (defvar *my-var* 10) 
+  (princ *my-var*)
+#+end_src
+
+#+RESULTS:
+: 10
+
+;; Re-evaluating with a different value
+#+begin_src emacs-lisp
+  (defvar *my-var* 20)
+  (princ *my-var*)
+#+end_src
+
+#+RESULTS:
+: 10
+
+;; Using defparameter
+#+begin_src emacs-lisp
+  (defparameter *my-param* 30)
+  (princ *my-param*)
+#+end_src
+
+;; Re-evaluating with a different value
+#+begin_src emacs-lisp
+  (defparameter *my-param* 40) 
+  (princ *my-param*)
+#+end_src
+
+In summary, the choice between defvar and defparameter depends on whether you
+want the variable's value to be updated on subsequent re-evaluations of the
+declaration.
+
+* Symbol
+In Lisp, a symbol is a fundamental data type that plays several important roles.
+Understanding symbols is crucial to grasping how Lisp works. Here's a detailed
+explanation:
+
+Definition of a Symbol
+
+    Identifier: At its most basic level, a symbol is an identifier. It's used to
+    name variables, functions, and other entities in Lisp. Symbols are typically
+    composed of a sequence of characters and are unique within a given
+    environment.
+
+    Not a String: Although a symbol may look like a string of characters, it is
+    not a string. In Lisp, symbols and strings are distinct types. For example,
+    *'foo* is a symbol, while *"foo"* is a string.
+
+Roles and Characteristics
+
+    Naming Variables and Functions: Symbols are often used as names for
+    variables and functions. For example, in *(defvar my-var 10)*, my-var is a
+    symbol used as a variable name.
+
+    Self-Evaluating in Certain Contexts: When a symbol appears in a context
+    where its value is needed (like in an expression), Lisp looks up and returns
+    its current value. However, if a symbol is quoted *(like 'symbol)*, it
+    evaluates to the symbol itself, not its value.
+
+    Properties List: Each symbol can have a properties list (plist) associated
+    with it, which is a collection of attribute-value pairs. This allows symbols
+    to carry additional information that can be used by the program.
+
+    Function and Variable Namespace: In Lisp, symbols exist in both a function
+    namespace (for naming functions) and a variable namespace (for naming
+    variables). This means the same symbol can refer to a variable and a
+    function independently.
+
+    Package System: Symbols are organized into packages (namespaces), which
+    helps prevent name clashes between symbols with the same name but different
+    meanings or origins.
+
+Examples
+
+    As a Variable Name: In *(setq my-symbol 5)*, my-symbol is a symbol used as a
+    variable name. As a Function Name: In *(defun my-function () ...)*,
+    my-function is a symbol used as a function name. Quoted Symbols: The form
+    *'my-symbol* refers to the symbol itself, not its value.
+
+Lisp Syntax for Symbols
+
+    Unquoted: When a symbol appears without a quote, Lisp treats it as a name
+    and attempts to retrieve its value. Quoted: When a symbol is quoted
+    (preceded by a single quote), it is treated as a literal symbol.
+
+Special Symbols
+
+    T and NIL: In Lisp, t and nil are special symbols. *t represents true*, and
+    *nil represents both false and the empty list.
+
+In summary, a symbol in Lisp is a versatile entity used as an identifier for
+various purposes, such as naming variables and functions. It is a key element in
+Lisp's syntax and semantics, allowing for flexible and dynamic programming
+paradigms. Symbols are not just character strings; they are unique entities that
+can hold values, be part of Lisp's namespace system, and carry additional
+properties.
+
+* Setq and Set
+** setq
+setq is used for directly assigning a value to the variable named by the
+first argument, without evaluating the first argument.
+
+The difference between (setq x 10) and (setq x '10) in Lisp boils down to the
+nature of the value being assigned to the symbol x. Let's explore each case:
+
+#+begin_src emacs-lisp
+(setq x 10)
+#+end_src
+
+#+RESULTS:
+: 10
+
+In this expression, the number 10 is assigned to the variable x.
+10 here is an integer, a numeric value.
+After this expression, if you evaluate x, it will return the number 10.
+
+#+begin_src emacs-lisp
+ (setq x '10)
+#+end_src
+
+#+RESULTS:
+: 10
+
+In this expression, '10 is a quoted expression. The quote ' in Lisp indicates
+that what follows should be treated as a literal symbol or list, not evaluated.
+So, '10 is actually the symbol 10, not the numeric value 10. After this
+expression, if you evaluate x, it will return the symbol 10, not the number 10.
+This might be a bit confusing because 10 looks like a number, but in the context
+of '10, it is a symbol.
+
+In summary:
+
+    (setq x 10) sets x to the numeric value 10.
+    (setq x '10) sets x to the symbol 10.
+
+The key difference is between using a number as a direct value and using a
+quoted expression that represents a symbol. In Lisp, quoting a number like '10
+turns it into a symbol instead of a numeric value.
+
+** set
+set evaluates its first argument, which allows it to dynamically choose which
+variable to assign the second argument's value to, based on the result of that
+evaluation.
+
+;;sets var1 to the symbol 'var2'
+#+begin_src emacs-lisp
+ (setq var1 'var2) 
+#+end_src
+
+#+RESULTS:
+: var2
+#+begin_src emacs-lisp
+ (set var1 20) 
+#+end_src
+
+#+RESULTS:
+: 20
+
+#+begin_src emacs-lisp
+ (princ var1)
+#+end_src
+
+#+RESULTS:
+: var2
+
+#+begin_src lisp
+ (princ var2)
+ #+end_src
+
+ #+RESULTS:
+ : 20
+
+
+In summary:
+  - setq is used for directly assigning a value to the variable named by the
+  first argument, without evaluating the first argument.
+
+  - set evaluates its first argument, which allows it to dynamically choose which
+  variable to assign the second argument's value to, based on the result of that
+  evaluation.
+
+* Loops
+  In Common Lisp, the loop macro provides a rich set of features for iterating
+over sequences, repeating expressions an arbitrary number of times, collecting
+results, and more. Below are some common uses of loop with examples:
+
+** Simple Loop
+
+The simplest use of loop is to repeat an expression forever:
+
+#+begin_src emacs-lisp
+(loop (print "This will print endlessly."))
+#+end_src
+
+To stop the loop, you would typically include a conditional exit statement such
+as return, return-from, or loop-finish.
+
+** Counting Loop
+
+To perform an action a specific number of times, you use repeat:
+
+
+#+begin_src lisp
+(loop repeat 5 do (print "This will print 5 times."))
+#+end_src
+
+** Iterating Over a Range
+
+You can iterate over a range of numbers with for and below:
+
+#+begin_src lisp
+(loop for i from 0 below 5 do (print i))
+#+end_src
+
+
+This will print the numbers 0 through 4. Collecting Results
+
+You can collect results into a list with collect:
+
+lisp
+
+(loop for i from 1 to 5 collect i)
+
+This will return the list (1 2 3 4 5). Summing Values
+
+To sum a series of values:
+
+lisp
+
+(loop for i from 1 to 10 sum i)
+
+This computes the sum of numbers from 1 to 10. Using Multiple Variables
+
+loop can manage multiple loop variables simultaneously:
+
+lisp
+
+(loop for i from 1 to 3 for j from 4 downto 2 collect (list i j))
+
+This will collect pairs of i and j values into a list: ((1 4) (2 3) (3 2)).
+Conditional Execution
+
+Using if allows conditional execution of parts of the loop:
+
+lisp
+
+(loop for i from 1 to 10 if (evenp i) collect i)
+
+This will collect only the even numbers between 1 and 10 into a list: (2 4 6 8
+10). Nested Loops
+
+You can nest loop constructions:
+
+lisp
+
+(loop for i from 1 to 3 do (loop for j from 1 to 3 do (format t "~&i: ~d, j: ~d"
+  i j)))
+
+This will print a grid of i and j values. Exiting a Loop
+
+To exit a loop based on a condition, use when or unless with return or
+loop-finish:
+
+lisp
+
+(loop for i from 1 do (print i) when (> i 5) do (loop-finish))
+
+This will print numbers from 1 to 6 and then exit the loop.
+
+The loop macro in Common Lisp is highly versatile and can handle much more
+complex scenarios than those presented here, including iterating over lists,
+vectors, and other data structures, as well as handling multiple conditions,
+multiple accumulation operations, and parallel iteration over multiple
+collections.
+
+* Functions
+** Named Functions
+
+Defining Functions:
+    Functions are defined using the defun macro.
+    defun is followed by the function name, parameters, and the body.
+
+#+begin_src emacs-lisp
+(defun fib (n)
+  "Return the nth Fibonacci number."
+  (if (< n 2)
+      n
+      (+ (fib (- n 1))
+          (fib (- n 2)))))
+#+end_src
+
+
+Calling Named Functions:
+
+    They are called like any Lisp expression:
+
+#+begin_src emacs-lisp
+  (fib 30)
+#+end_src
+
+** Anonymous Functions
+
+Application with funcall:
+    *funcall* is used to call functions indirectly, especially useful for lambda
+    functions or when the function to call is determined at runtime. 
+
+
+#+begin_src emacs-lisp
+  (funcall #'fib 30)
+#+end_src
+
+#+RESULTS:
+: 832040
+
+This calls fib with 30, where *#'fib* is a shorthand for (function fib), denoting
+the fib function.
+
+Application with apply:
+    *apply* is similar to funcall but is used when you need to pass arguments as a list.
+
+#+begin_src emacs-lisp
+  (apply #'fib (list 30))
+#+end_src
+
+#+RESULTS:
+: 832040
+
+*** #'fib
+The distinction between using #'fib and just fib in the context of (funcall
+#'fib 30) versus (funcall fib 30) in Lisp is subtle but important. It relates to
+how Lisp treats symbols and function objects. Let's clarify this:
+
+    #'fib:
+        #'fib is shorthand for (function fib).
+        It explicitly refers to the function object named fib. In Lisp,
+        #functions are first-class objects, and #' is used to obtain the
+        #function object associated with a given name. This is necessary
+        #because, in Lisp, the same name can be used both for a variable and a
+        #function without conflict.
+
+    Just fib:
+        Without the #', fib is treated as a variable name. (funcall fib 30)
+        would mean that Lisp is expected to find a function object stored in a
+        variable named fib. If fib is not a variable holding a function object,
+        this will result in an error.
+
+Why the Distinction Matters
+
+    Namespace Separation: In Lisp, function names and variable names exist in
+    separate namespaces. This means you could have a variable and a function
+    with the same name without conflict. Using #' clearly indicates you're
+    referring to the function, not the variable.
+
+    Example: If you had a variable fib (which is different from the function
+    fib), (funcall fib 30) would try to call whatever function is stored in the
+    variable fib, not the named function fib.
+
+    Flexibility: In some cases, you might want to pass around functions as
+    arguments, store them in data structures, or return them from other
+    functions. In these scenarios, you deal with the function objects
+    themselves, not their names, and #' helps in distinguishing these cases.
+
+So, (funcall #'fib 30) correctly tells Lisp to use the function named fib,
+whereas (funcall fib 30) would be looking for a function stored in a variable
+named fib. This distinction is crucial in understanding how Lisp's symbol and
+function namespaces operate. Multiple Return Values
+
+** Functions Returning Multiple Values
+*** TODO Review values function
+SCHEDULED: <2023-12-12 mar>
+
+In Lisp, a function can return multiple *values* using the values function.
+Since Emacs Lisp does not handle multiple return values in the same way as
+Common Lisp, you would need to adjust the function accordingly. You could
+return a list of values instead.
+
+Example Adjusted for Emacs Lisp:
+
+#+begin_src emacs-lisp
+(defun many (n)
+  (list n (* n 2) (* n 3)))
+
+;; This will call 'many' with a single argument 10
+(many 10)
+
+#+end_src
+
+#+RESULTS:
+| 10 | 20 | 30 |
+
+* Lambda functions
+In Lisp, anonymous functions, also known as lambda functions, are created using
+the lambda keyword. A lambda function is a function without a name, which is
+useful when you need a function only temporarily, often for passing as an
+argument to higher-order functions.
+
+Here's the basic syntax for creating an anonymous function in Lisp:
+
+
+*(lambda (parameters) body)*
+
+    lambda: This keyword starts the definition of an anonymous function.
+    - (parameters): This is a list of parameters for the lambda function, just
+      like parameters for a regular function.
+    - body: This is the body of the function, where you put the code that
+      defines what the function does.
+
+Example Usage
+
+(lambda (x) (* x x))
+
+This creates an anonymous function that takes one argument x and returns its
+square.
+
+** Using an Anonymous Function:
+
+    As an argument to another function:
+
+#+begin_src emacs-lisp
+    (mapcar (lambda (x) (* x x)) '(1 2 3 4 5))
+#+end_src
+
+#+RESULTS:
+| 1 | 4 | 9 | 16 | 25 |
+
+
+Here, mapcar is a function that applies the given function to each element
+of the list. The anonymous function takes each element x and returns its
+square.
+
+** Immediately Invoked Anonymous Function:
+
+
+#+begin_src emacs-lisp
+(funcall (lambda (x) (* x x)) 10)
+#+end_src
+
+#+RESULTS:
+: 100
+
+Here, funcall is used to call the anonymous function immediately with the
+argument 10, returning 100.
+
+** Storing in a Variable:
+
+    While you can't name a lambda function directly, you can assign it to a
+    variable:
+
+#+begin_src emacs-lisp
+(setq square (lambda (x) (* x x)))
+(funcall square 5)
+#+end_src
+
+#+RESULTS:
+: 25
+
+Here, square holds the anonymous function, and funcall is used to call it with
+the argument 5.
+
+Lambda functions are powerful tools in Lisp, allowing for more flexible and
+concise code, especially when dealing with functional programming patterns like
+mapping, filtering, and reducing collections.
+
+* mapcar 
+mapcar is a Lisp function. It's a higher-order function commonly used in Lisp
+programming for list processing. The primary purpose of mapcar is to apply a
+given function to each element of a list (or lists) and collect the results into
+a new list.
+
+Here's a brief overview of how mapcar works:
+
+    Function: mapcar
+    Purpose: To apply a function to each element of a list or lists.
+    Syntax: (mapcar function list1 list2 ...)
+    Parameters:
+        function: A function that will be applied to the elements. This can be a
+        named function or an anonymous function (lambda function). list1, list2,
+        ...: One or more lists whose elements are passed as arguments to the
+        function.
+
+Example
+
+If you have a function f and a list '(a b c), calling (mapcar f '(a b c)) will
+apply f to each element of the list, resulting in a new list '(f(a) f(b) f(c)).
+
+A simple example using a lambda function to square each number in a list:
+
+
+#+begin_src emacs-lisp
+(mapcar (lambda (x) (* x x)) '(1 2 3 4 5))
+#+end_src
+
+#+RESULTS:
+| 1 | 4 | 9 | 16 | 25 |
+
+mapcar is useful for a wide range of list processing tasks in Lisp, particularly
+in functional programming scenarios where operations need to be applied
+uniformly to collections of data. It's part of the standard Lisp language and is
+available in various dialects of Lisp, including Common Lisp and Emacs Lisp.
+

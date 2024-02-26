@@ -1,0 +1,57 @@
+conky.config = {
+  alignment = 'bottom_left',
+  background = false,
+  update_interval = 1,
+
+  double_buffer = true,
+  no_buffers = true,
+  text_buffer_size = 2048,
+
+  own_window = true,
+  own_window_class = 'conky',
+  own_window_type = 'override',
+  --own_window_colour = '#555555',
+  own_window_transparent = true,
+  own_window_argb_visual = true,
+  own_window_argb_value = 0,
+
+  draw_shades = false,
+  draw_outline = false,
+  draw_borders = false,
+  draw_graph_borders = false,
+
+	gap_x = 50,
+	gap_y = 40,
+  minimum_width = 400,
+  minimum_height = 700,
+  maximum_width = 420,
+  border_inner_margin = 0,
+  border_outer_margin = 20,
+  --xinerama_head = 0,
+
+  override_utf8_locale = true,
+  use_xft = true,
+  font = 'monospace:size=10',
+  xftalpha = 0.8,
+  uppercase = false,
+}
+conky.text = [[
+${color yellow}  Terminal - ${color}mod+Enter
+${color yellow}  Mail - ${color}mod+m 
+${color yellow}  Browser - ${color}mod+w
+${color yellow}  Music - ${color}mod+x
+${color yellow}  Zettlr - ${color}mod+z 
+${color yellow}  Calc - ${color}mod+shift+g 
+${color yellow}  SnapShot - ${color}F12
+${color yellow}  Show calendar - ${color}mod+Shift+z 
+${color yellow}  Vifm - ${color}mod+Up 
+${color yellow}  Youtube-viewer - ${color}mod+Left 
+${color yellow}  Calcurse - ${color}mod+Right 
+${color yellow}  Xpad - ${color}mod+Down 
+${color yellow}  Geany - ${color}mod+Shift+Up 
+${color yellow}  Transmission - ${color}mod+Shift+Left 
+${color yellow}  Zeal - ${color}mod+Shift+Right 
+${color yellow}  Calibre - ${color}mod+Shift+Down 
+${color yellow}  Alsamixer - ${color}mod+Ctrl+m 
+]];
+

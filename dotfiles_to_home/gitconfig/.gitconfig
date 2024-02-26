@@ -1,0 +1,36 @@
+[user]
+	name = nisidabay
+	email = nisidabay@gmail.com
+
+[init]
+	defaultBranch = main
+
+[color]
+	ui = true
+	status = auto
+	branch = auto
+
+[core]
+	editor = nvim
+	autocrf = input
+    fileMode = false
+
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+
+[commit]
+	template = ~/bin/.gitmessage
+
+[alias]
+reset-permissions = !git diff -p -R --no-color | grep -E \"^(diff|(old|new) mode)\" --color=newer | git apply
+
+[fetch]
+    prune = true
+
+[diff]
+	tool = vimdiff

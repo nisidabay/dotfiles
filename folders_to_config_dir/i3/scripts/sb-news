@@ -1,0 +1,58 @@
+#!/bin/sh
+
+# Displays number of unread news items and an loading icon if updating.
+# When clicked, brings up `newsboat`.
+
+
+# Temporary file. Indicates if newsboat is running
+NEWSBOAT_PID_FILE="/tmp/newsboat.pid"
+
+# Function to check if newsboat is running
+is_newsboat_running() {
+    if [ -f "$NEWSBOAT_PID_FILE" ]; then
+        NEWSBOAT_PID=$(cat "$NEWSBOAT_PID_FILE")
+        if [ -n "$NEWSBOAT_PID" ] && kill -0 "$NEWSBOAT_PID" 2>/dev/null; then
+            return 0 # Newsboat is running
+        else
+            rm "$NEWSBOAT_PID_FILE" # Remove PID file if Newsboat is not running
+        fi
+    fi
+    return 1 # Newsboat is not running
+}
+
+# Function to display unread news count
+display_unread() {
+    if is_newsboat_running; then
+        echo "Newsboat running"
+    else
+        UNREAD_COUNT=$(newsboat -x print-unread | awk '{ if($1>0) print "📰" $1}')
+        [ -n "$UNREAD_COUNT" ] && echo "$UNREAD_COUNT" || echo "No unread news"
+    fi
+}
+
+# Main case statement for handling actions
+case $BLOCK_BUTTON in
+    1|2) 
+        if ! is_newsboat_running; then
+            setsid "$TERMINAL" -e newsboat &
+            sleep 1  # Small delay to ensure newsboat has started
+            pgrep -x newsboat > "$NEWSBOAT_PID_FILE"
+            # echo "Newsboat started, PID captured" # Debug message
+        fi
+        ;;
+    3) 
+        notify-send "📰 News module" "\- Shows unread news items
+- Shows 🔃 if updating with \`newsboat -r\`
+- Left click opens newsboat
+- Middle click syncs RSS feeds
+<b>Note:</b> Only one instance of newsboat (including updates) may be running at a time." ;;
+    6) 
+        "$TERMINAL" -e "$EDITOR" "$0" ;;
+esac
+
+# Display unread news count or update status
+if [ -f "$UNREAD_COUNT" ]; then
+    cat "$UNREAD_COUNT"
+else
+    display_unread
+fi

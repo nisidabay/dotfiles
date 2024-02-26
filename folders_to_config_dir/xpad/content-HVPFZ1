@@ -1,0 +1,2 @@
+Open a file
+$ xdg-open /home/tux/Pictures/holiday-photos/winter-holiday.jpeg

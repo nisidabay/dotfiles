@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/nisidabay/Pictures/boat.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0c1616",
+        "foreground": "#9aa8c8",
+        "cursor": "#9aa8c8"
+    },
+    "colors": {
+        "color0": "#0c1616",
+        "color1": "#70726C",
+        "color2": "#A66D33",
+        "color3": "#8A7862",
+        "color4": "#AA8F66",
+        "color5": "#DAAD42",
+        "color6": "#CFA867",
+        "color7": "#9aa8c8",
+        "color8": "#6b758c",
+        "color9": "#70726C",
+        "color10": "#A66D33",
+        "color11": "#8A7862",
+        "color12": "#AA8F66",
+        "color13": "#DAAD42",
+        "color14": "#CFA867",
+        "color15": "#9aa8c8"
+    }
+}

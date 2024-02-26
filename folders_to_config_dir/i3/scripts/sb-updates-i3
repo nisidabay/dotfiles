@@ -1,0 +1,28 @@
+#!/bin/sh
+
+# i3blocks script to display available package updates
+
+# Get the count of available package updates
+packages=$(checkupdates | wc -l)
+
+# Set the color based on the number of available packages
+if [ "$packages" -gt 0 ]; then
+    color="#ff0000"  # Red color for available packages
+else
+    color="#00ff00"  # Green color for no available packages
+fi
+
+# Display the package count using i3blocks format with markup
+echo "<span color='$color'>📦 $packages</span>"
+
+# Handle different mouse button clicks
+case $BLOCK_BUTTON in
+    1) 
+        # Display a notification with the available package count
+        notify-send "Available packages:" "$packages";;
+    2|3) 
+        # Update the system using pacman
+        "$TERMINAL" -e sh -c 'echo "Running update"; mysudo sudo pacman -Syyu; read -p "Press enter to continue"'
+        wait $!  # Wait for the background process to finish
+        notify-send "Pacman updated" "The system has been updated";;
+esac

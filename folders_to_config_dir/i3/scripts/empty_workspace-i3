@@ -1,0 +1,15 @@
+#!/usr/bin/bash
+
+# Set the maximum number of desktops (workspaces) available.
+MAX_DESKTOPS=20
+
+# Generate a sequence of workspace numbers from 1 to MAX_DESKTOPS.
+WORKSPACES=$(seq -s '\n' 1 1 ${MAX_DESKTOPS})
+
+# Retrieve the list of workspace numbers currently in use, combine it with the generated sequence,
+# and find the first available (empty) workspace number that isn't currently in use.
+EMPTY_WORKSPACE=$( (i3-msg -t get_workspaces | tr ',' '\n' | grep num | awk -F:  '{print int($2)}' ; \
+            echo -e "${WORKSPACES}" ) | sort -n | uniq -u | head -n 1)
+
+# Switch to the identified empty workspace using the i3-msg command.
+i3-msg workspace "${EMPTY_WORKSPACE}"

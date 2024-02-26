@@ -1,0 +1,75 @@
+#!/usr/bin/env bash
+#
+# Notify New Mail for i3
+# ======================
+# This script checks for new emails and notifies the user using notifications.
+#
+# Requirements:
+# - notify-send (usually pre-installed on most Linux distributions)
+#
+# Usage:
+# - Run this script in the background to periodically check for new emails.
+#
+# Author: LinuxEnthusiast
+
+# Load configuration from the assets file
+CONFIG_FILE="/home/$USER/.config/i3/scripts/resources/mail.conf"
+
+# Initialize messages counter
+declare -g new_messages=0
+
+if [[ -f "$CONFIG_FILE" ]]; then
+    source "$CONFIG_FILE"
+else
+    echo "Error: Configuration file not found."
+    exit 1
+fi
+
+# Function to display the new email notification
+display_email_notification() {
+    if [[ $new_messages -gt 0 ]]; then
+        notify-send -i "$NEW_MAIL" "$APP_NAME" "You've got mail!" 
+        if [[ -n "$PLAYER" ]]; then
+            "$PLAYER" "$SOUND_FILE" 2> /dev/null
+        fi
+        exit 0
+    fi
+}
+
+# Check if the script is triggered by a mouse button click
+if [[ -n $BLOCK_BUTTON ]]; then
+    # Open neomutt when triggered by a mouse button click
+    setsid -f "$TERMINAL" -e neomutt
+    # Fetch the current count of new emails
+    new_messages=$(cat "$HOME/.notmuch_count_messages" 2>/dev/null || echo "0")
+else
+    # Proceed to check for new emails
+    notify-send -i "$CHK_MAIL" "$APP_NAME" "Checking mail ..."
+    
+    # Sync email folders using offlineimap
+    offlineimap -o -u quiet
+    
+    # Update the notmuch database
+    notmuch new > /dev/null
+    
+    # Fetch the current count of new emails using notmuch
+    new_total=$(notmuch count new)
+    
+    # If there's an error with the notmuch command, display an error indicator and exit
+    if [[ $? -ne 0 ]]; then
+        echo "📬E"  # Error indicator
+        exit 1
+    fi
+    
+    # Fetch the previous count of new emails from a file
+    old_total=$(cat "$HOME/.notmuch_count_messages" 2>/dev/null || echo "0")
+    
+    # Calculate the difference in new email count since the last check
+    new_messages=$(( new_total - old_total ))
+    
+    # Save the current new email count to a file for future reference
+    echo "$new_messages" > "$HOME/.notmuch_count_messages"
+    
+    # Display the message count
+    display_email_notification 
+fi

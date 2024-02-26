@@ -1,0 +1,18 @@
+#!/usr/bin/bash
+#
+# i3 Change wallpaper
+
+# This script change the current wallpaper
+
+# Handle click events
+case $BLOCK_BUTTON in
+	1) 
+        # Display a notification with the available package count
+        notify-send "Right click to change wallpaper";;
+    2|3)
+        # Right click: change background
+        "$HOME/.config/i3/scripts/change_bg_lnx.sh"
+        notify-send "Wallpaper changed "
+        ;;
+esac
+

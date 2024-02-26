@@ -1,0 +1,10 @@
+#!/usr/bin/bash
+# Idea from: https://github.com/vivien/i3blocks-contrib/blob/master/iface/i3blocks.conf#
+# Show IP address on i3 bar
+# Author: nisidabay 
+# Date: sáb 28 ene 2023 18:40:47 CET
+##############################################################################
+myip="ip addr | awk '/192/ {print $1}' | cut -d' ' -f6 | cut -d'/' -f1"
+
+output=$(eval "$myip")
+echo "$output"

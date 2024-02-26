@@ -1,0 +1,7 @@
+Python modules
+
+python-decouple -  Configuration files
+python enum
+python get-opts - Similar to argParse
+python typer - Similar to argParse
+python Hydra - Configuration files

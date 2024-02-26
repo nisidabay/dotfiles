@@ -1,0 +1,7 @@
+You only need to know about seven functions to use Asyncio [for everyday use].
+
+• Starting the asyncio event loop 
+• Calling async/await functions
+• Creating a task to be run on the loop 
+• Waiting for multiple tasks to complete 
+• Closing the loop after all concurrent tasks have completed

@@ -1,0 +1,20 @@
+Soucery token
+
+user_JGeHIJ5887g4LR_xPvS69ASvlBgwH9oGai_kCbzGO8Y2YLHk_Dp_HG5SY_Y
+
+
+Install on iMac
+============
+
+
+sudo pacman -S libxcrypt-compat
+
+python3 -m pip install sourcery-cli
+
+sourcery login
+
+
+copy .vimrc to iMac
+copy .vim to iMac
+
+see CocConfig		

@@ -1,0 +1,9 @@
+#!/bin/bash
+# Dependencies: lm_sensors
+# Retrieve CPU temperature using the 'sensors' command from lm-sensors
+temperature=$(sensors | awk '/^Composite/ {print $2}' | sed 's/+//')
+
+# Output the temperature
+echo "$temperature"
+
+
