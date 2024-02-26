@@ -1,16 +1,10 @@
-# Added startup program CLM 
+# Added startup programs CLM 
 
 # Adjust monitor resolution
-~/bin/monitor.sh
-
-# Python nuggets
-~/bin/pynuggets_univ.py -r
-
-# ssh agent
-# eval $(ssh-agent)
-# call .bash_aliases
-[[ -f ~/.bash_aliases ]] && . ~/.bash_aliases
+#~/bin/monitor.sh
 
 # Keep  notify-lib messages
-notify-log.sh ~/.log/notify.log &
+# notify-log.sh ~/.log/notify.log &
 
+# Python nuggets
+~/bin/pynuggets_univ.py 
