@@ -1,0 +1,16 @@
+# THESE SETTINGS ARE FOR IMAP
+set folder = "imaps://imap.gmail.com/"
+set spoolfile = "imaps://imap.gmail.com/INBOX"
+set imap_user = 'nisidabay@gmail.com'
+set imap_pass ='mtlx ture qpqf lesf'
+set imap_keepalive = 900
+set move = no
+set from='nisidabay@gmail.com'
+set realname='Carlos Lacaci Moya'
+set postponed="+[Gmail]/Drafts"
+set header_cache ="~/.mutt/cache/headers"
+set message_cachedir = "~/.mutt/cache/bodies"
+set certificate_file = "~/.mutt/certificates"
+set smtp_url = 'smtps://nisidabay@gmail.com:mtlxtureqpqflesf@smtp.gmail.com:465/'
+
+folder-hook . 'source ~/mutt/accounts/gmail'
