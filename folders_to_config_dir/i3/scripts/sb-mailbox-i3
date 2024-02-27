@@ -12,6 +12,9 @@
 #
 # Author: LinuxEnthusiast
 
+# Export terminal in case it does not load .bashrc
+export TERMINAL=$(which alacritty)
+
 # Load configuration from the assets file
 CONFIG_FILE="/home/$USER/.config/i3/scripts/resources/mail.conf"
 
