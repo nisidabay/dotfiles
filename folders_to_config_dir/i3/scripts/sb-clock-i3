@@ -1,4 +1,5 @@
-#!/bin/sh
+#!/bin/bash
+TERMINAL="alacritty"
 
 clock=$(date '+%I')
 
@@ -19,8 +20,8 @@ case "$clock" in
 esac
 
 case $BLOCK_BUTTON in
-    1)"$TERMINAL" -e calendr.py;;
-	2|3) "$TERMINAL" -e calcurse ;;
+    1)setsid -f "$TERMINAL" -e ~/bin/kalendar.py ;;
+	2|3) setsid -f "$TERMINAL" -e calcurse ;;
 esac
 
 date "+%Y %b %d (%a) $icon%I:%M%p"

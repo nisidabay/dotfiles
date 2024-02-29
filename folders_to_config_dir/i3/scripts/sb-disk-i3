@@ -1,4 +1,5 @@
 #!/bin/sh
+TERMINAL="alacritty"
 case $BLOCK_BUTTON in
 
     1) notify-send "💾 Internal disk usage" "$(df -h /dev/sda1 | awk 'NR >1 {print $4}')" ;;
