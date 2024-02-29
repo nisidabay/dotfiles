@@ -137,7 +137,10 @@ SAVEHIST=1000
 HISTFILE=~/.zsh_history
 
 
-# load .bash_aliases
+# load .bashrc
+[[ -f ~/.bashrc ]] && . ~/.bashrc
+
+# load .bash_aliases 
 [[ -f ~/.bash_aliases ]] && . ~/.bash_aliases
 #
 # Stores startup scripts
