@@ -1,89 +1,56 @@
-#!/usr/bin/perl
-#
-# Copyright 2014 Pierre Mavro <deimos@deimos.fr>
-# Copyright 2014 Vivien Didelot <vivien@didelot.org>
-#
-# Licensed under the terms of the GNU GPL v3, or any later version.
-#
-# This script is meant to use with i3blocks. It parses the output of the "acpi"
-# command (often provided by a package of the same name) to read the status of
-# the battery, and eventually its remaining time (to full charge or discharge).
-#
-# The color will gradually change for a percentage below 85%, and the urgency
-# (exit code 33) is set if there is less that 5% remaining.
+#!/bin/bash
 
-use strict;
-use warnings;
-use utf8;
+# Dynamically find the first battery in the system
+for battery in /sys/class/power_supply/BAT*; do
+  if [ -d "$battery" ]; then
+    battery_path="$battery"
+    break
+  fi
+done
 
-my $acpi;
-my $status;
-my $percent;
-my $ac_adapt;
-my $full_text;
-my $short_text;
-my $bat_number = $ENV{BLOCK_INSTANCE} || 0;
+if [ -z "$battery_path" ]; then
+  echo "No battery found"
+  exit 1
+fi
 
-# read the first line of the "acpi" command output
-open (ACPI, "acpi -b | grep 'Battery $bat_number' |") or die;
-$acpi = <ACPI>;
-close(ACPI);
+# Define the path to the battery uevent
+battery_uevent="$battery_path/uevent"
 
-# fail on unexpected output
-if ($acpi !~ /: (\w+), (\d+)%/) {
-	die "$acpi\n";
-}
+# Check if battery_uevent file exists
+if [ ! -f "$battery_uevent" ]; then
+  echo "Battery uevent file not found"
+  exit 1
+fi
 
-$status = $1;
-$percent = $2;
-$full_text = "$percent%";
+# Read battery information
+source "$battery_uevent"
 
-if ($status eq 'Discharging') {
-	$full_text .= ' ';
-} elsif ($status eq 'Charging') {
-	$full_text .= ' ';
-} elsif ($status eq 'Unknown') {
-	open (AC_ADAPTER, "acpi -a |") or die;
-	$ac_adapt = <AC_ADAPTER>;
-	close(AC_ADAPTER);
+# Define low battery threshold
+low_threshold=10
 
-	if ($ac_adapt =~ /: ([\w-]+)/) {
-		$ac_adapt = $1;
+# Parse the status and capacity
+battery_status=$(grep -e 'POWER_SUPPLY_STATUS=' $battery_uevent | cut -d'=' -f2)
+battery_capacity=$(grep -e 'POWER_SUPPLY_CAPACITY=' $battery_uevent | cut -d'=' -f2)
 
-		if ($ac_adapt eq 'on-line') {
-			$full_text .= ' CHR';
-		} elsif ($ac_adapt eq 'off-line') {
-			$full_text .= ' DIS';
-		}
-	}
-}
+# Format output based on battery status
+case $battery_status in
+    Charging|Full)
+        if [ "$battery_status" = "Full" ]; then
+            echo "<span color='#66FF99'> [  ] $battery_capacity% </span>"
+        else
+            echo "<span color='#00e64d'>[  ]  $battery_capacity% </span>"
+        fi
+        ;;
+    Discharging)
+        if [ "$battery_capacity" -le "$low_threshold" ]; then
+            # Use custom color for low battery if needed
+            echo "<span color='#fa4c7e'>[   ] $battery_capacity% </span>"
+        else
+            echo "<span color='#8080ff' >[   ] $battery_capacity% </span>"
+        fi
+        ;;
+    *)
+        echo "[🔌] $battery_capacity%"
 
-$short_text = $full_text;
-
-if ($acpi =~ /(\d\d:\d\d):/) {
-	$full_text .= " ($1)";
-}
-
-# print text
-print "$full_text\n";
-print "$short_text\n";
-
-# consider color and urgent flag only on discharge
-if ($status eq 'Discharging') {
-
-	if ($percent < 20) {
-		print "#FF0000\n";
-	} elsif ($percent < 40) {
-		print "#FFAE00\n";
-	} elsif ($percent < 60) {
-		print "#FFF600\n";
-	} elsif ($percent < 85) {
-		print "#A8FF00\n";
-	}
-
-	if ($percent < 5) {
-		exit(33);
-	}
-}
-
-exit(0);
+        ;;
+esac

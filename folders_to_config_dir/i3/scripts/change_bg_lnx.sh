@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 #
 # Change background image 
 # Author: https://gumirov.xyz/
@@ -9,7 +9,7 @@
 export DISPLAY=":0"
 
 # Define the directory with wallpapers
-bg_dir=/mnt/sata/Pictures
+bg_dir=/mnt/Pictures
 #
 
 # Create the directory if it doesn't exist

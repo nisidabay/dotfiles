@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # i3blocks script to display available package updates
-
 TERMINAL="alacritty"
+
 # Get the count of available package updates
 packages=$(checkupdates | wc -l)
 
@@ -23,7 +23,7 @@ case $BLOCK_BUTTON in
         notify-send "Available packages:" "$packages";;
     2|3) 
         # Update the system using pacman
-        "$TERMINAL" -e sh -c 'echo "Running update"; ~/bin/mysudo sudo pacman -Syyu; read -p "Press enter to continue"'
+        setsid -f "$TERMINAL" -e sh -c 'echo "Running update"; ~/bin/mysudo sudo pacman -Syyu; read -p "Press enter to continue"'
         wait $!  # Wait for the background process to finish
         notify-send "Pacman updated" "The system has been updated";;
 esac

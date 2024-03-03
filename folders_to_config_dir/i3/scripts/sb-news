@@ -3,7 +3,7 @@
 # Displays number of unread news items and an loading icon if updating.
 # When clicked, brings up `newsboat`.
 
-TERMINAL="alacritty"
+
 # Temporary file. Indicates if newsboat is running
 NEWSBOAT_PID_FILE="/tmp/newsboat.pid"
 
@@ -34,10 +34,10 @@ display_unread() {
 case $BLOCK_BUTTON in
     1|2) 
         if ! is_newsboat_running; then
-            setsid -f "$TERMINAL" -e newsboat 
+            setsid "$TERMINAL" -e newsboat &
             sleep 1  # Small delay to ensure newsboat has started
             pgrep -x newsboat > "$NEWSBOAT_PID_FILE"
-            #echo "Newsboat started, PID captured" # Debug message
+            # echo "Newsboat started, PID captured" # Debug message
         fi
         ;;
     3) 
@@ -46,6 +46,8 @@ case $BLOCK_BUTTON in
 - Left click opens newsboat
 - Middle click syncs RSS feeds
 <b>Note:</b> Only one instance of newsboat (including updates) may be running at a time." ;;
+    6) 
+        "$TERMINAL" -e "$EDITOR" "$0" ;;
 esac
 
 # Display unread news count or update status

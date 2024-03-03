@@ -101,7 +101,7 @@ exec --no-startup-id dunst
 
 # Start a terminal
 ## Get the terminal from ~/bin/change_terminal_lnx.sh
-set $term alacritty
+set $term kitty
 bindsym $mod+Return exec $term
 
 # Kill focused window
@@ -223,7 +223,7 @@ bindsym XF86AudioMute exec --no-startup-id amixer -q set Master toggle
 bindsym $mod+n exec /usr/bin/thunar
 bindsym $mod+Shift+v exec st sh -c "vim"
 bindsym $mod+Ctrl+v exec st sh -c "vifm"
-bindsym $mod+w exec /usr/bin/firefox
+bindsym $mod+w exec /usr/bin/firedragon
 bindsym $mod+o exec /usr/bin/opera
 bindsym $mod+x exec $term -e cmus 
 bindsym $mod+Shift+t exec /usr/bin/tor-browser-en
