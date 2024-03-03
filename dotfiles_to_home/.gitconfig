@@ -10,7 +10,7 @@
 [core]
 	editor = vim
 	autocrf = input
-	excludesfile = /Users/nisidabay/.gitignore_global
+	excludesfile = /$HOME/nisidabay/.gitignore_global
 [credential "https://github.com"]
 	helper = 
 	helper = !/usr/bin/gh auth git-credential
@@ -18,10 +18,4 @@
 	helper = !/usr/bin/gh auth git-credential
 [commit]
 	gpgsign = false
-	template = /Users/nisidabay/.stCommitMsg
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
+	template = 
