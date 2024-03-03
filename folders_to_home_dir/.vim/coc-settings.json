@@ -18,26 +18,7 @@
     },
     "go.goplsOptions": {
     "completeUnimported": true
-    },
-    "sourcery": {
-      "command": "/home/nisidabay/.local/bin/sourcery",
-      "args": [
-        "lsp"
-      ],
-      "filetypes": [
-        "python"
-      ],
-      "initializationOptions": {
-        "token": "user_JGeHIJ5887g4LR_xPvS69ASvlBgwH9oGai_kCbzGO8Y2YLHk_Dp_HG5SY_Y",
-        "extension_version": "coc.vim",
-        "editor_version": "vim"
-      },
-      "settings": {
-        "sourcery": {
-          "metricsEnabled": true
-        }
+    }
       }
     }
-  }
-}
 
