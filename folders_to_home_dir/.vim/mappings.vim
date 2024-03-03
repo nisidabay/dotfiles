@@ -124,20 +124,19 @@ nnoremap <F3> :setlocal spell spelllang=en_us<CR>
 
 " Clipboard 
 " For using in Macos
-vnoremap <leader> <C-y> :w !pbcopy<CR><CR>
-nnoremap <leader> <C-p> :r !pbpaste<CR>
-"nnoremap <leader> <C-p> "+p
+"vnoremap <leader> <C-y> :w !pbcopy<CR><CR>
+"nnoremap <leader> <C-p> :r !pbpaste<CR>
 
 " Paste from clipboard X11
-nnoremap <F4> :r !xclip -o -sel clip<Esc>
+"nnoremap <F4> :r !xclip -o -sel clip<Esc>
 " Copy from visual mode
-vnoremap <F6> :w !xclip -i -sel clip<CR><CR>
+"vnoremap <F6> :w !xclip -i -sel clip<CR><CR>
 
 " Clipboard wayland
 " Copy from visual mode to wayland clipboard
-vnoremap <silent> <C-c> :w !wl-copy <CR><CR>
+vnoremap  <F6> :w !wl-copy <CR>
 " Paste from wayland clipboard 
-nnoremap <silent> <C-i> :r !wl-paste <ESC>
+nnoremap  <F4> :r !wl-paste <ESC>
 
 
 "" NERDTree configuration
@@ -157,8 +156,8 @@ nmap <F8> :TagbarToggle<CR>
 set tags=./tags,tags;$HOME
 
 " Enable/Disable touchpad in insert mode
-inoremap <F9> <Esc>:!xinput disable 11<CR>i
-inoremap <F10> <Esc>:!xinput enable 11<CR>i"
+"inoremap <F9> <Esc>:!xinput disable 11<CR>i
+"inoremap <F10> <Esc>:!xinput enable 11<CR>i"
 
 " MACROS FOR ACTING ON WORDS
 "
@@ -309,5 +308,5 @@ nmap <silent> [c <plug>(coc-diagnostic-prev)
 nmap <silent> ]c <plug>(coc-diagnostic-next)
 
 " Togle on/off touchpad
-autocmd VimEnter *  !togle_touchpad.sh disable
-autocmd VimLeave *  !togle_touchpad.sh enable
+"autocmd VimEnter *  !togle_touchpad.sh disable
+"autocmd VimLeave *  !togle_touchpad.sh enable
