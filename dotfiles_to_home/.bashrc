@@ -82,13 +82,6 @@ set -o vi
 bind -m vi-command 'Control-l: clear-screen'
 bind -m vi-insert 'Control-l: clear-screen'
 
-
-# Display a welcome message when opening a new terminal
-if [ -f ~/.welcome_screen ]; then
-    # shellcheck source=/dev/null
-    source ~/.welcome_screen
-fi
-
 # Set XDG_SESSION_TYPE for dm-note
 export XDG_SESSION_TYPE="x11"
 
