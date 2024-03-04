@@ -2,7 +2,6 @@
 # I3 CONFIGURATION FILE
 #-----------------------
 
-
 #--------------
 # CHANGE THEME 
 #--------------
@@ -116,6 +115,7 @@ bindsym $mod+z exec $term -e ~/.config/i3/scripts/change_theme.sh
 # Lock the screen by blurring the screen with a picture
 bindsym $mod+l exec ~/.config/i3/scripts/bender-i3.sh
 
+exec --no-startup-id xautolock -time 10 -locker blurlock
 # Reload the configuration file
 bindsym $mod+Shift+c reload
 
