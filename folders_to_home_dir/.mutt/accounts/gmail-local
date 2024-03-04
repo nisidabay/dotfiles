@@ -1,6 +1,6 @@
 # OFFLINEIMAP
 # unmailboxes *
-set folder="/home/nisidabay/Mail/gmail/"
+set folder="/mnt/Mail/gmail/"
 set spoolfile=+INBOX
 
 # SMTP settings
@@ -26,7 +26,7 @@ mailboxes =INBOX \
 =[Gmail].Sergio \
 =[Gmail].Borradores \
 =[Gmail].Drafts \
-=[Gmail].Enviados \
+="[Gmail].Sent Mail" \
 =[Gmail].Importantes \
 =[Gmail].Papelera \
 =[Gmail].Sergio \
