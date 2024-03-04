@@ -40,14 +40,14 @@ showweather() {
 display_chart(){
 
     if [ -e "$weatherreport" ];then
-        "$TERMINAL" -e "less -Srf $weatherreport" >/dev/null 2>&1 &
+        setsid -f "$TERMINAL" -e "less -Srf $weatherreport" >/dev/null 2>&1 &
     fi
 }
 
 edit_config(){
 
     if [ -e "$weatherreport" ];then
-        "$TERMINAL" -e "vim $0" 
+        setsid -f "$TERMINAL" -e "vim $0" 
 
     else
         echo NOP 
