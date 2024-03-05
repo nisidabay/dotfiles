@@ -66,13 +66,14 @@ fi
 
 # Set the SSH key password
 export SSHPASS=
-# Restore pywall settings
-wal -R >/dev/null
 # Export wal colors to use in scripts
 source "$HOME/.cache/wal/colors.sh"
 
 # Apply pywal changes in new sessions
 (cat ~/.cache/wal/sequences &) >/dev/null
+
+# Restore pywall settings
+wal -R >/dev/null
 
 # Set "bat" as the man pager if available
 if command -v bat &>/dev/null; then
