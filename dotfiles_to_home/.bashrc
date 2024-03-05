@@ -19,6 +19,7 @@ export PDF_VIEWER="zathura"
 
 # Set the default web browser
 export DMBROWSER="firefox"
+export BROWSER="firefox"
 
 # DMBROWSER="qutebrowser"
 
@@ -59,50 +60,53 @@ export FZF_DEFAULT_COMMAND='fd --type f --color=never --hidden'
 
 # Load FZF if it is installed
 if [ -f ~/.fzf.bash ]; then
-    # shellcheck source=/dev/null
-    source ~/.fzf.bash
+	# shellcheck source=/dev/null
+	source ~/.fzf.bash
 fi
 
 # Set the SSH key password
 export SSHPASS=
-
+# Restore pywall settings
+wal -R
 # Export wal colors to use in scripts
 source "$HOME/.cache/wal/colors.sh"
 
 # Apply pywal changes in new sessions
-(cat ~/.cache/wal/sequences &) > /dev/null
+(cat ~/.cache/wal/sequences &) >/dev/null
 
 # Set "bat" as the man pager if available
-if command -v bat &> /dev/null; then
-    export MANPAGER="sh -c 'less -R | bat -l man -p'"
+if command -v bat &>/dev/null; then
+	export MANPAGER="sh -c 'less -R | bat -l man -p'"
 fi
 
 # Set Vi Mode and key bindings
 set -o vi
-bind -m vi-command 'Control-l: clear-screen'
-bind -m vi-insert 'Control-l: clear-screen'
+# Fix zsh errors when reloading bashrc
+if [ -n "$BASH_VERSION" ]; then
+	bind -m vi-command 'Control-l: clear-screen'
+	bind -m vi-insert 'Control-l: clear-screen'
+fi
 
 # Set XDG_SESSION_TYPE for dm-note
 export XDG_SESSION_TYPE="x11"
 
-
 # Set the XDG directories
-if [ hostname == "msi" ];then
+if [[ $(hostname) == "msi" ]]; then
 
-export XDG_CONFIG_HOME=~/.config
-export XDG_DOCUMENTS_DIR=/mnt/sata/Documents
-export XDG_MUSIC_DIR=/mnt/sata/Music
-export XDG_PICTURES_DIR=/mnt/sata/Pictures
-export XDG_DOWNLOAD_DIR=/mnt/sata/Downloads
-export XDG_VIDEOS_DIR=/mnt/sata/Movies
+	export XDG_CONFIG_HOME=~/.config
+	export XDG_DOCUMENTS_DIR=/mnt/sata/Documents
+	export XDG_MUSIC_DIR=/mnt/sata/Music
+	export XDG_PICTURES_DIR=/mnt/sata/Pictures
+	export XDG_DOWNLOAD_DIR=/mnt/sata/Downloads
+	export XDG_VIDEOS_DIR=/mnt/sata/Movies
 else
 
-export XDG_CONFIG_HOME=~/.config
-export XDG_DOCUMENTS_DIR=~/Documents
-export XDG_MUSIC_DIR=~/Music
-export XDG_PICTURES_DIR=~/Pictures
-export XDG_DOWNLOAD_DIR=~/Downloads
-export XDG_VIDEOS_DIR=~/Movies
+	export XDG_CONFIG_HOME=~/.config
+	export XDG_DOCUMENTS_DIR=~/Documents
+	export XDG_MUSIC_DIR=~/Music
+	export XDG_PICTURES_DIR=~/Pictures
+	export XDG_DOWNLOAD_DIR=~/Downloads
+	export XDG_VIDEOS_DIR=~/Movies
 fi
 
 # Disable touchpad for MSI
@@ -112,4 +116,3 @@ fi
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
-. "$HOME/.cargo/env"
