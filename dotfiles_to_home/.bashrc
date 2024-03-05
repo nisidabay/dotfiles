@@ -67,7 +67,7 @@ fi
 # Set the SSH key password
 export SSHPASS=
 # Restore pywall settings
-wal -R
+wal -R >/dev/null
 # Export wal colors to use in scripts
 source "$HOME/.cache/wal/colors.sh"
 
