@@ -116,7 +116,6 @@ set statusline="  Hint: %z%= %A %10u:%-7g %15s %20d  "
 mark b ~/bin/
 mark c ~/.config/vifm/
 mark d ~/Downloads/
-mark e /run/media/nisidabay
 mark h ~/
 mark m /media/
 mark n ~/.config/nvim/
@@ -530,9 +529,9 @@ nnoremap <f8> :delete<cr>
 
 " Midnight commander alike mappings
 " Open current directory in the other pane
-nnoremap <a-i> :sync<cr>
+nnoremap <c-i> :sync<cr>
 " Open directory under cursor in the other pane
-nnoremap <a-o> :sync %c<cr>
+nnoremap <c-o> :sync %c<cr>
 " Swap panes
 nnoremap <c-u> <c-w>x
 
