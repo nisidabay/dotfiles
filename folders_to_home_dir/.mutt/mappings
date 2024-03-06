@@ -1,5 +1,26 @@
+# Mouse wheel shortcuts
+bind index \031 previous-undeleted
+bind index \005 next-undeleted
 
-# General rebindings
+# Email completion bindings
+bind editor ^T complete
+
+# Add email to abook
+macro index,pager \ca '| pee "abook --add-email-quiet" "cat -"' "Add email to Abook "
+
+# Open abook 
+# macro index,pager A "<shell-escape>abook<enter>" "Open abook address book"
+# macro index,pager a "<shell-escape>abook<enter>" "Open abook address book"
+
+# Get new mail
+macro index O "<shell-escape>offlineimap -o -u quiet >/dev/null 2>&1 &<enter>" "run offlineimap to sync all mail"
+
+# Search mail messages
+macro index \Cf "<enter-command>unset wait_key<enter><shell-escape>printf 'Enter a search term to find with notmuch: '; read x; echo \$x >~/.cache/mutt_terms<enter><limit>~i \"\`notmuch search --output=messages \$(cat ~/.cache/mutt_terms) | head -n 600 | perl -le '@a=<>;s/\^id:// for@a;$,=\"|\";print@a' | perl -le '@a=<>; chomp@a; s/\\+/\\\\+/ for@a;print@a' \`\"<enter>" "show only messages matching a notmuch pattern"
+
+
+
+# # General rebindings
 bind attach <return> view-mailcap
 bind attach l view-mailcap
 bind editor <space> noop
@@ -35,25 +56,4 @@ bind index,pager @ compose-to-sender
 bind index,pager D purge-message
 bind index <space> collapse-thread
 bind index <tab> sync-mailbox
-
-# Mouse wheel shortcuts
-bind index \031 previous-undeleted
-bind index \005 next-undeleted
-
-# Email completion bindings
-bind editor ^T complete
-
-# Add email to abook
-macro index,pager \ca '| pee "abook --add-email-quiet" "cat -"' "Add email to Abook "
-
-# Open abook 
-macro index,pager A "<shell-escape>abook<enter>" "Open abook address book"
-macro index,pager a "<shell-escape>abook<enter>" "Open abook address book"
-
-# Get new mail
-macro index O "<shell-escape>offlineimap -o -u quiet >/dev/null 2>&1 &<enter>" "run offlineimap to sync all mail"
-
-# Search mail messages
-macro index \Cf "<enter-command>unset wait_key<enter><shell-escape>printf 'Enter a search term to find with notmuch: '; read x; echo \$x >~/.cache/mutt_terms<enter><limit>~i \"\`notmuch search --output=messages \$(cat ~/.cache/mutt_terms) | head -n 600 | perl -le '@a=<>;s/\^id:// for@a;$,=\"|\";print@a' | perl -le '@a=<>; chomp@a; s/\\+/\\\\+/ for@a;print@a' \`\"<enter>" "show only messages matching a notmuch pattern"
-
 
