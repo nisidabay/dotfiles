@@ -20,17 +20,18 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'google/vim-maktaba'
 
 "------------------------------------------------------------------------------
+" Vimwiki
+Plugin 'vimwiki/vimwiki'
+
+"------------------------------------------------------------------------------
 " codefmt is a utility for syntax-aware code formatting. It contains several 
 " built-in formatters, and allows new formatters to be registered by other plugins.
 Plugin 'google/vim-codefmt'
-
+"Use :FormatLines to format a range of lines or use :FormatCode to format the en
+"tire buffer. Use :NoAutoFormatBuffer to disable current buffer formatting.
 "------------------------------------------------------------------------------
 " Glaive is a utility for configuring maktaba plugins.
 Plugin 'google/vim-glaive'
-
-"------------------------------------------------------------------------------
-" Saves and restores the state of the NERDTree between sessions.
-Plugin 'scrooloose/nerdtree'
 
 "------------------------------------------------------------------------------
 " A nice statusline at the bottom of each vim window.
@@ -79,7 +80,12 @@ Plugin 'mattn/calendar-vim'
 
 "------------------------------------------------------------------------------
 " C Syntax Highlighting Extension for Vim.
-"Plugin 'https://github.com/NLKNguyen/c-syntax.vim'
+Plugin 'https://github.com/NLKNguyen/c-syntax.vim'
+
+"------------------------------------------------------------------------------
+"Format C code
+"On mac run: brew install clang-format
+Plugin 'rhysd/vim-clang-format'
 
 "------------------------------------------------------------------------------
 "This s plugin highlights code by indentation level instead of language syntax.
@@ -114,6 +120,10 @@ Plugin 'vim-autoformat/vim-autoformat'
 "Plugin for navigating between vim and tmux panes
 "------------------------------------------------------------------------------ 
 Plugin 'christoomey/vim-tmux-navigator'
+
+"Plugin for marking TODO, FIXME, etc
+"------------------------------------------------------------------------------ 
+Plugin 'wsdjeg/vim-todo'
 call vundle#end()
 "------------------------------------------------------------------------------ 
 
@@ -128,31 +138,26 @@ call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
 "------------------------------------------------------------------------------
 " Declare the list of themes.
 
-Plug 'dracula/vim', { 'as': 'dracula' }
+"Plug 'dracula/vim', { 'as': 'dracula' }
 "Plug 'KeitaNakamura/neodark.vim' "neodark
 "Plug 'NLKNguyen/paperolor-theme' "PaperColor
 "Plug 'bluz71/vim-nightfly-colors', { 'as': 'nightfly' }
 "Plug 'dunstontc/vim-vscode-theme' "dark_plus
 "Plug 'arcticicestudio/nord-vim' "nord
-" Plug 'sainnhe/everforest'
 " catppuccin colorscheme
 "Plug 'catppuccin/vim', { 'as': 'catppuccin' }
+Plug 'sainnhe/everforest'
 
 "------------------------------------------------------------------------------
 " Minimap
 " Plug 'wfxr/minimap.vim'
 
 "------------------------------------------------------------------------------
-" Vimwiki
-Plug 'vimwiki/vimwiki'
-
+" Saves and restores the state of the NERDTree between sessions.
+Plug 'scrooloose/nerdtree',{'on': 'NERDTreeToggle' }
 "------------------------------------------------------------------------------
 " Code completion
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
-"------------------------------------------------------------------------------
-" Load UltiSnips when editing bash files
-Plug 'neoclide/coc-snippets'
 
 "------------------------------------------------------------------------------
 " UltiSnips is the ultimate solution for snippets in Vim. It has many features,
@@ -199,6 +204,7 @@ Plug 'tmhedberg/SimpylFold'
 " Shell formater
 Plug 'z0mbix/vim-shfmt', { 'for': 'sh' }
 
+"------------------------------------------------------------------------------
 " gitgutter
 Plug 'airblade/vim-gitgutter'
 
@@ -225,7 +231,7 @@ let g:gitgutter_map_keys = 0
 
 
 " Airline plugin
-let g:airline_statusline_ontop=1
+let g:airline_statusline_ontop=0
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
@@ -233,6 +239,7 @@ let g:airline#extensions#tabline#formatter = 'default'
 let g:airline#extensions#wordcount#enabled = 1
 let g:airline#extensions#hunks#no_zero_only = 1
 let g:airline_powerline_fonts = 1 
+let g:airline_theme = 'everforest'
 
 " Color scheme
 "set t_Co=256   " This is may or may not needed.
@@ -241,20 +248,22 @@ if has('termguicolors')
 endif
 "
 " Set color scheme
-" set background=dark
+set background=dark
             
 " Set contrast.
 " This configuration option should be placed before `colorscheme everforest`.
 " Available values: 'hard', 'medium'(default), 'soft'
-" let g:everforest_background = 'hard'
+let g:everforest_background = 'medium'
 " For better performance
-" let g:everforest_better_performance = 1
+let g:everforest_better_performance = 1
 
-colorscheme dracula
-"let g:airline_theme = 'dracula'
+colorscheme everforest
 
 " Make background transparent
-highlight Normal guibg=NONE ctermbg=NONE
+"highlight Normal guibg=NONE ctermbg=NONE
+" Show linenumbers in WHITE
+highlight LineNr guifg=#FFFFFF
+highlight CursorLineNr guifg=#6ae847
 " Font
 set guifont=Maple:h14
 
@@ -292,7 +301,7 @@ let g:indentLine_char = '│'
 "------------------------------------------------------------------------------
 " codefmt plugin
 augroup autoformat_settings
-autocmd FileType c,cpp,proto,javascript,python3 AutoFormatBuffer clang-format
+autocmd FileType c,cpp,proto,javascript,python3,shfmt AutoFormatBuffer clang-format
 autocmd FileType python AutoFormatBuffer black
 "autocmd FileType python AutoFormatBuffer yapf
 augroup END
@@ -387,26 +396,6 @@ let g:fzf_colors =
   \ 'spinner': ['fg', 'Label'],
   \ 'header':  ['fg', 'Comment'] }
 
-" FZF mappings for various fzf.vim features
-nnoremap <silent> <leader>ff :FzfFiles<CR>
-"Buffers
-nnoremap <silent> <leader>fb :FzfBuffers<CR> 
-"Docstrings
-nnoremap <silent> <leader>fl :FzfLines<CR> 
-"Tags
-nnoremap <silent> <leader>ft :FzfTags<CR> 
-"Tags in buffers
-nnoremap <silent> <leader>fT :FzfBTags<CR> 
-"History
-noremap <silent> <leader>fh :FzfHistory:<CR> 
-"Git files
-nnoremap <silent> <leader>fg :FzfGFiles<CR> 
-"Ripgrep
-nnoremap <silent> <leader>rg :FzfRg<CR> 
-"Marks
-nnoremap <silent> <leader>fm :FzfMarks<CR> 
-"Maps
-nnoremap <silent> <leader>fM :FzfMaps<CR> 
 "------------------------------------------------------------------------------
 " Finding files
 " Search down into subfolders from $HOME
@@ -434,5 +423,7 @@ let g:netrw_altv=1         " open splits to the right
 let g:netrw_liststyle=3     " tree view
 let g:netrw_list_hide=netrw_gitignore#Hide()
 let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
-    "------------------------------------------------------------------------------
+"------------------------------------------------------------------------------
 
+" Save shell scripts on exit
+let g:shfmt_fmt_on_save = 1

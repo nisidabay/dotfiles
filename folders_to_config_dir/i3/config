@@ -103,6 +103,9 @@ exec --no-startup-id dunst
 set $term kitty
 bindsym $mod+Return exec $term
 
+# Load wallpaper
+exec $term -e ~/.config/i3/scripts/sb-load_image.sh
+
 # Kill focused window
 bindsym $mod+c kill
 
@@ -208,26 +211,26 @@ mode "resize" {
 # bindsym XF86AudioMute exec amixer -c 0 sset Master 0% && notify-send "MUTE"
 
 # Increase volume
-bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -q set Master 5%+ unmute
+#bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -q set Master 5%+ unmute
 
 # Decrease volume
-bindsym XF86AudioLowerVolume exec --no-startup-id amixer -q set Master 5%- unmute
+#bindsym XF86AudioLowerVolume exec --no-startup-id amixer -q set Master 5%- unmute
 
 # Toggle mute
-bindsym XF86AudioMute exec --no-startup-id amixer -q set Master toggle
+#bindsym XF86AudioMute exec --no-startup-id amixer -q set Master toggle
 ################
 ## App shortcuts
 ################
 
 # $mod + letter
 bindsym $mod+n exec /usr/bin/thunar
-bindsym $mod+Shift+v exec st sh -c "vim"
-bindsym $mod+Ctrl+v exec st sh -c "vifm"
+bindsym $mod+Shift+v exec $term sh -c "vim"
+bindsym $mod+Ctrl+v exec $term sh -c "vifm"
 bindsym $mod+w exec /usr/bin/firedragon
 bindsym $mod+o exec /usr/bin/opera
 bindsym $mod+x exec $term -e cmus 
 bindsym $mod+Shift+t exec /usr/bin/tor-browser-en
-#bindsym $mod+m exec $term -e neomutt
+bindsym $mod+m exec $term -e neomutt
 ##bindsym $mod+m exec xfce4-terminal -e neomutt
 
 bindsym F12 exec "scrot ~/%Y-%m-%d-%T-screenshot.png" exec notify-send "Snapshot taken"
@@ -264,6 +267,7 @@ for_window [class="^.*"] title_format ""
 
 #assign [class=(?i)$term] $ws1
 assign [class=(?i)firefox] $ws2
+assign [class=(?i)firedragon] $ws2
 assign [class=(?i)opera] $ws2
 assign [class="Tor Browser"] $ws2
 assign [class=(?i)thunar] $ws3 

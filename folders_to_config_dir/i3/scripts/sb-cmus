@@ -3,7 +3,7 @@
 # A dwm_bar function that shows the current artist, track, position, duration, and status from cmus
 # Joe Standring <git@joestandring.com>
 # GNU GPLv3
-
+TERMINAL="alacritty"
 # Dependencies: cmus
 if  ! command -v cmus >/dev/null 2>&1; then
     echo "cmus not installed"
@@ -40,7 +40,7 @@ dwm_cmus () {
 
 
 case $BLOCK_BUTTON in
-    1) "$TERMINAL" -e cmus ;;  
+    1) setsid -f "$TERMINAL" -e cmus ;;  
     2) pgrep cmus | xargs kill;;
 	3) notify-send "🎵 Music module" "\- Shows cmus song playing.
 - Left click opens cmus.
