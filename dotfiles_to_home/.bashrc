@@ -1,9 +1,35 @@
-#!/bin/bash
+#    _               _
+#   | |__   __ _ ___| |__  _ __ ___
+#   | '_ \ / _` / __| '_ \| '__/ __|
+#  _| |_) | (_| \__ \ | | | | | (__
+# (_)_.__/ \__,_|___/_| |_|_|  \___|
 #
+# by Stephan Raabe (2023)
+# -----------------------------------------------------
+# ~/.bashrc
+# -----------------------------------------------------
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+# -----------------------------------------------------
+# PFETCH if on wm
+# -----------------------------------------------------
+echo ""
+if [[ $(tty) == *"pts"* ]]; then
+	# pfetch
+	# read
+	:
+else
+	if [ -f /bin/qtile ]; then
+		echo "Start Qtile X11 with command Qtile"
+	fi
+	if [ -f /bin/hyprctl ]; then
+		echo "Start Hyprland with command Hyprland"
+	fi
+fi
+
 # Set the editor for Git
 export VISUAL="nvim"
-# Set the fzf menu options
-export FMENU="fzf --border=rounded --margin=5% --color=dark --height 100% --reverse --header=$(basename "$0") --info=hidden --header-first --prompt"
 
 # Set NEOVIM PATH
 export NEOVIM="$HOME/.config/nvim/init.lua"
@@ -20,8 +46,6 @@ export PDF_VIEWER="zathura"
 # Set the default web browser
 export DMBROWSER="firefox"
 export BROWSER="firefox"
-
-# DMBROWSER="qutebrowser"
 
 # Set the default terminal emulator
 export TERMINAL="alacritty"
@@ -55,6 +79,11 @@ export HISTFILESIZE=20000
 export HISTTIMEFORMAT="%F %T "
 export CDPATH=$HOME:$HOME/Videos:$HOME/Music:$HOME/Desktop:$HOME:Pictures
 
+# -----------------------------------------------------
+# FZF
+# -----------------------------------------------------
+# Set the fzf menu options
+export FMENU="fzf --border=rounded --margin=5% --color=dark --height 100% --reverse --header=$(basename "$0") --info=hidden --header-first --prompt"
 # Set the default command for FZF
 export FZF_DEFAULT_COMMAND='fd --type f --color=never --hidden'
 
@@ -64,34 +93,51 @@ if [ -f ~/.fzf.bash ]; then
 	source ~/.fzf.bash
 fi
 
+# -----------------------------------------------------
 # Set the SSH key password
-export SSHPASS=
+# -----------------------------------------------------
+export SSHPASS=Braveheart447
+
+# -----------------------------------------------------
+# PYWAL
+# -----------------------------------------------------
+# Apply pywal changes in new sessions
+(cat ~/.cache/wal/sequences &) >/dev/null
 # Export wal colors to use in scripts
 source "$HOME/.cache/wal/colors.sh"
 
-# Apply pywal changes in new sessions
-(cat ~/.cache/wal/sequences &) >/dev/null
-
 # Restore pywall settings
-wal -R >/dev/null
+"$HOME"/.local/bin/wal -R >/dev/null
 
+# -----------------------------------------------------
 # Set "bat" as the man pager if available
+# -----------------------------------------------------
+
 if command -v bat &>/dev/null; then
 	export MANPAGER="sh -c 'less -R | bat -l man -p'"
 fi
 
+# -----------------------------------------------------
 # Set Vi Mode and key bindings
+# -----------------------------------------------------
 set -o vi
+
+# -----------------------------------------------------
 # Fix zsh errors when reloading bashrc
+# -----------------------------------------------------
 if [ -n "$BASH_VERSION" ]; then
 	bind -m vi-command 'Control-l: clear-screen'
 	bind -m vi-insert 'Control-l: clear-screen'
 fi
 
+# -----------------------------------------------------
 # Set XDG_SESSION_TYPE for dm-note
+# -----------------------------------------------------
 export XDG_SESSION_TYPE="x11"
 
+# -----------------------------------------------------
 # Set the XDG directories
+# -----------------------------------------------------
 if [[ $(hostname) == "msi" ]]; then
 
 	export XDG_CONFIG_HOME=~/.config
@@ -110,10 +156,18 @@ else
 	export XDG_VIDEOS_DIR=~/Movies
 fi
 
+# -----------------------------------------------------
 # Disable touchpad for MSI
 # xinput disable 12
+# -----------------------------------------------------
 
+# -----------------------------------------------------
 # Go configuration
+# -----------------------------------------------------
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
+# -----------------------------------------------------
+# START STARSHIP
+# -----------------------------------------------------
+#eval "$(starship init bash)"
