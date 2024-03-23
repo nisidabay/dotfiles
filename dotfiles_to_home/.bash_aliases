@@ -4,12 +4,12 @@
 
 # Aliases for mac
 if [[ $(uname -s) == "Darwin" ]]; then
-	alias alacritty="echo --- alacrity;~/bin/alacritty.sh"
-	alias cat="echo --- bat; /opt/local/bin/bat"
-	alias ls="echo --- lsd;opt/local/bin/lsd"
+	alias alacritty="~/bin/alacritty.sh"
+	alias cat="/opt/local/bin/bat"
+	alias ls="/opt/local/bin/lsd"
 elif [[ $(uname -s) == "Linux" ]]; then
-	alias cat="echo --- cat;/usr/bin/bat"
-	alias ls="echo --- ls;/usr/bin/lsd"
+	alias cat="/usr/bin/bat"
+	alias ls="/usr/bin/lsd"
 fi
 if [[ $(hostname) == "msi" ]]; then
 
@@ -50,7 +50,7 @@ alias czu="echo --- chezmoi update;chezmoi update"
 alias gaa="echo --- git add;git add -A"
 alias gb="echo --- git branch;git branch"
 alias gbr="echo --- git branch --remote;git branch --remote"
-alias gc='echo --- git commit;commit_each'
+alias gc="echo --- git commit;commit_each"
 alias gca="echo --- git commit --amend;git add --all && git commit --amend --no-edit"
 alias gco="echo --- git checkout;git checkout"
 alias gec="echo --- git edit configuration;git config --global -e"
@@ -79,6 +79,7 @@ alias wtr="echo --- worktree remove;git worktree remove"
 
 # Utils
 alias k="echo --- kill;kill -9"
+alias sh='echo ---take snapshot;grim -g "$(slurp)" - | wl-copy'
 
 # Emacs
 alias e="echo --- emacs client;emacsclient -c -a 'emacs' &"
@@ -526,17 +527,18 @@ function commit_each() {
 
 	# Loop through each file that is staged for commit
 	for file in $(git diff --cached --name-only); do
-		tput setaf 2
-		echo -e "Committing: ${file}"
+		_status=$(git diff --cached --name-status "$file")
+		echo -e "Committing: ${file} with status: $_status"
 		sleep 2
-		tput sgr0
 
 		# Create a temporary file for the commit message
 		TMPFILE=$(mktemp)
 
 		# Open the TMPFILE in Vim and insert the file name at the top
 		${EDITOR:-vim} +"normal iCommitting: $file" "$TMPFILE"
-		commit_msg=$(cat "$TMPFILE")
+		commit_msg=$(cat "${TMPFILE}")
+		echo "$commit_msg"
+		sleep 2
 
 		# Commit the file with the user's message
 		git commit -m "$commit_msg" "$file"
