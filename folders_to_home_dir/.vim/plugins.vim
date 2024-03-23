@@ -16,6 +16,9 @@ Plugin 'VundleVim/Vundle.vim'
 "Plugin 'vim-syntastic/syntastic'
 
 "------------------------------------------------------------------------------
+" Syntax highlight for kotlin
+Plugin 'udalov/kotlin-vim'
+"------------------------------------------------------------------------------
 " Maktaba is a vimscript plugin library. It is designed for plugin authors.
 Plugin 'google/vim-maktaba'
 
@@ -128,13 +131,13 @@ call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
 "------------------------------------------------------------------------------
 " Declare the list of themes.
 
-Plug 'dracula/vim', { 'as': 'dracula' }
+"Plug 'dracula/vim', { 'as': 'dracula' }
 "Plug 'KeitaNakamura/neodark.vim' "neodark
 "Plug 'NLKNguyen/paperolor-theme' "PaperColor
 "Plug 'bluz71/vim-nightfly-colors', { 'as': 'nightfly' }
 "Plug 'dunstontc/vim-vscode-theme' "dark_plus
 "Plug 'arcticicestudio/nord-vim' "nord
-" Plug 'sainnhe/everforest'
+Plug 'sainnhe/everforest'
 " catppuccin colorscheme
 "Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 
@@ -224,7 +227,25 @@ let g:gitgutter_enabled = 1
 let g:gitgutter_map_keys = 0
 
 
+" Color scheme
+"set t_Co=256   " This is may or may not needed.
+if has('termguicolors')
+    set termguicolors
+endif
+"
+" Set contrast.
+" This configuration option should be placed before `colorscheme everforest`.
+" Available values: 'hard', 'medium'(default), 'soft'
+let g:everforest_background = 'soft'
+" For better performance
+let g:everforest_better_performance = 1
+
+" Set color scheme
+colorscheme everforest
+" set background=dark
+
 " Airline plugin
+let g:airline_theme = 'everforest'
 let g:airline_statusline_ontop=1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ' '
@@ -234,24 +255,7 @@ let g:airline#extensions#wordcount#enabled = 1
 let g:airline#extensions#hunks#no_zero_only = 1
 let g:airline_powerline_fonts = 1 
 
-" Color scheme
-"set t_Co=256   " This is may or may not needed.
-if has('termguicolors')
-    set termguicolors
-endif
-"
-" Set color scheme
-" set background=dark
             
-" Set contrast.
-" This configuration option should be placed before `colorscheme everforest`.
-" Available values: 'hard', 'medium'(default), 'soft'
-" let g:everforest_background = 'hard'
-" For better performance
-" let g:everforest_better_performance = 1
-
-colorscheme dracula
-"let g:airline_theme = 'dracula'
 
 " Make background transparent
 highlight Normal guibg=NONE ctermbg=NONE
