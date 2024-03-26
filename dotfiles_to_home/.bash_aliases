@@ -40,6 +40,9 @@ alias la="ls -latr"
 alias ~="cd ~"
 alias bin="echo --- bin;cd ~/bin"
 
+# Virtural Environments
+alias ve="echo --- virtual env; source ~/bin/venv_toogle.sh"
+
 # Chezmoi
 alias cza="echo --- chezmoi add;chezmoi add"
 alias czap="echo --- chezmoi apply;chezmoi -v apply"
