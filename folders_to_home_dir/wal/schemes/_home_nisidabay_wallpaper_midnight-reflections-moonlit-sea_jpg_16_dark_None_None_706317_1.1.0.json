@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/nisidabay/wallpaper/midnight-reflections-moonlit-sea.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#030306",
+        "foreground": "#c0c0c0",
+        "cursor": "#c0c0c0"
+    },
+    "colors": {
+        "color0": "#030306",
+        "color1": "#302e4f",
+        "color2": "#7c3250",
+        "color3": "#24446c",
+        "color4": "#45426e",
+        "color5": "#773f72",
+        "color6": "#934771",
+        "color7": "#818182",
+        "color8": "#424244",
+        "color9": "#403E6A",
+        "color10": "#A6436B",
+        "color11": "#315B91",
+        "color12": "#5D5893",
+        "color13": "#9F5499",
+        "color14": "#C55F97",
+        "color15": "#c0c0c0"
+    }
+}

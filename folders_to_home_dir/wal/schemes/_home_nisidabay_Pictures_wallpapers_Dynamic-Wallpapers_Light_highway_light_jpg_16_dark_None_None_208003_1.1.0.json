@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/nisidabay/Pictures/wallpapers/Dynamic-Wallpapers/Light/highway_light.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#000001",
+        "foreground": "#bfbfbf",
+        "cursor": "#bfbfbf"
+    },
+    "colors": {
+        "color0": "#000001",
+        "color1": "#5f8190",
+        "color2": "#6d7e80",
+        "color3": "#8d938a",
+        "color4": "#718b93",
+        "color5": "#849ba1",
+        "color6": "#859fa5",
+        "color7": "#7f7f80",
+        "color8": "#3f3f40",
+        "color9": "#7FADC0",
+        "color10": "#92A9AB",
+        "color11": "#BCC4B9",
+        "color12": "#97BAC5",
+        "color13": "#B0CFD7",
+        "color14": "#B2D4DD",
+        "color15": "#bfbfbf"
+    }
+}

@@ -1,0 +1,21 @@
+set $wallpaper /home/nisidabay/Pictures/current_bg_image.png
+
+set $background #050507
+set $foreground #c0c0c1
+
+set $color0 #050507
+set $color1 #3e4236
+set $color2 #943b21
+set $color3 #446557
+set $color4 #9f773f
+set $color5 #155466
+set $color6 #1b7675
+set $color7 #828283
+set $color8 #434345
+set $color9 #535848
+set $color10 #C64F2D
+set $color11 #5B8774
+set $color12 #D59F55
+set $color13 #1D7188
+set $color14 #259E9D
+set $color15 #c0c0c1

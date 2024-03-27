@@ -1,0 +1,23 @@
+" Special
+let wallpaper  = "/home/nisidabay/Pictures/current_bg_image.png"
+let background = "#050507"
+let foreground = "#c0c0c1"
+let cursor     = "#c0c0c1"
+
+" Colors
+let color0  = "#050507"
+let color1  = "#3e4236"
+let color2  = "#943b21"
+let color3  = "#446557"
+let color4  = "#9f773f"
+let color5  = "#155466"
+let color6  = "#1b7675"
+let color7  = "#828283"
+let color8  = "#434345"
+let color9  = "#535848"
+let color10 = "#C64F2D"
+let color11 = "#5B8774"
+let color12 = "#D59F55"
+let color13 = "#1D7188"
+let color14 = "#259E9D"
+let color15 = "#c0c0c1"

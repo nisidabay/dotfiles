@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/nisidabay/wallpaper/lake-sunrise.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#050508",
+        "foreground": "#c0c0c1",
+        "cursor": "#c0c0c1"
+    },
+    "colors": {
+        "color0": "#050508",
+        "color1": "#a84b4b",
+        "color2": "#b56d54",
+        "color3": "#3f4868",
+        "color4": "#8a566c",
+        "color5": "#59627e",
+        "color6": "#7c6884",
+        "color7": "#828283",
+        "color8": "#434345",
+        "color9": "#E06564",
+        "color10": "#F29271",
+        "color11": "#55618B",
+        "color12": "#B97390",
+        "color13": "#7783A9",
+        "color14": "#A68BB1",
+        "color15": "#c0c0c1"
+    }
+}

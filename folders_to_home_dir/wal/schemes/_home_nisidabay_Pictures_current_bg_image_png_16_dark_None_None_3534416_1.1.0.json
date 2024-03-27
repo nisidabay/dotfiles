@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/nisidabay/Pictures/current_bg_image.png",
+    "alpha": "100",
+    "special": {
+        "background": "#07080a",
+        "foreground": "#c1c1c1",
+        "cursor": "#c1c1c1"
+    },
+    "colors": {
+        "color0": "#07080a",
+        "color1": "#005699",
+        "color2": "#376889",
+        "color3": "#166aa2",
+        "color4": "#457da5",
+        "color5": "#7d706a",
+        "color6": "#668bac",
+        "color7": "#838384",
+        "color8": "#454547",
+        "color9": "#0073CD",
+        "color10": "#4A8BB7",
+        "color11": "#1E8ED9",
+        "color12": "#5CA7DD",
+        "color13": "#A7968E",
+        "color14": "#89BAE6",
+        "color15": "#c1c1c1"
+    }
+}

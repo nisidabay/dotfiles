@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/nisidabay/Pictures/wallpapers/Dynamic-Wallpapers/Dark/Dessert-Dark.png",
+    "alpha": "100",
+    "special": {
+        "background": "#010204",
+        "foreground": "#bfbfc0",
+        "cursor": "#bfbfc0"
+    },
+    "colors": {
+        "color0": "#010204",
+        "color1": "#1f2d48",
+        "color2": "#113539",
+        "color3": "#1f3937",
+        "color4": "#153851",
+        "color5": "#19484b",
+        "color6": "#334e42",
+        "color7": "#808081",
+        "color8": "#404142",
+        "color9": "#2A3D61",
+        "color10": "#17474D",
+        "color11": "#2A4D4A",
+        "color12": "#1C4B6C",
+        "color13": "#226165",
+        "color14": "#456859",
+        "color15": "#bfbfc0"
+    }
+}

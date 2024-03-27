@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/nisidabay/wallpaper/liquid1.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#010103",
+        "foreground": "#bfbfc0",
+        "cursor": "#bfbfc0"
+    },
+    "colors": {
+        "color0": "#010103",
+        "color1": "#771c14",
+        "color2": "#a5451b",
+        "color3": "#893933",
+        "color4": "#b1813e",
+        "color5": "#303d74",
+        "color6": "#844b79",
+        "color7": "#808081",
+        "color8": "#404042",
+        "color9": "#9F261B",
+        "color10": "#DC5C24",
+        "color11": "#B74C44",
+        "color12": "#ECAC53",
+        "color13": "#40529B",
+        "color14": "#B164A2",
+        "color15": "#bfbfc0"
+    }
+}
