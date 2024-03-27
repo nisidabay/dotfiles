@@ -1,0 +1,12 @@
+#!/bin/bash
+TERMINAL="alacritty"
+case $BLOCK_BUTTON in
+
+    1) notify-send "💾 Internal disk usage" "$(df -h /dev/sda2 | awk 'NR >1 {print $4}')" ;;
+    2) setsid -f "$TERMINAL" -e ncdu "$HOME";;
+    3) notify-send "💾 Disk module " "\- Shows internal disk usage
+- Click to show internal disk usage.
+- Middle click to open ncdu." ;;
+esac
+
+df -h /dev/sda2 | awk 'NR >1 {print "💾", $4}'
