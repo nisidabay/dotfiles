@@ -1,0 +1,3 @@
+inoremap kj <Esc>
+vnoremap kj <Esc>
+set relativenumber
