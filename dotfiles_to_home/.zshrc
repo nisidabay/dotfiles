@@ -176,3 +176,12 @@ eval "$(zoxide init zsh)"
 autoload -Uz compinit
 zstyle ':completion:*' menu select
 fpath+=~/.zfunc
+
+
+# bun completions
+[ -s "/home/nisidabay/.local/share/reflex/bun/_bun" ] && source "/home/nisidabay/.local/share/reflex/bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.local/share/reflex/bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
