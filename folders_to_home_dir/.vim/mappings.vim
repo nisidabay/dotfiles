@@ -87,8 +87,8 @@ nnoremap <leader>9 yyp<c-v>$r-A<CR><Esc>
 inoremap <leader>9 <Esc>yyp<c-v>$r-A<CR>
 
 " Compile current file
-nnoremap <leader>gc :!gcc -Wall -Wextra -g -std=c11 -omain %<Esc>
-nnoremap <leader>gcn :!gcc -Wall -Wextra -g -std=c11 -omain -lncurses %<Esc>
+nnoremap <leader>gc :!gcc -Wall -Wextra -g -std=c11 -o %< %<.c<CR>
+nnoremap <leader>gcn :!gcc -Wall -Wextra -g -std=c11 -o %< -lncurses %<.c<CR>
 
 " Run python code
 nnoremap <leader>rp :!python3 %<Esc>
@@ -281,6 +281,9 @@ let @l = "080liya0"
 
 " VimwikiRenameFile
 nnoremap <leader>rf :VimwikiRenameFile<esc>
+
+" Insert image in Vimwiki
+command! InsertImage execute "normal! i" . system('~/bin/vimwiki_insert_image.sh')
 
 " python help
 nnoremap <leader>k :<c-u>let save_isk = &iskeyword \|
