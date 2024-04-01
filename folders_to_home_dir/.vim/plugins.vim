@@ -74,7 +74,7 @@ Plugin 'mattn/calendar-vim'
 " This is a vim plugin that provides rust file detection, syntax highlighting, 
 " formatting, syntastic integration, and more. It requires vim 8 or higher for 
 " full functionality. Some things may not work on earlier versions.
-" Plugin 'rust-lang/rust.vim'
+Plugin 'rust-lang/rust.vim'
 "------------------------------------------------------------------------------
 " Highlights Haskell code in GitHub Flavored Markdown, and Literate Haskell
 " documents as Markdown.3
@@ -82,7 +82,7 @@ Plugin 'mattn/calendar-vim'
 
 "------------------------------------------------------------------------------
 " C Syntax Highlighting Extension for Vim.
-"Plugin 'https://github.com/NLKNguyen/c-syntax.vim'
+Plugin 'https://github.com/NLKNguyen/c-syntax.vim'
 
 "------------------------------------------------------------------------------
 "This s plugin highlights code by indentation level instead of language syntax.
@@ -242,7 +242,7 @@ let g:everforest_better_performance = 1
 
 " Set color scheme
 colorscheme everforest
-" set background=dark
+set background=dark
 
 " Airline plugin
 let g:airline_theme = 'everforest'
@@ -258,7 +258,7 @@ let g:airline_powerline_fonts = 1
             
 
 " Make background transparent
-highlight Normal guibg=NONE ctermbg=NONE
+" highlight Normal guibg=NONE ctermbg=NONE
 " Font
 set guifont=Maple:h14
 
