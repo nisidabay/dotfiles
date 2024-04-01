@@ -171,3 +171,4 @@ export PATH=$PATH:$GOPATH/bin
 # START STARSHIP
 # -----------------------------------------------------
 #eval "$(starship init bash)"
+. "$HOME/.cargo/env"
