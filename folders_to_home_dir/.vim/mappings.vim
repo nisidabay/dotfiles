@@ -86,9 +86,15 @@ nnoremap <leader>8 yyp<c-v>$r-A<Esc>yy1kP<Esc>
 nnoremap <leader>9 yyp<c-v>$r-A<CR><Esc>
 inoremap <leader>9 <Esc>yyp<c-v>$r-A<CR>
 
-" Compile current file
+" Compile current C file
 nnoremap <leader>gc :!gcc -Wall -Wextra -g -std=c11 -o %< %<.c<CR>
 nnoremap <leader>gcn :!gcc -Wall -Wextra -g -std=c11 -o %< -lncurses %<.c<CR>
+nnoremap <leader>gcs :!gcc -Wall -Wextra -g -std=c11 -o %< -lsqlite3 %<.c<CR>
+
+" Compile current rust file
+nnoremap <leader>rc :!rustc %<CR>
+" Run rust file
+nnoremap <leader>rr :!./main <CR>
 
 " Run python code
 nnoremap <leader>rp :!python3 %<Esc>
@@ -311,3 +317,5 @@ nnoremap <silent> <leader>fi :CocCommand python.sortImports<CR>
 nmap <silent> [c <plug>(coc-diagnostic-prev)
 nmap <silent> ]c <plug>(coc-diagnostic-next)
 
+" Open term
+nnoremap <leader>t :term<CR>
