@@ -43,6 +43,9 @@ alias bin="echo --- bin;cd ~/bin"
 # Virtural Environments
 alias ve="echo --- virtual env; source ~/bin/venv_toogle.sh"
 
+# Valgrind
+alias vg="echo --- valgrind; valgrind --leack-check=full --show-leak-kinds=all main"
+
 # Chezmoi
 alias cza="echo --- chezmoi add;chezmoi add"
 alias czap="echo --- chezmoi apply;chezmoi -v apply"
