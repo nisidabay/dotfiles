@@ -6,3 +6,6 @@ folders_to_home_dir/.vim/plugged/
 folders_to_home_dir/.vim/undodir/
 folders_to_home_dir/.vim/view/
 folders_to_home_dir/.vim/.netrwhist
+folders_to_home_dir/.vim/lsp/
+folders_to_home_dir/.tmux/plugins/tpm 
+dotfiles_raabe/
