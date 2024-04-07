@@ -63,8 +63,8 @@ export DMEDITOR="${DMTERM} vim"
 export MAILCMD="neomutt"
 
 # Set the default editor
-export EDITOR="nvim"
-export ALTERNATE_EDITOR="vim"
+export EDITOR="vim"
+export ALTERNATE_EDITOR="nvim"
 
 # Set the terminal colors
 export TERM="xterm-256color"
