@@ -562,6 +562,7 @@ if [ -n "$BASH_VERSION" ]; then
 fi
 
 function _mkdir() {
+    # Create a directory
 
 	USAGE="Usage: makedir 'dirname' [octal:permission]"
 	local d="$1"
@@ -579,3 +580,45 @@ function _mkdir() {
 if [ -n "$BASH_VERSION" ]; then
 	export -f _mkdir
 fi
+
+function sr() {
+    # Show resources at ~/bin/python_nuggets_univ/resources 
+    pushd "$(pwd)" || exit
+    cd ~/bin/python_nuggets_univ/resources || exit
+
+    local file
+    local oldIFS="$IFS"
+    IFS=$'\n'
+
+    # Use 'rg' to list files, filtering for PDF and image files, then 'fzf' for interactive selection.
+    file=$(rg --files . | grep -Ei '\.(pdf|jpg|jpeg|png|gif)$' | fzf --header="Type to search for PDFs/Images" --ansi --preview '
+    case {} in
+        *.pdf|*.jpg|*.jpeg|*.png|*.gif) echo "Preview not available for graphical files." ;;
+        *) echo "File type not supported for preview." ;;
+    esac
+    ' --preview-window=right:70%:wrap --reverse)
+
+    IFS="$oldIFS"
+
+    # Determine how to open the file based on its extension.
+    if [[ -n "$file" ]]; then
+        case "$file" in
+            *.pdf)
+                zathura "$file" >/dev/null 2>&1 &
+                ;;
+            *.jpg|*.jpeg|*.png|*.gif)
+                sxiv "$file" >/dev/null 2>&1 &
+                ;;
+            *)
+                echo "File type not supported for viewing."
+                ;;
+        esac
+    fi
+
+    popd >/dev/null || exit
+}
+
+if [ -n "$BASH_VERSION" ]; then
+    export -f sr
+fi
+
