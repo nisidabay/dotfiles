@@ -18,6 +18,9 @@ Plugin 'VundleVim/Vundle.vim'
 "------------------------------------------------------------------------------
 " Syntax highlight for kotlin
 Plugin 'udalov/kotlin-vim'
+" Language Server
+Plugin 'fwcd/kotlin-language-server'
+
 "------------------------------------------------------------------------------
 " Maktaba is a vimscript plugin library. It is designed for plugin authors.
 Plugin 'google/vim-maktaba'
@@ -42,7 +45,7 @@ Plugin 'vim-airline/vim-airline-themes'
 
 "------------------------------------------------------------------------------
 " A light and configurable statusline/tabline plugin for Vim.
-" Plugin 'itchyny/lightline.vim'
+Plugin 'itchyny/lightline.vim' " Enable for rosepine theme"
 "------------------------------------------------------------------------------
 " This plug-in provides automatic closing of quotes, parenthesis, brackets, etc.
 Plugin 'Raimondi/delimitMate'
@@ -75,6 +78,8 @@ Plugin 'mattn/calendar-vim'
 " formatting, syntastic integration, and more. It requires vim 8 or higher for 
 " full functionality. Some things may not work on earlier versions.
 Plugin 'rust-lang/rust.vim'
+" Install rustfmt
+" rustup component add rustfmt
 "------------------------------------------------------------------------------
 " Highlights Haskell code in GitHub Flavored Markdown, and Literate Haskell
 " documents as Markdown.3
@@ -117,6 +122,7 @@ Plugin 'vim-autoformat/vim-autoformat'
 "Plugin for navigating between vim and tmux panes
 "------------------------------------------------------------------------------ 
 Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'rose-pine/vim'
 call vundle#end()
 "------------------------------------------------------------------------------ 
 
@@ -137,7 +143,7 @@ call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
 "Plug 'bluz71/vim-nightfly-colors', { 'as': 'nightfly' }
 "Plug 'dunstontc/vim-vscode-theme' "dark_plus
 "Plug 'arcticicestudio/nord-vim' "nord
-Plug 'sainnhe/everforest'
+"Plug 'sainnhe/everforest'
 " catppuccin colorscheme
 "Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 
@@ -236,24 +242,36 @@ endif
 " Set contrast.
 " This configuration option should be placed before `colorscheme everforest`.
 " Available values: 'hard', 'medium'(default), 'soft'
-let g:everforest_background = 'soft'
+" let g:everforest_background = 'soft'
 " For better performance
-let g:everforest_better_performance = 1
+" let g:everforest_better_performance = 1
 
 " Set color scheme
-colorscheme everforest
+" colorscheme everforest
+colorscheme rosepine "no airline support
 set background=dark
+let g:lightline = {
+      \ 'colorscheme': 'rosepine',
+      \ 'active': {
+      \   'right': [ [ 'lineinfo' ],
+      \              [ 'percent' ],
+      \              [ 'fileformat', 'fileencoding', 'filetype', 'charvaluehex' ] ]
+      \ },
+      \ 'component': {
+      \   'charvaluehex': '0x%B'
+      \ },
+      \ }
 
-" Airline plugin
-let g:airline_theme = 'everforest'
-let g:airline_statusline_ontop=1
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#left_sep = ' '
-let g:airline#extensions#tabline#left_alt_sep = '|'
-let g:airline#extensions#tabline#formatter = 'default'
-let g:airline#extensions#wordcount#enabled = 1
-let g:airline#extensions#hunks#no_zero_only = 1
-let g:airline_powerline_fonts = 1 
+" Airline plugin - ENABLE THIS FOR everforest and comment out lightline
+" let g:airline_theme = 'everforest'
+" let g:airline_statusline_ontop=1
+" let g:airline#extensions#tabline#enabled = 1
+" let g:airline#extensions#tabline#left_sep = ' '
+" let g:airline#extensions#tabline#left_alt_sep = '|'
+" let g:airline#extensions#tabline#formatter = 'default'
+" let g:airline#extensions#wordcount#enabled = 1
+" let g:airline#extensions#hunks#no_zero_only = 1
+" let g:airline_powerline_fonts = 1 
 
             
 
@@ -438,5 +456,13 @@ let g:netrw_altv=1         " open splits to the right
 let g:netrw_liststyle=3     " tree view
 let g:netrw_list_hide=netrw_gitignore#Hide()
 let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
-    "------------------------------------------------------------------------------
+"------------------------------------------------------------------------------
+" Kotlin language server
+autocmd BufReadPost *.kt setlocal filetype=kotlin
 
+let g:LanguageClient_serverCommands = {
+    \ 'kotlin': ["kotlin-language-server"],
+    \ }
+"------------------------------------------------------------------------------
+" Autoformat rust
+let g:rustfmt_autosave = 1
