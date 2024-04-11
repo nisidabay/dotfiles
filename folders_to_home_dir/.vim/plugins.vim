@@ -45,8 +45,8 @@ Plugin 'vim-airline/vim-airline-themes'
 
 "------------------------------------------------------------------------------
 " A light and configurable statusline/tabline plugin for Vim.
-Plugin 'itchyny/lightline.vim' " Enable for rosepine theme"
-"------------------------------------------------------------------------------
+"Plugin 'itchyny/lightline.vim' " Enable for rosepine theme"
+""------------------------------------------------------------------------------
 " This plug-in provides automatic closing of quotes, parenthesis, brackets, etc.
 Plugin 'Raimondi/delimitMate'
 
@@ -112,7 +112,7 @@ Plugin 'kshenoy/vim-signature'
 
 "------------------------------------------------------------------------------ 
 " gruvbox colorscheme
-"Plugin 'morhetz/gruvbox'
+Plugin 'morhetz/gruvbox'
 
 
 "Plugin for formatting code
@@ -122,7 +122,7 @@ Plugin 'vim-autoformat/vim-autoformat'
 "Plugin for navigating between vim and tmux panes
 "------------------------------------------------------------------------------ 
 Plugin 'christoomey/vim-tmux-navigator'
-Plugin 'rose-pine/vim'
+" Plugin 'rose-pine/vim'
 call vundle#end()
 "------------------------------------------------------------------------------ 
 
@@ -145,7 +145,7 @@ call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
 "Plug 'arcticicestudio/nord-vim' "nord
 "Plug 'sainnhe/everforest'
 " catppuccin colorscheme
-"Plug 'catppuccin/vim', { 'as': 'catppuccin' }
+Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 "------------------------------------------------------------------------------
 " Minimap
 " Plug 'wfxr/minimap.vim'
@@ -248,30 +248,31 @@ endif
 " Set color scheme
 " colorscheme everforest
 " colorscheme rosepine "no airline support
+
 set background=dark
-colorscheme rosepine
-let g:lightline = {
-      \ 'colorscheme': 'rosepine',
-      \ 'active': {
-      \   'right': [ [ 'lineinfo' ],
-      \              [ 'percent' ],
-      \              [ 'fileformat', 'fileencoding', 'filetype', 'charvaluehex' ] ]
-      \ },
-      \ 'component': {
-      \   'charvaluehex': '0x%B'
-      \ },
-      \ }
+colorscheme catppuccin_mocha
+" let g:lightline = {
+"       \ 'colorscheme': 'rosepine',
+"       \ 'active': {
+"       \   'right': [ [ 'lineinfo' ],
+"       \              [ 'percent' ],
+"       \              [ 'fileformat', 'fileencoding', 'filetype', 'charvaluehex' ] ]
+"       \ },
+"       \ 'component': {
+"       \   'charvaluehex': '0x%B'
+"       \ },
+"       \ }
 
 " Airline plugin - ENABLE THIS FOR everforest and comment out lightline
-" let g:airline_theme ='everforest'
-" let g:airline_statusline_ontop=1
-" let g:airline#extensions#tabline#enabled = 1
-" let g:airline#extensions#tabline#left_sep = ' '
-" let g:airline#extensions#tabline#left_alt_sep = '|'
-" let g:airline#extensions#tabline#formatter = 'default'
-" let g:airline#extensions#wordcount#enabled = 1
-" let g:airline#extensions#hunks#no_zero_only = 1
-" let g:airline_powerline_fonts = 1 
+let g:airline_theme ='catppuccin_mocha'
+let g:airline_statusline_ontop=1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = '|'
+let g:airline#extensions#tabline#formatter = 'default'
+let g:airline#extensions#wordcount#enabled = 1
+let g:airline#extensions#hunks#no_zero_only = 1
+let g:airline_powerline_fonts = 1 
 
             
 
