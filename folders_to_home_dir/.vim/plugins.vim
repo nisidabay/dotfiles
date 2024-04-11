@@ -146,7 +146,6 @@ call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
 "Plug 'sainnhe/everforest'
 " catppuccin colorscheme
 "Plug 'catppuccin/vim', { 'as': 'catppuccin' }
-
 "------------------------------------------------------------------------------
 " Minimap
 " Plug 'wfxr/minimap.vim'
@@ -248,8 +247,9 @@ endif
 
 " Set color scheme
 " colorscheme everforest
-colorscheme rosepine "no airline support
+" colorscheme rosepine "no airline support
 set background=dark
+colorscheme rosepine
 let g:lightline = {
       \ 'colorscheme': 'rosepine',
       \ 'active': {
@@ -263,7 +263,7 @@ let g:lightline = {
       \ }
 
 " Airline plugin - ENABLE THIS FOR everforest and comment out lightline
-" let g:airline_theme = 'everforest'
+" let g:airline_theme ='everforest'
 " let g:airline_statusline_ontop=1
 " let g:airline#extensions#tabline#enabled = 1
 " let g:airline#extensions#tabline#left_sep = ' '
