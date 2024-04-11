@@ -6,8 +6,12 @@ let mapleader = "\<Space>"
 
 " Termwinkey
 " Move from terminal to window
-" C-t k
+" Example: C-t k
 set termwinkey=<C-T>
+" Open term
+nnoremap <leader>t :term<CR>
+" Switch from terminal mode to normal mode
+tnoremap <C-x> <C-\><C-n>
 "
 " InstantMarkdownPreview
 map <leader>md :InstantMarkdownPreview<CR>
@@ -288,14 +292,12 @@ let @l = "080liya0"
 " VimwikiRenameFile
 nnoremap <leader>rf :VimwikiRenameFile<esc>
 
-" Insert image in Vimwiki
-command! InsertImage execute "normal! i" . system('~/bin/vimwiki_insert_image.sh')
-
 " python help
 nnoremap <leader>k :<c-u>let save_isk = &iskeyword \|
 \ set iskeyword+=. \|
 \ execute "!pydoc3 " . expand("<cword>") \|
 \ let &iskeyword = save_isk<cr>
+"
 " search related docsets
 nnoremap <silent> <Leader>K :call Dasht(dasht#cursor_search_terms())<Return>
 
@@ -317,5 +319,4 @@ nnoremap <silent> <leader>fi :CocCommand python.sortImports<CR>
 nmap <silent> [c <plug>(coc-diagnostic-prev)
 nmap <silent> ]c <plug>(coc-diagnostic-next)
 
-" Open term
-nnoremap <leader>t :term<CR>
+
