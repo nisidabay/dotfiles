@@ -19,6 +19,11 @@
     "go.goplsOptions": {
     "completeUnimported": true
     },
+    "kotlin": {
+        "command": "/home/nisidabay/.vim/lsp/server/bin/kotlin-language-server",
+        "filetypes": ["kotlin"]
+    },
+
     "sourcery": {
       "command": "/home/nisidabay/.local/bin/sourcery",
       "args": [
