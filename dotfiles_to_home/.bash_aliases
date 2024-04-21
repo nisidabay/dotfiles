@@ -539,8 +539,7 @@ function commit_each() {
             echo 'Aborting'
             continue
         else
-            gum spin --title 'Committing file' -- sleep 2
-            echo
+            gum style --bold "Committing file" --background="#be2596"  
         fi
 
 		# Create a temporary file for the commit message
@@ -559,7 +558,7 @@ function commit_each() {
 	done
 
 	if [ "$(git diff --cached --name-only | wc -l)" -eq 0 ]; then
-		echo "All files committed."
+        gum style --bold "All files commited" --background="#be2596"  
 	fi
 }
 
