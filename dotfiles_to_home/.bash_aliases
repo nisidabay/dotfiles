@@ -539,7 +539,8 @@ function commit_each() {
             echo 'Aborting'
             continue
         else
-            echo 'Committing file'
+            gum spin --title 'Committing file' -- sleep 2
+            echo
         fi
 
 		# Create a temporary file for the commit message
