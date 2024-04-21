@@ -535,7 +535,12 @@ function commit_each() {
 	for file in $(git diff --cached --name-only); do
 		_status=$(git diff --cached --name-status "$file")
 		echo -e "Committing: ${file} with status: $_status"
-		sleep 2
+        if ! gum confirm; then
+            echo 'Aborting'
+            continue
+        else
+            echo 'Committing file'
+        fi
 
 		# Create a temporary file for the commit message
 		TMPFILE=$(mktemp)
@@ -569,11 +574,12 @@ function _mkdir() {
 	local p=${2:-0755}
 
 	[ $# -eq 0 ] && {
-		echo $USAGE
+		echo "$USAGE"
 		exit 1
 	}
 
 	[ ! -d "$d" ] && mkdir -v -m "$p" -p "$d"
+    cd "$d" || exit
 
 }
 
