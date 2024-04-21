@@ -540,6 +540,7 @@ function commit_each() {
             continue
         else
             gum style --bold "Committing file" --background="#be2596"  
+            sleep 2
         fi
 
 		# Create a temporary file for the commit message
