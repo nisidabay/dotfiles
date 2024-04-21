@@ -534,12 +534,12 @@ function commit_each() {
 	# Loop through each file that is staged for commit
 	for file in $(git diff --cached --name-only); do
 		_status=$(git diff --cached --name-status "$file")
-		echo -e "Committing: ${file} with status: $_status"
+		echo -e "File to commit: ${file} with status: $_status"
         if ! gum confirm; then
             echo 'Aborting'
             continue
         else
-            gum style --bold "Committing file" --background="#be2596"  
+            gum style --bold "Add the commit message" --background="#be2596"  
             sleep 2
         fi
 
