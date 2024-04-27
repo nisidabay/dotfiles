@@ -92,8 +92,10 @@ inoremap <leader>9 <Esc>yyp<c-v>$r-A<CR>
 
 " Compile current C file
 nnoremap <leader>gc :!gcc -Wall -Wextra -g -std=c11 -o %< %<.c<CR>
+nnoremap <leader>gcp :!g++ -Wall -Wextra -g -std=c++17 -o %< %<.cpp<CR>
 nnoremap <leader>gcn :!gcc -Wall -Wextra -g -std=c11 -o %< -lncurses %<.c<CR>
 nnoremap <leader>gcs :!gcc -Wall -Wextra -g -std=c11 -o %< -lsqlite3 %<.c<CR>
+nnoremap <leader>cf :%!clang-format<CR>
 
 " Compile current rust file
 nnoremap <leader>rc :!rustc %<CR>
@@ -316,7 +318,10 @@ nnoremap <silent> <leader>cf <plug>(coc-codeaction-cursor)
 nnoremap <silent> <leader>ca <plug>(coc-fix-current)
 nnoremap <silent> <leader>fi :CocCommand python.sortImports<CR>
 
+" diagnostic
 nmap <silent> [c <plug>(coc-diagnostic-prev)
 nmap <silent> ]c <plug>(coc-diagnostic-next)
 
+" show jumps
+nnoremap <leader>sj :jumps<esc>
 
