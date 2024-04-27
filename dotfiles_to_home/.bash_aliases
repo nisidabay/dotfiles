@@ -534,7 +534,9 @@ function commit_each() {
 	# Loop through each file that is staged for commit
 	for file in $(git diff --cached --name-only); do
 		_status=$(git diff --cached --name-status "$file")
-		echo -e "File to commit: ${file} with status: $_status"
+
+        #gum style --bold  "$(echo "File to commit ${file} with status: $_status")" --background="#2596be"
+        gum style --bold  "$(echo "File to commit with status: ${_status}")" --background="#2596be"
         if ! gum confirm; then
             echo 'Aborting'
             continue
@@ -549,7 +551,7 @@ function commit_each() {
 		# Open the TMPFILE in Vim and insert the file name at the top
 		${EDITOR:-vim} +"normal iCommitting: $file" "$TMPFILE"
 		commit_msg=$(cat "${TMPFILE}")
-		echo "$commit_msg"
+		#echo "$commit_msg"
 		sleep 2
 
 		# Commit the file with the user's message
