@@ -20,7 +20,6 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'udalov/kotlin-vim'
 " Language Server
 Plugin 'fwcd/kotlin-language-server'
-
 "------------------------------------------------------------------------------
 " Maktaba is a vimscript plugin library. It is designed for plugin authors.
 Plugin 'google/vim-maktaba'
@@ -45,8 +44,8 @@ Plugin 'vim-airline/vim-airline-themes'
 
 "------------------------------------------------------------------------------
 " A light and configurable statusline/tabline plugin for Vim.
-"Plugin 'itchyny/lightline.vim' " Enable for rosepine theme"
-""------------------------------------------------------------------------------
+" Plugin 'itchyny/lightline.vim'
+"------------------------------------------------------------------------------
 " This plug-in provides automatic closing of quotes, parenthesis, brackets, etc.
 Plugin 'Raimondi/delimitMate'
 
@@ -90,6 +89,11 @@ Plugin 'rust-lang/rust.vim'
 Plugin 'https://github.com/NLKNguyen/c-syntax.vim'
 
 "------------------------------------------------------------------------------
+"Format C code
+"On mac run: brew install clang-format
+Plugin 'rhysd/vim-clang-format'
+
+"------------------------------------------------------------------------------
 "This s plugin highlights code by indentation level instead of language syntax.
 "It is specially useful when dealing with deeply nested code or callback hells.
 :"Plugin 'thiagoalessio/rainbow_levels.vim'
@@ -112,7 +116,7 @@ Plugin 'kshenoy/vim-signature'
 
 "------------------------------------------------------------------------------ 
 " gruvbox colorscheme
-Plugin 'morhetz/gruvbox'
+"Plugin 'morhetz/gruvbox'
 
 
 "Plugin for formatting code
@@ -122,7 +126,7 @@ Plugin 'vim-autoformat/vim-autoformat'
 "Plugin for navigating between vim and tmux panes
 "------------------------------------------------------------------------------ 
 Plugin 'christoomey/vim-tmux-navigator'
-" Plugin 'rose-pine/vim'
+
 call vundle#end()
 "------------------------------------------------------------------------------ 
 
@@ -137,14 +141,13 @@ call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
 "------------------------------------------------------------------------------
 " Declare the list of themes.
 
-"Plug 'dracula/vim', { 'as': 'dracula' }
+" Plug 'dracula/vim', { 'as': 'dracula' }
 "Plug 'KeitaNakamura/neodark.vim' "neodark
 "Plug 'NLKNguyen/paperolor-theme' "PaperColor
 "Plug 'bluz71/vim-nightfly-colors', { 'as': 'nightfly' }
 "Plug 'dunstontc/vim-vscode-theme' "dark_plus
 "Plug 'arcticicestudio/nord-vim' "nord
 "Plug 'sainnhe/everforest'
-" catppuccin colorscheme
 Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 "------------------------------------------------------------------------------
 " Minimap
@@ -207,6 +210,7 @@ Plug 'tmhedberg/SimpylFold'
 " Shell formater
 Plug 'z0mbix/vim-shfmt', { 'for': 'sh' }
 
+"------------------------------------------------------------------------------
 " gitgutter
 Plug 'airblade/vim-gitgutter'
 
@@ -232,40 +236,8 @@ let g:gitgutter_enabled = 1
 let g:gitgutter_map_keys = 0
 
 
-" Color scheme
-"set t_Co=256   " This is may or may not needed.
-if has('termguicolors')
-    set termguicolors
-endif
-"
-" Set contrast.
-" This configuration option should be placed before `colorscheme everforest`.
-" Available values: 'hard', 'medium'(default), 'soft'
-" let g:everforest_background = 'soft'
-" For better performance
-" let g:everforest_better_performance = 1
-
-" Set color scheme
-" colorscheme everforest
-" colorscheme rosepine "no airline support
-
-set background=dark
-colorscheme catppuccin_mocha
-" let g:lightline = {
-"       \ 'colorscheme': 'rosepine',
-"       \ 'active': {
-"       \   'right': [ [ 'lineinfo' ],
-"       \              [ 'percent' ],
-"       \              [ 'fileformat', 'fileencoding', 'filetype', 'charvaluehex' ] ]
-"       \ },
-"       \ 'component': {
-"       \   'charvaluehex': '0x%B'
-"       \ },
-"       \ }
-
-" Airline plugin - ENABLE THIS FOR everforest and comment out lightline
-let g:airline_theme ='catppuccin_mocha'
-let g:airline_statusline_ontop=1
+" Airline plugin
+let g:airline_statusline_ontop=0
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
@@ -274,10 +246,30 @@ let g:airline#extensions#wordcount#enabled = 1
 let g:airline#extensions#hunks#no_zero_only = 1
 let g:airline_powerline_fonts = 1 
 
+" Color scheme
+"set t_Co=256   " This is may or may not needed.
+if has('termguicolors')
+    set termguicolors
+endif
+"
+" Set color scheme
+" set background=dark
             
+" Set contrast.
+" This configuration option should be placed before `colorscheme everforest`.
+" Available values: 'hard', 'medium'(default), 'soft'
+" let g:everforest_background = 'hard'
+" For better performance
+" let g:everforest_better_performance = 1
+
+colorscheme catppuccin_mocha
+highlight LineNr guifg=#b48ead 
+highlight CursorLineNr guifg=#e96ba8
+
+"let g:airline_theme = 'dracula'
 
 " Make background transparent
-" highlight Normal guibg=NONE ctermbg=NONE
+highlight Normal guibg=NONE ctermbg=NONE
 " Font
 set guifont=Maple:h14
 
@@ -434,9 +426,7 @@ nnoremap <silent> <leader>fM :FzfMaps<CR>
 " Finding files
 " Search down into subfolders from $HOME
 set path+=**
-
 "------------------------------------------------------------------------------
-
 " Create the 'tags' file
 command! MakeTags !ctags -R .
 "
@@ -447,9 +437,7 @@ command! MakeTags !ctags -R .
 " - Use Ctrl + t to jump back up the tag stack
 
 "------------------------------------------------------------------------------
-
 " NerdTree configuration
-
 " Tweaks for browsing
 let g:netrw_banner=0   " disable annoying banner
 let g:netrw_browse_split=4 " open in prior window
@@ -458,6 +446,7 @@ let g:netrw_liststyle=3     " tree view
 let g:netrw_list_hide=netrw_gitignore#Hide()
 let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 "------------------------------------------------------------------------------
+
 " Kotlin language server
 autocmd BufReadPost *.kt setlocal filetype=kotlin
 
