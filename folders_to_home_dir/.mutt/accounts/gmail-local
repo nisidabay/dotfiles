@@ -1,6 +1,6 @@
 # OFFLINEIMAP
 # unmailboxes *
-set folder="/mnt/Mail/gmail/"
+set folder="~/Mail/gmail/"
 set spoolfile=+INBOX
 
 # SMTP settings
