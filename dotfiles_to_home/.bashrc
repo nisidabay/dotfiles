@@ -187,3 +187,8 @@ export QUOTE_FILE_PATH=/home/nisidabay/bin/fortune/Computer_Quotes.txt
 # Quotes file for cnuggets. A C program to show nuggets
 # -----------------------------------------------------
 export NUGGETS_FILE_PATH=/home/nisidabay/bin/python_nuggets_univ
+
+# -----------------------------------------------------
+# User folders
+# -----------------------------------------------------
+export PATH=$PATH:$HOME/bin:$HOME/.local/bin
