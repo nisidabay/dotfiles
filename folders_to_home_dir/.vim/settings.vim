@@ -18,11 +18,12 @@ set hlsearch
 " letter, and case insensitive when the search term does not contain any
 " uppercase letters. 
 set smartcase
+set noignorecase
 
 " Prevents the creation of a swap file when editing a file
 set noswapfile 
 
-"option prevents the creation of backup files
+" option prevents the creation of backup files
 set nobackup
 
 " only prevents the creation of the backup file for the current buffer
@@ -139,3 +140,6 @@ function! FzfNmapList()
 endfunction
 
 command! FzfNmaps call FzfNmapList()
+
+" Load termdebug
+packadd! termdebug
