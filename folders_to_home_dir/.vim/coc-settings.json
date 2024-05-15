@@ -1,15 +1,5 @@
 {
   "languageserver": {
-    "clangd": {
-      "command": "clangd",
-      "filetypes": ["c", "cpp", "objc", "objcpp"],
-      "rootPatterns": [".ccls", "compile_commands.json", ".git/", ".hg/"],
-      "initializationOptions": {
-        "cache": {
-          "directory": "/tmp/ccls"
-        }
-      }
-    },
     "bash": {
       "command": "bash-language-server",
       "args": ["start"],
@@ -21,6 +11,7 @@
     },
     "kotlin": {
         "command": "/home/nisidabay/.vim/lsp/server/bin/kotlin-language-server",
+        "args": ["start"],
         "filetypes": ["kotlin"]
     },
 
