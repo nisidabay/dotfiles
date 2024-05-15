@@ -139,8 +139,13 @@ call glaive#Install()
 call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
 
 "------------------------------------------------------------------------------
-" Declare the list of themes.
+" Copilot
+"------------------------------------------------------------------------------
+"Plug 'github/copilot.vim'
 
+"------------------------------------------------------------------------------
+" Declare the list of themes.
+"------------------------------------------------------------------------------
 " Plug 'dracula/vim', { 'as': 'dracula' }
 "Plug 'KeitaNakamura/neodark.vim' "neodark
 "Plug 'NLKNguyen/paperolor-theme' "PaperColor
