@@ -97,6 +97,12 @@ alias myip="ip addr | awk '/192/ {print "$1"}' | cut -d' ' -f6 | cut -d'/' -f1"
 # Neovim dir
 alias nvdir="echo --- neovim dir;cd ~/.config/nvim"
 
+# Run Neovim without picom
+alias nvim="echo --- no picom;~/bin/nvim.sh"
+
+# Run Vim without picom
+alias vim="echo --- no picom;~/bin/vim.sh"
+
 # Network interface down
 alias netdown="echo --- eth0 down;sudo ip link set dev enp3s0 down"
 
@@ -219,7 +225,7 @@ alias res2='xrandr --output DisplayPort-0 --mode 1920x1080 --rate 120'
 # Function to display reminders
 # -----------------------------------------------------
 function remind() {
-	local SOUND=$HOME/bin/Bell.mp3
+	local SOUND=$HOME/bin/justdo/complete.ogg
 	local COUNT="$#"
 	local COMMAND="$1"
 	local MESSAGE="$1"
@@ -612,11 +618,14 @@ function sr() {
     # Determine how to open the file based on its extension.
     if [[ -n "$file" ]]; then
         case "$file" in
+
             *.pdf)
                 zathura "$file" >/dev/null 2>&1 &
+                xclip -sel clip "$file"
                 ;;
             *.jpg|*.jpeg|*.png|*.gif)
                 sxiv "$file" >/dev/null 2>&1 &
+                xclip -sel clip "$file"
                 ;;
             *)
                 echo "File type not supported for viewing."
@@ -631,3 +640,17 @@ if [ -n "$BASH_VERSION" ]; then
     export -f sr
 fi
 
+function ov(){
+
+# Check if vifm is already running
+vifm=$(pgrep vifm)
+if [ -n "$vifm" ];then
+    echo "vifm is already running"
+else
+    bash -c 'vifm'
+fi
+}
+
+if [ -n "$BASH_VERSION" ]; then
+    export -f ov
+fi
