@@ -208,7 +208,8 @@ nnoremap <leader>mwd <C-W><C-J>
 " move up
 nnoremap <leader>mwu <C-W><C-K>
 
-" split windows
+" Split windows
+
 " split window vertically
 nnoremap <leader>v :vsplit<CR>
 " split window horizontally
@@ -224,8 +225,16 @@ nnoremap <C-down> :resize +2<CR>
 nnoremap <C-left> :vertical resize -2<CR>
 nnoremap <C-right> :vertical resize +2<CR>
 
-" Diary index
+" Diary mappings
+
+" Index
 nnoremap <leader>di :VimwikiDiaryIndex<CR>
+
+" Make note
+nnoremap <leader>dn :VimwikiMakeDiaryNote<CR>
+
+" Generate links
+nnoremap <leader>dl :VimwikiDiaryGenerateLinks<CR>
 
 " Enable folding
 set foldenable
@@ -269,8 +278,8 @@ vno <right> <Nop>
 " Some abbreviations
 iabbr clm Carlos Lacaci Moya
 "iabbr email nisidabay@gmail.com
-iabbr true True
-iabbr false False
+"iabbr true True
+"iabbr false False
 
 " Command mode abreviations for saving and quitting
 cnoreabbrev W! w!
@@ -319,9 +328,9 @@ nnoremap <silent> <leader>ca <plug>(coc-fix-current)
 nnoremap <silent> <leader>fi :CocCommand python.sortImports<CR>
 
 " diagnostic
-nmap <silent> [c <plug>(coc-diagnostic-prev)
-nmap <silent> ]c <plug>(coc-diagnostic-next)
+nnoremap <silent> <leader> dp: <plug>(coc-diagnostic-prev)
+nnoremap <silent> <leader> dn: <plug>(coc-diagnostic-next)
 
-" show jumps
-nnoremap <leader>sj :jumps<esc>
+" Load termdebug
+let g:termdebug_wide=1
 
