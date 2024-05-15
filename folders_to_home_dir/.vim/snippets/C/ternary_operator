@@ -1,0 +1,6 @@
+// Ternary operator
+for (counter = 0; counter < number; counter++) {
+        printf("%d", fibonacci(counter));
+        // Use the ternary operator to decide whether to print a comma
+        printf(counter < number - 1 ? ", " : "");
+    }
