@@ -116,6 +116,7 @@ source "$HOME/.cache/wal/colors.sh"
 # Set "bat" as the man pager if available
 # -----------------------------------------------------
 
+MANROFFOPT="-c"
 if command -v bat &>/dev/null; then
 	export MANPAGER="sh -c 'less -R | bat -l man -p'"
 fi
