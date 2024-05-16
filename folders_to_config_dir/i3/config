@@ -19,7 +19,7 @@ font pango:Noto Sans Regular 10
 # Set mod key (Mod1=<Alt>, Mod4=<Super>)
 
 # Map it to Mod4 "WINDOWS KEY" for spacemacs
-set $mod Mod1
+set $mod Mod4
  
 # ------------------
 # WORKSPACE LAYOUT
@@ -100,7 +100,7 @@ exec --no-startup-id dunst
 
 # Start a terminal
 ## Get the terminal from ~/bin/change_terminal_lnx.sh
-set $term kitty
+set $term alacritty
 bindsym $mod+Return exec $term
 
 # Load wallpaper
