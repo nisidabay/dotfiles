@@ -90,6 +90,9 @@ keymap.set("n", "<leader>qls", "I*<Esc>$A*<Esc>", { silent = true, desc = "Surro
 
 keymap.set("n", "<leader>qli", "I$<Esc>$A$<Esc>", { silent = true, desc = "Surround line with code" })
 
+-- Header files
+keymap.set("n", "<leader>hf", ":r ~/bin/python_header_univ.txt<CR>", { desc = "Insert Header File" })
+
 -- Move between windows
 keymap.set("n", "<leader>mwr", "<C-W><C-L>", { desc = "Move right" })
 keymap.set("n", "<leader>mwl", "<C-W><C-H>", { desc = "Move left" })
@@ -229,3 +232,6 @@ keymap.set("v", "gx", ":!xdg-open <cfile><CR>", { silent = true, desc = "Open Li
 keymap.set("n", "<leader>ek", ":edit ~/.config/nvim/lua/josean/core/keymaps.lua<CR>", { desc = "Edit keymaps" })
 
 keymap.set("n", "<leader>eo", ":edit ~/.config/nvim/lua/josean/core/options.lua<CR>", { desc = "Edit options" })
+
+-- Telescope
+keymap.set("n", "<leader>t", ":Telescope<CR>", { silent = true, desc = "Open Telescope" })

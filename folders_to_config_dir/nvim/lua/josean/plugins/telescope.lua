@@ -22,26 +22,55 @@ return {
     local telescope = require("telescope")
     local actions = require("telescope.actions")
 
+    -- Telescope Setup
     telescope.setup({
       defaults = {
-        path_display = { "truncate " },
+        path_display = { "truncate" },
         mappings = {
           i = {
-            ["<C-k>"] = actions.move_selection_previous, -- move to prev result
-            ["<C-j>"] = actions.move_selection_next, -- move to next result
+            ["<C-k>"] = actions.move_selection_previous, -- Move to previous result
+            ["<C-j>"] = actions.move_selection_next, -- Move to next result
             ["<C-q>"] = actions.send_selected_to_qflist + actions.open_qflist,
           },
         },
       },
-      telescope.load_extension("fzf"),
-      telescope.load_extension("notify"),
+      pickers = {
+        lsp_references = {
+          theme = "dropdown",
+          layout_config = { prompt_position = "top" },
+        },
+        lsp_definitions = {
+          theme = "dropdown",
+          layout_config = { prompt_position = "top" },
+        },
+        lsp_implementations = {
+          theme = "dropdown",
+          layout_config = { prompt_position = "top" },
+        },
+        lsp_type_definitions = {
+          theme = "dropdown",
+          layout_config = { prompt_position = "top" },
+        },
+      },
+      extensions = {
+        fzf = {
+          fuzzy = true,
+          override_generic_sorter = true,
+          override_file_sorter = true,
+          case_mode = "smart_case",
+        },
+      },
     })
 
-    -- set keymaps
-    local keymap = vim.keymap -- for conciseness
+    -- Load Extensions
+    telescope.load_extension("fzf")
+    telescope.load_extension("file_browser")
+
+    -- Set Keymaps for Telescope
+    local keymap = vim.keymap -- For conciseness
 
     keymap.set("n", "<leader>bf", function()
-      require("telescope").extensions.file_browser.file_browser({ path = "%:h:p", select_buffer = true })
+      telescope.extensions.file_browser.file_browser({ path = "%:h:p", select_buffer = true })
     end, { desc = "Telescope file browser" })
     keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Fuzzy find files in cwd" })
     keymap.set("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>", { desc = "Fuzzy find recent files" })
@@ -56,7 +85,15 @@ return {
       "<cmd>Telescope buffers<CR>",
       { noremap = true, silent = true, desc = "Show buffers" }
     )
-    keymap.set("n", "<leader>fd", "<cmd>Telescope diagnostics<cr>", { desc = "Show code diagnostics" })
+    keymap.set("n", "<leader>fd", function()
+      require("telescope.builtin").diagnostics({ severity_bound = 0 })
+    end, { desc = "Show code diagnostics" })
     keymap.set("n", "<leader>fc", "<cmd>Telescope commands<cr>", { desc = "Execute commands" })
+
+    -- Additional Keymaps for LSP Pickers
+    keymap.set("n", "gd", "<cmd>Telescope lsp_definitions<cr>", { desc = "Go to definitions" })
+    keymap.set("n", "gR", "<cmd>Telescope lsp_references<cr>", { desc = "Show references" })
+    keymap.set("n", "gi", "<cmd>Telescope lsp_implementations<cr>", { desc = "Show implementations" })
+    keymap.set("n", "gt", "<cmd>Telescope lsp_type_definitions<cr>", { desc = "Show type definitions" })
   end,
 }
