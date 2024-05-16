@@ -9,7 +9,7 @@
 export DISPLAY=":0"
 
 # Define the directory with wallpapers
-bg_dir=/mnt/Pictures
+bg_dir=~/Pictures
 #
 
 # Create the directory if it doesn't exist
