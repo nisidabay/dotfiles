@@ -72,8 +72,6 @@ export TERM="xterm-256color"
 # Set the LS_COLORS for directory listing
 export LS_COLORS="di=34:ln=36:so=32:pi=33:ex=31:bd=34;46:cd=34;43:su=30;41:sg=30;46:tw=30;42:ow=30;43"
 
-# Automatically correct mistyped directory names on cd
-shopt -s cdspell
 
 # Set the history options
 export HISTCONTROL=ignoredups:erasedups
@@ -187,8 +185,3 @@ export QUOTE_FILE_PATH=/home/nisidabay/bin/fortune/Computer_Quotes.txt
 # Quotes file for cnuggets. A C program to show nuggets
 # -----------------------------------------------------
 export NUGGETS_FILE_PATH=/home/nisidabay/bin/python_nuggets_univ
-
-# -----------------------------------------------------
-# User folders
-# -----------------------------------------------------
-export PATH=$PATH:$HOME/bin:$HOME/.local/bin
