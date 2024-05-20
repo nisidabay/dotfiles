@@ -1,41 +1,44 @@
-#!/usr/bin/bash
+#!/bin/bash
 
-# if running bash
+# Source .bashrc or .zshrc
 if [ -n "$BASH_VERSION" ]; then
     [[ -f "$HOME/.bashrc" ]] && . "$HOME/.bashrc"
 else
     [[ -f "$HOME/.zshrc" ]] && . "$HOME/.zshrc"
 fi
 
-# set PATH so it includes user's private bin if it exists
+# Set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/.local/bin" ] ; then
-    PATH=$PATH:"$HOME/.local/bin"
+    PATH="$PATH:$HOME/.local/bin"
 fi
 
-# set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/bin" ] ; then
-    PATH=$PATH:"$HOME/bin"
+    PATH="$PATH:$HOME/bin"
 fi
 
-# set PATH so it includes user's private bin/dmenu if it exists
 if [ -d "$HOME/bin/dmenu" ] ; then
-    PATH=$PATH:"$HOME/bin/dmenu"
+    PATH="$PATH:$HOME/bin/dmenu"
 fi
 
-
-# set PATH so it includes user's private Applications if it exists
 if [ -d "$HOME/Applications" ] ; then 
-      PATH=$PATH:"$HOME/Applications"
+    PATH="$PATH:$HOME/Applications"
 fi
-#
+
+# Set American keyboard layout if Xwayland is not running
 if ! pgrep Xwayland; then
-    # Set american keyboard layout
     setxkbmap -layout us
 fi
-
-# Restore pywall settings
+# Restore pywal settings
 wal -R
 
 # Apply transparency
 picom &
-#~/bin/start_xcompmgr.sh
+
+# Load cargo environment
+. "$HOME/.cargo/env"
+
+# Source .xinitrc to start dwm and other components
+    if [ -f "$HOME/.xinitrc" ]; then
+        . "$HOME/.xinitrc"
+    fi
+
