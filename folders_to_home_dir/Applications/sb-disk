@@ -1,0 +1,10 @@
+#!/bin/sh
+case $BLOCK_BUTTON in
+    1) notify-send "💾 Disk usage" "$(df -h /dev/sda2 | awk 'NR >1 {print $4}')" ;;
+    2) setsid -f "$TERMINAL" -e "ncdu $HOME";;
+    3) notify-send "💾 Disk module " "\- Shows Disk usage
+- Click to show disk usage.
+- Middle click to open ncdu." ;;
+esac
+
+df -h /dev/sda2 | awk 'NR >1 {print "💾", $4}'

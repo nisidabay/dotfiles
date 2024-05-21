@@ -1,0 +1,15 @@
+#!/bin/sh
+
+case $BLOCK_BUTTON in
+	1) mocp status | filter ; setsid -f "$TERMINAL" -e mocp ;;  # right click, pause/unpause
+	2) mocp toggle | filter ;;  # right click, pause/unpause
+	3) mocp status | filter ; notify-send "🎵 Music module" "\- Shows mpd song playing.
+- ⏸ when paused.
+- Left click opens ncmpcpp.
+- Middle click pauses.
+- Scroll changes track.";;  # right click, pause/unpause
+	4) mocp prev   | filter ;;  # scroll up, previous
+	5) mocp next   | filter ;;  # scroll down, next
+	6) mocp status | filter ; "$TERMINAL" -e "$EDITOR" "$0" ;;
+	*) mocp status | filter ;;
+esac

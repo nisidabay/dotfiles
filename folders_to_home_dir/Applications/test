@@ -1,0 +1,28 @@
+#!/usr/bin/bash
+set -euox pipefail
+
+declare -r MESSAGES_COUNT=~/.notmuch_count_messages
+
+check_mail() {
+    # Sync folders with offlineimap
+    notify-send "📧 Checking mail ..."
+
+    offlineimap -o -u quiet &
+    
+    # Wait for offlineimap to finish
+    wait $!
+}
+
+check_mail
+
+new_total=$(notmuch count new)
+old_total=$(cat $MESSAGES_COUNT)
+# Ensure that always update the count of new messages
+# old_total=$(( old_total - 1 ))
+new_messages=$(( new_total - old_total ))
+echo "$new_messages" > $MESSAGES_COUNT
+if [[ $new_messages -ge 0 ]]; then  
+    echo -n "📬+$new_messages" 
+else 
+    echo -n "📬$new_total"
+fi
