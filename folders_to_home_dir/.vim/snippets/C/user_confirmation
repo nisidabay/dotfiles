@@ -1,9 +1,0 @@
-// Ask for user confirmation
-void ask_user(void) {
-    char answer;
-    do {
-        printf("Continue? (y/n): ");
-        answer = getchar();
-        while (getchar() != '\n'); // Consume the newline character
-    } while (answer != 'y' && answer != 'n');
-}

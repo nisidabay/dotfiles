@@ -1,15 +1,22 @@
-"gsp Autopep
+" Vim mappings
+" -------------
+
+
+ " Autopep format for Python
 au FileType python setlocal formatprg=black\ -
 
 " Leader key
 let mapleader = "\<Space>"
 
 " Termwinkey
+
 " Move from terminal to window
 " Example: C-t k
 set termwinkey=<C-T>
+
 " Open term
 nnoremap <leader>t :term<CR>
+
 " Switch from terminal mode to normal mode
 tnoremap <C-x> <C-\><C-n>
 "
@@ -21,7 +28,6 @@ cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 
 " .vimrc modifications
 nnoremap <leader>mv :tabnew $MYVIMRC<CR>
-"nnoremap <leader>mv :vsplit $MYVIMRC<CR>
 nnoremap <leader>rv :source $MYVIMRC"<CR>
 
 " Copy of .vimrc
@@ -45,7 +51,6 @@ nnoremap <leader>tl :tablast<CR>
 nnoremap <leader>tn :tabnew <Space> 
 nnoremap <leader>ts :tabs<CR>
 
-nnoremap <leader>tb :tabnew<CR>:setlocal buftype=nofile bufhidden=hide noswapfile<CR>:echo "ScratchBuffer"<CR>
 " No hls. Unselect marked words
 nnoremap <leader>nh :nohls<CR>
 
@@ -136,8 +141,8 @@ nnoremap <F3> :setlocal spell spelllang=en_us<CR>
 
 " Clipboard 
 " For using in Macos
-vnoremap <leader> <C-y> :w !pbcopy<CR><CR>
-nnoremap <leader> <C-p> :r !pbpaste<CR>
+" vnoremap <leader> <C-y> :w !pbcopy<CR><CR>
+" nnoremap <leader> <C-p> :r !pbpaste<CR>
 "nnoremap <leader> <C-p> "+p
 
 " Paste from clipboard X11
@@ -147,9 +152,9 @@ vnoremap <F6> :w !xclip -i -sel clip<CR><CR>
 
 " Clipboard wayland
 " Copy from visual mode to wayland clipboard
-vnoremap <silent> <C-c> :w !wl-copy <CR><CR>
+" vnoremap <silent> <C-c> :w !wl-copy <CR><CR>
 " Paste from wayland clipboard 
-nnoremap <silent> <C-i> :r !wl-paste <ESC>
+" nnoremap <silent> <C-i> :r !wl-paste <ESC>
 
 
 "" NERDTree configuration
@@ -225,18 +230,56 @@ nnoremap <C-down> :resize +2<CR>
 nnoremap <C-left> :vertical resize -2<CR>
 nnoremap <C-right> :vertical resize +2<CR>
 
-" Diary mappings
+" Vimwiki 
+" Vimwiki Diary mappings
 
 " Index
-nnoremap <leader>di :VimwikiDiaryIndex<CR>
+nnoremap <leader>wdi :VimwikiDiaryIndex<CR>
 
 " Make note
-nnoremap <leader>dn :VimwikiMakeDiaryNote<CR>
+nnoremap <leader>wdn :VimwikiMakeDiaryNote<CR>
+
+" Make yesterday note
+nnoremap <leader>wdy :VimwikiMakeYesterdayDiaryNote<CR>
+
+" Make tomorrow note
+nnoremap <leader>wdt :VimwikiMakeTomorrowDiaryNote<CR>
 
 " Generate links
-nnoremap <leader>dl :VimwikiDiaryGenerateLinks<CR>
+nnoremap <leader>wdl :VimwikiDiaryGenerateLinks<CR>
 
-" Enable folding
+" Vimwiki Tables mappings
+" Create table
+nnoremap <leader>wt :VimwikiTable<CR>
+
+" VimwikiRenameFile mappings
+nnoremap <leader>rf :VimwikiRenameFile<esc>
+
+" Vimwiki TOC
+nnoremap <leader>wtoc :VimwikiTOC<esc>
+
+" VimWikiTags
+ "Tagbar integration                                            *vimwiki-tagbar*
+ "
+ "As an alternative to the Table of Contents, you can use the Tagbar plugin
+ ""(https://preservim.github.io/tagbar/) to show the headers of your wiki files
+ "in a side pane.
+ "Download the Python script from
+ "https://raw.githubusercontent.com/vimwiki/utils/master/vwtags.py and follow
+ "the instructions in it.
+
+let g:tagbar_type_vimwiki = {
+          \   'ctagstype':'vimwiki'
+          \ , 'kinds':['h:header']
+          \ , 'sro':'&&&'
+          \ , 'kind2scope':{'h':'header'}
+          \ , 'sort':0
+          \ , 'ctagsbin':'~/bin/vwtags.py'
+          \ , 'ctagsargs': 'markdown'
+          \ }
+
+
+" Folding
 set foldenable
 set foldlevelstart=10
 set foldnestmax=10
@@ -298,10 +341,8 @@ cnoreabbrev Qall qall
 let @h = "I\u2022\u2022\u2022"
 
 " split the lines in 80 characters
-let @l = "080liya0"
+let @l = "080li ya0"
 
-" VimwikiRenameFile
-nnoremap <leader>rf :VimwikiRenameFile<esc>
 
 " python help
 nnoremap <leader>k :<c-u>let save_isk = &iskeyword \|
@@ -333,4 +374,5 @@ nnoremap <silent> <leader> dn: <plug>(coc-diagnostic-next)
 
 " Load termdebug
 let g:termdebug_wide=1
+
 
