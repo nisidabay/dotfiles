@@ -1,0 +1,5 @@
+if [[ "${BASH_SOURCE[0]}" == "${0}" ]]; then
+    gum style --bold "This script must be sourced to function correctly" --background="#2596be"  
+    gum style --bold "Usage: source venv_toogle.sh ..." --background="#be2596"  
+    exit 1
+fi
