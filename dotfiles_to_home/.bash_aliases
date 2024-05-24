@@ -30,6 +30,7 @@ else
 	alias mus="echo --- Music;cd ~/Music"
 	alias pic="echo --- Pictures;cd ~/Pictures"
 	alias ref="echo --- Refactor;cd ~/Downloads/Refactor"
+
 fi
 
 alias sudo='sudo '
@@ -99,10 +100,6 @@ alias nvdir="echo --- neovim dir;cd ~/.config/nvim"
 
 # Run Neovim without picom
 alias nvim="echo --- no picom;~/bin/nvim.sh"
-
-# Run Vim without picom
-alias vim="echo --- no picom;~/bin/vim.sh"
-
 # Network interface down
 alias netdown="echo --- eth0 down;sudo ip link set dev enp3s0 down"
 
@@ -355,40 +352,53 @@ fi
 # Function to search diary files in vimwiki
 # -----------------------------------------------------
 function wi() {
-	# Store the current directory and change to the diary location.
-	pushd $(pwd) >/dev/null
-	cd ~/vimwiki/diary || exit
+    # Store the current directory and change to the diary location.
+    pushd . >/dev/null
+    cd ~/vimwiki/diary || { echo "Diary directory not found."; exit 1; }
 
-	# Store the result of the 'ag' command in the 'file' variable using 'fzf' for interactive selection.
-	local file
-	local oldIFS="$IFS"
-	IFS=$'\n'
+    # Check for the shell type and prompt the user accordingly
+    local word
+    if [[ -n "$BASH_VERSION" ]]; then
+        read -r -p "Enter the word to search for in the diary: " word
+    elif [[ -n "$ZSH_VERSION" ]]; then
+        echo -n "Enter the word to search for in the diary: "
+        read word
+    else
+        echo "Unsupported shell."
+        return 1
+    fi
 
-	# Prompt user to enter a search term.
-	read -r -p "Enter the word to search for in the diary: " word
+    # Set IFS to handle filenames with newlines only.
+    local oldIFS="$IFS"
+    IFS=$'\n'
 
-	# Use 'rg' to search for the word and 'cut' to extract filenames, then 'fzf' for interactive selection.
-	file=$(rg --files-with-matches "$word" ~/vimwiki/diary | fzf --ansi --preview 'bat --color=always --style=plain --line-range=:100 {}' --reverse)
+    # Use 'rg' to search for the word within the current directory, use 'fzf' to select a file.
+    local file=$(rg --files-with-matches "$word" . | fzf --ansi --preview 'bat --color=always --style=plain --line-range=:100 {}' --reverse)
 
-	IFS="$oldIFS"
+    # Restore the original IFS.
+    IFS="$oldIFS"
 
-	# If a file is selected, open it in Vim.
-	if [[ -n "$file" ]]; then
-		vim "$file"
-	fi
+    # If a file is selected, open it in Vim.
+    if [[ -n $file ]]; then
+        vim "$file"
+    else
+        echo "No file selected."
+    fi
 
-	# Return to the original directory.
-	popd >/dev/null || exit
+    # Return to the original directory.
+    popd >/dev/null || exit 1
 }
-if [ -n "$BASH_VERSION" ]; then
-	export -f wi
+
+# Export the function if running under Bash.
+if [[ -n "$BASH_VERSION" ]]; then
+    export -f wi
 fi
 
 # -----------------------------------------------------
 # Function to search inside vimwiki files
 # -----------------------------------------------------
 function ws() {
-	pushd "$(pwd)" || exit
+	pushd . || exit
 	cd ~/vimwiki || exit
 
 	# Store the result of the 'ag' command in the 'file' variable using 'fzf' for interactive selection.
