@@ -11,25 +11,23 @@ include $HOME/.config/i3/theme.conf
 # WINDOW TITLE
 # --------------
 # Font for window titles
-font pango:Noto Sans Regular 10
+font pango:Noto Sans Regular 9
 
 #---------
 # MOD KEY
 #---------
 # Set mod key (Mod1=<Alt>, Mod4=<Super>)
-
 # Map it to Mod4 "WINDOWS KEY" for spacemacs
 set $mod Mod4
  
 # ------------------
 # WORKSPACE LAYOUT
 # ------------------
-
-# default i3 tiling mode:
+# Default i3 tiling mode:
 workspace_layout default
 
 # ---------
-# Borders
+# BORDERS
 # ---------
 # Configure border style 
 default_border pixel 2
@@ -44,7 +42,7 @@ bindsym $mod+Ctrl+y border pixel 6
 bindsym $mod+Ctrl+n border normal
 
 #-----
-# Gaps
+# GAPS
 #-----
 # Set inner/outer gaps
 gaps inner 8
@@ -54,15 +52,15 @@ gaps outer -4
 smart_gaps on
 
 # --------------------
-# floating_modifier 
+# FLOATING_MODIFIER 
 # --------------------
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
 #---------------------
-# Switch to workspace
+# SWITCH TO WORKSPACE
 #---------------------
-
+# Define keybindings for switching to each workspace
 bindsym $mod+1    workspace  $ws1
 bindsym $mod+2    workspace  $ws2
 bindsym $mod+3    workspace  $ws3
@@ -74,7 +72,7 @@ bindsym $mod+8    workspace  $ws8
 bindsym $mod+9    workspace  $ws9
 bindsym $mod+0    workspace  $ws10
 
-# Define keybindings for switching to each workspace
+# Define keybindings for moving containers to each workspace
 bindsym $mod+Shift+1    move container to workspace  $ws1
 bindsym $mod+Shift+2    move container to workspace  $ws2
 bindsym $mod+Shift+3    move container to workspace  $ws3
@@ -87,19 +85,13 @@ bindsym $mod+Shift+9    move container to workspace  $ws9
 bindsym $mod+Shift+0    move container to workspace  $ws10
 
 #-----------------------------------
-# Keybindings for different actions
+# KEYBINDINGS FOR DIFFERENT ACTIONS
 #-----------------------------------
-# Start notification daemond
+
+# Start notification daemon
 exec --no-startup-id dunst
 
-# Stop Hyperland daemond in case Hyperland wm is installed too
-# exec --no-startup-id "XDG_SESSION_TYPE=x11"
-# exec --no-startup-id "systemctl --user stop mako"
-# exec --no-startup-id "export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/$UID/bus"
-# exec --no-startup-id "Xorg -shm"
-
 # Start a terminal
-## Get the terminal from ~/bin/change_terminal_lnx.sh
 set $term alacritty
 bindsym $mod+Return exec $term
 
@@ -107,25 +99,34 @@ bindsym $mod+Return exec $term
 exec $term -e ~/.config/i3/scripts/sb-load_image.sh
 
 # Kill focused window
-bindsym $mod+c kill
+bindsym $mod+q kill
+
+# Keybinding to toggle i3blocks bar visibility
+bindsym $mod+b bar mode toggle
 
 # Exit-menu
 bindsym $mod+Shift+e exec ~/.config/i3/scripts/shutdown_menu-i3 -p rofi -c
+
+# Start clipmenud
+exec --no-startup-id clipmenud
+
+# Open clipboard menu
+bindsym $mod+c exec clipmenu
 
 # Change theme
 bindsym $mod+z exec $term -e ~/.config/i3/scripts/change_theme.sh
 
 # Lock the screen by blurring the screen with a picture
 bindsym $mod+l exec ~/.config/i3/scripts/bender-i3.sh
-
 exec --no-startup-id xautolock -time 10 -locker blurlock
+
 # Reload the configuration file
 bindsym $mod+Shift+c reload
 
 # Restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 
-# Keybinding list in editor:
+# Keybinding list in editor
 bindsym $mod+F1 exec xed ~/.config/i3/keybindings
 
 # Function keys
@@ -181,63 +182,72 @@ bindsym $mod+a focus parent
 bindsym $mod+Shift+n exec ~/.config/i3/scripts/empty_workspace
 workspace_auto_back_and_forth yes
 
-#  Resize windows
+#  RESIZE WINDOWS
+# Enter resize mode
 bindsym $mod+r mode "resize"
 
+# Resize mode keybindings
 mode "resize" {
-        
         bindsym j resize shrink width 10 px or 10 ppt
         bindsym k resize grow width 10 px or 10 ppt
-
         bindsym u resize grow height 10 px or 10 ppt
         bindsym i resize shrink height 10 px or 10 ppt
 
-        # back to normal: Enter or Escape or $mod+r
+        # Back to normal: Enter or Escape or $mod+r
         bindsym Return mode "default"
         bindsym Escape mode "default"
         bindsym $mod+r mode "default"
 }
 
-#################################################
-## Multimedia Keys - Working the the "RED BUTTON"
-#################################################
-# Volume  
-# # bindsym XF86AudioRaiseVolume exec amixer -c 0 sset Master 5%+ && pkill -RTMIN+1 i3blocks
+# Resize window directly
+# Resize horizontally
+bindsym $mod+Shift+Right resize grow width 10 px or 10 ppt
+bindsym $mod+Shift+Left resize shrink width 10 px or 10 ppt
+# Resize vertically
+bindsym $mod+Shift+Up resize shrink height 10 px or 10 ppt
+bindsym $mod+Shift+Down resize grow height 10 px or 10 ppt
+
+#-------------------------------------------------
+# MULTIMEDIA KEYS - WORKING THE THE "RED BUTTON"
+#-------------------------------------------------
+# Volume
+# bindsym XF86AudioRaiseVolume exec amixer -c 0 sset Master 5%+ && pkill -RTMIN+1 i3blocks
 # bindsym XF86AudioRaiseVolume exec amixer -c 0 sset Master 5%+ && notify-send "VOLUME UP"
-# # bindsym XF86AudioLowerVolume exec amixer -c 0 sset Master 5%- && pkill -RTMIN+1 i3blocks
+# bindsym XF86AudioLowerVolume exec amixer -c 0 sset Master 5%- && pkill -RTMIN+1 i3blocks
 # bindsym XF86AudioLowerVolume exec amixer -c 0 sset Master 5%- && notify-send "VOLUME DOWN"
 
-# # Mute
+# Mute
 # bindsym XF86AudioMute exec amixer -c 0 sset Master 0% && notify-send "MUTE"
 
 # Increase volume
-#bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -q set Master 5%+ unmute
+# bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -q set Master 5%+ unmute
 
 # Decrease volume
-#bindsym XF86AudioLowerVolume exec --no-startup-id amixer -q set Master 5%- unmute
+# bindsym XF86AudioLowerVolume exec --no-startup-id amixer -q set Master 5%- unmute
 
 # Toggle mute
-#bindsym XF86AudioMute exec --no-startup-id amixer -q set Master toggle
-################
-## App shortcuts
-################
+# bindsym XF86AudioMute exec --no-startup-id amixer -q set Master toggle
+
+#----------------
+# APP SHORTCUTS
+#----------------
 
 # $mod + letter
 bindsym $mod+n exec /usr/bin/thunar
 bindsym $mod+Shift+v exec $term sh -c "vim"
 bindsym $mod+Ctrl+v exec $term sh -c "vifm"
-bindsym $mod+w exec /usr/bin/firedragon
+bindsym $mod+w exec /usr/bin/firefox
 bindsym $mod+o exec /usr/bin/opera
 bindsym $mod+x exec $term -e cmus 
 bindsym $mod+Shift+t exec /usr/bin/tor-browser-en
 bindsym $mod+m exec $term -e neomutt
-##bindsym $mod+m exec xfce4-terminal -e neomutt
+# bindsym $mod+m exec xfce4-terminal -e neomutt
 
 bindsym F12 exec "scrot ~/%Y-%m-%d-%T-screenshot.png" exec notify-send "Snapshot taken"
 
-##########################################
-# Configuration for workspace behaviour: #
-##########################################
+# ------------------------------------------
+# CONFIGURATION FOR WORKSPACE BEHAVIOUR: #
+# ------------------------------------------
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
@@ -248,24 +258,24 @@ set $ws4 "4 📧"
 set $ws5 "5 📖"
 set $ws6 "6 🎶"
 set $ws7 "7 🔻"
-set $ws8 "8"🧰"
+set $ws8 "8🧰"
 set $ws9 "9"
 set $ws10 "10"
 
-
+# Configure specific applications to always open in specific workspaces
 for_window [class="Pavucontrol"] floating enable
 for_window [class="Galculator" instance="galculator"] floating enable
 for_window [class="Bluetooth-sendto" instance="bluetooth-sendto"] floating enable
 
-# switch to workspace with urgent window automatically
+# Switch to workspace with urgent window automatically
 focus_on_window_activation focus
 for_window [urgent=latest] focus
 
-# Automatic set focus new window if it opens on another workspace than the current:
-
+# Automatically set focus to new window if it opens on another workspace than the current
 for_window [class="^.*"] title_format ""
 
-#assign [class=(?i)$term] $ws1
+# Application assignments to workspaces
+assign [class=(?i)$term] $ws1
 assign [class=(?i)firefox] $ws2
 assign [class=(?i)firedragon] $ws2
 assign [class=(?i)opera] $ws2
@@ -277,35 +287,33 @@ assign [class=(?i)geany] $ws5
 assign [class=(?i)audacity] $ws6
 assign [class=(?i)transmission] $ws7
 
-#############################################
-# Autostart applications/services on login: #
-#############################################
+# ---------------------------------------------
+# AUTOSTART APPLICATIONS/SERVICES ON LOGIN: #
+# ---------------------------------------------
 
 # Get auth work with polkit-gnome
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 
 # dex execute .desktop files
-# keep in mind that it can cause issues 
-# when second to i3 a DE is installed or mixed usage of i3 + xfce4 or GNOME
-# in this cases better disable dex and use manual starting apps using xdg/autostart
+# keep in mind that it can cause issues when second to i3 a DE is installed or mixed usage of i3 + xfce4 or GNOME
+# in these cases better disable dex and use manual starting apps using xdg/autostart
 exec --no-startup-id dex -a -s /etc/xdg/autostart/:~/.config/autostart/
 
 # Num lock activated
-#exec --no-startup-id numlockx on
+# exec --no-startup-id numlockx on
 
-# Start conky: 
+# Start conky
 # exec_always --no-startup-id conky
 
 # Start a script to setup displays
-# uncomment the next line, use arandr to setup displays and save the file as monitor:
+# uncomment the next line, use arandr to setup displays and save the file as monitor
 # exec --no-startup-id ~/.screenlayout/monitor.sh
 
-# Start blueberry app for managing bluetooth devices from tray:
+# Start blueberry app for managing bluetooth devices from tray
 exec --no-startup-id blueberry-tray
 
 # Transparency 
-#exec --no-startup-id xcompmgr -c -C -t-5 -l-5 -r4.2 -o.85 &
-
+# exec --no-startup-id xcompmgr -c -C -t-5 -l-5 -r4.2 -o.85 &
 exec --no-startup-id picom -CGb
 
 # Networkmanager-applet
@@ -314,52 +322,44 @@ exec --no-startup-id nm-applet
 # Set wallpaper
 exec --no-startup-id feh --bg-fill /mnt/sata/Pictures/current_bg_image.png
 
-# Set powersavings for display:
+# Set powersavings for display
 exec --no-startup-id xset s 480 dpms 600 600 600
 
 # Desktop notifications
 exec --no-startup-id dbus-launch dunst --config ~/.config/dunst/dunstrc
 
 # Autostart apps as you like
-#exec --no-startup-id sleep 2 && xfce4-terminal
-#exec --no-startup-id sleep 7 && firefox https://github.com/endeavouros-team/endeavouros-i3wm-setup/blob/main/force-knowledge.md
-#exec --no-startup-id sleep 3 && thunar
+# exec --no-startup-id sleep 2 && xfce4-terminal
+# exec --no-startup-id sleep 7 && firefox https://github.com/endeavouros-team/endeavouros-i3wm-setup/blob/main/force-knowledge.md
+# exec --no-startup-id sleep 3 && thunar
 
-
-############################################
-# bar settings (input comes from i3blocks) #
-############################################
-
+# -------------------------------------------
+# BAR SETTINGS (INPUT COMES FROM I3BLOCKS) 
+# -------------------------------------------
 # Start i3bar to display a workspace bar 
 # (plus the system information i3status finds out, if available)
 bar {
-		font pango:Noto Sans Regular 12, FontAwesome 12
-		status_command i3blocks -c ~/.config/i3/i3blocks.conf
-    	position top 
-        # When strip_workspace_numbers is set to yes, 
-        # any workspace that has a name of the form 
-        # “[n][:][NAME]” will display only the name.
-        strip_workspace_numbers no
-        # strip_workspace_name no
+    font pango:Noto Sans Regular 9, FontAwesome 9
+    status_command i3blocks -c ~/.config/i3/i3blocks.conf
+    position top 
+    # When strip_workspace_numbers is set to yes, 
+    # any workspace that has a name of the form 
+    # “[n][:][NAME]” will display only the name.
+    strip_workspace_numbers no
+    # strip_workspace_name no
+}
 
-    }
+# -------------------------------------
+# APPLICATION MENU HANDLED BY ROFI: 
+# -------------------------------------
 
-
-#####################################
-# Application menu handled by rofi: #
-#####################################
-
-## rofi bindings fancy application menu 
-
+# Rofi bindings fancy application menu 
 bindsym $mod+d exec rofi -modi drun -show drun -display-drun "Apps : " -line-padding 4 \
                 -columns 2 -padding 50 -hide-scrollbar \
                 -show-icons -drun-icon-theme "Arc-X-D" -font "Noto Sans Regular 12"
 bindsym $mod+shift+d exec dmenu_run -i -fn Monospace-14
 
-## rofi bindings for window menu (two bindings F10/$mod+t)
-
+# Rofi bindings for window menu (two bindings F10/$mod+t)
 bindsym $mod+t exec rofi -show window -display-window "Window : " -line-padding 4 \
                 -lines 10 -padding 50 -hide-scrollbar \
                 -show-icons -drun-icon-theme "Arc-X-D" -font "Noto Sans Regular 11"
-
-

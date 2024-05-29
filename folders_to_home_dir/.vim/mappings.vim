@@ -154,7 +154,7 @@ vnoremap <F6> :w !xclip -i -sel clip<CR><CR>
 " Copy from visual mode to wayland clipboard
 " vnoremap <silent> <C-c> :w !wl-copy <CR><CR>
 " Paste from wayland clipboard 
-" nnoremap <silent> <C-i> :r !wl-paste <ESC>
+nnoremap <silent> <C-i> :r !wl-paste <ESC>
 
 
 "" NERDTree configuration
@@ -278,6 +278,8 @@ let g:tagbar_type_vimwiki = {
           \ , 'ctagsargs': 'markdown'
           \ }
 
+" Vimwiki colorize line
+nnoremap <leader>wc
 
 " Folding
 set foldenable
@@ -364,7 +366,7 @@ vnoremap <silent> <Leader><Leader>K y:<C-U>call Dasht(getreg(0), '!')<Return>
 " sourcery
 nnoremap <silent> <leader>cl :CocDiagnostics<cr>
 nnoremap <silent> <leader>ch :call CocAction('doHover')<cr>
-nnoremap <silent> <leader>cf <plug>(coc-codeaction-cursor)
+nnoremap <silent> <leader>cc <plug>(coc-codeaction-cursor)
 nnoremap <silent> <leader>ca <plug>(coc-fix-current)
 nnoremap <silent> <leader>fi :CocCommand python.sortImports<CR>
 

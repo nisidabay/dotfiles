@@ -1,12 +1,8 @@
 #!/bin/bash
-#!/bin/bash
-
+#
 # Lock screen with random images
-# Idea from: Internet
-# Author: 
 # Modified by CLM and ChatGPT
 # Date: mar 17 ene 2023 01:35:18 CET
-# Dependencies:
 ##############################################################################
 
 # Declare variables for directory path and file types
@@ -22,9 +18,6 @@ delete_screenshot() {
     unlink /tmp/screen_blur.png
     unlink /tmp/screen.png
 
-    # Deactivate screen saver and restore DPMS settings
-    xset s off
-    xset +dpms
 }
 
 # Function to get a list of all image files in the directory
@@ -58,12 +51,6 @@ lock_screen() {
     i3lock -i /tmp/screen.png
 }
 
-# Function to put the computer in standby mode
-standby_mode() {
-    sleep 5m
-    xset s on
-    xset +dpms
-}
 
 # Get a list of all image files in the directory
 get_images
@@ -77,8 +64,6 @@ composite_image
 # Lock the screen with the new image
 lock_screen
 
-# Put the computer in standby mode
-standby_mode
 
 # Delete the screenshot
 delete_screenshot

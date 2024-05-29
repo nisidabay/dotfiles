@@ -6,6 +6,7 @@
       "filetypes": ["sh"],
       "ignoredRootPaths": ["~"]
     },
+
     "go.goplsOptions": {
     "completeUnimported": true
     },
