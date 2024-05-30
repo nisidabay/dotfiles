@@ -95,6 +95,11 @@ alias ed="echo --- emacs daemon;/usr/bin/emacs --daemon &"
 # IP address
 alias myip="ip addr | awk '/192/ {print "$1"}' | cut -d' ' -f6 | cut -d'/' -f1"
 
+# Vim
+alias v="echo --- vim;vim"
+
+# Neovim
+alias nv="echo --- neovim;nvim"
 # Neovim dir
 alias nvdir="echo --- neovim dir;cd ~/.config/nvim"
 
@@ -150,7 +155,7 @@ alias psgrep="ps aux | grep -v grep | grep -i -e VSZ -e"
 alias psmem='ps auxf | sort -nr -k 4'
 
 # Get error messages from journalctl
-alias jctl="journalctl -p 3 -xb"
+alias jctl="journalctl -p 3 -xb | fzf"
 
 # Download media from YouTube with different audio formats
 alias yta-aac="yt-dlp --extract-audio --audio-format aac"
@@ -172,11 +177,9 @@ alias pf='pfetch'
 alias shutdown='systemctl poweroff'
 alias matrix='cmatrix'
 alias wifi='nmtui'
-alias rw='~/dotfiles/waybar/reload.sh'
 alias winclass="xprop | grep 'CLASS'"
 alias dot="cd ~/dotfiles"
-alias cleanup='~/dotfiles/scripts/cleanup.sh'
-alias ml4w='~/dotfiles/apps/ML4W_Welcome-x86_64.AppImage'
+alias cleanup='~/bin/cleanup.sh'
 
 # -----------------------------------------------------
 # Window Managers
@@ -189,13 +192,13 @@ alias Qtile='startx'
 # SCRIPTS
 # -----------------------------------------------------
 
-alias ascii='~/dotfiles/scripts/figlet.sh'
+alias ascii='~/bin/figlet.sh'
 
 # -----------------------------------------------------
 # EDIT NOTES
 # -----------------------------------------------------
 
-alias notes='$EDITOR ~/notes.txt'
+alias notes='$EDITOR ~/scratchpad.txt'
 
 # -----------------------------------------------------
 # SYSTEM
@@ -205,14 +208,6 @@ alias update-grub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 alias setkb='setxkbmap es;echo "Keyboard set back to es."'
 alias update-system='sudo ~/dotfiles/scripts/installupdates.sh'
 alias unlock-packman='~/dotfiles/scripts/unlock-pacman.sh'
-
-# -----------------------------------------------------
-# SCREEN RESOLUTIONS
-# -----------------------------------------------------
-
-# Qtile
-alias res1='xrandr --output DisplayPort-0 --mode 2560x1440 --rate 120'
-alias res2='xrandr --output DisplayPort-0 --mode 1920x1080 --rate 120'
 
 # -----------------------------------------------------
 # Functions Section
@@ -565,7 +560,7 @@ function commit_each() {
 		TMPFILE=$(mktemp)
 
 		# Open the TMPFILE in Vim and insert the file name at the top
-		${EDITOR:-vim} +"normal iCommitting: $file" "$TMPFILE"
+		${EDITOR:-nvim} +"normal iCommitting: $file" "$TMPFILE"
 		commit_msg=$(cat "${TMPFILE}")
 		#echo "$commit_msg"
 		sleep 2
