@@ -41,7 +41,10 @@ alias la="ls -latr"
 alias ~="cd ~"
 alias bin="echo --- bin;cd ~/bin"
 
-# Virtural Environments
+# lf filemanager
+alias lf='restart_lf'
+
+# Virtual Environments
 alias ve="echo --- virtual env; source ~/bin/venv_toogle.sh"
 
 # Valgrind
@@ -198,7 +201,7 @@ alias ascii='~/bin/figlet.sh'
 # EDIT NOTES
 # -----------------------------------------------------
 
-alias notes='$EDITOR ~/scratchpad.txt'
+alias notes='$EDITOR ~/scratchpad/scratchpad.txt'
 
 # -----------------------------------------------------
 # SYSTEM
@@ -680,4 +683,23 @@ function ov() {
 
 if [ -n "$BASH_VERSION" ]; then
     export -f ov
+fi
+
+# Function to restart lf and lfub
+function restart_lf() {
+    if pgrep lf >/dev/null; then
+        pkill -HUP lf
+    fi
+
+    if pgrep lfub >/dev/null; then
+        pkill -HUP lfub
+    fi
+
+    # Start a new instance of lfub
+    lfub
+}
+
+# Export the function if running in Bash
+if [ -n "$BASH_VERSION" ]; then
+    export -f restart_lf
 fi
