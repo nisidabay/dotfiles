@@ -24,6 +24,20 @@ cmd open ${{
     esac
 }}
 
+cmd toggle_preview %{{
+    if [ "$lf_preview" = "true" ]; then
+        lf -remote "send $id :set preview false; set ratios 1:5"
+    else
+        lf -remote "send $id :set preview true; set ratios 1:2:3"
+    fi
+}}
+
+cmd edit-config ${{
+    $EDITOR ~/.config/lf/lfrc
+    lf -remote "send $id source ~/.config/lf/lfrc"
+}}
+
+map C edit-config
 cmd mkdir ${{
   printf "Directory Name: "
   read ans
@@ -130,6 +144,7 @@ map . set hidden!
 map <enter> open
 map C clear
 map DD delete
+map E edit-config
 map H top
 map L bottom
 map R reload
@@ -140,7 +155,6 @@ map Y $printf "%s" "$fx" | xclip -selection clipboard
 map ch chmod
 map e open
 map ee open
-map f push fzf<space>
 map md mkdir
 map mf mkfile
 map msf sudomkfile
@@ -152,6 +166,7 @@ map sw setwallpaper
 map w open
 map x cut
 map y copy
+map zp toggle_preview
 
 # Movement
 map gD cd ~/Downloads
@@ -163,7 +178,7 @@ map gl cd ~/.config/lf
 map gm cd ~/Movies
 map gM cd ~/Music
 map gp cd ~/Pictures
-map gpg cd ~/proyectos_git
+map op cd ~/proyectos_git
 map gps cd ~/Pictures/screenshots
 map gpw cd ~/Pictures/wallpapers
 map gr cd ~/Downloads/Refactor
