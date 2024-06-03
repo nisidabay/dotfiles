@@ -217,7 +217,7 @@ map au unarchive
 
 # Mount usbs
 map mu mountusbs
-map uu umountusbs
+map _um umountusbs
 
 map ss stripspace
 
