@@ -1,13 +1,13 @@
-# lf configuration file
 
+# lf configuration file
 
 # Set previewer and cleaner
 set previewer ~/.config/lf/preview
 set cleaner ~/.config/lf/cleaner
 
 set preview true
-set hidden true
-#set drawbox true
+set hidden false
+set drawbox false
 set icons true
 set ignorecase true
 
@@ -23,7 +23,6 @@ cmd open ${{
         ;;
     esac
 }}
-
 
 # Toggle preview of a file
 cmd toggle_preview %{{
@@ -44,14 +43,14 @@ cmd edit-config ${{
 cmd mkdir ${{
   printf "Directory Name: "
   read ans
-  mkdir $ans
+  mkdir "$ans"
 }}
 
 # Make file
 cmd mkfile ${{
   printf "File Name: "
   read ans
-  $EDITOR $ans
+  $EDITOR "$ans"
 }}
 
 # Change permissions of a file
@@ -61,7 +60,7 @@ cmd chmod ${{
 
   for file in "$fx"
   do
-    chmod $ans $file
+    chmod "$ans" "$file"
   done
 
   lf -remote 'send reload'
@@ -71,7 +70,7 @@ cmd chmod ${{
 cmd sudomkfile ${{
   printf "File Name: "
   read ans
-  sudo $EDITOR $ans
+  sudo $EDITOR "$ans"
 }}
 
 # Change system wallpaper
@@ -80,7 +79,7 @@ cmd setwallpaper ${{
 }}
 
 # Open scratchpad notes
-cmd scrachpad ${{
+cmd scratchpad ${{
     $EDITOR ~/scratchpad/scratchpad.txt
 }}
 
@@ -105,7 +104,6 @@ cmd fzf_jump ${{
   lf -remote "send $id $cmd \"$res\""
 }}
 
-
 # Combining fzf with ripgrep, you can interactively search in the contents of
 # files under the current directory and select a file from the results
 cmd fzf_search ${{
@@ -122,7 +120,7 @@ cmd fzf_search ${{
 # Find file with fzf and edit with EDITOR
 cmd fzf ${{
     $EDITOR $(find . -name "$1" 2>/dev/null | fzf)
-    }}
+}}
 
 # Archive bindings
 cmd unarchive ${{
@@ -140,8 +138,37 @@ cmd tar %tar cvf "$f.tar" "$f"
 cmd targz %tar cvzf "$f.tar.gz" "$f"
 cmd tarbz2 %tar cjvf "$f.tar.bz2" "$f"
 
-
 cmd stripspace %stripspace "$f"
+
+# Trash cli bindings
+cmd trash-put ${{
+  trash-put "$f"
+}}
+
+cmd restore_trash ${{
+  trash-restore
+}}
+
+
+cmd empty-trash ${{
+  trash-empty
+}}
+
+# Move selected files to a specified directory
+# Select files with <SpaceBar>
+cmd move ${{
+  printf "Destination Directory: "
+  read dest
+  if [ -d "$dest" ]; then
+    for file in $fx; do
+      mv "$file" "$dest"
+    done
+    lf -remote 'send reload'
+  else
+    echo "Invalid directory: $dest"
+  fi
+}}
+
 
 # Bindings
 # Remove some defaults
@@ -188,14 +215,21 @@ map md mkdir
 map mf mkfile
 map msf sudomkfile
 map ob $setsid -f $BROWSER >/dev/null 2>&1
-map p paste
 map r rename
-map sp scrachpad
+map sp scratchpad
 map sw setwallpaper
 map w open
 map x cut
 map y copy
+map p paste
 map zp toggle_preview
+map M move
+
+# Trash Mappings (Avoid conflicts by choosing alternative keys)
+map ZP trash-put
+map ZR restore_trash
+map ZS cd ~/.local/share/Trash/files
+map ZZ empty-trash
 
 # Searching
 map gt fzf_jump # Jump to a file or directory in lf using fuzzy matching
@@ -217,6 +251,5 @@ map gps cd ~/Pictures/screenshots
 map gpw cd ~/Pictures/wallpapers
 map gr cd ~/Downloads/Refactor
 map mm cd /media
-
 
 map \;j cd ~
