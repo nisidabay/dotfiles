@@ -142,16 +142,16 @@ cmd stripspace %stripspace "$f"
 
 # Trash cli bindings
 cmd trash-put ${{
-  trash-put "$f"
+  trash-put "$f" && notify-send "Trash file: $(basename "$f")"
 }}
 
 cmd restore_trash ${{
-  trash-restore
+  trash-restore && notify-send "File restored"
 }}
 
 
 cmd empty-trash ${{
-  trash-empty
+  trash-empty && notify-send "Trash emptied"
 }}
 
 # Move selected files to a specified directory
