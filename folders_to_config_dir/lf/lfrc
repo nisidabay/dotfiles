@@ -196,6 +196,52 @@ cmd copyto ${{
     notify-send -u critical "Error" "Invalid folder: $dest" --icon=dialog-error
   fi
 }}
+
+
+# Save the current directory as a bookmark
+cmd addbookmark ${{
+    function addbookmark {
+        local bookmark_file=~/.lf_bookmarks
+        [ ! -f "$bookmark_file" ] && touch "$bookmark_file"
+
+        local name=$1
+        if [ -z "$name" ]; then
+            echo "Usage: addbookmark <name>"
+            return
+        fi
+        echo "$name:$(pwd)" >> "$bookmark_file"
+    }
+    addbookmark "$@"
+}}
+
+# Jump to a bookmark
+cmd gobookmark ${{
+    function gobookmark {
+        local bookmark_file=~/.lf_bookmarks
+        [ ! -f "$bookmark_file" ] && touch "$bookmark_file"
+
+        local name=$1
+        if [ -z "$name" ]; then
+            echo "Usage: gobookmark <name>"
+            return
+        fi
+        local path=$(grep "^$name:" "$bookmark_file" | cut -d':' -f2-)
+        if [ -z "$path" ]; then
+            echo "Bookmark not found: $name"
+            return
+        fi
+        lf -remote "send $id cd $path"
+    }
+    gobookmark "$@"
+}}
+
+# List all bookmarks
+cmd listbookmarks ${{
+        bookmark_file=~/.lf_bookmarks
+        [ ! -f "$bookmark_file" ] && touch "$bookmark_file"
+        $EDITOR "$bookmark_file"
+}}
+
 # Bindings
 # Remove some defaults
 map m
