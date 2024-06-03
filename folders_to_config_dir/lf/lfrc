@@ -142,34 +142,60 @@ cmd stripspace %stripspace "$f"
 
 # Trash cli bindings
 cmd trash-put ${{
-  trash-put "$f" && notify-send "Trash file: $(basename "$f")"
+  trash-put "$f" && notify-send -u normal "Trash file: $(basename "$f")" --icon=dialog-information
 }}
 
 cmd restore_trash ${{
-  trash-restore && notify-send "File restored"
+  trash-restore && notify-send -u normal "File restored: $(basename "$f")" --icon=dialog-information
 }}
 
 
 cmd empty-trash ${{
-  trash-empty && notify-send "Trash emptied"
+  trash-empty && notify-send -u normal "Trash emptied" --icon=dialog-information
 }}
+
 
 # Move selected files to a specified directory
 # Select files with <SpaceBar>
-cmd move ${{
-  printf "Destination Directory: "
-  read dest
+cmd moveto ${{
+  # Prompt user to select a destination directory using fzf
+  dest="$(find ~ -maxdepth 3 -type d | fzf --reverse --header='Move to folder: ')"
+  
+  # Check if the selected destination is a valid directory
   if [ -d "$dest" ]; then
+    # Loop through the selected files and move them to the destination
     for file in $fx; do
       mv "$file" "$dest"
     done
-    lf -remote 'send reload'
+    # Reload lf and send a success notification
+    lf -remote 'send reload' && notify-send -u normal "Success" "Files moved to: $(basename "$dest")" --icon=dialog-information
+    sleep 1
   else
-    echo "Invalid directory: $dest"
+    # Send an error notification if the destination is invalid
+    notify-send -u critical "Error" "Invalid folder: $dest" --icon=dialog-error
   fi
 }}
 
-
+# Copy selected files to a specified directory
+# Select files with <SpaceBar>
+cmd copyto ${{
+  # Prompt user to select a destination directory using fzf
+  dest="$(find ~ -maxdepth 3 -type d | fzf --reverse --header='Copy to folder: ')"
+  
+  # Check if the selected destination is a valid directory
+  if [ -d "$dest" ]; then
+    # Loop through the selected files and copy them to the destination
+    for file in $fx; do
+      cp -r "$file" "$dest"
+    done
+    # Reload lf and send a success notification
+    lf -remote 'send reload' && notify-send -u normal "Success" "Files copied to: $(basename "$dest")" --icon=dialog-information
+    sleep 1
+  else
+    # Send an error notification if the destination is invalid
+    notify-send -u critical "Error" "Invalid folder: $dest" --icon=dialog-error
+  fi
+}}
 # Bindings
 # Remove some defaults
 map m
@@ -207,7 +233,6 @@ map R reload
 map U unselect
 map V push !nvim<space>
 map W $setsid -f $TERMINAL >/dev/null 2>&1
-map Y $printf "%s" "$fx" | xclip -selection clipboard
 map ch chmod
 map e open
 map ee open
@@ -223,7 +248,8 @@ map x cut
 map y copy
 map p paste
 map zp toggle_preview
-map M move
+map M moveto
+map Y copyto
 
 # Trash Mappings (Avoid conflicts by choosing alternative keys)
 map ZP trash-put
