@@ -1,0 +1,13 @@
+# Function to check and install a package
+check_and_install() {
+    local package=$1
+    if ! pacman -Qi "$package" &>/dev/null; then
+        echo "$package is not installed. Installing..."
+        sudo pacman -S "$package"
+    fi
+}
+
+# Check for necessary packages
+check_and_install tesseract
+check_and_install tesseract-data-spa
+check_and_install poppler

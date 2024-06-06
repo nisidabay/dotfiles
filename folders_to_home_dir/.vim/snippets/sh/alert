@@ -1,0 +1,6 @@
+alert() {
+    local message=$*
+    gum style --bold "$message" --background="#be2596"
+}
+alert "WARNING: Missing dependencies"
+
