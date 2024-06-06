@@ -1,0 +1,8 @@
+cp2cb() {
+    # Copy the selected note to the clipboard.
+    case "$XDG_SESSION_TYPE" in
+        'x11') xclip -r -selection clipboard ;;
+        'wayland') wl-copy -n ;;
+        *) echo "Unknown display server" && exit 1 ;;
+    esac
+}

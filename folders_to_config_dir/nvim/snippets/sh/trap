@@ -1,0 +1,7 @@
+handle_error() {
+    echo "An error occurred. Exiting."
+    exit 1
+}
+
+# Set a trap to catch errors
+trap handle_error ERR

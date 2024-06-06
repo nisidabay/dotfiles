@@ -1,0 +1,38 @@
+// Function to get an output file 
+FILE *get_output_file(const char *prompt) {
+  char filename[BUFFER];
+  FILE *fp;
+  char response[10];
+
+  while (1) {
+    puts(prompt);
+    if (!fgets(filename, BUFFER, stdin)) {
+      printf("Error reading input. Please try again.\n");
+      continue;
+    }
+    if (filename[strlen(filename) - 1] != '\n') {
+      printf("Input too long, please try again.\n");
+      while (getchar() != '\n')
+        ;  // Clear stdin
+      continue;
+    }
+    filename[strcspn(filename, "\n")] = '\0';  // Remove newline character
+
+    // Check if file exists and confirm overwrite
+    if ((fp = fopen(filename, "r")) != NULL) {
+      fclose(fp);  // Close file to clear any locks
+      printf("File %s already exists. Overwrite? (y/n): ", filename);
+      fgets(response, sizeof(response), stdin);
+      if (tolower(response[0]) != 'y') {
+        continue;
+      }
+    }
+    fp = fopen(filename, "w");
+    if (fp == NULL) {
+      printf("Failed to open file: %s for writing. Please try again.\n",
+             filename);
+    } else {
+      return fp;
+    }
+  }
+}

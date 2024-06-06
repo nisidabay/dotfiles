@@ -1,0 +1,9 @@
+check_url() {
+    # Check if the URL is valid prior to copy to the clipboard
+
+    local url="$1"
+    if ! [[ "$url" =~ ^http?:// ]]; then
+        notify-send -u critical "Invalid URLs found" "Selection is not a valid URL"
+        exit 1
+    fi
+}

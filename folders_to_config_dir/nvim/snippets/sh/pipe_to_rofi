@@ -1,0 +1,3 @@
+find "$HOME/wallpaper" -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" \) -exec basename {} \; | rofi -dmenu 
+
+
