@@ -1,0 +1,18 @@
+spinner() {
+    local pid="$1"
+    chars="/-\|"
+    while kill -0 "$pid" 2>/dev/null; do
+        for ((i = 0; i < ${#chars}; i++)); do
+            echo -ne "${chars:$i:1}" "\r"
+            sleep 0.1
+        done
+    done
+    gum style --bold "Process completed" --background="#2596be"
+}
+
+# Start your process/function in the background and get its PID
+process_or_function &
+pid=$!
+
+# Start the spinner
+spinner "$pid"
