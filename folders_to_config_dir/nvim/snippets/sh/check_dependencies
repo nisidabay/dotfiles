@@ -1,0 +1,23 @@
+# Checks if the programs passed as strings are installed
+chk_dependencies() {
+    local -a dependencies_array=("$@")
+    local -a missing=()
+
+    for program in "${dependencies_array[@]}"; do
+        if ! command -v "$program" > /dev/null; then
+            missing+=("$program")
+        fi
+    done
+
+    if [[ "${#missing[@]}" -gt 0 ]]; then
+        local missing_programs="${missing[*]}"
+        echo "Install the missing dependencies before continuing: $missing_programs"
+        notify-send "Missing Dependencies" \
+            "Install the following programs before continuing: $missing_programs" \
+            --icon=dialog-warning
+        exit 1
+    fi
+}
+
+# Example
+chk_dependencies "gum" "fzf" "libnotify"

@@ -55,11 +55,11 @@ dunst &
 # xcompmgr -c -C -ts -l -s -r4.2 -o.55 &
 
 # Start dwmblocks
-#dwmblocks &
+dwmblocks &
 
 # Start dwm as the window manager and keep restarting it
 # if it crashes or exits
 while true; do
-    exec dwm > /dev/null 2>&1
+     exec dwm > /dev/null 2>&1
 done
                  

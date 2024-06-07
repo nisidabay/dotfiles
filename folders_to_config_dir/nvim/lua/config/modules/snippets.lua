@@ -1,4 +1,4 @@
--- ~/.config/nvim/lua/nisidabay/modules/snippets.lua
+-- ~/.config/nvim/lua/config/modules/snippets.lua
 local M = {}
 
 M.snippets_base_directory = vim.g.snippets_base_directory or vim.fn.stdpath("config") .. "/snippets"
@@ -17,7 +17,7 @@ end
 
 function M.get_snippet_name(filetype)
   local snippet_name =
-    vim.fn.input("Snippet: ", "", "customlist,v:lua.require'nisidabay.modules.snippets'.complete_snippet_names")
+    vim.fn.input("Snippet: ", "", "customlist,v:lua.require'config.modules.snippets'.complete_snippet_names")
   return vim.fn.trim(snippet_name)
 end
 
@@ -192,31 +192,31 @@ end
 vim.api.nvim_set_keymap(
   "n",
   "<leader>ssl",
-  ':lua require("nisidabay.modules.snippets").list_snippets()<CR>',
+  ':lua require("config.modules.snippets").list_snippets()<CR>',
   { noremap = true, silent = true, desc = "List snippets" }
 )
 vim.api.nvim_set_keymap(
   "n",
   "<leader>ssa",
-  ':lua require("nisidabay.modules.snippets").add_snippet()<CR>',
+  ':lua require("config.modules.snippets").add_snippet()<CR>',
   { noremap = true, silent = true, desc = "Add snippet" }
 )
 vim.api.nvim_set_keymap(
   "n",
   "<leader>sse",
-  ':lua require("nisidabay.modules.snippets").edit_snippet()<CR>',
+  ':lua require("config.modules.snippets").edit_snippet()<CR>',
   { noremap = true, silent = true, desc = "Edit snippet" }
 )
 vim.api.nvim_set_keymap(
   "n",
   "<leader>ssd",
-  ':lua require("nisidabay.modules.snippets").delete_snippet()<CR>',
+  ':lua require("config.modules.snippets").delete_snippet()<CR>',
   { noremap = true, silent = true, desc = "Delete snippet" }
 )
 vim.api.nvim_set_keymap(
   "n",
   "<leader>ssi",
-  ':lua require("nisidabay.modules.snippets").insert_snippet()<CR>',
+  ':lua require("config.modules.snippets").insert_snippet()<CR>',
   { noremap = true, silent = true, desc = "Insert snippet" }
 )
 
