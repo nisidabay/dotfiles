@@ -1,6 +1,7 @@
 -- Configuration for the dasht Neovim plugin
 return {
-  "rizzatti/dash.vim", -- Plugin name and repository
+  "rizzatti/dash.vim",
+  enabled = false,
   config = function()
     -- Enable dasht at startup
     vim.g.dasht_enable_at_startup = 1

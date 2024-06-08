@@ -1,5 +1,6 @@
 return {
   "tpope/vim-fugitive",
+  disable = true,
   cmd = { "G", "Git" },
   keys = {
     { "<leader>gb", ":Git branch<cr>", desc = "Git branch" },

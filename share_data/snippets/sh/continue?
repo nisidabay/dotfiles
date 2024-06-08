@@ -1,0 +1,10 @@
+_continue() {
+    read -r -p "Continue ...? [Y/n] " ANSWER
+    ANSWER=${ANSWER:-Y}
+    if [[ ! $ANSWER =~ ^[Yy].* ]]; then
+        exit 0
+    else
+        echo "Let's go!"
+    fi
+}
+_continue

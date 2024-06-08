@@ -3,3 +3,5 @@ require("config.lazy")
 require("config.keymaps")
 require("config.options")
 require("config.modules.snippets")
+
+vim.cmd("colorscheme gruvbox")

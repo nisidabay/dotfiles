@@ -1,0 +1,23 @@
+#!/usr/bin/bash
+
+# List of required dependencies
+dependencies=(ffmpeg ffcast slop xclip notify-send rofi)
+
+# Check for the existence of required dependencies
+check_deps() {
+	missing_deps=0
+	for dep in "${dependencies[@]}"; do
+		if ! command -v "$dep" &>/dev/null; then
+			echo "Error: $dep is required but not installed."
+			missing_deps=$((missing_deps + 1))
+		fi
+	done
+
+	# If there are missing dependencies, exit with an error
+	[ "$missing_deps" -ne 0 ] && exit 1
+}
+
+# Execute the check_deps function
+check_deps
+
+

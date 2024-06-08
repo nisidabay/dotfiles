@@ -1,0 +1,49 @@
+#!/usr/bin/bash
+#
+# Set some colors for output messages
+OK="$(tput setaf 2)[OK]$(tput sgr0)"       # Bright Green
+ERROR="$(tput setaf 1)[ERROR]$(tput sgr0)" # Bright Red
+NOTE="$(tput setaf 6)[NOTE]$(tput sgr0)"   # Cyan
+WARN="$(tput setaf 3)[WARN]$(tput sgr0)"   # Light Yellow
+ACT="$(tput setaf 4)[ACTION]$(tput sgr0)"  # Light Blue
+RESET="$(tput sgr0)"                       # Reset color
+
+# Function to display notifications with color-coded messages
+notify() {
+    local type="$1"
+    local message="$2"
+
+    case $type in
+    OK)
+        echo -e "${OK} $message ${RESET}"
+        notify-send -u normal "Information" "$message" --icon=dialog-information
+        ;;
+    ERROR)
+        echo -e "${ERROR} $message ${RESET}"
+        notify-send -u critical "Error" "$message" --icon=dialog-error
+        ;;
+    NOTE)
+        echo -e "${NOTE} $message ${RESET}"
+        notify-send -u low "Note" "$message" --icon=dialog-information
+        ;;
+    WARN)
+        echo -e "${WARN} $message ${RESET}"
+        notify-send -u critical "Warning" "$message" --icon=dialog-warning
+        ;;
+    ACTION)
+        echo -e "${ACT} $message ${RESET}"
+        notify-send -u critical "Action" "$message" --icon=dialog-warning
+        ;;
+    *)
+        echo -e "${message} ${RESET}" # Default to no special color
+        notify-send -u normal "Information" "$message" --icon=dialog-information
+        ;;
+    esac
+}
+
+# Example usages
+# notify OK "Operation completed successfully."
+# notify ERROR "Failed to complete the operation."
+# notify NOTE "Remember to check the logs for more details."
+# notify WARN "This action will overwrite existing files."
+# notify ACTION "Please wait, processing..."

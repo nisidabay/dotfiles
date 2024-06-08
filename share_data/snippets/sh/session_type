@@ -1,0 +1,10 @@
+
+if [ "${XDG_SESSION_TYPE:-}" == "x11" ]; then
+    echo ...
+elif [ "${XDG_SESSION_TYPE:-}" == "wayland" ]; then
+    echo ...
+else
+    echo "Unsupported session type: ${XDG_SESSION_TYPE:-}" >&2
+    exit 1
+fi
+

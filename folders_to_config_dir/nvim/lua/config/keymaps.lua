@@ -141,7 +141,7 @@ keymap.set("i", "<leader>9", "<Esc>yyp<c-v>$r-A<CR>", { desc = "Underline a word
 -- Compile current file
 keymap.set(
   "n",
-  "<leader>gc",
+  "<leader>cc",
   ":!gcc -Wall -Wextra -g -std=c11 -o %:r %<CR>",
   { silent = true, desc = "Compile C code" }
 )
