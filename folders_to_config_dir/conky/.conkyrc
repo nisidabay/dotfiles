@@ -1,0 +1,76 @@
+ conky.config = {
+	alignment = 'top_left',
+	background = false,
+	default_color = 'E6FF00',
+	cpu_avg_samples = 2,
+	double_buffer = true,
+	font = 'Bitstream Vera Sans:size=12',
+	draw_shades = true,
+	gap_x = 25,
+	gap_y = 45,
+	minimum_width = 200,
+	no_buffers = true,
+	own_window = true,
+	own_window_type = 'override',
+	own_window_transparent = false,
+	update_interval = 2.0,
+	use_xft = true,
+    color1 = '#FFFFFF',
+	color2 = '#5ECEE0',
+	color3 = '#FBCA3F',
+    color4 = '#dd3e3e',
+ }
+
+
+conky.text = [[
+${alignc}${color}DEVELOPER TOOLS
+
+${color}Terminal
+${color1}   mod+Enter 
+${color}Vifm              
+${color1}   mod+Up
+${color}Calcurse          
+${color1}   mod+Right
+${color}Zeal              
+${color1}   mod+Shift+Right
+${color}Geany
+${color1}   mod+Shift+Up
+${color}Xpad              
+${color1}   mod+Down
+${color}Zettlr            
+${color1}   mod+z
+
+${alignc}${color2}PRODUCTIVITY
+
+${color2}Mail
+${color1}   mod+m
+${color2}Browser           
+${color1}   mod+w
+${color2}Calc              
+${color1}   mod+shift+g
+${color2}Capture screen    
+${color1}   F12
+${color2}Show calendar     
+${color1}   mod+Shift+z
+
+${alignc}${color3}     MUSIC             
+
+${color3}Musickube
+${color1}   mod+x
+${color3}Youtube-viewer    
+${color1}   mod+Left
+
+${alignc}${color4}MISCELLANEA
+
+${color4}Transmission      
+${color1}   mod+Shift+Left
+${color4}Tor Browser
+${color1}   mod+Shift+t
+${color4}Calibre           
+${color1}   mod+Shift+Down
+${color4}Alsamixer         
+${color1}   mod+Ctrl+m
+]]
+
+
+
