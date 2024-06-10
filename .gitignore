@@ -10,3 +10,6 @@ folders_to_home_dir/.vim/lsp/
 folders_to_home_dir/.tmux/plugins/tpm 
 folders_to_config_dir/coc/
 dotfiles_raabe/
+folders_to_config_dir/nvim/undodir/
+folders_to_config_dir/pulse/
+folders_to_config_dir/vifm/vifminfo.json
