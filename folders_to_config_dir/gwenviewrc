@@ -1,0 +1,33 @@
+[$Version]
+update_info=gwenview.upd:SideBar_StatusBar_Rename,gwenview.upd:ImageView_AlphaBackgroundMode_Update,gwenview.upd:DeleteThumbnailSetting_Rename
+
+[General]
+LastUsedVersion=210800
+SideBarPage=operations
+
+[KFileDialog Settings]
+Places Icons Auto-resize=false
+Places Icons Static Size=32
+
+[KPropertiesDialog]
+HDMI-A-0 Height 1920x1080=443
+HDMI-A-0 Width 1920x1080=432
+
+[MainWindow]
+HDMI-A-0 Height 1920x1080=1026
+HDMI-A-0 Width 1920x1080=1908
+HDMI-A-0 XPosition 1920x1080=6
+HDMI-A-0 YPosition 1920x1080=48
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAAAAB3QAAAPdAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+
+[Recent Files]
+File1[$e]=$HOME/my_images/40018628-vim-wallpapers.png
+File2[$e]=$HOME/my_images/10-Best-VIM-Cheat-Sheet-01.jpg
+Name1[$e]=40018628-vim-wallpapers.png
+Name2[$e]=10-Best-VIM-Cheat-Sheet-01.jpg
+
+[SideBar]
+IsVisible ViewMode=true
+SideBarSplitterSizes=216,1688

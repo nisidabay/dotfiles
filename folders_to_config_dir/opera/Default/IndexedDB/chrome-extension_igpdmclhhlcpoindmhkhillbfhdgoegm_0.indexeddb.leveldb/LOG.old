@@ -1,0 +1,14 @@
+2024/05/14-11:17:58.565 2e9708 Reusing MANIFEST /home/nisidabay/.config/opera/Default/IndexedDB/chrome-extension_igpdmclhhlcpoindmhkhillbfhdgoegm_0.indexeddb.leveldb/MANIFEST-000001
+2024/05/14-11:17:58.566 2e9708 Recovering log #73
+2024/05/14-11:17:58.568 2e9708 Reusing old log /home/nisidabay/.config/opera/Default/IndexedDB/chrome-extension_igpdmclhhlcpoindmhkhillbfhdgoegm_0.indexeddb.leveldb/000073.log 
+2024/05/14-11:17:58.570 2e9708 Delete type=2 #72
+2024/05/14-11:17:58.594 2e9723 Level-0 table #78: started
+2024/05/14-11:17:58.597 2e9723 Level-0 table #78: 10337 bytes OK
+2024/05/14-11:17:58.599 2e9723 Delete type=0 #73
+2024/05/14-11:17:58.600 2e96fa Manual compaction at level-0 from '\x00\x19\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x1a\x00\x00\x00' @ 0 : 0; will stop at '\x00\x19\x00\x00\x05' @ 1150 : 1
+2024/05/14-11:17:58.600 2e96fa Compacting 1@0 + 1@1 files
+2024/05/14-11:17:58.602 2e96fa Generated table #79@0: 173 keys, 4787 bytes
+2024/05/14-11:17:58.603 2e96fa Compacted 1@0 + 1@1 files => 4787 bytes
+2024/05/14-11:17:58.605 2e96fa compacted to: files[ 0 1 1 0 0 0 0 ]
+2024/05/14-11:17:58.606 2e96fa Delete type=2 #78
+2024/05/14-11:17:58.607 2e96fa Manual compaction at level-0 from '\x00\x19\x00\x00\x05' @ 1150 : 1 .. '\x00\x1a\x00\x00\x00' @ 0 : 0; will stop at (end)

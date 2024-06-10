@@ -1,0 +1,198 @@
+{
+  "geometry-of-main_window_geometry": {
+    "frame_geometry": {
+      "height": 1399,
+      "width": 2500,
+      "x": 27,
+      "y": 28
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 1393,
+      "width": 2494,
+      "x": 30,
+      "y": 31
+    },
+    "maximized": false,
+    "normal_geometry": {
+      "height": 1393,
+      "width": 2494,
+      "x": 30,
+      "y": 31
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAAbAAAAHAAACd4AAAWSAAAAHgAAAB8AAAnbAAAFjwAAAAAAAAAACgAAAAAeAAAAHwAACdsAAAWP"
+    },
+    "screen": {
+      "depth": 24,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 1440,
+        "width": 2560,
+        "x": 0,
+        "y": 0
+      },
+      "index_in_screens_list": 0,
+      "manufacturer": "",
+      "model": "",
+      "name": "DisplayPort-2",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 1440,
+        "width": 2560
+      },
+      "virtual_geometry": {
+        "height": 1440,
+        "width": 2560,
+        "x": 0,
+        "y": 0
+      }
+    }
+  },
+  "main_window_state": {
+    "__class__": "bytearray",
+    "__value__": "AAAA/wAAAAH9AAAAAgAAAAAAAAAAAAAAAPwCAAAAAvsAAAAQAHQAbwBjAC0AZABvAGMAawAAAAAA/////wAAAIoA////+wAAABYAcwBlAGEAcgBjAGgALQBkAG8AYwBrAAAAAAD/////AAAAmgD///8AAAABAAAAAAAAAAD8AgAAAAT7AAAAFgBsAG8AbwBrAHUAcAAtAGQAbwBjAGsAAAAAAP////8AAACDAP////sAAAAcAGIAbwBvAGsAbQBhAHIAawBzAC0AZABvAGMAawAAAAAA/////wAAAPIA////+wAAABwAaQBuAHMAcABlAGMAdABvAHIALQBkAG8AYwBrAAAAAAD/////AAAAFAD////7AAAAHgBoAGkAZwBoAGwAaQBnAGgAdABzAC0AZABvAGMAawAAAAAA/////wAAANcA////AAAJvgAABXEAAAAEAAAABAAAAAgAAAAI/AAAAAEAAAAAAAAAAQAAAB4AYQBjAHQAaQBvAG4AcwBfAHQAbwBvAGwAYgBhAHICAAAAAP////8AAAAAAAAAAA=="
+  },
+  "old_prefs_migrated": true,
+  "session_data": {
+    "controls_help_shown_count": 2,
+    "standalone_font_settings": {},
+    "standalone_misc_settings": {
+      "remember_last_read": true,
+      "remember_window_geometry": false,
+      "save_annotations_in_ebook": true,
+      "singleinstance": false
+    },
+    "standalone_recently_opened": [
+      {
+        "authors": [
+          "J. J. Benítez"
+        ],
+        "key": "/home/nisidabay/Descargas/Caná (J. J. Benítez) (Z-Library).mobi",
+        "pathtoebook": "/home/nisidabay/Descargas/Caná (J. J. Benítez) (Z-Library).mobi",
+        "timestamp": "2024-05-31T19:39:39.968Z",
+        "title": "Caná"
+      },
+      {
+        "authors": [
+          "J. J. Benítez"
+        ],
+        "key": "/home/nisidabay/Descargas/Caballo de Troya 8- Jordán (J. J. Benítez) (Z-Library).epub",
+        "pathtoebook": "/home/nisidabay/Descargas/Caballo de Troya 8- Jordán (J. J. Benítez) (Z-Library).epub",
+        "timestamp": "2024-05-31T19:37:46.094Z",
+        "title": "Jordán. Caballo de Troya 8"
+      },
+      {
+        "authors": [
+          "Philip Freeman"
+        ],
+        "key": "/home/nisidabay/Descargas/Alexander the Great (Philip Freeman) (Z-Library).epub",
+        "pathtoebook": "/home/nisidabay/Descargas/Alexander the Great (Philip Freeman) (Z-Library).epub",
+        "timestamp": "2024-05-31T19:17:00.294Z",
+        "title": "Alexander the Great"
+      },
+      {
+        "authors": [
+          "Rhonda Byrne"
+        ],
+        "key": "/tmp/calibre_7.9.0_tmp_dh0t19dv/4005dsfw_view_device_book.mobi",
+        "pathtoebook": "/tmp/calibre_7.9.0_tmp_dh0t19dv/4005dsfw_view_device_book.mobi",
+        "timestamp": "2024-04-23T09:51:18.240Z",
+        "title": "La Magia"
+      },
+      {
+        "authors": [
+          "Neale Donald Walsh"
+        ],
+        "key": "/tmp/calibre_7.9.0_tmp_dh0t19dv/moh7gk6h_view_device_book.mobi",
+        "pathtoebook": "/tmp/calibre_7.9.0_tmp_dh0t19dv/moh7gk6h_view_device_book.mobi",
+        "timestamp": "2024-04-23T09:41:48.275Z",
+        "title": "Conversaciones con Dios (Vol. 2)"
+      },
+      {
+        "authors": [
+          "Rhonda Byrne"
+        ],
+        "key": "/run/media/nisidabay/Elements/Calibre/Rhonda Byrne/El Secreto (2544)/El Secreto - Rhonda Byrne.mobi",
+        "pathtoebook": "/run/media/nisidabay/Elements/Calibre/Rhonda Byrne/El Secreto (2544)/El Secreto - Rhonda Byrne.mobi",
+        "timestamp": "2024-04-22T11:11:50.355Z",
+        "title": "El Secreto"
+      },
+      {
+        "authors": [
+          "A Clear Direct Introduction to Modern C Pr"
+        ],
+        "key": "/run/media/nisidabay/Elements/Calibre/A Clear Direct Introduction to Modern C Programming/Learn C The Hard Way A Clear & Direct Introduction To Modern C Programming (1854)/Learn C The Hard Way A Clear & Direct Intr - A Clear Direct Introduction to Modern C Pr.pdf",
+        "pathtoebook": "/run/media/nisidabay/Elements/Calibre/A Clear Direct Introduction to Modern C Programming/Learn C The Hard Way A Clear & Direct Introduction To Modern C Programming (1854)/Learn C The Hard Way A Clear & Direct Intr - A Clear Direct Introduction to Modern C Pr.pdf",
+        "timestamp": "2024-04-10T09:18:21.461Z",
+        "title": "Learn C The Hard Way A Clear & Direct Introduction To Modern C Programming"
+      },
+      {
+        "key": "/run/media/nisidabay/Elements/Calibre/Desconocido/Regexp (1250)/Regexp - Desconocido.pdf",
+        "pathtoebook": "/run/media/nisidabay/Elements/Calibre/Desconocido/Regexp (1250)/Regexp - Desconocido.pdf",
+        "timestamp": "2024-04-01T16:03:39.141Z",
+        "title": "Regexp"
+      },
+      {
+        "key": "/run/media/nisidabay/Elements/Calibre/Desconocido/Grep Pocket Reference (John Bambenek, Agnieszka Klus) (Z-Library) (1965)/Grep Pocket Reference (John Bambenek, Agni - Desconocido.pdf",
+        "pathtoebook": "/run/media/nisidabay/Elements/Calibre/Desconocido/Grep Pocket Reference (John Bambenek, Agnieszka Klus) (Z-Library) (1965)/Grep Pocket Reference (John Bambenek, Agni - Desconocido.pdf",
+        "timestamp": "2024-03-27T21:18:16.667Z",
+        "title": "Grep Pocket Reference (John Bambenek, Agni"
+      },
+      {
+        "authors": [
+          "Peter Prinz",
+          "Tony Crawford"
+        ],
+        "key": "/run/media/nisidabay/Elements/Calibre/Peter Prinz/C in a Nutshell_ The Definitive Reference (1691)/C in a Nutshell_ The Definitive Reference - Peter Prinz.pdf",
+        "pathtoebook": "/run/media/nisidabay/Elements/Calibre/Peter Prinz/C in a Nutshell_ The Definitive Reference (1691)/C in a Nutshell_ The Definitive Reference - Peter Prinz.pdf",
+        "timestamp": "2024-03-27T17:45:10.594Z",
+        "title": "C in a Nutshell: The Definitive Reference"
+      },
+      {
+        "authors": [
+          "Isra Bravo"
+        ],
+        "key": "/run/media/nisidabay/Elements/Calibre/Isra Bravo/Storytelling salvaje (Alienta) (Spanish Edition) (2396)/Storytelling salvaje (Alienta) (Spanish Ed - Isra Bravo.pdf",
+        "pathtoebook": "/run/media/nisidabay/Elements/Calibre/Isra Bravo/Storytelling salvaje (Alienta) (Spanish Edition) (2396)/Storytelling salvaje (Alienta) (Spanish Ed - Isra Bravo.pdf",
+        "timestamp": "2024-02-08T16:28:25.300Z",
+        "title": "Storytelling salvaje (Alienta) (Spanish Edition)"
+      },
+      {
+        "authors": [
+          "Unknown"
+        ],
+        "key": "/run/media/nisidabay/Elements/Calibre/Unknown/550928271 (2223)/550928271 - Unknown.epub",
+        "pathtoebook": "/run/media/nisidabay/Elements/Calibre/Unknown/550928271 (2223)/550928271 - Unknown.epub",
+        "timestamp": "2023-08-17T12:29:00.070Z",
+        "title": "550928271"
+      },
+      {
+        "key": "/tmp/calibre_6.24.0_tmp_ktugggnm/kcbz4jps_view_device_book.mobi",
+        "pathtoebook": "/tmp/calibre_6.24.0_tmp_ktugggnm/kcbz4jps_view_device_book.mobi",
+        "timestamp": "2023-08-17T12:25:55.201Z",
+        "title": "El camino"
+      },
+      {
+        "authors": [
+          "Esther Hicks",
+          "Jerry Hicks"
+        ],
+        "key": "/tmp/calibre_6.24.0_tmp_ktugggnm/g490c7cv_view_device_book.mobi",
+        "pathtoebook": "/tmp/calibre_6.24.0_tmp_ktugggnm/g490c7cv_view_device_book.mobi",
+        "timestamp": "2023-08-17T12:22:14.049Z",
+        "title": "La Ley De Atraccion: Conceptos Basicos De Las Ensenanzas De Abraham"
+      },
+      {
+        "authors": [
+          "Amazon"
+        ],
+        "key": "/tmp/calibre_6.24.0_tmp_ktugggnm/ug32isu1_view_device_book.azw3",
+        "pathtoebook": "/tmp/calibre_6.24.0_tmp_ktugggnm/ug32isu1_view_device_book.azw3",
+        "timestamp": "2023-08-17T12:21:24.320Z",
+        "title": "Guía del usuario de Kindle Paperwhite, 16.ª edición (Spanish Edition)"
+      }
+    ]
+  }
+}

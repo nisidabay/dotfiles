@@ -1,0 +1,678 @@
+[10:09:14.167][info] [#0:/home/nisidabay/.config/coc/extensions/coc-lua-data/lua-language-server/main.lua:66]: Lua Lsp startup, root: 	/home/nisidabay/.config/coc/extensions/coc-lua-data/lua-language-server
+[10:09:14.167][info] [#0:/home/nisidabay/.config/coc/extensions/coc-lua-data/lua-language-server/main.lua:67]: ROOT:	/home/nisidabay/.config/coc/extensions/coc-lua-data/lua-language-server
+[10:09:14.167][info] [#0:/home/nisidabay/.config/coc/extensions/coc-lua-data/lua-language-server/main.lua:68]: LOGPATH:	/home/nisidabay/.config/coc/extensions/coc-lua-data/lua-language-server/log
+[10:09:14.167][info] [#0:/home/nisidabay/.config/coc/extensions/coc-lua-data/lua-language-server/main.lua:69]: METAPATH:	/home/nisidabay/.config/coc/extensions/coc-lua-data/lua-language-server/meta
+[10:09:14.167][info] [#0:/home/nisidabay/.config/coc/extensions/coc-lua-data/lua-language-server/main.lua:70]: VERSION:	3.7.0
+[10:09:14.195][info] [#0:script/service/service.lua:144]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 2.140 MB
+        # 00 : 2.140 MB
+        # 01 : 0.000 MB
+        # 02 : 0.000 MB
+        # 03 : 0.000 MB
+        # 04 : 0.000 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[10:09:14.200][info] [#0:script/client.lua:657]: Client init	{
+  capabilities = {
+    general = {
+      markdown = {
+        parser = "marked",
+        version = "4.0.10"
+      },
+      positionEncodings = { "utf-16" },
+      regularExpressions = {
+        engine = "ECMAScript",
+        version = "ES2020"
+      },
+      staleRequestSupport = {
+        cancel = true,
+        retryOnContentModified = { "textDocument/inlayHint", "textDocument/semanticTokens/full", "textDocument/semanticTokens/range", "textDocument/semanticTokens/full/delta" }
+      }
+    },
+    textDocument = {
+      callHierarchy = {
+        dynamicRegistration = true
+      },
+      codeAction = {
+        codeActionLiteralSupport = {
+          codeActionKind = {
+            valueSet = { "", "quickfix", "refactor", "refactor.extract", "refactor.inline", "refactor.rewrite", "source", "source.organizeImports" }
+          }
+        },
+        dataSupport = true,
+        disabledSupport = true,
+        dynamicRegistration = true,
+        honorsChangeAnnotations = false,
+        isPreferredSupport = true,
+        resolveSupport = {
+          properties = { "edit" }
+        }
+      },
+      codeLens = {
+        dynamicRegistration = true
+      },
+      colorProvider = {
+        dynamicRegistration = true
+      },
+      completion = {
+        completionItem = {
+          commitCharactersSupport = true,
+          deprecatedSupport = true,
+          documentationFormat = { "markdown", "plaintext" },
+          insertReplaceSupport = true,
+          insertTextModeSupport = {
+            valueSet = { 1, 2 }
+          },
+          labelDetailsSupport = true,
+          preselectSupport = true,
+          resolveSupport = {
+            properties = { "documentation", "detail", "additionalTextEdits" }
+          },
+          snippetSupport = true,
+          tagSupport = {
+            valueSet = { 1 }
+          }
+        },
+        completionItemKind = {
+          valueSet = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25 }
+        },
+        completionList = {
+          itemDefaults = { "commitCharacters", "editRange", "insertTextFormat", "insertTextMode" }
+        },
+        contextSupport = true,
+        dynamicRegistration = true,
+        insertTextMode = 2
+      },
+      declaration = {
+        dynamicRegistration = true,
+        linkSupport = true
+      },
+      definition = {
+        dynamicRegistration = true,
+        linkSupport = true
+      },
+      diagnostic = {
+        dynamicRegistration = true,
+        relatedDocumentSupport = true
+      },
+      documentHighlight = {
+        dynamicRegistration = true
+      },
+      documentLink = {
+        dynamicRegistration = true,
+        tooltipSupport = true
+      },
+      documentSymbol = {
+        dynamicRegistration = true,
+        hierarchicalDocumentSymbolSupport = true,
+        labelSupport = true,
+        symbolKind = {
+          valueSet = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26 }
+        },
+        tagSupport = {
+          valueSet = { 1 }
+        }
+      },
+      foldingRange = {
+        dynamicRegistration = true,
+        foldingRange = {
+          collapsedText = false
+        },
+        foldingRangeKind = {
+          valueSet = { "comment", "imports", "region" }
+        },
+        lineFoldingOnly = true,
+        rangeLimit = 5000
+      },
+      formatting = {
+        dynamicRegistration = true
+      },
+      hover = {
+        contentFormat = { "markdown", "plaintext" },
+        dynamicRegistration = true
+      },
+      implementation = {
+        dynamicRegistration = true,
+        linkSupport = true
+      },
+      inlayHint = {
+        dynamicRegistration = true,
+        resolveSupport = {
+          properties = { "tooltip", "textEdits", "label.tooltip", "label.location", "label.command" }
+        }
+      },
+      inlineValue = {
+        dynamicRegistration = true
+      },
+      linkedEditingRange = {
+        dynamicRegistration = true
+      },
+      onTypeFormatting = {
+        dynamicRegistration = true
+      },
+      publishDiagnostics = {
+        codeDescriptionSupport = true,
+        dataSupport = true,
+        relatedInformation = true,
+        tagSupport = {
+          valueSet = { 1, 2 }
+        },
+        versionSupport = true
+      },
+      rangeFormatting = {
+        dynamicRegistration = true
+      },
+      references = {
+        dynamicRegistration = true
+      },
+      rename = {
+        dynamicRegistration = true,
+        honorsChangeAnnotations = true,
+        prepareSupport = true,
+        prepareSupportDefaultBehavior = 1
+      },
+      selectionRange = {
+        dynamicRegistration = true
+      },
+      semanticTokens = {
+        augmentsSyntaxTokens = true,
+        dynamicRegistration = true,
+        formats = { "relative" },
+        multilineTokenSupport = false,
+        overlappingTokenSupport = false,
+        requests = {
+          full = {
+            delta = true
+          },
+          range = true
+        },
+        serverCancelSupport = true,
+        tokenModifiers = { "declaration", "definition", "readonly", "static", "deprecated", "abstract", "async", "modification", "documentation", "defaultLibrary" },
+        tokenTypes = { "namespace", "type", "class", "enum", "interface", "struct", "typeParameter", "parameter", "variable", "property", "enumMember", "event", "function", "method", "macro", "keyword", "modifier", "comment", "string", "number", "regexp", "decorator", "operator" }
+      },
+      signatureHelp = {
+        contextSupport = true,
+        dynamicRegistration = true,
+        signatureInformation = {
+          activeParameterSupport = true,
+          documentationFormat = { "markdown", "plaintext" },
+          parameterInformation = {
+            labelOffsetSupport = true
+          }
+        }
+      },
+      synchronization = {
+        didSave = true,
+        dynamicRegistration = true,
+        willSave = true,
+        willSaveWaitUntil = true
+      },
+      typeDefinition = {
+        dynamicRegistration = true,
+        linkSupport = true
+      },
+      typeHierarchy = {
+        dynamicRegistration = true
+      }
+    },
+    window = {
+      showDocument = {
+        support = true
+      },
+      showMessage = {
+        messageActionItem = {
+          additionalPropertiesSupport = true
+        }
+      },
+      workDoneProgress = true
+    },
+    workspace = {
+      applyEdit = true,
+      codeLens = {
+        refreshSupport = true
+      },
+      configuration = true,
+      diagnostics = {
+        refreshSupport = true
+      },
+      didChangeConfiguration = {
+        dynamicRegistration = true
+      },
+      didChangeWatchedFiles = {
+        dynamicRegistration = true,
+        relativePatternSupport = true
+      },
+      executeCommand = {
+        dynamicRegistration = true
+      },
+      fileOperations = {
+        didCreate = true,
+        didDelete = true,
+        didRename = true,
+        dynamicRegistration = true,
+        willCreate = true,
+        willDelete = true,
+        willRename = true
+      },
+      inlayHint = {
+        refreshSupport = true
+      },
+      inlineValue = {
+        refreshSupport = true
+      },
+      semanticTokens = {
+        refreshSupport = true
+      },
+      symbol = {
+        dynamicRegistration = true,
+        resolveSupport = {
+          properties = { "location.range" }
+        },
+        symbolKind = {
+          valueSet = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26 }
+        },
+        tagSupport = {
+          valueSet = { 1 }
+        }
+      },
+      workspaceEdit = {
+        changeAnnotationSupport = {
+          groupsOnLabel = false
+        },
+        documentChanges = true,
+        failureHandling = "undo",
+        normalizesLineEndings = true,
+        resourceOperations = { "create", "rename", "delete" }
+      },
+      workspaceFolders = true
+    }
+  },
+  clientInfo = {
+    name = "coc.nvim",
+    version = "0.0.82"
+  },
+  initializationOptions = {
+    changeConfiguration = true
+  },
+  locale = "es_ES",
+  processId = 626007,
+  rootPath = "/home/nisidabay/Downloads/Refactor/practice_lua",
+  rootUri = "file:///home/nisidabay/Downloads/Refactor/practice_lua",
+  trace = "off",
+  workDoneToken = "0c6cfad9-bb32-4321-ab8c-2fff2d90cea4",
+  workspaceFolders = { {
+      name = "practice_lua",
+      uri = "file:///home/nisidabay/Downloads/Refactor/practice_lua"
+    } }
+}
+[10:09:14.200][info] [#0:script/language.lua:137]: VSC language: es_ES
+[10:09:14.200][info] [#0:script/language.lua:138]: LS  language: en-us
+[10:09:14.200][info] [#0:script/workspace/workspace.lua:38]: Workspace init root: 	file:///home/nisidabay/Downloads/Refactor/practice_lua
+[10:09:14.200][info] [#0:script/workspace/workspace.lua:42]: Log path: 	/home/nisidabay/.config/coc/extensions/coc-lua-data/lua-language-server/log/file_home_nisidabay_Downloads_Refactor_practice_lua.log
+[10:09:14.200][info] [#0:script/workspace/workspace.lua:48]: Workspace create: 	file:///home/nisidabay/Downloads/Refactor/practice_lua
+[10:09:14.402][info] [#0:script/provider/provider.lua:46]: Load config from client	file:///home/nisidabay/Downloads/Refactor/practice_lua
+[10:09:14.403][info] [#0:script/provider/provider.lua:47]: {
+  Lua = {
+    addonManager = {
+      enable = true
+    },
+    codeLens = {
+      enable = false
+    },
+    completion = {
+      autoRequire = true,
+      callSnippet = "Disable",
+      displayContext = 0,
+      enable = true,
+      keywordSnippet = "Replace",
+      postfix = "@",
+      requireSeparator = ".",
+      showParams = true,
+      showWord = "Fallback",
+      workspaceWord = true
+    },
+    diagnostics = {
+      disable = {},
+      disableScheme = { "git" },
+      enable = true,
+      globals = {},
+      ignoredFiles = "Opened",
+      libraryFiles = "Opened",
+      unusedLocalExclude = {},
+      workspaceDelay = 3000,
+      workspaceEvent = "OnSave",
+      workspaceRate = 100
+    },
+    doc = {
+      packageName = {},
+      privateName = {},
+      protectedName = {}
+    },
+    format = {
+      defaultConfig = {},
+      enable = true
+    },
+    hint = {
+      arrayIndex = "Auto",
+      await = true,
+      enable = false,
+      paramName = "All",
+      paramType = true,
+      semicolon = "SameLine",
+      setType = false
+    },
+    hover = {
+      enable = true,
+      enumsLimit = 5,
+      expandAlias = true,
+      previewFields = 50,
+      viewNumber = true,
+      viewString = true,
+      viewStringMax = 1000
+    },
+    misc = {
+      executablePath = "",
+      parameters = {}
+    },
+    runtime = {
+      fileEncoding = "utf8",
+      meta = "${version} ${language} ${encoding}",
+      nonstandardSymbol = {},
+      path = { "?.lua", "?/init.lua" },
+      pathStrict = false,
+      plugin = "",
+      pluginArgs = {},
+      special = {},
+      unicodeName = false,
+      version = "Lua 5.4"
+    },
+    semantic = {
+      annotation = true,
+      enable = true,
+      keyword = false,
+      variable = true
+    },
+    signatureHelp = {
+      enable = true
+    },
+    spell = {
+      dict = {}
+    },
+    type = {
+      castNumberToInteger = true,
+      weakNilCheck = false,
+      weakUnionCheck = false
+    },
+    window = {
+      progressBar = true,
+      statusBar = true
+    },
+    workspace = {
+      checkThirdParty = true,
+      ignoreDir = { ".vscode" },
+      ignoreSubmodules = true,
+      library = {},
+      maxPreload = 5000,
+      preloadFileSize = 500,
+      useGitIgnore = true,
+      userThirdParty = {}
+    }
+  }
+}
+[10:09:14.503][info] [#0:script/provider/completion.lua:43]: Enable completion.
+[10:09:14.504][info] [#0:script/provider/provider.lua:61]: Load config from client	fallback
+[10:09:14.504][info] [#0:script/provider/provider.lua:62]: {
+  Lua = {
+    addonManager = {
+      enable = true
+    },
+    codeLens = {
+      enable = false
+    },
+    completion = {
+      autoRequire = true,
+      callSnippet = "Disable",
+      displayContext = 0,
+      enable = true,
+      keywordSnippet = "Replace",
+      postfix = "@",
+      requireSeparator = ".",
+      showParams = true,
+      showWord = "Fallback",
+      workspaceWord = true
+    },
+    diagnostics = {
+      disable = {},
+      disableScheme = { "git" },
+      enable = true,
+      globals = {},
+      ignoredFiles = "Opened",
+      libraryFiles = "Opened",
+      unusedLocalExclude = {},
+      workspaceDelay = 3000,
+      workspaceEvent = "OnSave",
+      workspaceRate = 100
+    },
+    doc = {
+      packageName = {},
+      privateName = {},
+      protectedName = {}
+    },
+    format = {
+      defaultConfig = {},
+      enable = true
+    },
+    hint = {
+      arrayIndex = "Auto",
+      await = true,
+      enable = false,
+      paramName = "All",
+      paramType = true,
+      semicolon = "SameLine",
+      setType = false
+    },
+    hover = {
+      enable = true,
+      enumsLimit = 5,
+      expandAlias = true,
+      previewFields = 50,
+      viewNumber = true,
+      viewString = true,
+      viewStringMax = 1000
+    },
+    misc = {
+      executablePath = "",
+      parameters = {}
+    },
+    runtime = {
+      fileEncoding = "utf8",
+      meta = "${version} ${language} ${encoding}",
+      nonstandardSymbol = {},
+      path = { "?.lua", "?/init.lua" },
+      pathStrict = false,
+      plugin = "",
+      pluginArgs = {},
+      special = {},
+      unicodeName = false,
+      version = "Lua 5.4"
+    },
+    semantic = {
+      annotation = true,
+      enable = true,
+      keyword = false,
+      variable = true
+    },
+    signatureHelp = {
+      enable = true
+    },
+    spell = {
+      dict = {}
+    },
+    type = {
+      castNumberToInteger = true,
+      weakNilCheck = false,
+      weakUnionCheck = false
+    },
+    window = {
+      progressBar = true,
+      statusBar = true
+    },
+    workspace = {
+      checkThirdParty = true,
+      ignoreDir = { ".vscode" },
+      ignoreSubmodules = true,
+      library = {},
+      maxPreload = 5000,
+      preloadFileSize = 500,
+      useGitIgnore = true,
+      userThirdParty = {}
+    }
+  }
+}
+[10:09:14.705][info] [#0:script/library.lua:212]: Init builtin library at:	file:///home/nisidabay/Downloads/Refactor/practice_lua
+[10:09:14.773][info] [#0:script/plugin.lua:86]: plugin path:	/home/nisidabay/Downloads/Refactor/practice_lua
+[10:09:14.773][warn] [#0:script/plugin.lua:101]: plugin not found:	/home/nisidabay/Downloads/Refactor/practice_lua
+[10:09:14.773][info] [#0:script/library.lua:212]: Init builtin library at:	nil
+[10:09:14.893][info] [#0:script/workspace/workspace.lua:324]: Preload start:	file:///home/nisidabay/Downloads/Refactor/practice_lua
+[10:09:14.898][info] [#0:script/workspace/workspace.lua:330]: Scan files at:	file:///home/nisidabay/Downloads/Refactor/practice_lua
+[10:09:14.900][info] [#0:script/workspace/workspace.lua:324]: Preload start:	<fallback>
+[10:09:14.904][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/nisidabay/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/table.lua
+[10:09:14.904][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/nisidabay/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/utf8.lua
+[10:09:14.905][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/nisidabay/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/builtin.lua
+[10:09:14.905][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/nisidabay/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/os.lua
+[10:09:14.906][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/nisidabay/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/basic.lua
+[10:09:14.906][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/nisidabay/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/package.lua
+[10:09:14.906][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/nisidabay/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/coroutine.lua
+[10:09:14.906][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/nisidabay/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/math.lua
+[10:09:14.907][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/nisidabay/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/string.lua
+[10:09:14.907][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/nisidabay/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/debug.lua
+[10:09:14.907][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/nisidabay/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/io.lua
+[10:09:14.911][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/nisidabay/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/table.lua
+[10:09:14.911][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/nisidabay/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/utf8.lua
+[10:09:14.911][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/nisidabay/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/builtin.lua
+[10:09:14.911][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/nisidabay/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/os.lua
+[10:09:14.911][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/nisidabay/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/basic.lua
+[10:09:14.911][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/nisidabay/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/package.lua
+[10:09:14.912][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/nisidabay/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/coroutine.lua
+[10:09:14.912][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/nisidabay/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/math.lua
+[10:09:14.912][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/nisidabay/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/string.lua
+[10:09:14.912][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/nisidabay/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/debug.lua
+[10:09:14.912][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/nisidabay/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/io.lua
+[10:09:15.013][info] [#0:script/workspace/workspace.lua:379]: Found 11 files at:	<fallback>
+[10:09:15.013][info] [#0:script/workspace/loading.lua:161]: Load files from disk:	<fallback>
+[10:09:15.013][info] [#0:script/workspace/workspace.lua:379]: Found 67 files at:	file:///home/nisidabay/Downloads/Refactor/practice_lua
+[10:09:15.013][info] [#0:script/workspace/loading.lua:161]: Load files from disk:	file:///home/nisidabay/Downloads/Refactor/practice_lua
+[10:09:15.014][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/nisidabay/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/io.lua , size = 6.364 KB
+[10:09:15.026][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/nisidabay/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/io.lua
+[10:09:15.026][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/nisidabay/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/debug.lua , size = 7.637 KB
+[10:09:15.042][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/nisidabay/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/debug.lua
+[10:09:15.042][info] [#0:script/workspace/loading.lua:98]: Skip loaded file: file:///home/nisidabay/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/debug.lua
+[10:09:15.042][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/nisidabay/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/string.lua , size = 6.341 KB
+[10:09:15.052][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/nisidabay/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/string.lua
+[10:09:15.052][info] [#0:script/workspace/loading.lua:98]: Skip loaded file: file:///home/nisidabay/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/string.lua
+[10:09:15.052][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/nisidabay/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/math.lua , size = 8.509 KB
+[10:09:15.067][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/nisidabay/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/math.lua
+[10:09:15.067][info] [#0:script/workspace/loading.lua:98]: Skip loaded file: file:///home/nisidabay/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/math.lua
+[10:09:15.067][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/nisidabay/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/coroutine.lua , size = 2.590 KB
+[10:09:15.070][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/nisidabay/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/coroutine.lua
+[10:09:15.070][info] [#0:script/workspace/loading.lua:98]: Skip loaded file: file:///home/nisidabay/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/coroutine.lua
+[10:09:15.070][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/nisidabay/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/package.lua , size = 2.944 KB
+[10:09:15.073][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/nisidabay/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/package.lua
+[10:09:15.073][info] [#0:script/workspace/loading.lua:98]: Skip loaded file: file:///home/nisidabay/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/package.lua
+[10:09:15.073][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/nisidabay/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/basic.lua , size = 15.336 KB
+[10:09:15.090][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/nisidabay/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/basic.lua
+[10:09:15.090][info] [#0:script/workspace/loading.lua:98]: Skip loaded file: file:///home/nisidabay/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/basic.lua
+[10:09:15.090][info] [#0:script/workspace/loading.lua:98]: Skip loaded file: file:///home/nisidabay/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/io.lua
+[10:09:15.090][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/nisidabay/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/os.lua , size = 5.600 KB
+[10:09:15.095][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/nisidabay/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/os.lua
+[10:09:15.095][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/nisidabay/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/builtin.lua , size = 0.302 KB
+[10:09:15.096][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/nisidabay/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/builtin.lua
+[10:09:15.096][info] [#0:script/workspace/loading.lua:98]: Skip loaded file: file:///home/nisidabay/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/builtin.lua
+[10:09:15.096][info] [#0:script/workspace/loading.lua:98]: Skip loaded file: file:///home/nisidabay/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/os.lua
+[10:09:15.096][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/nisidabay/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/utf8.lua , size = 2.386 KB
+[10:09:15.098][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/nisidabay/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/utf8.lua
+[10:09:15.098][info] [#0:script/workspace/loading.lua:98]: Skip loaded file: file:///home/nisidabay/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/utf8.lua
+[10:09:15.099][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/nisidabay/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/table.lua , size = 4.230 KB
+[10:09:15.102][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/nisidabay/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/table.lua
+[10:09:15.102][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/nisidabay/Downloads/Refactor/practice_lua/while_loop.lua , size = 0.598 KB
+[10:09:15.103][info] [#0:script/workspace/loading.lua:98]: Skip loaded file: file:///home/nisidabay/.config/coc/extensions/coc-lua-data/lua-language-server/meta/Lua%205.4%20en-us%20utf8/table.lua
+[10:09:15.103][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/nisidabay/Downloads/Refactor/practice_lua/passing_functions.lua , size = 0.775 KB
+[10:09:15.104][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/nisidabay/Downloads/Refactor/practice_lua/statefulIterator-3.lua , size = 0.559 KB
+[10:09:15.104][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/nisidabay/Downloads/Refactor/practice_lua/count_3s_7s.lua , size = 0.815 KB
+[10:09:15.106][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/nisidabay/Downloads/Refactor/practice_lua/call_module.lua , size = 0.101 KB
+[10:09:15.106][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/nisidabay/Downloads/Refactor/practice_lua/coroutines/coroutine-1.lua , size = 0.521 KB
+[10:09:15.107][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/nisidabay/Downloads/Refactor/practice_lua/coroutines/coroutine-2.lua , size = 1.064 KB
+[10:09:15.108][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/nisidabay/Downloads/Refactor/practice_lua/classes-2.lua , size = 0.663 KB
+[10:09:15.109][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/nisidabay/Downloads/Refactor/practice_lua/coroutines/coroutine-3.lua , size = 0.801 KB
+[10:09:15.110][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/nisidabay/Downloads/Refactor/practice_lua/common_functions.lua , size = 0.206 KB
+[10:09:15.110][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/nisidabay/Downloads/Refactor/practice_lua/test_module.lua , size = 0.149 KB
+[10:09:15.111][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/nisidabay/Downloads/Refactor/practice_lua/printing_values_oneline.lua , size = 0.911 KB
+[10:09:15.112][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/nisidabay/Downloads/Refactor/practice_lua/for_loop.lua , size = 0.244 KB
+[10:09:15.112][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/nisidabay/Downloads/Refactor/practice_lua/adding_to_tables.lua , size = 1.100 KB
+[10:09:15.113][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/nisidabay/Downloads/Refactor/practice_lua/function_variadic_with_input.lua , size = 1.132 KB
+[10:09:15.114][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/nisidabay/Downloads/Refactor/practice_lua/string_length.lua , size = 0.169 KB
+[10:09:15.115][info] [#0:script/workspace/loading.lua:173]: Loaded files takes [0.106] sec: <fallback>
+[10:09:15.115][info] [#0:script/workspace/loading.lua:182]: Compile files takes [0.000] sec: <fallback>
+[10:09:15.115][info] [#0:script/workspace/loading.lua:183]: Loaded finish:	<fallback>
+[10:09:15.115][info] [#0:script/workspace/workspace.lua:381]: Preload finish at:	<fallback>
+[10:09:15.120][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/nisidabay/Downloads/Refactor/practice_lua/main.lua , size = 1.664 KB
+[10:09:15.121][warn] [#0:script/proto/proto.lua:138]: Response of [workspace/diagnostic/refresh] error [-32601]: Unhandled method workspace/diagnostic/refresh
+[10:09:15.121][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/nisidabay/Downloads/Refactor/practice_lua/files.lua , size = 0.073 KB
+[10:09:15.122][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/nisidabay/Downloads/Refactor/practice_lua/factorial.lua , size = 0.682 KB
+[10:09:15.122][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/nisidabay/Downloads/Refactor/practice_lua/statefulIterator-2.lua , size = 0.685 KB
+[10:09:15.123][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/nisidabay/Downloads/Refactor/practice_lua/fibonacciIterator.lua , size = 0.213 KB
+[10:09:15.123][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/nisidabay/Downloads/Refactor/practice_lua/iterator.lua , size = 0.171 KB
+[10:09:15.128][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/nisidabay/Downloads/Refactor/practice_lua/menu.lua , size = 0.959 KB
+[10:09:15.129][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/nisidabay/Downloads/Refactor/practice_lua/nestedTables.lua , size = 0.681 KB
+[10:09:15.130][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/nisidabay/Downloads/Refactor/practice_lua/prime_numbers.lua , size = 0.552 KB
+[10:09:15.130][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/nisidabay/Downloads/Refactor/practice_lua/print_array.lua , size = 0.107 KB
+[10:09:15.131][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/nisidabay/Downloads/Refactor/practice_lua/function_variadic.lua , size = 0.580 KB
+[10:09:15.131][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/nisidabay/Downloads/Refactor/practice_lua/arrays-1.lua , size = 0.716 KB
+[10:09:15.132][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/nisidabay/Downloads/Refactor/practice_lua/classes-1.lua , size = 1.349 KB
+[10:09:15.133][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/nisidabay/Downloads/Refactor/practice_lua/count_table_elements.lua , size = 1.654 KB
+[10:09:15.134][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/nisidabay/Downloads/Refactor/practice_lua/tostring_table.lua , size = 0.550 KB
+[10:09:15.134][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/nisidabay/Downloads/Refactor/practice_lua/test.lua , size = 0.335 KB
+[10:09:15.135][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/nisidabay/Downloads/Refactor/practice_lua/customErrorHandler.lua , size = 0.607 KB
+[10:09:15.136][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/nisidabay/Downloads/Refactor/practice_lua/inheritance.lua , size = 1.004 KB
+[10:09:15.137][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/nisidabay/Downloads/Refactor/practice_lua/conditional.lua , size = 0.909 KB
+[10:09:15.137][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/nisidabay/Downloads/Refactor/practice_lua/multidimensional_array.lua , size = 0.580 KB
+[10:09:15.138][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/nisidabay/Downloads/Refactor/practice_lua/2DArray-2.lua , size = 1.272 KB
+[10:09:15.139][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/nisidabay/Downloads/Refactor/practice_lua/2DArray-1.lua , size = 1.331 KB
+[10:09:15.140][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/nisidabay/Downloads/Refactor/practice_lua/statefulIterator-1.lua , size = 0.575 KB
+[10:09:15.140][info] [#0:script/workspace/loading.lua:89]: Skip loaded file: file:///home/nisidabay/Downloads/Refactor/practice_lua/metatables/add_metatable.lua
+[10:09:15.141][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/nisidabay/Downloads/Refactor/practice_lua/assert_function.lua , size = 0.489 KB
+[10:09:15.141][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/nisidabay/Downloads/Refactor/practice_lua/arrayIterator.lua , size = 0.718 KB
+[10:09:15.142][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/nisidabay/Downloads/Refactor/practice_lua/metatables/call_method_metatables-1.lua , size = 0.759 KB
+[10:09:15.142][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/nisidabay/Downloads/Refactor/practice_lua/metatables/metatablescustomAssignment.lua , size = 0.413 KB
+[10:09:15.143][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/nisidabay/Downloads/Refactor/practice_lua/metatables/metatablesComparison.lua , size = 0.462 KB
+[10:09:15.143][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/nisidabay/Downloads/Refactor/practice_lua/metatables/metables-operatorOverloading.lua , size = 0.542 KB
+[10:09:15.144][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/nisidabay/Downloads/Refactor/practice_lua/metatables/call_method_metatables-2.lua , size = 0.777 KB
+[10:09:15.145][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/nisidabay/Downloads/Refactor/practice_lua/metatables/getmetatable-1.lua , size = 0.969 KB
+[10:09:15.146][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/nisidabay/Downloads/Refactor/practice_lua/metatables/metatable_index.lua , size = 0.320 KB
+[10:09:15.146][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/nisidabay/Downloads/Refactor/practice_lua/metatables/vector3d-metatables-solution.lua , size = 1.538 KB
+[10:09:15.147][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/nisidabay/Downloads/Refactor/practice_lua/metatables/metables-formatOutput.lua , size = 0.453 KB
+[10:09:15.148][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/nisidabay/Downloads/Refactor/practice_lua/metatables/metatables-2.lua , size = 1.615 KB
+[10:09:15.149][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/nisidabay/Downloads/Refactor/practice_lua/metatables/metatables_customIndexing.lua , size = 0.337 KB
+[10:09:15.149][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/nisidabay/Downloads/Refactor/practice_lua/user_input.lua , size = 0.983 KB
+[10:09:15.150][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/nisidabay/Downloads/Refactor/practice_lua/nested_for.lua , size = 0.542 KB
+[10:09:15.251][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/nisidabay/Downloads/Refactor/practice_lua/console_input.lua , size = 0.108 KB
+[10:09:15.371][info] [#0:script/workspace/loading.lua:173]: Loaded files takes [0.164] sec: file:///home/nisidabay/Downloads/Refactor/practice_lua
+[10:09:15.371][info] [#0:script/workspace/loading.lua:182]: Compile files takes [0.000] sec: file:///home/nisidabay/Downloads/Refactor/practice_lua
+[10:09:15.371][info] [#0:script/workspace/loading.lua:183]: Loaded finish:	file:///home/nisidabay/Downloads/Refactor/practice_lua
+[10:09:15.371][info] [#0:script/workspace/workspace.lua:381]: Preload finish at:	file:///home/nisidabay/Downloads/Refactor/practice_lua
+[10:09:15.382][info] [#0:script/provider/diagnostic.lua:557]: Diagnostics scope [file:///home/nisidabay/Downloads/Refactor/practice_lua], files count:[67]
+[10:09:15.382][warn] [#0:script/proto/proto.lua:138]: Response of [workspace/diagnostic/refresh] error [-32601]: Unhandled method workspace/diagnostic/refresh
+[10:09:15.569][info] [#0:script/provider/diagnostic.lua:574]: Diagnostics scope [file:///home/nisidabay/Downloads/Refactor/practice_lua] finished, takes [0.187] sec.

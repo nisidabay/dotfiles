@@ -1,0 +1,20 @@
+{
+    "editor.fontSize": 16,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["k", "j"],
+            "after": ["<Esc>"],
+            "before": ["j", "k"],
+            "after": ["<Esc>"]
+        }
+    ],
+
+    "vim.normalModeKeyBindings": [
+        {
+            "before": ["k", "j"],
+            "after": ["<Esc>"],
+            "before": ["j", "k"],
+            "after": ["<Esc>"]
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+  "WindowWidth": 2560,
+  "WindowHeight": 1417,
+  "WindowMaximized": false,
+  "Theme": 1,
+  "AutomaticallyCheckForUpdates": false,
+  "RememberLastOpenedFolder": true,
+  "IncludeSubfolders": true,
+  "SortFilesBy": 1,
+  "LastOpenedFolder": "/home/nisidabay/Music",
+  "PreserveModificationTimestamp": false,
+  "LimitFilenameCharacters": false,
+  "OverwriteTagWithMusicBrainz": true,
+  "OverwriteAlbumArtWithMusicBrainz": true,
+  "OverwriteLyricsWithWebService": true,
+  "AcoustIdUserAPIKey": "",
+  "PreviousFTTFormatString": "",
+  "PreviousTTFFormatString": "",
+  "ExtrasPane": true
+}

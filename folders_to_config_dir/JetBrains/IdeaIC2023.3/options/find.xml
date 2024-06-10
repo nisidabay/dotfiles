@@ -1,0 +1,13 @@
+<application>
+  <component name="FindSettings">
+    <option name="customScope" value="File '…/src/Array_Type_example.kt'" />
+    <option name="defaultScopeName" value="File '…/src/Array_Type_example.kt'" />
+    <option name="SEARCH_SCOPE" value="File '…/src/Array_Type_example.kt'" />
+    <mask>*.css</mask>
+    <mask>*.html</mask>
+    <mask>*.xml</mask>
+    <mask>*.jsp</mask>
+    <mask>*.properties</mask>
+    <mask>*.java</mask>
+  </component>
+</application>

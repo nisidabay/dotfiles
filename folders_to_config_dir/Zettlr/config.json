@@ -1,0 +1,390 @@
+{
+  "version": "3.1.1",
+  "openPaths": [
+    "A crash course in Python “comprehensions” and “generators”  by Pete Fison  Nov, 2022  Medium.md",
+    "ctrlp.vim ÷ home.md",
+    "Data Classes in Python 3.7+ (Guide) – Real Python.md",
+    "Git.md",
+    "/run/media/nisidabay/ROJO/Typora-docs/How to replace multiple lines using the sed command.md",
+    "/home/nisidabay/Downloads/How to Use Thread in Tkinter Applications.md",
+    "index.md",
+    "/home/nisidabay/Downloads/Documents/Modulos_estandard.md",
+    "Namespaces and Scope in Python – Real Python.md",
+    "/home/nisidabay/Downloads/Providing Multiple Constructors in Your Python Classes – Real Python.md",
+    "Providing Multiple Constructors in Your Python Classes – Real Python(1).md",
+    "Python Concurrency Learning Paths.md",
+    "Python strftime reference cheatsheet.md",
+    "/home/nisidabay/Downloads/Python Threading The Complete Guide.md",
+    "Python Threading The Complete Guide.md",
+    "Python Timer Functions Three Ways to Monitor Your Code – Real Python.md",
+    "Python Timer Functions Three Ways to Monitor Your Code.md",
+    "temp.md",
+    "/home/nisidabay/Downloads/Tips for debugging with print() - Adam Johnson.md",
+    "/home/nisidabay/Downloads/TkDocs Tutorial - Styles and Themes.md",
+    "/home/nisidabay/Documents/Zettlr Tutorial"
+  ],
+  "openDirectory": "/home/nisidabay/Documents/Zettlr Tutorial",
+  "dialogPaths": {
+    "askFileDialog": "/home/nisidabay",
+    "askDirDialog": "/home/nisidabay",
+    "askLangFileDialog": ""
+  },
+  "window": {
+    "nativeAppearance": false,
+    "vibrancy": false,
+    "sidebarVisible": true,
+    "currentSidebarTab": "toc",
+    "recentGlobalSearches": []
+  },
+  "attachmentExtensions": [
+    ".pdf",
+    ".odt",
+    ".odp",
+    ".ods",
+    ".doc",
+    ".docx",
+    ".xls",
+    ".xlsx",
+    ".ppt",
+    ".pptx",
+    ".do",
+    ".r",
+    ".py",
+    ".sav",
+    ".zsav",
+    ".csv",
+    ".tsv",
+    ".png",
+    ".jpg",
+    ".jpeg",
+    ".gif",
+    ".tiff"
+  ],
+  "darkMode": true,
+  "alwaysReloadFiles": false,
+  "autoDarkMode": "off",
+  "autoDarkModeStart": "22:00",
+  "autoDarkModeEnd": "06:00",
+  "fileMeta": true,
+  "fileMetaTime": "modtime",
+  "sorting": "natural",
+  "sortFoldersFirst": false,
+  "muteLines": true,
+  "fileManagerMode": "thin",
+  "fileNameDisplay": "title",
+  "newFileNamePattern": "%id.md",
+  "newFileDontPrompt": false,
+  "export": {
+    "dir": "temp",
+    "stripTags": false,
+    "stripLinks": "full",
+    "cslLibrary": "",
+    "cslStyle": "",
+    "useBundledPandoc": true,
+    "exportQmdWithQuarto": false,
+    "singleFileLastExporter": "HTML to Markdown.yaml",
+    "customCommands": []
+  },
+  "zkn": {
+    "idRE": "(\\d{14})",
+    "idGen": "%Y%M%D%h%m%s",
+    "linkFilenameOnly": false,
+    "linkWithFilename": "always",
+    "linkFormat": "link|title",
+    "autoSearch": true,
+    "customDirectory": ""
+  },
+  "editor": {
+    "autoSave": "delayed",
+    "autocompleteAcceptSpace": false,
+    "autocompleteSuggestEmojis": true,
+    "autoCloseBrackets": true,
+    "showLinkPreviews": true,
+    "showWhitespace": false,
+    "defaultSaveImagePath": "/home/nisidabay/Pictures",
+    "citeStyle": "regular",
+    "enableTableHelper": true,
+    "indentUnit": 4,
+    "indentWithTabs": false,
+    "fontSize": 16,
+    "countChars": false,
+    "inputMode": "default",
+    "boldFormatting": "**",
+    "italicFormatting": "_",
+    "readabilityAlgorithm": "dale-chall",
+    "showStatusbar": true,
+    "lint": {
+      "markdown": true,
+      "languageTool": {
+        "active": false,
+        "level": "picky",
+        "motherTongue": "",
+        "variants": {
+          "en": "en-US",
+          "de": "de-DE",
+          "pt": "pt-PT",
+          "ca": "ca-ES"
+        },
+        "provider": "official",
+        "customServer": "",
+        "username": "",
+        "apiKey": ""
+      }
+    },
+    "autoCorrect": {
+      "active": true,
+      "magicQuotes": {
+        "primary": "\"…\"",
+        "secondary": "'…'"
+      },
+      "replacements": [
+        {
+          "key": "-->",
+          "value": "→"
+        },
+        {
+          "key": "–>",
+          "value": "→"
+        },
+        {
+          "key": "<--",
+          "value": "←"
+        },
+        {
+          "key": "<->",
+          "value": "↔"
+        },
+        {
+          "key": "<-->",
+          "value": "↔"
+        },
+        {
+          "key": "==>",
+          "value": "⇒"
+        },
+        {
+          "key": "<==",
+          "value": "⇐"
+        },
+        {
+          "key": "<=>",
+          "value": "⇔"
+        },
+        {
+          "key": "<==>",
+          "value": "⇔"
+        },
+        {
+          "key": "!=",
+          "value": "≠"
+        },
+        {
+          "key": "<>",
+          "value": "≠"
+        },
+        {
+          "key": "+-",
+          "value": "±"
+        },
+        {
+          "key": ":time:",
+          "value": "×"
+        },
+        {
+          "key": ":division:",
+          "value": "÷"
+        },
+        {
+          "key": "<=",
+          "value": "≤"
+        },
+        {
+          "key": ">=",
+          "value": "≥"
+        },
+        {
+          "key": "1/2",
+          "value": "½"
+        },
+        {
+          "key": "1/3",
+          "value": "⅓"
+        },
+        {
+          "key": "2/3",
+          "value": "⅔"
+        },
+        {
+          "key": "1/4",
+          "value": "¼"
+        },
+        {
+          "key": "3/4",
+          "value": "¾"
+        },
+        {
+          "key": "1/8",
+          "value": "⅛"
+        },
+        {
+          "key": "3/8",
+          "value": "⅜"
+        },
+        {
+          "key": "5/8",
+          "value": "⅝"
+        },
+        {
+          "key": "7/8",
+          "value": "⅞"
+        },
+        {
+          "key": "mm2",
+          "value": "mm²"
+        },
+        {
+          "key": "cm2",
+          "value": "cm²"
+        },
+        {
+          "key": "m2",
+          "value": "m²"
+        },
+        {
+          "key": "km2",
+          "value": "km²"
+        },
+        {
+          "key": "mm3",
+          "value": "mm³"
+        },
+        {
+          "key": "cm3",
+          "value": "cm³"
+        },
+        {
+          "key": "ccm",
+          "value": "cm³"
+        },
+        {
+          "key": "m3",
+          "value": "m³"
+        },
+        {
+          "key": "km3",
+          "value": "km³"
+        },
+        {
+          "key": ":sup2:",
+          "value": "²"
+        },
+        {
+          "key": ":sup3:",
+          "value": "³"
+        },
+        {
+          "key": ":deg:",
+          "value": "°"
+        },
+        {
+          "key": ":eur",
+          "value": "€"
+        },
+        {
+          "key": ":gbp",
+          "value": "£"
+        },
+        {
+          "key": ":yen",
+          "value": "¥"
+        },
+        {
+          "key": ":cent",
+          "value": "¢"
+        },
+        {
+          "key": ":inr:",
+          "value": "₹"
+        },
+        {
+          "key": "(c)",
+          "value": "©"
+        },
+        {
+          "key": "(tm)",
+          "value": "™"
+        },
+        {
+          "key": "(r)",
+          "value": "®"
+        },
+        {
+          "key": "...",
+          "value": "…"
+        },
+        {
+          "key": "--",
+          "value": "–"
+        },
+        {
+          "key": "---",
+          "value": "—"
+        }
+      ],
+      "matchWholeWords": false
+    }
+  },
+  "display": {
+    "theme": "berlin",
+    "hideToolbarInDistractionFree": false,
+    "markdownFileExtensions": false,
+    "imageWidth": 100,
+    "imageHeight": 50,
+    "renderCitations": true,
+    "renderIframes": true,
+    "renderImages": true,
+    "renderLinks": true,
+    "renderMath": true,
+    "renderTasks": true,
+    "renderHTags": false,
+    "renderEmphasis": false
+  },
+  "selectedDicts": [
+    "en-US",
+    "es-ES"
+  ],
+  "appLang": "es-ES",
+  "debug": false,
+  "watchdog": {
+    "activatePolling": false,
+    "stabilityThreshold": 1000
+  },
+  "system": {
+    "deleteOnFail": false,
+    "leaveAppRunning": false,
+    "avoidNewTabs": true,
+    "iframeWhitelist": [
+      "www.youtube.com",
+      "player.vimeo.com"
+    ],
+    "checkForUpdates": true,
+    "zoomBehavior": "gui"
+  },
+  "checkForBeta": false,
+  "displayToolbarButtons": {
+    "showOpenPreferencesButton": true,
+    "showNewFileButton": true,
+    "showPreviousFileButton": true,
+    "showNextFileButton": true,
+    "showToggleReadabilityButton": true,
+    "showMarkdownCommentButton": true,
+    "showMarkdownLinkButton": true,
+    "showMarkdownImageButton": true,
+    "showMarkdownMakeTaskListButton": true,
+    "showInsertTableButton": true,
+    "showInsertFootnoteButton": true,
+    "showDocumentInfoText": true,
+    "showPomodoroButton": true
+  },
+  "uuid": "a979b8e8-d001-4981-99c8-d17d771a8d6f"
+}

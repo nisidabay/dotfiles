@@ -1,0 +1,30 @@
+2024-05-10 23:18:21.762 [info] Active editor: file:///home/nisidabay/end_of_file.c
+2024-05-10 23:18:24.332 [info] Active editor: file:///home/nisidabay/end_of_file.c
+2024-05-10 23:19:30.928 [info] Active editor: vscode-userdata:/home/nisidabay/.config/Code%20-%20OSS/User/settings.json
+2024-05-10 23:19:31.365 [info] Configuration changed
+2024-05-10 23:20:12.436 [info] Executing :w
+2024-05-10 23:20:12.621 [info] Configuration changed
+2024-05-10 23:21:00.012 [info] Executing :w
+2024-05-10 23:21:00.224 [info] Configuration changed
+2024-05-10 23:21:59.080 [info] Executing :w
+2024-05-10 23:21:59.263 [info] Configuration changed
+2024-05-10 23:22:12.859 [info] Executing :w
+2024-05-10 23:22:25.025 [info] Executing :x
+2024-05-10 23:22:25.103 [warning] getLineLength() called with out-of-bounds line 7
+2024-05-10 23:22:25.103 [warning] invalid cursor position. [[7, 4] | [7, 4]].
+2024-05-10 23:22:26.996 [info] Active editor: vscode-userdata:/home/nisidabay/.config/Code%20-%20OSS/User/settings.json
+2024-05-10 23:22:31.540 [info] /settings/user closed
+2024-05-10 23:22:31.678 [info] /settings/resourceLanguage closed
+2024-05-10 23:22:31.767 [info] /launch closed
+2024-05-10 23:22:31.769 [info] /token-styling closed
+2024-05-10 23:22:31.771 [info] /textmate-colors closed
+2024-05-10 23:22:31.779 [info] /workbench-colors closed
+2024-05-10 23:22:46.897 [info] Executing :x
+2024-05-10 23:22:47.046 [warning] getLineLength() called with out-of-bounds line 15
+2024-05-10 23:22:47.046 [warning] getLineLength() called with out-of-bounds line 15
+2024-05-10 23:22:49.440 [info] Active editor: vscode-userdata:/home/nisidabay/.config/Code%20-%20OSS/User/settings.json
+2024-05-10 23:22:56.256 [info] Executing :x
+2024-05-10 23:22:56.332 [warning] getLineLength() called with out-of-bounds line 3
+2024-05-10 23:22:56.332 [warning] invalid cursor position. [[3, 8] | [3, 8]].
+2024-05-10 23:22:59.672 [info] Active editor: file:///home/nisidabay/end_of_file.c
+2024-05-10 23:24:19.821 [info] Executing :w

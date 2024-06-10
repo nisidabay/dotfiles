@@ -1,0 +1,50 @@
+{
+ "Week": "2023-11-15",
+ "LastWeek": "",
+ "X": 0.9138618390061795,
+ "Programs": [
+  {
+   "Program": "golang.org/x/tools/gopls",
+   "Version": "v0.14.1",
+   "GoVersion": "go1.21.3",
+   "GOOS": "linux",
+   "GOARCH": "amd64",
+   "Counters": {
+    "counter/main": 85,
+    "gopls/client-other:vim-go": 2,
+    "gopls/client:neovim": 81,
+    "gopls/client:other": 2,
+    "gopls/completion/latency:\u003c100ms": 101,
+    "gopls/completion/latency:\u003c10ms": 213,
+    "gopls/completion/latency:\u003c200ms": 144,
+    "gopls/completion/latency:\u003c500ms": 22,
+    "gopls/completion/latency:\u003c50ms": 293,
+    "gopls/definition/latency:\u003c10ms": 7,
+    "gopls/definition/latency:\u003c50ms": 1,
+    "gopls/goversion:1.21": 82,
+    "gopls/hover/latency:\u003c10ms": 10,
+    "gopls/references/latency:\u003c100ms": 1,
+    "gopls/references/latency:\u003c10ms": 1,
+    "gopls/references/latency:\u003c50ms": 3
+   },
+   "Stacks": {}
+  },
+  {
+   "Program": "golang.org/x/tools/gopls",
+   "Version": "v0.14.1",
+   "GoVersion": "go1.21.4",
+   "GOOS": "linux",
+   "GOARCH": "amd64",
+   "Counters": {
+    "counter/main": 51,
+    "gopls/client-other:vim-go": 46,
+    "gopls/client:other": 46,
+    "gopls/definition/latency:\u003c10ms": 11,
+    "gopls/goversion:1.21": 46,
+    "gopls/hover/latency:\u003c10ms": 6
+   },
+   "Stacks": {}
+  }
+ ],
+ "Config": "v0.9.0"
+}

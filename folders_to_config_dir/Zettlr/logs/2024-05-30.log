@@ -1,0 +1,131 @@
+[09:13:04] [Info] こんにちは！ Booting Zettlr at Thu May 30 2024 09:13:04 GMT+0200 (hora de verano de Europa central).
+[09:13:04] [Info] Installing VueJS3 DevTools extension ...
+[09:13:04] [Info] Added DevTools extension: Vue.js devtools
+[09:13:04] [Info] Registering custom protocol safe-file
+[09:13:04] [Info] Migrating from 3.0.3 to 3.0.3!
+[09:13:04] [Info] [Workspace Provider] Synchronized roots in 0 seconds
+[09:13:04] [Warning] [Assets Provider] Found outdated filter links.lua; copying ...
+[09:13:04] [Warning] [Assets Provider] Found outdated filter tags.lua; copying ...
+[09:13:04] [Info] [Citeproc Provider] Loading CSL locale file at /usr/lib/zettlr/app.asar/.webpack/main/assets/csl-locales/locales-es-ES.xml ...
+[09:13:04] [Info] [Update Provider] Checking for application updates ...
+[09:13:04] [Info] [Updater] Checking https://zettlr.com/api/releases/latest for updates ...
+[09:13:04] [Info] Clearing the FSAL cache ...
+[09:13:04] [Info] [FSAL Cache] Cache cleared!
+[09:13:04] [Info] [Window Manager] Window Manager started.
+[09:13:04] [Info] [Dictionary Provider] Loaded dictionaries: en-US, es-ES
+[09:13:04] [Info] [Document Manager] Restored 1 open windows.
+[09:13:04] [Info] [AppServiceContainer] Boot successful!
+[09:13:04] [Info] [Update Provider] No new update available. Current version is v3.1.1.
+[09:13:32] [Info] Did not create new file since the dialog was aborted.
+[09:13:45] [Warning] [R] [Main Window (bb7d881b-5f14-499d-9bbe-af64da8cddbb)] Could not toggle main split component; expected state to be 'fileManager' or 'globalSearch', received undefined (index.js:2)
+[09:14:56] [Info] [FSALCache] Creating new shard: 53
+[09:14:56] [Info] [FSALCache] Creating new shard: -1
+[09:14:56] [Info] [Workspace Provider] Synchronized roots in 0.01 seconds
+[09:16:01] [Info] [FSALCache] Creating new shard: 57
+[09:16:02] [Info] [FSALCache] Creating new shard: 14
+[09:16:02] [Info] [FSALCache] Creating new shard: 18
+[09:16:02] [Info] [FSALCache] Creating new shard: 30
+[09:16:02] [Info] [FSALCache] Creating new shard: -7
+[09:16:02] [Info] [FSALCache] Creating new shard: 16
+[09:16:02] [Info] [FSALCache] Creating new shard: -9
+[09:16:02] [Info] [FSALCache] Creating new shard: 11
+[09:16:02] [Info] [FSALCache] Creating new shard: 20
+[09:16:03] [Info] [FSALCache] Creating new shard: 19
+[09:16:03] [Info] [FSALCache] Creating new shard: 82
+[09:16:03] [Info] [FSALCache] Creating new shard: 41
+[09:16:07] [Info] [FSALCache] Creating new shard: -3
+[09:16:07] [Info] [FSALCache] Creating new shard: 28
+[09:16:07] [Info] [FSALCache] Creating new shard: 12
+[09:16:07] [Info] [FSALCache] Creating new shard: -2
+[09:16:20] [Info] [FSALCache] Creating new shard: 66
+[09:16:20] [Info] [FSALCache] Creating new shard: 15
+[09:16:20] [Info] [FSALCache] Creating new shard: 32
+[09:16:20] [Info] [FSALCache] Creating new shard: -4
+[09:16:20] [Info] [FSALCache] Creating new shard: 10
+[09:16:20] [Info] [FSALCache] Creating new shard: 37
+[09:16:20] [Info] [FSALCache] Creating new shard: -6
+[09:16:20] [Info] [FSALCache] Creating new shard: 21
+[09:16:20] [Info] [FSALCache] Creating new shard: 76
+[09:16:20] [Info] [FSALCache] Creating new shard: 17
+[09:16:20] [Info] [FSALCache] Creating new shard: 56
+[09:16:20] [Info] [FSALCache] Creating new shard: -8
+[09:16:20] [Info] [FSALCache] Creating new shard: 13
+[09:16:20] [Info] [FSALCache] Creating new shard: 38
+[09:16:20] [Info] [FSALCache] Creating new shard: 79
+[09:16:21] [Info] [FSALCache] Creating new shard: 64
+[09:16:21] [Info] [FSALCache] Creating new shard: 71
+[09:16:21] [Info] [FSALCache] Creating new shard: 89
+[09:16:21] [Info] [FSALCache] Creating new shard: 59
+[09:16:21] [Info] [FSALCache] Creating new shard: 97
+[09:16:21] [Info] [FSALCache] Creating new shard: 44
+[09:16:21] [Info] [FSALCache] Creating new shard: 33
+[09:16:21] [Info] [FSALCache] Creating new shard: 68
+[09:16:22] [Info] [FSALCache] Creating new shard: 51
+[09:16:22] [Info] [FSALCache] Creating new shard: 45
+[09:16:22] [Info] [FSALCache] Creating new shard: 87
+[09:16:22] [Info] [FSALCache] Creating new shard: 36
+[09:16:22] [Info] [FSALCache] Creating new shard: 99
+[09:16:22] [Info] [FSALCache] Creating new shard: 40
+[09:16:22] [Info] [FSALCache] Creating new shard: 23
+[09:16:22] [Info] [FSALCache] Creating new shard: 85
+[09:16:22] [Info] [FSALCache] Creating new shard: 61
+[09:16:22] [Info] [FSALCache] Creating new shard: 35
+[09:16:22] [Info] [FSALCache] Creating new shard: -5
+[09:16:22] [Info] [FSALCache] Creating new shard: 65
+[09:16:22] [Info] [FSALCache] Creating new shard: 75
+[09:16:22] [Info] [FSALCache] Creating new shard: 93
+[09:16:22] [Info] [FSALCache] Creating new shard: 55
+[09:16:22] [Info] [FSALCache] Creating new shard: 34
+[09:16:22] [Info] [FSALCache] Creating new shard: 91
+[09:16:23] [Info] [FSALCache] Creating new shard: 22
+[09:16:23] [Info] [FSALCache] Creating new shard: 95
+[09:16:23] [Info] [FSALCache] Creating new shard: 84
+[09:16:23] [Info] [FSALCache] Creating new shard: 42
+[09:16:23] [Info] [FSALCache] Creating new shard: 29
+[09:16:23] [Info] [FSALCache] Creating new shard: 24
+[09:16:23] [Info] [FSALCache] Creating new shard: 48
+[09:16:23] [Info] [FSALCache] Creating new shard: 31
+[09:16:24] [Info] [FSALCache] Creating new shard: 81
+[09:16:24] [Info] [FSALCache] Creating new shard: 74
+[09:16:24] [Info] [FSALCache] Creating new shard: 39
+[09:16:24] [Info] [FSALCache] Creating new shard: 58
+[09:16:24] [Info] [FSALCache] Creating new shard: 63
+[09:16:24] [Info] [FSALCache] Creating new shard: 46
+[09:16:24] [Info] [FSALCache] Creating new shard: 77
+[09:16:24] [Info] [FSALCache] Creating new shard: 69
+[09:16:28] [Info] [FSALCache] Creating new shard: 47
+[09:16:28] [Info] [FSALCache] Creating new shard: 67
+[09:16:28] [Info] [FSALCache] Creating new shard: 86
+[09:16:30] [Info] [FSALCache] Creating new shard: 27
+[09:16:31] [Info] [FSALCache] Creating new shard: 60
+[09:16:31] [Info] [FSALCache] Creating new shard: 26
+[09:16:31] [Info] [FSALCache] Creating new shard: 78
+[09:16:31] [Info] [FSALCache] Creating new shard: 49
+[09:16:32] [Info] [FSALCache] Creating new shard: 94
+[09:16:33] [Info] [FSALCache] Creating new shard: 72
+[09:16:34] [Info] [FSALCache] Creating new shard: 96
+[09:16:34] [Info] [FSALCache] Creating new shard: 83
+[09:16:34] [Info] [FSALCache] Creating new shard: 80
+[09:16:34] [Info] [FSALCache] Creating new shard: 90
+[09:16:34] [Info] [FSALCache] Creating new shard: 88
+[09:16:34] [Info] [FSALCache] Creating new shard: 25
+[09:16:34] [Info] [FSALCache] Creating new shard: 92
+[09:16:36] [Info] [FSALCache] Creating new shard: 43
+[09:16:37] [Info] [FSALCache] Creating new shard: 70
+[09:16:37] [Info] [FSALCache] Creating new shard: 73
+[09:16:37] [Info] [FSALCache] Creating new shard: 98
+[09:16:38] [Info] [FSALCache] Creating new shard: 54
+[09:16:41] [Info] [FSALCache] Creating new shard: 62
+[09:16:41] [Info] [FSALCache] Creating new shard: 50
+[09:16:49] [Info] [FSALCache] Creating new shard: 52
+[09:17:08] [Warning] [R] [Main Window (bb7d881b-5f14-499d-9bbe-af64da8cddbb)] Could not apply delta, either local or remote not available [object Proxy] undefined f0653012-b685-4632-a3e7-85c45be3a0de (index.js:2)
+[09:17:08] [Info] Removed file caca.md.
+[09:17:08] [Info] [WATCHDOG] Emitting event: unlink:caca.md
+[09:17:08] [Warning] [WorkspaceManager] Root caca.md has been removed
+[09:17:08] [Info] [WATCHDOG] Emitting event: unlink:/home/nisidabay/caca.md
+[09:17:08] [Warning] [WorkspaceManager] Root /home/nisidabay/caca.md has been removed
+[09:17:08] [Info] [Workspace Provider] Synchronized roots in 0.01 seconds
+[09:17:08] [Info] [Workspace Provider] Synchronized roots in 0.02 seconds
+[09:17:46] [Info] さようなら！ Shutting down at Thu May 30 2024 09:17:46 GMT+0200 (hora de verano de Europa central)
+[09:17:46] [Info] Application uptime was: 4 minutes, and 42.456 seconds.
+[09:17:46] [Info] [FSAL Cache] Cleaned up cache: Removed 0 remnants.

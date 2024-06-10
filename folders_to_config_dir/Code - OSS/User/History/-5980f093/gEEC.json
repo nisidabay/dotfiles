@@ -1,0 +1,11 @@
+{
+    "editor.fontSize": 16,
+    "vim.commandLineModeKeyBindings": [
+
+       inoremap kj <Esc>
+cnoremap kj <Esc>
+inoremap jk <Esc>
+cnoremap jk <Esc>
+
+    ]
+}

@@ -1,0 +1,43 @@
+{
+  "add a plugin dialog": "/home/nisidabay/Downloads",
+  "add books dialog dir": "/home/nisidabay/Descargas",
+  "add books dialog dir-last-used-filter-spec-all-files": false,
+  "catalogs_to_be_synced": {
+    "__class__": "set",
+    "__value__": []
+  },
+  "choose library location": "/run/media/nisidabay/Calibre",
+  "library moved choose new loc": "/run/media/nisidabay/Elements/Calibre",
+  "notified-version-updates": {
+    "__class__": "set",
+    "__value__": [
+      "6.25",
+      "7.10",
+      "6.16",
+      "7.11",
+      "7.5",
+      "7.1"
+    ]
+  },
+  "s_r_search_mode": 0,
+  "save to disk dialog": "/home/nisidabay/temp",
+  "sort_history": [
+    [
+      "tags",
+      true
+    ],
+    [
+      "title",
+      true
+    ],
+    [
+      "tags",
+      false
+    ],
+    [
+      "timestamp",
+      false
+    ]
+  ],
+  "welcome_wizard_was_run": true
+}

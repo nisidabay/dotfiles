@@ -1,0 +1,25 @@
+2024/06/01-21:43:29.242 e4c9 Reusing MANIFEST /home/nisidabay/.config/opera/Default/IndexedDB/chrome-extension_igpdmclhhlcpoindmhkhillbfhdgoegm_0.indexeddb.leveldb/MANIFEST-000001
+2024/06/01-21:43:29.243 e4c9 Recovering log #77
+2024/06/01-21:43:29.243 e4c9 Reusing old log /home/nisidabay/.config/opera/Default/IndexedDB/chrome-extension_igpdmclhhlcpoindmhkhillbfhdgoegm_0.indexeddb.leveldb/000077.log 
+2024/06/01-21:43:29.244 e4c9 Delete type=2 #75
+2024/06/01-21:43:29.255 e4f6 Level-0 table #82: started
+2024/06/01-21:43:29.260 e4f6 Level-0 table #82: 1205 bytes OK
+2024/06/01-21:43:29.262 e4f6 Delete type=0 #77
+2024/06/01-21:43:29.262 e4f6 Manual compaction at level-0 from '\x00\x1a\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x1b\x00\x00\x00' @ 0 : 0; will stop at '\x00\x1a\x00\x00\x05' @ 1181 : 1
+2024/06/01-21:43:29.263 e4f6 Compacting 1@0 + 1@1 files
+2024/06/01-21:43:29.265 e4f6 Generated table #83@0: 173 keys, 5049 bytes
+2024/06/01-21:43:29.265 e4f6 Compacted 1@0 + 1@1 files => 5049 bytes
+2024/06/01-21:43:29.266 e4f6 compacted to: files[ 0 1 1 0 0 0 0 ]
+2024/06/01-21:43:29.266 e4f6 Delete type=2 #82
+2024/06/01-21:43:29.266 e4c9 Manual compaction at level-0 from '\x00\x1a\x00\x00\x05' @ 1181 : 1 .. '\x00\x1b\x00\x00\x00' @ 0 : 0; will stop at (end)
+2024/06/01-21:43:31.808 e4d3 Level-0 table #85: started
+2024/06/01-21:43:31.809 e4d3 Level-0 table #85: 1234 bytes OK
+2024/06/01-21:43:31.811 e4d3 Delete type=2 #79
+2024/06/01-21:43:31.811 e4d3 Delete type=0 #81
+2024/06/01-21:43:31.811 e4c6 Manual compaction at level-0 from '\x00\x1b\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x1c\x00\x00\x00' @ 0 : 0; will stop at '\x00\x1b\x00\x00\x05' @ 1212 : 1
+2024/06/01-21:43:31.811 e4c6 Compacting 1@0 + 1@1 files
+2024/06/01-21:43:31.812 e4c6 Generated table #86@0: 173 keys, 5070 bytes
+2024/06/01-21:43:31.812 e4c6 Compacted 1@0 + 1@1 files => 5070 bytes
+2024/06/01-21:43:31.814 e4c6 compacted to: files[ 0 1 1 0 0 0 0 ]
+2024/06/01-21:43:31.814 e4c6 Delete type=2 #85
+2024/06/01-21:43:31.814 e4c6 Manual compaction at level-0 from '\x00\x1b\x00\x00\x05' @ 1212 : 1 .. '\x00\x1c\x00\x00\x00' @ 0 : 0; will stop at (end)

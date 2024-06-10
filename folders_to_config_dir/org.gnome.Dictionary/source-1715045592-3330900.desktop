@@ -1,0 +1,6 @@
+[Dictionary Source]
+Name=source-1715045592-3330900
+Description=Nombre de la fuente
+Transport=dictd
+Hostname=dict.org
+Port=2628

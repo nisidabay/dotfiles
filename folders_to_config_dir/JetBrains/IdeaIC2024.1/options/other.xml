@@ -1,0 +1,262 @@
+<application>
+  <component name="EduSettings">
+    <option name="javaUiLibrary" value="Swing" />
+  </component>
+  <component name="FileEditorProviderManager"><![CDATA[{}]]></component>
+  <component name="GradleJvmSupportMatrix">
+    <option name="compatibility">
+      <list>
+        <VersionMapping>
+          <option name="gradleVersionInfo" value="INF-5.0" />
+          <option name="javaVersionInfo" value="6-8" />
+        </VersionMapping>
+        <VersionMapping>
+          <option name="gradleVersionInfo" value="INF-INF" />
+          <option name="javaVersionInfo" value="8-9" />
+        </VersionMapping>
+        <VersionMapping>
+          <option name="gradleVersionInfo" value="4.3-INF" />
+          <option name="javaVersionInfo" value="9-10" />
+        </VersionMapping>
+        <VersionMapping>
+          <option name="gradleVersionInfo" value="4.7-INF" />
+          <option name="javaVersionInfo" value="10-11" />
+        </VersionMapping>
+        <VersionMapping>
+          <option name="gradleVersionInfo" value="5.0-INF" />
+          <option name="javaVersionInfo" value="11-12" />
+        </VersionMapping>
+        <VersionMapping>
+          <option name="gradleVersionInfo" value="5.4-INF" />
+          <option name="javaVersionInfo" value="12-13" />
+        </VersionMapping>
+        <VersionMapping>
+          <option name="gradleVersionInfo" value="6.0-INF" />
+          <option name="javaVersionInfo" value="13-14" />
+        </VersionMapping>
+        <VersionMapping>
+          <option name="gradleVersionInfo" value="6.3-INF" />
+          <option name="javaVersionInfo" value="14-15" />
+        </VersionMapping>
+        <VersionMapping>
+          <option name="gradleVersionInfo" value="6.7-INF" />
+          <option name="javaVersionInfo" value="15-16" />
+        </VersionMapping>
+        <VersionMapping>
+          <option name="gradleVersionInfo" value="7.0-INF" />
+          <option name="javaVersionInfo" value="16-17" />
+        </VersionMapping>
+        <VersionMapping>
+          <option name="gradleVersionInfo" value="7.2-INF" />
+          <option name="javaVersionInfo" value="17-18" />
+        </VersionMapping>
+        <VersionMapping>
+          <option name="gradleVersionInfo" value="7.5-INF" />
+          <option name="javaVersionInfo" value="18-19" />
+        </VersionMapping>
+        <VersionMapping>
+          <option name="gradleVersionInfo" value="7.6-INF" />
+          <option name="javaVersionInfo" value="19-20" />
+        </VersionMapping>
+        <VersionMapping>
+          <option name="gradleVersionInfo" value="8.3-INF" />
+          <option name="javaVersionInfo" value="20-21" />
+        </VersionMapping>
+        <VersionMapping>
+          <option name="gradleVersionInfo" value="8.5-INF" />
+          <option name="javaVersionInfo" value="21-22" />
+        </VersionMapping>
+      </list>
+    </option>
+    <option name="default" value="false" />
+    <option name="ideVersion" value="2023.3.6" />
+    <option name="lastUpdateTime" value="1711990034094" />
+    <option name="supportedGradleVersions">
+      <list>
+        <option value="3.0" />
+        <option value="3.1" />
+        <option value="3.2" />
+        <option value="3.3" />
+        <option value="3.4" />
+        <option value="3.5" />
+        <option value="4.0" />
+        <option value="4.1" />
+        <option value="4.2" />
+        <option value="4.3" />
+        <option value="4.4" />
+        <option value="4.5" />
+        <option value="4.5.1" />
+        <option value="4.6" />
+        <option value="4.7" />
+        <option value="4.8" />
+        <option value="4.9" />
+        <option value="4.10" />
+        <option value="4.10.3" />
+        <option value="5.0" />
+        <option value="5.1" />
+        <option value="5.2" />
+        <option value="5.3" />
+        <option value="5.3.1" />
+        <option value="5.4" />
+        <option value="5.4.1" />
+        <option value="5.5" />
+        <option value="5.5.1" />
+        <option value="5.6" />
+        <option value="5.6.2" />
+        <option value="6.0" />
+        <option value="6.0.1" />
+        <option value="6.1" />
+        <option value="6.2" />
+        <option value="6.3" />
+        <option value="6.4" />
+        <option value="6.5" />
+        <option value="6.6" />
+        <option value="6.7" />
+        <option value="6.8" />
+        <option value="6.8.3" />
+        <option value="6.9" />
+        <option value="7.0" />
+        <option value="7.1" />
+        <option value="7.2" />
+        <option value="7.3" />
+        <option value="7.4" />
+        <option value="7.5" />
+        <option value="7.5.1" />
+        <option value="7.6" />
+        <option value="8.0" />
+        <option value="8.1" />
+        <option value="8.2" />
+        <option value="8.3" />
+        <option value="8.4" />
+        <option value="8.5" />
+        <option value="8.6" />
+      </list>
+    </option>
+    <option name="supportedJavaVersions">
+      <list>
+        <option value="8" />
+        <option value="9" />
+        <option value="10" />
+        <option value="11" />
+        <option value="12" />
+        <option value="13" />
+        <option value="14" />
+        <option value="15" />
+        <option value="16" />
+        <option value="17" />
+        <option value="18" />
+        <option value="19" />
+        <option value="20" />
+        <option value="21" />
+      </list>
+    </option>
+  </component>
+  <component name="JdkInstallerHistory">
+    <option name="installedItems">
+      <installed-jdk>
+        <option name="fullText" value="Amazon Corretto 20.0.2.1" />
+        <option name="installDir" value="/home/nisidabay/.jdks/corretto-20.0.2.1" />
+        <option name="sha256" value="3b60fe04966d0aa762bf1fc2974ad239cf7ab887a657a9e7e3c75a9310e34db2" />
+        <option name="url" value="https://corretto.aws/downloads/resources/20.0.2.10.1/amazon-corretto-20.0.2.10.1-linux-x64.tar.gz" />
+        <option name="versionText" value="20.0.2.1" />
+      </installed-jdk>
+    </option>
+  </component>
+  <component name="LangManager">
+    <option name="languageName" value="JAVA" />
+  </component>
+  <component name="NotRoamableUiSettings">
+    <option name="fontFace" value="Fira Code" />
+    <option name="fontSize" value="18.0" />
+    <option name="presentationModeIdeScale" value="1.75" />
+    <option name="overrideLafFonts" value="true" />
+  </component>
+  <component name="PropertyService"><![CDATA[{
+  "keyToString": {
+    "Educational.recentCoursesFilled": "true",
+    "Educational.stepikOAuthReset": "true",
+    "FileTemplates.SelectedTemplate": "HTML File",
+    "InstalledPluginsSearchHistory": "JetBrains\nJetBrai\nJetBr\nJetB\nJet",
+    "LAST_CALCULATED_COLOR_INDEX_KEY": "2",
+    "LayoutCode.codeCleanup": "true",
+    "LayoutCode.optimizeImports": "true",
+    "MarketplacePluginsSearchHistory": "JetBrains\nRust\nR\n/tag:Ultimate\nru",
+    "NewKotlinWizard.buildSystem.type": "Jps",
+    "NewKotlinWizard.structure.groupId": "me.nisidabay",
+    "NewProjectWizard.groupIdState": "org.example",
+    "PluginConfigurable.selectionTab": "1",
+    "RunOnceActivity.java.code.vision.default.position.was.set": "true",
+    "SettingsSearchHistory": "JetBrains",
+    "ask.about.ctrl.y.shortcut.v2": "true",
+    "build.toolwindow.Build Output.selection.state": "com.intellij.build.BuildTreeConsoleView",
+    "build.toolwindow.Sync.selection.state": "com.intellij.build.BuildTreeConsoleView",
+    "build.toolwindow.show.successful.steps.selection.state": "true",
+    "bundled.plugins.list.saved.version": "IC-233.15026.9",
+    "com.intellij.ide.projectWizard.generators.JavaNewProjectWizard$Step.selectedStep": "IntelliJ",
+    "com.intellij.ide.wizard.NewProjectWizardLanguageStep.selectedStep": "Kotlin",
+    "com.intellij.openapi.roots.ui.configuration.TabbedModuleEditor.selectedEditor": "Dependencies",
+    "com.jetbrains.edu.LAST_UPDATE": "1711990522200",
+    "create.project.preferred.importer": "Existing sources",
+    "defaultJdkConfigured": "true",
+    "enter_selection_count": "5",
+    "experimental.ui.on.first.startup": "true",
+    "experimental.ui.used.version": "241.15989.150",
+    "file.gist.reindex.count": "550",
+    "fileTypeChangedCounter": "2",
+    "fontSizeToResetConsole": "18.0",
+    "fontSizeToResetEditor": "18.0",
+    "got.it.tooltip.reader.mode.got.it": "1",
+    "gotit.previous.run": "IC-241.15989.150",
+    "ide.memory.adjusted": "true",
+    "ide.updates.old.dirs.scan.scheduled": "1717008297399",
+    "ideavim.statistics.timestamp": "1711990041389",
+    "ift.learning.panel.opened.in": "233.15026.9",
+    "installed.kotlin.plugin.version": "241.15989.150-IJ",
+    "jdk.selected.JAVA_MODULE": "openjdk-22",
+    "kotlin.lastUpdateCheck": "1711868040333",
+    "last.imported.location": "/home/nisidabay/Downloads/Refactor/practice_kotlin",
+    "last_opened_file_path": "/home/nisidabay/Pictures/0edcd4e1-65ea-422d-8931-7ab32ef37d9c.jpg",
+    "migrated.non.roamable.values.from.general.settings": "true",
+    "onboarding.generation.number": "4",
+    "org.intellij.images.editor.actions.BackgroundImageDialog#recent": "/home/nisidabay/Pictures/0edcd4e1-65ea-422d-8931-7ab32ef37d9c.jpg",
+    "org.jetbrains.kotlin.tools.projectWizard.KotlinNewProjectWizard$Step.selectedStep": "IntelliJ",
+    "previousColorScheme": "_@user_Catppuccin Mocha",
+    "project.wizard.group": "NPW.simple-project",
+    "registry.to.advanced.settings.migration.build": "IC-241.15989.150",
+    "settings.code.style.selected.tab.kotlin": "Spaces"
+  },
+  "keyToStringList": {
+    "file.chooser.recent.files": [
+      "/home/nisidabay/Pictures/0edcd4e1-65ea-422d-8931-7ab32ef37d9c.jpg",
+      "/home/nisidabay/Downloads/Refactor/practice_kotlin",
+      "/home/nisidabay/Downloads/Refactor/practice_kotlin/TodoList-version2.kt"
+    ],
+    "fileTypeDetectors": [
+      "com.intellij.ide.scratch.ScratchFileServiceImpl$Detector",
+      "org.jetbrains.plugins.textmate.TextMateFileType$TextMateFileDetector"
+    ],
+    "kotlin-gradle-user-dirs": [
+      "/home/nisidabay/.gradle"
+    ]
+  }
+}]]></component>
+  <component name="ShownTips">{
+  &quot;shownTips&quot;: {
+    &quot;Rename&quot;: 1712021951545,
+    &quot;SpeedSearch&quot;: 1711263408200,
+    &quot;SearchEverywhere&quot;: 1711333440665,
+    &quot;CommentCode&quot;: 1711871097414,
+    &quot;FindReplaceToggle&quot;: 1711930285260,
+    &quot;FindInPath&quot;: 1711575195389
+  },
+  &quot;proposedTips&quot;: {
+    &quot;Rename&quot;: 1712021951161,
+    &quot;SpeedSearch&quot;: 1711263407867,
+    &quot;SearchEverywhere&quot;: 1711333440362,
+    &quot;CommentCode&quot;: 1711871097101,
+    &quot;FindReplaceToggle&quot;: 1711930284981,
+    &quot;FindInPath&quot;: 1711575195067
+  },
+  &quot;tipsOrderSeed&quot;: 1711263407821
+}</component>
+</application>

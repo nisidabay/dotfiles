@@ -1,0 +1,21 @@
+[General]
+TimeFormat=1
+Volume=1
+
+[MainWindow]
+HDMI-A-0=HDMI-A-0
+HDMI-A-0 Height 1920x1080 HDMI-A-0=1022
+HDMI-A-0 Width 1920x1080 HDMI-A-0=631
+HDMI-A-0 XPosition 1920x1080 HDMI-A-0=1283
+HDMI-A-0 YPosition 1920x1080 HDMI-A-0=52
+State=AAAA/wAAAAD9AAAAAAAAAncAAAOsAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+
+[file:///home/nisidabay/Downloads/Add a full-featured CLI to your Python scripts⧸apps using the click library..mkv]
+Brightness=0
+Contrast=0
+Date=2022,11,29
+Hue=0
+IsVideo=false
+Preferred Size=100,30
+Saturation=0

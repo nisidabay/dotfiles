@@ -1,0 +1,177 @@
+<project version="4">
+  <component name="BookmarksManager">
+    <option name="groups">
+      <GroupState>
+        <option name="name" value="practice_kotlin" />
+      </GroupState>
+    </option>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="-1">
+      <file>
+        <entry file="file://$PROJECT_DIR$/TodoList-version2.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#367#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/read_only_list.kt" preview="true">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="351">
+              <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTypeUsageLocalSummary">
+    <fileType name="GitIgnore file">
+      <summary usageCount="1" lastUsed="1711382335555" />
+    </fileType>
+    <fileType name="Kotlin">
+      <summary usageCount="9" lastUsed="1711382556015" />
+    </fileType>
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="LanguageUsageStatistics">
+    <language id="GitIgnore">
+      <summary usageCount="1" lastUsage="1711382335555" />
+    </language>
+    <language id="kotlin">
+      <summary usageCount="9" lastUsage="1711382556015" />
+    </language>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" />
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="RunConfigurationStartHistory">
+    <history>
+      <element setting="Application.java-config" />
+    </history>
+  </component>
+  <component name="ToolWindowManager">
+    <layoutV2>
+      <window_info content_ui="combo" id="Project" order="0" show_stripe_button="false" weight="0.3298336" />
+      <window_info id="Commit" order="1" weight="0.3298336" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Problems" order="1" />
+      <window_info active="true" anchor="bottom" id="Problems View" order="2" visible="true" weight="0.33005822" />
+      <window_info anchor="bottom" id="Terminal" order="3" />
+      <window_info anchor="bottom" id="Services" order="4" />
+      <window_info anchor="bottom" id="Build" order="5" />
+      <window_info anchor="right" content_ui="combo" id="Notifications" order="0" weight="0.25" />
+      <window_info anchor="right" id="AIAssistant" order="1" weight="0.25" />
+      <window_info anchor="right" id="Database" order="2" weight="0.25" />
+      <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.25" />
+      <window_info anchor="right" id="Coverage" order="5" side_tool="true" />
+      <unified_weights bottom="0.33005822" left="0.3298336" />
+    </layoutV2>
+    <recentWindows>
+      <value>Project</value>
+      <value>Commit</value>
+      <value>Problems View</value>
+    </recentWindows>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="899" y="396" width="821" height="653" key="#Run/Debug_Configuration_Templates" timestamp="1711382084332">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="899" y="396" width="821" height="653" key="#Run/Debug_Configuration_Templates/0.0.2560.1440@0.0.2560.1440" timestamp="1711382084332" />
+    <state x="856" y="387" width="899" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1711382636917">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="856" y="387" width="899" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1711382636917" />
+    <state x="1005" y="529" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1711382042632">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="1005" y="529" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1711382042632" />
+    <state x="1058" y="478" key="EnvironmentVariablesDialog" timestamp="1711381921638">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="1058" y="478" key="EnvironmentVariablesDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1711381921638" />
+    <state x="1056" y="495" key="FileChooserDialogImpl" timestamp="1711382608867">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="1056" y="495" key="FileChooserDialogImpl/0.0.2560.1440@0.0.2560.1440" timestamp="1711382608867" />
+    <state x="759" y="318" key="SettingsEditor" timestamp="1711382619603">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="759" y="318" key="SettingsEditor/0.0.2560.1440@0.0.2560.1440" timestamp="1711382619603" />
+    <state x="874" y="409" width="800" height="639" key="new project wizard" timestamp="1711382385851">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="874" y="409" width="800" height="639" key="new project wizard/0.0.2560.1440@0.0.2560.1440" timestamp="1711382385851" />
+    <state x="938" y="346" width="672" height="699" key="run.anything.popup" timestamp="1711382162604">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="938" y="346" width="672" height="699" key="run.anything.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1711382162604" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/.gitignore" preview="true">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="21" column="39" lean-forward="true" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/read_only_list.kt" preview="true">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TodoList-version2.kt" preview="true">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#367#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI" />
+      <state key="GlobalLibrariesConfigurable.UI" />
+      <state key="JdkListConfigurable.UI" />
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI" />
+    </states>
+  </component>
+</project>

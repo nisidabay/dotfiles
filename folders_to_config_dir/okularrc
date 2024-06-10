@@ -1,0 +1,73 @@
+HDMI-A-0=HDMI-A-0
+HDMI-A-0 Height 1916x1198 HDMI-A-0=1140
+HDMI-A-0 Height 1920x1080 HDMI-A-0=1022
+HDMI-A-0 Width 1916x1198 HDMI-A-0=1904
+HDMI-A-0 Width 1920x1080 HDMI-A-0=1908
+HDMI-A-0 XPosition 1916x1198 HDMI-A-0=6
+HDMI-A-0 XPosition 1920x1080 HDMI-A-0=6
+HDMI-A-0 YPosition 1916x1198 HDMI-A-0=52
+HDMI-A-0 YPosition 1920x1080 HDMI-A-0=52
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAAAAB3QAAAPZAAAABAAAAAQAAAAIAAAACPwAAAADAAAAAQAAAAEAAAAsAHEAdQBpAGMAawBBAG4AbgBvAHQAYQB0AGkAbwBuAFQAbwBvAGwAQgBhAHICAAAAAP////8AAAAAAAAAAAAAAAIAAAABAAAAFgBtAGEAaQBuAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAAAAAAAAAAAIAAAABAAAAIgBhAG4AbgBvAHQAYQB0AGkAbwBuAFQAbwBvAGwAQgBhAHIAAAAAAP////8AAAAAAAAAAA==
+
+[Desktop Entry]
+FullScreen=false
+shouldShowMenuBarComingFromFullScreen=true
+shouldShowToolBarComingFromFullScreen=true
+
+[General]
+LockSidebar=true
+ShowSidebar=false
+
+[MainWindow]
+1920x1080 screen: Height=1029
+1920x1080 screen: Width=1011
+1920x1080 screen: XPosition=30
+1920x1080 screen: YPosition=35
+2559x1439 screen: Height=697
+2559x1439 screen: Width=2547
+2559x1439 screen: XPosition=6
+2559x1439 screen: YPosition=737
+2560x1440 screen: Window-Maximized=true
+DisplayPort-2=DisplayPort-2
+HDMI-A-0=HDMI-A-0
+HDMI-A-0 Height 1916x1198 HDMI-A-0=1164
+HDMI-A-0 Height 1920x1080=1046
+HDMI-A-0 Height 1920x1080 HDMI-A-0=1022
+HDMI-A-0 Height 1920x1200 HDMI-A-0=557
+HDMI-A-0 Width 1916x1198 HDMI-A-0=626
+HDMI-A-0 Width 1920x1080=1908
+HDMI-A-0 Width 1920x1080 HDMI-A-0=951
+HDMI-A-0 Width 1920x1200 HDMI-A-0=1908
+HDMI-A-0 XPosition 1916x1198 HDMI-A-0=1283
+HDMI-A-0 XPosition 1920x1080=6
+HDMI-A-0 XPosition 1920x1080 HDMI-A-0=963
+HDMI-A-0 XPosition 1920x1200 HDMI-A-0=6
+HDMI-A-0 YPosition 1916x1198 HDMI-A-0=27
+HDMI-A-0 YPosition 1920x1080=28
+HDMI-A-0 YPosition 1920x1080 HDMI-A-0=52
+HDMI-A-0 YPosition 1920x1200 HDMI-A-0=50
+MenuBar=Disabled
+ToolBarsMovable=Disabled
+
+[Recent Files]
+File1[$e]=/run/media/nisidabay/Elements/PERSONAL/Compra casa/Padrón Granada .pdf
+File10[$e]=$HOME/.local/share/Trash/files/caca.md
+File2[$e]=/run/media/nisidabay/Elements/PERSONAL/Compra casa/Escritura Compraventa.pdf
+File3[$e]=/run/media/nisidabay/Elements/Calibre/Javier Riverola Gurruchaga/Solve It With PYTHON !_ A Programming Guide to Ease Your Science and Engineering Challenges (1073)/Solve It With PYTHON !_ A Programming Guid - Javier Riverola Gurruchaga.pdf
+File4[$e]=$HOME/markdown_clips/Python's Self Type How to Annotate Methods That Return self – Real Python(3).md
+File5[$e]=$HOME/go_code.md
+File6[$e]=$HOME/temp/markdown_clips/Using bash in zsh.md
+File7[$e]=/run/media/nisidabay/LINUX-MAC/sarosi/README.es.md
+File8[$e]=$HOME/os
+File9[$e]=/run/media/nisidabay/Elements/COPIA LINUX CARLOS/home/nisidabay/Documentos/Sin título-1.md
+Name1[$e]=Padrón Granada .pdf
+Name10[$e]=caca.md
+Name2[$e]=Escritura Compraventa.pdf
+Name3[$e]=Solve It With PYTHON !_ A Programming Guid - Javier Riverola Gurruchaga.pdf
+Name4[$e]=Python's Self Type How to Annotate Methods That Return self – Real Python(3).md
+Name5[$e]=go_code.md
+Name6[$e]=Using bash in zsh.md
+Name7[$e]=README.es.md
+Name8[$e]=os
+Name9[$e]=Sin título-1.md

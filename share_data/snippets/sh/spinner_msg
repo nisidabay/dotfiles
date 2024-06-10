@@ -1,0 +1,22 @@
+# Function to display a spinner while a background process runs
+spinner() {
+	local pid="$1"
+	local msg="$2"
+	local chars="/-\|"
+	while kill -0 "$pid" 2>/dev/null; do
+		for ((i = 0; i < ${#chars}; i++)); do
+			echo -ne "${chars:$i:1}" "\r"
+			sleep 0.1
+		done
+	done
+	gum style --bold "$msg" --background="#2596be"
+}
+
+gum style --bold "ADD YOUR MESSAGE HERE" --background="#2596be"
+YOUR_PROCESS_HERE &
+
+proccess_id=$!
+
+spinner "$proccess_id" "ADD YOUR MESSAGE HERE"
+
+gum style --bold "Operation completed" --background="#be2596"

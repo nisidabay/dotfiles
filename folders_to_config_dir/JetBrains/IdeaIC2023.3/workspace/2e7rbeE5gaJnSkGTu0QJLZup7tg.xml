@@ -1,0 +1,194 @@
+<project version="4">
+  <component name="BookmarksManager">
+    <option name="groups">
+      <GroupState>
+        <option name="name" value="practice_kotlin" />
+      </GroupState>
+    </option>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="-1">
+      <file>
+        <entry file="file://$PROJECT_DIR$/TodoList-version2.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="486">
+              <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+              <folding>
+                <element signature="e#0#367#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTypeUsageLocalSummary">
+    <fileType name="Kotlin">
+      <summary usageCount="32" lastUsed="1711379207233" />
+    </fileType>
+  </component>
+  <component name="IdeDocumentHistory">
+    <changedPaths>
+      <option value="$PROJECT_DIR$/TodoList-version2.kt" />
+    </changedPaths>
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="LanguageUsageStatistics">
+    <language id="kotlin">
+      <summary usageCount="32" lastUsage="1711379207236" />
+    </language>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" />
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="practice_kotlin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/nisidabay/Downloads/Refactor/practice_kotlin}" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="RunConfigurationStartHistory">
+    <history>
+      <element setting="Kotlin.TodoList-version2" />
+      <element setting="Kotlin.Unnamed" />
+      <element setting="JAR Application.TodoList-version2.jar" />
+      <element setting="JAR Application.TodoList-version1.jar" />
+      <element setting="JAR Application.read_only_list.jar" />
+      <element setting="Kotlin.run_kotlin" />
+      <element setting="Application.Unnamed" />
+    </history>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="TerminalArrangementManager">
+    <option name="myTabStates">
+      <TerminalTabState tabName="Local" currentWorkingDirectory="$PROJECT_DIR$" />
+      <TerminalTabState tabName="Local (2)" currentWorkingDirectory="$PROJECT_DIR$">
+        <shellCommand>
+          <arg value="/usr/bin/zsh" />
+          <arg value="-i" />
+        </shellCommand>
+      </TerminalTabState>
+    </option>
+    <option name="mySelectedTabIndex" value="1" />
+  </component>
+  <component name="ToolWindowManager">
+    <layoutV2>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5003693" visible="true" weight="0.16278136" />
+      <window_info id="Commit" order="1" weight="0.25" />
+      <window_info id="Structure" order="2" sideWeight="0.49963072" side_tool="true" weight="0.3298828" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Problems" order="1" />
+      <window_info anchor="bottom" id="Problems View" order="2" weight="0.32980278" />
+      <window_info anchor="bottom" id="Terminal" order="3" weight="0.33005822" />
+      <window_info active="true" anchor="bottom" id="Run" order="4" visible="true" weight="0.32980278" />
+      <window_info anchor="bottom" id="Services" order="5" weight="0.32992238" />
+      <window_info anchor="bottom" id="Build" order="6" weight="0.32980278" />
+      <window_info anchor="bottom" id="Debug" order="7" />
+      <window_info anchor="right" id="documentation.v2" side_tool="true" weight="0.3298828" />
+      <window_info anchor="right" id="Notifications" order="0" weight="0.3297244" />
+      <window_info anchor="right" id="AIAssistant" order="1" weight="0.25" />
+      <window_info anchor="right" id="Database" order="2" weight="0.25" />
+      <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.25" />
+      <window_info anchor="right" id="Coverage" order="5" side_tool="true" />
+      <unified_weights bottom="0.33005822" left="0.16278136" right="0.3297244" />
+    </layoutV2>
+    <recentWindows>
+      <value>Terminal</value>
+      <value>Project</value>
+      <value>Build</value>
+      <value>Run</value>
+      <value>Notifications</value>
+      <value>Problems View</value>
+      <value>documentation.v2</value>
+      <value>Structure</value>
+      <value>Services</value>
+    </recentWindows>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="843" y="353" width="1006" height="865" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1711344130019">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="843" y="353" width="1006" height="865" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1711344130019" />
+    <state x="1084" y="159" width="428" height="580" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1711267744902">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="1084" y="159" width="428" height="580" key="#com.intellij.ide.macro.MacrosDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1711267744902" />
+    <state x="1010" y="329" width="529" height="415" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1711352313555">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="1010" y="329" width="529" height="415" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1711352313555" />
+    <state width="2474" height="419" key="GridCell.Tab.0.bottom" timestamp="1711342107060">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2474" height="419" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1711342107060" />
+    <state width="2474" height="419" key="GridCell.Tab.0.center" timestamp="1711342107058">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2474" height="419" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1711342107058" />
+    <state width="2474" height="419" key="GridCell.Tab.0.left" timestamp="1711342107057">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2474" height="419" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1711342107057" />
+    <state width="2474" height="419" key="GridCell.Tab.0.right" timestamp="1711342107059">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2474" height="419" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1711342107059" />
+    <state x="757" y="307" key="SettingsEditor" timestamp="1711344084121">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="757" y="307" key="SettingsEditor/0.0.2560.1440@0.0.2560.1440" timestamp="1711344084121" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/TodoList-version1.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/read_only_list.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TodoList-version2.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#367#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

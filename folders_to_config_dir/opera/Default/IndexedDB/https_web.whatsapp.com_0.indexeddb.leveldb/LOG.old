@@ -1,0 +1,42 @@
+2024/01/05-21:39:51.930 280b94 Reusing MANIFEST /home/nisidabay/.config/opera/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/01/05-21:39:51.930 280b94 Recovering log #400
+2024/01/05-21:39:51.991 280b94 Reusing old log /home/nisidabay/.config/opera/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000400.log 
+2024/01/05-21:40:10.163 280b95 Level-0 table #407: started
+2024/01/05-21:40:10.190 280b95 Level-0 table #407: 1143081 bytes OK
+2024/01/05-21:40:10.192 280b95 Delete type=0 #400
+2024/01/05-21:40:10.333 280b95 Compacting 1@1 + 3@2 files
+2024/01/05-21:40:10.384 280b95 Generated table #408@1: 31492 keys, 2205625 bytes
+2024/01/05-21:40:10.432 280b95 Generated table #409@1: 39201 keys, 2201518 bytes
+2024/01/05-21:40:10.476 280b95 Generated table #410@1: 55244 keys, 1224594 bytes
+2024/01/05-21:40:10.476 280b95 Compacted 1@1 + 3@2 files => 5631737 bytes
+2024/01/05-21:40:10.477 280b95 compacted to: files[ 0 0 3 0 0 0 0 ]
+2024/01/05-21:40:19.694 280b95 Level-0 table #412: started
+2024/01/05-21:40:19.715 280b95 Level-0 table #412: 1063472 bytes OK
+2024/01/05-21:40:19.717 280b95 Delete type=2 #403
+2024/01/05-21:40:19.717 280b95 Delete type=0 #406
+2024/01/05-21:40:19.717 280b95 Delete type=2 #402
+2024/01/05-21:40:19.717 280b95 Delete type=2 #407
+2024/01/05-21:40:19.717 280b95 Delete type=2 #404
+2024/01/05-21:40:19.785 280b95 Compacting 1@1 + 3@2 files
+2024/01/05-21:40:19.829 280b95 Generated table #413@1: 35566 keys, 2210266 bytes
+2024/01/05-21:40:19.872 280b95 Generated table #414@1: 32282 keys, 2195018 bytes
+2024/01/05-21:40:19.912 280b95 Generated table #415@1: 64392 keys, 1426268 bytes
+2024/01/05-21:40:19.912 280b95 Compacted 1@1 + 3@2 files => 5831552 bytes
+2024/01/05-21:40:19.914 280b95 compacted to: files[ 0 0 3 0 0 0 0 ]
+2024/01/05-21:40:19.914 280b95 Delete type=2 #409
+2024/01/05-21:40:19.914 280b95 Delete type=2 #412
+2024/01/05-21:40:19.914 280b95 Delete type=2 #408
+2024/01/05-21:40:19.914 280b95 Delete type=2 #410
+2024/01/05-21:40:23.436 280b98 Level-0 table #417: started
+2024/01/05-21:40:23.486 280b98 Level-0 table #417: 1096587 bytes OK
+2024/01/05-21:40:23.490 280b98 Delete type=0 #411
+2024/01/05-21:40:23.544 280b95 Compacting 1@1 + 3@2 files
+2024/01/05-21:40:23.609 280b95 Generated table #418@1: 36523 keys, 2209451 bytes
+2024/01/05-21:40:23.693 280b95 Generated table #419@1: 24860 keys, 2189402 bytes
+2024/01/05-21:40:23.747 280b95 Generated table #420@1: 74538 keys, 1704832 bytes
+2024/01/05-21:40:23.747 280b95 Compacted 1@1 + 3@2 files => 6103685 bytes
+2024/01/05-21:40:23.749 280b95 compacted to: files[ 0 0 3 0 0 0 0 ]
+2024/01/05-21:40:23.749 280b95 Delete type=2 #414
+2024/01/05-21:40:23.749 280b95 Delete type=2 #417
+2024/01/05-21:40:23.749 280b95 Delete type=2 #413
+2024/01/05-21:40:23.749 280b95 Delete type=2 #415

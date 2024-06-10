@@ -1,0 +1,346 @@
+{
+  "entries": {
+    "docx": [
+      {
+        "Actions": "NewDocument;",
+        "Categories": "Office;WordProcessor;X-Red-Hat-Base;",
+        "Comment": "Create and edit text and graphics in letters, reports, documents and Web pages.",
+        "Exec": [
+          "libreoffice",
+          "--writer",
+          "%U"
+        ],
+        "GenericName": "Word Processor",
+        "Icon": "/usr/share/icons/Qogir/scalable/apps/libreoffice-writer.svg",
+        "InitialPreference": "5",
+        "Keywords": "Text;Letter;Fax;Document;OpenDocument Text;Microsoft Word;Microsoft Works;Lotus WordPro;OpenOffice Writer;CV;odt;doc;docx;rtf;",
+        "MimeType": [
+          "",
+          "application/macwriteii",
+          "application/x-aportisdoc",
+          "application/x-sony-bbeb",
+          "application/vnd.sun.xml.writer.global",
+          "application/wordperfect",
+          "application/x-iwork-pages-sffpages",
+          "application/vnd.oasis.opendocument.text-master-template",
+          "application/vnd.ms-works",
+          "application/vnd.ms-word",
+          "application/vnd.ms-word.template.macroEnabled.12",
+          "text/rtf",
+          "application/vnd.ms-word.document.macroEnabled.12",
+          "application/vnd.apple.pages",
+          "application/x-t602",
+          "application/clarisworks",
+          "application/vnd.sun.xml.writer",
+          "application/x-extension-txt",
+          "application/vnd.sun.xml.writer.template",
+          "application/vnd.openxmlformats-officedocument.wordprocessingml.template",
+          "application/x-mswrite",
+          "application/vnd.oasis.opendocument.text-template",
+          "application/msword",
+          "application/vnd.oasis.opendocument.text-master",
+          "application/vnd.oasis.opendocument.text-web",
+          "application/vnd.oasis.opendocument.text-flat-xml",
+          "application/x-fictionbook+xml",
+          "application/vnd.wordperfect",
+          "application/vnd.palm",
+          "application/x-hwp",
+          "application/x-starwriter",
+          "application/vnd.lotus-wordpro",
+          "application/rtf",
+          "application/x-doc",
+          "text/plain",
+          "application/x-abiword",
+          "application/vnd.stardivision.writer-global",
+          "application/prs.plucker",
+          "application/vnd.oasis.opendocument.text",
+          "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        ],
+        "Name": "LibreOffice Writer",
+        "StartupNotify": "true",
+        "StartupWMClass": "libreoffice-writer",
+        "Terminal": "false",
+        "Type": "Application",
+        "Version": "1.0",
+        "X-GIO-NoFuse": "true",
+        "X-KDE-Protocols": "file,http,webdav,webdavs",
+        "desktop_file_path": "/usr/share/applications/libreoffice-writer.desktop",
+        "icon_data": {
+          "__class__": "bytearray",
+          "__value__": "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACNElEQVRoge2ZsUtbQRzHv5eYJs/yQEpMTHwOqZhJumTpVioU9C8QhIKj4OAgdOvkVlDo0F0QBBdXnbRjlyzFKYJDmyZ9RrAQ9AVDck4+Id7De+93zZ34Pssj/O6X+334vbt7cEBMDAkWFMjnP75MWd3ZJGeJYRY0SI/xftdLnbjuzpUoLhRwXi/NjGayh9aYU2SMBUoOA8459/7VG9edi/n62e7pYHxElJTos/Vc6V0p+SKjtfg77FfTpV8n++sAVgZj4teD86wpxQNAMpVh4Dwrigk7MMjCnIP8uEUu5PC4jr/nnv97Imdh/r0jHOu2PBwc1R/9TymBT6tvoGIlLMw5WPv8w5e4ey4vzjwYyzmkBKR2GFXLOD9u4evGW0zk7ru5vXeK7b0Ha1N6zqFvkWEkZNCyx6uU0HZIqZLQesqqkNAqANAltAsAwRIyGCEAiCVkMEYAiCZhlAAQXsI4AeBeQgYjBQBIfzxKfcwF0W63Kek+tm1HziUJ1Go1SrpPpVKJnEsSKJfLlHQlkAQorVcFSaDRaCgpolgsRs4lCTSbTUq6jzYByuJThbHngCxGbKOU3ex5d8CEc+B5d6BarYYab9u28q6RBAqFQqjx6XSaMp0QkgDlAFLFk18DsYBupAQ4/99lRJ9TahF/+fZTyQVHGNyW9/ggSArIXDToIuCODK3eTUfDiyOm1+1wMHYhigk70B/Blnv2/cPo2NQkS+i/Zr2+/P2nn+CboviTv+iOiSFyC4hqtMrGqPklAAAAAElFTkSuQmCC"
+        },
+        "uuid": "13daa4b9-25d2-48b1-b58a-cee094b8a316"
+      },
+      {
+        "Actions": "NewDocument;NewSpreadsheet;NewPresentation;NewForm;",
+        "Categories": "Office;WordProcessor;Spreadsheet;Presentation;",
+        "Comment": "Edit office documents",
+        "Exec": [
+          "env",
+          "BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/onlyoffice-desktopeditors_onlyoffice-desktopeditors.desktop",
+          "/var/lib/snapd/snap/bin/onlyoffice-desktopeditors",
+          "%U"
+        ],
+        "GenericName": "Document Editor",
+        "Keywords": "Text;Document;OpenDocument Text;Microsoft Word;Microsoft Works;odt;doc;docx;rtf;",
+        "MimeType": [
+          "application/vnd.sun.xml.calc",
+          "application/vnd.sun.xml.impress.template",
+          "",
+          "application/vnd.ms-excel.template.macroenabled.12",
+          "text/docxf",
+          "text/oform",
+          "application/vnd.ms-excel.sheet.binary.macroenabled.12",
+          "text/tab-separated-values",
+          "application/vnd.ms-excel",
+          "application/vnd.sun.xml.writer.global",
+          "text/comma-separated-values",
+          "application/vnd.oasis.opendocument.spreadsheet",
+          "application/vnd.oasis.opendocument.spreadsheet-template",
+          "application/vnd.ms-excel.sheet.macroenabled.12",
+          "application/wordperfect",
+          "text/x-comma-separated-values",
+          "application/vnd.oasis.opendocument.presentation-template",
+          "application/vnd.ms-powerpoint",
+          "application/vnd.ms-word",
+          "text/rtf",
+          "application/vnd.ms-powerpoint.presentation.macroenabled.12",
+          "application/x-ms-excel",
+          "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+          "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          "application/vnd.sun.xml.impress",
+          "application/msexcel",
+          "application/x-excel",
+          "application/mspowerpoint",
+          "application/vnd.ms-word.document.macroenabled.12",
+          "application/vnd.sun.xml.calc.template",
+          "text/spreadsheet",
+          "application/vnd.sun.xml.writer",
+          "application/vnd.openxmlformats-officedocument.presentationml.slide",
+          "x-scheme-handler/oo-office",
+          "application/vnd.sun.xml.writer.template",
+          "application/vnd.openxmlformats-officedocument.spreadsheetml.template",
+          "text/csv",
+          "application/vnd.openxmlformats-officedocument.wordprocessingml.template",
+          "application/excel",
+          "application/vnd.oasis.opendocument.text-template",
+          "application/msword",
+          "application/vnd.oasis.opendocument.text-master",
+          "application/vnd.oasis.opendocument.text-web",
+          "application/vnd.wordperfect",
+          "application/vnd.oasis.opendocument.presentation",
+          "application/csv",
+          "application/rtf",
+          "text/x-csv",
+          "application/x-doc",
+          "application/vnd.openxmlformats-officedocument.presentationml.slideshow",
+          "application/vnd.ms-powerpoint.template.macroenabled.12",
+          "application/x-msexcel",
+          "application/vnd.openxmlformats-officedocument.presentationml.template",
+          "application/vnd.ms-powerpoint.slideshow.macroEnabled.12",
+          "application/vnd.oasis.opendocument.text",
+          "application/vnd.ms-word.template.macroenabled.12",
+          "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        ],
+        "Name": "ONLYOFFICE Desktop Editors",
+        "Terminal": "false",
+        "Type": "Application",
+        "Version": "1.0",
+        "X-SnapInstanceName": "onlyoffice-desktopeditors",
+        "desktop_file_path": "/var/lib/snapd/desktop/applications/onlyoffice-desktopeditors_onlyoffice-desktopeditors.desktop",
+        "uuid": "a35ad77d-82e6-4c95-827a-042ada97bcf5"
+      }
+    ],
+    "epub": [
+      {
+        "Categories": "Office;Viewer;",
+        "Comment": "Viewer for E-books in all the major formats",
+        "Exec": [
+          "ebook-viewer",
+          "--detach",
+          "%f"
+        ],
+        "GenericName": "Viewer for E-books",
+        "Icon": "/usr/share/icons/Paper/512x512/apps/calibre-viewer.png",
+        "MimeType": [
+          "",
+          "application/x-cb7",
+          "application/x-mobipocket-subscription",
+          "application/x-cbz",
+          "application/x-cbr",
+          "application/vnd.ctc-posml",
+          "image/vnd.djvu",
+          "application/x-mobipocket-ebook",
+          "application/oebps-package+xml",
+          "application/epub+zip",
+          "application/x-cbc",
+          "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "application/vnd.ms-word.document.macroenabled.12",
+          "application/ereader",
+          "application/x-mobi8-ebook",
+          "application/x-sony-bbeb"
+        ],
+        "Name": "E-book viewer",
+        "TryExec": "ebook-viewer",
+        "Type": "Application",
+        "Version": "1.0",
+        "desktop_file_path": "/usr/share/applications/calibre-ebook-viewer.desktop",
+        "icon_data": {
+          "__class__": "bytearray",
+          "__value__": "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAEXRFWHRBdXRob3IAU2FtIEhld2l0dN+EiUYAAABaelRYdENvcHlyaWdodAAACJkFwdsNgCAMAMBVWABq4p9/hBGcAEgjDY+atpq4vXcpuWgmVB4jXv5sWTAO6uia2X0AVMFs9GLlOXlpYLlgUMWlqFA+rxn2sMEPx9gZ/ipvC64AAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwaAAAAFnRFWHRUaXRsZQBQYXBlciBJY29uIFRoZW1lJTzX2QAAAaxJREFUaIHtmT1LA0EQht+5OzUgwWgjFkIaJYJiJYidjY2VnUW6lP4NO7GzVEHEOj/AykpQC4ldCEQs7AIJRpP72B2LYBHhNomXZCLsA9vMDsM8sFvMLmCRhfrMcUfdSAwKAJsSjALZLFIHS+tnrFQewMxPPD3tIT3tJe5uYzuHzZ1cV+z6tAgiAoC2dt2b82r9qFKp+HE1jF3sZVbzwddn4Xc8ZA8RJxdQoQ+oqLu234bTEUgBKBwupu6PK7iIq+EY6jth0MoZ9sdCFLTXYOjTJADu746MFGJzD0aB/4AVkMYKSGMFpLEC0lgBaayANFZgGDSbLbA2To6xJB+rEsDMeH4s4+nuBQuL89jd3xq4hqhA6aEMHSl4RGi811C8vB14ghIVIKXhduZfEBFIa4AGU5iIO5AEKyCNFZDGCkhjBaSxAtJYAWmsgDRWQJqJF9A99o0Cn5GqMv/ttWAYMDMaflg15Zh+4Pmt9vG6nJnNekQrDHY1MzQzphyCSwTFPMrl11pB8ar0ehIAzbgme03QDoA5AJkesqNAAagDaMBwkvp9ApD6L5Y7v+PiG+duvaWtwHhTAAAAAElFTkSuQmCC"
+        },
+        "uuid": "41d40df6-f5de-4896-95d9-8c9e9371404f"
+      },
+      {
+        "Actions": "new-window;",
+        "Categories": "Office;Viewer;",
+        "Comment": "Ver libros electrónicos",
+        "Exec": [
+          "com.github.johnfactotum.Foliate",
+          "%U"
+        ],
+        "GenericName": "Visor de libros electrónicos",
+        "Icon": "/usr/share/icons/hicolor/scalable/apps/com.github.johnfactotum.Foliate.svg",
+        "Keywords": {
+          "": "Ebook;Book;EPUB;Viewer;Reader;",
+          "cs": "Elektronická kniha;Kniha;EPUB;Prohlížeč;Čtečka;",
+          "de": "EBook;Buch;EPUB;Betrachter;Reader;",
+          "es": "Ebook;Libro;EPUB;Visor;Lector;",
+          "eu": "Ebook;Liburu;EPUB;Ikustailea;Irakurgailua;",
+          "fr": "Ebook;Livre;EPUB;Liseuse;Lecteur;",
+          "id": "Ebook,Buku,EPUB,Pemirsa,Pembaca;",
+          "ie": "Ebook;Elibre;Libre;EPUB;Visor;Letor;",
+          "it": "Ebook;Book;EPUB;Viewer;Reader;libri;visualizzatore;lettore;",
+          "ko": "Ebook;Book;EPUB;Viewer;Reader;이북;도서;뷰어;리더;책;전자책;",
+          "nb": "E-bok;Bok;EPUB;Fremviser;Leser;",
+          "nl": "E-boek;Boek;EPUB;Lezer;Bekijken;",
+          "nn": "E-bok;Bok;EPUB;Framsynar;Lesar;",
+          "pt_BR": "Ebook;Book;EPUB;Viewer;Reader;",
+          "ru": "Книга;Книги;EPUB;Читалка;",
+          "sv": "E-bok;Bok;EPUB;Visare;Läsare;",
+          "uk": "Е-книга;Книга;EPUB;Переглядач;Читач;",
+          "zh_CN": "Ebook;Book;EPUB;Viewer;Reader;电子书;图书;EPUB;查看器;阅读器;",
+          "zh_TW": "Ebook;Book;EPUB;Viewer;Reader;電子書;書;檢視器;閱讀器;"
+        },
+        "MimeType": [
+          "",
+          "application/x-fictionbook+xml",
+          "application/vnd.comicbook-rar",
+          "application/x-cb7",
+          "application/x-mobipocket-ebook",
+          "application/epub+zip",
+          "application/x-zip-compressed-fb2",
+          "application/x-cbt",
+          "x-scheme-handler/opds",
+          "application/vnd.amazon.mobi8-ebook",
+          "application/vnd.comicbook+zip"
+        ],
+        "Name": "Foliate",
+        "Terminal": "false",
+        "Type": "Application",
+        "X-Purism-FormFactor": "Workstation;Mobile;",
+        "desktop_file_path": "/usr/share/applications/com.github.johnfactotum.Foliate.desktop",
+        "icon_data": {
+          "__class__": "bytearray",
+          "__value__": "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"
+        },
+        "uuid": "ea38fe89-7cd1-4c6a-adcf-f64ee8c1b15d"
+      }
+    ],
+    "pdf": [
+      {
+        "Categories": "Office;Graphics;",
+        "Comment": "Edit PDF files",
+        "Exec": [
+          "/opt/master-pdf-editor-4/masterpdfeditor4",
+          "%f"
+        ],
+        "MimeType": [
+          "application/pdf",
+          "",
+          "application/x-gzpdf",
+          "application/x-bzpdf"
+        ],
+        "Name": "Master PDF Editor 4",
+        "Path": "/opt/master-pdf-editor-4",
+        "Terminal": "false",
+        "Type": "Application",
+        "desktop_file_path": "/home/nisidabay/.local/share/applications/masterpdfeditor4.desktop",
+        "uuid": "96c899e4-836f-41ba-8113-e8b64df11107"
+      },
+      {
+        "Categories": "Office;Viewer;",
+        "Comment": "A minimalistic document viewer",
+        "Exec": [
+          "zathura",
+          "%U"
+        ],
+        "MimeType": [
+          "",
+          "application/oxps",
+          "application/pdf",
+          "application/epub+zip",
+          "application/x-fictionbook"
+        ],
+        "Name": "Zathura",
+        "NoDisplay": "true",
+        "Terminal": "false",
+        "Type": "Application",
+        "Version": "1.0",
+        "desktop_file_path": "/usr/share/applications/org.pwmt.zathura-pdf-mupdf.desktop",
+        "uuid": "8f1f436e-0136-4594-a348-ac9d9b82be95"
+      }
+    ]
+  },
+  "geometry-of-choose-open-with-program-dialog-geometry": {
+    "frame_geometry": {
+      "height": 506,
+      "width": 606,
+      "x": 977,
+      "y": 467
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 500,
+      "width": 600,
+      "x": 980,
+      "y": 470
+    },
+    "maximized": false,
+    "normal_geometry": {
+      "height": 500,
+      "width": 600,
+      "x": 980,
+      "y": 470
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAPRAAAB0wAABi4AAAPMAAAD1AAAAdYAAAYrAAADyQAAAAAAAAAACgAAAAPUAAAB1gAABisAAAPJ"
+    },
+    "screen": {
+      "depth": 24,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 1440,
+        "width": 2560,
+        "x": 0,
+        "y": 0
+      },
+      "index_in_screens_list": 0,
+      "manufacturer": "Apple Computer Inc",
+      "model": "iMac",
+      "name": "DisplayPort-2",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 1440,
+        "width": 2560
+      },
+      "virtual_geometry": {
+        "height": 1440,
+        "width": 2560,
+        "x": 0,
+        "y": 0
+      }
+    }
+  }
+}

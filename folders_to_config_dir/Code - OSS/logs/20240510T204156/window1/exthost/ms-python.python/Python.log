@@ -1,0 +1,179 @@
+2024-05-10 20:42:41.469 [error] Unable to check if shell integration is active [Error: Extension 'ms-python.python' CANNOT use API proposal: terminalDataWriteEvent.
+Its package.json#enabledApiProposals-property declares:  but NOT terminalDataWriteEvent.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-python.python
+	at v (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:141:51558)
+	at a.onDidWriteTerminalData (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:163:32256)
+	at new g (/home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:746998)
+	at t.resolveInstance (/home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2007385)
+	at /home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2009293
+	at Array.map (<anonymous>)
+	at t.resolveInstance (/home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2007159)
+	at /home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2009293
+	at t.resolve (/home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2009556)
+	at /home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:1993119
+	at e._get (/home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:1992885)
+	at e.get (/home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:1991597)
+	at e.dynamicValue (/home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2014661)
+	at /home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2008782
+	at c (/home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2007828)
+	at /home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2008722
+	at /home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2008241
+	at Array.map (<anonymous>)
+	at /home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2008213
+	at Array.map (<anonymous>)
+	at t.resolveInstance (/home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2007159)
+	at /home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2009293
+	at t.resolve (/home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2009556)
+	at /home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:1993119
+	at e._get (/home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:1992885)
+	at e.get (/home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:1991597)
+	at a.get (/home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:463338)
+	at /home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:384002
+	at async t.activateComponents (/home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:382289)
+	at async /home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2928053
+	at async e (/home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2927585)
+	at async h.n (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:143:6281)
+	at async h.m (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:143:6244)
+	at async h.l (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:143:5701)]
+2024-05-10 20:42:41.469 [info] Test server listening.
+2024-05-10 20:42:41.469 [info] > conda info --json
+2024-05-10 20:42:41.471 [info] Found: /bin/python --> /bin/python3.12
+2024-05-10 20:42:41.472 [info] Found: /bin/python2 --> /bin/python2.7
+2024-05-10 20:42:41.472 [info] Found: /bin/python2.7 --> /bin/python2.7
+2024-05-10 20:42:41.472 [info] Found: /bin/python3 --> /bin/python3.12
+2024-05-10 20:42:41.473 [info] Found: /bin/python3.12 --> /bin/python3.12
+2024-05-10 20:42:41.505 [info] Found: /sbin/python --> /sbin/python3.12
+2024-05-10 20:42:41.506 [info] Found: /sbin/python2 --> /sbin/python2.7
+2024-05-10 20:42:41.506 [info] Found: /sbin/python2.7 --> /sbin/python2.7
+2024-05-10 20:42:41.506 [info] Found: /sbin/python3 --> /sbin/python3.12
+2024-05-10 20:42:41.506 [info] Found: /sbin/python3.12 --> /sbin/python3.12
+2024-05-10 20:42:41.515 [info] Found: /usr/bin/python --> /usr/bin/python3.12
+2024-05-10 20:42:41.515 [info] Found: /usr/bin/python2 --> /usr/bin/python2.7
+2024-05-10 20:42:41.515 [info] Found: /usr/bin/python2.7 --> /usr/bin/python2.7
+2024-05-10 20:42:41.515 [info] Found: /usr/bin/python3 --> /usr/bin/python3.12
+2024-05-10 20:42:41.515 [info] Found: /usr/bin/python3.12 --> /usr/bin/python3.12
+2024-05-10 20:42:41.557 [info] Found: /usr/sbin/python --> /usr/sbin/python3.12
+2024-05-10 20:42:41.558 [info] Found: /usr/sbin/python2 --> /usr/sbin/python2.7
+2024-05-10 20:42:41.558 [info] Found: /usr/sbin/python2.7 --> /usr/sbin/python2.7
+2024-05-10 20:42:41.558 [info] Found: /usr/sbin/python3 --> /usr/sbin/python3.12
+2024-05-10 20:42:41.559 [info] Found: /usr/sbin/python3.12 --> /usr/sbin/python3.12
+2024-05-10 20:42:41.560 [warning] Looking for python binaries within /opt/master-pdf-editor-4/masterpdfeditor4 failed with [Error: ENOTDIR: not a directory, scandir '/opt/master-pdf-editor-4/masterpdfeditor4'] {
+  errno: -20,
+  code: 'ENOTDIR',
+  syscall: 'scandir',
+  path: '/opt/master-pdf-editor-4/masterpdfeditor4'
+}
+2024-05-10 20:42:41.586 [info] > /bin/python -I ~/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/python_files/get_output_via_markers.py ~/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/python_files/interpreterInfo.py
+2024-05-10 20:42:41.600 [info] > /bin/python2 -I ~/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/python_files/get_output_via_markers.py ~/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/python_files/interpreterInfo.py
+2024-05-10 20:42:41.604 [warning] [Error: Command failed: /bin/python2 -I /home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/python_files/get_output_via_markers.py /home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/python_files/interpreterInfo.py
+Unknown option: -I
+usage: /bin/python2 [option] ... [-c cmd | -m mod | file | -] [arg] ...
+Try `python -h' for more information.
+
+	at ChildProcess.exithandler (node:child_process:422:12)
+	at ChildProcess.emit (node:events:529:35)
+	at maybeClose (node:internal/child_process:1098:16)
+	at Socket.<anonymous> (node:internal/child_process:450:11)
+	at Socket.emit (node:events:517:28)
+	at Pipe.<anonymous> (node:net:350:12)] {
+  code: 2,
+  killed: false,
+  signal: null,
+  cmd: '/bin/python2 -I /home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/python_files/get_output_via_markers.py /home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/python_files/interpreterInfo.py'
+}
+2024-05-10 20:42:41.604 [error] Support for Python 2.7 has been dropped by the Python extension so certain features may not work, upgrade to using Python 3.
+2024-05-10 20:42:41.608 [info] > /bin/python2 ~/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/python_files/get_output_via_markers.py ~/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/python_files/interpreterInfo.py
+2024-05-10 20:42:41.617 [info] > /sbin/python -I ~/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/python_files/get_output_via_markers.py ~/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/python_files/interpreterInfo.py
+2024-05-10 20:42:41.635 [info] > /sbin/python2 -I ~/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/python_files/get_output_via_markers.py ~/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/python_files/interpreterInfo.py
+2024-05-10 20:42:41.639 [warning] [Error: Command failed: /sbin/python2 -I /home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/python_files/get_output_via_markers.py /home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/python_files/interpreterInfo.py
+Unknown option: -I
+usage: /sbin/python2 [option] ... [-c cmd | -m mod | file | -] [arg] ...
+Try `python -h' for more information.
+
+	at ChildProcess.exithandler (node:child_process:422:12)
+	at ChildProcess.emit (node:events:529:35)
+	at maybeClose (node:internal/child_process:1098:16)
+	at Socket.<anonymous> (node:internal/child_process:450:11)
+	at Socket.emit (node:events:517:28)
+	at Pipe.<anonymous> (node:net:350:12)] {
+  code: 2,
+  killed: false,
+  signal: null,
+  cmd: '/sbin/python2 -I /home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/python_files/get_output_via_markers.py /home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/python_files/interpreterInfo.py'
+}
+2024-05-10 20:42:41.639 [error] Support for Python 2.7 has been dropped by the Python extension so certain features may not work, upgrade to using Python 3.
+2024-05-10 20:42:41.645 [info] > /sbin/python2 ~/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/python_files/get_output_via_markers.py ~/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/python_files/interpreterInfo.py
+2024-05-10 20:42:41.656 [info] > /usr/bin/python -I ~/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/python_files/get_output_via_markers.py ~/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/python_files/interpreterInfo.py
+2024-05-10 20:42:41.675 [info] > /usr/bin/python2 -I ~/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/python_files/get_output_via_markers.py ~/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/python_files/interpreterInfo.py
+2024-05-10 20:42:41.680 [warning] [Error: Command failed: /usr/bin/python2 -I /home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/python_files/get_output_via_markers.py /home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/python_files/interpreterInfo.py
+Unknown option: -I
+usage: /usr/bin/python2 [option] ... [-c cmd | -m mod | file | -] [arg] ...
+Try `python -h' for more information.
+
+	at ChildProcess.exithandler (node:child_process:422:12)
+	at ChildProcess.emit (node:events:529:35)
+	at maybeClose (node:internal/child_process:1098:16)
+	at Socket.<anonymous> (node:internal/child_process:450:11)
+	at Socket.emit (node:events:517:28)
+	at Pipe.<anonymous> (node:net:350:12)] {
+  code: 2,
+  killed: false,
+  signal: null,
+  cmd: '/usr/bin/python2 -I /home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/python_files/get_output_via_markers.py /home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/python_files/interpreterInfo.py'
+}
+2024-05-10 20:42:41.681 [error] Support for Python 2.7 has been dropped by the Python extension so certain features may not work, upgrade to using Python 3.
+2024-05-10 20:42:41.687 [info] > /usr/bin/python2 ~/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/python_files/get_output_via_markers.py ~/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/python_files/interpreterInfo.py
+2024-05-10 20:42:41.699 [info] > /usr/sbin/python -I ~/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/python_files/get_output_via_markers.py ~/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/python_files/interpreterInfo.py
+2024-05-10 20:42:41.717 [info] > /usr/sbin/python2 -I ~/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/python_files/get_output_via_markers.py ~/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/python_files/interpreterInfo.py
+2024-05-10 20:42:41.719 [warning] [Error: Command failed: /usr/sbin/python2 -I /home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/python_files/get_output_via_markers.py /home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/python_files/interpreterInfo.py
+Unknown option: -I
+usage: /usr/sbin/python2 [option] ... [-c cmd | -m mod | file | -] [arg] ...
+Try `python -h' for more information.
+
+	at ChildProcess.exithandler (node:child_process:422:12)
+	at ChildProcess.emit (node:events:529:35)
+	at maybeClose (node:internal/child_process:1098:16)
+	at Socket.<anonymous> (node:internal/child_process:450:11)
+	at Socket.emit (node:events:517:28)
+	at Pipe.<anonymous> (node:net:350:12)] {
+  code: 2,
+  killed: false,
+  signal: null,
+  cmd: '/usr/sbin/python2 -I /home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/python_files/get_output_via_markers.py /home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/python_files/interpreterInfo.py'
+}
+2024-05-10 20:42:41.719 [error] Support for Python 2.7 has been dropped by the Python extension so certain features may not work, upgrade to using Python 3.
+2024-05-10 20:42:41.723 [info] > /usr/sbin/python2 ~/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/python_files/get_output_via_markers.py ~/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/python_files/interpreterInfo.py
+2024-05-10 20:42:41.794 [info] Python interpreter path: /bin/python
+2024-05-10 20:42:41.797 [error] [
+  'Failed to activate a workspace, Class name = g, completed in 388ms, has a falsy return value, Arg 1: undefined, Arg 2: {"started":1715366561347}, Return Value: undefined',
+  [Error: Extension 'ms-python.python' CANNOT use API proposal: testObserver.
+  Its package.json#enabledApiProposals-property declares:  but NOT testObserver.
+   The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-python.python
+  	at v (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:141:51558)
+  	at get testResults [as testResults] (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:163:24960)
+  	at T.activate (/home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:775617)
+  	at /home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2460
+  	at Array.map (<anonymous>)
+  	at g.activateWorkspace (/home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2450)]
+]
+2024-05-10 20:42:41.798 [error] Failure during activation. [Error: Extension 'ms-python.python' CANNOT use API proposal: testObserver.
+Its package.json#enabledApiProposals-property declares:  but NOT testObserver.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-python.python
+	at v (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:141:51558)
+	at get testResults [as testResults] (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:163:24960)
+	at T.activate (/home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:775617)
+	at /home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2460
+	at Array.map (<anonymous>)
+	at g.activateWorkspace (/home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2450)]
+2024-05-10 20:42:41.798 [error] sendStartupTelemetry() failed. [Error: Extension 'ms-python.python' CANNOT use API proposal: testObserver.
+Its package.json#enabledApiProposals-property declares:  but NOT testObserver.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-python.python
+	at v (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:141:51558)
+	at get testResults [as testResults] (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:163:24960)
+	at T.activate (/home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:775617)
+	at /home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2460
+	at Array.map (<anonymous>)
+	at g.activateWorkspace (/home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2450)]
+2024-05-10 20:42:43.063 [info] Starting Jedi language server for default.
+2024-05-10 20:54:43.871 [info] CreateEnv Trigger - Workspace not found for /home/nisidabay/match_function.py
+2024-05-10 20:54:43.988 [info] Send text to terminal: /bin/python /home/nisidabay/match_function.py

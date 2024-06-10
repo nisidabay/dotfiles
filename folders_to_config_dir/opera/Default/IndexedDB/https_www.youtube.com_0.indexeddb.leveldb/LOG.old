@@ -1,0 +1,14 @@
+2023/09/30-07:04:24.978 1ac20d Reusing MANIFEST /home/nisidabay/.config/opera/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/09/30-07:04:24.978 1ac20d Recovering log #48
+2023/09/30-07:04:24.978 1ac20d Reusing old log /home/nisidabay/.config/opera/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000048.log 
+2023/09/30-07:04:24.978 1ac20d Delete type=2 #47
+2023/09/30-07:04:27.908 1ac218 Level-0 table #53: started
+2023/09/30-07:04:27.910 1ac218 Level-0 table #53: 17357 bytes OK
+2023/09/30-07:04:27.912 1ac218 Delete type=0 #48
+2023/09/30-07:04:27.913 1ac218 Manual compaction at level-0 from '\x00\x0f\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x10\x00\x00\x00' @ 0 : 0; will stop at (end)
+2023/09/30-07:04:27.913 1ac218 Manual compaction at level-1 from '\x00\x0f\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x10\x00\x00\x00' @ 0 : 0; will stop at '\x00\x0f\x01\x1f\x04\x03\x01\x03\x00N\x00E\x00W\x03\x00\x00\x00\x00\x00\x00L@\x03\x00\x00\x93Zs\xadxB\x00\x03\x00\x00\x00\x00\x00\x00\x14@' @ 42712 : 1
+2023/09/30-07:04:27.913 1ac218 Compacting 1@1 + 1@2 files
+2023/09/30-07:04:27.915 1ac218 Generated table #54@1: 183 keys, 8402 bytes
+2023/09/30-07:04:27.915 1ac218 Compacted 1@1 + 1@2 files => 8402 bytes
+2023/09/30-07:04:27.917 1ac218 compacted to: files[ 0 0 1 0 0 0 0 ]
+2023/09/30-07:04:27.917 1ac218 Manual compaction at level-1 from '\x00\x0f\x01\x1f\x04\x03\x01\x03\x00N\x00E\x00W\x03\x00\x00\x00\x00\x00\x00L@\x03\x00\x00\x93Zs\xadxB\x00\x03\x00\x00\x00\x00\x00\x00\x14@' @ 42712 : 1 .. '\x00\x10\x00\x00\x00' @ 0 : 0; will stop at (end)

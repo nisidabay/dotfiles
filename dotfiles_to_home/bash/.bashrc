@@ -72,7 +72,6 @@ export TERM="xterm-256color"
 # Set the LS_COLORS for directory listing
 export LS_COLORS="di=34:ln=36:so=32:pi=33:ex=31:bd=34;46:cd=34;43:su=30;41:sg=30;46:tw=30;42:ow=30;43"
 
-
 # Set the history options
 export HISTCONTROL=ignoredups:erasedups
 export HISTSIZE=10000
@@ -114,7 +113,6 @@ source "$HOME/.cache/wal/colors.sh"
 # Set "bat" as the man pager if available
 # -----------------------------------------------------
 
-MANROFFOPT="-c"
 if command -v bat &>/dev/null; then
 	export MANPAGER="sh -c 'less -R | bat -l man -p'"
 fi

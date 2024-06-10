@@ -1,0 +1,80 @@
+{
+	"LanguageFileDoNotEdit"              : "このファイルはエクステンションの言語ファイルです。",
+
+	"lang"                               : "en",
+	"translator"                         : "Whochan",
+	"translator::url"                    : "http://far.whochan.com/",
+
+	"Preferences"                        : "Preferences",
+
+	"General"                            : "General",
+	"General::ButtonView"                : "Display Extension button",
+
+	"Note"                               : "Note",
+	"Note::Blank"                        : "New Note",
+	"Note::URL"                          : "URL",
+	"Note::Add"                          : "Add here",
+	"Note::NewTagSelected"               : "Tag to them",
+	"Note::ExportSelected"               : "Export them",
+	"Note::RemoveSelected"               : "Delete them",
+	"Note::RemoveSelected::confirm"      : "Do you want to delete these notes?",
+	"Note::NewTag"                       : "Add Tag",
+
+	"Tag::Reserved::NoTags"              : "Untagged",
+	"Tag::Reserved::Trash"               : "Trash",
+	"Tag::Reserved::Locked"              : "Locked",
+	"Tag::Reserved::NewTag"              : "New",
+	"Tag::Reserved::ContextMenu"         : "Use to paste",
+
+	"Tag::RemoveFromAllNotes"            : "Remove following tas from all notes",
+
+	"Tools"                              : "Tools",
+	"Tools::Backup"                      : "Backup all notes to file",
+	"Tools::Restore"                     : "Restore notes from file",
+
+	"Import::PrestoAdr"                  : "Import Notes from Presto Opera (notes.adr)",
+	"Import::Vivaldi"                    : "Import Notes from Vivaldi (Notes)",
+	"Import::OperaLink"                  : "Import Notes from Opera Link",
+
+	"Command::CopyToNotes"               : "Copy to Notes",
+	"Command::AddCurrentTag"             : "Add a Tag",
+	"Command::OpenNotesInWindow"         : "Open Notes in Tab",
+
+	"Help"                               : "Help",
+	"Help::Contact"                      : "Contact",
+	"Help::Informations"                 : "Informations",
+	"Help::Informations::About"          : "About this extension",
+	"Help::Informations::About::URL"     : "http://far.whochan.com/wlog.cgi/TaggingNotes",
+	"Help::Informations::ChangeLog"      : "Change Log",
+	"Help::Informations::ChangeLog::URL" : "http://far.whochan.com/diary.cgi?tag=TaggingNotes",
+	"Help::Forum"                        : "Forum",
+	"Help::Forum::Questions"             : "Questions and Tutorials",
+	"Help::Forum::Requests"              : "Requests and Ideas",
+	"Help::Forum::Report"                : "Report Issues",
+	"Help::Forum::Translations"          : "Translations",
+	"Help::Downloads"                    : "Downloads",
+	"Help::Downloads::Opera"             : "For Opera",
+	"Help::Downloads::Chrome"            : "For Chrome",
+	"Help::Downloads::Firefox"           : "For Firefox",
+	"Help::Downloads::Development"       : "Development Versions",
+	"Help::Translations"                 : "Translations",
+	"Help::Licenses"                     : "Licenses",
+
+	"Donation"                           : "Donation",
+	"Donation::Please"                   : "Currently, I have been developing some browser extensions. It is a little heavy work to do as a hobby. If you want to let me develop them more concentrated, please donate me.",
+	"Donation::Amazon"                   : "Amazon.co.jp",
+	"Donation::Amazon::Description"      : "Please give a gift from Amazon.co.jp.",
+	"Donation::LifeCard"                 : "V-Prica",
+	"Donation::LifeCard::Description"    : "Please give a V-Preca Gift to \"name:ＷＨＯＣＨＡＮ,mail:donation@whochan.com\".",
+	"Donation::ValueDomain"              : "Value-Domain",
+	"Donation::ValueDomain::Description" : "Please give a part of your charges of Value-domain to \"whochan\".",
+	"Donation::BuyDomain"                : "Buy Domain",
+	"Donation::BuyDomain::Description"   : "When you buy services of the Value-Domain from this link, I get 100 yen per 1 service.",
+
+	"ADDRESS::FAR"                       : "FAR/RAKUDA",
+	"ADDRESS::Support"                   : "Support Page : ",
+
+	"Siteprefs::Disable"                 : "Disable on this site.",
+
+	"eof":""
+}

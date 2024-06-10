@@ -1,0 +1,14 @@
+<application>
+  <component name="Trusted.Paths">
+    <option name="TRUSTED_PROJECT_PATHS">
+      <map>
+        <entry key="$USER_HOME$/Downloads/Refactor/practice_kotlin" value="true" />
+        <entry key="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM" value="true" />
+        <entry key="$USER_HOME$/Downloads/Refactor/practice_kotlin/Kotlin_Onboarding__Introduction" value="true" />
+        <entry key="$USER_HOME$/Downloads/Refactor/practice_kotlin/practice_kotlin" value="true" />
+        <entry key="$USER_HOME$/Downloads/Refactor/practice_kotlin/untitled" value="true" />
+        <entry key="$USER_HOME$/IdeaProjects/kotlinApprentice" value="true" />
+      </map>
+    </option>
+  </component>
+</application>

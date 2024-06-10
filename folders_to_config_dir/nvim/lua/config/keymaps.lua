@@ -111,7 +111,7 @@ keymap.set("x", "<", "<gv", { desc = "Outdent selected text" })
 keymap.set("x", ">", ">gv", { desc = "Indent selected text" })
 
 -- Which bash
-keymap.set("n", "<leader>wb", ":read !which bash<CR>I#!<Esc>", { silent = true, desc = "Insert bash shebang" })
+keymap.set("n", "<leader>wb", ":read !which bash<CR>I#!<Esc>", { silent = true, desc = "Insert python3 shebang" })
 
 -- Which python3
 keymap.set("n", "<leader>wp", ":read !which python3<CR>I#!<Esc>", { silent = true, desc = "Insert python3 shebang" })
@@ -147,13 +147,13 @@ keymap.set(
 )
 keymap.set(
   "n",
-  "<leader>gcn",
+  "<leader>ccn",
   ":!gcc -Wall -Wextra -g -std=c11 -o %:r -lncurses %<CR>",
   { silent = true, desc = "Compile ncurses C code" }
 )
 keymap.set(
   "n",
-  "<leader>gcs",
+  "<leader>ccs",
   ":!gcc -Wall -Wextra -g -std=c11 -o %:r -lnsqlite %<CR>",
   { silent = true, desc = "Compile sqlite C library" }
 )

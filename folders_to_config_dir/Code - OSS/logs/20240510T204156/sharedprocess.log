@@ -1,0 +1,103 @@
+2024-05-10 20:41:59.177 [info] Started initializing default profile extensions in extensions installation folder. file:///home/nisidabay/.vscode-oss/extensions
+2024-05-10 20:41:59.373 [warning] Failed to create default profile extensions manifest in extensions installation folder. file:///home/nisidabay/.vscode-oss/extensions Unable to create file 'vscode-userdata:/home/nisidabay/.vscode-oss/extensions/extensions.json' that already exists when overwrite flag is not set
+2024-05-10 20:41:59.373 [info] Completed initializing default profile extensions in extensions installation folder. file:///home/nisidabay/.vscode-oss/extensions
+2024-05-10 20:42:36.575 [info] Getting Manifest... ms-python.python
+2024-05-10 20:42:36.707 [info] Installing extension: ms-python.python
+2024-05-10 20:42:36.943 [info] Getting Manifest... ms-python.debugpy
+2024-05-10 20:42:37.195 [info] Installing extension: ms-python.debugpy
+2024-05-10 20:42:38.017 [error] Could not load vsce-sign module Cannot find module '@vscode/vsce-sign'
+Require stack:
+- /usr/lib/code/out/bootstrap-amd.js
+- /usr/lib/code/out/bootstrap-fork.js
+2024-05-10 20:42:38.017 [info] Extension signature verification is not done: ms-python.debugpy
+2024-05-10 20:42:38.524 [error] Could not load vsce-sign module Cannot find module '@vscode/vsce-sign'
+Require stack:
+- /usr/lib/code/out/bootstrap-amd.js
+- /usr/lib/code/out/bootstrap-fork.js
+2024-05-10 20:42:38.525 [info] Extension signature verification is not done: ms-python.python
+2024-05-10 20:42:38.525 [info] Extracted extension to file:///home/nisidabay/.vscode-oss/extensions/ms-python.debugpy-2024.6.0-linux-x64: ms-python.debugpy
+2024-05-10 20:42:38.531 [info] Renamed to /home/nisidabay/.vscode-oss/extensions/ms-python.debugpy-2024.6.0-linux-x64
+2024-05-10 20:42:38.533 [info] Extracting extension completed. ms-python.debugpy
+2024-05-10 20:42:38.618 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/nisidabay/.vscode-oss/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/nisidabay/.vscode-oss/extensions/extensions.json.vsctmp'
+    at a.create (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:53:29989)
+    at b (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:53:30100)
+    at t.hb (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:58:36600)
+    at t.stat (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:58:29040)
+    at async $.stat (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:58:16186)
+    at async K.sb (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:104:109493)
+2024-05-10 20:42:40.661 [info] Extracted extension to file:///home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal: ms-python.python
+2024-05-10 20:42:40.670 [info] Renamed to /home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal
+2024-05-10 20:42:40.677 [info] Extracting extension completed. ms-python.python
+2024-05-10 20:42:40.691 [info] Extension installed successfully: ms-python.debugpy
+2024-05-10 20:42:40.692 [info] Extension installed successfully: ms-python.python
+2024-05-10 20:42:40.764 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/nisidabay/.vscode-oss/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/nisidabay/.vscode-oss/extensions/extensions.json.vsctmp'
+    at a.create (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:53:29989)
+    at b (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:53:30100)
+    at t.hb (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:58:36600)
+    at t.stat (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:58:29040)
+    at async $.stat (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:58:16186)
+    at async K.sb (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:104:109493)
+2024-05-10 20:43:40.515 [info] Getting Manifest... llvm-vs-code-extensions.vscode-clangd
+2024-05-10 20:43:40.642 [info] Installing extension: llvm-vs-code-extensions.vscode-clangd
+2024-05-10 20:43:41.389 [error] Could not load vsce-sign module Cannot find module '@vscode/vsce-sign'
+Require stack:
+- /usr/lib/code/out/bootstrap-amd.js
+- /usr/lib/code/out/bootstrap-fork.js
+2024-05-10 20:43:41.389 [info] Extension signature verification is not done: llvm-vs-code-extensions.vscode-clangd
+2024-05-10 20:43:41.438 [info] Extracted extension to file:///home/nisidabay/.vscode-oss/extensions/llvm-vs-code-extensions.vscode-clangd-0.1.28-universal: llvm-vs-code-extensions.vscode-clangd
+2024-05-10 20:43:41.442 [info] Renamed to /home/nisidabay/.vscode-oss/extensions/llvm-vs-code-extensions.vscode-clangd-0.1.28-universal
+2024-05-10 20:43:41.444 [info] Extracting extension completed. llvm-vs-code-extensions.vscode-clangd
+2024-05-10 20:43:41.456 [info] Extension installed successfully: llvm-vs-code-extensions.vscode-clangd
+2024-05-10 20:43:41.528 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/nisidabay/.vscode-oss/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/nisidabay/.vscode-oss/extensions/extensions.json.vsctmp'
+    at a.create (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:53:29989)
+    at b (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:53:30100)
+    at t.hb (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:58:36600)
+    at t.stat (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:58:29040)
+    at async $.stat (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:58:16186)
+    at async K.sb (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:104:109493)
+2024-05-10 20:44:28.446 [info] Getting Manifest... vscodevim.vim
+2024-05-10 20:44:28.572 [info] Installing extension: vscodevim.vim
+2024-05-10 20:44:29.369 [error] Could not load vsce-sign module Cannot find module '@vscode/vsce-sign'
+Require stack:
+- /usr/lib/code/out/bootstrap-amd.js
+- /usr/lib/code/out/bootstrap-fork.js
+2024-05-10 20:44:29.370 [info] Extension signature verification is not done: vscodevim.vim
+2024-05-10 20:44:29.442 [info] Extracted extension to file:///home/nisidabay/.vscode-oss/extensions/vscodevim.vim-1.27.2-universal: vscodevim.vim
+2024-05-10 20:44:29.445 [info] Renamed to /home/nisidabay/.vscode-oss/extensions/vscodevim.vim-1.27.2-universal
+2024-05-10 20:44:29.447 [info] Extracting extension completed. vscodevim.vim
+2024-05-10 20:44:29.456 [info] Extension installed successfully: vscodevim.vim
+2024-05-10 20:44:29.529 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/nisidabay/.vscode-oss/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/nisidabay/.vscode-oss/extensions/extensions.json.vsctmp'
+    at a.create (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:53:29989)
+    at b (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:53:30100)
+    at t.hb (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:58:36600)
+    at t.stat (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:58:29040)
+    at async $.stat (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:58:16186)
+    at async K.sb (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:104:109493)
+2024-05-10 20:52:27.696 [info] Getting Manifest... vadimcn.vscode-lldb
+2024-05-10 20:52:27.819 [info] Installing extension: vadimcn.vscode-lldb
+2024-05-10 20:52:28.462 [error] Could not load vsce-sign module Cannot find module '@vscode/vsce-sign'
+Require stack:
+- /usr/lib/code/out/bootstrap-amd.js
+- /usr/lib/code/out/bootstrap-fork.js
+2024-05-10 20:52:28.463 [info] Extension signature verification is not done: vadimcn.vscode-lldb
+2024-05-10 20:52:28.489 [info] Extracted extension to file:///home/nisidabay/.vscode-oss/extensions/vadimcn.vscode-lldb-1.10.0-universal: vadimcn.vscode-lldb
+2024-05-10 20:52:28.518 [info] Renamed to /home/nisidabay/.vscode-oss/extensions/vadimcn.vscode-lldb-1.10.0-universal
+2024-05-10 20:52:28.522 [info] Extracting extension completed. vadimcn.vscode-lldb
+2024-05-10 20:52:28.555 [info] Extension installed successfully: vadimcn.vscode-lldb
+2024-05-10 20:52:28.610 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/nisidabay/.vscode-oss/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/nisidabay/.vscode-oss/extensions/extensions.json.vsctmp'
+    at a.create (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:53:29989)
+    at b (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:53:30100)
+    at t.hb (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:58:36600)
+    at t.stat (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:58:29040)
+    at async $.stat (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:58:16186)
+    at async K.sb (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:104:109493)
+2024-05-10 20:54:08.514 [info] Uninstalling extension from the profile: vadimcn.vscode-lldb@1.10.0 vscode-userdata:/home/nisidabay/.vscode-oss/extensions/extensions.json
+2024-05-10 20:54:08.554 [info] Marked extension as uninstalled vadimcn.vscode-lldb-1.10.0
+2024-05-10 20:54:08.618 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/nisidabay/.vscode-oss/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/nisidabay/.vscode-oss/extensions/extensions.json.vsctmp'
+    at a.create (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:53:29989)
+    at b (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:53:30100)
+    at t.hb (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:58:36600)
+    at t.stat (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:58:29040)
+    at async $.stat (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:58:16186)
+    at async K.sb (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:104:109493)
+2024-05-10 20:54:08.913 [info] Successfully uninstalled extension from the profile vadimcn.vscode-lldb@1.10.0 vscode-userdata:/home/nisidabay/.vscode-oss/extensions/extensions.json

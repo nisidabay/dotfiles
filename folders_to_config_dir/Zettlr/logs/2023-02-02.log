@@ -1,0 +1,44 @@
+[08:38:19] [Info] [Citeproc Provider] Loading CSL locale file at /usr/lib/zettlr/app.asar/.webpack/main/assets/csl-locales/locales-es-ES.xml ...
+[08:38:19] [Info] こんにちは！ Booting Zettlr at Thu Feb 02 2023 08:38:19 GMT+0100 (hora estándar de Europa central).
+[08:38:19] [Info] Registering custom protocol safe-file
+[08:38:19] [Info] Added DevTools extension:  Vue.js devtools
+[08:38:19] [Warning] [Assets Provider] Found outdated filter links.lua; copying ...
+[08:38:19] [Warning] [Assets Provider] Found outdated filter tags.lua; copying ...
+[08:38:19] [Info] [Stats Provider] Writing statistics to file
+[08:38:19] [Info] [Window Manager] Loading state information from /home/nisidabay/.config/Zettlr/window_state.json
+[08:38:19] [Info] [Window Manager] Window Manager started.
+[08:38:19] [Info] [Update Provider] Checking for application updates ...
+[08:38:19] [Info] [Updater] Checking https://zettlr.com/api/releases/latest for updates ...
+[08:38:20] [Info] [Dictionary Provider] Loaded dictionaries: en-US, es-ES
+[08:38:20] [Warning] [Translation Provider] Could not update translations: ERR_NON_2XX_3XX_RESPONSE | Native Error: HTTPError; Response code 404 (Not Found) Stack Trace: HTTPError: Response code 404 (Not Found) -->     at ke.<anonymous> (/usr/lib/zettlr/app.asar/.webpack/main/index.js:2:1832475) -->     at Object.onceWrapper (node:events:510:26) -->     at ke.emit (node:events:402:35) -->     at ke._onResponseBase (/usr/lib/zettlr/app.asar/.webpack/main/index.js:2:1823354) -->     at processTicksAndRejections (node:internal/process/task_queues:96:5) -->     at async ke._onResponse (/usr/lib/zettlr/app.asar/.webpack/main/index.js:2:1823768)
+[08:38:21] [Info] [Update Provider] No new update available. Current version is v2.3.0.
+[08:38:21] [Info] [FSAL] Loaded all files and workspaces in 0.04787957000010647 seconds
+[08:38:21] [Error] [Document Manager] Boot: Could not load file /home/nisidabay/Downloads/Python Threading The Complete Guide.md: Error reading file /home/nisidabay/Downloads/Python Threading The Complete Guide.md | Native Error: Error; Error reading file /home/nisidabay/Downloads/Python Threading The Complete Guide.md Stack Trace: Error: Error reading file /home/nisidabay/Downloads/Python Threading The Complete Guide.md
+[08:38:21] [Error] [Document Manager] Boot: Could not load file ctrlp.vim ÷ home.md: Error reading file ctrlp.vim ÷ home.md | Native Error: Error; Error reading file ctrlp.vim ÷ home.md Stack Trace: Error: Error reading file ctrlp.vim ÷ home.md
+[08:38:21] [Info] [Document Manager] Restored 0 open documents.
+[08:38:26] [Info] さようなら！ Shutting down at Thu Feb 02 2023 08:38:26 GMT+0100 (hora estándar de Europa central)
+[08:38:26] [Info] Application uptime was: 0 minutes, and 6.715 seconds.
+[08:38:26] [Info] [FSAL Cache] Cleaned up cache: Removed 2 remnants.
+[08:38:26] [Info] [Stats Provider] Writing statistics to file
+[08:38:26] [Info] [Config Provider] Writing configuration file to /home/nisidabay/.config/Zettlr/config.json...
+[09:29:10] [Info] [Citeproc Provider] Loading CSL locale file at /usr/lib/zettlr/app.asar/.webpack/main/assets/csl-locales/locales-es-ES.xml ...
+[09:29:10] [Info] こんにちは！ Booting Zettlr at Thu Feb 02 2023 09:29:10 GMT+0100 (hora estándar de Europa central).
+[09:29:10] [Info] Registering custom protocol safe-file
+[09:29:10] [Info] Added DevTools extension:  Vue.js devtools
+[09:29:10] [Warning] [Assets Provider] Found outdated filter links.lua; copying ...
+[09:29:10] [Warning] [Assets Provider] Found outdated filter tags.lua; copying ...
+[09:29:10] [Info] [Stats Provider] Writing statistics to file
+[09:29:10] [Info] [Window Manager] Loading state information from /home/nisidabay/.config/Zettlr/window_state.json
+[09:29:10] [Info] [Window Manager] Window Manager started.
+[09:29:10] [Info] [Update Provider] Checking for application updates ...
+[09:29:10] [Info] [Updater] Checking https://zettlr.com/api/releases/latest for updates ...
+[09:29:11] [Info] [Dictionary Provider] Loaded dictionaries: en-US, es-ES
+[09:29:11] [Warning] [Translation Provider] Could not update translations: ERR_NON_2XX_3XX_RESPONSE | Native Error: HTTPError; Response code 404 (Not Found) Stack Trace: HTTPError: Response code 404 (Not Found) -->     at ke.<anonymous> (/usr/lib/zettlr/app.asar/.webpack/main/index.js:2:1832475) -->     at Object.onceWrapper (node:events:510:26) -->     at ke.emit (node:events:402:35) -->     at ke._onResponseBase (/usr/lib/zettlr/app.asar/.webpack/main/index.js:2:1823354) -->     at processTicksAndRejections (node:internal/process/task_queues:96:5) -->     at async ke._onResponse (/usr/lib/zettlr/app.asar/.webpack/main/index.js:2:1823768)
+[09:29:11] [Info] [Update Provider] No new update available. Current version is v2.3.0.
+[09:29:11] [Info] [FSAL] Loaded all files and workspaces in 0.021415376999997533 seconds
+[09:29:11] [Info] [Document Manager] Restored 0 open documents.
+[09:29:14] [Info] さようなら！ Shutting down at Thu Feb 02 2023 09:29:14 GMT+0100 (hora estándar de Europa central)
+[09:29:14] [Info] Application uptime was: 0 minutes, and 4.642 seconds.
+[09:29:14] [Info] [FSAL Cache] Cleaned up cache: Removed 0 remnants.
+[09:29:14] [Info] [Stats Provider] Writing statistics to file
+[09:29:14] [Info] [Config Provider] Writing configuration file to /home/nisidabay/.config/Zettlr/config.json...

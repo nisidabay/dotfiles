@@ -1,0 +1,93 @@
+{
+    "vim.leader": " ",
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["k", "j"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<leader>", "h"],
+            "commands": ["workbench.action.focusLeftGroup"]
+        },
+        {
+            "before": ["<leader>", "l"],
+            "commands": ["workbench.action.focusRightGroup"]
+        },
+        {
+            "before": ["<leader>", "k"],
+            "commands": ["workbench.action.focusAboveGroup"]
+        },
+        {
+            "before": ["<leader>", "j"],
+            "commands": ["workbench.action.focusBelowGroup"]
+        },
+        {
+            "before": ["<leader>", "o"],
+            "commands": ["workbench.action.showEditorsInActiveGroup"]
+        },
+        {
+            "before": [",", "t"],
+            "commands": ["workbench.action.toggleSidebarVisibility"]
+        },
+        {
+            "before": ["ctrl+h"],
+            "commands": ["list.collapse"]
+        },
+        {
+            "before": ["ctrl+l"],
+            "commands": ["list.expand"]
+        },
+        {
+            "before": ["ctrl+k"],
+            "commands": ["list.focusUp"]
+        },
+        {
+            "before": ["ctrl+j"],
+            "commands": ["list.focusDown"]
+        },
+        {
+            "before": ["cmd+enter"],
+            "commands": ["renameFile"]
+        },
+        {
+            "before": ["enter"],
+            "commands": ["list.select"]
+        },
+        {
+            "before": ["ctrl+j"],
+            "commands": ["selectNextSuggestion"]
+        },
+        {
+            "before": ["ctrl+k"],
+            "commands": ["selectPrevSuggestion"]
+        },
+        {
+            "before": ["ctrl+j"],
+            "commands": ["workbench.action.quickOpenSelectNext"]
+        },
+        {
+            "before": ["ctrl+k"],
+            "commands": ["workbench.action.quickOpenSelectPrevious"]
+        },
+    {
+        "before": ["<leader>", "t"],
+        "commands": ["workbench.action.terminal.new"]
+    }
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": ["k", "j"],
+            "after": ["<Esc>"]
+        }
+    ],
+        {
+        "vim.relativeLineNumbers": true
+        "vim.easymotion": true,
+        "vim.incsearch": true,
+        "vim.useSystemClipboard": true,
+        "vim.useCtrlKeys": true,
+        "vim.hlsearch": true,
+        }
+}

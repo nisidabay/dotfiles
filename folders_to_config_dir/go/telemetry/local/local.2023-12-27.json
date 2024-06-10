@@ -1,0 +1,22 @@
+{
+ "Week": "2023-12-27",
+ "LastWeek": "",
+ "X": 0.7277651904255851,
+ "Programs": [
+  {
+   "Program": "golang.org/x/tools/gopls",
+   "Version": "v0.14.2",
+   "GoVersion": "go1.21.4",
+   "GOOS": "linux",
+   "GOARCH": "amd64",
+   "Counters": {
+    "counter/main": 4,
+    "gopls/client-other:vim-go": 2,
+    "gopls/client:other": 2,
+    "gopls/goversion:1.21": 2
+   },
+   "Stacks": {}
+  }
+ ],
+ "Config": "v0.11.0"
+}

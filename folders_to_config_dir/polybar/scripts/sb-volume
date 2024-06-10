@@ -1,0 +1,59 @@
+#!/bin/bash
+#
+# Define the audio device to control (change this to match your system)
+AUDIO_DEVICE="Master"
+
+# Get the current volume level using amixer
+VOLUME=$(amixer -D pulse get $AUDIO_DEVICE -M | grep -oE 'Front Left: Playback [0-9]+ \[[0-9]+%\] \[on\]' | grep -oE '\[[0-9]+%\]' | grep -oE '[0-9]+')
+
+
+# Convert the volume level to an integer
+VOLUME=$(printf "%.0f" "$VOLUME")
+
+# Check if the audio device is muted
+MUTED=$(amixer -D pulse get $AUDIO_DEVICE | grep -oE '\[(on|off)\]' | grep -oE 'on|off')
+
+# Set the icon based on the volume level and mute status
+if [[ "$MUTED" = "off" ]]; then
+    ICON="🔇"
+else
+    if (( VOLUME > 70 )); then
+        ICON="🔊"
+    elif (( VOLUME > 30 )); then
+        ICON="🔉"
+    elif (( VOLUME > 0 )); then
+        ICON="🔈"
+    else
+        ICON="🔇"
+    fi
+fi
+
+# If the left mouse button is clicked, toggle mute status
+if [[ "$BLOCK_BUTTON" == "1" ]]; then
+    if [[ "$MUTED" = "off" ]]; then
+        amixer -D pulse set $AUDIO_DEVICE mute > /dev/null
+    else
+        amixer -D pulse set $AUDIO_DEVICE unmute > /dev/null
+    fi
+fi
+
+if [[ "$BLOCK_BUTTON" == "2" ]]; then
+        # setsid -f "$TERMINAL" -e "alsamixer -c 0"
+        pavucontrol
+fi
+if [[ "$BLOCK_BUTTON" == "3" ]]; then
+    notify-send "🔊 Sound module " "\ Handles the volume.
+    -Button 1 Toggles volume
+    -Button 2 Shows alsamixer
+    -Scroll wheel increase/decrease volume"
+fi
+
+# If the scroll wheel is used, adjust the volume up or down
+if [[ "$BLOCK_BUTTON" == "4" ]]; then
+    amixer -D pulse set $AUDIO_DEVICE 5%+ > /dev/null
+elif [[ "$BLOCK_BUTTON" == "5" ]]; then
+    amixer -D pulse set $AUDIO_DEVICE 5%- > /dev/null
+fi
+
+echo "$ICON $VOLUME%"
+

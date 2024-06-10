@@ -1,0 +1,1172 @@
+INFO 21/10/2022, 7:55:52  launch with argv [/opt/Typora-linux-x64/Typora]
+INFO 21/10/2022, 7:55:52  launchFromDiffVersion, pre version is undefined
+INFO 21/10/2022, 7:55:52  start LM in devVersion=false
+INFO 21/10/2022, 7:55:52  [Raven] instanceKey = 4efdff2c-a6d1-4fcd-941f-0ad0e14c128b
+INFO 21/10/2022, 7:55:52  [watch L]
+INFO 21/10/2022, 7:55:52  ls put SLicense
+INFO 21/10/2022, 7:55:52  [L] Read from incorrupted InstallDate
+INFO 21/10/2022, 7:55:52  writeInstallDate fromBTime=true
+INFO 21/10/2022, 7:55:52  overwriteThemeFolder
+INFO 21/10/2022, 7:55:52  ------------------start------------------
+INFO 21/10/2022, 7:55:52  typora version: 1.4.8
+INFO 21/10/2022, 7:55:52  undefined
+INFO 21/10/2022, 7:55:52  ls put IDate
+INFO 21/10/2022, 7:55:52  [L] installDate is 10/21/2022, trail remains: 15 days
+INFO 21/10/2022, 7:55:52  [watch L] hasL: false
+INFO 21/10/2022, 7:55:52  [Raven] userId = 441cecf2-6b78-4830-b87b-0cd83ffd9b6b
+INFO 21/10/2022, 7:55:52  [focus] 1
+INFO 21/10/2022, 7:55:52  synced recovery
+[Error: ENOENT: no such file or directory, open '/home/nisidabay/.config/Typora/typora-dictionaries/user-dict.json'] {
+  errno: [33m-2[39m,
+  code: [32m'ENOENT'[39m,
+  syscall: [32m'open'[39m,
+  path: [32m'/home/nisidabay/.config/Typora/typora-dictionaries/user-dict.json'[39m
+}
+INFO 21/10/2022, 7:55:53  handle document.loadData
+INFO 21/10/2022, 7:55:53  [RenderProcess 1][Log] [UndoManager] reset commandStack
+INFO 21/10/2022, 7:55:53  [RenderProcess 1][Log] reset NodeMap
+INFO 21/10/2022, 7:55:53  synced recovery
+INFO 21/10/2022, 7:55:53  [RenderProcess 1][Log] onBecomeActive
+INFO 21/10/2022, 7:55:53  [RenderProcess 1][Log] File.activeWindow = true
+INFO 21/10/2022, 7:55:58  [blur] 1
+INFO 21/10/2022, 7:55:58  [win] blur
+INFO 21/10/2022, 7:55:58  [focus] 2
+INFO 21/10/2022, 7:55:58  [blur] 2
+INFO 21/10/2022, 7:55:59  [focus] 2
+INFO 21/10/2022, 7:55:59  [blur] 2
+INFO 21/10/2022, 7:56:29  [focus] 2
+INFO 21/10/2022, 7:56:29  [blur] 2
+INFO 21/10/2022, 7:56:29  [focus] 1
+INFO 21/10/2022, 7:56:29  [blur] 1
+INFO 21/10/2022, 7:56:29  [win] blur
+INFO 21/10/2022, 7:56:29  [focus] 2
+INFO 21/10/2022, 7:56:40  [blur] 2
+INFO 21/10/2022, 7:56:40  [focus] 2
+INFO 21/10/2022, 7:56:43  [blur] 2
+INFO 21/10/2022, 7:56:43  [focus] 2
+INFO 21/10/2022, 7:56:44  request https://store.typora.io/api/client/activate
+INFO 21/10/2022, 7:56:45  [License] response code is 0
+INFO 21/10/2022, 7:56:45  ls put SLicense
+INFO 21/10/2022, 7:56:46  [blur] 2
+INFO 21/10/2022, 7:56:46  [focus] 2
+INFO 21/10/2022, 7:56:48  [focus] 1
+INFO 21/10/2022, 7:56:50  [blur] 1
+INFO 21/10/2022, 7:56:50  [win] blur
+INFO 21/10/2022, 7:56:54  [focus] 1
+INFO 21/10/2022, 7:56:55  [blur] 1
+INFO 21/10/2022, 7:56:55  [win] blur
+INFO 21/10/2022, 7:56:56  [focus] 1
+INFO 21/10/2022, 7:57:03  [blur] 1
+INFO 21/10/2022, 7:57:03  [win] blur
+INFO 21/10/2022, 7:57:42  [focus] 1
+INFO 21/10/2022, 7:57:42  [blur] 1
+INFO 21/10/2022, 7:57:42  [win] blur
+INFO 21/10/2022, 7:57:43  [focus] 1
+INFO 21/10/2022, 7:57:43  [blur] 1
+INFO 21/10/2022, 7:57:43  [win] blur
+INFO 21/10/2022, 7:57:43  [focus] 1
+INFO 21/10/2022, 7:57:43  [blur] 1
+INFO 21/10/2022, 7:57:43  [win] blur
+INFO 21/10/2022, 7:57:43  [focus] 1
+INFO 21/10/2022, 7:57:43  addRecentDocument
+INFO 21/10/2022, 7:57:43  [RenderProcess 1][Log] [UndoManager] reset commandStack
+INFO 21/10/2022, 7:57:43  [RenderProcess 1][Log] reset NodeMap
+INFO 21/10/2022, 7:57:43  [RenderProcess 1][Log] readContentFrom /home/nisidabay/Documents/Mis_Apuntes_de_Programacion/Apuntes CLM/Typora/Python/Tkinter/Toplevel.md
+INFO 21/10/2022, 7:57:43  synced recovery
+INFO 21/10/2022, 7:58:00  synced recovery
+INFO 21/10/2022, 7:58:04  synced recovery
+INFO 21/10/2022, 7:58:05  [blur] 1
+INFO 21/10/2022, 7:58:05  [win] blur
+INFO 21/10/2022, 7:58:23  [focus] 1
+INFO 21/10/2022, 7:58:23  [blur] 1
+INFO 21/10/2022, 7:58:23  [win] blur
+INFO 21/10/2022, 7:58:24  [focus] 1
+INFO 21/10/2022, 7:58:24  [blur] 1
+INFO 21/10/2022, 7:58:24  [win] blur
+INFO 21/10/2022, 7:58:24  [focus] 1
+INFO 21/10/2022, 7:58:24  [blur] 1
+INFO 21/10/2022, 7:58:24  [win] blur
+INFO 21/10/2022, 7:58:24  [focus] 1
+INFO 21/10/2022, 7:58:24  synced recovery
+INFO 21/10/2022, 7:58:31  synced recovery
+INFO 21/10/2022, 8:00:17  synced recovery
+INFO 21/10/2022, 8:00:21  synced recovery
+INFO 21/10/2022, 8:00:27  synced recovery
+INFO 21/10/2022, 8:00:30  synced recovery
+INFO 21/10/2022, 8:02:27  synced recovery
+INFO 21/10/2022, 8:03:03  [blur] 1
+INFO 21/10/2022, 8:03:03  [win] blur
+INFO 21/10/2022, 8:03:21  [focus] 1
+INFO 21/10/2022, 8:03:21  [blur] 1
+INFO 21/10/2022, 8:03:21  [win] blur
+INFO 21/10/2022, 8:03:21  [focus] 1
+INFO 21/10/2022, 8:03:21  [blur] 1
+INFO 21/10/2022, 8:03:21  [win] blur
+INFO 21/10/2022, 8:03:21  [focus] 1
+INFO 21/10/2022, 8:03:21  [blur] 1
+INFO 21/10/2022, 8:03:21  [win] blur
+INFO 21/10/2022, 8:03:21  [focus] 3
+INFO 21/10/2022, 8:03:21  synced recovery
+INFO 21/10/2022, 8:03:22  [blur] 3
+INFO 21/10/2022, 8:03:22  [win] blur
+INFO 21/10/2022, 8:03:22  [focus] 1
+INFO 21/10/2022, 8:03:22  handle document.loadData
+INFO 21/10/2022, 8:03:22  [RenderProcess 3][Log] [UndoManager] reset commandStack
+INFO 21/10/2022, 8:03:22  [RenderProcess 3][Log] reset NodeMap
+INFO 21/10/2022, 8:03:22  synced recovery
+INFO 21/10/2022, 8:03:22  [blur] 1
+INFO 21/10/2022, 8:03:22  [win] blur
+INFO 21/10/2022, 8:03:22  [focus] 3
+INFO 21/10/2022, 8:03:23  [RenderProcess 3][Log] onBecomeActive
+INFO 21/10/2022, 8:03:23  [RenderProcess 3][Log] File.activeWindow = true
+INFO 21/10/2022, 8:03:26  [blur] 3
+INFO 21/10/2022, 8:03:26  [win] blur
+INFO 21/10/2022, 8:03:26  [focus] 1
+INFO 21/10/2022, 8:03:30  [focus] 3
+INFO 21/10/2022, 8:03:30  [blur] 3
+INFO 21/10/2022, 8:03:30  [win] blur
+INFO 21/10/2022, 8:03:30  [focus] 3
+INFO 21/10/2022, 8:03:30  [blur] 3
+INFO 21/10/2022, 8:03:30  [win] blur
+INFO 21/10/2022, 8:03:30  [focus] 3
+INFO 21/10/2022, 8:03:32  switchDocument 3 [/home/nisidabay/Documents/Mis_Apuntes_de_Programacion/Apuntes CLM/Typora/Python/Tkinter/A wrapper around the python tkinter library for customizable and modern ui-elements in tkinter.md]
+INFO 21/10/2022, 8:03:32  addRecentDocument
+INFO 21/10/2022, 8:03:32  [RenderProcess 3][Log] File.activeWindow = true
+INFO 21/10/2022, 8:03:32  synced recovery
+INFO 21/10/2022, 8:03:32  [RenderProcess 3][Log] [UndoManager] reset commandStack
+INFO 21/10/2022, 8:03:32  [RenderProcess 3][Log] reset NodeMap
+INFO 21/10/2022, 8:03:32  [RenderProcess 3][Log] readContentFrom /home/nisidabay/Documents/Mis_Apuntes_de_Programacion/Apuntes CLM/Typora/Python/Tkinter/A wrapper around the python tkinter library for customizable and modern ui-elements in tkinter.md
+INFO 21/10/2022, 8:03:32  synced recovery
+INFO 21/10/2022, 8:03:36  switchDocument 3 [/home/nisidabay/Documents/Mis_Apuntes_de_Programacion/Apuntes CLM/Typora/Python/Tkinter/An Essential Guide to Tkinter Entry widget By Examples.md]
+INFO 21/10/2022, 8:03:36  addRecentDocument
+INFO 21/10/2022, 8:03:36  [RenderProcess 3][Log] File.activeWindow = true
+INFO 21/10/2022, 8:03:36  synced recovery
+INFO 21/10/2022, 8:03:36  [RenderProcess 3][Log] [UndoManager] reset commandStack
+INFO 21/10/2022, 8:03:36  [RenderProcess 3][Log] reset NodeMap
+INFO 21/10/2022, 8:03:36  [RenderProcess 3][Log] readContentFrom /home/nisidabay/Documents/Mis_Apuntes_de_Programacion/Apuntes CLM/Typora/Python/Tkinter/An Essential Guide to Tkinter Entry widget By Examples.md
+INFO 21/10/2022, 8:03:36  synced recovery
+INFO 21/10/2022, 8:23:23  [blur] 3
+INFO 21/10/2022, 8:23:23  [win] blur
+INFO 21/10/2022, 8:23:23  [focus] 3
+INFO 21/10/2022, 8:23:23  [blur] 3
+INFO 21/10/2022, 8:23:23  [win] blur
+INFO 21/10/2022, 8:23:23  [focus] 3
+INFO 21/10/2022, 8:23:24  [blur] 3
+INFO 21/10/2022, 8:23:24  [win] blur
+INFO 21/10/2022, 8:23:24  [focus] 3
+INFO 21/10/2022, 8:23:26  [blur] 3
+INFO 21/10/2022, 8:23:26  [win] blur
+INFO 21/10/2022, 8:23:26  [focus] 3
+INFO 21/10/2022, 8:23:28  [blur] 3
+INFO 21/10/2022, 8:23:28  [win] blur
+INFO 21/10/2022, 8:23:28  [focus] 3
+INFO 21/10/2022, 8:23:28  [blur] 3
+INFO 21/10/2022, 8:23:28  [win] blur
+INFO 21/10/2022, 8:23:28  [focus] 3
+INFO 21/10/2022, 8:23:31  [blur] 3
+INFO 21/10/2022, 8:23:31  [win] blur
+INFO 21/10/2022, 8:23:31  [focus] 3
+INFO 21/10/2022, 8:23:32  [blur] 3
+INFO 21/10/2022, 8:23:32  [win] blur
+INFO 21/10/2022, 8:23:32  [focus] 3
+INFO 21/10/2022, 8:23:33  [blur] 3
+INFO 21/10/2022, 8:23:33  [win] blur
+INFO 21/10/2022, 8:23:33  [focus] 3
+INFO 21/10/2022, 8:23:35  [blur] 3
+INFO 21/10/2022, 8:23:35  [win] blur
+INFO 21/10/2022, 8:23:35  [focus] 3
+INFO 21/10/2022, 8:23:36  [blur] 3
+INFO 21/10/2022, 8:23:36  [win] blur
+INFO 21/10/2022, 8:23:36  [focus] 3
+INFO 21/10/2022, 8:23:37  [blur] 3
+INFO 21/10/2022, 8:23:37  [win] blur
+INFO 21/10/2022, 8:23:37  [focus] 3
+INFO 21/10/2022, 8:23:39  [blur] 3
+INFO 21/10/2022, 8:23:39  [win] blur
+INFO 21/10/2022, 8:23:39  [focus] 3
+INFO 21/10/2022, 8:23:42  [blur] 3
+INFO 21/10/2022, 8:23:42  [win] blur
+INFO 21/10/2022, 8:23:42  [focus] 3
+INFO 21/10/2022, 8:23:42  [blur] 3
+INFO 21/10/2022, 8:23:42  [win] blur
+INFO 21/10/2022, 8:23:42  [focus] 3
+INFO 21/10/2022, 8:23:44  [blur] 3
+INFO 21/10/2022, 8:23:44  [win] blur
+INFO 21/10/2022, 8:23:44  [focus] 3
+INFO 21/10/2022, 8:23:46  [blur] 3
+INFO 21/10/2022, 8:23:46  [win] blur
+INFO 21/10/2022, 8:23:46  [focus] 3
+INFO 21/10/2022, 8:23:47  [blur] 3
+INFO 21/10/2022, 8:23:47  [win] blur
+INFO 21/10/2022, 8:23:47  [focus] 3
+INFO 21/10/2022, 8:23:47  [blur] 3
+INFO 21/10/2022, 8:23:47  [win] blur
+INFO 21/10/2022, 8:23:47  [focus] 3
+INFO 21/10/2022, 8:23:47  [blur] 3
+INFO 21/10/2022, 8:23:47  [win] blur
+INFO 21/10/2022, 8:23:47  [focus] 3
+INFO 21/10/2022, 8:23:47  [blur] 3
+INFO 21/10/2022, 8:23:47  [win] blur
+INFO 21/10/2022, 8:23:47  [focus] 3
+INFO 21/10/2022, 8:23:48  [blur] 3
+INFO 21/10/2022, 8:23:48  [win] blur
+INFO 21/10/2022, 8:24:28  [focus] 3
+INFO 21/10/2022, 8:24:37  updateTheme
+INFO 21/10/2022, 8:36:00  synced recovery
+INFO 21/10/2022, 8:38:45  synced recovery
+INFO 21/10/2022, 8:47:22  synced recovery
+INFO 21/10/2022, 8:47:45  synced recovery
+INFO 21/10/2022, 8:47:59  synced recovery
+INFO 21/10/2022, 8:48:50  synced recovery
+INFO 21/10/2022, 8:49:39  synced recovery
+INFO 21/10/2022, 8:49:49  synced recovery
+INFO 21/10/2022, 8:49:54  updateTheme
+INFO 21/10/2022, 8:50:01  updateTheme
+INFO 21/10/2022, 8:50:04  updateTheme
+INFO 21/10/2022, 8:50:37  updateTheme
+INFO 21/10/2022, 8:51:56  synced recovery
+INFO 21/10/2022, 8:52:00  synced recovery
+INFO 21/10/2022, 8:52:02  synced recovery
+INFO 21/10/2022, 8:52:09  synced recovery
+INFO 21/10/2022, 8:52:11  synced recovery
+INFO 21/10/2022, 8:52:16  synced recovery
+INFO 21/10/2022, 8:52:21  synced recovery
+INFO 21/10/2022, 8:52:24  synced recovery
+INFO 21/10/2022, 8:53:03  synced recovery
+INFO 21/10/2022, 8:53:05  synced recovery
+INFO 21/10/2022, 8:53:07  switchDocument 3 [/home/nisidabay/Documents/Mis_Apuntes_de_Programacion/Apuntes CLM/Typora/Python/Tkinter/An Essential Guide to Tkinter Frame.md]
+INFO 21/10/2022, 8:53:07  addRecentDocument
+INFO 21/10/2022, 8:53:07  synced recovery
+INFO 21/10/2022, 8:53:07  [RenderProcess 3][Log] File.activeWindow = true
+INFO 21/10/2022, 8:53:07  [RenderProcess 3][Log] [UndoManager] reset commandStack
+INFO 21/10/2022, 8:53:07  [RenderProcess 3][Log] reset NodeMap
+INFO 21/10/2022, 8:53:07  [RenderProcess 3][Log] readContentFrom /home/nisidabay/Documents/Mis_Apuntes_de_Programacion/Apuntes CLM/Typora/Python/Tkinter/An Essential Guide to Tkinter Frame.md
+INFO 21/10/2022, 8:53:07  synced recovery
+INFO 21/10/2022, 8:53:22  synced recovery
+INFO 21/10/2022, 8:53:24  synced recovery
+INFO 21/10/2022, 9:31:49  synced recovery
+INFO 21/10/2022, 9:31:52  synced recovery
+INFO 21/10/2022, 9:32:07  synced recovery
+INFO 21/10/2022, 9:36:58  synced recovery
+INFO 21/10/2022, 9:37:16  synced recovery
+INFO 21/10/2022, 9:37:37  synced recovery
+INFO 21/10/2022, 9:37:42  synced recovery
+INFO 21/10/2022, 9:48:52  synced recovery
+INFO 21/10/2022, 9:49:19  [blur] 3
+INFO 21/10/2022, 9:49:19  [win] blur
+INFO 21/10/2022, 9:49:31  [focus] 3
+INFO 21/10/2022, 9:49:55  [blur] 3
+INFO 21/10/2022, 9:49:55  [win] blur
+INFO 21/10/2022, 9:49:58  [focus] 3
+INFO 21/10/2022, 9:49:58  [blur] 3
+INFO 21/10/2022, 9:49:58  [win] blur
+INFO 21/10/2022, 9:49:58  [focus] 3
+INFO 21/10/2022, 9:49:58  [blur] 3
+INFO 21/10/2022, 9:49:58  [win] blur
+INFO 21/10/2022, 9:49:58  [focus] 3
+INFO 21/10/2022, 9:50:05  [blur] 3
+INFO 21/10/2022, 9:50:05  [win] blur
+INFO 21/10/2022, 9:50:14  [focus] 3
+INFO 21/10/2022, 9:50:23  synced recovery
+INFO 21/10/2022, 9:50:31  synced recovery
+INFO 21/10/2022, 9:50:34  synced recovery
+INFO 21/10/2022, 9:50:36  [RenderProcess 3][Log] File.reloadContent, {"delayRefresh":true,"skipChangeCount":true,"skipStore":true}
+INFO 21/10/2022, 9:50:36  [RenderProcess 3][Log] reset NodeMap
+INFO 21/10/2022, 9:50:39  File.option.noHintForOpenLink=true;
+INFO 21/10/2022, 9:50:52  synced recovery
+INFO 21/10/2022, 9:50:53  synced recovery
+INFO 21/10/2022, 9:50:54  [RenderProcess 3][Log] File.reloadContent, {"delayRefresh":true,"skipChangeCount":true,"skipStore":true}
+INFO 21/10/2022, 9:50:54  [RenderProcess 3][Log] reset NodeMap
+INFO 21/10/2022, 9:51:01  synced recovery
+INFO 21/10/2022, 9:52:02  synced recovery
+INFO 21/10/2022, 9:52:20  [blur] 3
+INFO 21/10/2022, 9:52:20  [win] blur
+INFO 21/10/2022, 9:52:37  [focus] 3
+INFO 21/10/2022, 9:52:41  [blur] 3
+INFO 21/10/2022, 9:52:41  [win] blur
+INFO 21/10/2022, 9:53:24  [focus] 3
+INFO 21/10/2022, 9:53:28  [blur] 3
+INFO 21/10/2022, 9:53:28  [win] blur
+INFO 21/10/2022, 9:53:45  [focus] 3
+INFO 21/10/2022, 9:53:46  [blur] 3
+INFO 21/10/2022, 9:53:46  [win] blur
+INFO 21/10/2022, 9:55:12  [focus] 3
+INFO 21/10/2022, 9:57:29  [blur] 3
+INFO 21/10/2022, 9:57:29  [win] blur
+INFO 21/10/2022, 10:11:05  [focus] 3
+INFO 21/10/2022, 10:11:06  [blur] 3
+INFO 21/10/2022, 10:11:06  [win] blur
+INFO 21/10/2022, 10:14:08  [focus] 3
+INFO 21/10/2022, 10:14:53  [blur] 3
+INFO 21/10/2022, 10:14:53  [win] blur
+INFO 21/10/2022, 10:14:54  [focus] 3
+INFO 21/10/2022, 10:14:55  [blur] 3
+INFO 21/10/2022, 10:14:55  [win] blur
+INFO 21/10/2022, 10:15:50  [focus] 3
+INFO 21/10/2022, 10:15:59  [blur] 3
+INFO 21/10/2022, 10:15:59  [win] blur
+INFO 21/10/2022, 10:16:01  [focus] 3
+INFO 21/10/2022, 10:16:02  [blur] 3
+INFO 21/10/2022, 10:16:02  [win] blur
+INFO 21/10/2022, 10:16:28  [focus] 3
+INFO 21/10/2022, 10:16:58  [blur] 3
+INFO 21/10/2022, 10:16:58  [win] blur
+INFO 21/10/2022, 10:21:17  [focus] 3
+INFO 21/10/2022, 10:21:29  [blur] 3
+INFO 21/10/2022, 10:21:29  [win] blur
+INFO 21/10/2022, 10:26:13  [focus] 3
+INFO 21/10/2022, 10:26:14  [blur] 3
+INFO 21/10/2022, 10:26:14  [win] blur
+INFO 21/10/2022, 10:37:12  [focus] 3
+INFO 21/10/2022, 10:37:30  synced recovery
+INFO 21/10/2022, 10:37:51  synced recovery
+INFO 21/10/2022, 10:38:01  synced recovery
+INFO 21/10/2022, 10:38:03  synced recovery
+INFO 21/10/2022, 10:38:05  switchDocument 3 [/home/nisidabay/Documents/Mis_Apuntes_de_Programacion/Apuntes CLM/Typora/Python/Tkinter/An Essential Guide to Tkinter Window.md]
+INFO 21/10/2022, 10:38:05  addRecentDocument
+INFO 21/10/2022, 10:38:05  [RenderProcess 3][Log] File.activeWindow = true
+INFO 21/10/2022, 10:38:05  synced recovery
+INFO 21/10/2022, 10:38:05  [RenderProcess 3][Log] [UndoManager] reset commandStack
+INFO 21/10/2022, 10:38:05  [RenderProcess 3][Log] reset NodeMap
+INFO 21/10/2022, 10:38:05  [RenderProcess 3][Log] readContentFrom /home/nisidabay/Documents/Mis_Apuntes_de_Programacion/Apuntes CLM/Typora/Python/Tkinter/An Essential Guide to Tkinter Window.md
+INFO 21/10/2022, 10:38:05  synced recovery
+INFO 21/10/2022, 10:50:00  [blur] 3
+INFO 21/10/2022, 10:50:00  [win] blur
+INFO 21/10/2022, 10:50:02  [focus] 3
+INFO 21/10/2022, 10:50:04  [blur] 3
+INFO 21/10/2022, 10:50:04  [win] blur
+INFO 21/10/2022, 11:00:39  [focus] 3
+INFO 21/10/2022, 11:00:39  [blur] 3
+INFO 21/10/2022, 11:00:39  [win] blur
+INFO 21/10/2022, 11:04:27  [focus] 3
+INFO 21/10/2022, 11:04:27  [blur] 3
+INFO 21/10/2022, 11:04:27  [win] blur
+INFO 21/10/2022, 11:10:40  [focus] 3
+INFO 21/10/2022, 11:10:41  [blur] 3
+INFO 21/10/2022, 11:10:41  [win] blur
+INFO 21/10/2022, 11:11:24  [focus] 3
+INFO 21/10/2022, 11:11:24  [blur] 3
+INFO 21/10/2022, 11:11:24  [win] blur
+INFO 21/10/2022, 11:11:24  [focus] 3
+INFO 21/10/2022, 11:11:24  [blur] 3
+INFO 21/10/2022, 11:11:24  [win] blur
+INFO 21/10/2022, 11:11:24  [focus] 3
+INFO 21/10/2022, 11:11:27  [blur] 3
+INFO 21/10/2022, 11:11:27  [win] blur
+INFO 21/10/2022, 13:23:02  [focus] 3
+INFO 21/10/2022, 13:23:09  synced recovery
+INFO 21/10/2022, 13:23:09  ----------------before-quit-----------------
+INFO 21/10/2022, 13:23:09  ------------------will-quit------------------
+INFO 21/10/2022, 13:23:09  -----------------quit------------------
+INFO 21/10/2022, 13:23:09  closeLogging
+INFO 6/3/2023, 10:36:33  launch with argv [/home/nisidabay/Applications/Typora-linux-x64/Typora]
+INFO 6/3/2023, 10:36:33  launchFromDiffVersion, pre version is 1.4.8
+INFO 6/3/2023, 10:36:33  start LM in devVersion=false
+INFO 6/3/2023, 10:36:33  [Raven] instanceKey = e2ac665d-a139-4b53-b2b9-5155ee317a3e
+INFO 6/3/2023, 10:36:33  [watch L]
+INFO 6/3/2023, 10:36:33  [L] installDate is 10/21/2022, trail remains: 0 days
+INFO 6/3/2023, 10:36:33  [watch L] hasL: true
+INFO 6/3/2023, 10:36:33  cleanupOlderCache
+INFO 6/3/2023, 10:36:33  overwriteThemeFolder
+INFO 6/3/2023, 10:36:33  ------------------start------------------
+INFO 6/3/2023, 10:36:33  typora version: 1.5.8
+INFO 6/3/2023, 10:36:33  undefined
+INFO 6/3/2023, 10:36:33  [Raven] userId = 441cecf2-6b78-4830-b87b-0cd83ffd9b6b
+INFO 6/3/2023, 10:36:33  [focus] 1
+INFO 6/3/2023, 10:36:33  [blur] 1
+INFO 6/3/2023, 10:36:33  [win] blur
+INFO 6/3/2023, 10:36:33  [focus] 1
+INFO 6/3/2023, 10:36:33  synced recovery
+INFO 6/3/2023, 10:36:33  updateTheme
+INFO 6/3/2023, 10:36:34  ls put SLicense
+INFO 6/3/2023, 10:36:34  handle document.loadData
+INFO 6/3/2023, 10:36:34  [RenderProcess 1][Log] [UndoManager] reset commandStack
+INFO 6/3/2023, 10:36:34  [RenderProcess 1][Log] reset NodeMap
+INFO 6/3/2023, 10:36:34  synced recovery
+INFO 6/3/2023, 10:36:34  [RenderProcess 1][Log] onBecomeActive
+INFO 6/3/2023, 10:36:34  [RenderProcess 1][Log] File.activeWindow = true
+INFO 6/3/2023, 10:36:46  [blur] 1
+INFO 6/3/2023, 10:36:46  [win] blur
+INFO 6/3/2023, 10:36:46  [focus] 2
+INFO 6/3/2023, 10:36:51  [blur] 2
+INFO 6/3/2023, 10:36:51  [focus] 1
+INFO 6/3/2023, 10:36:51  [blur] 1
+INFO 6/3/2023, 10:36:51  [win] blur
+INFO 6/3/2023, 10:36:51  [focus] 2
+INFO 6/3/2023, 10:37:12  [blur] 2
+INFO 6/3/2023, 10:37:15  [focus] 2
+INFO 6/3/2023, 10:37:29  [focus] 1
+INFO 6/3/2023, 10:37:29  [blur] 1
+INFO 6/3/2023, 10:37:29  [win] blur
+INFO 6/3/2023, 10:37:33  [focus] 1
+INFO 6/3/2023, 10:37:33  [blur] 1
+INFO 6/3/2023, 10:37:33  [win] blur
+INFO 6/3/2023, 10:37:33  [focus] 1
+INFO 6/3/2023, 10:37:39  synced recovery
+INFO 6/3/2023, 10:37:39  ----------------before-quit-----------------
+INFO 6/3/2023, 10:37:39  ------------------will-quit------------------
+INFO 6/3/2023, 10:37:39  -----------------quit------------------
+INFO 6/3/2023, 10:37:39  closeLogging
+INFO 6/3/2023, 10:58:37  launch with argv [/home/nisidabay/Applications/Typora-linux-x64/Typora, /home/nisidabay/Documents/Mis_Apuntes_de_Programacion/Apuntes_CLM/Typora/How to replace multiple lines using the sed command.md]
+INFO 6/3/2023, 10:58:37  start LM in devVersion=false
+INFO 6/3/2023, 10:58:37  [Raven] instanceKey = e7bb4c9f-dfee-4eef-bb10-ac8ecc7827d7
+INFO 6/3/2023, 10:58:37  [watch L]
+INFO 6/3/2023, 10:58:37  [L] installDate is 10/21/2022, trail remains: 0 days
+INFO 6/3/2023, 10:58:37  [watch L] hasL: true
+INFO 6/3/2023, 10:58:37  ------------------start------------------
+INFO 6/3/2023, 10:58:37  typora version: 1.5.8
+INFO 6/3/2023, 10:58:37  undefined
+INFO 6/3/2023, 10:58:37  addRecentDocument
+INFO 6/3/2023, 10:58:37  updateTheme
+INFO 6/3/2023, 10:58:37  [Raven] userId = 441cecf2-6b78-4830-b87b-0cd83ffd9b6b
+INFO 6/3/2023, 10:58:37  [focus] 1
+INFO 6/3/2023, 10:58:37  synced recovery
+INFO 6/3/2023, 10:58:38  handle document.loadData
+INFO 6/3/2023, 10:58:38  [RenderProcess 1][Log] [UndoManager] reset commandStack
+INFO 6/3/2023, 10:58:38  [RenderProcess 1][Log] reset NodeMap
+INFO 6/3/2023, 10:58:38  [RenderProcess 1][Log] readContentFrom /home/nisidabay/Documents/Mis_Apuntes_de_Programacion/Apuntes_CLM/Typora/How to replace multiple lines using the sed command.md
+INFO 6/3/2023, 10:58:38  synced recovery
+INFO 6/3/2023, 10:58:39  [RenderProcess 1][Log] onBecomeActive
+INFO 6/3/2023, 10:58:39  [RenderProcess 1][Log] File.activeWindow = true
+INFO 6/3/2023, 10:58:40  [blur] 1
+INFO 6/3/2023, 10:58:40  [win] blur
+INFO 6/3/2023, 10:58:52  [focus] 1
+INFO 6/3/2023, 10:58:52  [blur] 1
+INFO 6/3/2023, 10:58:52  [win] blur
+INFO 6/3/2023, 10:58:52  [focus] 1
+INFO 6/3/2023, 11:11:46  synced recovery
+INFO 6/3/2023, 11:11:46  ----------------before-quit-----------------
+INFO 6/3/2023, 11:11:46  ------------------will-quit------------------
+INFO 6/3/2023, 11:11:46  -----------------quit------------------
+INFO 6/3/2023, 11:11:46  closeLogging
+INFO 6/3/2023, 13:43:11  launch with argv [/home/nisidabay/Applications/Typora-linux-x64/Typora, /home/nisidabay/Documents/Mis_Apuntes_de_Programacion/Apuntes_CLM/Typora/How to Replace Everything after Pattern using sed Command.md]
+INFO 6/3/2023, 13:43:11  start LM in devVersion=false
+INFO 6/3/2023, 13:43:11  [Raven] instanceKey = cffd16bd-2b74-4ebe-9ad3-ea1f3aa73221
+INFO 6/3/2023, 13:43:11  [watch L]
+INFO 6/3/2023, 13:43:11  [L] installDate is 10/21/2022, trail remains: 0 days
+INFO 6/3/2023, 13:43:11  [watch L] hasL: true
+INFO 6/3/2023, 13:43:11  ------------------start------------------
+INFO 6/3/2023, 13:43:11  typora version: 1.5.8
+INFO 6/3/2023, 13:43:11  undefined
+INFO 6/3/2023, 13:43:11  addRecentDocument
+INFO 6/3/2023, 13:43:11  updateTheme
+INFO 6/3/2023, 13:43:11  [Raven] userId = 441cecf2-6b78-4830-b87b-0cd83ffd9b6b
+INFO 6/3/2023, 13:43:11  [focus] 1
+INFO 6/3/2023, 13:43:11  synced recovery
+INFO 6/3/2023, 13:43:12  handle document.loadData
+INFO 6/3/2023, 13:43:12  [RenderProcess 1][Log] [UndoManager] reset commandStack
+INFO 6/3/2023, 13:43:12  [RenderProcess 1][Log] reset NodeMap
+INFO 6/3/2023, 13:43:12  [RenderProcess 1][Log] readContentFrom /home/nisidabay/Documents/Mis_Apuntes_de_Programacion/Apuntes_CLM/Typora/How to Replace Everything after Pattern using sed Command.md
+INFO 6/3/2023, 13:43:12  ls put SLicense
+INFO 6/3/2023, 13:43:13  synced recovery
+INFO 6/3/2023, 13:43:13  [RenderProcess 1][Log] onBecomeActive
+INFO 6/3/2023, 13:43:13  [RenderProcess 1][Log] File.activeWindow = true
+INFO 6/3/2023, 13:43:21  synced recovery
+INFO 6/3/2023, 13:43:21  ----------------before-quit-----------------
+INFO 6/3/2023, 13:43:21  ------------------will-quit------------------
+INFO 6/3/2023, 13:43:21  -----------------quit------------------
+INFO 6/3/2023, 13:43:21  closeLogging
+INFO 6/3/2023, 16:50:12  launch with argv [/home/nisidabay/Applications/Typora-linux-x64/Typora]
+INFO 6/3/2023, 16:50:12  start LM in devVersion=false
+INFO 6/3/2023, 16:50:12  [Raven] instanceKey = a09c98b8-55f3-4516-b512-348d4785bce0
+INFO 6/3/2023, 16:50:12  [watch L]
+INFO 6/3/2023, 16:50:12  [L] installDate is 10/21/2022, trail remains: 0 days
+INFO 6/3/2023, 16:50:12  [watch L] hasL: true
+INFO 6/3/2023, 16:50:12  ------------------start------------------
+INFO 6/3/2023, 16:50:12  typora version: 1.5.8
+INFO 6/3/2023, 16:50:12  undefined
+INFO 6/3/2023, 16:50:12  updateTheme
+INFO 6/3/2023, 16:50:12  [Raven] userId = 441cecf2-6b78-4830-b87b-0cd83ffd9b6b
+INFO 6/3/2023, 16:50:13  [focus] 1
+INFO 6/3/2023, 16:50:13  [blur] 1
+INFO 6/3/2023, 16:50:13  [win] blur
+INFO 6/3/2023, 16:50:13  [focus] 1
+INFO 6/3/2023, 16:50:13  synced recovery
+INFO 6/3/2023, 16:50:13  handle document.loadData
+INFO 6/3/2023, 16:50:13  [RenderProcess 1][Log] [UndoManager] reset commandStack
+INFO 6/3/2023, 16:50:13  [RenderProcess 1][Log] reset NodeMap
+INFO 6/3/2023, 16:50:13  ls put SLicense
+INFO 6/3/2023, 16:50:13  synced recovery
+INFO 6/3/2023, 16:50:14  [RenderProcess 1][Log] onBecomeActive
+INFO 6/3/2023, 16:50:14  [RenderProcess 1][Log] File.activeWindow = true
+INFO 6/3/2023, 16:50:24  switchDocument 1 [/home/nisidabay/Documents/Mis_Apuntes_de_Programacion/Apuntes_CLM/Typora/How to Replace Everything after Pattern using sed Command.md]
+INFO 6/3/2023, 16:50:24  addRecentDocument
+INFO 6/3/2023, 16:50:24  synced recovery
+INFO 6/3/2023, 16:50:24  [RenderProcess 1][Log] File.activeWindow = true
+INFO 6/3/2023, 16:50:24  [RenderProcess 1][Log] [UndoManager] reset commandStack
+INFO 6/3/2023, 16:50:24  [RenderProcess 1][Log] reset NodeMap
+INFO 6/3/2023, 16:50:24  [RenderProcess 1][Log] readContentFrom /home/nisidabay/Documents/Mis_Apuntes_de_Programacion/Apuntes_CLM/Typora/How to Replace Everything after Pattern using sed Command.md
+INFO 6/3/2023, 16:50:25  synced recovery
+INFO 6/3/2023, 16:50:32  synced recovery
+INFO 6/3/2023, 16:50:39  synced recovery
+INFO 6/3/2023, 16:50:39  ----------------before-quit-----------------
+INFO 6/3/2023, 16:50:39  ------------------will-quit------------------
+INFO 6/3/2023, 16:50:39  -----------------quit------------------
+INFO 6/3/2023, 16:50:39  closeLogging
+INFO 6/3/2023, 16:51:25  launch with argv [/home/nisidabay/Applications/Typora-linux-x64/Typora, /home/nisidabay/Documents/Mis_Apuntes_de_Programacion/Apuntes_CLM/Typora/How to replace multiple lines using the sed command.md]
+INFO 6/3/2023, 16:51:26  start LM in devVersion=false
+INFO 6/3/2023, 16:51:26  [Raven] instanceKey = 7b63560e-5fc9-4780-b214-71dc3409c8b1
+INFO 6/3/2023, 16:51:26  [watch L]
+INFO 6/3/2023, 16:51:26  [L] installDate is 10/21/2022, trail remains: 0 days
+INFO 6/3/2023, 16:51:26  [watch L] hasL: true
+INFO 6/3/2023, 16:51:26  ------------------start------------------
+INFO 6/3/2023, 16:51:26  typora version: 1.5.8
+INFO 6/3/2023, 16:51:26  undefined
+INFO 6/3/2023, 16:51:26  addRecentDocument
+INFO 6/3/2023, 16:51:26  updateTheme
+INFO 6/3/2023, 16:51:26  [Raven] userId = 441cecf2-6b78-4830-b87b-0cd83ffd9b6b
+INFO 6/3/2023, 16:51:26  [focus] 1
+INFO 6/3/2023, 16:51:26  synced recovery
+INFO 6/3/2023, 16:51:26  handle document.loadData
+INFO 6/3/2023, 16:51:27  [RenderProcess 1][Log] [UndoManager] reset commandStack
+INFO 6/3/2023, 16:51:27  [RenderProcess 1][Log] reset NodeMap
+INFO 6/3/2023, 16:51:27  [RenderProcess 1][Log] readContentFrom /home/nisidabay/Documents/Mis_Apuntes_de_Programacion/Apuntes_CLM/Typora/How to replace multiple lines using the sed command.md
+INFO 6/3/2023, 16:51:27  ls put SLicense
+INFO 6/3/2023, 16:51:27  synced recovery
+INFO 6/3/2023, 16:51:27  [RenderProcess 1][Log] onBecomeActive
+INFO 6/3/2023, 16:51:27  [RenderProcess 1][Log] File.activeWindow = true
+INFO 6/3/2023, 16:51:29  synced recovery
+INFO 6/3/2023, 16:51:29  ----------------before-quit-----------------
+INFO 6/3/2023, 16:51:29  ------------------will-quit------------------
+INFO 6/3/2023, 16:51:29  -----------------quit------------------
+INFO 6/3/2023, 16:51:29  closeLogging
+INFO 6/3/2023, 17:12:28  launch with argv [/home/nisidabay/Applications/Typora-linux-x64/Typora, /home/nisidabay/Documents/Mis_Apuntes_de_Programacion/Apuntes_CLM/Typora/How to Replace Newline with Comma Using the sed Command.md]
+INFO 6/3/2023, 17:12:28  start LM in devVersion=false
+INFO 6/3/2023, 17:12:28  [Raven] instanceKey = fbf48072-414e-497b-8558-2ad130d91338
+INFO 6/3/2023, 17:12:28  [watch L]
+INFO 6/3/2023, 17:12:28  [L] installDate is 10/21/2022, trail remains: 0 days
+INFO 6/3/2023, 17:12:28  [watch L] hasL: true
+INFO 6/3/2023, 17:12:28  ------------------start------------------
+INFO 6/3/2023, 17:12:28  typora version: 1.5.8
+INFO 6/3/2023, 17:12:28  undefined
+INFO 6/3/2023, 17:12:28  addRecentDocument
+INFO 6/3/2023, 17:12:28  updateTheme
+INFO 6/3/2023, 17:12:28  [Raven] userId = 441cecf2-6b78-4830-b87b-0cd83ffd9b6b
+INFO 6/3/2023, 17:12:28  [focus] 1
+INFO 6/3/2023, 17:12:28  synced recovery
+INFO 6/3/2023, 17:12:29  handle document.loadData
+INFO 6/3/2023, 17:12:29  [RenderProcess 1][Log] [UndoManager] reset commandStack
+INFO 6/3/2023, 17:12:29  [RenderProcess 1][Log] reset NodeMap
+INFO 6/3/2023, 17:12:29  [RenderProcess 1][Log] readContentFrom /home/nisidabay/Documents/Mis_Apuntes_de_Programacion/Apuntes_CLM/Typora/How to Replace Newline with Comma Using the sed Command.md
+INFO 6/3/2023, 17:12:29  ls put SLicense
+INFO 6/3/2023, 17:12:29  synced recovery
+INFO 6/3/2023, 17:12:30  [RenderProcess 1][Log] onBecomeActive
+INFO 6/3/2023, 17:12:30  [RenderProcess 1][Log] File.activeWindow = true
+INFO 6/3/2023, 17:14:32  synced recovery
+INFO 6/3/2023, 17:14:32  ----------------before-quit-----------------
+INFO 6/3/2023, 17:14:32  ------------------will-quit------------------
+INFO 6/3/2023, 17:14:32  -----------------quit------------------
+INFO 6/3/2023, 17:14:32  closeLogging
+INFO 7/3/2023, 20:23:26  launch with argv [/home/nisidabay/Applications/Typora-linux-x64/Typora, /home/nisidabay/Downloads/markdown_clips/String concatenation in bash.md]
+INFO 7/3/2023, 20:23:27  start LM in devVersion=false
+INFO 7/3/2023, 20:23:27  [Raven] instanceKey = 7f316d5a-39e2-497c-9468-cc5946cbfeb5
+INFO 7/3/2023, 20:23:27  [watch L]
+INFO 7/3/2023, 20:23:27  [L] installDate is 10/21/2022, trail remains: 0 days
+INFO 7/3/2023, 20:23:27  [watch L] hasL: true
+INFO 7/3/2023, 20:23:27  ------------------start------------------
+INFO 7/3/2023, 20:23:27  typora version: 1.5.8
+INFO 7/3/2023, 20:23:27  undefined
+INFO 7/3/2023, 20:23:27  addRecentDocument
+INFO 7/3/2023, 20:23:27  updateTheme
+INFO 7/3/2023, 20:23:27  [Raven] userId = 441cecf2-6b78-4830-b87b-0cd83ffd9b6b
+INFO 7/3/2023, 20:23:27  [focus] 1
+INFO 7/3/2023, 20:23:27  synced recovery
+INFO 7/3/2023, 20:23:27  handle document.loadData
+INFO 7/3/2023, 20:23:27  [RenderProcess 1][Log] [UndoManager] reset commandStack
+INFO 7/3/2023, 20:23:27  [RenderProcess 1][Log] reset NodeMap
+INFO 7/3/2023, 20:23:27  [RenderProcess 1][Log] readContentFrom /home/nisidabay/Downloads/markdown_clips/String concatenation in bash.md
+INFO 7/3/2023, 20:23:28  ls put SLicense
+INFO 7/3/2023, 20:23:28  synced recovery
+INFO 7/3/2023, 20:23:28  [RenderProcess 1][Log] onBecomeActive
+INFO 7/3/2023, 20:23:28  [RenderProcess 1][Log] File.activeWindow = true
+INFO 7/3/2023, 20:23:46  window.File && (function(){document.body.classList.remove("show-footer"),document.body.classList.add("hide-footer")})();
+INFO 7/3/2023, 20:23:56  window.File && (function(){document.body.classList.add("show-footer"),document.body.classList.remove("hide-footer")})();
+INFO 7/3/2023, 20:24:11  [blur] 1
+INFO 7/3/2023, 20:24:11  [win] blur
+INFO 7/3/2023, 20:24:14  [focus] 1
+INFO 7/3/2023, 20:24:27  [blur] 1
+INFO 7/3/2023, 20:24:27  [win] blur
+INFO 7/3/2023, 20:24:27  [focus] 1
+INFO 7/3/2023, 20:25:04  synced recovery
+INFO 7/3/2023, 20:25:04  ----------------before-quit-----------------
+INFO 7/3/2023, 20:25:04  ------------------will-quit------------------
+INFO 7/3/2023, 20:25:04  -----------------quit------------------
+INFO 7/3/2023, 20:25:04  closeLogging
+INFO 7/3/2023, 20:25:49  launch with argv [/home/nisidabay/Applications/Typora-linux-x64/Typora, /home/nisidabay/Downloads/markdown_clips/String concatenation in bash.md]
+INFO 7/3/2023, 20:25:50  start LM in devVersion=false
+INFO 7/3/2023, 20:25:50  [Raven] instanceKey = 709b264b-142a-4ef6-a433-19da13503287
+INFO 7/3/2023, 20:25:50  [watch L]
+INFO 7/3/2023, 20:25:50  [L] installDate is 10/21/2022, trail remains: 0 days
+INFO 7/3/2023, 20:25:50  [watch L] hasL: true
+INFO 7/3/2023, 20:25:50  ------------------start------------------
+INFO 7/3/2023, 20:25:50  typora version: 1.5.8
+INFO 7/3/2023, 20:25:50  undefined
+INFO 7/3/2023, 20:25:50  addRecentDocument
+INFO 7/3/2023, 20:25:50  updateTheme
+INFO 7/3/2023, 20:25:50  [Raven] userId = 441cecf2-6b78-4830-b87b-0cd83ffd9b6b
+INFO 7/3/2023, 20:25:50  [focus] 1
+INFO 7/3/2023, 20:25:50  synced recovery
+INFO 7/3/2023, 20:25:50  handle document.loadData
+INFO 7/3/2023, 20:25:50  [RenderProcess 1][Log] [UndoManager] reset commandStack
+INFO 7/3/2023, 20:25:50  [RenderProcess 1][Log] reset NodeMap
+INFO 7/3/2023, 20:25:50  [RenderProcess 1][Log] readContentFrom /home/nisidabay/Downloads/markdown_clips/String concatenation in bash.md
+INFO 7/3/2023, 20:25:51  ls put SLicense
+INFO 7/3/2023, 20:25:51  synced recovery
+INFO 7/3/2023, 20:25:51  [RenderProcess 1][Log] onBecomeActive
+INFO 7/3/2023, 20:25:51  [RenderProcess 1][Log] File.activeWindow = true
+INFO 7/3/2023, 20:26:47  synced recovery
+INFO 7/3/2023, 20:26:47  ----------------before-quit-----------------
+INFO 7/3/2023, 20:26:47  ------------------will-quit------------------
+INFO 7/3/2023, 20:26:47  -----------------quit------------------
+INFO 7/3/2023, 20:26:47  closeLogging
+INFO 8/3/2023, 9:22:07  launch with argv [/home/nisidabay/Applications/Typora-linux-x64/Typora, /home/nisidabay/Documents/Mis_Apuntes_de_Programacion/Apuntes_CLM/Mutt/Mutt.md]
+INFO 8/3/2023, 9:22:07  start LM in devVersion=false
+INFO 8/3/2023, 9:22:07  [Raven] instanceKey = 5ee6690e-6385-4ba2-bf70-c296c89b0969
+INFO 8/3/2023, 9:22:07  [watch L]
+INFO 8/3/2023, 9:22:07  [L] installDate is 10/21/2022, trail remains: 0 days
+INFO 8/3/2023, 9:22:07  [watch L] hasL: true
+INFO 8/3/2023, 9:22:07  ------------------start------------------
+INFO 8/3/2023, 9:22:07  typora version: 1.5.8
+INFO 8/3/2023, 9:22:07  undefined
+INFO 8/3/2023, 9:22:07  addRecentDocument
+INFO 8/3/2023, 9:22:07  updateTheme
+INFO 8/3/2023, 9:22:07  [Raven] userId = 441cecf2-6b78-4830-b87b-0cd83ffd9b6b
+INFO 8/3/2023, 9:22:07  [focus] 1
+INFO 8/3/2023, 9:22:07  synced recovery
+INFO 8/3/2023, 9:22:08  handle document.loadData
+INFO 8/3/2023, 9:22:08  [RenderProcess 1][Log] [UndoManager] reset commandStack
+INFO 8/3/2023, 9:22:08  [RenderProcess 1][Log] reset NodeMap
+INFO 8/3/2023, 9:22:08  [RenderProcess 1][Log] readContentFrom /home/nisidabay/Documents/Mis_Apuntes_de_Programacion/Apuntes_CLM/Mutt/Mutt.md
+INFO 8/3/2023, 9:22:08  ls put SLicense
+INFO 8/3/2023, 9:22:08  synced recovery
+INFO 8/3/2023, 9:22:08  [RenderProcess 1][Log] onBecomeActive
+INFO 8/3/2023, 9:22:08  [RenderProcess 1][Log] File.activeWindow = true
+INFO 8/3/2023, 9:22:48  synced recovery
+INFO 8/3/2023, 9:22:48  ----------------before-quit-----------------
+INFO 8/3/2023, 9:22:48  ------------------will-quit------------------
+INFO 8/3/2023, 9:22:48  -----------------quit------------------
+INFO 8/3/2023, 9:22:48  closeLogging
+INFO 8/3/2023, 9:26:50  launch with argv [/home/nisidabay/Applications/Typora-linux-x64/Typora, /home/nisidabay/Documents/Mis_Apuntes_de_Programacion/Apuntes_CLM/Typora/tmux cheatsheet for sessions.md]
+INFO 8/3/2023, 9:26:51  start LM in devVersion=false
+INFO 8/3/2023, 9:26:51  [Raven] instanceKey = 168cbf5c-4094-483e-be7b-59da18adebd6
+INFO 8/3/2023, 9:26:51  [watch L]
+INFO 8/3/2023, 9:26:51  [L] installDate is 10/21/2022, trail remains: 0 days
+INFO 8/3/2023, 9:26:51  [watch L] hasL: true
+INFO 8/3/2023, 9:26:51  ------------------start------------------
+INFO 8/3/2023, 9:26:51  typora version: 1.5.8
+INFO 8/3/2023, 9:26:51  undefined
+INFO 8/3/2023, 9:26:51  addRecentDocument
+INFO 8/3/2023, 9:26:51  updateTheme
+INFO 8/3/2023, 9:26:51  [Raven] userId = 441cecf2-6b78-4830-b87b-0cd83ffd9b6b
+INFO 8/3/2023, 9:26:51  [focus] 1
+INFO 8/3/2023, 9:26:51  synced recovery
+INFO 8/3/2023, 9:26:52  handle document.loadData
+INFO 8/3/2023, 9:26:52  [RenderProcess 1][Log] [UndoManager] reset commandStack
+INFO 8/3/2023, 9:26:52  [RenderProcess 1][Log] reset NodeMap
+INFO 8/3/2023, 9:26:52  [RenderProcess 1][Log] readContentFrom /home/nisidabay/Documents/Mis_Apuntes_de_Programacion/Apuntes_CLM/Typora/tmux cheatsheet for sessions.md
+INFO 8/3/2023, 9:26:52  synced recovery
+INFO 8/3/2023, 9:26:52  [RenderProcess 1][Log] onBecomeActive
+INFO 8/3/2023, 9:26:52  [RenderProcess 1][Log] File.activeWindow = true
+INFO 8/3/2023, 9:27:30  synced recovery
+INFO 8/3/2023, 9:27:30  ----------------before-quit-----------------
+INFO 8/3/2023, 9:27:30  ------------------will-quit------------------
+INFO 8/3/2023, 9:27:30  -----------------quit------------------
+INFO 8/3/2023, 9:27:30  closeLogging
+INFO 8/3/2023, 9:31:33  launch with argv [/home/nisidabay/Applications/Typora-linux-x64/Typora, /home/nisidabay/Documents/Mis_Apuntes_de_Programacion/Apuntes_CLM/Typora/Python nonlocal.md]
+INFO 8/3/2023, 9:31:33  start LM in devVersion=false
+INFO 8/3/2023, 9:31:33  [Raven] instanceKey = 74578f4e-f3b6-4786-ae0e-4d2c5b24d842
+INFO 8/3/2023, 9:31:33  [watch L]
+INFO 8/3/2023, 9:31:33  [L] installDate is 10/21/2022, trail remains: 0 days
+INFO 8/3/2023, 9:31:33  [watch L] hasL: true
+INFO 8/3/2023, 9:31:33  ------------------start------------------
+INFO 8/3/2023, 9:31:33  typora version: 1.5.8
+INFO 8/3/2023, 9:31:33  undefined
+INFO 8/3/2023, 9:31:33  addRecentDocument
+INFO 8/3/2023, 9:31:33  updateTheme
+INFO 8/3/2023, 9:31:33  [Raven] userId = 441cecf2-6b78-4830-b87b-0cd83ffd9b6b
+INFO 8/3/2023, 9:31:33  [focus] 1
+INFO 8/3/2023, 9:31:33  synced recovery
+INFO 8/3/2023, 9:31:34  [blur] 1
+INFO 8/3/2023, 9:31:34  [win] blur
+INFO 8/3/2023, 9:31:34  [focus] 1
+INFO 8/3/2023, 9:31:34  handle document.loadData
+INFO 8/3/2023, 9:31:34  [RenderProcess 1][Log] [UndoManager] reset commandStack
+INFO 8/3/2023, 9:31:34  [RenderProcess 1][Log] reset NodeMap
+INFO 8/3/2023, 9:31:34  [RenderProcess 1][Log] readContentFrom /home/nisidabay/Documents/Mis_Apuntes_de_Programacion/Apuntes_CLM/Typora/Python nonlocal.md
+INFO 8/3/2023, 9:31:34  synced recovery
+INFO 8/3/2023, 9:31:35  [RenderProcess 1][Log] onBecomeActive
+INFO 8/3/2023, 9:31:35  [RenderProcess 1][Log] File.activeWindow = true
+INFO 8/3/2023, 9:31:44  synced recovery
+INFO 8/3/2023, 9:31:44  ----------------before-quit-----------------
+INFO 8/3/2023, 9:31:44  ------------------will-quit------------------
+INFO 8/3/2023, 9:31:44  -----------------quit------------------
+INFO 8/3/2023, 9:31:44  closeLogging
+INFO 8/3/2023, 9:32:03  launch with argv [/home/nisidabay/Applications/Typora-linux-x64/Typora, /home/nisidabay/Documents/Mis_Apuntes_de_Programacion/Apuntes_CLM/Typora/Python Logging A Stroll Through the Source Code.md]
+INFO 8/3/2023, 9:32:04  start LM in devVersion=false
+INFO 8/3/2023, 9:32:04  [Raven] instanceKey = 2d7562d8-2af5-47dc-a8e7-25d677beb93e
+INFO 8/3/2023, 9:32:04  [watch L]
+INFO 8/3/2023, 9:32:04  [L] installDate is 10/21/2022, trail remains: 0 days
+INFO 8/3/2023, 9:32:04  [watch L] hasL: true
+INFO 8/3/2023, 9:32:04  ------------------start------------------
+INFO 8/3/2023, 9:32:04  typora version: 1.5.8
+INFO 8/3/2023, 9:32:04  undefined
+INFO 8/3/2023, 9:32:04  addRecentDocument
+INFO 8/3/2023, 9:32:04  updateTheme
+INFO 8/3/2023, 9:32:04  [Raven] userId = 441cecf2-6b78-4830-b87b-0cd83ffd9b6b
+INFO 8/3/2023, 9:32:04  [focus] 1
+INFO 8/3/2023, 9:32:04  synced recovery
+INFO 8/3/2023, 9:32:05  handle document.loadData
+INFO 8/3/2023, 9:32:05  [RenderProcess 1][Log] [UndoManager] reset commandStack
+INFO 8/3/2023, 9:32:05  [RenderProcess 1][Log] reset NodeMap
+INFO 8/3/2023, 9:32:05  [RenderProcess 1][Log] readContentFrom /home/nisidabay/Documents/Mis_Apuntes_de_Programacion/Apuntes_CLM/Typora/Python Logging A Stroll Through the Source Code.md
+INFO 8/3/2023, 9:32:05  synced recovery
+INFO 8/3/2023, 9:32:06  [RenderProcess 1][Log] onBecomeActive
+INFO 8/3/2023, 9:32:06  [RenderProcess 1][Log] File.activeWindow = true
+INFO 8/3/2023, 9:32:13  synced recovery
+INFO 8/3/2023, 9:32:13  ----------------before-quit-----------------
+INFO 8/3/2023, 9:32:13  ------------------will-quit------------------
+INFO 8/3/2023, 9:32:13  -----------------quit------------------
+INFO 8/3/2023, 9:32:13  closeLogging
+INFO 8/3/2023, 9:33:14  launch with argv [/home/nisidabay/Applications/Typora-linux-x64/Typora, /home/nisidabay/Documents/Mis_Apuntes_de_Programacion/Apuntes_CLM/Typora/Python issues/Tickets.md]
+INFO 8/3/2023, 9:33:14  start LM in devVersion=false
+INFO 8/3/2023, 9:33:14  [Raven] instanceKey = ea64e9ef-dce2-435f-b9b0-766aa4d2d507
+INFO 8/3/2023, 9:33:14  [watch L]
+INFO 8/3/2023, 9:33:14  [L] installDate is 10/21/2022, trail remains: 0 days
+INFO 8/3/2023, 9:33:14  [watch L] hasL: true
+INFO 8/3/2023, 9:33:14  ------------------start------------------
+INFO 8/3/2023, 9:33:14  typora version: 1.5.8
+INFO 8/3/2023, 9:33:14  undefined
+INFO 8/3/2023, 9:33:14  addRecentDocument
+INFO 8/3/2023, 9:33:14  updateTheme
+INFO 8/3/2023, 9:33:14  [Raven] userId = 441cecf2-6b78-4830-b87b-0cd83ffd9b6b
+INFO 8/3/2023, 9:33:14  [focus] 1
+INFO 8/3/2023, 9:33:14  synced recovery
+INFO 8/3/2023, 9:33:15  handle document.loadData
+INFO 8/3/2023, 9:33:15  [RenderProcess 1][Log] [UndoManager] reset commandStack
+INFO 8/3/2023, 9:33:15  [RenderProcess 1][Log] reset NodeMap
+INFO 8/3/2023, 9:33:15  [RenderProcess 1][Log] readContentFrom /home/nisidabay/Documents/Mis_Apuntes_de_Programacion/Apuntes_CLM/Typora/Python issues/Tickets.md
+INFO 8/3/2023, 9:33:15  synced recovery
+INFO 8/3/2023, 9:33:15  [RenderProcess 1][Log] onBecomeActive
+INFO 8/3/2023, 9:33:15  [RenderProcess 1][Log] File.activeWindow = true
+INFO 8/3/2023, 9:33:35  synced recovery
+INFO 8/3/2023, 9:33:35  ----------------before-quit-----------------
+INFO 8/3/2023, 9:33:35  ------------------will-quit------------------
+INFO 8/3/2023, 9:33:35  -----------------quit------------------
+INFO 8/3/2023, 9:33:35  closeLogging
+INFO 8/3/2023, 20:59:38  launch with argv [/home/nisidabay/Applications/Typora-linux-x64/Typora, /home/nisidabay/Downloads/markdown_clips/A brief history of LibreOffice  Opensource.com.md]
+INFO 8/3/2023, 20:59:38  start LM in devVersion=false
+INFO 8/3/2023, 20:59:38  [Raven] instanceKey = 85b5e29a-41a7-4af3-bba1-1c0d6670444e
+INFO 8/3/2023, 20:59:38  [watch L]
+INFO 8/3/2023, 20:59:38  [L] installDate is 10/21/2022, trail remains: 0 days
+INFO 8/3/2023, 20:59:38  [watch L] hasL: true
+INFO 8/3/2023, 20:59:38  ------------------start------------------
+INFO 8/3/2023, 20:59:38  typora version: 1.5.8
+INFO 8/3/2023, 20:59:38  undefined
+INFO 8/3/2023, 20:59:38  addRecentDocument
+INFO 8/3/2023, 20:59:38  updateTheme
+INFO 8/3/2023, 20:59:38  [Raven] userId = 441cecf2-6b78-4830-b87b-0cd83ffd9b6b
+INFO 8/3/2023, 20:59:38  [focus] 1
+INFO 8/3/2023, 20:59:38  synced recovery
+INFO 8/3/2023, 20:59:39  handle document.loadData
+INFO 8/3/2023, 20:59:39  [RenderProcess 1][Log] [UndoManager] reset commandStack
+INFO 8/3/2023, 20:59:39  [RenderProcess 1][Log] reset NodeMap
+INFO 8/3/2023, 20:59:39  [RenderProcess 1][Log] readContentFrom /home/nisidabay/Downloads/markdown_clips/A brief history of LibreOffice  Opensource.com.md
+INFO 8/3/2023, 20:59:39  synced recovery
+INFO 8/3/2023, 20:59:39  ls put SLicense
+INFO 8/3/2023, 20:59:39  [RenderProcess 1][Log] onBecomeActive
+INFO 8/3/2023, 20:59:39  [RenderProcess 1][Log] File.activeWindow = true
+INFO 8/3/2023, 20:59:57  synced recovery
+INFO 8/3/2023, 21:00:01  [blur] 1
+INFO 8/3/2023, 21:00:01  [win] blur
+INFO 8/3/2023, 21:00:04  [focus] 1
+INFO 8/3/2023, 21:00:06  [blur] 1
+INFO 8/3/2023, 21:00:06  [win] blur
+INFO 8/3/2023, 21:02:06  [focus] 1
+INFO 8/3/2023, 21:02:10  [blur] 1
+INFO 8/3/2023, 21:02:10  [win] blur
+INFO 8/3/2023, 21:02:12  [focus] 1
+INFO 8/3/2023, 21:02:45  [blur] 1
+INFO 8/3/2023, 21:02:45  [win] blur
+INFO 8/3/2023, 21:04:36  [focus] 1
+INFO 8/3/2023, 21:04:39  [blur] 1
+INFO 8/3/2023, 21:04:39  [win] blur
+INFO 8/3/2023, 21:04:39  [focus] 1
+INFO 8/3/2023, 21:04:42  synced recovery
+INFO 8/3/2023, 21:04:42  ----------------before-quit-----------------
+INFO 8/3/2023, 21:04:42  ------------------will-quit------------------
+INFO 8/3/2023, 21:04:42  -----------------quit------------------
+INFO 8/3/2023, 21:04:42  closeLogging
+INFO 31/3/2023, 3:16:07  launch with argv [/home/nisidabay/Applications/Typora-linux-x64/Typora]
+INFO 31/3/2023, 3:16:07  start LM in devVersion=false
+INFO 31/3/2023, 3:16:07  [Raven] instanceKey = ca9da854-0031-486c-9fbe-547072b1e7ee
+INFO 31/3/2023, 3:16:07  [watch L]
+INFO 31/3/2023, 3:16:07  [L] installDate is 10/21/2022, trail remains: 0 days
+INFO 31/3/2023, 3:16:07  [watch L] hasL: true
+INFO 31/3/2023, 3:16:07  ------------------start------------------
+INFO 31/3/2023, 3:16:07  typora version: 1.5.8
+INFO 31/3/2023, 3:16:07  undefined
+INFO 31/3/2023, 3:16:07  updateTheme
+INFO 31/3/2023, 3:16:07  [Raven] userId = 441cecf2-6b78-4830-b87b-0cd83ffd9b6b
+INFO 31/3/2023, 3:16:07  [focus] 1
+INFO 31/3/2023, 3:16:07  synced recovery
+INFO 31/3/2023, 3:16:08  handle document.loadData
+INFO 31/3/2023, 3:16:08  [RenderProcess 1][Log] [UndoManager] reset commandStack
+INFO 31/3/2023, 3:16:08  [RenderProcess 1][Log] reset NodeMap
+INFO 31/3/2023, 3:16:08  synced recovery
+INFO 31/3/2023, 3:16:08  ls put SLicense
+INFO 31/3/2023, 3:16:08  [RenderProcess 1][Log] onBecomeActive
+INFO 31/3/2023, 3:16:08  [RenderProcess 1][Log] File.activeWindow = true
+INFO 31/3/2023, 3:16:12  [blur] 1
+INFO 31/3/2023, 3:16:12  [win] blur
+INFO 31/3/2023, 3:16:12  [focus] 2
+INFO 31/3/2023, 3:16:14  [focus] 1
+INFO 31/3/2023, 3:16:16  synced recovery
+INFO 31/3/2023, 3:16:16  ----------------before-quit-----------------
+INFO 31/3/2023, 3:16:16  ------------------will-quit------------------
+INFO 31/3/2023, 3:16:16  -----------------quit------------------
+INFO 31/3/2023, 3:16:16  closeLogging
+INFO 9/4/2023, 20:35:43  launch with argv [/home/nisidabay/Applications/Typora-linux-x64/Typora, /home/nisidabay/Downloads/zlibrary/markdown_clips/Python datetime module explained..md]
+INFO 9/4/2023, 20:35:43  start LM in devVersion=false
+INFO 9/4/2023, 20:35:43  [Raven] instanceKey = 19af52ea-1623-4d21-b1c8-ce6db0c9fd08
+INFO 9/4/2023, 20:35:43  [watch L]
+INFO 9/4/2023, 20:35:43  [L] installDate is 10/21/2022, trail remains: 0 days
+INFO 9/4/2023, 20:35:43  [watch L] hasL: true
+INFO 9/4/2023, 20:35:43  ------------------start------------------
+INFO 9/4/2023, 20:35:43  typora version: 1.5.8
+INFO 9/4/2023, 20:35:43  undefined
+INFO 9/4/2023, 20:35:43  addRecentDocument
+INFO 9/4/2023, 20:35:43  updateTheme
+INFO 9/4/2023, 20:35:43  [Raven] userId = 441cecf2-6b78-4830-b87b-0cd83ffd9b6b
+INFO 9/4/2023, 20:35:43  [focus] 1
+INFO 9/4/2023, 20:35:43  synced recovery
+INFO 9/4/2023, 20:35:44  ls put SLicense
+INFO 9/4/2023, 20:35:44  handle document.loadData
+INFO 9/4/2023, 20:35:44  [RenderProcess 1][Log] [UndoManager] reset commandStack
+INFO 9/4/2023, 20:35:44  [RenderProcess 1][Log] reset NodeMap
+INFO 9/4/2023, 20:35:44  [RenderProcess 1][Log] readContentFrom /home/nisidabay/Downloads/zlibrary/markdown_clips/Python datetime module explained..md
+INFO 9/4/2023, 20:35:44  synced recovery
+INFO 9/4/2023, 20:35:45  [RenderProcess 1][Log] onBecomeActive
+INFO 9/4/2023, 20:35:45  [RenderProcess 1][Log] File.activeWindow = true
+INFO 9/4/2023, 20:36:08  [blur] 1
+INFO 9/4/2023, 20:36:08  [win] blur
+INFO 9/4/2023, 20:36:30  [focus] 1
+INFO 9/4/2023, 20:36:34  [blur] 1
+INFO 9/4/2023, 20:36:34  [win] blur
+INFO 9/4/2023, 20:36:34  [focus] 2
+INFO 9/4/2023, 20:36:35  [blur] 2
+INFO 9/4/2023, 20:36:35  [focus] 1
+INFO 9/4/2023, 20:36:36  [blur] 1
+INFO 9/4/2023, 20:36:36  [win] blur
+INFO 9/4/2023, 20:36:36  [focus] 2
+INFO 9/4/2023, 20:36:37  [focus] 1
+INFO 9/4/2023, 20:37:53  [blur] 1
+INFO 9/4/2023, 20:37:53  [win] blur
+INFO 9/4/2023, 20:37:54  [focus] 1
+INFO 9/4/2023, 20:37:55  [blur] 1
+INFO 9/4/2023, 20:37:55  [win] blur
+INFO 9/4/2023, 20:38:02  [focus] 1
+INFO 9/4/2023, 20:38:06  [blur] 1
+INFO 9/4/2023, 20:38:06  [win] blur
+INFO 9/4/2023, 20:38:11  [focus] 1
+INFO 9/4/2023, 20:38:33  synced recovery
+INFO 9/4/2023, 20:38:34  synced recovery
+INFO 9/4/2023, 20:38:49  updateTheme
+INFO 9/4/2023, 20:38:54  updateTheme
+INFO 9/4/2023, 20:38:57  updateTheme
+INFO 9/4/2023, 20:39:02  updateTheme
+INFO 9/4/2023, 20:41:50  window.File && (function(){ClientCommand.zoomIn()})();
+INFO 9/4/2023, 20:41:51  window.File && (function(){ClientCommand.zoomIn()})();
+INFO 9/4/2023, 20:47:03  synced recovery
+INFO 9/4/2023, 20:49:35  synced recovery
+INFO 9/4/2023, 20:50:35  synced recovery
+INFO 9/4/2023, 20:50:39  synced recovery
+INFO 9/4/2023, 20:51:52  synced recovery
+INFO 9/4/2023, 20:51:54  synced recovery
+INFO 9/4/2023, 20:52:53  synced recovery
+INFO 9/4/2023, 20:53:01  synced recovery
+INFO 9/4/2023, 20:53:53  synced recovery
+INFO 9/4/2023, 20:54:31  synced recovery
+INFO 9/4/2023, 20:54:34  synced recovery
+INFO 9/4/2023, 20:54:51  synced recovery
+INFO 9/4/2023, 20:55:26  synced recovery
+INFO 9/4/2023, 20:55:29  synced recovery
+INFO 9/4/2023, 20:56:03  synced recovery
+INFO 9/4/2023, 20:56:06  synced recovery
+INFO 9/4/2023, 20:56:20  synced recovery
+INFO 9/4/2023, 20:56:22  synced recovery
+INFO 9/4/2023, 20:56:38  synced recovery
+INFO 9/4/2023, 20:56:40  synced recovery
+INFO 9/4/2023, 20:56:52  synced recovery
+INFO 9/4/2023, 20:57:09  synced recovery
+INFO 9/4/2023, 20:57:09  ----------------before-quit-----------------
+INFO 9/4/2023, 20:57:09  ------------------will-quit------------------
+INFO 9/4/2023, 20:57:09  -----------------quit------------------
+INFO 9/4/2023, 20:57:09  closeLogging
+INFO 10/4/2023, 0:15:30  launch with argv [/home/nisidabay/Applications/Typora-linux-x64/Typora, /home/nisidabay/Downloads/zlibrary/markdown_clips/Python configdict module.md]
+INFO 10/4/2023, 0:15:30  start LM in devVersion=false
+INFO 10/4/2023, 0:15:30  [Raven] instanceKey = e44dd5f0-3d73-4a00-905a-9b97c5a7d6cf
+INFO 10/4/2023, 0:15:30  [watch L]
+INFO 10/4/2023, 0:15:30  [L] installDate is 10/21/2022, trail remains: 0 days
+INFO 10/4/2023, 0:15:30  [watch L] hasL: true
+INFO 10/4/2023, 0:15:30  ------------------start------------------
+INFO 10/4/2023, 0:15:30  typora version: 1.5.8
+INFO 10/4/2023, 0:15:30  undefined
+INFO 10/4/2023, 0:15:30  addRecentDocument
+INFO 10/4/2023, 0:15:30  updateTheme
+INFO 10/4/2023, 0:15:31  [Raven] userId = 441cecf2-6b78-4830-b87b-0cd83ffd9b6b
+INFO 10/4/2023, 0:15:31  [focus] 1
+INFO 10/4/2023, 0:15:31  synced recovery
+INFO 10/4/2023, 0:15:31  handle document.loadData
+INFO 10/4/2023, 0:15:32  [RenderProcess 1][Log] [UndoManager] reset commandStack
+INFO 10/4/2023, 0:15:32  [RenderProcess 1][Log] reset NodeMap
+INFO 10/4/2023, 0:15:32  [RenderProcess 1][Log] readContentFrom /home/nisidabay/Downloads/zlibrary/markdown_clips/Python configdict module.md
+INFO 10/4/2023, 0:15:32  synced recovery
+INFO 10/4/2023, 0:15:32  [RenderProcess 1][Log] onBecomeActive
+INFO 10/4/2023, 0:15:32  [RenderProcess 1][Log] File.activeWindow = true
+INFO 10/4/2023, 0:15:32  ls put SLicense
+INFO 10/4/2023, 0:15:53  [blur] 1
+INFO 10/4/2023, 0:15:53  [win] blur
+INFO 10/4/2023, 0:15:54  [focus] 1
+INFO 10/4/2023, 0:15:56  [blur] 1
+INFO 10/4/2023, 0:15:56  [win] blur
+INFO 10/4/2023, 0:16:08  [focus] 1
+INFO 10/4/2023, 0:16:11  synced recovery
+INFO 10/4/2023, 0:16:11  ----------------before-quit-----------------
+INFO 10/4/2023, 0:16:11  ------------------will-quit------------------
+INFO 10/4/2023, 0:16:11  -----------------quit------------------
+INFO 10/4/2023, 0:16:11  closeLogging
+INFO 10/4/2023, 0:16:37  launch with argv [/home/nisidabay/Applications/Typora-linux-x64/Typora, /home/nisidabay/Downloads/zlibrary/markdown_clips/Python configdict module(1).md]
+INFO 10/4/2023, 0:16:38  start LM in devVersion=false
+INFO 10/4/2023, 0:16:38  [Raven] instanceKey = 75a67204-64e4-4226-aee8-3c56948df8b1
+INFO 10/4/2023, 0:16:38  [watch L]
+INFO 10/4/2023, 0:16:38  [L] installDate is 10/21/2022, trail remains: 0 days
+INFO 10/4/2023, 0:16:38  [watch L] hasL: true
+INFO 10/4/2023, 0:16:38  ------------------start------------------
+INFO 10/4/2023, 0:16:38  typora version: 1.5.8
+INFO 10/4/2023, 0:16:38  undefined
+INFO 10/4/2023, 0:16:38  addRecentDocument
+INFO 10/4/2023, 0:16:38  updateTheme
+INFO 10/4/2023, 0:16:38  [Raven] userId = 441cecf2-6b78-4830-b87b-0cd83ffd9b6b
+INFO 10/4/2023, 0:16:38  [focus] 1
+INFO 10/4/2023, 0:16:38  synced recovery
+INFO 10/4/2023, 0:16:38  handle document.loadData
+INFO 10/4/2023, 0:16:39  [RenderProcess 1][Log] [UndoManager] reset commandStack
+INFO 10/4/2023, 0:16:39  [RenderProcess 1][Log] reset NodeMap
+INFO 10/4/2023, 0:16:39  [RenderProcess 1][Log] readContentFrom /home/nisidabay/Downloads/zlibrary/markdown_clips/Python configdict module(1).md
+INFO 10/4/2023, 0:16:39  synced recovery
+INFO 10/4/2023, 0:16:39  [RenderProcess 1][Log] onBecomeActive
+INFO 10/4/2023, 0:16:39  [RenderProcess 1][Log] File.activeWindow = true
+INFO 10/4/2023, 0:16:51  synced recovery
+INFO 10/4/2023, 0:16:51  ----------------before-quit-----------------
+INFO 10/4/2023, 0:16:51  ------------------will-quit------------------
+INFO 10/4/2023, 0:16:51  -----------------quit------------------
+INFO 10/4/2023, 0:16:51  closeLogging
+INFO 10/4/2023, 0:18:21  launch with argv [/home/nisidabay/Applications/Typora-linux-x64/Typora, /home/nisidabay/Downloads/zlibrary/Python configdict module.md]
+INFO 10/4/2023, 0:18:21  start LM in devVersion=false
+INFO 10/4/2023, 0:18:21  [Raven] instanceKey = a5af79e3-7dd4-46e5-81d2-042494e81c6b
+INFO 10/4/2023, 0:18:21  [watch L]
+INFO 10/4/2023, 0:18:21  [L] installDate is 10/21/2022, trail remains: 0 days
+INFO 10/4/2023, 0:18:21  [watch L] hasL: true
+INFO 10/4/2023, 0:18:21  ------------------start------------------
+INFO 10/4/2023, 0:18:21  typora version: 1.5.8
+INFO 10/4/2023, 0:18:21  undefined
+INFO 10/4/2023, 0:18:21  addRecentDocument
+INFO 10/4/2023, 0:18:21  updateTheme
+INFO 10/4/2023, 0:18:21  [Raven] userId = 441cecf2-6b78-4830-b87b-0cd83ffd9b6b
+INFO 10/4/2023, 0:18:21  [focus] 1
+INFO 10/4/2023, 0:18:21  synced recovery
+INFO 10/4/2023, 0:18:22  handle document.loadData
+INFO 10/4/2023, 0:18:22  [RenderProcess 1][Log] [UndoManager] reset commandStack
+INFO 10/4/2023, 0:18:22  [RenderProcess 1][Log] reset NodeMap
+INFO 10/4/2023, 0:18:22  [RenderProcess 1][Log] readContentFrom /home/nisidabay/Downloads/zlibrary/Python configdict module.md
+INFO 10/4/2023, 0:18:22  synced recovery
+INFO 10/4/2023, 0:18:22  [RenderProcess 1][Log] onBecomeActive
+INFO 10/4/2023, 0:18:22  [RenderProcess 1][Log] File.activeWindow = true
+INFO 10/4/2023, 0:18:34  synced recovery
+INFO 10/4/2023, 0:18:34  ----------------before-quit-----------------
+INFO 10/4/2023, 0:18:34  ------------------will-quit------------------
+INFO 10/4/2023, 0:18:34  -----------------quit------------------
+INFO 10/4/2023, 0:18:34  closeLogging
+INFO 10/4/2023, 0:20:53  launch with argv [/home/nisidabay/Applications/Typora-linux-x64/Typora, /home/nisidabay/Downloads/zlibrary/markdown_clips/Python configdict module.md]
+INFO 10/4/2023, 0:20:53  start LM in devVersion=false
+INFO 10/4/2023, 0:20:54  [Raven] instanceKey = 2f950bac-252d-4ff7-8765-350d01185f10
+INFO 10/4/2023, 0:20:54  [watch L]
+INFO 10/4/2023, 0:20:54  [L] installDate is 10/21/2022, trail remains: 0 days
+INFO 10/4/2023, 0:20:54  [watch L] hasL: true
+INFO 10/4/2023, 0:20:54  ------------------start------------------
+INFO 10/4/2023, 0:20:54  typora version: 1.5.8
+INFO 10/4/2023, 0:20:54  undefined
+INFO 10/4/2023, 0:20:54  addRecentDocument
+INFO 10/4/2023, 0:20:54  updateTheme
+INFO 10/4/2023, 0:20:54  [Raven] userId = 441cecf2-6b78-4830-b87b-0cd83ffd9b6b
+INFO 10/4/2023, 0:20:54  [focus] 1
+INFO 10/4/2023, 0:20:54  synced recovery
+INFO 10/4/2023, 0:20:54  handle document.loadData
+INFO 10/4/2023, 0:20:54  [RenderProcess 1][Log] [UndoManager] reset commandStack
+INFO 10/4/2023, 0:20:54  [RenderProcess 1][Log] reset NodeMap
+INFO 10/4/2023, 0:20:54  [RenderProcess 1][Log] readContentFrom /home/nisidabay/Downloads/zlibrary/markdown_clips/Python configdict module.md
+INFO 10/4/2023, 0:20:55  synced recovery
+INFO 10/4/2023, 0:20:55  [RenderProcess 1][Log] onBecomeActive
+INFO 10/4/2023, 0:20:55  [RenderProcess 1][Log] File.activeWindow = true
+INFO 10/4/2023, 0:20:57  [blur] 1
+INFO 10/4/2023, 0:20:57  [win] blur
+INFO 10/4/2023, 0:21:21  [focus] 1
+INFO 10/4/2023, 0:21:26  synced recovery
+INFO 10/4/2023, 0:21:31  synced recovery
+INFO 10/4/2023, 0:21:34  synced recovery
+INFO 10/4/2023, 0:21:34  [blur] 1
+INFO 10/4/2023, 0:21:34  [win] blur
+INFO 10/4/2023, 0:21:42  [focus] 1
+INFO 10/4/2023, 0:21:46  synced recovery
+INFO 10/4/2023, 0:21:51  synced recovery
+INFO 10/4/2023, 0:21:56  [blur] 1
+INFO 10/4/2023, 0:21:56  [win] blur
+INFO 10/4/2023, 0:21:56  synced recovery
+INFO 10/4/2023, 0:21:58  [focus] 1
+INFO 10/4/2023, 0:22:02  [blur] 1
+INFO 10/4/2023, 0:22:02  [win] blur
+INFO 10/4/2023, 0:22:04  [focus] 1
+INFO 10/4/2023, 0:22:06  synced recovery
+INFO 10/4/2023, 0:22:10  [blur] 1
+INFO 10/4/2023, 0:22:10  [win] blur
+INFO 10/4/2023, 0:22:10  synced recovery
+INFO 10/4/2023, 0:22:13  [focus] 1
+INFO 10/4/2023, 0:22:15  [blur] 1
+INFO 10/4/2023, 0:22:15  [win] blur
+INFO 10/4/2023, 0:22:15  [focus] 1
+INFO 10/4/2023, 0:22:17  synced recovery
+INFO 10/4/2023, 0:22:19  [blur] 1
+INFO 10/4/2023, 0:22:19  [win] blur
+INFO 10/4/2023, 0:22:19  synced recovery
+INFO 10/4/2023, 0:22:23  [focus] 1
+INFO 10/4/2023, 0:22:26  synced recovery
+INFO 10/4/2023, 0:22:29  [blur] 1
+INFO 10/4/2023, 0:22:29  [win] blur
+INFO 10/4/2023, 0:22:31  [focus] 1
+INFO 10/4/2023, 0:22:35  [blur] 1
+INFO 10/4/2023, 0:22:35  [win] blur
+INFO 10/4/2023, 0:22:35  synced recovery
+INFO 10/4/2023, 0:22:49  [focus] 1
+INFO 10/4/2023, 0:22:51  synced recovery
+INFO 10/4/2023, 0:22:52  [blur] 1
+INFO 10/4/2023, 0:22:52  [win] blur
+INFO 10/4/2023, 0:22:52  synced recovery
+INFO 10/4/2023, 0:22:58  [focus] 1
+INFO 10/4/2023, 0:23:01  synced recovery
+INFO 10/4/2023, 0:23:02  [blur] 1
+INFO 10/4/2023, 0:23:02  [win] blur
+INFO 10/4/2023, 0:23:09  [focus] 1
+INFO 10/4/2023, 0:23:11  synced recovery
+INFO 10/4/2023, 0:23:12  [blur] 1
+INFO 10/4/2023, 0:23:12  [win] blur
+INFO 10/4/2023, 0:23:12  synced recovery
+INFO 10/4/2023, 0:23:19  [focus] 1
+INFO 10/4/2023, 0:23:21  synced recovery
+INFO 10/4/2023, 0:23:26  [blur] 1
+INFO 10/4/2023, 0:23:26  [win] blur
+INFO 10/4/2023, 0:23:26  synced recovery
+INFO 10/4/2023, 0:23:31  [focus] 1
+INFO 10/4/2023, 0:23:35  synced recovery
+INFO 10/4/2023, 0:23:42  synced recovery
+INFO 10/4/2023, 0:23:49  synced recovery
+INFO 10/4/2023, 0:23:51  synced recovery
+INFO 10/4/2023, 0:23:54  synced recovery
+INFO 10/4/2023, 0:24:02  synced recovery
+INFO 10/4/2023, 0:24:11  synced recovery
+INFO 10/4/2023, 0:24:30  synced recovery
+INFO 10/4/2023, 0:24:37  synced recovery
+INFO 10/4/2023, 0:24:45  synced recovery
+INFO 10/4/2023, 0:24:49  synced recovery
+INFO 10/4/2023, 0:25:10  synced recovery
+INFO 10/4/2023, 0:25:13  synced recovery
+INFO 10/4/2023, 0:25:16  synced recovery
+INFO 10/4/2023, 0:25:16  ----------------before-quit-----------------
+INFO 10/4/2023, 0:25:16  ------------------will-quit------------------
+INFO 10/4/2023, 0:25:16  -----------------quit------------------
+INFO 10/4/2023, 0:25:16  closeLogging
+INFO 16/7/2023, 18:10:00  launch with argv [/home/nisidabay/Applications/Typora-linux-x64/Typora]
+INFO 16/7/2023, 18:10:01  start LM in devVersion=false
+INFO 16/7/2023, 18:10:01  [Raven] instanceKey = 7f5e2fcc-043e-42c3-bc4d-f78e418e1b44
+INFO 16/7/2023, 18:10:01  [watch L]
+INFO 16/7/2023, 18:10:01  ls put SLicense
+INFO 16/7/2023, 18:10:01  [L] Read from incorrupted InstallDate
+INFO 16/7/2023, 18:10:01  writeInstallDate fromBTime=true
+INFO 16/7/2023, 18:10:01  ------------------start------------------
+INFO 16/7/2023, 18:10:01  typora version: 1.5.8
+INFO 16/7/2023, 18:10:01  undefined
+INFO 16/7/2023, 18:10:01  updateTheme
+INFO 16/7/2023, 18:10:01  ls put IDate
+INFO 16/7/2023, 18:10:01  [L] installDate is 5/29/2023, trail remains: 15 days
+INFO 16/7/2023, 18:10:01  [watch L] hasL: false
+INFO 16/7/2023, 18:10:01  [Raven] userId = 441cecf2-6b78-4830-b87b-0cd83ffd9b6b
+INFO 16/7/2023, 18:10:01  [focus] 1
+INFO 16/7/2023, 18:10:01  synced recovery
+INFO 16/7/2023, 18:10:03  handle document.loadData
+INFO 16/7/2023, 18:10:03  [RenderProcess 1][Log] [UndoManager] reset commandStack
+INFO 16/7/2023, 18:10:03  [RenderProcess 1][Log] reset NodeMap
+INFO 16/7/2023, 18:10:03  synced recovery
+INFO 16/7/2023, 18:10:03  [RenderProcess 1][Log] onBecomeActive
+INFO 16/7/2023, 18:10:03  [RenderProcess 1][Log] File.activeWindow = true
+INFO 16/7/2023, 18:10:09  [blur] 1
+INFO 16/7/2023, 18:10:09  [win] blur
+INFO 16/7/2023, 18:10:32  addRecentDocument
+INFO 16/7/2023, 18:10:32  [RenderProcess 1][Log] [UndoManager] reset commandStack
+INFO 16/7/2023, 18:10:32  [RenderProcess 1][Log] reset NodeMap
+INFO 16/7/2023, 18:10:32  [RenderProcess 1][Log] readContentFrom /home/nisidabay/vimwiki/How to Use the tr Command.md
+INFO 16/7/2023, 18:10:32  synced recovery
+INFO 16/7/2023, 18:10:36  [focus] 1
+INFO 16/7/2023, 18:10:36  [blur] 1
+INFO 16/7/2023, 18:10:36  [win] blur
+INFO 16/7/2023, 18:10:36  [focus] 1
+INFO 16/7/2023, 18:11:02  synced recovery
+INFO 16/7/2023, 18:11:09  synced recovery
+INFO 16/7/2023, 18:11:13  synced recovery
+INFO 16/7/2023, 18:11:16  synced recovery
+INFO 16/7/2023, 18:11:19  synced recovery
+INFO 16/7/2023, 18:11:23  synced recovery
+INFO 16/7/2023, 18:12:05  synced recovery
+INFO 16/7/2023, 18:12:10  synced recovery
+INFO 16/7/2023, 18:12:24  synced recovery
+INFO 16/7/2023, 18:12:28  synced recovery
+INFO 16/7/2023, 18:13:24  synced recovery
+INFO 16/7/2023, 18:14:15  synced recovery
+INFO 16/7/2023, 18:14:16  synced recovery
+INFO 16/7/2023, 18:14:18  synced recovery
+INFO 16/7/2023, 18:14:21  synced recovery
+INFO 16/7/2023, 18:14:24  [blur] 1
+INFO 16/7/2023, 18:14:24  [win] blur
+INFO 16/7/2023, 18:14:26  [focus] 1
+INFO 16/7/2023, 18:14:32  [blur] 1
+INFO 16/7/2023, 18:14:32  [win] blur
+INFO 16/7/2023, 18:14:48  [focus] 1
+INFO 16/7/2023, 18:14:50  [blur] 1
+INFO 16/7/2023, 18:14:50  [win] blur
+INFO 16/7/2023, 18:14:53  [focus] 1
+INFO 16/7/2023, 18:14:53  [blur] 1
+INFO 16/7/2023, 18:14:53  [win] blur
+INFO 16/7/2023, 18:14:53  [focus] 1
+INFO 16/7/2023, 18:14:55  [blur] 1
+INFO 16/7/2023, 18:14:55  [win] blur
+INFO 16/7/2023, 18:17:22  [focus] 1
+INFO 16/7/2023, 18:17:36  synced recovery
+INFO 16/7/2023, 18:17:37  [blur] 1
+INFO 16/7/2023, 18:17:37  [win] blur
+INFO 16/7/2023, 18:18:28  [focus] 1
+INFO 16/7/2023, 18:18:36  synced recovery
+INFO 16/7/2023, 18:18:43  synced recovery
+INFO 16/7/2023, 18:18:43  [blur] 1
+INFO 16/7/2023, 18:18:43  [win] blur
+INFO 16/7/2023, 18:18:51  [focus] 1
+INFO 16/7/2023, 18:18:52  [blur] 1
+INFO 16/7/2023, 18:18:52  [win] blur
+INFO 16/7/2023, 18:18:54  [focus] 1
+INFO 16/7/2023, 18:18:54  [blur] 1
+INFO 16/7/2023, 18:18:54  [win] blur
+INFO 16/7/2023, 18:18:54  [focus] 1
+INFO 16/7/2023, 18:18:54  addRecentDocument
+INFO 16/7/2023, 18:18:54  synced recovery
+INFO 16/7/2023, 18:18:57  synced recovery
+INFO 16/7/2023, 18:18:57  ----------------before-quit-----------------
+INFO 16/7/2023, 18:18:57  ------------------will-quit------------------
+INFO 16/7/2023, 18:18:57  -----------------quit------------------
+INFO 16/7/2023, 18:18:57  closeLogging

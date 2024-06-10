@@ -1,0 +1,55 @@
+ * Serving Flask app 'birdseye'
+ * Debug mode: off
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:7777
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2023 07:21:52] "GET /ipython_call/16124a7830e0456099eccdb00388fbdc HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2023 07:21:52] "GET /static/css/main.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2023 07:21:52] "GET /static/js/libs/bootstrap.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2023 07:21:52] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2023 07:21:52] "GET /static/css/hljs.min.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2023 07:21:52] "GET /static/js/libs/jquery-3.2.1.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2023 07:21:52] "GET /static/css/proton/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2023 07:21:52] "GET /static/js/libs/highlight.pack.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2023 07:21:52] "GET /static/js/libs/underscore.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2023 07:21:52] "GET /static/js/libs/jstree.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2023 07:21:52] "GET /static/js/call.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2023 07:21:52] "GET /static/img/handle.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2023 07:21:52] "GET /static/css/proton/throbber.gif HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2023 07:21:52] "GET /static/css/proton/fonts/titillium/titilliumweb-regular-webfont.woff HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2023 07:21:52] "GET /static/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2023 07:21:52] "GET /static/favicon.ico HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2023 07:22:03] "GET /static/css/proton/32px.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2023 07:22:03] "GET /static/img/type_icons/object.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2023 07:22:03] "GET /call/ed65a9f6081349bcb1fbb0c5f55b054b HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2023 07:22:03] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2023 07:22:03] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2023 07:22:03] "[36mGET /static/js/libs/jquery-3.2.1.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2023 07:22:03] "[36mGET /static/js/libs/bootstrap.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2023 07:22:03] "[36mGET /static/css/hljs.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2023 07:22:03] "[36mGET /static/css/proton/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2023 07:22:03] "[36mGET /static/js/libs/highlight.pack.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2023 07:22:03] "[36mGET /static/js/libs/jstree.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2023 07:22:03] "[36mGET /static/js/call.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2023 07:22:03] "GET /static/img/logo.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2023 07:22:03] "[36mGET /static/js/libs/underscore.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2023 07:22:03] "[36mGET /static/img/handle.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2023 07:22:03] "[33mGET /api/file//home/nisidabay/temp/closure_1.py/__function__/incrementer/latest_call/ HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2023 07:22:03] "[36mGET /static/css/proton/throbber.gif HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2023 07:22:04] "[33mGET /api/file//home/nisidabay/temp/closure_1.py/__function__/incrementer/latest_call/ HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2023 07:22:05] "[33mGET /api/file//home/nisidabay/temp/closure_1.py/__function__/incrementer/latest_call/ HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2023 07:22:06] "[33mGET /api/file//home/nisidabay/temp/closure_1.py/__function__/incrementer/latest_call/ HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2023 07:22:07] "[33mGET /api/file//home/nisidabay/temp/closure_1.py/__function__/incrementer/latest_call/ HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2023 07:22:08] "[33mGET /api/file//home/nisidabay/temp/closure_1.py/__function__/incrementer/latest_call/ HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2023 07:22:09] "[33mGET /api/file//home/nisidabay/temp/closure_1.py/__function__/incrementer/latest_call/ HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2023 07:22:10] "[33mGET /api/file//home/nisidabay/temp/closure_1.py/__function__/incrementer/latest_call/ HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2023 07:22:11] "[33mGET /api/file//home/nisidabay/temp/closure_1.py/__function__/incrementer/latest_call/ HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2023 07:22:12] "[33mGET /api/file//home/nisidabay/temp/closure_1.py/__function__/incrementer/latest_call/ HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2023 07:22:13] "[33mGET /api/file//home/nisidabay/temp/closure_1.py/__function__/incrementer/latest_call/ HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2023 07:22:14] "[33mGET /api/file//home/nisidabay/temp/closure_1.py/__function__/incrementer/latest_call/ HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2023 07:22:15] "[33mGET /api/file//home/nisidabay/temp/closure_1.py/__function__/incrementer/latest_call/ HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2023 07:22:16] "[33mGET /api/file//home/nisidabay/temp/closure_1.py/__function__/incrementer/latest_call/ HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2023 07:22:17] "[33mGET /api/file//home/nisidabay/temp/closure_1.py/__function__/incrementer/latest_call/ HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2023 07:22:18] "[33mGET /api/file//home/nisidabay/temp/closure_1.py/__function__/incrementer/latest_call/ HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2023 07:22:19] "[33mGET /api/file//home/nisidabay/temp/closure_1.py/__function__/incrementer/latest_call/ HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [06/Aug/2023 07:22:20] "[33mGET /api/file//home/nisidabay/temp/closure_1.py/__function__/incrementer/latest_call/ HTTP/1.1[0m" 404 -

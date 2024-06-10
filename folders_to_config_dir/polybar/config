@@ -1,0 +1,51 @@
+
+[bar/example]
+width = 100%
+height = 30
+background = #222
+foreground = #dfdfdf
+font-0 = "monospace:size=14"
+
+modules-left = 
+modules-center = 
+modules-right = packages temp memory forecast volume battery clock internet
+
+[module/packages]
+type = custom/script
+exec = ~/.config/polybar/scripts/sb-packages
+interval = 60
+
+[module/temp]
+type = custom/script
+exec = ~/.config/polybar/scripts/sb-temp
+interval = 5
+
+[module/memory]
+type = custom/script
+exec = ~/.config/polybar/scripts/sb-memory
+interval = 10
+
+[module/forecast]
+type = custom/script
+exec = ~/.config/polybar/scripts/sb-forecast
+interval = 18000
+
+[module/volume]
+type = custom/script
+exec = ~/.config/polybar/scripts/sb-volume
+tail = true
+
+[module/battery]
+type = custom/script
+exec = ~/.config/polybar/scripts/sb-battery
+interval = 5
+
+[module/clock]
+type = custom/script
+exec = ~/.config/polybar/scripts/sb-clock
+interval = 60
+
+[module/internet]
+type = custom/script
+exec = ~/.config/polybar/scripts/sb-internet
+interval = 5

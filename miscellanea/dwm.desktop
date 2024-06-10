@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=DWM
+Comment=Dynamic Window Manager
+Exec=/home/nisidabay/bin/start_dwm.sh  
+Type=Application
+

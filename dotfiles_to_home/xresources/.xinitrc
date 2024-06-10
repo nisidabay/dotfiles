@@ -50,6 +50,8 @@ export XDG_SESSION_TYPE="x11"
 # Start the dunst notification daemon
 dunst &
 
+# Start the clipmenu daemon
+clipmenud &
 
 # Apply transparency
 # xcompmgr -c -C -ts -l -s -r4.2 -o.55 &

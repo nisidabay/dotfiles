@@ -1,0 +1,121 @@
+<project version="4">
+  <component name="BookmarksManager">
+    <option name="groups">
+      <GroupState>
+        <option name="name" value="practice_kotlin" />
+      </GroupState>
+    </option>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="-1">
+      <file>
+        <entry file="file://$PROJECT_DIR$/src/TodoList-version1.kt" preview="true">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTypeUsageLocalSummary">
+    <fileType name="GitIgnore file">
+      <summary usageCount="3" lastUsed="1711383813590" />
+    </fileType>
+    <fileType name="Kotlin">
+      <summary usageCount="5" lastUsed="1711383823443" />
+    </fileType>
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="LanguageUsageStatistics">
+    <language id="GitIgnore">
+      <summary usageCount="3" lastUsage="1711383813590" />
+    </language>
+    <language id="kotlin">
+      <summary usageCount="5" lastUsage="1711383823443" />
+    </language>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1" />
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="practice_kotlin" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/Downloads/Refactor/practice_kotlin" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="practice_kotlin" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/Downloads/Refactor/practice_kotlin" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name=".idea" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="practice_kotlin" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/Downloads/Refactor/practice_kotlin" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="ToolWindowManager">
+    <layoutV2>
+      <window_info id="Pull Requests" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3298336" />
+      <window_info id="Commit" order="1" weight="0.25" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Problems" order="1" />
+      <window_info anchor="bottom" id="Problems View" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="3" />
+      <window_info anchor="bottom" id="Services" order="4" />
+      <window_info anchor="bottom" id="Build" order="5" />
+      <window_info anchor="right" content_ui="combo" id="Notifications" order="0" weight="0.25" />
+      <window_info anchor="right" id="AIAssistant" order="1" weight="0.25" />
+      <window_info anchor="right" id="Database" order="2" weight="0.25" />
+      <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.25" />
+      <window_info anchor="right" id="Coverage" order="5" side_tool="true" />
+      <unified_weights left="0.3298336" />
+    </layoutV2>
+    <recentWindows>
+      <value>Project</value>
+    </recentWindows>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="943" y="402" width="1001" height="653" key="#Run/Debug_Configuration_Templates" timestamp="1711383889619">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="943" y="402" width="1001" height="653" key="#Run/Debug_Configuration_Templates/0.0.2560.1440@0.0.2560.1440" timestamp="1711383889619" />
+    <state x="865" y="396" width="974" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1711383896949">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="865" y="396" width="974" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1711383896949" />
+    <state x="874" y="409" width="800" height="639" key="new project wizard" timestamp="1711383933649">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="874" y="409" width="800" height="639" key="new project wizard/0.0.2560.1440@0.0.2560.1440" timestamp="1711383933649" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/read_only_list.kt" preview="true">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore" preview="true">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.kt" preview="true">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TodoList-version1.kt" preview="true">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+  </component>
+</project>

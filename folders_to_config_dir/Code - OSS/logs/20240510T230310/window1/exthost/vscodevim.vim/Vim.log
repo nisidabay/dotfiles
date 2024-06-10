@@ -1,0 +1,33 @@
+2024-05-10 23:03:18.416 [info] Configuration changed
+2024-05-10 23:04:13.646 [info] Active editor: file:///home/nisidabay/end_of_file.c
+2024-05-10 23:06:59.779 [info] /home/nisidabay/.config/Code - OSS/User/settings.json closed
+2024-05-10 23:06:59.795 [info] Configuration changed
+2024-05-10 23:07:08.923 [info] Active editor: file:///home/nisidabay/end_of_file.c
+2024-05-10 23:07:27.804 [info] Executing :w
+2024-05-10 23:08:47.095 [info] Executing :w
+2024-05-10 23:09:35.372 [info] Active editor: vscode-userdata:/home/nisidabay/.config/Code%20-%20OSS/User/settings.json
+2024-05-10 23:09:35.826 [info] Configuration changed
+2024-05-10 23:11:57.574 [info] Executing :w
+2024-05-10 23:12:20.325 [info] Executing :w
+2024-05-10 23:12:35.563 [info] /settings/user closed
+2024-05-10 23:12:35.686 [info] /settings/resourceLanguage closed
+2024-05-10 23:12:35.738 [info] /launch closed
+2024-05-10 23:12:35.740 [info] /token-styling closed
+2024-05-10 23:12:35.742 [info] /textmate-colors closed
+2024-05-10 23:12:35.750 [info] /workbench-colors closed
+2024-05-10 23:13:48.559 [info] Active editor: vscode-userdata:/home/nisidabay/.config/Code%20-%20OSS/User/settings.json
+2024-05-10 23:15:35.624 [info] /settings/user closed
+2024-05-10 23:15:35.907 [info] /settings/resourceLanguage closed
+2024-05-10 23:15:35.971 [info] /launch closed
+2024-05-10 23:15:35.971 [info] /token-styling closed
+2024-05-10 23:15:35.973 [info] /textmate-colors closed
+2024-05-10 23:15:35.992 [info] /workbench-colors closed
+2024-05-10 23:16:15.560 [info] Executing :w
+2024-05-10 23:16:15.763 [info] Configuration changed
+2024-05-10 23:16:39.887 [info] Executing :w
+2024-05-10 23:17:15.513 [info] Executing :w
+2024-05-10 23:17:23.534 [info] Active editor: file:///home/nisidabay/end_of_file.c
+2024-05-10 23:17:33.537 [info] Executing :x
+2024-05-10 23:17:33.590 [info] /home/nisidabay/end_of_file.c closed
+2024-05-10 23:17:33.603 [warning] getLineLength() called with out-of-bounds line 8
+2024-05-10 23:17:33.603 [warning] invalid cursor position. [[8, 12] | [8, 12]].

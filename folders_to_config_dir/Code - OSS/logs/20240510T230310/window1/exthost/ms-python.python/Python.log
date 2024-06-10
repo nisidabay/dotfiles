@@ -1,0 +1,222 @@
+2024-05-10 23:03:12.766 [error] Dir "/home/nisidabay/bin" is not watchable (too many files)
+2024-05-10 23:03:12.766 [error] Dir "/home/nisidabay/Pictures" is not watchable (too many files)
+2024-05-10 23:03:12.766 [error] Dir "/home/nisidabay/vimwiki" is not watchable (too many files)
+2024-05-10 23:03:12.766 [error] Unable to check if shell integration is active [Error: Extension 'ms-python.python' CANNOT use API proposal: terminalDataWriteEvent.
+Its package.json#enabledApiProposals-property declares:  but NOT terminalDataWriteEvent.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-python.python
+	at v (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:141:51558)
+	at a.onDidWriteTerminalData (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:163:32256)
+	at new g (/home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:746998)
+	at t.resolveInstance (/home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2007385)
+	at /home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2009293
+	at Array.map (<anonymous>)
+	at t.resolveInstance (/home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2007159)
+	at /home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2009293
+	at t.resolve (/home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2009556)
+	at /home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:1993119
+	at e._get (/home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:1992885)
+	at e.get (/home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:1991597)
+	at e.dynamicValue (/home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2014661)
+	at /home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2008782
+	at c (/home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2007828)
+	at /home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2008722
+	at /home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2008241
+	at Array.map (<anonymous>)
+	at /home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2008213
+	at Array.map (<anonymous>)
+	at t.resolveInstance (/home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2007159)
+	at /home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2009293
+	at t.resolve (/home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2009556)
+	at /home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:1993119
+	at e._get (/home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:1992885)
+	at e.get (/home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:1991597)
+	at a.get (/home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:463338)
+	at /home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:384002
+	at async t.activateComponents (/home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:382289)
+	at async /home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2928053
+	at async e (/home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2927585)
+	at async h.n (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:143:6281)
+	at async h.m (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:143:6244)
+	at async h.l (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:143:5701)]
+2024-05-10 23:03:12.766 [info] Test server listening.
+2024-05-10 23:03:12.775 [info] Only Pylance is supported in untrusted workspaces, setting language server to None.
+2024-05-10 23:03:12.775 [info] Starting Jedi language server for default.
+2024-05-10 23:03:17.927 [error] Dir "/home/nisidabay/bin" is not watchable (too many files)
+2024-05-10 23:03:17.933 [error] Dir "/home/nisidabay/Pictures" is not watchable (too many files)
+2024-05-10 23:03:17.937 [error] Dir "/home/nisidabay/vimwiki" is not watchable (too many files)
+2024-05-10 23:03:18.024 [info] Default formatter is set to null for workspace /home/nisidabay/agenda
+2024-05-10 23:03:18.024 [info] Default formatter is set to null for workspace /home/nisidabay/Android
+2024-05-10 23:03:18.024 [info] Default formatter is set to null for workspace /home/nisidabay/Applications
+2024-05-10 23:03:18.024 [info] Default formatter is set to null for workspace /home/nisidabay/bin
+2024-05-10 23:03:18.024 [info] Default formatter is set to null for workspace /home/nisidabay/coc
+2024-05-10 23:03:18.024 [info] Default formatter is set to null for workspace /home/nisidabay/Descargas
+2024-05-10 23:03:18.024 [info] Default formatter is set to null for workspace /home/nisidabay/Documents
+2024-05-10 23:03:18.024 [info] Default formatter is set to null for workspace /home/nisidabay/_dotfiles
+2024-05-10 23:03:18.024 [info] Default formatter is set to null for workspace /home/nisidabay/dotfiles
+2024-05-10 23:03:18.024 [info] Default formatter is set to null for workspace /home/nisidabay/Downloads
+2024-05-10 23:03:18.024 [info] Default formatter is set to null for workspace /home/nisidabay/dwmblocks-luke
+2024-05-10 23:03:18.024 [info] Default formatter is set to null for workspace /home/nisidabay/dwm-luke
+2024-05-10 23:03:18.024 [info] Default formatter is set to null for workspace /home/nisidabay/go
+2024-05-10 23:03:18.024 [info] Default formatter is set to null for workspace /home/nisidabay/Mail
+2024-05-10 23:03:18.024 [info] Default formatter is set to null for workspace /home/nisidabay/markdown_clips
+2024-05-10 23:03:18.024 [info] Default formatter is set to null for workspace /home/nisidabay/md_to_wiki
+2024-05-10 23:03:18.025 [info] Default formatter is set to null for workspace /home/nisidabay/Movies
+2024-05-10 23:03:18.025 [info] Default formatter is set to null for workspace /home/nisidabay/Music
+2024-05-10 23:03:18.025 [info] Default formatter is set to null for workspace /home/nisidabay/my_images
+2024-05-10 23:03:18.025 [info] Default formatter is set to null for workspace /home/nisidabay/notes
+2024-05-10 23:03:18.025 [info] Default formatter is set to null for workspace /home/nisidabay/org
+2024-05-10 23:03:18.025 [info] Default formatter is set to null for workspace /home/nisidabay/Pictures
+2024-05-10 23:03:18.025 [info] Default formatter is set to null for workspace /home/nisidabay/Plantillas
+2024-05-10 23:03:18.025 [info] Default formatter is set to null for workspace /home/nisidabay/plugins
+2024-05-10 23:03:18.025 [info] Default formatter is set to null for workspace /home/nisidabay/proyectos_git
+2024-05-10 23:03:18.025 [info] Default formatter is set to null for workspace /home/nisidabay/pywal
+2024-05-10 23:03:18.025 [info] Default formatter is set to null for workspace /home/nisidabay/Pywall
+2024-05-10 23:03:18.025 [info] Default formatter is set to null for workspace /home/nisidabay/snap
+2024-05-10 23:03:18.025 [info] Default formatter is set to null for workspace /home/nisidabay/st-gerry
+2024-05-10 23:03:18.025 [info] Default formatter is set to null for workspace /home/nisidabay/st-luke
+2024-05-10 23:03:18.025 [info] Default formatter is set to null for workspace /home/nisidabay/temp
+2024-05-10 23:03:18.025 [info] Default formatter is set to null for workspace /home/nisidabay/Templates
+2024-05-10 23:03:18.025 [info] Default formatter is set to null for workspace /home/nisidabay/vimwiki
+2024-05-10 23:03:18.025 [info] Default formatter is set to null for workspace /home/nisidabay/wallpaper
+2024-05-10 23:03:18.025 [info] Default formatter is set to null for workspace /home/nisidabay/yEd
+2024-05-10 23:03:18.025 [error] Unable to check if shell integration is active [Error: Extension 'ms-python.python' CANNOT use API proposal: terminalDataWriteEvent.
+Its package.json#enabledApiProposals-property declares:  but NOT terminalDataWriteEvent.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-python.python
+	at v (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:141:51558)
+	at a.onDidWriteTerminalData (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:163:32256)
+	at new g (/home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:746998)
+	at t.resolveInstance (/home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2007385)
+	at /home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2009293
+	at Array.map (<anonymous>)
+	at t.resolveInstance (/home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2007159)
+	at /home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2009293
+	at t.resolve (/home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2009556)
+	at /home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:1993119
+	at e._get (/home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:1992885)
+	at e.get (/home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:1991597)
+	at e.dynamicValue (/home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2014661)
+	at /home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2008782
+	at c (/home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2007828)
+	at /home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2008722
+	at /home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2008241
+	at Array.map (<anonymous>)
+	at /home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2008213
+	at Array.map (<anonymous>)
+	at t.resolveInstance (/home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2007159)
+	at /home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2009293
+	at t.resolve (/home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2009556)
+	at /home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:1993119
+	at e._get (/home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:1992885)
+	at e.get (/home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:1991597)
+	at a.get (/home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:463338)
+	at /home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:384002
+	at async t.activateComponents (/home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:382289)
+	at async /home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2928053
+	at async e (/home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2927585)
+	at async /home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2927562]
+2024-05-10 23:03:18.223 [info] Test server listening.
+2024-05-10 23:03:18.233 [info] > hatch env show --json
+2024-05-10 23:03:18.233 [info] cwd: ~/agenda
+2024-05-10 23:03:18.241 [info] > hatch env show --json
+2024-05-10 23:03:18.241 [info] cwd: ~/Android
+2024-05-10 23:03:18.247 [info] > hatch env show --json
+2024-05-10 23:03:18.247 [info] cwd: ~/Applications
+2024-05-10 23:03:18.252 [info] > hatch env show --json
+2024-05-10 23:03:18.252 [info] cwd: ~/bin
+2024-05-10 23:03:18.257 [info] > hatch env show --json
+2024-05-10 23:03:18.257 [info] cwd: ~/coc
+2024-05-10 23:03:18.263 [info] > hatch env show --json
+2024-05-10 23:03:18.263 [info] cwd: ~/Descargas
+2024-05-10 23:03:18.267 [info] > hatch env show --json
+2024-05-10 23:03:18.267 [info] cwd: ~/Documents
+2024-05-10 23:03:18.272 [info] > hatch env show --json
+2024-05-10 23:03:18.272 [info] cwd: ~/_dotfiles
+2024-05-10 23:03:18.277 [info] > hatch env show --json
+2024-05-10 23:03:18.277 [info] cwd: ~/dotfiles
+2024-05-10 23:03:18.281 [info] > hatch env show --json
+2024-05-10 23:03:18.281 [info] cwd: ~/Downloads
+2024-05-10 23:03:18.286 [info] > hatch env show --json
+2024-05-10 23:03:18.286 [info] cwd: ~/dwmblocks-luke
+2024-05-10 23:03:18.290 [info] > hatch env show --json
+2024-05-10 23:03:18.290 [info] cwd: ~/dwm-luke
+2024-05-10 23:03:18.294 [info] > hatch env show --json
+2024-05-10 23:03:18.294 [info] cwd: ~/go
+2024-05-10 23:03:18.299 [info] > hatch env show --json
+2024-05-10 23:03:18.300 [info] cwd: ~/Mail
+2024-05-10 23:03:18.304 [info] > hatch env show --json
+2024-05-10 23:03:18.304 [info] cwd: ~/markdown_clips
+2024-05-10 23:03:18.308 [info] > hatch env show --json
+2024-05-10 23:03:18.308 [info] cwd: ~/md_to_wiki
+2024-05-10 23:03:18.311 [info] > hatch env show --json
+2024-05-10 23:03:18.311 [info] cwd: ~/Movies
+2024-05-10 23:03:18.314 [info] > hatch env show --json
+2024-05-10 23:03:18.314 [info] cwd: ~/Music
+2024-05-10 23:03:18.318 [info] > hatch env show --json
+2024-05-10 23:03:18.318 [info] cwd: ~/my_images
+2024-05-10 23:03:18.321 [info] > hatch env show --json
+2024-05-10 23:03:18.321 [info] cwd: ~/notes
+2024-05-10 23:03:18.324 [info] > hatch env show --json
+2024-05-10 23:03:18.324 [info] cwd: ~/org
+2024-05-10 23:03:18.327 [info] > hatch env show --json
+2024-05-10 23:03:18.327 [info] cwd: ~/Pictures
+2024-05-10 23:03:18.331 [info] > hatch env show --json
+2024-05-10 23:03:18.331 [info] cwd: ~/Plantillas
+2024-05-10 23:03:18.336 [info] > hatch env show --json
+2024-05-10 23:03:18.336 [info] cwd: ~/plugins
+2024-05-10 23:03:18.340 [info] > hatch env show --json
+2024-05-10 23:03:18.340 [info] cwd: ~/proyectos_git
+2024-05-10 23:03:18.344 [info] > hatch env show --json
+2024-05-10 23:03:18.344 [info] cwd: ~/pywal
+2024-05-10 23:03:18.349 [info] > hatch env show --json
+2024-05-10 23:03:18.349 [info] cwd: ~/Pywall
+2024-05-10 23:03:18.353 [info] > hatch env show --json
+2024-05-10 23:03:18.353 [info] cwd: ~/snap
+2024-05-10 23:03:18.358 [info] > hatch env show --json
+2024-05-10 23:03:18.358 [info] cwd: ~/st-gerry
+2024-05-10 23:03:18.362 [info] > hatch env show --json
+2024-05-10 23:03:18.362 [info] cwd: ~/st-luke
+2024-05-10 23:03:18.366 [info] > hatch env show --json
+2024-05-10 23:03:18.366 [info] cwd: ~/temp
+2024-05-10 23:03:18.370 [info] > hatch env show --json
+2024-05-10 23:03:18.370 [info] cwd: ~/Templates
+2024-05-10 23:03:18.375 [info] > hatch env show --json
+2024-05-10 23:03:18.375 [info] cwd: ~/vimwiki
+2024-05-10 23:03:18.380 [info] > hatch env show --json
+2024-05-10 23:03:18.380 [info] cwd: ~/wallpaper
+2024-05-10 23:03:18.385 [info] > hatch env show --json
+2024-05-10 23:03:18.385 [info] cwd: ~/yEd
+2024-05-10 23:03:18.390 [info] Python interpreter path: /bin/python
+2024-05-10 23:03:18.765 [info] > /bin/python -I ~/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/python_files/get_output_via_markers.py ~/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/python_files/interpreterInfo.py
+2024-05-10 23:03:18.840 [info] > pyenv which python
+2024-05-10 23:03:18.840 [info] cwd: ~/agenda
+2024-05-10 23:03:19.059 [error] [
+  'Failed to activate a workspace, Class name = g, completed in 1020ms, has a falsy return value, Arg 1: <Uri:/home/nisidabay/agenda>, Arg 2: {"started":1715374997921}, Return Value: undefined',
+  [Error: Extension 'ms-python.python' CANNOT use API proposal: testObserver.
+  Its package.json#enabledApiProposals-property declares:  but NOT testObserver.
+   The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-python.python
+  	at v (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:141:51558)
+  	at get testResults [as testResults] (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:163:24960)
+  	at T.activate (/home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:775617)
+  	at /home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2460
+  	at Array.map (<anonymous>)
+  	at g.activateWorkspace (/home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2450)]
+]
+2024-05-10 23:03:19.059 [error] Failure during activation. [Error: Extension 'ms-python.python' CANNOT use API proposal: testObserver.
+Its package.json#enabledApiProposals-property declares:  but NOT testObserver.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-python.python
+	at v (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:141:51558)
+	at get testResults [as testResults] (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:163:24960)
+	at T.activate (/home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:775617)
+	at /home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2460
+	at Array.map (<anonymous>)
+	at g.activateWorkspace (/home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2450)]
+2024-05-10 23:03:19.059 [error] sendStartupTelemetry() failed. [Error: Extension 'ms-python.python' CANNOT use API proposal: testObserver.
+Its package.json#enabledApiProposals-property declares:  but NOT testObserver.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-python.python
+	at v (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:141:51558)
+	at get testResults [as testResults] (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:163:24960)
+	at T.activate (/home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:775617)
+	at /home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2460
+	at Array.map (<anonymous>)
+	at g.activateWorkspace (/home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2450)]
+2024-05-10 23:03:20.212 [info] Starting Jedi language server for agenda.

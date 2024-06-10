@@ -1,0 +1,65 @@
+2024-05-10 20:41:59.360 [info] Extension host with pid 2404855 started
+2024-05-10 20:41:59.546 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2024-05-10 20:41:59.602 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2024-05-10 20:41:59.703 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2024-05-10 20:41:59.839 [info] Eager extensions activated
+2024-05-10 20:41:59.885 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2024-05-10 20:41:59.889 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2024-05-10 20:42:28.410 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2024-05-10 20:42:41.006 [info] ExtensionService#_doActivateExtension ms-python.python, startup: false, activationEvent: 'onWalkthrough:pythonWelcome'
+2024-05-10 20:42:42.801 [error] Error: Extension 'ms-python.python' CANNOT use API proposal: testObserver.
+Its package.json#enabledApiProposals-property declares:  but NOT testObserver.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-python.python
+	at v (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:141:51558)
+	at get testResults [as testResults] (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:163:24960)
+	at T.activate (/home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:775617)
+	at /home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2460
+	at Array.map (<anonymous>)
+	at g.activateWorkspace (/home/nisidabay/.vscode-oss/extensions/ms-python.python-2024.4.1-universal/out/client/extension.js:2:2450)
+2024-05-10 20:44:29.655 [info] ExtensionService#_doActivateExtension vscodevim.vim, startup: false, activationEvent: 'onStartupFinished'
+2024-05-10 20:44:30.836 [error] Error: ENOENT: no such file or directory, open '/home/nisidabay/.config/Code - OSS/User/globalStorage/vscodevim.vim/.registers'
+2024-05-10 20:47:38.049 [info] ExtensionService#_doActivateExtension llvm-vs-code-extensions.vscode-clangd, startup: false, activationEvent: 'onLanguage:c'
+2024-05-10 20:48:07.345 [info] ExtensionService#_doActivateExtension vscode.grunt, startup: false, activationEvent: 'onTaskType:grunt'
+2024-05-10 20:48:07.349 [info] ExtensionService#_doActivateExtension vscode.gulp, startup: false, activationEvent: 'onTaskType:gulp'
+2024-05-10 20:48:07.351 [info] ExtensionService#_doActivateExtension vscode.jake, startup: false, activationEvent: 'onTaskType:jake'
+2024-05-10 20:48:07.353 [info] ExtensionService#_doActivateExtension vscode.npm, startup: false, activationEvent: 'onTaskType:npm'
+2024-05-10 20:48:07.391 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onTaskType:typescript'
+2024-05-10 20:52:28.792 [info] ExtensionService#_doActivateExtension vadimcn.vscode-lldb, startup: false, activationEvent: 'onStartupFinished'
+2024-05-10 20:52:52.765 [info] ExtensionService#_doActivateExtension vscode.debug-server-ready, startup: false, activationEvent: 'onDebugResolve'
+2024-05-10 20:52:56.629 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2024-05-10 20:54:36.304 [info] ExtensionService#_doActivateExtension ms-python.debugpy, startup: false, activationEvent: 'onLanguage:python'
+2024-05-10 20:54:36.395 [error] Activating extension ms-python.debugpy failed due to an error:
+2024-05-10 20:54:36.395 [error] Error: Extension 'ms-python.debugpy' CANNOT use API proposal: portsAttributes.
+Its package.json#enabledApiProposals-property declares:  but NOT portsAttributes.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-python.debugpy
+	at v (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:141:51558)
+	at Object.registerPortAttributesProvider (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:163:42097)
+	at t.registerDebugger (/home/nisidabay/.vscode-oss/extensions/ms-python.debugpy-2024.6.0-linux-x64/dist/extension.js:2:880557)
+	at e.activate (/home/nisidabay/.vscode-oss/extensions/ms-python.debugpy-2024.6.0-linux-x64/dist/extension.js:2:1128292)
+	at Z.kb (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:159:13415)
+	at Z.jb (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:159:13128)
+	at /usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:159:11153
+	at async h.n (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:143:6281)
+	at async h.m (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:143:6244)
+	at async h.l (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:143:5701)
+2024-05-10 20:55:33.861 [info] Extension host terminating: renderer closed the MessagePort
+2024-05-10 20:55:33.893 [error] Error: ENOENT: no such file or directory, open '/home/nisidabay/.config/Code - OSS/User/globalStorage/vscodevim.vim/.registers'
+2024-05-10 20:55:33.899 [error] Error: Channel has been closed
+	at r (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:156:2490)
+	at Object.append (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:156:2566)
+	at Socket.<anonymous> (/home/nisidabay/.vscode-oss/extensions/llvm-vs-code-extensions.vscode-clangd-0.1.28-universal/out/bundle.js:39:57046)
+	at Socket.emit (node:events:517:28)
+	at addChunk (node:internal/streams/readable:335:12)
+	at readableAddChunk (node:internal/streams/readable:308:9)
+	at Readable.push (node:internal/streams/readable:245:10)
+	at Pipe.onStreamRead (node:internal/stream_base_commons:190:23)
+2024-05-10 20:55:33.901 [error] Error: Channel has been closed
+	at r (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:156:2490)
+	at Object.append (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:156:2566)
+	at Socket.<anonymous> (/home/nisidabay/.vscode-oss/extensions/llvm-vs-code-extensions.vscode-clangd-0.1.28-universal/out/bundle.js:39:57046)
+	at Socket.emit (node:events:517:28)
+	at addChunk (node:internal/streams/readable:335:12)
+	at readableAddChunk (node:internal/streams/readable:308:9)
+	at Readable.push (node:internal/streams/readable:245:10)
+	at Pipe.onStreamRead (node:internal/stream_base_commons:190:23)
+2024-05-10 20:55:33.936 [info] Extension host with pid 2404855 exiting with code 0

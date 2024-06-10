@@ -1,0 +1,11 @@
+This extension adds notes managed by tagging without Hierarchized tree to sidebar.
+
+= Features
+
+* Manages data by tagging
+* Shown in sidebar
+* Imports notes from Vivaldi
+* Imports notes from Presto Opera
+* Backup and Restore data
+* Copy to notes by context menu of page
+* Add tag by context menu of page

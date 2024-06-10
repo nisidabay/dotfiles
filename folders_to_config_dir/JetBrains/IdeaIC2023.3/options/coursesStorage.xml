@@ -1,0 +1,16 @@
+<application>
+  <component name="CoursesStorage">
+    <courses>
+      <course>
+        <option name="description" value="&lt;p&gt;This course is designed for novices in Kotlin and focuses on the basic concepts of the Kotlin language. Each lesson of the course is built in the form of a project: step by step, by completing different small tasks, you will get a finished small project in the end. At the end of each lesson, an additional similar project will be offered: it includes all the lesson topics but does not contain the theory part.&lt;/p&gt;&#10;&lt;p&gt;&lt;i&gt;Note, this course does not provide a detailed explanation of the basic concepts, like variables: it just shows how to use them in Kotlin and can briefly remind you the definitions.&lt;/i&gt;&lt;/p&gt;&#10;&lt;p&gt;All topics will be accompanied by links to the official Kotlin documentation, which you can read later. After this course, you will be ready to write basic console applications in the Kotlin-like style.&lt;/p&gt; " />
+        <option name="id" value="21067" />
+        <option name="location" value="$USER_HOME$/Downloads/Refactor/practice_kotlin/Kotlin_Onboarding__Introduction" />
+        <option name="name" value="Kotlin Onboarding: Introduction" />
+        <option name="tasksSolved" value="1" />
+        <option name="tasksTotal" value="9" />
+        <option name="type" value="Marketplace" />
+        <option name="programmingLanguageId" value="kotlin" />
+      </course>
+    </courses>
+  </component>
+</application>

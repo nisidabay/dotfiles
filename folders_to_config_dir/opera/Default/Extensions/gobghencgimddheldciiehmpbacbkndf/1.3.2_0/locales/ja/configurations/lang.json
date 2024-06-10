@@ -1,0 +1,82 @@
+{
+	"LanguageFileDoNotEdit"              : "このファイルはエクステンションの言語ファイルです。",
+
+	"lang"                               : "ja",
+	"translator"                         : "Whochan",
+	"translator::url"                    : "http://far.whochan.com/",
+
+	"Preferences"                        : "設定",
+
+	"General"                            : "全般",
+	"General::ButtonView"                : "エクステンションボタンを表示する",
+
+	"Note"                               : "メモ",
+	"Note::Blank"                        : "新しいメモ",
+	"Note::URL"                          : "アドレス",
+	"Note::Add"                          : "ここに追加",
+	"Note::NewTagSelected"               : "これらにタグ",
+	"Note::ExportSelected"               : "これらを保存",
+	"Note::RemoveSelected"               : "これらを削除",
+	"Note::RemoveSelected::confirm"      : "表示中のこれらのメモをまるごと削除します",
+	"Note::NewTag"                       : "タグを追加",
+
+	"Tag::Reserved::NoTags"              : "未分類",
+	"Tag::Reserved::Trash"               : "ゴミ箱",
+	"Tag::Reserved::Locked"              : "保護",
+	"Tag::Reserved::NewTag"              : "新しいタグ",
+	"Tag::Reserved::ContextMenu"         : "メニューで利用",
+
+	"Tag::RemoveFromAllNotes"            : "次のタグを全て削除します",
+
+	"Tools"                              : "ツール",
+	"Tools::Backup"                      : "全てのノートをファイルに保存する",
+	"Tools::Restore"                     : "ファイルからノートを復元する",
+
+	"Import::PrestoAdr"                  : "Presto Opera のメモ (notes.adr) をインポートする",
+	"Import::Vivaldi"                    : "Vivaldi のメモ (Notes) をインポートする",
+	"Import::OperaLink"                  : "Opera Link からメモをインポートする",
+
+	"Command::CopyToNotes"               : "ノートへコピー",
+	"Command::AddCurrentTag"             : "タグを追加",
+	"Command::OpenNotesInWindow"         : "ノートをタブで開く",
+
+	"Help"                               : "ヘルプ",
+	"Help::Contact"                      : "問い合わせ",
+	"Help::Informations"                 : "情報",
+	"Help::Informations::About"          : "このエクステンションについて",
+	"Help::Informations::About::URL"     : "http://far.whochan.com/wlog.cgi/TaggingNotes",
+	"Help::Informations::ChangeLog"      : "更新履歴",
+	"Help::Informations::ChangeLog::URL" : "http://far.whochan.com/diary.cgi?tag=TaggingNotes",
+	"Help::Forum"                        : "フォーラム",
+	"Help::Forum::Questions"             : "質問・チュートリアル",
+	"Help::Forum::Requests"              : "要望・アイディア",
+	"Help::Forum::Report"                : "不具合報告",
+	"Help::Forum::Translations"          : "翻訳",
+	"Help::Downloads"                    : "ダウンロード",
+	"Help::Downloads::Opera"             : "Opera 用",
+	"Help::Downloads::Chrome"            : "Chrome 用",
+	"Help::Downloads::Firefox"           : "Firefox 用",
+	"Help::Downloads::Development"       : "開発版",
+	"Help::Translations"                 : "翻訳",
+	"Help::Licenses"                     : "権利",
+	"Help::Privacy"                      : "個人情報の取り扱い",
+	"Help::Privacy::Policy"              : "この拡張機能は利用者の個人情報を一切取得しません。この拡張機能は、設定をブラウザ内に保存します。利用者が希望した場合、設定はブラウザベンダーが提供するクラウド領域に保存されます。",
+
+	"Donation"                           : "援助",
+	"Donation::Please"                   : "私は、いくつかのブラウザエクステンションを趣味で開発しています。開発は気分によって行われます。もし何かしらの見返りがあれば、より開発は捗るでしょう。安定した開発環境構築のため、どうか幾ばくかの支援をお願いします。ただし、日本国内では物品の売買を伴わない個人間の送金が禁じられていますので、Vプリカギフトのプレゼントをお願いしています。",
+	"Donation::Amazon"                   : "物を贈る",
+	"Donation::Amazon::Description"      : "Amazon.co.jp で商品をプレゼントしてください。",
+	"Donation::LifeCard"                 : "Vプリカを贈る",
+	"Donation::LifeCard::Description"    : "「WHOCHAN donation@whochan.com」宛てにVプリカギフトを贈ってください。",
+	"Donation::ValueDomain"              : "サーバ費用を贈る",
+	"Donation::ValueDomain::Description" : "「whochan」宛てに Value-Domain の残金を送金してください。",
+	"Donation::BuyDomain"                : "ドメイン購入",
+	"Donation::BuyDomain::Description"   : "リンク先から Value-Domain のサービスを購入すると、1件あたり100円が送金されます。",
+
+	"ADDRESS::FAR"                       : "工房らくだ舎",
+	"ADDRESS::Support"                   : "サポートページ",
+
+	"Siteprefs::Disable"                 : "このサイトで無効にする。",
+
+	"eof":""
+}

@@ -1,0 +1,379 @@
+<application>
+  <component name="VimHistorySettings">
+    <history>
+      <history-search>
+        <entry encoding="base64">Y3JlYXRp</entry>
+      </history-search>
+      <history-cmd>
+        <entry encoding="base64">WA==</entry>
+        <entry encoding="base64">eA==</entry>
+        <entry encoding="base64">dw==</entry>
+        <entry encoding="base64">cQ==</entry>
+      </history-cmd>
+      <history-expr />
+      <history-input />
+    </history>
+  </component>
+  <component name="VimJumpsSettings">
+    <project id="$USER_HOME$/IdeaProjects/kotlinApprentice">
+      <jump line="7" column="0" filename="$USER_HOME$/IdeaProjects/kotlinApprentice/src/Main.kt" />
+      <jump line="6" column="18" filename="$USER_HOME$/IdeaProjects/kotlinApprentice/src/Main.kt" />
+      <jump line="10" column="12" filename="$USER_HOME$/IdeaProjects/kotlinApprentice/src/Main.kt" />
+      <jump line="4" column="10" filename="$USER_HOME$/IdeaProjects/kotlinApprentice/src/Main.kt" />
+      <jump line="2" column="11" filename="$USER_HOME$/IdeaProjects/kotlinApprentice/src/Main.kt" />
+      <jump line="14" column="39" filename="$USER_HOME$/IdeaProjects/kotlinApprentice/src/Main.kt" />
+      <jump line="16" column="0" filename="$USER_HOME$/IdeaProjects/kotlinApprentice/src/Main.kt" />
+      <jump line="8" column="0" filename="$USER_HOME$/IdeaProjects/kotlinApprentice/src/Main.kt" />
+      <jump line="12" column="27" filename="$USER_HOME$/IdeaProjects/kotlinApprentice/src/Main.kt" />
+      <jump line="15" column="16" filename="$USER_HOME$/IdeaProjects/kotlinApprentice/src/Main.kt" />
+      <jump line="13" column="28" filename="$USER_HOME$/IdeaProjects/kotlinApprentice/src/Main.kt" />
+      <jump line="5" column="5" filename="$USER_HOME$/IdeaProjects/kotlinApprentice/src/Main.kt" />
+      <jump line="19" column="32" filename="$USER_HOME$/IdeaProjects/kotlinApprentice/src/Main.kt" />
+      <jump line="20" column="0" filename="$USER_HOME$/IdeaProjects/kotlinApprentice/src/Main.kt" />
+    </project>
+    <project id="$USER_HOME$/Downloads/Refactor/practice_kotlin/untitled">
+      <jump line="15" column="17" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/TodoList-version2.kt" />
+      <jump line="32" column="44" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/TodoList-version2.kt" />
+      <jump line="23" column="25" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/TodoList-version2.kt" />
+      <jump line="2" column="47" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/TodoList-version2.kt" />
+      <jump line="3" column="53" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/TodoList-version2.kt" />
+    </project>
+    <project id="$USER_HOME$/Downloads/Refactor/practice_kotlin">
+      <jump line="17" column="24" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/TodoList-version2.kt" />
+      <jump line="18" column="4" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/TodoList-version2.kt" />
+      <jump line="21" column="37" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/TodoList-version2.kt" />
+      <jump line="33" column="42" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/TodoList-version2.kt" />
+      <jump line="44" column="33" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/TodoList-version2.kt" />
+      <jump line="1" column="1" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/TodoList-version1.kt" />
+      <jump line="6" column="3" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/read_only_list.kt" />
+      <jump line="8" column="11" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/read_only_list.kt" />
+      <jump line="7" column="17" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/read_only_list.kt" />
+      <jump line="10" column="4" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/read_only_list.kt" />
+      <jump line="11" column="32" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/read_only_list.kt" />
+      <jump line="8" column="30" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/TodoList-version1.kt" />
+      <jump line="28" column="24" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/TodoList-version1.kt" />
+      <jump line="50" column="20" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/TodoList-version1.kt" />
+      <jump line="55" column="12" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/TodoList-version1.kt" />
+      <jump line="25" column="28" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/TodoList-version1.kt" />
+      <jump line="19" column="19" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/TodoList-version1.kt" />
+      <jump line="21" column="17" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/TodoList-version1.kt" />
+      <jump line="22" column="37" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/TodoList-version1.kt" />
+      <jump line="10" column="31" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/TodoList-version1.kt" />
+      <jump line="8" column="1" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/TodoList-version2.kt" />
+      <jump line="7" column="17" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/TodoList-version2.kt" />
+      <jump line="12" column="25" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/TodoList-version2.kt" />
+      <jump line="10" column="23" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/TodoList-version2.kt" />
+      <jump line="15" column="8" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/TodoList-version1.kt" />
+      <jump line="9" column="9" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/TodoList-version2.kt" />
+      <jump line="7" column="37" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/TodoList-version1.kt" />
+      <jump line="13" column="0" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/TodoList-version2.kt" />
+      <jump line="19" column="0" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/TodoList-version2.kt" />
+      <jump line="20" column="4" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/TodoList-version2.kt" />
+      <jump line="39" column="0" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/TodoList-version2.kt" />
+      <jump line="15" column="44" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/TodoList-version2.kt" />
+      <jump line="24" column="4" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/TodoList-version2.kt" />
+      <jump line="14" column="12" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/TodoList-version2.kt" />
+      <jump line="40" column="44" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/TodoList-version2.kt" />
+      <jump line="42" column="24" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/TodoList-version2.kt" />
+      <jump line="25" column="9" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/TodoList-version2.kt" />
+      <jump line="35" column="8" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/TodoList-version2.kt" />
+      <jump line="34" column="0" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/TodoList-version2.kt" />
+      <jump line="36" column="0" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/TodoList-version2.kt" />
+      <jump line="30" column="34" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/TodoList-version2.kt" />
+      <jump line="37" column="26" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/TodoList-version2.kt" />
+      <jump line="46" column="0" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/TodoList-version2.kt" />
+      <jump line="23" column="0" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/TodoList-version2.kt" />
+      <jump line="0" column="0" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/TodoList-version1.kt" />
+      <jump line="11" column="34" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/TodoList-version1.kt" />
+      <jump line="5" column="10" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/read_only_list.kt" />
+      <jump line="3" column="11" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/read_only_list.kt" />
+      <jump line="0" column="0" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/TodoList-version2.kt" />
+      <jump line="21" column="39" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/.gitignore" />
+      <jump line="13" column="18" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/read_only_list.kt" />
+      <jump line="0" column="0" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/read_only_list.kt" />
+      <jump line="2" column="20" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/read_only_list.kt" />
+      <jump line="15" column="0" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/read_only_list.kt" />
+      <jump line="0" column="0" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/src/read_only_list.kt" />
+      <jump line="0" column="0" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/.gitignore" />
+      <jump line="0" column="0" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/src/Main.kt" />
+    </project>
+    <project id="$USER_HOME$/Downloads/Refactor/practice_kotlin/practice_kotlin">
+      <jump line="0" column="0" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/practice_kotlin/src/Main.kt" />
+    </project>
+    <project id="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM">
+      <jump line="0" column="6" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/KotlinStrings.kt" />
+      <jump line="3" column="26" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/KotlinStrings.kt" />
+      <jump line="11" column="29" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/KotlinStrings.kt" />
+      <jump line="8" column="3" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/KotlinStrings.kt" />
+      <jump line="5" column="5" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/KotlinStrings.kt" />
+      <jump line="15" column="18" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/KotlinStrings.kt" />
+      <jump line="18" column="18" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/KotlinStrings.kt" />
+      <jump line="17" column="18" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/KotlinStrings.kt" />
+      <jump line="14" column="4" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/when_example.kt" />
+      <jump line="7" column="8" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/when_example.kt" />
+      <jump line="8" column="8" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/when_example.kt" />
+      <jump line="2" column="14" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/when_example.kt" />
+      <jump line="12" column="8" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/when_example.kt" />
+      <jump line="6" column="0" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/while_examples.kt" />
+      <jump line="1" column="15" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/while_examples.kt" />
+      <jump line="13" column="0" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/while_examples.kt" />
+      <jump line="5" column="17" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/while_examples.kt" />
+      <jump line="23" column="0" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/while_examples.kt" />
+      <jump line="40" column="28" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/while_examples.kt" />
+      <jump line="4" column="18" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/while_examples.kt" />
+      <jump line="43" column="8" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/while_examples.kt" />
+      <jump line="2" column="39" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/arrays_examples.kt" />
+      <jump line="5" column="4" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/arrays_examples.kt" />
+      <jump line="4" column="4" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/arrays_examples.kt" />
+      <jump line="15" column="0" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/arrays_examples.kt" />
+      <jump line="7" column="0" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/arrays_examples.kt" />
+      <jump line="8" column="1" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/arrays_examples.kt" />
+      <jump line="3" column="22" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/arrays_examples.kt" />
+      <jump line="6" column="21" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/arrays_examples.kt" />
+      <jump line="9" column="0" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/arrays_examples.kt" />
+      <jump line="20" column="0" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/arrays_examples.kt" />
+      <jump line="21" column="7" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/arrays_examples.kt" />
+      <jump line="25" column="20" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/arrays_examples.kt" />
+      <jump line="24" column="21" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/arrays_examples.kt" />
+      <jump line="22" column="8" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/arrays_examples.kt" />
+      <jump line="26" column="25" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/arrays_examples.kt" />
+      <jump line="5" column="4" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/ranges_example.kt" />
+      <jump line="0" column="0" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/function_examples.kt" />
+      <jump line="3" column="10" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/function_examples.kt" />
+      <jump line="8" column="18" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/function_examples.kt" />
+      <jump line="7" column="18" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/Car.kt" />
+      <jump line="14" column="0" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/Car.kt" />
+      <jump line="16" column="34" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/Car.kt" />
+      <jump line="23" column="15" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/Car.kt" />
+      <jump line="26" column="6" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/Car.kt" />
+      <jump line="27" column="0" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/Car.kt" />
+      <jump line="25" column="29" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/Car.kt" />
+      <jump line="30" column="15" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/Car.kt" />
+      <jump line="13" column="17" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/Car.kt" />
+      <jump line="32" column="0" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/Car.kt" />
+      <jump line="0" column="0" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/test.kt" />
+      <jump line="2" column="16" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/test.kt" />
+      <jump line="0" column="0" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/text_example.kt" />
+      <jump line="0" column="0" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/list-example.kt" />
+      <jump line="6" column="13" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/test.kt" />
+      <jump line="8" column="12" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/test.kt" />
+      <jump line="7" column="16" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/test.kt" />
+      <jump line="12" column="8" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/test.kt" />
+      <jump line="10" column="15" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/test.kt" />
+      <jump line="14" column="0" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/test.kt" />
+      <jump line="3" column="12" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/test.kt" />
+      <jump line="18" column="16" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/Car.kt" />
+      <jump line="30" column="0" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/mcm_mcd.kt" />
+      <jump line="1" column="20" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/mcm_mcd.kt" />
+      <jump line="11" column="0" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/arrays_examples.kt" />
+      <jump line="0" column="0" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/arrays_examples.kt" />
+      <jump line="9" column="34" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/mcm_mcd.kt" />
+      <jump line="5" column="8" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/Array_Type_example.kt" />
+      <jump line="8" column="16" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/Array_Type_example.kt" />
+      <jump line="13" column="0" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/Array_Type_example.kt" />
+      <jump line="1" column="0" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/Array_Type_example.kt" />
+      <jump line="0" column="1" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/Array_Type_example.kt" />
+      <jump line="4" column="4" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/Array_Type_example.kt" />
+      <jump line="2" column="0" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/Array_Type_example.kt" />
+      <jump line="11" column="35" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/Array_Type_example.kt" />
+      <jump line="6" column="0" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/Array_Type_example.kt" />
+      <jump line="7" column="24" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/Array_Type_example.kt" />
+      <jump line="16" column="0" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/when_example.kt" />
+      <jump line="31" column="0" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/when_example.kt" />
+      <jump line="20" column="0" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/when_example.kt" />
+      <jump line="30" column="0" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/when_example.kt" />
+      <jump line="25" column="0" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/when_example.kt" />
+      <jump line="0" column="0" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/when_example.kt" />
+      <jump line="9" column="26" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/errorHandling_example.kt" />
+      <jump line="2" column="0" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/errorHandling_example.kt" />
+      <jump line="14" column="25" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/errorHandling_example.kt" />
+      <jump line="4" column="6" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/errorHandling_example.kt" />
+      <jump line="27" column="35" filename="$APPLICATION_CONFIG_DIR$/scratches/scratch.md" />
+      <jump line="0" column="8" filename="$APPLICATION_CONFIG_DIR$/scratches/scratch.md" />
+      <jump line="6" column="10" filename="$APPLICATION_CONFIG_DIR$/scratches/scratch.md" />
+      <jump line="21" column="4" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/errorHandling_example.kt" />
+      <jump line="124" column="0" filename="$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-stdlib/1.9.22/kotlin-stdlib-1.9.22-sources.jar!/jvmMain/kotlin/io/FileReadWrite.kt" />
+      <jump line="6" column="5" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/errorHandling_example.kt" />
+      <jump line="4" column="18" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/function_examples.kt" />
+      <jump line="27" column="4" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/function_examples.kt" />
+      <jump line="30" column="0" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/function_examples.kt" />
+      <jump line="36" column="14" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/function_examples.kt" />
+      <jump line="26" column="0" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/errorHandling_example.kt" />
+      <jump line="20" column="54" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/function_examples.kt" />
+      <jump line="21" column="0" filename="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/function_examples.kt" />
+    </project>
+  </component>
+  <component name="VimMarksSettings">
+    <globalmarks />
+    <localmarks>
+      <file name="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/text_example.kt" timestamp="1711882283491">
+        <mark key="&quot;" line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/Array_Type_example.kt" timestamp="1711932944059">
+        <mark key="&quot;" line="7" column="24" />
+        <mark key="'" line="27" column="0" />
+        <mark key="[" line="8" column="32" />
+        <mark key="]" line="9" column="0" />
+        <mark key="^" line="9" column="0" />
+        <mark key="." line="9" column="0" />
+      </file>
+      <file name="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/test.kt" timestamp="1711882541870">
+        <mark key="&quot;" line="3" column="12" />
+        <mark key="'" line="6" column="13" />
+        <mark key="[" line="3" column="12" />
+        <mark key="]" line="3" column="12" />
+        <mark key="^" line="13" column="24" />
+        <mark key="." line="3" column="13" />
+      </file>
+      <file name="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/arrays_examples.kt" timestamp="1711907570234">
+        <mark key="&quot;" line="0" column="0" />
+        <mark key="'" line="11" column="0" />
+        <mark key="[" line="3" column="0" />
+        <mark key="]" line="3" column="0" />
+        <mark key="." line="3" column="0" />
+        <mark key="^" line="22" column="26" />
+      </file>
+      <file name="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/list-example.kt" timestamp="1711882286638">
+        <mark key="&quot;" line="0" column="0" />
+      </file>
+      <file name="$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-stdlib/1.9.22/kotlin-stdlib-1.9.22-sources.jar!/jvmMain/kotlin/io/FileReadWrite.kt" timestamp="1711933116149">
+        <mark key="&quot;" line="124" column="0" />
+      </file>
+      <file name="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/when_example.kt" timestamp="1711932943061">
+        <mark key="&quot;" line="0" column="0" />
+        <mark key="'" line="25" column="0" />
+        <mark key="[" line="33" column="0" />
+        <mark key="]" line="33" column="0" />
+        <mark key="^" line="30" column="16" />
+        <mark key="." line="33" column="0" />
+      </file>
+      <file name="/" timestamp="1711991138367">
+        <mark key="&quot;" line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/mcm_mcd.kt" timestamp="1711932945261">
+        <mark key="&quot;" line="9" column="34" />
+        <mark key="'" line="30" column="0" />
+      </file>
+      <file name="$USER_HOME$/Downloads/Refactor/practice_kotlin/Kotlin_Onboarding__Introduction/Introduction/task/src/main/kotlin/jetbrains/kotlin/course/welcome/Main.kt" timestamp="1711990596086">
+        <mark key="&quot;" line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/function_examples.kt" timestamp="1712022454952">
+        <mark key="&quot;" line="4" column="18" />
+        <mark key="'" line="21" column="0" />
+        <mark key="[" line="32" column="0" />
+        <mark key="]" line="32" column="0" />
+        <mark key="^" line="9" column="19" />
+        <mark key="." line="32" column="0" />
+      </file>
+      <file name="$APPLICATION_CONFIG_DIR$/scratches/scratch.md" timestamp="1711932934480">
+        <mark key="&quot;" line="6" column="10" />
+        <mark key="'" line="0" column="8" />
+        <mark key="[" line="0" column="0" />
+        <mark key="]" line="0" column="0" />
+        <mark key="^" line="0" column="2" />
+        <mark key="." line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/errorHandling_example.kt" timestamp="1711933088715">
+        <mark key="[" line="6" column="4" />
+        <mark key="]" line="6" column="6" />
+        <mark key="^" line="6" column="6" />
+        <mark key="." line="6" column="5" />
+      </file>
+      <file name="$USER_HOME$/Downloads/Refactor/practice_kotlin/Kotlin_Onboarding__Introduction/TheFirstDateWithProgramming/task/src/main/kotlin/jetbrains/kotlin/course/first/date/Main.kt" timestamp="1711990786005">
+        <mark key="&quot;" line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/while_examples.kt" timestamp="1711869722978">
+        <mark key="&quot;" line="43" column="8" />
+        <mark key="'" line="40" column="28" />
+        <mark key="[" line="43" column="0" />
+        <mark key="]" line="43" column="17" />
+        <mark key="^" line="39" column="15" />
+        <mark key="." line="43" column="0" />
+      </file>
+      <file name="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/ranges_example.kt" timestamp="1711872903980">
+        <mark key="&quot;" line="5" column="4" />
+        <mark key="[" line="5" column="5" />
+        <mark key="]" line="6" column="12" />
+        <mark key="^" line="6" column="12" />
+        <mark key="." line="6" column="11" />
+      </file>
+      <file name="/fragment.java" timestamp="1711870808750">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/Car.kt" timestamp="1711882814950">
+        <mark key="&quot;" line="18" column="16" />
+        <mark key="'" line="13" column="17" />
+        <mark key="[" line="12" column="14" />
+        <mark key="]" line="12" column="14" />
+        <mark key="^" line="31" column="18" />
+        <mark key="." line="12" column="14" />
+      </file>
+      <file name="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM/src/Array_/Type_example.kt" timestamp="1711907596027">
+        <mark key="&quot;" line="2" column="0" />
+      </file>
+      <file name="$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-stdlib/1.9.22/kotlin-stdlib-1.9.22-sources.jar!/jvmMain/generated/_ComparisonsJvm.kt" timestamp="1712022453069">
+        <mark key="&quot;" line="49" column="25" />
+      </file>
+    </localmarks>
+  </component>
+  <component name="VimRegisterSettings">
+    <registers>
+      <register name="&quot;" type="LINE_WISE">
+        <text encoding="base64">Ly8gT1MK</text>
+      </register>
+      <register name="-" type="CHARACTER_WISE">
+        <text encoding="base64">IA==</text>
+      </register>
+      <register name="." type="CHARACTER_WISE">
+        <text encoding="base64">Ly8=</text>
+      </register>
+      <register name="/" type="CHARACTER_WISE">
+        <text encoding="base64">Y3JlYXRp</text>
+      </register>
+      <register name="0" type="LINE_WISE">
+        <text encoding="base64">ICAgIHByaW50bG4oIkJyYW5kOiAke2Nhci5icmFuZH0iKQogICAgcHJpbnRsbigiTW9kZWw6ICR7Y2FyLm1vZGVsfSIpCiAgICBwcmludGxuKCJZZWFyOiAke2Nhci55ZWFyfSIpCg==</text>
+      </register>
+      <register name="1" type="LINE_WISE">
+        <text encoding="base64">Ly8gT1MK</text>
+      </register>
+      <register name="2" type="LINE_WISE">
+        <text encoding="base64">ICAgIAo=</text>
+      </register>
+      <register name="3" type="LINE_WISE">
+        <text encoding="base64">LyoKYXJyYXlPZk51bGxzPFQ+KHNpemUpIGlzIHVzZWQgZm9yIGNyZWF0aW5nIGFycmF5cyB3aXRoIG51bGwtaW5pdGlhbGl6ZWQgZWxlbWVudHMsIHBhcnRpY3VsYXJseSB1c2VmdWwgd2hlbiB0aGUgYXJyYXkgc2l6ZSBpcyBrbm93biBidXQgaXRzIGVsZW1lbnRzIGFyZSB0byBiZSBwb3B1bGF0ZWQgbGF0ZXIuCg==</text>
+      </register>
+      <register name="4" type="LINE_WISE">
+        <text encoding="base64">ICAgIGsK</text>
+      </register>
+      <register name="5" type="LINE_WISE">
+        <text encoding="base64">ICAgICAgICAgICAgcHJpbnRsbihiKQo=</text>
+      </register>
+      <register name="6" type="LINE_WISE">
+        <text encoding="base64">ICAgICAgICAK</text>
+      </register>
+      <register name="7" type="LINE_WISE">
+        <text encoding="base64">ICAgIGZ1biBzcGVlZCh2YXI6bWF4P3BlZWQ6SW50KQo=</text>
+      </register>
+      <register name="8" type="LINE_WISE">
+        <text encoding="base64">ICAgIHByaW50bG4oIkJyYW5kOiAke2Nhci5icmFuZH0iKQo=</text>
+      </register>
+      <register name="9" type="LINE_WISE">
+        <text encoding="base64">ICAgIHByaW50bG4oY2FyLm1vZGVsKQogICAgcHJpbnRsbihjYXIueWVhcikK</text>
+      </register>
+      <register name=":" type="CHARACTER_WISE">
+        <text encoding="base64">cQ==</text>
+      </register>
+    </registers>
+  </component>
+  <component name="VimSearchSettings">
+    <search>
+      <last-dir encoding="base64">MQ==</last-dir>
+      <show-last encoding="base64">ZmFsc2U=</show-last>
+    </search>
+  </component>
+  <component name="VimVariables">
+    <vim-variables>
+      <variable key="widget_mode_theme_dark" value="Term" type="string" />
+    </vim-variables>
+  </component>
+</application>

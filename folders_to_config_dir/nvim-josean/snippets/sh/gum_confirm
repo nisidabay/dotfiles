@@ -1,0 +1,13 @@
+# Prompt user for leaving or continuing execution of the script
+
+while(:);do
+        gum style --bold  "Leave program?" --background="#2596be"
+        if gum confirm; then
+            echo 'Leaving'
+            break
+        else
+            gum style --bold "Continuing ..." --background="#be2596"  
+            sleep 2
+            continue;
+        fi
+    done

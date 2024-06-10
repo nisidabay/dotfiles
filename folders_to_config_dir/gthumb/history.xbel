@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="file:///mnt/sata/Pictures" added="2023-07-28T07:45:55.049946Z" modified="2023-07-28T07:45:55.049954Z" visited="2023-07-28T07:45:55.049947Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="gThumb" exec="&apos;gthumb %u&apos;" modified="2023-07-28T07:45:55.049950Z" count="1"/>
+        </bookmark:applications>
+        <bookmark:private/>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nisidabay/Downloads/Refactor/practice_tkinter" added="2023-07-28T07:45:55.049956Z" modified="2023-07-28T07:45:55.049961Z" visited="2023-07-28T07:45:55.049957Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="gThumb" exec="&apos;gthumb %u&apos;" modified="2023-07-28T07:45:55.049958Z" count="1"/>
+        </bookmark:applications>
+        <bookmark:private/>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="gphoto2://Apple_Inc._iPhone_6f634972fdc66821c80d838b9f12c9eb49eed15a/DCIM/202303__" added="2023-07-28T07:45:55.049970Z" modified="2023-07-28T07:45:55.049975Z" visited="2023-07-28T07:45:55.049970Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="gThumb" exec="&apos;gthumb %u&apos;" modified="2023-07-28T07:45:55.049973Z" count="1"/>
+        </bookmark:applications>
+        <bookmark:private/>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="gphoto2://Apple_Inc._iPhone_6f634972fdc66821c80d838b9f12c9eb49eed15a/DCIM/201601__" added="2023-07-28T07:45:55.049978Z" modified="2023-07-28T07:45:55.049981Z" visited="2023-07-28T07:45:55.049978Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="gThumb" exec="&apos;gthumb %u&apos;" modified="2023-07-28T07:45:55.049980Z" count="1"/>
+        </bookmark:applications>
+        <bookmark:private/>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="gphoto2://Apple_Inc._iPhone_6f634972fdc66821c80d838b9f12c9eb49eed15a/DCIM/201505__" added="2023-07-28T07:45:55.049984Z" modified="2023-07-28T07:45:55.049989Z" visited="2023-07-28T07:45:55.049984Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="gThumb" exec="&apos;gthumb %u&apos;" modified="2023-07-28T07:45:55.049986Z" count="1"/>
+        </bookmark:applications>
+        <bookmark:private/>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="gphoto2://Apple_Inc._iPhone_6f634972fdc66821c80d838b9f12c9eb49eed15a/DCIM/201410__" added="2023-07-28T07:45:55.049992Z" modified="2023-07-28T07:45:55.049996Z" visited="2023-07-28T07:45:55.049992Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="gThumb" exec="&apos;gthumb %u&apos;" modified="2023-07-28T07:45:55.049994Z" count="1"/>
+        </bookmark:applications>
+        <bookmark:private/>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="gphoto2://Apple_Inc._iPhone_6f634972fdc66821c80d838b9f12c9eb49eed15a/DCIM/201404__" added="2023-07-28T07:45:55.049998Z" modified="2023-07-28T07:45:55.050003Z" visited="2023-07-28T07:45:55.049998Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="gThumb" exec="&apos;gthumb %u&apos;" modified="2023-07-28T07:45:55.050002Z" count="1"/>
+        </bookmark:applications>
+        <bookmark:private/>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nisidabay/my_images" added="2023-07-28T07:45:55.050009Z" modified="2023-07-28T07:45:55.050012Z" visited="2023-07-28T07:45:55.050009Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="gThumb" exec="&apos;gthumb %u&apos;" modified="2023-07-28T07:45:55.050011Z" count="1"/>
+        </bookmark:applications>
+        <bookmark:private/>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>

@@ -1,0 +1,89 @@
+<project version="4">
+  <component name="BookmarksManager">
+    <option name="groups">
+      <GroupState>
+        <option name="name" value="Kotlin_Onboarding__Introduction" />
+      </GroupState>
+    </option>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="-1" />
+  </component>
+  <component name="FileTypeUsageLocalSummary">
+    <fileType name="Kotlin">
+      <summary usageCount="10" lastUsed="1711990722651" />
+    </fileType>
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="LanguageUsageStatistics">
+    <language id="kotlin">
+      <summary usageCount="10" lastUsage="1711990722654" />
+    </language>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" />
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
+      <pane id="Scope" />
+      <pane id="Course">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Kotlin_Onboarding__Introduction" type="a264ea2a:RootNode" />
+              <item name="dir{file:///home/nisidabay/Downloads/Refactor/practice_kotlin/Kotlin_Onboarding__Introduction}" type="ed842865:CourseNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="ToolWindowManager">
+    <layoutV2>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19573955" />
+      <window_info id="Commit" order="1" weight="0.25" />
+      <window_info active="true" id="Structure" order="2" side_tool="true" visible="true" weight="0.19573955" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Problems" order="1" />
+      <window_info anchor="bottom" id="Problems View" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="3" />
+      <window_info anchor="bottom" id="Services" order="4" />
+      <window_info anchor="bottom" id="Build" order="5" show_stripe_button="false" weight="0.33005822" />
+      <window_info anchor="right" content_ui="combo" id="Notifications" order="0" weight="0.25" />
+      <window_info anchor="right" id="AIAssistant" order="1" weight="0.25" />
+      <window_info anchor="right" id="Database" order="2" weight="0.25" />
+      <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.25" />
+      <window_info anchor="right" id="Task" order="5" visible="true" weight="0.68930864" />
+      <window_info anchor="right" id="Coverage" order="5" side_tool="true" />
+      <unified_weights bottom="0.33005822" left="0.19573955" right="0.68930864" />
+    </layoutV2>
+    <recentWindows>
+      <value>Project</value>
+      <value>Structure</value>
+      <value>Task</value>
+      <value>Build</value>
+    </recentWindows>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1165" y="204" width="1392" height="1056" key="SettingsEditor" timestamp="1711990948674">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="1165" y="204" width="1392" height="1056" key="SettingsEditor/0.0.2560.1440@0.0.2560.1440" timestamp="1711990948674" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Introduction/task/src/main/kotlin/jetbrains/kotlin/course/welcome/Main.kt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TheFirstDateWithProgramming/task/src/main/kotlin/jetbrains/kotlin/course/first/date/Main.kt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+  </component>
+</project>

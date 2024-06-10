@@ -1,0 +1,42 @@
+<application>
+  <component name="RecentProjectsManager">
+    <option name="additionalInfo">
+      <map>
+        <entry key="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM">
+          <value>
+            <RecentProjectMetaInfo frameTitle="CLM – function_examples.kt" opened="true" projectWorkspaceId="2eBhZQ5DsXSGDu10TtI2sCD7pHy">
+              <option name="activationTimestamp" value="1716403531478" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IC-233.14808.21" />
+              <option name="buildTimestamp" value="1710362280000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="1" />
+              </option>
+              <frame x="1292" y="42" width="1250" height="1380" />
+              <option name="productionCode" value="IC" />
+              <option name="projectOpenTimestamp" value="1711383941097" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Downloads/Refactor/practice_kotlin/Kotlin_Onboarding__Introduction">
+          <value>
+            <RecentProjectMetaInfo frameTitle="Kotlin_Onboarding__Introduction" projectWorkspaceId="2eVX3hHGiL5xGctKvujRg0IoVxe">
+              <option name="activationTimestamp" value="1711990948716" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IC-233.15026.9" />
+              <option name="buildTimestamp" value="1711100580000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="2" />
+              </option>
+              <frame x="1292" y="42" width="1250" height="1380" />
+              <option name="productionCode" value="IC" />
+              <option name="projectOpenTimestamp" value="1711990521310" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="lastOpenedProject" value="$USER_HOME$/Downloads/Refactor/practice_kotlin/CLM" />
+    <option name="lastProjectLocation" value="$USER_HOME$/Downloads/Refactor/practice_kotlin" />
+  </component>
+</application>

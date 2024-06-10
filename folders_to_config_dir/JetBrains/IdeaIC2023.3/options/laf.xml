@@ -1,0 +1,9 @@
+<application>
+  <component name="LafManager">
+    <laf themeId="com.github.catppuccin.mocha.jetbrains" />
+    <lafs-to-previous-schemes>
+      <laf-to-scheme laf="1a889165-3e3a-4b17-8191-668be6e1fdca" scheme="_@user_Default" />
+      <laf-to-scheme laf="Darcula" scheme="_@user_Darcula" />
+    </lafs-to-previous-schemes>
+  </component>
+</application>

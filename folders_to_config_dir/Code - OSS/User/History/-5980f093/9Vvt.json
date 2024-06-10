@@ -1,0 +1,23 @@
+{
+    "editor.fontSize": 16,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [";", ";"],
+            "after": ["<Esc>"],
+        }
+    ],
+    "vim.normalModeKeyBindings": [
+        {
+            "before": [";", ";"],
+            "after": ["<Esc>"],
+        }
+    ],
+    "vim.commandLineModeKeyBindings": [
+        
+
+        {
+            "before": [";", ";"],
+            "after": ["<Esc>"],
+        }
+    ]
+}

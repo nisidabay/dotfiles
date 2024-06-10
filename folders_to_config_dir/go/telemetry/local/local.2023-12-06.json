@@ -1,0 +1,24 @@
+{
+ "Week": "2023-12-06",
+ "LastWeek": "",
+ "X": 0.5486739451005356,
+ "Programs": [
+  {
+   "Program": "golang.org/x/tools/gopls",
+   "Version": "v0.14.2",
+   "GoVersion": "go1.21.4",
+   "GOOS": "linux",
+   "GOARCH": "amd64",
+   "Counters": {
+    "counter/main": 46,
+    "gopls/client-other:emacs": 3,
+    "gopls/client-other:vim-go": 36,
+    "gopls/client:other": 39,
+    "gopls/goversion:1.21": 39,
+    "gopls/hover/latency:\u003c10ms": 8
+   },
+   "Stacks": {}
+  }
+ ],
+ "Config": "v0.9.0"
+}

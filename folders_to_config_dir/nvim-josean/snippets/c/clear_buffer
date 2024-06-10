@@ -1,0 +1,7 @@
+// Clear the stdin buffer
+void ClearBuffer() {
+  int c;
+  while ((c = getchar()) != '\n' && c != EOF)
+    ;  
+}
+

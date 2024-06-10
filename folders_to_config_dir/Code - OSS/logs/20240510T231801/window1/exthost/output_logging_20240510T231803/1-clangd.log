@@ -1,0 +1,1993 @@
+I[23:18:21.993] clangd version 17.0.6
+I[23:18:21.993] Features: linux
+I[23:18:21.993] PID: 82386
+I[23:18:21.993] Working directory: /home/nisidabay
+I[23:18:21.993] argv[0]: /usr/bin/clangd
+I[23:18:21.993] Starting LSP over stdin/stdout
+I[23:18:21.993] <-- initialize(0)
+I[23:18:21.994] --> reply:initialize(0) 0 ms
+I[23:18:21.995] <-- initialized
+I[23:18:22.003] <-- textDocument/didOpen
+I[23:18:22.003] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:18:22.004] ASTWorker building file /home/nisidabay/end_of_file.c version 1 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:18:22.005] --> textDocument/clangd.fileStatus
+I[23:18:22.039] Built preamble of size 374784 for file /home/nisidabay/end_of_file.c version 1 in 0.03 seconds
+I[23:18:22.040] --> workspace/semanticTokens/refresh(0)
+I[23:18:22.040] Indexing c17 standard library in the context of /home/nisidabay/end_of_file.c
+I[23:18:22.045] <-- reply(0)
+I[23:18:22.048] --> textDocument/publishDiagnostics
+I[23:18:22.050] --> textDocument/inactiveRegions
+I[23:18:22.051] --> textDocument/clangd.fileStatus
+I[23:18:22.157] <-- textDocument/documentSymbol(1)
+I[23:18:22.157] --> reply:textDocument/documentSymbol(1) 0 ms
+I[23:18:22.157] --> textDocument/clangd.fileStatus
+I[23:18:22.178] <-- textDocument/documentLink(2)
+I[23:18:22.178] --> reply:textDocument/documentLink(2) 0 ms
+I[23:18:22.178] --> textDocument/clangd.fileStatus
+I[23:18:22.181] Indexed c17 standard library: 2841 symbols, 0 filtered
+I[23:18:22.185] <-- textDocument/inlayHint(3)
+I[23:18:22.185] --> reply:textDocument/inlayHint(3) 0 ms
+I[23:18:22.185] --> textDocument/clangd.fileStatus
+I[23:18:22.185] <-- textDocument/semanticTokens/full(4)
+I[23:18:22.185] --> reply:textDocument/semanticTokens/full(4) 0 ms
+I[23:18:22.186] --> textDocument/clangd.fileStatus
+I[23:18:22.254] <-- textDocument/codeAction(5)
+I[23:18:22.254] --> reply:textDocument/codeAction(5) 0 ms
+I[23:18:22.254] --> textDocument/clangd.fileStatus
+I[23:18:22.454] <-- textDocument/documentSymbol(6)
+I[23:18:22.454] --> reply:textDocument/documentSymbol(6) 0 ms
+I[23:18:22.454] --> textDocument/clangd.fileStatus
+I[23:18:22.460] <-- textDocument/foldingRange(7)
+I[23:18:22.460] --> reply:textDocument/foldingRange(7) 0 ms
+I[23:18:24.392] <-- textDocument/inlayHint(8)
+I[23:18:24.392] --> reply:textDocument/inlayHint(8) 0 ms
+I[23:18:24.392] --> textDocument/clangd.fileStatus
+I[23:18:27.075] <-- textDocument/codeAction(9)
+I[23:18:27.075] --> reply:textDocument/codeAction(9) 0 ms
+I[23:18:27.075] --> textDocument/clangd.fileStatus
+I[23:18:27.259] <-- textDocument/documentHighlight(10)
+I[23:18:27.259] --> reply:textDocument/documentHighlight(10) 0 ms
+I[23:18:27.259] --> textDocument/clangd.fileStatus
+I[23:18:27.507] <-- textDocument/codeAction(11)
+I[23:18:27.508] --> reply:textDocument/codeAction(11) 0 ms
+I[23:18:27.508] --> textDocument/clangd.fileStatus
+I[23:18:27.947] <-- textDocument/didChange
+I[23:18:27.947] --> textDocument/clangd.fileStatus
+I[23:18:27.980] <-- textDocument/completion(12)
+I[23:18:27.982] <-- textDocument/documentHighlight(13)
+I[23:18:27.983] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:18:27.983] ASTWorker building file /home/nisidabay/end_of_file.c version 2 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:18:27.984] --> textDocument/clangd.fileStatus
+I[23:18:27.985] Code complete: sema context TopLevel, query scopes [] (AnyScope=true), expected type <none>
+I[23:18:27.985] Code complete: 0 results from Sema, 8 from Index, 0 matched, 0 from identifiers, 8 returned (incomplete).
+I[23:18:27.986] --> reply:textDocument/completion(12) 6 ms
+I[23:18:27.989] --> textDocument/publishDiagnostics
+I[23:18:27.989] --> textDocument/inactiveRegions
+I[23:18:27.990] --> reply:textDocument/documentHighlight(13) 7 ms
+I[23:18:27.990] --> textDocument/clangd.fileStatus
+I[23:18:28.151] <-- textDocument/foldingRange(14)
+I[23:18:28.151] --> reply:textDocument/foldingRange(14) 0 ms
+I[23:18:28.246] <-- textDocument/semanticTokens/full/delta(15)
+I[23:18:28.246] --> reply:textDocument/semanticTokens/full/delta(15) 0 ms
+I[23:18:28.246] --> textDocument/clangd.fileStatus
+I[23:18:28.301] <-- textDocument/documentSymbol(16)
+I[23:18:28.301] --> reply:textDocument/documentSymbol(16) 0 ms
+I[23:18:28.301] --> textDocument/clangd.fileStatus
+I[23:18:28.315] <-- textDocument/codeAction(17)
+I[23:18:28.315] --> reply:textDocument/codeAction(17) 0 ms
+I[23:18:28.315] --> textDocument/clangd.fileStatus
+I[23:18:28.318] <-- textDocument/documentSymbol(18)
+I[23:18:28.318] --> reply:textDocument/documentSymbol(18) 0 ms
+I[23:18:28.318] --> textDocument/clangd.fileStatus
+I[23:18:28.847] <-- textDocument/didChange
+I[23:18:28.847] --> textDocument/clangd.fileStatus
+I[23:18:28.850] <-- textDocument/completion(19)
+I[23:18:28.853] Code complete: sema context TopLevel, query scopes [] (AnyScope=true), expected type <none>
+I[23:18:28.853] Code complete: 0 results from Sema, 0 from Index, 0 matched, 0 from identifiers, 0 returned (incomplete).
+I[23:18:28.853] --> reply:textDocument/completion(19) 3 ms
+I[23:18:28.871] <-- textDocument/documentHighlight(20)
+I[23:18:28.871] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:18:28.871] ASTWorker building file /home/nisidabay/end_of_file.c version 3 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:18:28.872] <-- textDocument/didChange
+I[23:18:28.872] --> textDocument/clangd.fileStatus
+I[23:18:28.875] <-- $/cancelRequest
+I[23:18:28.876] --> textDocument/publishDiagnostics
+I[23:18:28.876] --> textDocument/inactiveRegions
+I[23:18:28.876] --> reply:textDocument/documentHighlight(20) 5 ms, error: Task was cancelled.
+I[23:18:28.876] --> textDocument/clangd.fileStatus
+I[23:18:28.877] <-- textDocument/completion(21)
+[Error - 23:18:28] Request textDocument/documentHighlight failed.
+[object Object]
+I[23:18:28.881] Code complete: sema context TopLevel, query scopes [] (AnyScope=true), expected type <none>
+I[23:18:28.881] Code complete: 0 results from Sema, 8 from Index, 0 matched, 0 from identifiers, 8 returned (incomplete).
+I[23:18:28.881] --> reply:textDocument/completion(21) 4 ms
+I[23:18:28.892] <-- textDocument/documentHighlight(22)
+I[23:18:28.892] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:18:28.892] ASTWorker building file /home/nisidabay/end_of_file.c version 4 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:18:28.893] --> textDocument/clangd.fileStatus
+I[23:18:28.897] --> textDocument/publishDiagnostics
+I[23:18:28.897] --> textDocument/inactiveRegions
+I[23:18:28.897] --> reply:textDocument/documentHighlight(22) 5 ms
+I[23:18:28.897] --> textDocument/clangd.fileStatus
+I[23:18:28.981] <-- textDocument/didChange
+I[23:18:28.981] --> textDocument/clangd.fileStatus
+I[23:18:29.000] <-- textDocument/documentHighlight(23)
+I[23:18:29.000] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:18:29.000] ASTWorker building file /home/nisidabay/end_of_file.c version 5 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:18:29.001] --> textDocument/clangd.fileStatus
+I[23:18:29.006] --> textDocument/publishDiagnostics
+I[23:18:29.006] --> textDocument/inactiveRegions
+I[23:18:29.006] --> reply:textDocument/documentHighlight(23) 6 ms
+I[23:18:29.006] --> textDocument/clangd.fileStatus
+I[23:18:29.147] <-- textDocument/semanticTokens/full/delta(24)
+I[23:18:29.147] --> reply:textDocument/semanticTokens/full/delta(24) 0 ms
+I[23:18:29.147] --> textDocument/clangd.fileStatus
+I[23:18:29.182] <-- textDocument/foldingRange(25)
+I[23:18:29.183] --> reply:textDocument/foldingRange(25) 0 ms
+I[23:18:29.260] <-- textDocument/codeAction(26)
+I[23:18:29.260] --> reply:textDocument/codeAction(26) 0 ms
+I[23:18:29.260] --> textDocument/clangd.fileStatus
+I[23:18:29.332] <-- textDocument/documentSymbol(27)
+I[23:18:29.332] --> reply:textDocument/documentSymbol(27) 0 ms
+I[23:18:29.332] --> textDocument/clangd.fileStatus
+I[23:18:29.333] <-- textDocument/documentSymbol(28)
+I[23:18:29.333] --> reply:textDocument/documentSymbol(28) 0 ms
+I[23:18:29.333] --> textDocument/clangd.fileStatus
+I[23:18:29.983] <-- textDocument/documentLink(29)
+I[23:18:29.983] --> reply:textDocument/documentLink(29) 0 ms
+I[23:18:29.983] --> textDocument/clangd.fileStatus
+I[23:18:30.233] <-- textDocument/inlayHint(30)
+I[23:18:30.233] --> reply:textDocument/inlayHint(30) 0 ms
+I[23:18:30.233] --> textDocument/clangd.fileStatus
+I[23:18:30.651] <-- textDocument/codeAction(31)
+I[23:18:30.651] --> reply:textDocument/codeAction(31) 0 ms
+I[23:18:30.651] --> textDocument/clangd.fileStatus
+I[23:18:31.961] <-- textDocument/didChange
+I[23:18:31.961] --> textDocument/clangd.fileStatus
+I[23:18:31.965] <-- textDocument/documentHighlight(32)
+I[23:18:31.965] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:18:31.965] ASTWorker building file /home/nisidabay/end_of_file.c version 6 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:18:31.966] --> textDocument/clangd.fileStatus
+I[23:18:31.970] --> textDocument/clangd.fileStatus
+I[23:18:31.970] --> textDocument/publishDiagnostics
+I[23:18:31.970] --> textDocument/inactiveRegions
+I[23:18:31.970] --> textDocument/clangd.fileStatus
+I[23:18:31.970] --> reply:textDocument/documentHighlight(32) 5 ms
+I[23:18:31.970] --> textDocument/clangd.fileStatus
+I[23:18:31.974] <-- textDocument/completion(33)
+I[23:18:31.978] Code complete: sema context TopLevel, query scopes [] (AnyScope=true), expected type <none>
+I[23:18:31.978] Code complete: 0 results from Sema, 8 from Index, 0 matched, 0 from identifiers, 8 returned (incomplete).
+I[23:18:31.979] --> reply:textDocument/completion(33) 4 ms
+I[23:18:31.990] Built preamble of size 374784 for file /home/nisidabay/end_of_file.c version 6 in 0.02 seconds
+I[23:18:31.990] --> workspace/semanticTokens/refresh(1)
+I[23:18:31.990] --> textDocument/clangd.fileStatus
+I[23:18:31.991] <-- reply(1)
+I[23:18:31.992] <-- textDocument/semanticTokens/full/delta(34)
+I[23:18:31.996] --> textDocument/publishDiagnostics
+I[23:18:31.996] --> textDocument/inactiveRegions
+I[23:18:31.996] --> reply:textDocument/semanticTokens/full/delta(34) 3 ms
+I[23:18:31.996] --> textDocument/clangd.fileStatus
+I[23:18:32.162] <-- textDocument/foldingRange(35)
+I[23:18:32.162] --> reply:textDocument/foldingRange(35) 0 ms
+I[23:18:32.267] <-- textDocument/codeAction(36)
+I[23:18:32.267] --> reply:textDocument/codeAction(36) 0 ms
+I[23:18:32.267] --> textDocument/clangd.fileStatus
+I[23:18:32.312] <-- textDocument/documentSymbol(37)
+I[23:18:32.312] --> reply:textDocument/documentSymbol(37) 0 ms
+I[23:18:32.312] --> textDocument/clangd.fileStatus
+I[23:18:32.317] <-- textDocument/documentSymbol(38)
+I[23:18:32.317] --> reply:textDocument/documentSymbol(38) 0 ms
+I[23:18:32.317] --> textDocument/clangd.fileStatus
+I[23:18:32.759] <-- textDocument/didChange
+I[23:18:32.759] --> textDocument/clangd.fileStatus
+I[23:18:32.761] <-- textDocument/completion(39)
+I[23:18:32.765] Code complete: sema context TopLevel, query scopes [] (AnyScope=true), expected type <none>
+I[23:18:32.765] Code complete: 0 results from Sema, 0 from Index, 0 matched, 0 from identifiers, 0 returned (incomplete).
+I[23:18:32.765] --> reply:textDocument/completion(39) 4 ms
+I[23:18:32.778] <-- textDocument/documentHighlight(40)
+I[23:18:32.778] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:18:32.778] ASTWorker building file /home/nisidabay/end_of_file.c version 7 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:18:32.779] <-- textDocument/didChange
+I[23:18:32.779] --> textDocument/clangd.fileStatus
+I[23:18:32.780] <-- $/cancelRequest
+I[23:18:32.781] <-- textDocument/completion(41)
+I[23:18:32.785] --> textDocument/publishDiagnostics
+I[23:18:32.785] <-- textDocument/documentHighlight(42)
+I[23:18:32.785] --> textDocument/inactiveRegions
+I[23:18:32.785] --> reply:textDocument/documentHighlight(40) 7 ms, error: Task was cancelled.
+I[23:18:32.785] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:18:32.785] ASTWorker building file /home/nisidabay/end_of_file.c version 8 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:18:32.786] Code complete: sema context TopLevel, query scopes [] (AnyScope=true), expected type <none>
+I[23:18:32.786] Code complete: 0 results from Sema, 8 from Index, 0 matched, 0 from identifiers, 8 returned (incomplete).
+I[23:18:32.786] --> reply:textDocument/completion(41) 5 ms
+I[23:18:32.786] --> textDocument/clangd.fileStatus
+[Error - 23:18:32] Request textDocument/documentHighlight failed.
+[object Object]
+I[23:18:32.791] --> textDocument/publishDiagnostics
+I[23:18:32.791] --> textDocument/inactiveRegions
+I[23:18:32.791] --> reply:textDocument/documentHighlight(42) 6 ms
+I[23:18:32.791] --> textDocument/clangd.fileStatus
+I[23:18:32.926] <-- textDocument/didChange
+I[23:18:32.926] --> textDocument/clangd.fileStatus
+I[23:18:32.976] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:18:32.976] ASTWorker building file /home/nisidabay/end_of_file.c version 9 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:18:32.977] --> textDocument/clangd.fileStatus
+I[23:18:32.981] --> textDocument/clangd.fileStatus
+I[23:18:32.982] --> textDocument/publishDiagnostics
+I[23:18:32.982] --> textDocument/inactiveRegions
+I[23:18:32.982] --> textDocument/clangd.fileStatus
+I[23:18:32.998] Built preamble of size 374784 for file /home/nisidabay/end_of_file.c version 9 in 0.02 seconds
+I[23:18:32.998] --> workspace/semanticTokens/refresh(2)
+I[23:18:32.998] --> textDocument/clangd.fileStatus
+I[23:18:32.999] <-- reply(2)
+I[23:18:33.001] <-- textDocument/semanticTokens/full/delta(43)
+I[23:18:33.003] --> textDocument/publishDiagnostics
+I[23:18:33.003] --> textDocument/inactiveRegions
+I[23:18:33.003] --> reply:textDocument/semanticTokens/full/delta(43) 1 ms
+I[23:18:33.003] --> textDocument/clangd.fileStatus
+I[23:18:33.126] <-- textDocument/foldingRange(44)
+I[23:18:33.127] --> reply:textDocument/foldingRange(44) 0 ms
+I[23:18:33.256] <-- textDocument/codeAction(45)
+I[23:18:33.256] --> reply:textDocument/codeAction(45) 0 ms
+I[23:18:33.256] --> textDocument/clangd.fileStatus
+I[23:18:33.276] <-- textDocument/documentSymbol(46)
+I[23:18:33.276] --> reply:textDocument/documentSymbol(46) 0 ms
+I[23:18:33.276] --> textDocument/clangd.fileStatus
+I[23:18:33.277] <-- textDocument/documentSymbol(47)
+I[23:18:33.277] --> reply:textDocument/documentSymbol(47) 0 ms
+I[23:18:33.277] --> textDocument/clangd.fileStatus
+I[23:18:33.927] <-- textDocument/documentLink(48)
+I[23:18:33.927] --> reply:textDocument/documentLink(48) 0 ms
+I[23:18:33.927] --> textDocument/clangd.fileStatus
+I[23:18:34.177] <-- textDocument/inlayHint(49)
+I[23:18:34.177] --> reply:textDocument/inlayHint(49) 0 ms
+I[23:18:34.177] --> textDocument/clangd.fileStatus
+I[23:19:10.190] <-- textDocument/inlayHint(50)
+I[23:19:10.190] --> reply:textDocument/inlayHint(50) 0 ms
+I[23:19:10.190] --> textDocument/clangd.fileStatus
+I[23:19:14.160] <-- textDocument/inlayHint(51)
+I[23:19:14.160] --> reply:textDocument/inlayHint(51) 0 ms
+I[23:19:14.160] --> textDocument/clangd.fileStatus
+I[23:19:31.378] <-- $/setTrace
+I[23:19:31.378] unhandled notification $/setTrace
+I[23:20:12.630] <-- $/setTrace
+I[23:20:12.630] unhandled notification $/setTrace
+I[23:21:00.236] <-- $/setTrace
+I[23:21:00.236] unhandled notification $/setTrace
+I[23:21:59.272] <-- $/setTrace
+I[23:21:59.272] unhandled notification $/setTrace
+I[23:22:59.687] <-- textDocument/codeAction(52)
+I[23:22:59.688] --> reply:textDocument/codeAction(52) 0 ms
+I[23:22:59.688] --> textDocument/clangd.fileStatus
+I[23:22:59.720] <-- textDocument/documentLink(53)
+I[23:22:59.721] --> reply:textDocument/documentLink(53) 0 ms
+I[23:22:59.721] <-- textDocument/inlayHint(54)
+I[23:22:59.721] --> reply:textDocument/inlayHint(54) 0 ms
+I[23:22:59.721] --> textDocument/clangd.fileStatus
+I[23:22:59.871] <-- textDocument/foldingRange(55)
+I[23:22:59.871] --> reply:textDocument/foldingRange(55) 0 ms
+I[23:22:59.930] <-- textDocument/codeAction(56)
+I[23:22:59.931] --> reply:textDocument/codeAction(56) 0 ms
+I[23:22:59.931] --> textDocument/clangd.fileStatus
+I[23:22:59.965] <-- textDocument/semanticTokens/full/delta(57)
+I[23:22:59.966] --> reply:textDocument/semanticTokens/full/delta(57) 0 ms
+I[23:22:59.966] --> textDocument/clangd.fileStatus
+I[23:22:59.977] <-- textDocument/documentSymbol(58)
+I[23:22:59.977] --> reply:textDocument/documentSymbol(58) 0 ms
+I[23:22:59.978] --> textDocument/clangd.fileStatus
+I[23:23:04.819] <-- textDocument/inlayHint(59)
+I[23:23:04.819] --> reply:textDocument/inlayHint(59) 0 ms
+I[23:23:04.819] --> textDocument/clangd.fileStatus
+I[23:23:10.754] <-- textDocument/didChange
+I[23:23:10.754] --> textDocument/clangd.fileStatus
+I[23:23:10.771] <-- textDocument/documentHighlight(60)
+I[23:23:10.771] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:10.771] ASTWorker building file /home/nisidabay/end_of_file.c version 10 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:10.772] <-- textDocument/completion(61)
+I[23:23:10.772] --> textDocument/clangd.fileStatus
+I[23:23:10.775] Code complete: sema context TopLevel, query scopes [] (AnyScope=true), expected type <none>
+I[23:23:10.775] --> textDocument/clangd.fileStatus
+I[23:23:10.775] Code complete: 0 results from Sema, 13 from Index, 0 matched, 0 from identifiers, 13 returned (incomplete).
+I[23:23:10.776] --> textDocument/publishDiagnostics
+I[23:23:10.776] --> textDocument/inactiveRegions
+I[23:23:10.776] --> textDocument/clangd.fileStatus
+I[23:23:10.776] --> reply:textDocument/documentHighlight(60) 5 ms
+I[23:23:10.776] --> textDocument/clangd.fileStatus
+I[23:23:10.776] --> reply:textDocument/completion(61) 4 ms
+I[23:23:10.810] Built preamble of size 374784 for file /home/nisidabay/end_of_file.c version 10 in 0.04 seconds
+I[23:23:10.810] --> workspace/semanticTokens/refresh(3)
+I[23:23:10.810] --> textDocument/clangd.fileStatus
+I[23:23:10.812] <-- reply(3)
+I[23:23:10.816] --> textDocument/publishDiagnostics
+I[23:23:10.816] --> textDocument/inactiveRegions
+I[23:23:10.816] --> textDocument/clangd.fileStatus
+I[23:23:10.828] <-- textDocument/semanticTokens/full/delta(62)
+I[23:23:10.829] --> reply:textDocument/semanticTokens/full/delta(62) 0 ms
+I[23:23:10.829] --> textDocument/clangd.fileStatus
+I[23:23:10.855] <-- textDocument/didChange
+I[23:23:10.855] --> textDocument/clangd.fileStatus
+I[23:23:10.857] <-- textDocument/completion(63)
+I[23:23:10.859] <-- textDocument/documentHighlight(64)
+I[23:23:10.859] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:10.859] ASTWorker building file /home/nisidabay/end_of_file.c version 11 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:10.861] --> textDocument/clangd.fileStatus
+I[23:23:10.861] Code complete: sema context TopLevel, query scopes [] (AnyScope=true), expected type <none>
+I[23:23:10.861] Code complete: 0 results from Sema, 0 from Index, 0 matched, 0 from identifiers, 0 returned (incomplete).
+I[23:23:10.861] --> reply:textDocument/completion(63) 4 ms
+I[23:23:10.865] --> textDocument/publishDiagnostics
+I[23:23:10.865] --> textDocument/inactiveRegions
+I[23:23:10.865] --> reply:textDocument/documentHighlight(64) 5 ms
+I[23:23:10.865] --> textDocument/clangd.fileStatus
+I[23:23:11.045] <-- textDocument/didChange
+I[23:23:11.045] --> textDocument/clangd.fileStatus
+I[23:23:11.060] <-- textDocument/completion(65)
+I[23:23:11.061] <-- textDocument/documentHighlight(66)
+I[23:23:11.061] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:11.061] ASTWorker building file /home/nisidabay/end_of_file.c version 12 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:11.063] --> textDocument/clangd.fileStatus
+I[23:23:11.065] Code complete: sema context TopLevel, query scopes [] (AnyScope=true), expected type <none>
+I[23:23:11.065] Code complete: 0 results from Sema, 0 from Index, 0 matched, 0 from identifiers, 0 returned.
+I[23:23:11.066] --> reply:textDocument/completion(65) 6 ms
+I[23:23:11.069] --> textDocument/publishDiagnostics
+I[23:23:11.069] --> textDocument/inactiveRegions
+I[23:23:11.069] --> reply:textDocument/documentHighlight(66) 7 ms
+I[23:23:11.069] --> textDocument/clangd.fileStatus
+I[23:23:11.156] <-- textDocument/semanticTokens/full/delta(67)
+I[23:23:11.156] --> reply:textDocument/semanticTokens/full/delta(67) 0 ms
+I[23:23:11.156] --> textDocument/clangd.fileStatus
+I[23:23:11.246] <-- textDocument/foldingRange(68)
+I[23:23:11.246] --> reply:textDocument/foldingRange(68) 0 ms
+I[23:23:11.324] <-- textDocument/codeAction(69)
+I[23:23:11.324] --> reply:textDocument/codeAction(69) 0 ms
+I[23:23:11.324] --> textDocument/clangd.fileStatus
+I[23:23:11.396] <-- textDocument/documentSymbol(70)
+I[23:23:11.397] <-- textDocument/documentSymbol(71)
+I[23:23:11.397] --> reply:textDocument/documentSymbol(70) 0 ms
+I[23:23:11.397] --> reply:textDocument/documentSymbol(71) 0 ms
+I[23:23:11.397] --> textDocument/clangd.fileStatus
+I[23:23:11.642] <-- textDocument/didChange
+I[23:23:11.642] --> textDocument/clangd.fileStatus
+I[23:23:11.660] <-- textDocument/documentHighlight(72)
+I[23:23:11.660] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:11.660] ASTWorker building file /home/nisidabay/end_of_file.c version 13 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:11.662] --> textDocument/clangd.fileStatus
+I[23:23:11.669] --> textDocument/publishDiagnostics
+I[23:23:11.669] --> textDocument/inactiveRegions
+I[23:23:11.669] --> reply:textDocument/documentHighlight(72) 8 ms
+I[23:23:11.669] --> textDocument/clangd.fileStatus
+I[23:23:11.775] <-- textDocument/didChange
+I[23:23:11.775] --> textDocument/clangd.fileStatus
+I[23:23:11.778] <-- textDocument/documentHighlight(73)
+I[23:23:11.778] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:11.779] ASTWorker building file /home/nisidabay/end_of_file.c version 14 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:11.780] --> textDocument/clangd.fileStatus
+I[23:23:11.783] --> textDocument/publishDiagnostics
+I[23:23:11.783] --> textDocument/inactiveRegions
+I[23:23:11.783] --> reply:textDocument/documentHighlight(73) 5 ms
+I[23:23:11.783] --> textDocument/clangd.fileStatus
+I[23:23:11.912] <-- textDocument/didChange
+I[23:23:11.912] --> textDocument/clangd.fileStatus
+I[23:23:11.942] <-- textDocument/semanticTokens/full/delta(74)
+I[23:23:11.942] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:11.943] ASTWorker building file /home/nisidabay/end_of_file.c version 15 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:11.944] --> textDocument/clangd.fileStatus
+I[23:23:11.951] --> textDocument/clangd.fileStatus
+I[23:23:11.951] --> textDocument/publishDiagnostics
+I[23:23:11.952] --> textDocument/inactiveRegions
+I[23:23:11.952] --> textDocument/clangd.fileStatus
+I[23:23:11.952] --> reply:textDocument/semanticTokens/full/delta(74) 9 ms
+I[23:23:11.952] --> textDocument/clangd.fileStatus
+I[23:23:11.983] Built preamble of size 374784 for file /home/nisidabay/end_of_file.c version 15 in 0.04 seconds
+I[23:23:11.983] --> workspace/semanticTokens/refresh(4)
+I[23:23:11.983] --> textDocument/clangd.fileStatus
+I[23:23:11.984] <-- reply(4)
+I[23:23:11.985] <-- textDocument/semanticTokens/full/delta(75)
+I[23:23:11.988] --> textDocument/publishDiagnostics
+I[23:23:11.988] --> textDocument/inactiveRegions
+I[23:23:11.988] --> reply:textDocument/semanticTokens/full/delta(75) 2 ms
+I[23:23:11.988] --> textDocument/clangd.fileStatus
+I[23:23:12.114] <-- textDocument/foldingRange(76)
+I[23:23:12.114] --> reply:textDocument/foldingRange(76) 0 ms
+I[23:23:12.241] <-- textDocument/codeAction(77)
+I[23:23:12.241] --> reply:textDocument/codeAction(77) 0 ms
+I[23:23:12.242] --> textDocument/clangd.fileStatus
+I[23:23:12.264] <-- textDocument/documentSymbol(78)
+I[23:23:12.264] --> reply:textDocument/documentSymbol(78) 0 ms
+I[23:23:12.264] --> textDocument/clangd.fileStatus
+I[23:23:12.264] <-- textDocument/documentSymbol(79)
+I[23:23:12.265] --> reply:textDocument/documentSymbol(79) 0 ms
+I[23:23:12.265] --> textDocument/clangd.fileStatus
+I[23:23:12.914] <-- textDocument/documentLink(80)
+I[23:23:12.914] --> reply:textDocument/documentLink(80) 0 ms
+I[23:23:12.915] --> textDocument/clangd.fileStatus
+I[23:23:13.167] <-- textDocument/documentHighlight(81)
+I[23:23:13.167] --> reply:textDocument/documentHighlight(81) 0 ms
+I[23:23:13.167] --> textDocument/clangd.fileStatus
+I[23:23:13.169] <-- textDocument/inlayHint(82)
+I[23:23:13.169] --> reply:textDocument/inlayHint(82) 0 ms
+I[23:23:13.169] --> textDocument/clangd.fileStatus
+I[23:23:14.134] <-- textDocument/codeAction(83)
+I[23:23:14.135] --> reply:textDocument/codeAction(83) 0 ms
+I[23:23:14.135] --> textDocument/clangd.fileStatus
+I[23:23:14.561] <-- textDocument/codeAction(84)
+I[23:23:14.561] --> reply:textDocument/codeAction(84) 0 ms
+I[23:23:14.561] --> textDocument/clangd.fileStatus
+I[23:23:16.277] <-- textDocument/didChange
+I[23:23:16.277] --> textDocument/clangd.fileStatus
+I[23:23:16.327] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:16.327] ASTWorker building file /home/nisidabay/end_of_file.c version 16 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:16.329] --> textDocument/clangd.fileStatus
+I[23:23:16.333] --> textDocument/publishDiagnostics
+I[23:23:16.333] --> textDocument/inactiveRegions
+I[23:23:16.333] --> textDocument/clangd.fileStatus
+I[23:23:16.480] <-- textDocument/foldingRange(85)
+I[23:23:16.480] --> reply:textDocument/foldingRange(85) 0 ms
+I[23:23:16.577] <-- textDocument/semanticTokens/full/delta(86)
+I[23:23:16.578] --> reply:textDocument/semanticTokens/full/delta(86) 0 ms
+I[23:23:16.578] --> textDocument/clangd.fileStatus
+I[23:23:16.587] <-- textDocument/codeAction(87)
+I[23:23:16.587] --> reply:textDocument/codeAction(87) 0 ms
+I[23:23:16.587] --> textDocument/clangd.fileStatus
+I[23:23:16.630] <-- textDocument/documentSymbol(88)
+I[23:23:16.630] <-- textDocument/documentSymbol(89)
+I[23:23:16.630] --> reply:textDocument/documentSymbol(88) 0 ms
+I[23:23:16.631] --> reply:textDocument/documentSymbol(89) 0 ms
+I[23:23:16.631] --> textDocument/clangd.fileStatus
+I[23:23:17.282] <-- textDocument/documentLink(90)
+I[23:23:17.282] --> reply:textDocument/documentLink(90) 0 ms
+I[23:23:17.282] --> textDocument/clangd.fileStatus
+I[23:23:17.304] <-- textDocument/didChange
+I[23:23:17.304] --> textDocument/clangd.fileStatus
+I[23:23:17.354] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:17.355] ASTWorker building file /home/nisidabay/end_of_file.c version 17 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:17.356] --> textDocument/clangd.fileStatus
+I[23:23:17.359] --> textDocument/publishDiagnostics
+I[23:23:17.359] --> textDocument/inactiveRegions
+I[23:23:17.359] --> textDocument/clangd.fileStatus
+I[23:23:17.506] <-- textDocument/foldingRange(91)
+I[23:23:17.506] --> reply:textDocument/foldingRange(91) 0 ms
+I[23:23:17.604] <-- textDocument/semanticTokens/full/delta(92)
+I[23:23:17.605] --> reply:textDocument/semanticTokens/full/delta(92) 0 ms
+I[23:23:17.605] --> textDocument/clangd.fileStatus
+I[23:23:17.613] <-- textDocument/codeAction(93)
+I[23:23:17.613] --> reply:textDocument/codeAction(93) 0 ms
+I[23:23:17.613] --> textDocument/clangd.fileStatus
+I[23:23:17.656] <-- textDocument/documentSymbol(94)
+I[23:23:17.656] --> reply:textDocument/documentSymbol(94) 0 ms
+I[23:23:17.656] <-- textDocument/documentSymbol(95)
+I[23:23:17.656] --> textDocument/clangd.fileStatus
+I[23:23:17.656] --> reply:textDocument/documentSymbol(95) 0 ms
+I[23:23:17.656] --> textDocument/clangd.fileStatus
+I[23:23:18.306] <-- textDocument/documentLink(96)
+I[23:23:18.306] --> reply:textDocument/documentLink(96) 0 ms
+I[23:23:18.306] --> textDocument/clangd.fileStatus
+I[23:23:18.556] <-- textDocument/inlayHint(97)
+I[23:23:18.556] --> reply:textDocument/inlayHint(97) 0 ms
+I[23:23:18.556] --> textDocument/clangd.fileStatus
+I[23:23:18.807] <-- textDocument/didChange
+I[23:23:18.807] --> textDocument/clangd.fileStatus
+I[23:23:18.811] <-- textDocument/documentHighlight(98)
+I[23:23:18.811] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:18.812] ASTWorker building file /home/nisidabay/end_of_file.c version 18 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:18.814] --> textDocument/clangd.fileStatus
+I[23:23:18.819] --> textDocument/publishDiagnostics
+I[23:23:18.819] --> textDocument/inactiveRegions
+I[23:23:18.819] --> reply:textDocument/documentHighlight(98) 7 ms
+I[23:23:18.819] --> textDocument/clangd.fileStatus
+I[23:23:18.825] <-- textDocument/completion(99)
+I[23:23:18.831] Code complete: sema context Statement, query scopes [] (AnyScope=true), expected type <none>
+I[23:23:18.831] Code complete: 1 results from Sema, 100 from Index, 0 matched, 0 from identifiers, 100 returned (incomplete).
+I[23:23:18.836] --> reply:textDocument/completion(99) 11 ms
+I[23:23:18.948] <-- textDocument/didChange
+I[23:23:18.948] --> textDocument/clangd.fileStatus
+I[23:23:18.951] <-- textDocument/completion(100)
+I[23:23:18.957] Code complete: sema context Statement, query scopes [] (AnyScope=true), expected type <none>
+I[23:23:18.957] Code complete: 0 results from Sema, 9 from Index, 0 matched, 0 from identifiers, 9 returned (incomplete).
+I[23:23:18.958] --> reply:textDocument/completion(100) 7 ms
+I[23:23:18.966] <-- textDocument/documentHighlight(101)
+I[23:23:18.966] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:18.966] ASTWorker building file /home/nisidabay/end_of_file.c version 19 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:18.967] --> textDocument/clangd.fileStatus
+I[23:23:18.971] --> textDocument/publishDiagnostics
+I[23:23:18.971] --> textDocument/inactiveRegions
+I[23:23:18.971] --> reply:textDocument/documentHighlight(101) 5 ms
+I[23:23:18.971] --> textDocument/clangd.fileStatus
+I[23:23:19.056] <-- textDocument/didChange
+I[23:23:19.056] --> textDocument/clangd.fileStatus
+I[23:23:19.057] <-- textDocument/completion(102)
+I[23:23:19.059] <-- textDocument/documentHighlight(103)
+I[23:23:19.060] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:19.060] ASTWorker building file /home/nisidabay/end_of_file.c version 20 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:19.061] --> textDocument/clangd.fileStatus
+I[23:23:19.062] Code complete: sema context Statement, query scopes [] (AnyScope=true), expected type <none>
+I[23:23:19.062] Code complete: 0 results from Sema, 9 from Index, 0 matched, 0 from identifiers, 9 returned.
+I[23:23:19.062] --> reply:textDocument/completion(102) 5 ms
+I[23:23:19.066] --> textDocument/publishDiagnostics
+I[23:23:19.066] --> textDocument/inactiveRegions
+I[23:23:19.066] --> reply:textDocument/documentHighlight(103) 6 ms
+I[23:23:19.066] --> textDocument/clangd.fileStatus
+I[23:23:19.105] <-- textDocument/semanticTokens/full/delta(104)
+I[23:23:19.105] --> reply:textDocument/semanticTokens/full/delta(104) 0 ms
+I[23:23:19.105] --> textDocument/clangd.fileStatus
+I[23:23:19.202] <-- textDocument/didChange
+I[23:23:19.202] --> textDocument/clangd.fileStatus
+I[23:23:19.203] <-- textDocument/completion(105)
+I[23:23:19.208] Code complete: sema context Statement, query scopes [] (AnyScope=true), expected type <none>
+I[23:23:19.209] Code complete: 1 results from Sema, 1 from Index, 1 matched, 0 from identifiers, 1 returned.
+I[23:23:19.209] --> reply:textDocument/completion(105) 5 ms
+I[23:23:19.218] <-- textDocument/documentHighlight(106)
+I[23:23:19.218] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:19.218] ASTWorker building file /home/nisidabay/end_of_file.c version 21 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:19.219] --> textDocument/clangd.fileStatus
+I[23:23:19.223] --> textDocument/publishDiagnostics
+I[23:23:19.223] --> textDocument/inactiveRegions
+I[23:23:19.223] --> reply:textDocument/documentHighlight(106) 5 ms
+I[23:23:19.223] --> textDocument/clangd.fileStatus
+I[23:23:19.404] <-- textDocument/foldingRange(107)
+I[23:23:19.404] --> reply:textDocument/foldingRange(107) 0 ms
+I[23:23:19.481] <-- textDocument/codeAction(108)
+I[23:23:19.481] --> reply:textDocument/codeAction(108) 0 ms
+I[23:23:19.481] --> textDocument/clangd.fileStatus
+I[23:23:19.502] <-- textDocument/semanticTokens/full/delta(109)
+I[23:23:19.503] --> reply:textDocument/semanticTokens/full/delta(109) 0 ms
+I[23:23:19.503] --> textDocument/clangd.fileStatus
+I[23:23:19.526] <-- textDocument/didChange
+I[23:23:19.526] --> textDocument/clangd.fileStatus
+I[23:23:19.565] <-- textDocument/documentSymbol(110)
+I[23:23:19.565] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:19.565] ASTWorker building file /home/nisidabay/end_of_file.c version 22 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:19.566] --> textDocument/clangd.fileStatus
+I[23:23:19.571] --> textDocument/publishDiagnostics
+I[23:23:19.571] --> textDocument/inactiveRegions
+I[23:23:19.571] --> reply:textDocument/documentSymbol(110) 5 ms
+I[23:23:19.571] --> textDocument/clangd.fileStatus
+I[23:23:19.671] <-- textDocument/signatureHelp(111)
+I[23:23:19.676] --> reply:textDocument/signatureHelp(111) 4 ms
+I[23:23:19.747] <-- textDocument/foldingRange(112)
+I[23:23:19.748] --> reply:textDocument/foldingRange(112) 0 ms
+I[23:23:19.826] <-- textDocument/codeAction(113)
+I[23:23:19.826] <-- textDocument/semanticTokens/full/delta(114)
+I[23:23:19.826] --> reply:textDocument/codeAction(113) 0 ms
+I[23:23:19.826] --> reply:textDocument/semanticTokens/full/delta(114) 0 ms
+I[23:23:19.826] --> textDocument/clangd.fileStatus
+I[23:23:19.878] <-- textDocument/documentSymbol(115)
+I[23:23:19.878] --> reply:textDocument/documentSymbol(115) 0 ms
+I[23:23:19.878] --> textDocument/clangd.fileStatus
+I[23:23:19.897] <-- textDocument/documentSymbol(116)
+I[23:23:19.897] --> reply:textDocument/documentSymbol(116) 0 ms
+I[23:23:19.897] --> textDocument/clangd.fileStatus
+I[23:23:20.528] <-- textDocument/documentLink(117)
+I[23:23:20.529] --> reply:textDocument/documentLink(117) 0 ms
+I[23:23:20.529] --> textDocument/clangd.fileStatus
+I[23:23:20.670] <-- textDocument/didChange
+I[23:23:20.670] --> textDocument/clangd.fileStatus
+I[23:23:20.675] <-- textDocument/completion(118)
+I[23:23:20.675] --> reply:textDocument/completion(118) 0 ms
+I[23:23:20.720] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:20.720] ASTWorker building file /home/nisidabay/end_of_file.c version 23 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:20.721] --> textDocument/clangd.fileStatus
+I[23:23:20.726] --> textDocument/publishDiagnostics
+I[23:23:20.726] --> textDocument/inactiveRegions
+I[23:23:20.726] --> textDocument/clangd.fileStatus
+I[23:23:20.793] <-- textDocument/signatureHelp(119)
+I[23:23:20.797] --> reply:textDocument/signatureHelp(119) 4 ms
+I[23:23:20.871] <-- textDocument/foldingRange(120)
+I[23:23:20.872] --> reply:textDocument/foldingRange(120) 0 ms
+I[23:23:20.970] <-- textDocument/semanticTokens/full/delta(121)
+I[23:23:20.970] --> reply:textDocument/semanticTokens/full/delta(121) 0 ms
+I[23:23:20.970] --> textDocument/clangd.fileStatus
+I[23:23:20.981] <-- textDocument/codeAction(122)
+I[23:23:20.981] --> reply:textDocument/codeAction(122) 0 ms
+I[23:23:20.981] --> textDocument/clangd.fileStatus
+I[23:23:21.022] <-- textDocument/documentSymbol(123)
+I[23:23:21.022] --> reply:textDocument/documentSymbol(123) 0 ms
+I[23:23:21.022] --> textDocument/clangd.fileStatus
+I[23:23:21.022] <-- textDocument/documentSymbol(124)
+I[23:23:21.022] --> reply:textDocument/documentSymbol(124) 0 ms
+I[23:23:21.022] --> textDocument/clangd.fileStatus
+I[23:23:21.397] <-- textDocument/didChange
+I[23:23:21.397] --> textDocument/clangd.fileStatus
+I[23:23:21.404] <-- textDocument/documentHighlight(125)
+I[23:23:21.404] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:21.404] ASTWorker building file /home/nisidabay/end_of_file.c version 24 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:21.405] --> textDocument/clangd.fileStatus
+I[23:23:21.409] --> textDocument/publishDiagnostics
+I[23:23:21.409] --> textDocument/inactiveRegions
+I[23:23:21.410] --> reply:textDocument/documentHighlight(125) 6 ms
+I[23:23:21.410] --> textDocument/clangd.fileStatus
+I[23:23:21.520] <-- textDocument/signatureHelp(126)
+I[23:23:21.525] --> reply:textDocument/signatureHelp(126) 4 ms
+I[23:23:21.605] <-- textDocument/foldingRange(127)
+I[23:23:21.605] --> reply:textDocument/foldingRange(127) 0 ms
+I[23:23:21.607] <-- textDocument/didChange
+I[23:23:21.607] --> textDocument/clangd.fileStatus
+I[23:23:21.628] <-- textDocument/documentHighlight(128)
+I[23:23:21.629] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:21.630] ASTWorker building file /home/nisidabay/end_of_file.c version 25 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:21.637] --> textDocument/clangd.fileStatus
+I[23:23:21.645] --> textDocument/publishDiagnostics
+I[23:23:21.645] --> textDocument/inactiveRegions
+I[23:23:21.646] --> reply:textDocument/documentHighlight(128) 17 ms
+I[23:23:21.646] --> textDocument/clangd.fileStatus
+I[23:23:21.697] <-- textDocument/semanticTokens/full/delta(129)
+I[23:23:21.697] --> reply:textDocument/semanticTokens/full/delta(129) 0 ms
+I[23:23:21.697] --> textDocument/clangd.fileStatus
+I[23:23:21.728] <-- textDocument/didChange
+I[23:23:21.728] --> textDocument/clangd.fileStatus
+I[23:23:21.732] <-- textDocument/documentHighlight(130)
+I[23:23:21.732] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:21.733] ASTWorker building file /home/nisidabay/end_of_file.c version 26 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:21.734] --> textDocument/clangd.fileStatus
+I[23:23:21.740] --> textDocument/publishDiagnostics
+I[23:23:21.740] --> textDocument/inactiveRegions
+I[23:23:21.741] --> reply:textDocument/documentHighlight(130) 8 ms
+I[23:23:21.741] --> textDocument/clangd.fileStatus
+I[23:23:21.850] <-- textDocument/signatureHelp(131)
+I[23:23:21.854] --> reply:textDocument/signatureHelp(131) 3 ms
+I[23:23:21.930] <-- textDocument/foldingRange(132)
+I[23:23:21.930] --> reply:textDocument/foldingRange(132) 0 ms
+I[23:23:22.002] <-- textDocument/codeAction(133)
+I[23:23:22.002] --> reply:textDocument/codeAction(133) 0 ms
+I[23:23:22.002] --> textDocument/clangd.fileStatus
+I[23:23:22.029] <-- textDocument/semanticTokens/full/delta(134)
+I[23:23:22.029] --> reply:textDocument/semanticTokens/full/delta(134) 0 ms
+I[23:23:22.029] --> textDocument/clangd.fileStatus
+I[23:23:22.080] <-- textDocument/documentSymbol(135)
+I[23:23:22.080] --> reply:textDocument/documentSymbol(135) 0 ms
+I[23:23:22.080] --> textDocument/clangd.fileStatus
+I[23:23:22.080] <-- textDocument/documentSymbol(136)
+I[23:23:22.081] --> reply:textDocument/documentSymbol(136) 0 ms
+I[23:23:22.081] --> textDocument/clangd.fileStatus
+I[23:23:22.729] <-- textDocument/documentLink(137)
+I[23:23:22.730] --> reply:textDocument/documentLink(137) 0 ms
+I[23:23:22.730] --> textDocument/clangd.fileStatus
+I[23:23:22.896] <-- textDocument/didChange
+I[23:23:22.896] --> textDocument/clangd.fileStatus
+I[23:23:22.911] <-- textDocument/documentHighlight(138)
+I[23:23:22.912] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:22.912] ASTWorker building file /home/nisidabay/end_of_file.c version 27 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:22.913] --> textDocument/clangd.fileStatus
+I[23:23:22.918] --> textDocument/publishDiagnostics
+I[23:23:22.918] --> textDocument/inactiveRegions
+I[23:23:22.919] --> reply:textDocument/documentHighlight(138) 7 ms
+I[23:23:22.919] --> textDocument/clangd.fileStatus
+I[23:23:23.013] <-- textDocument/didChange
+I[23:23:23.013] --> textDocument/clangd.fileStatus
+I[23:23:23.030] <-- textDocument/documentHighlight(139)
+I[23:23:23.030] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:23.030] ASTWorker building file /home/nisidabay/end_of_file.c version 28 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:23.031] --> textDocument/clangd.fileStatus
+I[23:23:23.036] --> textDocument/publishDiagnostics
+I[23:23:23.036] --> textDocument/inactiveRegions
+I[23:23:23.036] --> reply:textDocument/documentHighlight(139) 6 ms
+I[23:23:23.036] --> textDocument/clangd.fileStatus
+I[23:23:23.137] <-- textDocument/signatureHelp(140)
+I[23:23:23.138] <-- textDocument/didChange
+I[23:23:23.138] --> textDocument/clangd.fileStatus
+I[23:23:23.141] --> reply:textDocument/signatureHelp(140) 3 ms
+I[23:23:23.142] <-- textDocument/documentHighlight(141)
+I[23:23:23.142] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:23.143] ASTWorker building file /home/nisidabay/end_of_file.c version 29 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:23.144] --> textDocument/clangd.fileStatus
+I[23:23:23.148] --> textDocument/publishDiagnostics
+I[23:23:23.148] --> textDocument/inactiveRegions
+I[23:23:23.148] --> reply:textDocument/documentHighlight(141) 5 ms
+I[23:23:23.148] --> textDocument/clangd.fileStatus
+I[23:23:23.196] <-- textDocument/semanticTokens/full/delta(142)
+I[23:23:23.196] --> reply:textDocument/semanticTokens/full/delta(142) 0 ms
+I[23:23:23.196] --> textDocument/clangd.fileStatus
+I[23:23:23.246] <-- textDocument/didChange
+I[23:23:23.246] --> textDocument/clangd.fileStatus
+I[23:23:23.266] <-- textDocument/documentHighlight(143)
+I[23:23:23.266] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:23.267] ASTWorker building file /home/nisidabay/end_of_file.c version 30 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:23.268] --> textDocument/clangd.fileStatus
+I[23:23:23.276] --> textDocument/publishDiagnostics
+I[23:23:23.276] --> textDocument/inactiveRegions
+I[23:23:23.276] --> reply:textDocument/documentHighlight(143) 10 ms
+I[23:23:23.276] --> textDocument/clangd.fileStatus
+I[23:23:23.369] <-- textDocument/signatureHelp(144)
+I[23:23:23.372] --> reply:textDocument/signatureHelp(144) 3 ms
+I[23:23:23.384] <-- textDocument/didChange
+I[23:23:23.384] --> textDocument/clangd.fileStatus
+I[23:23:23.434] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:23.434] ASTWorker building file /home/nisidabay/end_of_file.c version 31 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:23.435] --> textDocument/clangd.fileStatus
+I[23:23:23.439] --> textDocument/publishDiagnostics
+I[23:23:23.439] --> textDocument/inactiveRegions
+I[23:23:23.439] --> textDocument/clangd.fileStatus
+I[23:23:23.506] <-- textDocument/signatureHelp(145)
+I[23:23:23.510] --> reply:textDocument/signatureHelp(145) 4 ms
+I[23:23:23.546] <-- textDocument/semanticTokens/full/delta(146)
+I[23:23:23.546] --> reply:textDocument/semanticTokens/full/delta(146) 0 ms
+I[23:23:23.546] --> textDocument/clangd.fileStatus
+I[23:23:23.585] <-- textDocument/foldingRange(147)
+I[23:23:23.586] --> reply:textDocument/foldingRange(147) 0 ms
+I[23:23:23.637] <-- textDocument/didChange
+I[23:23:23.637] --> textDocument/clangd.fileStatus
+I[23:23:23.644] <-- textDocument/documentHighlight(148)
+I[23:23:23.644] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:23.645] ASTWorker building file /home/nisidabay/end_of_file.c version 32 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:23.646] --> textDocument/clangd.fileStatus
+I[23:23:23.649] --> textDocument/publishDiagnostics
+I[23:23:23.649] --> textDocument/inactiveRegions
+I[23:23:23.650] --> reply:textDocument/documentHighlight(148) 5 ms
+I[23:23:23.650] --> textDocument/clangd.fileStatus
+I[23:23:23.754] <-- textDocument/didChange
+I[23:23:23.754] --> textDocument/clangd.fileStatus
+I[23:23:23.760] <-- textDocument/documentHighlight(149)
+I[23:23:23.761] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:23.761] ASTWorker building file /home/nisidabay/end_of_file.c version 33 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:23.762] --> textDocument/clangd.fileStatus
+I[23:23:23.765] --> textDocument/publishDiagnostics
+I[23:23:23.766] --> textDocument/inactiveRegions
+I[23:23:23.766] --> reply:textDocument/documentHighlight(149) 5 ms
+I[23:23:23.766] --> textDocument/clangd.fileStatus
+I[23:23:23.846] <-- textDocument/didChange
+I[23:23:23.846] --> textDocument/clangd.fileStatus
+I[23:23:23.865] <-- textDocument/documentHighlight(150)
+I[23:23:23.865] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:23.865] ASTWorker building file /home/nisidabay/end_of_file.c version 34 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:23.867] --> textDocument/clangd.fileStatus
+I[23:23:23.871] --> textDocument/publishDiagnostics
+I[23:23:23.871] --> textDocument/inactiveRegions
+I[23:23:23.871] --> reply:textDocument/documentHighlight(150) 6 ms
+I[23:23:23.871] --> textDocument/clangd.fileStatus
+I[23:23:23.897] <-- textDocument/didChange
+I[23:23:23.897] --> textDocument/clangd.fileStatus
+I[23:23:23.937] <-- textDocument/semanticTokens/full/delta(151)
+I[23:23:23.937] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:23.937] ASTWorker building file /home/nisidabay/end_of_file.c version 35 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:23.939] --> textDocument/clangd.fileStatus
+I[23:23:23.946] --> textDocument/publishDiagnostics
+I[23:23:23.946] --> textDocument/inactiveRegions
+I[23:23:23.946] --> reply:textDocument/semanticTokens/full/delta(151) 9 ms
+I[23:23:23.946] --> textDocument/clangd.fileStatus
+I[23:23:24.019] <-- textDocument/signatureHelp(152)
+I[23:23:24.023] --> reply:textDocument/signatureHelp(152) 3 ms
+I[23:23:24.099] <-- textDocument/foldingRange(153)
+I[23:23:24.099] --> reply:textDocument/foldingRange(153) 0 ms
+I[23:23:24.200] <-- textDocument/codeAction(154)
+I[23:23:24.200] --> reply:textDocument/codeAction(154) 0 ms
+I[23:23:24.200] --> textDocument/clangd.fileStatus
+I[23:23:24.247] <-- textDocument/didChange
+I[23:23:24.247] --> textDocument/clangd.fileStatus
+I[23:23:24.259] <-- textDocument/documentSymbol(155)
+I[23:23:24.259] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:24.259] ASTWorker building file /home/nisidabay/end_of_file.c version 36 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:24.260] <-- textDocument/documentHighlight(156)
+I[23:23:24.261] --> textDocument/clangd.fileStatus
+I[23:23:24.268] --> textDocument/publishDiagnostics
+I[23:23:24.268] --> textDocument/inactiveRegions
+I[23:23:24.268] --> reply:textDocument/documentSymbol(155) 9 ms
+I[23:23:24.268] --> reply:textDocument/documentHighlight(156) 7 ms
+I[23:23:24.268] --> textDocument/clangd.fileStatus
+I[23:23:24.370] <-- textDocument/signatureHelp(157)
+I[23:23:24.374] --> reply:textDocument/signatureHelp(157) 4 ms
+I[23:23:24.385] <-- textDocument/didChange
+I[23:23:24.385] --> textDocument/clangd.fileStatus
+I[23:23:24.389] <-- textDocument/documentHighlight(158)
+I[23:23:24.389] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:24.390] ASTWorker building file /home/nisidabay/end_of_file.c version 37 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:24.391] --> textDocument/clangd.fileStatus
+I[23:23:24.395] --> textDocument/publishDiagnostics
+I[23:23:24.395] --> textDocument/inactiveRegions
+I[23:23:24.395] --> reply:textDocument/documentHighlight(158) 5 ms
+I[23:23:24.395] --> textDocument/clangd.fileStatus
+I[23:23:24.507] <-- textDocument/signatureHelp(159)
+I[23:23:24.512] --> reply:textDocument/signatureHelp(159) 4 ms
+I[23:23:24.548] <-- textDocument/semanticTokens/full/delta(160)
+I[23:23:24.548] --> reply:textDocument/semanticTokens/full/delta(160) 0 ms
+I[23:23:24.548] --> textDocument/clangd.fileStatus
+I[23:23:24.556] <-- textDocument/didChange
+I[23:23:24.557] --> textDocument/clangd.fileStatus
+I[23:23:24.563] <-- textDocument/documentHighlight(161)
+I[23:23:24.563] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:24.564] ASTWorker building file /home/nisidabay/end_of_file.c version 38 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:24.566] --> textDocument/clangd.fileStatus
+I[23:23:24.573] --> textDocument/publishDiagnostics
+I[23:23:24.573] --> textDocument/inactiveRegions
+I[23:23:24.573] --> reply:textDocument/documentHighlight(161) 10 ms
+I[23:23:24.574] --> textDocument/clangd.fileStatus
+I[23:23:24.679] <-- textDocument/signatureHelp(162)
+I[23:23:24.683] --> reply:textDocument/signatureHelp(162) 4 ms
+I[23:23:24.720] <-- textDocument/didChange
+I[23:23:24.720] --> textDocument/clangd.fileStatus
+I[23:23:24.770] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:24.771] ASTWorker building file /home/nisidabay/end_of_file.c version 39 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:24.773] --> textDocument/clangd.fileStatus
+I[23:23:24.779] --> textDocument/publishDiagnostics
+I[23:23:24.780] --> textDocument/inactiveRegions
+I[23:23:24.780] --> textDocument/clangd.fileStatus
+I[23:23:24.842] <-- textDocument/signatureHelp(163)
+I[23:23:24.846] --> reply:textDocument/signatureHelp(163) 3 ms
+I[23:23:24.856] <-- textDocument/semanticTokens/full/delta(164)
+I[23:23:24.857] --> reply:textDocument/semanticTokens/full/delta(164) 0 ms
+I[23:23:24.857] --> textDocument/clangd.fileStatus
+I[23:23:24.922] <-- textDocument/foldingRange(165)
+I[23:23:24.923] --> reply:textDocument/foldingRange(165) 0 ms
+I[23:23:25.034] <-- textDocument/codeAction(166)
+I[23:23:25.034] --> reply:textDocument/codeAction(166) 0 ms
+I[23:23:25.034] --> textDocument/clangd.fileStatus
+I[23:23:25.072] <-- textDocument/documentSymbol(167)
+I[23:23:25.072] <-- textDocument/documentSymbol(168)
+I[23:23:25.072] --> reply:textDocument/documentSymbol(167) 0 ms
+I[23:23:25.073] --> reply:textDocument/documentSymbol(168) 0 ms
+I[23:23:25.073] --> textDocument/clangd.fileStatus
+I[23:23:25.234] <-- textDocument/didChange
+I[23:23:25.234] --> textDocument/clangd.fileStatus
+I[23:23:25.252] <-- textDocument/documentHighlight(169)
+I[23:23:25.253] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:25.253] ASTWorker building file /home/nisidabay/end_of_file.c version 40 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:25.255] --> textDocument/clangd.fileStatus
+I[23:23:25.262] --> textDocument/publishDiagnostics
+I[23:23:25.262] --> textDocument/inactiveRegions
+I[23:23:25.262] --> reply:textDocument/documentHighlight(169) 9 ms
+I[23:23:25.262] --> textDocument/clangd.fileStatus
+I[23:23:25.349] <-- textDocument/didChange
+I[23:23:25.349] --> textDocument/clangd.fileStatus
+I[23:23:25.380] <-- textDocument/documentHighlight(170)
+I[23:23:25.381] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:25.381] ASTWorker building file /home/nisidabay/end_of_file.c version 41 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:25.384] --> textDocument/clangd.fileStatus
+I[23:23:25.389] --> textDocument/publishDiagnostics
+I[23:23:25.390] --> textDocument/inactiveRegions
+I[23:23:25.390] --> reply:textDocument/documentHighlight(170) 9 ms
+I[23:23:25.390] --> textDocument/clangd.fileStatus
+I[23:23:25.431] <-- textDocument/didChange
+I[23:23:25.431] --> textDocument/clangd.fileStatus
+I[23:23:25.445] <-- textDocument/documentHighlight(171)
+I[23:23:25.445] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:25.445] ASTWorker building file /home/nisidabay/end_of_file.c version 42 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:25.446] --> textDocument/clangd.fileStatus
+I[23:23:25.450] --> textDocument/publishDiagnostics
+I[23:23:25.450] --> textDocument/inactiveRegions
+I[23:23:25.450] --> reply:textDocument/documentHighlight(171) 5 ms
+I[23:23:25.450] --> textDocument/clangd.fileStatus
+I[23:23:25.534] <-- textDocument/semanticTokens/full/delta(172)
+I[23:23:25.534] --> reply:textDocument/semanticTokens/full/delta(172) 0 ms
+I[23:23:25.534] --> textDocument/clangd.fileStatus
+I[23:23:25.553] <-- textDocument/signatureHelp(173)
+I[23:23:25.558] --> reply:textDocument/signatureHelp(173) 4 ms
+I[23:23:25.562] <-- textDocument/didChange
+I[23:23:25.563] --> textDocument/clangd.fileStatus
+I[23:23:25.583] <-- textDocument/documentHighlight(174)
+I[23:23:25.583] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:25.583] ASTWorker building file /home/nisidabay/end_of_file.c version 43 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:25.584] --> textDocument/clangd.fileStatus
+I[23:23:25.588] --> textDocument/publishDiagnostics
+I[23:23:25.588] --> textDocument/inactiveRegions
+I[23:23:25.588] --> reply:textDocument/documentHighlight(174) 4 ms
+I[23:23:25.588] --> textDocument/clangd.fileStatus
+I[23:23:25.634] <-- textDocument/didChange
+I[23:23:25.634] --> textDocument/clangd.fileStatus
+I[23:23:25.684] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:25.685] ASTWorker building file /home/nisidabay/end_of_file.c version 44 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:25.686] --> textDocument/clangd.fileStatus
+I[23:23:25.692] --> textDocument/publishDiagnostics
+I[23:23:25.692] --> textDocument/inactiveRegions
+I[23:23:25.692] --> textDocument/clangd.fileStatus
+I[23:23:25.756] <-- textDocument/signatureHelp(175)
+I[23:23:25.760] --> reply:textDocument/signatureHelp(175) 4 ms
+I[23:23:25.835] <-- textDocument/foldingRange(176)
+I[23:23:25.836] --> reply:textDocument/foldingRange(176) 0 ms
+I[23:23:25.863] <-- textDocument/semanticTokens/full/delta(177)
+I[23:23:25.863] --> reply:textDocument/semanticTokens/full/delta(177) 0 ms
+I[23:23:25.863] --> textDocument/clangd.fileStatus
+I[23:23:25.946] <-- textDocument/codeAction(178)
+I[23:23:25.947] --> reply:textDocument/codeAction(178) 0 ms
+I[23:23:25.947] --> textDocument/clangd.fileStatus
+I[23:23:25.986] <-- textDocument/documentSymbol(179)
+I[23:23:25.986] --> reply:textDocument/documentSymbol(179) 0 ms
+I[23:23:25.986] <-- textDocument/documentSymbol(180)
+I[23:23:25.986] --> textDocument/clangd.fileStatus
+I[23:23:25.986] --> reply:textDocument/documentSymbol(180) 0 ms
+I[23:23:25.986] --> textDocument/clangd.fileStatus
+I[23:23:26.131] <-- textDocument/didChange
+I[23:23:26.131] --> textDocument/clangd.fileStatus
+I[23:23:26.134] <-- textDocument/documentHighlight(181)
+I[23:23:26.134] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:26.134] ASTWorker building file /home/nisidabay/end_of_file.c version 45 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:26.135] --> textDocument/clangd.fileStatus
+I[23:23:26.139] --> textDocument/publishDiagnostics
+I[23:23:26.139] --> textDocument/inactiveRegions
+I[23:23:26.139] --> reply:textDocument/documentHighlight(181) 5 ms
+I[23:23:26.139] --> textDocument/clangd.fileStatus
+I[23:23:26.205] <-- textDocument/didChange
+I[23:23:26.205] --> textDocument/clangd.fileStatus
+I[23:23:26.232] <-- textDocument/documentHighlight(182)
+I[23:23:26.232] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:26.232] ASTWorker building file /home/nisidabay/end_of_file.c version 46 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:26.234] --> textDocument/clangd.fileStatus
+I[23:23:26.242] --> textDocument/publishDiagnostics
+I[23:23:26.242] --> textDocument/inactiveRegions
+I[23:23:26.242] --> reply:textDocument/documentHighlight(182) 10 ms
+I[23:23:26.242] --> textDocument/clangd.fileStatus
+I[23:23:26.281] <-- textDocument/didChange
+I[23:23:26.281] --> textDocument/clangd.fileStatus
+I[23:23:26.332] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:26.332] ASTWorker building file /home/nisidabay/end_of_file.c version 47 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:26.334] --> textDocument/clangd.fileStatus
+I[23:23:26.337] --> textDocument/publishDiagnostics
+I[23:23:26.337] --> textDocument/inactiveRegions
+I[23:23:26.338] --> textDocument/clangd.fileStatus
+I[23:23:26.404] <-- textDocument/signatureHelp(183)
+I[23:23:26.407] --> reply:textDocument/signatureHelp(183) 3 ms
+I[23:23:26.431] <-- textDocument/semanticTokens/full/delta(184)
+I[23:23:26.432] --> reply:textDocument/semanticTokens/full/delta(184) 0 ms
+I[23:23:26.432] --> textDocument/clangd.fileStatus
+I[23:23:26.477] <-- textDocument/didChange
+I[23:23:26.477] --> textDocument/clangd.fileStatus
+I[23:23:26.483] <-- textDocument/documentHighlight(185)
+I[23:23:26.484] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:26.484] ASTWorker building file /home/nisidabay/end_of_file.c version 48 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:26.486] --> textDocument/clangd.fileStatus
+I[23:23:26.490] --> textDocument/publishDiagnostics
+I[23:23:26.491] --> textDocument/inactiveRegions
+I[23:23:26.491] --> reply:textDocument/documentHighlight(185) 7 ms
+I[23:23:26.491] --> textDocument/clangd.fileStatus
+I[23:23:26.596] <-- textDocument/didChange
+I[23:23:26.596] --> textDocument/clangd.fileStatus
+I[23:23:26.602] <-- textDocument/documentHighlight(186)
+I[23:23:26.602] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:26.602] ASTWorker building file /home/nisidabay/end_of_file.c version 49 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:26.604] --> textDocument/clangd.fileStatus
+I[23:23:26.608] --> textDocument/publishDiagnostics
+I[23:23:26.608] --> textDocument/inactiveRegions
+I[23:23:26.608] --> reply:textDocument/documentHighlight(186) 5 ms
+I[23:23:26.608] --> textDocument/clangd.fileStatus
+I[23:23:26.719] <-- textDocument/signatureHelp(187)
+I[23:23:26.723] --> reply:textDocument/signatureHelp(187) 4 ms
+I[23:23:26.748] <-- textDocument/didChange
+I[23:23:26.748] --> textDocument/clangd.fileStatus
+I[23:23:26.754] <-- textDocument/documentHighlight(188)
+I[23:23:26.754] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:26.755] ASTWorker building file /home/nisidabay/end_of_file.c version 50 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:26.757] --> textDocument/clangd.fileStatus
+I[23:23:26.761] --> textDocument/publishDiagnostics
+I[23:23:26.761] --> textDocument/inactiveRegions
+I[23:23:26.761] --> reply:textDocument/documentHighlight(188) 6 ms
+I[23:23:26.761] --> textDocument/clangd.fileStatus
+I[23:23:26.777] <-- textDocument/semanticTokens/full/delta(189)
+I[23:23:26.777] --> reply:textDocument/semanticTokens/full/delta(189) 0 ms
+I[23:23:26.777] --> textDocument/clangd.fileStatus
+I[23:23:26.871] <-- textDocument/signatureHelp(190)
+I[23:23:26.876] --> reply:textDocument/signatureHelp(190) 4 ms
+I[23:23:26.914] <-- textDocument/didChange
+I[23:23:26.914] --> textDocument/clangd.fileStatus
+I[23:23:26.919] <-- textDocument/documentHighlight(191)
+I[23:23:26.920] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:26.920] ASTWorker building file /home/nisidabay/end_of_file.c version 51 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:26.922] --> textDocument/clangd.fileStatus
+I[23:23:26.925] --> textDocument/publishDiagnostics
+I[23:23:26.925] --> textDocument/inactiveRegions
+I[23:23:26.926] --> reply:textDocument/documentHighlight(191) 6 ms
+I[23:23:26.926] --> textDocument/clangd.fileStatus
+I[23:23:27.018] <-- textDocument/didChange
+I[23:23:27.018] --> textDocument/clangd.fileStatus
+I[23:23:27.068] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:27.069] ASTWorker building file /home/nisidabay/end_of_file.c version 52 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:27.071] --> textDocument/clangd.fileStatus
+I[23:23:27.077] --> textDocument/publishDiagnostics
+I[23:23:27.077] --> textDocument/inactiveRegions
+I[23:23:27.078] --> textDocument/clangd.fileStatus
+I[23:23:27.140] <-- textDocument/signatureHelp(192)
+I[23:23:27.144] --> reply:textDocument/signatureHelp(192) 4 ms
+I[23:23:27.199] <-- textDocument/didChange
+I[23:23:27.199] --> textDocument/clangd.fileStatus
+I[23:23:27.204] <-- textDocument/documentHighlight(193)
+I[23:23:27.204] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:27.204] ASTWorker building file /home/nisidabay/end_of_file.c version 53 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:27.205] --> textDocument/clangd.fileStatus
+I[23:23:27.209] --> textDocument/publishDiagnostics
+I[23:23:27.209] --> textDocument/inactiveRegions
+I[23:23:27.209] --> reply:textDocument/documentHighlight(193) 5 ms
+I[23:23:27.209] --> textDocument/clangd.fileStatus
+I[23:23:27.214] <-- textDocument/semanticTokens/full/delta(194)
+I[23:23:27.214] --> reply:textDocument/semanticTokens/full/delta(194) 0 ms
+I[23:23:27.214] --> textDocument/clangd.fileStatus
+I[23:23:27.269] <-- textDocument/didChange
+I[23:23:27.269] --> textDocument/clangd.fileStatus
+I[23:23:27.289] <-- textDocument/documentHighlight(195)
+I[23:23:27.289] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:27.290] ASTWorker building file /home/nisidabay/end_of_file.c version 54 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:27.291] --> textDocument/clangd.fileStatus
+I[23:23:27.295] --> textDocument/publishDiagnostics
+I[23:23:27.295] --> textDocument/inactiveRegions
+I[23:23:27.295] --> reply:textDocument/documentHighlight(195) 5 ms
+I[23:23:27.295] --> textDocument/clangd.fileStatus
+I[23:23:27.391] <-- textDocument/signatureHelp(196)
+I[23:23:27.396] --> reply:textDocument/signatureHelp(196) 4 ms
+I[23:23:27.460] <-- textDocument/didChange
+I[23:23:27.460] --> textDocument/clangd.fileStatus
+I[23:23:27.464] <-- textDocument/documentHighlight(197)
+I[23:23:27.464] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:27.464] ASTWorker building file /home/nisidabay/end_of_file.c version 55 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:27.466] --> textDocument/clangd.fileStatus
+I[23:23:27.472] --> textDocument/publishDiagnostics
+I[23:23:27.473] --> textDocument/inactiveRegions
+I[23:23:27.473] --> reply:textDocument/documentHighlight(197) 8 ms
+I[23:23:27.473] --> textDocument/clangd.fileStatus
+I[23:23:27.506] <-- textDocument/didChange
+I[23:23:27.506] --> textDocument/clangd.fileStatus
+I[23:23:27.524] <-- textDocument/documentHighlight(198)
+I[23:23:27.524] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:27.524] ASTWorker building file /home/nisidabay/end_of_file.c version 56 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:27.526] --> textDocument/clangd.fileStatus
+I[23:23:27.532] --> textDocument/publishDiagnostics
+I[23:23:27.532] --> textDocument/inactiveRegions
+I[23:23:27.533] --> reply:textDocument/documentHighlight(198) 8 ms
+I[23:23:27.533] --> textDocument/clangd.fileStatus
+I[23:23:27.569] <-- textDocument/semanticTokens/full/delta(199)
+I[23:23:27.569] --> reply:textDocument/semanticTokens/full/delta(199) 0 ms
+I[23:23:27.569] --> textDocument/clangd.fileStatus
+I[23:23:27.614] <-- textDocument/didChange
+I[23:23:27.614] --> textDocument/clangd.fileStatus
+I[23:23:27.664] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:27.664] ASTWorker building file /home/nisidabay/end_of_file.c version 57 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:27.665] --> textDocument/clangd.fileStatus
+I[23:23:27.668] --> textDocument/publishDiagnostics
+I[23:23:27.668] --> textDocument/inactiveRegions
+I[23:23:27.668] --> textDocument/clangd.fileStatus
+I[23:23:27.722] <-- textDocument/didChange
+I[23:23:27.722] --> textDocument/clangd.fileStatus
+I[23:23:27.742] <-- textDocument/documentHighlight(200)
+I[23:23:27.742] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:27.743] ASTWorker building file /home/nisidabay/end_of_file.c version 58 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:27.745] --> textDocument/clangd.fileStatus
+I[23:23:27.752] --> textDocument/publishDiagnostics
+I[23:23:27.752] --> textDocument/inactiveRegions
+I[23:23:27.752] --> reply:textDocument/documentHighlight(200) 9 ms
+I[23:23:27.752] --> textDocument/clangd.fileStatus
+I[23:23:27.844] <-- textDocument/signatureHelp(201)
+I[23:23:27.848] --> reply:textDocument/signatureHelp(201) 4 ms
+I[23:23:27.867] <-- textDocument/didChange
+I[23:23:27.867] --> textDocument/clangd.fileStatus
+I[23:23:27.874] <-- textDocument/documentHighlight(202)
+I[23:23:27.874] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:27.875] ASTWorker building file /home/nisidabay/end_of_file.c version 59 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:27.876] --> textDocument/clangd.fileStatus
+I[23:23:27.880] --> textDocument/publishDiagnostics
+I[23:23:27.880] --> textDocument/inactiveRegions
+I[23:23:27.880] --> reply:textDocument/documentHighlight(202) 6 ms
+I[23:23:27.881] --> textDocument/clangd.fileStatus
+I[23:23:27.914] <-- textDocument/semanticTokens/full/delta(203)
+I[23:23:27.914] --> reply:textDocument/semanticTokens/full/delta(203) 0 ms
+I[23:23:27.914] --> textDocument/clangd.fileStatus
+I[23:23:27.973] <-- textDocument/didChange
+I[23:23:27.973] --> textDocument/clangd.fileStatus
+I[23:23:28.023] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:28.024] ASTWorker building file /home/nisidabay/end_of_file.c version 60 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:28.030] --> textDocument/clangd.fileStatus
+I[23:23:28.034] --> textDocument/publishDiagnostics
+I[23:23:28.034] --> textDocument/inactiveRegions
+I[23:23:28.034] --> textDocument/clangd.fileStatus
+I[23:23:28.095] <-- textDocument/signatureHelp(204)
+I[23:23:28.099] --> reply:textDocument/signatureHelp(204) 4 ms
+I[23:23:28.117] <-- textDocument/didChange
+I[23:23:28.117] --> textDocument/clangd.fileStatus
+I[23:23:28.123] <-- textDocument/documentHighlight(205)
+I[23:23:28.123] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:28.123] ASTWorker building file /home/nisidabay/end_of_file.c version 61 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:28.124] --> textDocument/clangd.fileStatus
+I[23:23:28.130] --> textDocument/publishDiagnostics
+I[23:23:28.130] --> textDocument/inactiveRegions
+I[23:23:28.130] --> reply:textDocument/documentHighlight(205) 7 ms
+I[23:23:28.130] --> textDocument/clangd.fileStatus
+I[23:23:28.197] <-- textDocument/didChange
+I[23:23:28.197] --> textDocument/clangd.fileStatus
+I[23:23:28.203] <-- textDocument/documentHighlight(206)
+I[23:23:28.203] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:28.204] ASTWorker building file /home/nisidabay/end_of_file.c version 62 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:28.205] --> textDocument/clangd.fileStatus
+I[23:23:28.212] --> textDocument/publishDiagnostics
+I[23:23:28.213] --> textDocument/inactiveRegions
+I[23:23:28.213] --> reply:textDocument/documentHighlight(206) 9 ms
+I[23:23:28.213] --> textDocument/clangd.fileStatus
+I[23:23:28.273] <-- textDocument/semanticTokens/full/delta(207)
+I[23:23:28.273] --> reply:textDocument/semanticTokens/full/delta(207) 0 ms
+I[23:23:28.273] --> textDocument/clangd.fileStatus
+I[23:23:28.319] <-- textDocument/signatureHelp(208)
+I[23:23:28.324] --> reply:textDocument/signatureHelp(208) 4 ms
+I[23:23:28.399] <-- textDocument/foldingRange(209)
+I[23:23:28.399] --> reply:textDocument/foldingRange(209) 0 ms
+I[23:23:28.429] <-- textDocument/didChange
+I[23:23:28.429] --> textDocument/clangd.fileStatus
+I[23:23:28.434] <-- textDocument/documentHighlight(210)
+I[23:23:28.434] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:28.435] ASTWorker building file /home/nisidabay/end_of_file.c version 63 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:28.437] --> textDocument/clangd.fileStatus
+I[23:23:28.444] --> textDocument/publishDiagnostics
+I[23:23:28.444] --> textDocument/inactiveRegions
+I[23:23:28.444] --> reply:textDocument/documentHighlight(210) 9 ms
+I[23:23:28.444] --> textDocument/clangd.fileStatus
+I[23:23:28.487] <-- textDocument/didChange
+I[23:23:28.488] --> textDocument/clangd.fileStatus
+I[23:23:28.492] <-- textDocument/documentHighlight(211)
+I[23:23:28.492] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:28.492] ASTWorker building file /home/nisidabay/end_of_file.c version 64 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:28.493] --> textDocument/clangd.fileStatus
+I[23:23:28.502] --> textDocument/publishDiagnostics
+I[23:23:28.502] --> textDocument/inactiveRegions
+I[23:23:28.502] --> reply:textDocument/documentHighlight(211) 10 ms
+I[23:23:28.502] --> textDocument/clangd.fileStatus
+I[23:23:28.610] <-- textDocument/signatureHelp(212)
+I[23:23:28.614] --> reply:textDocument/signatureHelp(212) 4 ms
+I[23:23:28.689] <-- textDocument/foldingRange(213)
+I[23:23:28.690] --> reply:textDocument/foldingRange(213) 0 ms
+I[23:23:28.699] <-- textDocument/didChange
+I[23:23:28.700] --> textDocument/clangd.fileStatus
+I[23:23:28.704] <-- textDocument/documentHighlight(214)
+I[23:23:28.704] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:28.704] ASTWorker building file /home/nisidabay/end_of_file.c version 65 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:28.705] --> textDocument/clangd.fileStatus
+I[23:23:28.711] --> textDocument/publishDiagnostics
+I[23:23:28.711] --> textDocument/inactiveRegions
+I[23:23:28.711] --> reply:textDocument/documentHighlight(214) 7 ms
+I[23:23:28.711] --> textDocument/clangd.fileStatus
+I[23:23:28.731] <-- textDocument/semanticTokens/full/delta(215)
+I[23:23:28.732] --> reply:textDocument/semanticTokens/full/delta(215) 0 ms
+I[23:23:28.732] --> textDocument/clangd.fileStatus
+I[23:23:28.798] <-- textDocument/didChange
+I[23:23:28.798] --> textDocument/clangd.fileStatus
+I[23:23:28.804] <-- textDocument/documentHighlight(216)
+I[23:23:28.804] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:28.804] ASTWorker building file /home/nisidabay/end_of_file.c version 66 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:28.806] --> textDocument/clangd.fileStatus
+I[23:23:28.814] --> textDocument/publishDiagnostics
+I[23:23:28.814] --> textDocument/inactiveRegions
+I[23:23:28.815] --> reply:textDocument/documentHighlight(216) 11 ms
+I[23:23:28.815] --> textDocument/clangd.fileStatus
+I[23:23:28.920] <-- textDocument/signatureHelp(217)
+I[23:23:28.923] --> reply:textDocument/signatureHelp(217) 3 ms
+I[23:23:28.999] <-- textDocument/foldingRange(218)
+I[23:23:29.000] --> reply:textDocument/foldingRange(218) 0 ms
+I[23:23:29.078] <-- textDocument/codeAction(219)
+I[23:23:29.078] --> reply:textDocument/codeAction(219) 0 ms
+I[23:23:29.078] --> textDocument/clangd.fileStatus
+I[23:23:29.097] <-- textDocument/semanticTokens/full/delta(220)
+I[23:23:29.098] --> reply:textDocument/semanticTokens/full/delta(220) 0 ms
+I[23:23:29.098] --> textDocument/clangd.fileStatus
+I[23:23:29.149] <-- textDocument/documentSymbol(221)
+I[23:23:29.149] <-- textDocument/documentSymbol(222)
+I[23:23:29.149] --> reply:textDocument/documentSymbol(221) 0 ms
+I[23:23:29.149] --> reply:textDocument/documentSymbol(222) 0 ms
+I[23:23:29.149] --> textDocument/clangd.fileStatus
+I[23:23:29.307] <-- textDocument/didChange
+I[23:23:29.307] --> textDocument/clangd.fileStatus
+I[23:23:29.328] <-- textDocument/documentHighlight(223)
+I[23:23:29.328] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:29.328] ASTWorker building file /home/nisidabay/end_of_file.c version 67 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:29.330] --> textDocument/clangd.fileStatus
+I[23:23:29.337] --> textDocument/publishDiagnostics
+I[23:23:29.337] --> textDocument/inactiveRegions
+I[23:23:29.337] --> reply:textDocument/documentHighlight(223) 9 ms
+I[23:23:29.338] --> textDocument/clangd.fileStatus
+I[23:23:29.430] <-- textDocument/signatureHelp(224)
+I[23:23:29.434] --> reply:textDocument/signatureHelp(224) 4 ms
+I[23:23:29.509] <-- textDocument/foldingRange(225)
+I[23:23:29.510] --> reply:textDocument/foldingRange(225) 0 ms
+I[23:23:29.591] <-- textDocument/codeAction(226)
+I[23:23:29.591] --> reply:textDocument/codeAction(226) 0 ms
+I[23:23:29.591] --> textDocument/clangd.fileStatus
+I[23:23:29.607] <-- textDocument/semanticTokens/full/delta(227)
+I[23:23:29.608] --> reply:textDocument/semanticTokens/full/delta(227) 0 ms
+I[23:23:29.608] --> textDocument/clangd.fileStatus
+I[23:23:29.659] <-- textDocument/documentSymbol(228)
+I[23:23:29.659] <-- textDocument/documentSymbol(229)
+I[23:23:29.659] --> reply:textDocument/documentSymbol(228) 0 ms
+I[23:23:29.660] --> reply:textDocument/documentSymbol(229) 0 ms
+I[23:23:29.660] --> textDocument/clangd.fileStatus
+I[23:23:29.708] <-- textDocument/didChange
+I[23:23:29.708] --> textDocument/clangd.fileStatus
+I[23:23:29.758] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:29.759] ASTWorker building file /home/nisidabay/end_of_file.c version 68 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:29.760] --> textDocument/clangd.fileStatus
+I[23:23:29.765] --> textDocument/publishDiagnostics
+I[23:23:29.765] --> textDocument/inactiveRegions
+I[23:23:29.765] --> textDocument/clangd.fileStatus
+I[23:23:29.786] <-- textDocument/completion(230)
+I[23:23:29.786] --> reply:textDocument/completion(230) 0 ms
+I[23:23:29.831] <-- textDocument/signatureHelp(231)
+I[23:23:29.835] --> reply:textDocument/signatureHelp(231) 4 ms
+I[23:23:29.885] <-- textDocument/didChange
+I[23:23:29.885] --> textDocument/clangd.fileStatus
+I[23:23:29.935] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:29.935] ASTWorker building file /home/nisidabay/end_of_file.c version 69 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:29.937] --> textDocument/clangd.fileStatus
+I[23:23:29.941] --> textDocument/publishDiagnostics
+I[23:23:29.941] --> textDocument/inactiveRegions
+I[23:23:29.941] --> textDocument/clangd.fileStatus
+I[23:23:30.007] <-- textDocument/signatureHelp(232)
+I[23:23:30.008] <-- textDocument/semanticTokens/full/delta(233)
+I[23:23:30.008] --> reply:textDocument/semanticTokens/full/delta(233) 0 ms
+I[23:23:30.008] --> textDocument/clangd.fileStatus
+I[23:23:30.013] --> reply:textDocument/signatureHelp(232) 5 ms
+I[23:23:30.087] <-- textDocument/foldingRange(234)
+I[23:23:30.087] --> reply:textDocument/foldingRange(234) 0 ms
+I[23:23:30.194] <-- textDocument/codeAction(235)
+I[23:23:30.194] --> reply:textDocument/codeAction(235) 0 ms
+I[23:23:30.195] --> textDocument/clangd.fileStatus
+I[23:23:30.237] <-- textDocument/documentSymbol(236)
+I[23:23:30.237] <-- textDocument/documentSymbol(237)
+I[23:23:30.237] --> reply:textDocument/documentSymbol(236) 0 ms
+I[23:23:30.237] --> reply:textDocument/documentSymbol(237) 0 ms
+I[23:23:30.237] --> textDocument/clangd.fileStatus
+I[23:23:30.887] <-- textDocument/documentLink(238)
+I[23:23:30.887] --> reply:textDocument/documentLink(238) 0 ms
+I[23:23:30.887] --> textDocument/clangd.fileStatus
+I[23:23:31.137] <-- textDocument/inlayHint(239)
+I[23:23:31.137] --> reply:textDocument/inlayHint(239) 0 ms
+I[23:23:31.137] --> textDocument/clangd.fileStatus
+I[23:23:31.440] <-- textDocument/codeAction(240)
+I[23:23:31.441] --> reply:textDocument/codeAction(240) 0 ms
+I[23:23:31.441] --> textDocument/clangd.fileStatus
+I[23:23:32.672] <-- textDocument/codeAction(241)
+I[23:23:32.672] --> reply:textDocument/codeAction(241) 0 ms
+I[23:23:32.672] --> textDocument/clangd.fileStatus
+I[23:23:33.910] <-- textDocument/didChange
+I[23:23:33.910] --> textDocument/clangd.fileStatus
+I[23:23:33.920] <-- textDocument/didChange
+I[23:23:33.920] --> textDocument/clangd.fileStatus
+I[23:23:33.970] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:33.970] ASTWorker building file /home/nisidabay/end_of_file.c version 71 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:33.972] --> textDocument/clangd.fileStatus
+I[23:23:33.978] --> textDocument/publishDiagnostics
+I[23:23:33.978] --> textDocument/inactiveRegions
+I[23:23:33.978] --> textDocument/clangd.fileStatus
+I[23:23:34.122] <-- textDocument/foldingRange(242)
+I[23:23:34.122] --> reply:textDocument/foldingRange(242) 0 ms
+I[23:23:34.210] <-- textDocument/semanticTokens/full/delta(243)
+I[23:23:34.210] --> reply:textDocument/semanticTokens/full/delta(243) 0 ms
+I[23:23:34.210] --> textDocument/clangd.fileStatus
+I[23:23:34.233] <-- textDocument/codeAction(244)
+I[23:23:34.233] --> reply:textDocument/codeAction(244) 0 ms
+I[23:23:34.233] --> textDocument/clangd.fileStatus
+I[23:23:34.272] <-- textDocument/documentSymbol(245)
+I[23:23:34.273] <-- textDocument/documentSymbol(246)
+I[23:23:34.273] --> reply:textDocument/documentSymbol(245) 0 ms
+I[23:23:34.273] --> reply:textDocument/documentSymbol(246) 0 ms
+I[23:23:34.273] --> textDocument/clangd.fileStatus
+I[23:23:34.365] <-- textDocument/didChange
+I[23:23:34.365] --> textDocument/clangd.fileStatus
+I[23:23:34.370] <-- textDocument/documentHighlight(247)
+I[23:23:34.370] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:34.371] ASTWorker building file /home/nisidabay/end_of_file.c version 72 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:34.372] --> textDocument/clangd.fileStatus
+I[23:23:34.380] --> textDocument/publishDiagnostics
+I[23:23:34.380] --> textDocument/inactiveRegions
+I[23:23:34.380] --> reply:textDocument/documentHighlight(247) 9 ms
+I[23:23:34.380] --> textDocument/clangd.fileStatus
+I[23:23:34.392] <-- textDocument/completion(248)
+I[23:23:34.399] Code complete: sema context Statement, query scopes [] (AnyScope=true), expected type <none>
+I[23:23:34.399] Code complete: 1 results from Sema, 29 from Index, 0 matched, 0 from identifiers, 30 returned (incomplete).
+I[23:23:34.400] --> reply:textDocument/completion(248) 7 ms
+I[23:23:34.503] <-- textDocument/didChange
+I[23:23:34.503] --> textDocument/clangd.fileStatus
+I[23:23:34.504] <-- textDocument/completion(249)
+I[23:23:34.507] <-- textDocument/documentHighlight(250)
+I[23:23:34.507] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:34.507] ASTWorker building file /home/nisidabay/end_of_file.c version 73 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:34.508] --> textDocument/clangd.fileStatus
+I[23:23:34.509] Code complete: sema context Statement, query scopes [] (AnyScope=true), expected type <none>
+I[23:23:34.509] Code complete: 0 results from Sema, 19 from Index, 0 matched, 0 from identifiers, 19 returned (incomplete).
+I[23:23:34.510] --> reply:textDocument/completion(249) 5 ms
+I[23:23:34.512] --> textDocument/publishDiagnostics
+I[23:23:34.513] --> textDocument/inactiveRegions
+I[23:23:34.513] --> reply:textDocument/documentHighlight(250) 5 ms
+I[23:23:34.513] --> textDocument/clangd.fileStatus
+I[23:23:34.620] <-- textDocument/didChange
+I[23:23:34.620] --> textDocument/clangd.fileStatus
+I[23:23:34.622] <-- textDocument/completion(251)
+I[23:23:34.628] Code complete: sema context Statement, query scopes [] (AnyScope=true), expected type <none>
+I[23:23:34.628] Code complete: 0 results from Sema, 19 from Index, 0 matched, 0 from identifiers, 19 returned.
+I[23:23:34.629] --> reply:textDocument/completion(251) 6 ms
+I[23:23:34.638] <-- textDocument/documentHighlight(252)
+I[23:23:34.638] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:34.638] ASTWorker building file /home/nisidabay/end_of_file.c version 74 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:34.640] --> textDocument/clangd.fileStatus
+I[23:23:34.647] --> textDocument/publishDiagnostics
+I[23:23:34.647] --> textDocument/inactiveRegions
+I[23:23:34.647] --> reply:textDocument/documentHighlight(252) 8 ms
+I[23:23:34.647] --> textDocument/clangd.fileStatus
+I[23:23:34.666] <-- textDocument/semanticTokens/full/delta(253)
+I[23:23:34.666] --> reply:textDocument/semanticTokens/full/delta(253) 0 ms
+I[23:23:34.666] --> textDocument/clangd.fileStatus
+I[23:23:34.813] <-- textDocument/didChange
+I[23:23:34.813] --> textDocument/clangd.fileStatus
+I[23:23:34.815] <-- textDocument/completion(254)
+I[23:23:34.819] <-- textDocument/documentHighlight(255)
+I[23:23:34.819] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:34.819] ASTWorker building file /home/nisidabay/end_of_file.c version 75 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:34.821] --> textDocument/clangd.fileStatus
+I[23:23:34.821] Code complete: sema context Statement, query scopes [] (AnyScope=true), expected type <none>
+I[23:23:34.821] Code complete: 0 results from Sema, 1 from Index, 0 matched, 0 from identifiers, 1 returned.
+I[23:23:34.822] --> reply:textDocument/completion(254) 6 ms
+I[23:23:34.826] --> textDocument/publishDiagnostics
+I[23:23:34.826] --> textDocument/inactiveRegions
+I[23:23:34.826] --> reply:textDocument/documentHighlight(255) 7 ms
+I[23:23:34.826] --> textDocument/clangd.fileStatus
+I[23:23:35.016] <-- textDocument/foldingRange(256)
+I[23:23:35.016] --> reply:textDocument/foldingRange(256) 0 ms
+I[23:23:35.096] <-- textDocument/codeAction(257)
+I[23:23:35.096] --> reply:textDocument/codeAction(257) 0 ms
+I[23:23:35.096] --> textDocument/clangd.fileStatus
+I[23:23:35.113] <-- textDocument/semanticTokens/full/delta(258)
+I[23:23:35.114] --> reply:textDocument/semanticTokens/full/delta(258) 0 ms
+I[23:23:35.114] --> textDocument/clangd.fileStatus
+I[23:23:35.165] <-- textDocument/documentSymbol(259)
+I[23:23:35.165] --> reply:textDocument/documentSymbol(259) 0 ms
+I[23:23:35.165] --> textDocument/clangd.fileStatus
+I[23:23:35.167] <-- textDocument/documentSymbol(260)
+I[23:23:35.167] --> reply:textDocument/documentSymbol(260) 0 ms
+I[23:23:35.167] --> textDocument/clangd.fileStatus
+I[23:23:35.237] <-- textDocument/didChange
+I[23:23:35.237] --> textDocument/clangd.fileStatus
+I[23:23:35.287] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:35.287] ASTWorker building file /home/nisidabay/end_of_file.c version 76 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:35.289] --> textDocument/clangd.fileStatus
+I[23:23:35.300] --> textDocument/publishDiagnostics
+I[23:23:35.300] --> textDocument/inactiveRegions
+I[23:23:35.300] --> textDocument/clangd.fileStatus
+I[23:23:35.362] <-- textDocument/signatureHelp(261)
+I[23:23:35.366] --> reply:textDocument/signatureHelp(261) 4 ms
+I[23:23:35.440] <-- textDocument/foldingRange(262)
+I[23:23:35.440] --> reply:textDocument/foldingRange(262) 0 ms
+I[23:23:35.537] <-- textDocument/semanticTokens/full/delta(263)
+I[23:23:35.537] --> reply:textDocument/semanticTokens/full/delta(263) 0 ms
+I[23:23:35.537] --> textDocument/clangd.fileStatus
+I[23:23:35.557] <-- textDocument/codeAction(264)
+I[23:23:35.558] --> reply:textDocument/codeAction(264) 0 ms
+I[23:23:35.558] --> textDocument/clangd.fileStatus
+I[23:23:35.589] <-- textDocument/documentSymbol(265)
+I[23:23:35.589] --> reply:textDocument/documentSymbol(265) 0 ms
+I[23:23:35.589] --> textDocument/clangd.fileStatus
+I[23:23:35.589] <-- textDocument/documentSymbol(266)
+I[23:23:35.589] --> reply:textDocument/documentSymbol(266) 0 ms
+I[23:23:35.589] --> textDocument/clangd.fileStatus
+I[23:23:35.656] <-- textDocument/didChange
+I[23:23:35.656] --> textDocument/clangd.fileStatus
+I[23:23:35.662] <-- textDocument/documentHighlight(267)
+I[23:23:35.662] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:35.663] ASTWorker building file /home/nisidabay/end_of_file.c version 77 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:35.665] --> textDocument/clangd.fileStatus
+I[23:23:35.674] --> textDocument/publishDiagnostics
+I[23:23:35.674] --> textDocument/inactiveRegions
+I[23:23:35.674] --> reply:textDocument/documentHighlight(267) 11 ms
+I[23:23:35.674] --> textDocument/clangd.fileStatus
+I[23:23:35.679] <-- textDocument/completion(268)
+I[23:23:35.685] Code complete: sema context Expression, query scopes [] (AnyScope=true), expected type <none>
+I[23:23:35.685] Code complete: 5 results from Sema, 100 from Index, 0 matched, 0 from identifiers, 100 returned (incomplete).
+I[23:23:35.689] --> reply:textDocument/completion(268) 9 ms
+I[23:23:35.746] <-- textDocument/didChange
+I[23:23:35.746] --> textDocument/clangd.fileStatus
+I[23:23:35.748] <-- textDocument/completion(269)
+I[23:23:35.752] Code complete: sema context Expression, query scopes [] (AnyScope=true), expected type <none>
+I[23:23:35.753] Code complete: 1 results from Sema, 12 from Index, 0 matched, 0 from identifiers, 13 returned (incomplete).
+I[23:23:35.753] --> reply:textDocument/completion(269) 5 ms
+I[23:23:35.759] <-- textDocument/documentHighlight(270)
+I[23:23:35.759] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:35.760] ASTWorker building file /home/nisidabay/end_of_file.c version 78 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:35.761] --> textDocument/clangd.fileStatus
+I[23:23:35.767] --> textDocument/publishDiagnostics
+I[23:23:35.767] --> textDocument/inactiveRegions
+I[23:23:35.767] --> reply:textDocument/documentHighlight(270) 7 ms
+I[23:23:35.767] --> textDocument/clangd.fileStatus
+I[23:23:35.868] <-- textDocument/signatureHelp(271)
+I[23:23:35.873] --> reply:textDocument/signatureHelp(271) 4 ms
+I[23:23:35.917] <-- textDocument/didChange
+I[23:23:35.917] --> textDocument/clangd.fileStatus
+I[23:23:35.920] <-- textDocument/completion(272)
+I[23:23:35.924] <-- textDocument/documentHighlight(273)
+I[23:23:35.924] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:35.925] ASTWorker building file /home/nisidabay/end_of_file.c version 79 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:35.926] --> textDocument/clangd.fileStatus
+I[23:23:35.926] Code complete: sema context Expression, query scopes [] (AnyScope=true), expected type <none>
+I[23:23:35.927] Code complete: 1 results from Sema, 4 from Index, 0 matched, 0 from identifiers, 5 returned.
+I[23:23:35.927] --> reply:textDocument/completion(272) 6 ms
+I[23:23:35.932] --> textDocument/publishDiagnostics
+I[23:23:35.933] --> textDocument/inactiveRegions
+I[23:23:35.933] --> reply:textDocument/documentHighlight(273) 8 ms
+I[23:23:35.933] --> textDocument/clangd.fileStatus
+I[23:23:35.959] <-- textDocument/semanticTokens/full/delta(274)
+I[23:23:35.959] --> reply:textDocument/semanticTokens/full/delta(274) 0 ms
+I[23:23:35.959] --> textDocument/clangd.fileStatus
+I[23:23:36.002] <-- textDocument/didChange
+I[23:23:36.002] --> textDocument/clangd.fileStatus
+I[23:23:36.004] <-- textDocument/completion(275)
+I[23:23:36.006] <-- textDocument/documentHighlight(276)
+I[23:23:36.006] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:36.007] ASTWorker building file /home/nisidabay/end_of_file.c version 80 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:36.008] --> textDocument/clangd.fileStatus
+I[23:23:36.009] Code complete: sema context Expression, query scopes [] (AnyScope=true), expected type <none>
+I[23:23:36.009] Code complete: 1 results from Sema, 4 from Index, 0 matched, 0 from identifiers, 5 returned.
+I[23:23:36.009] --> reply:textDocument/completion(275) 4 ms
+I[23:23:36.015] --> textDocument/publishDiagnostics
+I[23:23:36.015] --> textDocument/inactiveRegions
+I[23:23:36.015] --> reply:textDocument/documentHighlight(276) 8 ms
+I[23:23:36.015] --> textDocument/clangd.fileStatus
+I[23:23:36.124] <-- textDocument/signatureHelp(277)
+I[23:23:36.129] --> reply:textDocument/signatureHelp(277) 4 ms
+I[23:23:36.173] <-- textDocument/didChange
+I[23:23:36.173] --> textDocument/clangd.fileStatus
+I[23:23:36.176] <-- textDocument/completion(278)
+I[23:23:36.179] <-- textDocument/documentHighlight(279)
+I[23:23:36.179] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:36.180] ASTWorker building file /home/nisidabay/end_of_file.c version 81 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:36.181] --> textDocument/clangd.fileStatus
+I[23:23:36.182] Code complete: sema context Expression, query scopes [] (AnyScope=true), expected type <none>
+I[23:23:36.182] Code complete: 1 results from Sema, 3 from Index, 0 matched, 0 from identifiers, 4 returned.
+I[23:23:36.182] --> reply:textDocument/completion(278) 6 ms
+I[23:23:36.186] --> textDocument/publishDiagnostics
+I[23:23:36.186] --> textDocument/inactiveRegions
+I[23:23:36.186] --> reply:textDocument/documentHighlight(279) 7 ms
+I[23:23:36.186] --> textDocument/clangd.fileStatus
+I[23:23:36.285] <-- textDocument/didChange
+I[23:23:36.285] --> textDocument/clangd.fileStatus
+I[23:23:36.290] <-- textDocument/completion(280)
+I[23:23:36.291] <-- textDocument/documentHighlight(281)
+I[23:23:36.292] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:36.292] ASTWorker building file /home/nisidabay/end_of_file.c version 82 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:36.293] --> textDocument/clangd.fileStatus
+I[23:23:36.296] Code complete: sema context Expression, query scopes [] (AnyScope=true), expected type <none>
+I[23:23:36.296] Code complete: 1 results from Sema, 1 from Index, 0 matched, 0 from identifiers, 2 returned.
+I[23:23:36.296] --> reply:textDocument/completion(280) 6 ms
+I[23:23:36.302] --> textDocument/publishDiagnostics
+I[23:23:36.302] --> textDocument/inactiveRegions
+I[23:23:36.302] --> reply:textDocument/documentHighlight(281) 10 ms
+I[23:23:36.302] --> textDocument/clangd.fileStatus
+I[23:23:36.329] <-- textDocument/semanticTokens/full/delta(282)
+I[23:23:36.329] --> reply:textDocument/semanticTokens/full/delta(282) 0 ms
+I[23:23:36.329] --> textDocument/clangd.fileStatus
+I[23:23:36.377] <-- textDocument/didChange
+I[23:23:36.377] --> textDocument/clangd.fileStatus
+I[23:23:36.382] <-- textDocument/completion(283)
+I[23:23:36.387] Code complete: sema context Expression, query scopes [] (AnyScope=true), expected type <none>
+I[23:23:36.388] Code complete: 1 results from Sema, 1 from Index, 0 matched, 0 from identifiers, 2 returned.
+I[23:23:36.388] --> reply:textDocument/completion(283) 5 ms
+I[23:23:36.393] <-- textDocument/documentHighlight(284)
+I[23:23:36.393] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:36.394] ASTWorker building file /home/nisidabay/end_of_file.c version 83 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:36.396] --> textDocument/clangd.fileStatus
+I[23:23:36.403] --> textDocument/publishDiagnostics
+I[23:23:36.403] --> textDocument/inactiveRegions
+I[23:23:36.403] --> reply:textDocument/documentHighlight(284) 10 ms
+I[23:23:36.403] --> textDocument/clangd.fileStatus
+I[23:23:36.481] <-- textDocument/didChange
+I[23:23:36.481] --> textDocument/clangd.fileStatus
+I[23:23:36.483] <-- textDocument/completion(285)
+I[23:23:36.488] Code complete: sema context Expression, query scopes [] (AnyScope=true), expected type <none>
+I[23:23:36.488] Code complete: 1 results from Sema, 1 from Index, 0 matched, 0 from identifiers, 2 returned.
+I[23:23:36.488] --> reply:textDocument/completion(285) 5 ms
+I[23:23:36.498] <-- textDocument/documentHighlight(286)
+I[23:23:36.498] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:36.498] ASTWorker building file /home/nisidabay/end_of_file.c version 84 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:36.499] --> textDocument/clangd.fileStatus
+I[23:23:36.506] --> textDocument/publishDiagnostics
+I[23:23:36.507] --> textDocument/inactiveRegions
+I[23:23:36.507] --> reply:textDocument/documentHighlight(286) 9 ms
+I[23:23:36.507] --> textDocument/clangd.fileStatus
+I[23:23:36.603] <-- textDocument/signatureHelp(287)
+I[23:23:36.607] --> reply:textDocument/signatureHelp(287) 4 ms
+I[23:23:36.677] <-- textDocument/semanticTokens/full/delta(288)
+I[23:23:36.677] --> reply:textDocument/semanticTokens/full/delta(288) 0 ms
+I[23:23:36.677] --> textDocument/clangd.fileStatus
+I[23:23:36.689] <-- textDocument/foldingRange(289)
+I[23:23:36.689] --> reply:textDocument/foldingRange(289) 0 ms
+I[23:23:36.762] <-- textDocument/codeAction(290)
+I[23:23:36.762] --> reply:textDocument/codeAction(290) 0 ms
+I[23:23:36.762] --> textDocument/clangd.fileStatus
+I[23:23:36.832] <-- textDocument/documentSymbol(291)
+I[23:23:36.832] --> reply:textDocument/documentSymbol(291) 0 ms
+I[23:23:36.832] --> textDocument/clangd.fileStatus
+I[23:23:36.833] <-- textDocument/documentSymbol(292)
+I[23:23:36.833] --> reply:textDocument/documentSymbol(292) 0 ms
+I[23:23:36.833] --> textDocument/clangd.fileStatus
+I[23:23:37.482] <-- textDocument/documentLink(293)
+I[23:23:37.482] --> reply:textDocument/documentLink(293) 0 ms
+I[23:23:37.483] --> textDocument/clangd.fileStatus
+I[23:23:37.733] <-- textDocument/inlayHint(294)
+I[23:23:37.733] --> reply:textDocument/inlayHint(294) 0 ms
+I[23:23:37.733] --> textDocument/clangd.fileStatus
+I[23:23:38.013] <-- textDocument/didChange
+I[23:23:38.013] --> textDocument/clangd.fileStatus
+I[23:23:38.063] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:38.063] ASTWorker building file /home/nisidabay/end_of_file.c version 85 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:38.065] --> textDocument/clangd.fileStatus
+I[23:23:38.065] --> textDocument/clangd.fileStatus
+I[23:23:38.065] --> textDocument/clangd.fileStatus
+I[23:23:38.065] --> textDocument/clangd.fileStatus
+I[23:23:38.138] <-- textDocument/signatureHelp(295)
+I[23:23:38.142] --> reply:textDocument/signatureHelp(295) 4 ms
+I[23:23:38.217] <-- textDocument/foldingRange(296)
+I[23:23:38.217] --> reply:textDocument/foldingRange(296) 0 ms
+I[23:23:38.267] <-- textDocument/codeAction(297)
+I[23:23:38.267] --> reply:textDocument/codeAction(297) 0 ms
+I[23:23:38.267] --> textDocument/clangd.fileStatus
+I[23:23:38.318] <-- textDocument/semanticTokens/full/delta(298)
+I[23:23:38.318] --> reply:textDocument/semanticTokens/full/delta(298) 0 ms
+I[23:23:38.318] --> textDocument/clangd.fileStatus
+I[23:23:38.365] <-- textDocument/documentSymbol(299)
+I[23:23:38.365] --> reply:textDocument/documentSymbol(299) 0 ms
+I[23:23:38.365] --> textDocument/clangd.fileStatus
+I[23:23:38.366] <-- textDocument/documentSymbol(300)
+I[23:23:38.366] --> reply:textDocument/documentSymbol(300) 0 ms
+I[23:23:38.366] --> textDocument/clangd.fileStatus
+I[23:23:39.015] <-- textDocument/documentLink(301)
+I[23:23:39.015] --> reply:textDocument/documentLink(301) 0 ms
+I[23:23:39.015] --> textDocument/clangd.fileStatus
+I[23:23:39.267] <-- textDocument/inlayHint(302)
+I[23:23:39.267] --> reply:textDocument/inlayHint(302) 0 ms
+I[23:23:39.267] --> textDocument/clangd.fileStatus
+I[23:23:39.506] <-- textDocument/didChange
+I[23:23:39.506] --> textDocument/clangd.fileStatus
+I[23:23:39.556] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:39.557] ASTWorker building file /home/nisidabay/end_of_file.c version 86 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:39.559] --> textDocument/clangd.fileStatus
+I[23:23:39.566] --> textDocument/publishDiagnostics
+I[23:23:39.566] --> textDocument/inactiveRegions
+I[23:23:39.566] --> textDocument/clangd.fileStatus
+I[23:23:39.708] <-- textDocument/foldingRange(303)
+I[23:23:39.709] --> reply:textDocument/foldingRange(303) 0 ms
+I[23:23:39.806] <-- textDocument/semanticTokens/full/delta(304)
+I[23:23:39.806] --> reply:textDocument/semanticTokens/full/delta(304) 0 ms
+I[23:23:39.806] --> textDocument/clangd.fileStatus
+I[23:23:39.821] <-- textDocument/codeAction(305)
+I[23:23:39.821] --> reply:textDocument/codeAction(305) 0 ms
+I[23:23:39.821] --> textDocument/clangd.fileStatus
+I[23:23:39.858] <-- textDocument/documentSymbol(306)
+I[23:23:39.858] <-- textDocument/documentSymbol(307)
+I[23:23:39.858] --> reply:textDocument/documentSymbol(306) 0 ms
+I[23:23:39.859] --> reply:textDocument/documentSymbol(307) 0 ms
+I[23:23:39.859] --> textDocument/clangd.fileStatus
+I[23:23:39.924] <-- textDocument/didChange
+I[23:23:39.924] --> textDocument/clangd.fileStatus
+I[23:23:39.940] <-- textDocument/completion(308)
+I[23:23:39.941] <-- textDocument/documentHighlight(309)
+I[23:23:39.941] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:39.941] ASTWorker building file /home/nisidabay/end_of_file.c version 87 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:39.943] --> textDocument/clangd.fileStatus
+I[23:23:39.947] Code complete: sema context Statement, query scopes [] (AnyScope=true), expected type <none>
+I[23:23:39.947] Code complete: 0 results from Sema, 8 from Index, 0 matched, 0 from identifiers, 8 returned (incomplete).
+I[23:23:39.948] --> reply:textDocument/completion(308) 7 ms
+I[23:23:39.950] --> textDocument/publishDiagnostics
+I[23:23:39.950] --> textDocument/inactiveRegions
+I[23:23:39.950] --> reply:textDocument/documentHighlight(309) 8 ms
+I[23:23:39.950] --> textDocument/clangd.fileStatus
+I[23:23:40.000] <-- textDocument/didChange
+I[23:23:40.000] --> textDocument/clangd.fileStatus
+I[23:23:40.001] <-- textDocument/completion(310)
+I[23:23:40.005] <-- textDocument/documentHighlight(311)
+I[23:23:40.005] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:40.006] ASTWorker building file /home/nisidabay/end_of_file.c version 88 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:40.007] Code complete: sema context Statement, query scopes [] (AnyScope=true), expected type <none>
+I[23:23:40.007] Code complete: 0 results from Sema, 0 from Index, 0 matched, 0 from identifiers, 0 returned (incomplete).
+I[23:23:40.007] --> reply:textDocument/completion(310) 5 ms
+I[23:23:40.007] --> textDocument/clangd.fileStatus
+I[23:23:40.013] --> textDocument/publishDiagnostics
+I[23:23:40.013] --> textDocument/inactiveRegions
+I[23:23:40.013] --> reply:textDocument/documentHighlight(311) 8 ms
+I[23:23:40.014] --> textDocument/clangd.fileStatus
+I[23:23:40.202] <-- textDocument/foldingRange(312)
+I[23:23:40.202] --> reply:textDocument/foldingRange(312) 0 ms
+I[23:23:40.224] <-- textDocument/semanticTokens/full/delta(313)
+I[23:23:40.224] --> reply:textDocument/semanticTokens/full/delta(313) 0 ms
+I[23:23:40.225] --> textDocument/clangd.fileStatus
+I[23:23:40.273] <-- textDocument/codeAction(314)
+I[23:23:40.273] --> reply:textDocument/codeAction(314) 0 ms
+I[23:23:40.273] --> textDocument/clangd.fileStatus
+I[23:23:40.352] <-- textDocument/documentSymbol(315)
+I[23:23:40.352] <-- textDocument/documentSymbol(316)
+I[23:23:40.352] --> reply:textDocument/documentSymbol(315) 0 ms
+I[23:23:40.352] --> reply:textDocument/documentSymbol(316) 0 ms
+I[23:23:40.352] --> textDocument/clangd.fileStatus
+I[23:23:40.663] <-- textDocument/didChange
+I[23:23:40.663] --> textDocument/clangd.fileStatus
+I[23:23:40.679] <-- textDocument/documentHighlight(317)
+I[23:23:40.680] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:40.680] ASTWorker building file /home/nisidabay/end_of_file.c version 89 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:40.681] --> textDocument/clangd.fileStatus
+I[23:23:40.688] --> textDocument/publishDiagnostics
+I[23:23:40.688] --> textDocument/inactiveRegions
+I[23:23:40.688] --> reply:textDocument/documentHighlight(317) 8 ms
+I[23:23:40.688] --> textDocument/clangd.fileStatus
+I[23:23:40.807] <-- textDocument/didChange
+I[23:23:40.808] --> textDocument/clangd.fileStatus
+I[23:23:40.858] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:40.858] ASTWorker building file /home/nisidabay/end_of_file.c version 90 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:40.860] --> textDocument/clangd.fileStatus
+I[23:23:40.867] --> textDocument/publishDiagnostics
+I[23:23:40.867] --> textDocument/inactiveRegions
+I[23:23:40.868] --> textDocument/clangd.fileStatus
+I[23:23:40.964] <-- textDocument/semanticTokens/full/delta(318)
+I[23:23:40.964] --> reply:textDocument/semanticTokens/full/delta(318) 0 ms
+I[23:23:40.964] --> textDocument/clangd.fileStatus
+I[23:23:41.009] <-- textDocument/foldingRange(319)
+I[23:23:41.009] --> reply:textDocument/foldingRange(319) 0 ms
+I[23:23:41.121] <-- textDocument/codeAction(320)
+I[23:23:41.122] --> reply:textDocument/codeAction(320) 0 ms
+I[23:23:41.122] --> textDocument/clangd.fileStatus
+I[23:23:41.159] <-- textDocument/documentSymbol(321)
+I[23:23:41.159] --> reply:textDocument/documentSymbol(321) 0 ms
+I[23:23:41.159] --> textDocument/clangd.fileStatus
+I[23:23:41.159] <-- textDocument/documentSymbol(322)
+I[23:23:41.159] --> reply:textDocument/documentSymbol(322) 0 ms
+I[23:23:41.160] --> textDocument/clangd.fileStatus
+I[23:23:41.808] <-- textDocument/documentLink(323)
+I[23:23:41.809] --> reply:textDocument/documentLink(323) 0 ms
+I[23:23:41.809] --> textDocument/clangd.fileStatus
+I[23:23:42.059] <-- textDocument/inlayHint(324)
+I[23:23:42.059] --> reply:textDocument/inlayHint(324) 0 ms
+I[23:23:42.059] --> textDocument/clangd.fileStatus
+I[23:23:42.171] <-- textDocument/codeAction(325)
+I[23:23:42.171] --> reply:textDocument/codeAction(325) 0 ms
+I[23:23:42.171] --> textDocument/clangd.fileStatus
+I[23:23:43.066] <-- textDocument/didChange
+I[23:23:43.066] --> textDocument/clangd.fileStatus
+I[23:23:43.116] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:43.116] ASTWorker building file /home/nisidabay/end_of_file.c version 91 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:43.117] --> textDocument/clangd.fileStatus
+I[23:23:43.121] --> textDocument/publishDiagnostics
+I[23:23:43.121] --> textDocument/inactiveRegions
+I[23:23:43.121] --> textDocument/clangd.fileStatus
+I[23:23:43.267] <-- textDocument/foldingRange(326)
+I[23:23:43.267] --> reply:textDocument/foldingRange(326) 0 ms
+I[23:23:43.366] <-- textDocument/semanticTokens/full/delta(327)
+I[23:23:43.366] --> reply:textDocument/semanticTokens/full/delta(327) 0 ms
+I[23:23:43.366] --> textDocument/clangd.fileStatus
+I[23:23:43.374] <-- textDocument/codeAction(328)
+I[23:23:43.374] --> reply:textDocument/codeAction(328) 0 ms
+I[23:23:43.374] --> textDocument/clangd.fileStatus
+I[23:23:43.417] <-- textDocument/documentSymbol(329)
+I[23:23:43.417] --> reply:textDocument/documentSymbol(329) 0 ms
+I[23:23:43.417] --> textDocument/clangd.fileStatus
+I[23:23:43.418] <-- textDocument/documentSymbol(330)
+I[23:23:43.418] --> reply:textDocument/documentSymbol(330) 0 ms
+I[23:23:43.418] --> textDocument/clangd.fileStatus
+I[23:23:44.067] <-- textDocument/documentLink(331)
+I[23:23:44.067] --> reply:textDocument/documentLink(331) 0 ms
+I[23:23:44.067] --> textDocument/clangd.fileStatus
+I[23:23:44.317] <-- textDocument/inlayHint(332)
+I[23:23:44.317] --> reply:textDocument/inlayHint(332) 0 ms
+I[23:23:44.317] --> textDocument/clangd.fileStatus
+I[23:23:44.526] <-- textDocument/didChange
+I[23:23:44.526] --> textDocument/clangd.fileStatus
+I[23:23:44.576] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:23:44.576] ASTWorker building file /home/nisidabay/end_of_file.c version 92 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:23:44.577] --> textDocument/clangd.fileStatus
+I[23:23:44.581] --> textDocument/publishDiagnostics
+I[23:23:44.581] --> textDocument/inactiveRegions
+I[23:23:44.581] --> textDocument/clangd.fileStatus
+I[23:23:44.727] <-- textDocument/foldingRange(333)
+I[23:23:44.728] --> reply:textDocument/foldingRange(333) 0 ms
+I[23:23:44.827] <-- textDocument/semanticTokens/full/delta(334)
+I[23:23:44.827] --> reply:textDocument/semanticTokens/full/delta(334) 0 ms
+I[23:23:44.827] --> textDocument/clangd.fileStatus
+I[23:23:44.834] <-- textDocument/codeAction(335)
+I[23:23:44.834] --> reply:textDocument/codeAction(335) 0 ms
+I[23:23:44.834] --> textDocument/clangd.fileStatus
+I[23:23:44.877] <-- textDocument/documentSymbol(336)
+I[23:23:44.878] --> reply:textDocument/documentSymbol(336) 0 ms
+I[23:23:44.878] --> textDocument/clangd.fileStatus
+I[23:23:44.878] <-- textDocument/documentSymbol(337)
+I[23:23:44.878] --> reply:textDocument/documentSymbol(337) 0 ms
+I[23:23:44.878] --> textDocument/clangd.fileStatus
+I[23:23:45.527] <-- textDocument/documentLink(338)
+I[23:23:45.528] --> reply:textDocument/documentLink(338) 0 ms
+I[23:23:45.528] --> textDocument/clangd.fileStatus
+I[23:23:45.778] <-- textDocument/inlayHint(339)
+I[23:23:45.778] --> reply:textDocument/inlayHint(339) 0 ms
+I[23:23:45.778] --> textDocument/clangd.fileStatus
+I[23:23:45.958] <-- textDocument/codeAction(340)
+I[23:23:45.958] --> reply:textDocument/codeAction(340) 0 ms
+I[23:23:45.958] --> textDocument/clangd.fileStatus
+I[23:23:46.383] <-- textDocument/documentHighlight(341)
+I[23:23:46.383] --> reply:textDocument/documentHighlight(341) 0 ms
+I[23:23:46.383] --> textDocument/clangd.fileStatus
+I[23:23:46.626] <-- textDocument/codeAction(342)
+I[23:23:46.626] --> reply:textDocument/codeAction(342) 0 ms
+I[23:23:46.626] --> textDocument/clangd.fileStatus
+I[23:23:50.055] <-- textDocument/codeAction(343)
+I[23:23:50.055] --> reply:textDocument/codeAction(343) 0 ms
+I[23:23:50.055] --> textDocument/clangd.fileStatus
+I[23:23:50.206] <-- textDocument/documentHighlight(344)
+I[23:23:50.206] --> reply:textDocument/documentHighlight(344) 0 ms
+I[23:23:50.206] --> textDocument/clangd.fileStatus
+I[23:23:50.455] <-- textDocument/codeAction(345)
+I[23:23:50.455] --> reply:textDocument/codeAction(345) 0 ms
+I[23:23:50.455] --> textDocument/clangd.fileStatus
+I[23:23:52.357] <-- textDocument/documentHighlight(346)
+I[23:23:52.357] --> reply:textDocument/documentHighlight(346) 0 ms
+I[23:23:52.357] --> textDocument/clangd.fileStatus
+I[23:23:52.606] <-- textDocument/codeAction(347)
+I[23:23:52.606] --> reply:textDocument/codeAction(347) 0 ms
+I[23:23:52.606] --> textDocument/clangd.fileStatus
+I[23:23:52.965] <-- textDocument/documentHighlight(348)
+I[23:23:52.965] --> reply:textDocument/documentHighlight(348) 0 ms
+I[23:23:52.965] --> textDocument/clangd.fileStatus
+I[23:23:53.215] <-- textDocument/codeAction(349)
+I[23:23:53.215] --> reply:textDocument/codeAction(349) 0 ms
+I[23:23:53.215] --> textDocument/clangd.fileStatus
+I[23:23:56.497] <-- textDocument/codeAction(350)
+I[23:23:56.498] --> reply:textDocument/codeAction(350) 0 ms
+I[23:23:56.498] --> textDocument/clangd.fileStatus
+I[23:23:56.905] <-- textDocument/hover(351)
+I[23:23:56.911] --> reply:textDocument/hover(351) 5 ms
+I[23:23:56.911] --> textDocument/clangd.fileStatus
+I[23:23:57.104] <-- textDocument/hover(352)
+I[23:23:57.106] --> reply:textDocument/hover(352) 1 ms
+I[23:23:57.106] --> textDocument/clangd.fileStatus
+I[23:23:57.193] <-- textDocument/documentHighlight(353)
+I[23:23:57.193] --> reply:textDocument/documentHighlight(353) 0 ms
+I[23:23:57.193] --> textDocument/clangd.fileStatus
+I[23:23:57.443] <-- textDocument/codeAction(354)
+I[23:23:57.444] --> reply:textDocument/codeAction(354) 0 ms
+I[23:23:57.444] --> textDocument/clangd.fileStatus
+I[23:23:59.832] <-- textDocument/hover(355)
+I[23:23:59.833] --> reply:textDocument/hover(355) 1 ms
+I[23:23:59.833] --> textDocument/clangd.fileStatus
+I[23:23:59.988] <-- textDocument/codeAction(356)
+I[23:23:59.988] --> reply:textDocument/codeAction(356) 0 ms
+I[23:23:59.988] --> textDocument/clangd.fileStatus
+I[23:24:01.183] <-- textDocument/hover(357)
+I[23:24:01.184] --> reply:textDocument/hover(357) 0 ms
+I[23:24:01.184] --> textDocument/clangd.fileStatus
+I[23:24:01.767] <-- textDocument/hover(358)
+I[23:24:01.768] --> reply:textDocument/hover(358) 1 ms
+I[23:24:01.768] --> textDocument/clangd.fileStatus
+I[23:24:08.070] <-- textDocument/hover(359)
+I[23:24:08.071] --> reply:textDocument/hover(359) 0 ms
+I[23:24:08.071] --> textDocument/clangd.fileStatus
+I[23:24:09.985] <-- textDocument/definition(360)
+I[23:24:09.985] --> reply:textDocument/definition(360) 0 ms
+I[23:24:09.985] --> textDocument/clangd.fileStatus
+I[23:24:09.991] <-- textDocument/references(361)
+I[23:24:09.991] --> reply:textDocument/references(361) 0 ms
+I[23:24:09.991] --> textDocument/clangd.fileStatus
+I[23:24:11.165] <-- textDocument/definition(362)
+I[23:24:11.165] --> reply:textDocument/definition(362) 0 ms
+I[23:24:11.165] --> textDocument/clangd.fileStatus
+I[23:24:11.168] <-- textDocument/references(363)
+I[23:24:11.168] --> reply:textDocument/references(363) 0 ms
+I[23:24:11.168] --> textDocument/clangd.fileStatus
+I[23:24:14.610] <-- textDocument/documentHighlight(364)
+I[23:24:14.611] --> reply:textDocument/documentHighlight(364) 0 ms
+I[23:24:14.611] --> textDocument/clangd.fileStatus
+I[23:24:14.782] <-- textDocument/codeAction(365)
+I[23:24:14.782] --> reply:textDocument/codeAction(365) 0 ms
+I[23:24:14.782] --> textDocument/clangd.fileStatus
+I[23:24:15.285] <-- textDocument/documentHighlight(366)
+I[23:24:15.286] --> reply:textDocument/documentHighlight(366) 0 ms
+I[23:24:15.286] --> textDocument/clangd.fileStatus
+I[23:24:15.535] <-- textDocument/codeAction(367)
+I[23:24:15.535] --> reply:textDocument/codeAction(367) 0 ms
+I[23:24:15.535] --> textDocument/clangd.fileStatus
+I[23:24:19.886] <-- textDocument/didSave
+I[23:24:19.886] File version went from 92 to 92
+I[23:24:19.886] --> textDocument/clangd.fileStatus
+I[23:24:19.936] Failed to find compilation database for /home/nisidabay/end_of_file.c
+I[23:24:19.936] ASTWorker building file /home/nisidabay/end_of_file.c version 92 with command clangd fallback
+[/home/nisidabay]
+/usr/bin/clang -resource-dir=/usr/lib/clang/17 -- /home/nisidabay/end_of_file.c
+I[23:24:19.937] --> textDocument/clangd.fileStatus
+I[23:24:19.937] --> textDocument/clangd.fileStatus
+I[23:24:19.937] --> textDocument/clangd.fileStatus
+I[23:24:19.937] --> textDocument/clangd.fileStatus
+I[23:24:20.549] <-- textDocument/documentHighlight(368)
+I[23:24:20.549] --> reply:textDocument/documentHighlight(368) 0 ms
+I[23:24:20.549] --> textDocument/clangd.fileStatus
+I[23:24:20.797] <-- textDocument/codeAction(369)
+I[23:24:20.798] --> reply:textDocument/codeAction(369) 0 ms
+I[23:24:20.798] --> textDocument/clangd.fileStatus
+I[23:24:21.133] <-- textDocument/documentHighlight(370)
+I[23:24:21.133] --> reply:textDocument/documentHighlight(370) 0 ms
+I[23:24:21.133] --> textDocument/clangd.fileStatus
+I[23:24:21.382] <-- textDocument/codeAction(371)
+I[23:24:21.382] --> reply:textDocument/codeAction(371) 0 ms
+I[23:24:21.382] --> textDocument/clangd.fileStatus
+I[23:24:23.676] <-- textDocument/hover(372)
+I[23:24:23.677] --> reply:textDocument/hover(372) 1 ms
+I[23:24:23.677] --> textDocument/clangd.fileStatus
+I[23:24:24.563] <-- textDocument/hover(373)
+I[23:24:24.565] --> reply:textDocument/hover(373) 1 ms
+I[23:24:24.565] --> textDocument/clangd.fileStatus
+I[23:24:25.014] <-- textDocument/hover(374)
+I[23:24:25.015] --> reply:textDocument/hover(374) 0 ms
+I[23:24:25.015] --> textDocument/clangd.fileStatus
+I[23:24:25.352] <-- textDocument/hover(375)
+I[23:24:25.353] --> reply:textDocument/hover(375) 1 ms
+I[23:24:25.354] --> textDocument/clangd.fileStatus
+I[23:24:27.265] <-- textDocument/hover(376)
+I[23:24:27.266] --> reply:textDocument/hover(376) 1 ms
+I[23:24:27.266] --> textDocument/clangd.fileStatus
+I[23:24:27.417] <-- textDocument/codeAction(377)
+I[23:24:27.417] --> reply:textDocument/codeAction(377) 0 ms
+I[23:24:27.417] --> textDocument/clangd.fileStatus
+I[23:24:40.612] <-- textDocument/inlayHint(378)
+I[23:24:40.612] --> reply:textDocument/inlayHint(378) 0 ms
+I[23:24:40.612] --> textDocument/clangd.fileStatus
+I[23:24:42.979] <-- textDocument/inlayHint(379)
+I[23:24:42.979] --> reply:textDocument/inlayHint(379) 0 ms
+I[23:24:42.979] --> textDocument/clangd.fileStatus

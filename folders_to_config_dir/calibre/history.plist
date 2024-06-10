@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>lineedit_history_choose_library_dialog</key>
+	<array>
+		<string>/run/media/nisidabay/Calibre</string>
+		<string>/run/media/nisidabay/Elements/Calibre</string>
+		<string>/home/nisidabay/Calibre Library</string>
+		<string>/dev/sdd1/Calibre</string>
+		<string>/dev/sdd1/Cali</string>
+		<string>/dev/sdee</string>
+	</array>
+	<key>lineedit_history_library-fts-search-box</key>
+	<array>
+		<string>Head First</string>
+	</array>
+	<key>lineedit_history_tag_browser_search</key>
+	<array>
+		<string>Dale Dougherty</string>
+		<string>Robbins</string>
+		<string>Arnold Robbins</string>
+	</array>
+</dict>
+</plist>

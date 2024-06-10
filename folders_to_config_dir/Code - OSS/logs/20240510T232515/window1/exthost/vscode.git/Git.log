@@ -1,0 +1,384 @@
+2024-05-10 23:25:17.707 [info] Log level: Info
+2024-05-10 23:25:17.707 [info] Validating found git in: "git"
+2024-05-10 23:25:17.707 [info] Using git "2.45.0" from "git"
+2024-05-10 23:25:17.707 [info] > git rev-parse --show-toplevel [18ms]
+2024-05-10 23:25:17.707 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:17.707 [info] > git rev-parse --show-toplevel [107ms]
+2024-05-10 23:25:17.707 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:17.707 [info] > git rev-parse --show-toplevel [9ms]
+2024-05-10 23:25:17.707 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:17.733 [info] > git rev-parse --show-toplevel [22ms]
+2024-05-10 23:25:17.733 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:17.746 [info] > git rev-parse --show-toplevel [6ms]
+2024-05-10 23:25:17.746 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:17.753 [info] > git rev-parse --show-toplevel [3ms]
+2024-05-10 23:25:17.753 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:17.760 [info] > git rev-parse --show-toplevel [2ms]
+2024-05-10 23:25:17.760 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:17.769 [info] > git rev-parse --show-toplevel [3ms]
+2024-05-10 23:25:17.769 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:17.786 [info] > git rev-parse --show-toplevel [7ms]
+2024-05-10 23:25:17.786 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:17.794 [info] > git rev-parse --show-toplevel [1ms]
+2024-05-10 23:25:17.794 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:17.800 [info] > git rev-parse --show-toplevel [2ms]
+2024-05-10 23:25:17.800 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:17.807 [info] > git rev-parse --show-toplevel [2ms]
+2024-05-10 23:25:17.814 [info] > git rev-parse --git-dir --git-common-dir [2ms]
+2024-05-10 23:25:17.832 [info] Open repository: /home/nisidabay/.cheat.sh
+2024-05-10 23:25:17.844 [info] > git rev-parse --show-toplevel [3ms]
+2024-05-10 23:25:17.844 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:17.845 [info] > git config --get commit.template [7ms]
+2024-05-10 23:25:17.855 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [2ms]
+2024-05-10 23:25:17.856 [info] > git rev-parse --show-toplevel [7ms]
+2024-05-10 23:25:17.856 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:17.863 [warning] ENOENT: no such file or directory, open '/home/nisidabay/.cheat.sh/.git/refs/remotes/origin/master'
+2024-05-10 23:25:17.869 [info] > git rev-parse refs/remotes/origin/master [7ms]
+2024-05-10 23:25:17.892 [info] > git status -z -uall [17ms]
+2024-05-10 23:25:17.906 [info] > git rev-parse --show-toplevel [38ms]
+2024-05-10 23:25:17.906 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:17.916 [info] > git merge-base refs/heads/master refs/remotes/origin/master [18ms]
+2024-05-10 23:25:17.923 [info] > git rev-list --count --left-right refs/heads/master...refs/remotes/origin/master [3ms]
+2024-05-10 23:25:17.928 [info] > git rev-parse --show-toplevel [12ms]
+2024-05-10 23:25:17.928 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:17.928 [info] > git config --get commit.template [16ms]
+2024-05-10 23:25:17.937 [info] > git diff --name-status -z --diff-filter=ADMR 571377f2f79422398a701cb1864487124ec3dcc6...refs/remotes/origin/master [10ms]
+2024-05-10 23:25:17.939 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [3ms]
+2024-05-10 23:25:17.940 [info] > git rev-parse --show-toplevel [8ms]
+2024-05-10 23:25:17.940 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:17.964 [warning] ENOENT: no such file or directory, open '/home/nisidabay/.cheat.sh/.git/refs/remotes/origin/master'
+2024-05-10 23:25:17.971 [info] > git rev-parse --show-toplevel [4ms]
+2024-05-10 23:25:17.971 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:17.971 [info] > git rev-parse refs/remotes/origin/master [7ms]
+2024-05-10 23:25:17.982 [info] > git status -z -uall [6ms]
+2024-05-10 23:25:17.983 [info] > git rev-parse --show-toplevel [3ms]
+2024-05-10 23:25:17.983 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:17.994 [info] > git rev-parse --show-toplevel [2ms]
+2024-05-10 23:25:17.995 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:18.000 [info] > git rev-parse --show-toplevel [1ms]
+2024-05-10 23:25:18.000 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:18.006 [info] > git rev-parse --show-toplevel [2ms]
+2024-05-10 23:25:18.006 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:18.012 [info] > git rev-parse --show-toplevel [2ms]
+2024-05-10 23:25:18.017 [info] > git rev-parse --git-dir --git-common-dir [1ms]
+2024-05-10 23:25:18.024 [info] Open repository: /home/nisidabay/.emacs.d
+2024-05-10 23:25:18.037 [info] > git rev-parse --show-toplevel [2ms]
+2024-05-10 23:25:18.037 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:18.037 [info] > git config --get commit.template [7ms]
+2024-05-10 23:25:18.048 [info] > git rev-parse --show-toplevel [5ms]
+2024-05-10 23:25:18.048 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:18.053 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/develop refs/remotes/develop [6ms]
+2024-05-10 23:25:18.058 [warning] ENOENT: no such file or directory, open '/home/nisidabay/.emacs.d/.git/refs/remotes/origin/develop'
+2024-05-10 23:25:18.059 [info] > git rev-parse --show-toplevel [7ms]
+2024-05-10 23:25:18.059 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:18.064 [info] > git rev-parse refs/remotes/origin/develop [6ms]
+2024-05-10 23:25:18.070 [info] > git rev-parse --show-toplevel [6ms]
+2024-05-10 23:25:18.077 [info] > git rev-parse --git-dir --git-common-dir [2ms]
+2024-05-10 23:25:18.083 [info] Open repository: /home/nisidabay/.fzf
+2024-05-10 23:25:18.095 [info] > git status -z -uall [25ms]
+2024-05-10 23:25:18.109 [info] > git merge-base refs/heads/develop refs/remotes/origin/develop [10ms]
+2024-05-10 23:25:18.115 [info] > git rev-parse --show-toplevel [21ms]
+2024-05-10 23:25:18.115 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:18.115 [info] > git config --get commit.template [25ms]
+2024-05-10 23:25:18.124 [info] > git rev-list --count --left-right refs/heads/develop...refs/remotes/origin/develop [10ms]
+2024-05-10 23:25:18.129 [info] > git config --get commit.template [21ms]
+2024-05-10 23:25:18.137 [info] > git diff --name-status -z --diff-filter=ADMR c46a22da1dfb2cc2d0c7929dae971354a6eefa57...refs/remotes/origin/develop [8ms]
+2024-05-10 23:25:18.138 [info] > git rev-parse --show-toplevel [15ms]
+2024-05-10 23:25:18.138 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:18.147 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [13ms]
+2024-05-10 23:25:18.148 [info] > git rev-parse --show-toplevel [2ms]
+2024-05-10 23:25:18.148 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:18.148 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/develop refs/remotes/develop [6ms]
+2024-05-10 23:25:18.157 [warning] ENOENT: no such file or directory, open '/home/nisidabay/.emacs.d/.git/refs/remotes/origin/develop'
+2024-05-10 23:25:18.158 [info] > git rev-parse --show-toplevel [4ms]
+2024-05-10 23:25:18.158 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:18.163 [info] > git rev-parse refs/remotes/origin/develop [6ms]
+2024-05-10 23:25:18.171 [info] > git status -z -uall [9ms]
+2024-05-10 23:25:18.185 [info] > git status -z -uall [18ms]
+2024-05-10 23:25:18.185 [info] > git merge-base refs/heads/master refs/remotes/origin/master [8ms]
+2024-05-10 23:25:18.189 [info] > git rev-parse --show-toplevel [17ms]
+2024-05-10 23:25:18.189 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:18.195 [info] > git rev-list --count --left-right refs/heads/master...refs/remotes/origin/master [7ms]
+2024-05-10 23:25:18.199 [info] > git config --get commit.template [15ms]
+2024-05-10 23:25:18.201 [info] > git diff --name-status -z --diff-filter=ADMR a4745626dd5c5f697dbbc5e3aa1796d5016c1faf...refs/remotes/origin/master [2ms]
+2024-05-10 23:25:18.202 [info] > git rev-parse --show-toplevel [6ms]
+2024-05-10 23:25:18.202 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:18.210 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [5ms]
+2024-05-10 23:25:18.210 [info] > git rev-parse --show-toplevel [1ms]
+2024-05-10 23:25:18.210 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:18.216 [info] > git rev-parse --show-toplevel [3ms]
+2024-05-10 23:25:18.216 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:18.220 [info] > git status -z -uall [4ms]
+2024-05-10 23:25:18.222 [info] > git rev-parse --show-toplevel [3ms]
+2024-05-10 23:25:18.222 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:18.228 [info] > git rev-parse --show-toplevel [1ms]
+2024-05-10 23:25:18.228 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:18.232 [info] > git rev-parse --show-toplevel [1ms]
+2024-05-10 23:25:18.232 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:18.236 [info] > git rev-parse --show-toplevel [1ms]
+2024-05-10 23:25:18.236 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:18.240 [info] > git rev-parse --show-toplevel [1ms]
+2024-05-10 23:25:18.240 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:18.245 [info] > git rev-parse --show-toplevel [1ms]
+2024-05-10 23:25:18.245 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:18.250 [info] > git rev-parse --show-toplevel [1ms]
+2024-05-10 23:25:18.250 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:18.253 [info] > git rev-parse --show-toplevel [1ms]
+2024-05-10 23:25:18.253 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:18.257 [info] > git rev-parse --show-toplevel [1ms]
+2024-05-10 23:25:18.257 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:18.262 [info] > git rev-parse --show-toplevel [1ms]
+2024-05-10 23:25:18.262 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:18.266 [info] > git rev-parse --show-toplevel [1ms]
+2024-05-10 23:25:18.266 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:18.270 [info] > git rev-parse --show-toplevel [1ms]
+2024-05-10 23:25:18.270 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:18.273 [info] > git rev-parse --show-toplevel [0ms]
+2024-05-10 23:25:18.274 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:18.277 [info] > git rev-parse --show-toplevel [1ms]
+2024-05-10 23:25:18.277 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:18.281 [info] > git rev-parse --show-toplevel [1ms]
+2024-05-10 23:25:18.281 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:18.285 [info] > git rev-parse --show-toplevel [1ms]
+2024-05-10 23:25:18.285 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:18.289 [info] > git rev-parse --show-toplevel [1ms]
+2024-05-10 23:25:18.289 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:18.293 [info] > git rev-parse --show-toplevel [1ms]
+2024-05-10 23:25:18.293 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:18.297 [info] > git rev-parse --show-toplevel [0ms]
+2024-05-10 23:25:18.297 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:18.301 [info] > git rev-parse --show-toplevel [2ms]
+2024-05-10 23:25:18.301 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:18.306 [info] > git rev-parse --show-toplevel [2ms]
+2024-05-10 23:25:18.306 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:18.311 [info] > git rev-parse --show-toplevel [2ms]
+2024-05-10 23:25:18.311 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:18.316 [info] > git rev-parse --show-toplevel [1ms]
+2024-05-10 23:25:18.316 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:18.321 [info] > git rev-parse --show-toplevel [1ms]
+2024-05-10 23:25:18.321 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:18.325 [info] > git rev-parse --show-toplevel [1ms]
+2024-05-10 23:25:18.325 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:18.328 [info] > git rev-parse --show-toplevel [0ms]
+2024-05-10 23:25:18.329 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:18.333 [info] > git rev-parse --show-toplevel [1ms]
+2024-05-10 23:25:18.333 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:18.337 [info] > git rev-parse --show-toplevel [1ms]
+2024-05-10 23:25:18.337 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:18.341 [info] > git rev-parse --show-toplevel [1ms]
+2024-05-10 23:25:18.341 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:18.345 [info] > git rev-parse --show-toplevel [0ms]
+2024-05-10 23:25:18.346 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:18.349 [info] > git rev-parse --show-toplevel [1ms]
+2024-05-10 23:25:18.349 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:18.354 [info] > git rev-parse --show-toplevel [1ms]
+2024-05-10 23:25:18.358 [info] > git rev-parse --git-dir --git-common-dir [1ms]
+2024-05-10 23:25:18.363 [info] Open repository: /home/nisidabay/.vim
+2024-05-10 23:25:18.373 [info] > git rev-parse --show-toplevel [2ms]
+2024-05-10 23:25:18.373 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:18.373 [info] > git config --get commit.template [6ms]
+2024-05-10 23:25:18.384 [info] > git rev-parse --show-toplevel [4ms]
+2024-05-10 23:25:18.384 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:18.385 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2024-05-10 23:25:18.385 [warning] No such branch: main.
+2024-05-10 23:25:18.395 [info] > git status -z -uall [6ms]
+2024-05-10 23:25:18.395 [info] > git rev-parse --show-toplevel [3ms]
+2024-05-10 23:25:18.395 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:18.445 [info] > git config --get commit.template [1ms]
+2024-05-10 23:25:18.446 [info] > git rev-parse --show-toplevel [6ms]
+2024-05-10 23:25:18.446 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:18.458 [info] > git rev-parse --show-toplevel [9ms]
+2024-05-10 23:25:18.458 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:18.462 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [5ms]
+2024-05-10 23:25:18.462 [warning] No such branch: main.
+2024-05-10 23:25:18.641 [info] > git rev-parse --show-toplevel [179ms]
+2024-05-10 23:25:18.641 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:18.646 [info] > git status -z -uall [6ms]
+2024-05-10 23:25:18.673 [info] > git rev-parse --show-toplevel [28ms]
+2024-05-10 23:25:18.673 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:18.678 [info] > git rev-parse --show-toplevel [1ms]
+2024-05-10 23:25:18.678 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:18.685 [info] > git rev-parse --show-toplevel [3ms]
+2024-05-10 23:25:18.685 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:18.690 [info] > git rev-parse --show-toplevel [2ms]
+2024-05-10 23:25:18.690 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:18.694 [info] > git rev-parse --show-toplevel [1ms]
+2024-05-10 23:25:18.694 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:18.699 [info] > git rev-parse --show-toplevel [1ms]
+2024-05-10 23:25:18.699 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:18.703 [info] > git rev-parse --show-toplevel [1ms]
+2024-05-10 23:25:18.703 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:18.707 [info] > git rev-parse --show-toplevel [1ms]
+2024-05-10 23:25:18.708 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:18.711 [info] > git rev-parse --show-toplevel [1ms]
+2024-05-10 23:25:18.711 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:18.715 [info] > git rev-parse --show-toplevel [1ms]
+2024-05-10 23:25:18.715 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:18.719 [info] > git rev-parse --show-toplevel [1ms]
+2024-05-10 23:25:18.724 [info] > git rev-parse --git-dir --git-common-dir [2ms]
+2024-05-10 23:25:18.728 [info] Open repository: /home/nisidabay/Pywall
+2024-05-10 23:25:18.739 [info] > git config --get commit.template [5ms]
+2024-05-10 23:25:18.741 [info] > git rev-parse --show-toplevel [4ms]
+2024-05-10 23:25:18.741 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:18.749 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [4ms]
+2024-05-10 23:25:18.752 [warning] ENOENT: no such file or directory, open '/home/nisidabay/Pywall/.git/refs/remotes/origin/master'
+2024-05-10 23:25:18.752 [info] > git rev-parse --show-toplevel [4ms]
+2024-05-10 23:25:18.910 [info] > git rev-parse refs/remotes/origin/master [158ms]
+2024-05-10 23:25:18.914 [info] > git rev-parse --git-dir --git-common-dir [5ms]
+2024-05-10 23:25:18.918 [info] Open repository: /home/nisidabay/_dotfiles
+2024-05-10 23:25:18.928 [info] > git status -z -uall [15ms]
+2024-05-10 23:25:18.928 [info] > git config --get commit.template [6ms]
+2024-05-10 23:25:18.944 [info] > git merge-base refs/heads/master refs/remotes/origin/master [10ms]
+2024-05-10 23:25:18.948 [info] > git rev-parse --show-toplevel [22ms]
+2024-05-10 23:25:18.948 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:18.956 [info] > git rev-list --count --left-right refs/heads/master...refs/remotes/origin/master [9ms]
+2024-05-10 23:25:18.960 [info] > git config --get commit.template [17ms]
+2024-05-10 23:25:18.961 [info] > git rev-parse --show-toplevel [5ms]
+2024-05-10 23:25:18.962 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [9ms]
+2024-05-10 23:25:18.969 [info] > git diff --name-status -z --diff-filter=ADMR e136433ceadc567b5e84325ede6749314feffd5a...refs/remotes/origin/master [9ms]
+2024-05-10 23:25:18.970 [info] > git rev-parse --git-dir --git-common-dir [2ms]
+2024-05-10 23:25:18.974 [info] Open repository: /home/nisidabay/bin
+2024-05-10 23:25:18.975 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [10ms]
+2024-05-10 23:25:18.986 [warning] ENOENT: no such file or directory, open '/home/nisidabay/Pywall/.git/refs/remotes/origin/master'
+2024-05-10 23:25:18.991 [info] > git rev-parse refs/remotes/origin/master [5ms]
+2024-05-10 23:25:18.995 [info] > git rev-parse --show-toplevel [12ms]
+2024-05-10 23:25:18.996 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:18.996 [info] > git config --get commit.template [17ms]
+2024-05-10 23:25:19.002 [info] > git status -z -uall [12ms]
+2024-05-10 23:25:19.002 [info] > git status -z -uall [7ms]
+2024-05-10 23:25:19.018 [info] > git merge-base refs/heads/main refs/remotes/origin/main [11ms]
+2024-05-10 23:25:19.022 [info] > git rev-parse --show-toplevel [20ms]
+2024-05-10 23:25:19.022 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:19.031 [info] > git rev-list --count --left-right refs/heads/main...refs/remotes/origin/main [9ms]
+2024-05-10 23:25:19.036 [info] > git config --get commit.template [18ms]
+2024-05-10 23:25:19.036 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [22ms]
+2024-05-10 23:25:19.038 [info] > git diff --name-status -z --diff-filter=ADMR 0fb33c64ea51989a38c724f39e55510ca9406e9a...refs/remotes/origin/main [3ms]
+2024-05-10 23:25:19.039 [info] > git rev-parse --show-toplevel [9ms]
+2024-05-10 23:25:19.050 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [5ms]
+2024-05-10 23:25:19.055 [info] > git rev-parse --git-dir --git-common-dir [6ms]
+2024-05-10 23:25:19.060 [info] Open repository: /home/nisidabay/dwm-luke
+2024-05-10 23:25:19.073 [info] > git status -z -uall [19ms]
+2024-05-10 23:25:19.092 [info] > git merge-base refs/heads/main refs/remotes/origin/main [14ms]
+2024-05-10 23:25:19.097 [info] > git rev-parse --show-toplevel [25ms]
+2024-05-10 23:25:19.098 [info] > git config --get commit.template [31ms]
+2024-05-10 23:25:19.115 [info] > git config --get commit.template [25ms]
+2024-05-10 23:25:19.137 [info] > git status -z -uall [33ms]
+2024-05-10 23:25:19.137 [info] > git rev-parse --git-dir --git-common-dir [23ms]
+2024-05-10 23:25:19.142 [info] Open repository: /home/nisidabay/dwmblocks-luke
+2024-05-10 23:25:19.145 [info] > git rev-list --count --left-right refs/heads/main...refs/remotes/origin/main [48ms]
+2024-05-10 23:25:19.166 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [31ms]
+2024-05-10 23:25:19.170 [warning] ENOENT: no such file or directory, open '/home/nisidabay/dwm-luke/.git/refs/remotes/origin/master'
+2024-05-10 23:25:19.171 [info] > git rev-parse --show-toplevel [5ms]
+2024-05-10 23:25:19.171 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:19.171 [info] > git config --get commit.template [9ms]
+2024-05-10 23:25:19.172 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [14ms]
+2024-05-10 23:25:19.172 [info] > git diff --name-status -z --diff-filter=ADMR d09b1609b1f5948556e18c7d02ed00fb37fcc4cd...refs/remotes/origin/main [20ms]
+2024-05-10 23:25:19.179 [info] > git rev-parse refs/remotes/origin/master [8ms]
+2024-05-10 23:25:19.186 [info] > git status -z -uall [4ms]
+2024-05-10 23:25:19.186 [info] > git rev-parse --show-toplevel [8ms]
+2024-05-10 23:25:19.186 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:19.194 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [8ms]
+2024-05-10 23:25:19.217 [warning] ENOENT: no such file or directory, open '/home/nisidabay/dwmblocks-luke/.git/refs/remotes/origin/master'
+2024-05-10 23:25:19.224 [info] > git status -z -uall [12ms]
+2024-05-10 23:25:19.224 [info] > git merge-base refs/heads/master refs/remotes/origin/master [22ms]
+2024-05-10 23:25:19.230 [info] > git rev-parse --show-toplevel [36ms]
+2024-05-10 23:25:19.230 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:19.239 [info] > git rev-list --count --left-right refs/heads/master...refs/remotes/origin/master [9ms]
+2024-05-10 23:25:19.243 [info] > git config --get commit.template [21ms]
+2024-05-10 23:25:19.244 [info] > git rev-parse refs/remotes/origin/master [27ms]
+2024-05-10 23:25:19.252 [info] > git status -z -uall [5ms]
+2024-05-10 23:25:19.261 [info] > git diff --name-status -z --diff-filter=ADMR a4d1695e5342b10425b23bae57f22d5f82a46cda...refs/remotes/origin/master [18ms]
+2024-05-10 23:25:19.261 [info] > git rev-parse --show-toplevel [24ms]
+2024-05-10 23:25:19.261 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:19.274 [info] > git merge-base refs/heads/master refs/remotes/origin/master [17ms]
+2024-05-10 23:25:19.282 [info] > git rev-list --count --left-right refs/heads/master...refs/remotes/origin/master [3ms]
+2024-05-10 23:25:19.290 [info] > git rev-parse --show-toplevel [15ms]
+2024-05-10 23:25:19.290 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:19.290 [info] > git config --get commit.template [20ms]
+2024-05-10 23:25:19.290 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [24ms]
+2024-05-10 23:25:19.304 [warning] ENOENT: no such file or directory, open '/home/nisidabay/dwm-luke/.git/refs/remotes/origin/master'
+2024-05-10 23:25:19.305 [info] > git diff --name-status -z --diff-filter=ADMR 5a6fa8d550c11552480f10e660073ca294d446b1...refs/remotes/origin/master [16ms]
+2024-05-10 23:25:19.315 [info] > git rev-parse refs/remotes/origin/master [11ms]
+2024-05-10 23:25:19.320 [info] > git rev-parse --show-toplevel [23ms]
+2024-05-10 23:25:19.320 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:19.325 [info] > git status -z -uall [6ms]
+2024-05-10 23:25:19.325 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [11ms]
+2024-05-10 23:25:19.331 [warning] ENOENT: no such file or directory, open '/home/nisidabay/dwmblocks-luke/.git/refs/remotes/origin/master'
+2024-05-10 23:25:19.332 [info] > git rev-parse --show-toplevel [7ms]
+2024-05-10 23:25:19.332 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:19.341 [info] > git rev-parse refs/remotes/origin/master [10ms]
+2024-05-10 23:25:19.354 [info] > git status -z -uall [6ms]
+2024-05-10 23:25:19.356 [info] > git rev-parse --show-toplevel [15ms]
+2024-05-10 23:25:19.356 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:19.363 [info] > git rev-parse --show-toplevel [2ms]
+2024-05-10 23:25:19.368 [info] > git rev-parse --git-dir --git-common-dir [1ms]
+2024-05-10 23:25:19.374 [info] Open repository: /home/nisidabay/pywal
+2024-05-10 23:25:19.387 [info] > git rev-parse --show-toplevel [1ms]
+2024-05-10 23:25:19.387 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:19.387 [info] > git config --get commit.template [7ms]
+2024-05-10 23:25:19.399 [info] > git rev-parse --show-toplevel [5ms]
+2024-05-10 23:25:19.404 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [6ms]
+2024-05-10 23:25:19.409 [warning] ENOENT: no such file or directory, open '/home/nisidabay/pywal/.git/refs/remotes/origin/master'
+2024-05-10 23:25:19.409 [info] > git rev-parse --git-dir --git-common-dir [6ms]
+2024-05-10 23:25:19.414 [info] Open repository: /home/nisidabay/st-gerry
+2024-05-10 23:25:19.423 [info] > git rev-parse refs/remotes/origin/master [14ms]
+2024-05-10 23:25:19.429 [info] > git rev-parse --show-toplevel [7ms]
+2024-05-10 23:25:19.429 [info] > git config --get commit.template [10ms]
+2024-05-10 23:25:19.448 [info] > git status -z -uall [21ms]
+2024-05-10 23:25:19.448 [info] > git rev-parse --git-dir --git-common-dir [11ms]
+2024-05-10 23:25:19.453 [info] Open repository: /home/nisidabay/st-luke
+2024-05-10 23:25:19.483 [info] > git merge-base refs/heads/master refs/remotes/origin/master [24ms]
+2024-05-10 23:25:19.488 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [41ms]
+2024-05-10 23:25:19.497 [warning] ENOENT: no such file or directory, open '/home/nisidabay/st-gerry/.git/refs/remotes/origin/master'
+2024-05-10 23:25:19.498 [info] > git rev-list --count --left-right refs/heads/master...refs/remotes/origin/master [10ms]
+2024-05-10 23:25:19.502 [info] > git config --get commit.template [20ms]
+2024-05-10 23:25:19.502 [info] > git rev-parse --show-toplevel [24ms]
+2024-05-10 23:25:19.502 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:19.502 [info] > git config --get commit.template [29ms]
+2024-05-10 23:25:19.509 [info] > git diff --name-status -z --diff-filter=ADMR e136433ceadc567b5e84325ede6749314feffd5a...refs/remotes/origin/master [7ms]
+2024-05-10 23:25:19.509 [info] > git rev-parse refs/remotes/origin/master [12ms]
+2024-05-10 23:25:19.523 [info] > git rev-parse --show-toplevel [17ms]
+2024-05-10 23:25:19.529 [info] > git status -z -uall [16ms]
+2024-05-10 23:25:19.529 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [10ms]
+2024-05-10 23:25:19.540 [warning] ENOENT: no such file or directory, open '/home/nisidabay/st-luke/.git/refs/remotes/origin/master'
+2024-05-10 23:25:19.545 [info] > git merge-base refs/heads/master refs/remotes/origin/master [12ms]
+2024-05-10 23:25:19.548 [info] > git rev-parse --git-dir --git-common-dir [20ms]
+2024-05-10 23:25:19.552 [info] Open repository: /home/nisidabay/vimwiki
+2024-05-10 23:25:19.553 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [30ms]
+2024-05-10 23:25:19.569 [warning] ENOENT: no such file or directory, open '/home/nisidabay/pywal/.git/refs/remotes/origin/master'
+2024-05-10 23:25:19.570 [info] > git rev-list --count --left-right refs/heads/master...refs/remotes/origin/master [21ms]
+2024-05-10 23:25:19.574 [info] > git config --get commit.template [30ms]
+2024-05-10 23:25:19.574 [info] > git rev-parse refs/remotes/origin/master [34ms]
+2024-05-10 23:25:19.581 [info] > git status -z -uall [3ms]
+2024-05-10 23:25:19.589 [info] > git diff --name-status -z --diff-filter=ADMR feb3f4e08f90669296cbaa624bfc97a3e6b86af9...refs/remotes/origin/master [15ms]
+2024-05-10 23:25:19.590 [info] > git rev-parse refs/remotes/origin/master [21ms]
+2024-05-10 23:25:19.594 [info] > git rev-parse --show-toplevel [30ms]
+2024-05-10 23:25:19.594 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:19.594 [info] > git config --get commit.template [35ms]
+2024-05-10 23:25:19.606 [info] > git status -z -uall [12ms]
+2024-05-10 23:25:19.607 [info] > git merge-base refs/heads/master refs/remotes/origin/master [21ms]
+2024-05-10 23:25:19.617 [info] > git rev-list --count --left-right refs/heads/master...refs/remotes/origin/master [6ms]
+2024-05-10 23:25:19.621 [info] > git rev-parse --show-toplevel [15ms]
+2024-05-10 23:25:19.621 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:19.622 [info] > git config --get commit.template [19ms]
+2024-05-10 23:25:19.622 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [22ms]
+2024-05-10 23:25:19.633 [warning] ENOENT: no such file or directory, open '/home/nisidabay/st-gerry/.git/refs/remotes/origin/master'
+2024-05-10 23:25:19.633 [info] > git diff --name-status -z --diff-filter=ADMR 36d225d71d448bfe307075580f0d8ef81eeb5a87...refs/remotes/origin/master [12ms]
+2024-05-10 23:25:19.634 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [18ms]
+2024-05-10 23:25:19.643 [info] > git rev-parse refs/remotes/origin/master [10ms]
+2024-05-10 23:25:19.646 [info] > git rev-parse --show-toplevel [16ms]
+2024-05-10 23:25:19.646 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:19.651 [info] > git status -z -uall [5ms]
+2024-05-10 23:25:19.653 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [11ms]
+2024-05-10 23:25:19.658 [warning] ENOENT: no such file or directory, open '/home/nisidabay/st-luke/.git/refs/remotes/origin/master'
+2024-05-10 23:25:19.659 [info] > git rev-parse --show-toplevel [8ms]
+2024-05-10 23:25:19.659 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-10 23:25:19.664 [info] > git rev-parse refs/remotes/origin/master [6ms]
+2024-05-10 23:25:19.668 [info] > git status -z -uall [5ms]
+2024-05-10 23:25:19.680 [info] > git status -z -uall [13ms]
+2024-05-10 23:25:19.681 [info] > git merge-base refs/heads/main refs/remotes/origin/main [8ms]
+2024-05-10 23:25:19.688 [info] > git rev-list --count --left-right refs/heads/main...refs/remotes/origin/main [3ms]
+2024-05-10 23:25:19.693 [info] > git config --get commit.template [13ms]
+2024-05-10 23:25:19.700 [info] > git diff --name-status -z --diff-filter=ADMR 60e8c0e78a6bf74b1ed5e85404b7b1254042ccdd...refs/remotes/origin/main [7ms]
+2024-05-10 23:25:19.702 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2024-05-10 23:25:19.711 [info] > git status -z -uall [4ms]

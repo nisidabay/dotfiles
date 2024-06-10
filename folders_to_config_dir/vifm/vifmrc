@@ -12,10 +12,10 @@
 " Command used to edit files in various contexts.  The default is vim.
 " If you would like to use another vi clone such as Elvis or Vile
 " you will need to change this setting.
-if executable('vim')
-    set vicmd=vim
-elseif executable('nvim')
+if executable('nvim')
     set vicmd=nvim
+elseif executable('vim')
+    set vicmd=vim
 elseif executable('elvis')
     set vicmd=elvis\ -G\ termcap
 elseif executable('vile')
@@ -198,6 +198,9 @@ command! mountedusbs pyusb.py -l && read -p "Press [Enter] to continue"
 filextype {*.pdf},<application/pdf> zathura %c  &, mupdf %c, xpdf %c
 fileviewer {*.pdf},<application/pdf> pdftotext -nopgbrk %c -
 
+"csv
+filextype {*.csv},<application/csv> libreoffice %c  &
+fileviewer {*.csv},<application/csv> libreoffice %c  &
 
 " Markdown
 "filextype {*.md},<application/md> zettlr %c %i &
@@ -538,6 +541,9 @@ nnoremap <c-u> <c-w>x
 " ------------------------------------------------------------------------------
 " Various customization examples
 " ------------------------------------------------------------------------------
+
+"Increase performance on preview images
+set previewoptions+=graphicsdelay:0
 
 " Use ag (the silver searcher) instead of grep
 set grepprg='ag --line-numbers %i %a %s'

@@ -1,7 +1,7 @@
 -- ~/.config/nvim/lua/config/modules/snippets.lua
 local M = {}
 
-M.snippets_base_directory = vim.g.snippets_base_directory or vim.fn.stdpath("config") .. "/snippets"
+M.snippets_base_directory = vim.fn.expand("~/_dotfiles/share_data/snippets")
 
 function M.warn(message)
   vim.api.nvim_echo({ { message, "WarningMsg" } }, true, {})

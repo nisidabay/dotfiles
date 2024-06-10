@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<title>TaggingNotes</title>
+
+<link rel="stylesheet" href="styles/general.css" type="text/css" />
+<link rel="stylesheet" href="styles/options.css" type="text/css" />
+
+<link rel="shortcut icon" href="favicon.ico" title="Favorite Icon" />
+
+<script src="lib/WHO.widget.js" type="text/javascript" charset="utf-8"></script>
+<script src="lib/WHO.extension.client.js" type="text/javascript" charset="utf-8"></script>
+<script src="lib/WHO.locale.js" type="text/javascript" charset="utf-8"></script>
+
+<script src="scripts/prefsBackup.js" type="text/javascript" charset="utf-8"></script>
+<script src="scripts/prefsImport.js" type="text/javascript" charset="utf-8"></script>
+
+<script src="scripts/options.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<h1>TaggingNotes - [:Preferences:]</h1>
+<div>
+<!--
+	<section id="General">
+		<h2><a href="#General"><img src="images/general.png" width="16" height="16" alt="[:General:]" title="[:General:]" /></a></h2>
+		<div class="content">
+			<form>
+				<p id="BottonConfigContainer"><label><input id="ButtonView" type="checkbox" />[:General::ButtonView:]</label></p>
+			</form>
+		</div>
+	</section>
+-->
+	<section id="Tools">
+		<h2><a href="#Tools"><img src="./images/tools.png" width="16" height="16" alt="[:Tools:]" title="[:Tools:]" /></a></h2>
+		<div class="content">
+			<p><label><button id="BackupNotes" type="button"><span>[:Tools::Backup:]</span></button></label></p>
+			<p><label><input id="RestoreNotes" type="file" /><span class="button">[:Tools::Restore:]</span></label></p>
+			<p><label><input id="ImportPrestoAdr" type="file" /><span class="button">[:Import::PrestoAdr:]</span></label></p>
+			<p><label><input id="ImportVivaldi" type="file" /><span class="button">[:Import::Vivaldi:]</span></label></p>
+			<!--
+			<h3>[:Tools::OAuth:]</h3>
+			<p class="description">[:Tools::OAuth::description:]</p>
+			<div class="buttons"><p>
+				<form>
+					<button id="ClearToken" />[:Tools::OAuth::ClearToken:]</button>
+				</form>
+			</p></div>
+			<ul>
+				<li><a href="https://auth.opera.com/service/oauth/application/view/2091">Informations of ContetBlockHelper on OAuth Provider</a></li>
+				<li><a href="https://auth.opera.com/service/oauth/grants/">Your Grants on OAuth Provider</a></li>
+			</ul>
+			-->
+		</div>
+	</section>
+	<section id="Help">
+		<h2><a href="#Help"><img src="images/help.png" width="16" height="16" alt="[:Help:]" title="[:Help:]" /></a></h2>
+		<div class="content">
+			<h3>[:Help::Contact:]</h3>
+		<!--	<p class="description">I usually use Japanese, but please ask in English, then I'll also answer in English.</p>-->
+			<ul class="link">
+				<li><a href="https://twitter.com/intent/tweet?screen_name=whochan&hashtags=TaggingNotes" target="_blank">Twitter</a></li>
+			<!--	<li><a href="https://www.facebook.com/whochancom" target="_blank">Facebook</a></li>-->
+			</ul>
+			<h3>[:Help::Informations:]</h3>
+			<ul class="link">
+				<li><a href="[:Help::Informations::About::URL:]" target="_blank">[:Help::Informations::About:]</a></li>
+				<li><a href="[:Help::Informations::ChangeLog::URL:]" target="_blank">[:Help::Informations::ChangeLog:]</a></li>
+			</ul>
+			<h3>[:Help::Downloads:]</h3>
+			<ul class="link">
+				<li><a href="https://addons.opera.com/extensions/details/TaggingNotes/">[:Help::Downloads::Opera:]</a></li>
+				<li><a href="https://chrome.google.com/webstore/detail/taggingnotes/ibicnkbgpkdjdpbnaighfkkdbghbolaa">[:Help::Downloads::Chrome:]</a></li>
+				<li><a href="https://addons.mozilla.org/ja/firefox/addon/taggingnotes/">[:Help::Downloads::Firefox:]</a></li>
+				<li><a href="http://far.whochan.com/file.cgi/folder/Extensions/TaggingNotes/">[:Help::Downloads::Development:]</a></li>
+			</ul>
+			<!--
+			<h3>[:Help::Translations:]</h3>
+			<p class="description">Please translate following files and send to <a href="mailto:extension-translate@whochan.com">me</a>.</p>
+			<ul class="link">
+				<li><a href="locales/en/configurations/lang.json" target="_blank">lang.json</a></li>
+				<li><a href="locales/en/description.txt" target="_blank">description.txt</a></li>
+			</ul>
+			-->
+			<h3>[:Help::Privacy:]</h3>
+			<p class="description">[:Help::Privacy::Policy:]</p>
+			<h3>[:Help::Licenses:]</h3>
+			<dl>
+				<dt>TaggingNotes</dt>
+				<dd>Copyright (C) 2010-2017 FAR/RAKUDA. All rights reserved.</dd>
+				<dt>Fugue Icons</dt>
+				<dd>Copyright (C) 2015 Yusuke Kamiyamane. All rights reserved.</dd>
+				<dd><a class="link" href="http://p.yusukekamiyamane.com/" title="http://p.yusukekamiyamane.com/" target="_blank">http://p.yusukekamiyamane.com/</a> </dd>
+				<dd>The icons are licensed under a Creative Commons Attribution 3.0 license.</dd>
+				<dd><a class="link" href="http://creativecommons.org/licenses/by/3.0/" title="http://creativecommons.org/licenses/by/3.0/" target="_blank">http://creativecommons.org/licenses/by/3.0/</a> </dd>
+			</dl>
+		</div>
+	</section>
+	<section id="Donation">
+		<h2><a href="http://www.amazon.co.jp/registry/wishlist/2L2MRGTC133TV" target="_blank"><img src="images/donation.png" width="16" height="16" alt="[:Donation:]" title="[:Donation:]" /></a></h2>
+		<div class="content">
+			<a href="http://www.amazon.co.jp/registry/wishlist/2L2MRGTC133TV" target="_blank">[:Donation::Amazon:]</a>
+	<!--
+			<p>[:Donation::Please:]</p>
+			<form id="PayPalDonation" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+			<input type="hidden" name="cmd" value="_s-xclick" />
+			<input type="hidden" name="hosted_button_id" value="EXQF95JSF33D6" />
+			<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" />
+			<img alt="" border="0" src="https://www.paypalobjects.com/ja_JP/i/scr/pixel.gif" width="1" height="1" />
+			</form>
+			<dl class="forJapanese">
+				<dt><a href="http://www.amazon.co.jp/registry/wishlist/2L2MRGTC133TV" target="_blank">[:Donation::Amazon:]</a></dt>
+				<dd>[:Donation::Amazon::Description:]</dd>
+				<dt><a href="https://vpcssl.lifecard.co.jp/giftcard/purchase/start.do" target="_blank">[:Donation::LifeCard:]</a></dt>
+				<dd>[:Donation::LifeCard::Description:]</dd>
+				<dt><a href="https://www.value-domain.com/payment.php?action=transfer" target="_blank">[:Donation::ValueDomain:]</a></dt>
+				<dd>[:Donation::ValueDomain::Description:]</dd>
+				<dt><a href="http://www.value-domain.com/regdom.php?ref=whochan" target="_blank">[:Donation::BuyDomain:]</a></dt>
+				<dd>[:Donation::BuyDomain::Description:]</dd>
+			</dl>
+			<div><iframe src="http://rcm-jp.amazon.co.jp/e/cm?t=whochan-22&o=9&p=48&l=ur1&category=manga_anime&f=ifr" width="728" height="90" seamless="seamless"></iframe></div>
+	-->
+		</div>
+	</section>
+</div>
+<address>Copyright (C) 2010-2017 <a href="http://far.whochan.com/" target="_blank">[:ADDRESS::FAR:]</a>. All rights reserved. Translated by <a href="[:translator::url:]">[:translator:]</a>. Please Translate a <a href="configurations/lang.json">file</a> to your language.</address>
+</body>
+</html>
