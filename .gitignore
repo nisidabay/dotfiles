@@ -8,4 +8,5 @@ folders_to_home_dir/.vim/view/
 folders_to_home_dir/.vim/.netrwhist
 folders_to_home_dir/.vim/lsp/
 folders_to_home_dir/.tmux/plugins/tpm 
+folders_to_config_dir/coc/
 dotfiles_raabe/
