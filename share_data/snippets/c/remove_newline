@@ -1,12 +1,3 @@
-// Remove trailing newline, if present. First way
-  if (fgets(phrase, sizeof(phrase), stdin)) {
-    // Remove the newline character if it exists
-    size_t len = strlen(phrase);
-    if (len > 0 && phrase[len - 1] == '\n') {
-      phrase[len - 1] = '\0';
-    }
-  }
+// Function to remove newline character from a string
+void remove_newline(char *str) { str[strcspn(str, "\n")] = '\0'; }
 
-// Remove trailing newline, if present. Second way
-  if (fgets(phrase, sizeof(phrase), stdin)) 
-    phrase[strcspn(phrase, "\n")] = '\0';

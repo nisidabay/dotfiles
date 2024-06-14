@@ -98,8 +98,8 @@ return {
       cmd = {
         "clangd",
         "--background-index",
-        "--suggest-missing-includes",
-        "--clang-tidy",
+        "suggest-missing-includes",
+        "clang-tidy",
         "--completion-style=detailed",
         "--header-insertion=never",
         "--cross-file-rename=true",

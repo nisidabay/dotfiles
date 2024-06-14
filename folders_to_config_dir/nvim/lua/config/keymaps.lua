@@ -242,4 +242,4 @@ keymap.set("n", "<leader>ek", ":edit ~/.config/nvim/lua/nisidabay/core/keymaps.l
 keymap.set("n", "<leader>eo", ":edit ~/.config/nvim/lua/nisidabay/core/options.lua<CR>", { desc = "Edit options" })
 
 -- Telescope
-keymap.set("n", "<leader>t", ":Telescope<CR>", { silent = true, desc = "Open Telescope" })
+--keymap.set("n", "<leader>t", ":Telescope<CR>", { silent = true, desc = "Open Telescope" })

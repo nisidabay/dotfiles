@@ -48,7 +48,7 @@ export DMBROWSER="firefox"
 export BROWSER="firefox"
 
 # Set the default terminal emulator
-export TERMINAL="alacritty"
+export TERMINAL="st"
 
 # Set the alternate terminal emulator
 export ALTERNATE_TERMINAL="xfce4-terminal"
