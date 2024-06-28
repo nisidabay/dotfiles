@@ -153,6 +153,13 @@ keymap.set(
 )
 keymap.set(
   "n",
+  "<leader>ccm",
+  ":!gcc -Wall -Wextra -g -std=c11 -o %:r -lncurses -lmenu %<CR>",
+  { silent = true, desc = "Compile ncurses C code" }
+)
+
+keymap.set(
+  "n",
   "<leader>ccs",
   ":!gcc -Wall -Wextra -g -std=c11 -o %:r -lnsqlite %<CR>",
   { silent = true, desc = "Compile sqlite C library" }

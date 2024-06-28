@@ -185,3 +185,13 @@ export QUOTE_FILE_PATH=/home/nisidabay/bin/fortune/Computer_Quotes.txt
 export NUGGETS_FILE_PATH=/home/nisidabay/bin/python_nuggets_univ
 
 source /home/nisidabay/.config/broot/launcher/bash/br
+
+# Start yazi inside kitty
+function yy() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
+	kitty yazi "$@" --cwd-file="$tmp"
+	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		cd -- "$cwd" || exit
+	fi
+	rm -f -- "$tmp"
+}
