@@ -298,6 +298,7 @@ map p paste
 map zp toggle_preview
 map M moveto
 map Y copyto
+map os $setsid -f $TERMINAL >/dev/null 2>&1
 
 # Bindings for search navigation
 map / search
