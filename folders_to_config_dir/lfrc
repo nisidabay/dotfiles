@@ -1,0 +1,333 @@
+
+# lf configuration file
+
+# Set previewer and cleaner
+set previewer ~/.config/lf/preview
+set cleaner ~/.config/lf/cleaner
+
+set preview true
+set hidden false
+set drawbox false
+set icons true
+set ignorecase true
+set TERMINAL st
+
+# Open file
+cmd open ${{
+    case "$f" in
+        *lfrc) $EDITOR "$f" ;;  # Check for lfrc file specifically
+        *)
+            case $(file --mime-type "$f" -bL) in
+                text/*|application/json) $EDITOR "$f" ;;
+                *) xdg-open "$f" ;;
+            esac
+        ;;
+    esac
+}}
+
+# Toggle preview of a file
+cmd toggle_preview %{{
+    if [ "$lf_preview" = "true" ]; then
+        lf -remote "send $id :set preview false; set ratios 1:5"
+    else
+        lf -remote "send $id :set preview true; set ratios 1:2:3"
+    fi
+}}
+
+# Edit configuration file
+cmd edit-config ${{
+    $EDITOR ~/.config/lf/lfrc
+    lf -remote "send $id source ~/.config/lf/lfrc"
+}}
+
+# Make directory
+cmd mkdir ${{
+  printf "Directory Name: "
+  read ans
+  mkdir "$ans"
+}}
+
+# Make file
+cmd mkfile ${{
+  printf "File Name: "
+  read ans
+  $EDITOR "$ans"
+}}
+
+# Change permissions of a file
+cmd chmod ${{
+  printf "Mode Bits: "
+  read ans
+
+  for file in "$fx"
+  do
+    chmod "$ans" "$file"
+  done
+
+  lf -remote 'send reload'
+}}
+
+# Make a file as root
+cmd sudomkfile ${{
+  printf "File Name: "
+  read ans
+  sudo $EDITOR "$ans"
+}}
+
+# Change system wallpaper
+cmd setwallpaper ${{
+    ~/bin/set_wallpaper.sh select
+}}
+
+# Open scratchpad notes
+cmd scratchpad ${{
+    $EDITOR ~/scratchpad/scratchpad.txt
+}}
+
+# Mount USB's
+cmd mountusbs ${{
+    sudo ~/bin/pyusb.py -m
+}}
+
+# Unmounts USB's
+cmd umountusbs ${{
+    sudo ~/bin/pyusb.py -u
+}}
+
+# Jump to a file or directory in lf using fuzzy matching
+cmd fzf_jump ${{
+  res="$(find ~ -maxdepth 3 | fzf --reverse --header='Jump to location')"
+  if [ -f "$res" ]; then
+    cmd="select"
+  elif [ -d "$res" ]; then
+    cmd="cd"
+  fi
+  lf -remote "send $id $cmd \"$res\""
+}}
+
+# Combining fzf with ripgrep, you can interactively search in the contents of
+# files under the current directory and select a file from the results
+cmd fzf_search ${{
+    RG_PREFIX="rg --column --line-number --no-heading --color=always --smart-case "
+    res="$(
+        FZF_DEFAULT_COMMAND="$RG_PREFIX ''" \
+            fzf --bind "change:reload:$RG_PREFIX {q} || true" \
+            --ansi --layout=reverse --header 'Search in files' \
+            | cut -d':' -f1 | sed 's/\\/\\\\/g;s/"/\\"/g'
+    )"
+    [ -n "$res" ] && lf -remote "send $id select \"$res\""
+}}
+
+# Find file with fzf and edit with EDITOR
+cmd fzf ${{
+    $EDITOR $(find . -name "$1" 2>/dev/null | fzf)
+}}
+
+# Archive bindings
+cmd unarchive ${{
+  case "$f" in
+      *.zip) unzip "$f" ;;
+      *.tar.gz) tar -xzvf "$f" ;;
+      *.tar.bz2) tar -xjvf "$f" ;;
+      *.tar) tar -xvf "$f" ;;
+      *) echo "Unsupported format" ;;
+  esac
+}}
+
+cmd zip %zip -r "$f" "$f"
+cmd tar %tar cvf "$f.tar" "$f"
+cmd targz %tar cvzf "$f.tar.gz" "$f"
+cmd tarbz2 %tar cjvf "$f.tar.bz2" "$f"
+
+cmd stripspace %stripspace "$f"
+
+# Trash cli bindings
+cmd trash-put ${{
+  trash-put "$f" && notify-send -u normal "Trash file: $(basename "$f")" --icon=dialog-information
+}}
+
+cmd restore_trash ${{
+  trash-restore && notify-send -u normal "File restored: $(basename "$f")" --icon=dialog-information
+}}
+
+
+cmd empty-trash ${{
+  trash-empty && notify-send -u normal "Trash emptied" --icon=dialog-information
+}}
+
+
+# Move selected files to a specified directory
+# Select files with <SpaceBar>
+cmd moveto ${{
+  # Prompt user to select a destination directory using fzf
+  dest="$(find ~ -maxdepth 3 -type d | fzf --reverse --header='Move to folder: ')"
+  
+  # Check if the selected destination is a valid directory
+  if [ -d "$dest" ]; then
+    # Loop through the selected files and move them to the destination
+    for file in $fx; do
+      mv "$file" "$dest"
+    done
+    # Reload lf and send a success notification
+    lf -remote 'send reload' && notify-send -u normal "Success" "Files moved to: $(basename "$dest")" --icon=dialog-information
+    sleep 1
+  else
+    # Send an error notification if the destination is invalid
+    notify-send -u critical "Error" "Invalid folder: $dest" --icon=dialog-error
+  fi
+}}
+
+# Copy selected files to a specified directory
+# Select files with <SpaceBar>
+cmd copyto ${{
+  # Prompt user to select a destination directory using fzf
+  dest="$(find ~ -maxdepth 3 -type d | fzf --reverse --header='Copy to folder: ')"
+  
+  # Check if the selected destination is a valid directory
+  if [ -d "$dest" ]; then
+    # Loop through the selected files and copy them to the destination
+    for file in $fx; do
+      cp -r "$file" "$dest"
+    done
+    # Reload lf and send a success notification
+    lf -remote 'send reload' && notify-send -u normal "Success" "Files copied to: $(basename "$dest")" --icon=dialog-information
+    sleep 1
+  else
+    # Send an error notification if the destination is invalid
+    notify-send -u critical "Error" "Invalid folder: $dest" --icon=dialog-error
+  fi
+}}
+
+
+# Save the current directory as a bookmark
+cmd addbookmark ${{
+    function addbookmark {
+        local bookmark_file=~/.lf_bookmarks
+        [ ! -f "$bookmark_file" ] && touch "$bookmark_file"
+
+        local name=$1
+        if [ -z "$name" ]; then
+            echo "Usage: addbookmark <name>"
+            return
+        fi
+        echo "$name:$(pwd)" >> "$bookmark_file"
+    }
+    addbookmark "$@"
+}}
+
+# Jump to a bookmark
+cmd gobookmark ${{
+    function gobookmark {
+        local bookmark_file=~/.lf_bookmarks
+        [ ! -f "$bookmark_file" ] && touch "$bookmark_file"
+
+        local name=$1
+        if [ -z "$name" ]; then
+            echo "Usage: gobookmark <name>"
+            return
+        fi
+        local path=$(grep "^$name:" "$bookmark_file" | cut -d':' -f2-)
+        if [ -z "$path" ]; then
+            echo "Bookmark not found: $name"
+            return
+        fi
+        lf -remote "send $id cd $path"
+    }
+    gobookmark "$@"
+}}
+
+# List all bookmarks
+cmd listbookmarks ${{
+        bookmark_file=~/.lf_bookmarks
+        [ ! -f "$bookmark_file" ] && touch "$bookmark_file"
+        $EDITOR "$bookmark_file"
+}}
+
+
+# Bindings
+# Remove some defaults
+map m
+map o
+map n
+map "'"
+map '"'
+map d
+map c
+map e
+map f
+
+# Archive Mappings
+map az zip
+map at tar
+map ag targz
+map ab targz
+map au unarchive
+
+# Mount usbs
+map mu mountusbs
+map _um umountusbs
+
+map ss stripspace
+
+# Basic Functions
+map . set hidden!
+map <enter> open
+map C clear
+map DD delete
+map E edit-config
+map H top
+map L bottom
+map R reload
+map U unselect
+map V push !nvim<space>
+map W $setsid -f $TERMINAL >/dev/null 2>&1
+map ch chmod
+map e open
+map ee open
+map md mkdir
+map mf mkfile
+map msf sudomkfile
+map ob $setsid -f $BROWSER >/dev/null 2>&1
+map r rename
+map sp scratchpad
+map sw setwallpaper
+map w open
+map x cut
+map y copy
+map p paste
+map zp toggle_preview
+map M moveto
+map Y copyto
+map os $setsid -f $TERMINAL >/dev/null 2>&1
+
+# Bindings for search navigation
+map / search
+
+# Trash Mappings (Avoid conflicts by choosing alternative keys)
+map ZP trash-put
+map ZR restore_trash
+map ZS cd ~/.local/share/Trash/files
+map ZZ empty-trash
+
+# Searching
+map gt fzf_jump # Jump to a file or directory in lf using fuzzy matching
+map gs :fzf_search # Search in the contents of files under the current directory
+map f push :fzf<space> # Search and edit a file
+
+# Movement
+map gD cd ~/Downloads
+map gb cd ~/bin
+map gc cd ~/.config
+map gd cd ~/Documents
+map gh cd ~
+map gl cd ~/.config/lf 
+map gm cd ~/Movies
+map gM cd ~/Music
+map gp cd ~/Pictures
+map op cd ~/proyectos_git
+map gps cd ~/Pictures/screenshots
+map gpw cd ~/Pictures/wallpapers
+map gr cd ~/Downloads/Refactor
+map mm cd /media
+
+map \;j cd ~
