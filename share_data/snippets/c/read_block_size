@@ -37,5 +37,6 @@ int main(int argc, char *argv[]) {
 }
 void display_block(unsigned char *block, size_t size) {
   for (size_t i = 0; i < size; i++) {
-    printf("%02X ", block[i]);  // Print each byte in hex format
+    printf("%c", block[i]);  
   }
+}

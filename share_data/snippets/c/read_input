@@ -1,0 +1,26 @@
+// Reads standard input and discards the newline character.
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#define SIZE 256
+char *input(void) {
+  static char input_buffer[SIZE];
+  char *chars_read;
+
+  /* Initialize the buffer */
+  input_buffer[0] = '\0';
+
+  /* Gather input */
+  chars_read = fgets(input_buffer, SIZE, stdin);
+  if (chars_read == NULL) {
+    fprintf(stderr, "Input error\n");
+    exit(EXIT_FAILURE);
+  }
+
+  /* Remove the newline character */
+  size_t len = strcspn(input_buffer, "\n");
+  input_buffer[len] = '\0';
+
+  return input_buffer;
+}

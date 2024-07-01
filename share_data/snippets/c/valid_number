@@ -1,0 +1,23 @@
+// Check if the input name is valid (only alphabetic characters)
+#include <ctype.h>
+int is_valid_price(const char *price) {
+  int dot_count = 0;
+
+  // Ensure the input is not empty
+  if (price[0] == '\0') {
+    return 0;
+  }
+
+  for (int i = 0; price[i] != '\0'; i++) {
+    if (!isdigit(price[i])) {
+      if (price[i] == '.' && dot_count == 0) {
+        dot_count++;
+      } else {
+        return 0; // Invalid price if more than one '.' or other non-digit
+                  // character
+      }
+    }
+  }
+
+  return 1; // Valid price
+}
