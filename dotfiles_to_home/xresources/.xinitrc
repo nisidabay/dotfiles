@@ -47,21 +47,22 @@ fi
 export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/$UID/bus"
 systemctl --user stop mako
 export XDG_SESSION_TYPE="x11"
-# Start the dunst notification daemon
-dunst &
-
-# Start the clipmenu daemon
-clipmenud &
+# # Start the dunst notification daemon
+# dunst &
+#
+# # Start the clipmenu daemon
+# clipmenud &
 
 # Apply transparency
 # xcompmgr -c -C -ts -l -s -r4.2 -o.55 &
 
+if [[ pgrep dwm ]];then
 # Start dwmblocks
-dwmblocks &
+    dwmblocks &
 
 # Start dwm as the window manager and keep restarting it
 # if it crashes or exits
-while true; do
-     exec dwm > /dev/null 2>&1
-done
-                 
+    while true; do
+        exec dwm > /dev/null 2>&1
+    done
+fi 
