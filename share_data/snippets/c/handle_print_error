@@ -1,0 +1,26 @@
+#include <errno.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#define SIZE 32
+
+/* Definition of the person structure */
+struct person {
+  char name[SIZE];
+  int id;
+};
+
+void output(struct person y) {
+  if (printf("%s:%d\n", y.name, y.id) < 0) {
+    /* This condition can occur if there is an error with the output stream,
+       such as stdout being closed, redirected to a full disk, or other I/O
+       errors. It might also happen due to resource constraints in embedded
+       systems or memory corruption. */
+    perror("Error printing person");
+    /* Handle the error appropriately. Here we just print to stderr and exit. */
+    fprintf(stderr, "Failed to print the person structure: %s\n",
+            strerror(errno));
+    exit(EXIT_FAILURE);
+  }
+}
