@@ -1,10 +1,11 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 int main(int argc, char *argv[]) {
-  if (argc != 2) {
-    fprintf(stderr, "Usage: %s <filename>\n",
-            argv[0]);  // Check for correct argument usage
-    return EXIT_FAILURE;
-  }
+
+  while (--argc > 0)
+    printf("%s%s", *++argv, (argc > 1) ? " " : "");
+  printf("\n");
+
+  return 0;
 }
+
