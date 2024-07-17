@@ -96,7 +96,12 @@ cmd umountusbs ${{
 
 # Mount CDROM
 cmd mountcdrom ${{
-    sudo ~/bin/mount_cdrom.sh
+    sudo ~/bin/mount_cdrom.sh -m
+}}
+
+# Umount CDROM
+cmd umountcdrom ${{
+    sudo ~/bin/mount_cdrom.sh -u
 }}
 
 # Jump to a file or directory in lf using fuzzy matching
@@ -274,6 +279,9 @@ map _um umountusbs
 
 # Mount cdrom
 map mc mountcdrom
+# Umount cdrom
+map mu umountcdrom
+
 map ss stripspace
 
 # Basic Functions
