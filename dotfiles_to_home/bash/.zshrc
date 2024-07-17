@@ -190,3 +190,5 @@ export PATH="/opt/master-pdf-editor-4/masterpdfeditor4:$PATH"
 
 
 
+
+source /home/nisidabay/.config/broot/launcher/bash/br
