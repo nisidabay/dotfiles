@@ -16,16 +16,16 @@
 # -----------------------------------------------------
 echo ""
 if [[ $(tty) == *"pts"* ]]; then
-	# pfetch
-	# read
-	:
+    # pfetch
+    # read
+    :
 else
-	if [ -f /bin/qtile ]; then
-		echo "Start Qtile X11 with command Qtile"
-	fi
-	if [ -f /bin/hyprctl ]; then
-		echo "Start Hyprland with command Hyprland"
-	fi
+    if [ -f /bin/qtile ]; then
+        echo "Start Qtile X11 with command Qtile"
+    fi
+    if [ -f /bin/hyprctl ]; then
+        echo "Start Hyprland with command Hyprland"
+    fi
 fi
 
 # Set the editor for Git
@@ -89,8 +89,8 @@ export FZF_DEFAULT_COMMAND='fd --type f --color=never --hidden'
 
 # Load FZF if it is installed
 if [ -f ~/.fzf.bash ]; then
-	# shellcheck source=/dev/null
-	source ~/.fzf.bash
+    # shellcheck source=/dev/null
+    source ~/.fzf.bash
 fi
 
 # -----------------------------------------------------
@@ -114,7 +114,7 @@ source "$HOME/.cache/wal/colors.sh"
 # -----------------------------------------------------
 
 if command -v bat &>/dev/null; then
-	export MANPAGER="sh -c 'less -R | bat -l man -p'"
+    export MANPAGER="sh -c 'less -R | bat -l man -p'"
 fi
 
 # -----------------------------------------------------
@@ -126,8 +126,8 @@ set -o vi
 # Fix zsh errors when reloading bashrc
 # -----------------------------------------------------
 if [ -n "$BASH_VERSION" ]; then
-	bind -m vi-command 'Control-l: clear-screen'
-	bind -m vi-insert 'Control-l: clear-screen'
+    bind -m vi-command 'Control-l: clear-screen'
+    bind -m vi-insert 'Control-l: clear-screen'
 fi
 
 # -----------------------------------------------------
@@ -140,20 +140,20 @@ export XDG_SESSION_TYPE="x11"
 # -----------------------------------------------------
 if [[ $(hostname) == "msi" ]]; then
 
-	export XDG_CONFIG_HOME=~/.config
-	export XDG_DOCUMENTS_DIR=/mnt/sata/Documents
-	export XDG_MUSIC_DIR=/mnt/sata/Music
-	export XDG_PICTURES_DIR=/mnt/sata/Pictures
-	export XDG_DOWNLOAD_DIR=/mnt/sata/Downloads
-	export XDG_VIDEOS_DIR=/mnt/sata/Movies
+    export XDG_CONFIG_HOME=~/.config
+    export XDG_DOCUMENTS_DIR=/mnt/sata/Documents
+    export XDG_MUSIC_DIR=/mnt/sata/Music
+    export XDG_PICTURES_DIR=/mnt/sata/Pictures
+    export XDG_DOWNLOAD_DIR=/mnt/sata/Downloads
+    export XDG_VIDEOS_DIR=/mnt/sata/Movies
 else
 
-	export XDG_CONFIG_HOME=~/.config
-	export XDG_DOCUMENTS_DIR=~/Documents
-	export XDG_MUSIC_DIR=~/Music
-	export XDG_PICTURES_DIR=~/Pictures
-	export XDG_DOWNLOAD_DIR=~/Downloads
-	export XDG_VIDEOS_DIR=~/Movies
+    export XDG_CONFIG_HOME=~/.config
+    export XDG_DOCUMENTS_DIR=~/Documents
+    export XDG_MUSIC_DIR=~/Music
+    export XDG_PICTURES_DIR=~/Pictures
+    export XDG_DOWNLOAD_DIR=~/Downloads
+    export XDG_VIDEOS_DIR=~/Movies
 fi
 
 # -----------------------------------------------------
@@ -171,7 +171,7 @@ export PATH=$PATH:$GOPATH/bin
 # START STARSHIP
 # -----------------------------------------------------
 #eval "$(starship init bash)"
-. "$HOME/.cargo/env"
+#. "$HOME/.cargo/env"
 
 # -----------------------------------------------------
 # Quotes file for fortune. A C program to show quotes
@@ -188,10 +188,10 @@ source /home/nisidabay/.config/broot/launcher/bash/br
 
 # Start yazi inside kitty
 function yy() {
-	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
-	kitty yazi "$@" --cwd-file="$tmp"
-	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
-		cd -- "$cwd" || exit
-	fi
-	rm -f -- "$tmp"
+    local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
+    kitty yazi "$@" --cwd-file="$tmp"
+    if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+        cd -- "$cwd" || exit
+    fi
+    rm -f -- "$tmp"
 }
