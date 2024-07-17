@@ -94,6 +94,11 @@ cmd umountusbs ${{
     sudo ~/bin/pyusb.py -u
 }}
 
+# Mount CDROM
+cmd mountcdrom ${{
+    sudo ~/bin/mount_cdrom.sh
+}}
+
 # Jump to a file or directory in lf using fuzzy matching
 cmd fzf_jump ${{
   res="$(find ~ -maxdepth 3 | fzf --reverse --header='Jump to location')"
@@ -267,6 +272,8 @@ map au unarchive
 map mu mountusbs
 map _um umountusbs
 
+# Mount cdrom
+map mc mountcdrom
 map ss stripspace
 
 # Basic Functions
