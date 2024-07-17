@@ -56,13 +56,17 @@ export XDG_SESSION_TYPE="x11"
 # Apply transparency
 # xcompmgr -c -C -ts -l -s -r4.2 -o.55 &
 
-if [[ pgrep dwm ]];then
-# Start dwmblocks
+# Start dwm as the window manager and keep restarting it if it crashes or exits
+while true; do
+    dwm > /dev/null 2>&1 &
+    
+
+    # Start dwmblocks
     dwmblocks &
 
-# Start dwm as the window manager and keep restarting it
-# if it crashes or exits
-    while true; do
-        exec dwm > /dev/null 2>&1
-    done
-fi 
+    # Wait for dwm to exit
+    wait $!
+    
+    sleep 1
+done
+
