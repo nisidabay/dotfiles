@@ -1,0 +1,12 @@
+
+* Ctrl-h - deletes back one character (like Backspace)
+* Ctrl-w - deletes back one word
+* Ctrl-u - deletes back to start of line
+
+
+
+
+
+
+
+

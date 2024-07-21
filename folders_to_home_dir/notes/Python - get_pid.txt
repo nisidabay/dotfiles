@@ -1,0 +1,8 @@
+
+import subprocess
+
+cmd = "pgrep pyusb"  # Assuming "pyusb" is the name of the Python process
+pid = subprocess.Popen(cmd, stdout=subprocess.PIPE, text=True, shell=True)
+
+stdout, _ = pid.communicate()
+print(stdout)

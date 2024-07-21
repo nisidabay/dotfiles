@@ -1,0 +1,19 @@
+# The json_file is a dictionary so we sort by the key we want
+-------------------------------------------------------------
+
+def _reorder_elements(self) -> None:
+    """Reorder the elements by folder_id"""
+
+    # Sort the list of folders based on the 'folder_id'
+    self.json_file["Folders"].sort(key=lambda x: int(x["folder_id"]))
+
+    # Start the new folder_id from 1
+    new_folder_id = 1
+
+    # Update the 'folder_id' values sequentially
+    for element in self.json_file["Folders"]:
+        element["folder_id"] = new_folder_id
+        new_folder_id += 1
+
+    # Save the updated JSON file
+    self.dump_to_json_file()

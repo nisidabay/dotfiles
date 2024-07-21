@@ -1,0 +1,23 @@
+Create a context manager
+------------------------
+Must implement the protocol: __enter__ and __exit__
+
+from typing import TextIO, Any
+
+
+class WritableFile:
+    def __init__(self, file_path) -> None:
+        self.file_path = file_path
+
+    def __enter__(self) -> TextIO:
+        self.file_obj = open(self.file_path, mode="w")
+        return self.file_obj
+
+    def __exit__(self, exc_type: Any, exc_value: Any, exc_tb: Any) -> None:
+        if self.file_obj:
+            self.file_obj.close()
+
+
+if __name__ == "__main__":
+    with WritableFile("caca.txt") as file:
+        file.write("Context manager")

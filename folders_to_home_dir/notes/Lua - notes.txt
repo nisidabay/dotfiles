@@ -1,0 +1,19 @@
+•••All the variables will point to nil until they are assigned.
+•••Zero an empty strings are considered to be True.
+•••String indexes start at 1.
+•••Read a whole line of input.  local input = io.read("*line")  
+•••A function will ignore the extra arguments.
+•••Missing arguments in a function declaration will have a nil value.
+•••Arguments must be concatenated using tostring(arg) to avoid errors.
+•••Lua is not object-oriented. It uses tables and metatables.
+•••Tables are stored by reference
+
+••• Function to print the whole matrix in matrix format
+local function printMatrix(matrix)
+    for i = 1, num_rows do
+        for j = 1, num_cols do
+            io.write(matrix[i][j] .. " ")
+        end
+        io.write("\n")
+    end
+end

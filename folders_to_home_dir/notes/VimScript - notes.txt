@@ -1,0 +1,29 @@
+•••Using autocmd!
+
+augroup demo
+autocmd!
+autocmd BufReadPost * echo 'Reading: ' . expand('<afile>')
+autocmd BufWritePost * echo 'Writing: ' . expand('<afile>')
+augroup END
+
+augroup demo
+autocmd!
+autocmd BufReadPost *.vim,vimrc
+\ echo 'Editing Vim script: ' . expand('<afile>')
+augroup END
+
+augroup demo
+autocmd!
+autocmd BufNewFile,BufReadPost vimrc,*.vim
+\ echo 'Editing Vim script: ' . expand('<afile>')
+augroup END
+
+augroup demo
+autocmd!
+autocmd FileType vim
+\ echo 'Editing Vim script: ' . expand('<afile>') . '\n'
+\ . 'Filetype: '. expand('<amatch>')
+augroup END
+
+autocmd BufWritePre /tmp/* setlocal noundofile
+

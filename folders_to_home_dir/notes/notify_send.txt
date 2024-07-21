@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# Low urgency notification
+notify-send -u low "Low Urgency" "This is a low urgency notification." --icon=dialog-information
+
+# Normal urgency notification with information icon
+notify-send -u normal "Information" "This is an informational message." --icon=dialog-information
+
+# Normal urgency notification with warning icon
+notify-send -u normal "Warning" "This is a warning message." --icon=dialog-warning
+
+# Critical urgency notification with error icon
+notify-send -u critical "Error" "This is a critical urgency notification." --icon=dialog-error
+
+# Normal urgency notification with battery icon
+notify-send -u normal "Battery Low" "Your battery is running low." --icon=battery-low
+
+# Normal urgency notification with network icon
+notify-send -u normal "Network Connected" "You are now connected to the network." --icon=network-transmit-receive
+

@@ -1,0 +1,15 @@
+
+If you have more than one split in Vim, and you want to scroll
+them together (for example two vertical splits), here's what you
+need to do:
+
+- In each window that should scroll simultaneously, enter the
+command: :set scrollbind
+
+You can enter scb as an abbreviation for scrollbind.
+
+You might now that ! flag causes :set to toggle a boolean
+configuration option.
+Therefore, you can easily toggle scrollbind on or off by running:
+
+:set scb!

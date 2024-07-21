@@ -1,0 +1,12 @@
+Here are some of the common icons used by Neomutt:
+
+    + (plus sign) indicates a new or unread message.
+    ! (exclamation mark) indicates a message that is flagged or marked for follow-up.
+    r (lowercase "r") indicates a message that has been replied to.
+    R (uppercase "R") indicates a message that has been forwarded.
+    * (asterisk) indicates a message that is tagged or marked with a label.
+    O (uppercase "O") indicates a message that has been read.
+    D (uppercase "D") indicates a message that has been deleted or marked for deletion.
+    T (uppercase "T") indicates a message that has been marked as "trashed".
+
+

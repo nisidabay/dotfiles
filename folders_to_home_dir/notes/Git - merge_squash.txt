@@ -1,0 +1,63 @@
+# git merge --squash
+--------------------
+Prepare the Main Branch:
+
+Commands:
+
+* git checkout main 
+* git pull 
+
+Purpose: 
+Switches to the main branch and updates it with the latest changes from the
+remote repository. This ensures that the merge is done against the most current
+state of the main branch.
+
+Perform a Squash Merge:
+
+Command:
+
+* git merge --squash feature-branch
+
+Purpose: 
+Merges all changes from feature-branch into the main branch, but instead of
+creating multiple commits for each change, it stages them as a single commit.
+
+Review and Stage the Changes:
+
+Commands:
+
+* git diff
+* git add .
+
+Purpose: 
+git diff allows you to review the changes that are staged for commit. This is an
+opportunity to ensure that all the changes being merged are correct and as
+intended. git add . stages all the changes for the upcoming commit.
+
+Commit the Squashed Changes:
+
+Command:
+
+* git commit -m "feature and main branch merged with a merge squash"
+
+Purpose: 
+Creates a new commit on the main branch that incorporates all the squashed
+changes from feature-branch. This step is crucial because git merge --squash
+only stages the changes but does not commit them.
+
+Push the Commit to the Remote Repository:
+
+Command:
+
+* git push origin main
+
+Purpose: 
+Uploads the new commit on the main branch to the remote repository. This ensures
+that the squashed changes are now part of the shared main branch history.
+
+This workflow is particularly useful when you want to keep the main branch's
+history clean and straightforward, especially when the feature-branch contains
+many intermediate commits that aren't necessary for the overall project history.
+The squash merge provides a way to condense all these changes into a single,
+comprehensive commit.
+

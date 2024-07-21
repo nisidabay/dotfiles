@@ -1,0 +1,29 @@
+Find first ocurrence of a character in a string
+-----------------------------------------------
+# Define the string
+str="Kotlin in 8 Hours"
+
+# Define the character to search for
+character="n"
+
+# Use the 'expr index' command to find the index of the first occurrence of the character in the string
+index=$(expr index "$str" "$character")
+
+# Print the result
+echo "The index of the first occurrence of '$character' in the string is: $index"
+
+Another way more Bashish
+------------------------
+# Define the string
+str="Kotlin in 8 Hours"
+
+# Define the character to search for
+character="n"
+
+# Find the index of the first occurrence of the character in the string
+index=$(( ${str%%$character*} + 1 ))
+
+# Print the result
+echo "The index of the first occurrence of '$character' in the string is: $index"
+
+

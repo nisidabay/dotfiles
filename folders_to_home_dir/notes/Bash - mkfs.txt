@@ -1,0 +1,5 @@
+••• Create FAT32 filesystem with a volume-name:
+    mkfs.fat -F32 -v -I -n 'Label' '/dev/xxx'
+
+••• Create an ext4 filesystem with a volume-label:
+    sudo mkfs.ext4 -L volume_label /dev/sdb1

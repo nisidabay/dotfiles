@@ -1,0 +1,6 @@
+git download remote_branch
+--------------------------
+
+git fetch --all
+git branch -r
+git checkout -b development origin/development

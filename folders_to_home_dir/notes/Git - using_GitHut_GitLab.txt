@@ -1,0 +1,15 @@
+Using GitHub & GitLab at the same Time
+--------------------------------------
+
+To upload your code to both GitHub and GitLab simultaneously, you can configure
+multiple remotes in your Git repository. Here's how you can achieve this:
+
+Navigate to your local repository: Open a terminal or command prompt and
+navigate to the directory of the Git repository that you want to configure for
+dual uploading.
+
+Add remotes: Use the following commands to add the remotes for GitHub and GitLab:
+
+  git remote add github <GitHub repository URL>
+  git remote add gitlab <GitLab repository URL>
+

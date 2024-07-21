@@ -1,0 +1,1 @@
+_dotfiles/folders_to_home_dir/Applications/battery-combined-shell.sh

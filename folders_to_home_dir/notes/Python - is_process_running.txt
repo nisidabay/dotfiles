@@ -1,0 +1,36 @@
+Terminate a process 
+--------------------
+
+import subprocess
+import os
+import signal
+
+def _is_process_running(self, process_name: str) -> bool:
+    # Get the PID of the process using pgrep
+    pgrep_command = ["pgrep", process_name]
+    process = subprocess.Popen(pgrep_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    pid_stdout, _ = process.communicate()
+    pid_list = pid_stdout.decode().strip().splitlines()
+
+    if pid_list:
+        # There is at least one process with the given name running
+        for pid in pid_list:
+            try:
+                # Terminate each process by its PID
+                pid = int(pid)
+                # Give the process some time to terminate gracefully
+                process_timeout = 5  # Set the timeout value (in seconds)
+                process.terminate()
+                process.wait(timeout=process_timeout)
+                if process.returncode is None:
+                    # If the process did not terminate within the timeout, use SIGKILL to force termination
+                    print(f"Process with PID {pid} did not terminate gracefully. Using SIGKILL to force termination.")
+                    os.kill(pid, signal.SIGKILL)
+                else:
+                    print(f"Process with PID {pid} terminated gracefully.")
+            except Exception as e:
+                print(f"Error terminating process with PID {pid}: {e}")
+        
+        return True
+    else:
+        return False

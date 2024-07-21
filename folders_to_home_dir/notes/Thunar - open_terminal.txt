@@ -1,0 +1,6 @@
+Add this to custom actions
+--------------------------
+xfce4-terminal --working-directory="$PWD"
+
+
+

@@ -1,0 +1,3 @@
+python setup.py sdist
+
+pip install dist/your_package_name-X.Y.Z.tar.gz --break-system-packages

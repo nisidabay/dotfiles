@@ -1,0 +1,31 @@
+git push origin --delete feat-branch
+------------------------------------
+
+What it does: 
+This command deletes the branch named feat-branch from the remote repository
+named origin. It's a remote operation that removes the specified branch from the
+server/repository that is being tracked remotely.
+
+When to use it: 
+Use this command when you need to clean up or remove branches from the remote
+repository that are no longer needed. 
+
+Common scenarios include: 
+After merging a feature branch into the main development branch and the separate
+feature branch is no longer required.
+
+        If a branch was created by mistake or has become obsolete.
+        To enforce branch naming conventions or clean up after renaming branches.
+        As part of a repository maintenance routine, where old or stale branches
+        are removed to keep the repository tidy and manageable.
+
+It's important to note that this command only deletes the branch in the remote
+repository. If you have a local copy of the feat-branch, it will remain on your
+local machine. To delete the branch locally, you would use git branch -d
+feat-branch (or git branch -D feat-branch if the branch hasn't been fully
+merged).
+
+Remember, this command affects the remote repository, so it should be used
+cautiously, especially in collaborative environments, to avoid accidentally
+deleting branches that are still in use by others.
+

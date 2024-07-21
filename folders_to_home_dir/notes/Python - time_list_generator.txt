@@ -1,0 +1,40 @@
+#!/usr/bin/python3
+"""
+Generate lists of seconds, minutes, and hours using generators.
+
+This script generates lists of seconds, minutes, and hours as strings with 
+leading zeros. Using generator functions for memory efficiency.
+"""
+
+from typing import Generator
+
+
+def time_list_generator(top: int) -> Generator[str, None, None]:
+    """
+    Generate a sequence of time units as strings with leading zeros.
+
+    Args:
+        top (int): The maximum value for the time unit.
+
+    Yields:
+        str: A time unit as a string.
+    """
+    for i in range(top):
+        yield f"{i:02}"
+
+
+def main():
+    """
+    The main function of the script.
+    """
+    secs = list(time_list_generator(60))
+    mins = list(time_list_generator(60))
+    hours = list(time_list_generator(24))
+
+    print("Seconds:", secs)
+    print("Minutes:", mins)
+    print("Hours:", hours)
+
+
+if __name__ == "__main__":
+    main()

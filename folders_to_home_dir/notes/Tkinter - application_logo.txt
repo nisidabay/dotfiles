@@ -1,0 +1,41 @@
+#!/usr/bin/python3
+# Set the application icon
+import tkinter as tk
+from PIL import Image, ImageTk
+from pathlib import Path
+import tkbootrap as ttk
+
+class MainApp(ttk.Window):
+    """
+    Main application window class.
+
+    This class represents the main application window and initializes it with a custom icon.
+    """
+
+    def __init__(self) -> None:
+        """
+        Initialize the MainApp.
+
+        Initializes the main application window, sets a custom icon, and starts the main event loop.
+        """
+        super().__init__()
+
+        # Set the style theme
+        style = ttk.Style()
+        style.theme_use("vapor")
+
+        # Load the custom icon from the file
+        self.icon_path = Path(__file__).parent.absolute().joinpath("icon.png")
+        self.icon = Image.open(self.icon_path)
+
+        # Create an ImageTk.PhotoImage object from the icon
+        self.img = ImageTk.PhotoImage(self.icon)
+
+        # Set the application icon
+        self.iconphoto(True, self.img)
+
+        # Start the main event loop
+        self.mainloop()
+
+if __name__ == "__main__":
+    app = MainApp()

@@ -1,0 +1,250 @@
++------------+----------------------------------------------------------+
+| Function   | Description                                              |
++------------+----------------------------------------------------------+
+| scanf      | Reads formatted input from stdin.                        |
+|            | Example:                                                 |
+|            | int num;                                                 |
+|            | printf("Enter a number: ");                              |
+|            | scanf("%d", &num);                                       |
+|            | printf("You entered: %d\n", num);                        |
++------------+----------------------------------------------------------+
+| fscanf     | Reads formatted input from a file stream.                |
+|            | Example:                                                 |
+|            | FILE *file = fopen("input.txt", "r");                    |
+|            | int num;                                                 |
+|            | fscanf(file, "%d", &num);                                |
+|            | printf("Number from file: %d\n", num);                   |
+|            | fclose(file);                                            |
++------------+----------------------------------------------------------+
+| sscanf     | Reads formatted input from a string.                     |
+|            | Example:                                                 |
+|            | char input[] = "123 456";                                |
+|            | int num1, num2;                                          |
+|            | sscanf(input, "%d %d", &num1, &num2);                    |
+|            | printf("Numbers are: %d and %d\n", num1, num2);          |
++------------+----------------------------------------------------------+
+| printf     | Writes formatted output to stdout.                       |
+|            | Example:                                                 |
+|            | int num = 42;                                            |
+|            | printf("The answer is: %d\n", num);                      |
++------------+----------------------------------------------------------+
+| fprintf    | Writes formatted output to a file stream.                |
+|            | Example:                                                 |
+|            | FILE *file = fopen("output.txt", "w");                   |
+|            | int num = 42;                                            |
+|            | fprintf(file, "The answer is: %d\n", num);               |
+|            | fclose(file);                                            |
++------------+----------------------------------------------------------+
+| sprintf    | Writes formatted output to a string.                     |
+|            | Example:                                                 |
+|            | char buffer[50];                                         |
+|            | int num = 42;                                            |
+|            | sprintf(buffer, "The answer is: %d", num);               |
+|            | printf("%s\n", buffer);                                  |
++------------+----------------------------------------------------------+
+| vprintf    | Writes formatted output to stdout using a va_list.       |
+|            | Example:                                                 |
+|            | void print_numbers(const char *format, ...) {            |
+|            |     va_list args;                                        |
+|            |     va_start(args, format);                              |
+|            |     vprintf(format, args);                               |
+|            |     va_end(args);                                        |
+|            | }                                                        |
+|            | print_numbers("Numbers: %d, %d, %d\n", 1, 2, 3);         |
++------------+----------------------------------------------------------+
+| vfprintf   | Writes formatted output to a file stream using a va_list.|
+|            | Example:                                                 |
+|            | void log_message(FILE *file, const char *format, ...) {  |
+|            |     va_list args;                                        |
+|            |     va_start(args, format);                              |
+|            |     vfprintf(file, format, args);                        |
+|            |     va_end(args);                                        |
+|            | }                                                        |
+|            | FILE *file = fopen("log.txt", "w");                      |
+|            | log_message(file, "Error code: %d\n", 404);              |
+|            | fclose(file);                                            |
++------------+----------------------------------------------------------+
+| vsprintf   | Writes formatted output to a string using a va_list.     |
+|            | Example:                                                 |
+|            | void format_string(char *str, const char *format, ...) { |
+|            |     va_list args;                                        |
+|            |     va_start(args, format);                              |
+|            |     vsprintf(str, format, args);                         |
+|            |     va_end(args);                                        |
+|            | }                                                        |
+|            | char buffer[50];                                         |
+|            | format_string(buffer, "Hello %s!", "world");             |
+|            | printf("%s\n", buffer);                                  |
++------------+----------------------------------------------------------+
+| snprintf   | Writes formatted output to a string with size limit.     |
+|            | Example:                                                 |
+|            | char buffer[10];                                         |
+|            | int num = 12345;                                         |
+|            | snprintf(buffer, sizeof(buffer), "Number: %d", num);     |
+|            | printf("%s\n", buffer);                                  |
++------------+----------------------------------------------------------+
+| vsnprintf  | Writes formatted output to a string with size limit      |
+|            | using a va_list.                                         |
+|            | Example:                                                 |
+|            | void format_limited(char *str, size_t size, const char * |
+|            | format, ...) {                                           |
+|            |     va_list args;                                        |
+|            |     va_start(args, format);                              |
+|            |     vsnprintf(str, size, format, args);                  |
+|            |     va_end(args);                                        |
+|            | }                                                        |
+|            | char buffer[10];                                         |
+|            | format_limited(buffer, sizeof(buffer), "Value: %d", 1000);|
+|            | printf("%s\n", buffer);                                  |
++------------+----------------------------------------------------------+
+
+Summary of Functions with Examples
+
+    scanf: Reads formatted input from the standard input (stdin). Commonly used for user input.
+        Prototype: int scanf(const char *format, ...);
+        Example:
+
+        c
+
+    int num;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    printf("You entered: %d\n", num);
+
+fscanf: Reads formatted input from a specified file stream.
+
+    Prototype: int fscanf(FILE *stream, const char *format, ...);
+    Example:
+
+    c
+
+    FILE *file = fopen("input.txt", "r");
+    int num;
+    fscanf(file, "%d", &num);
+    printf("Number from file: %d\n", num);
+    fclose(file);
+
+sscanf: Reads formatted input from a string.
+
+    Prototype: int sscanf(const char *str, const char *format, ...);
+    Example:
+
+    c
+
+    char input[] = "123 456";
+    int num1, num2;
+    sscanf(input, "%d %d", &num1, &num2);
+    printf("Numbers are: %d and %d\n", num1, num2);
+
+printf: Writes formatted output to the standard output (stdout). Commonly used for displaying information.
+
+    Prototype: int printf(const char *format, ...);
+    Example:
+
+    c
+
+    int num = 42;
+    printf("The answer is: %d\n", num);
+
+fprintf: Writes formatted output to a specified file stream.
+
+    Prototype: int fprintf(FILE *stream, const char *format, ...);
+    Example:
+
+    c
+
+    FILE *file = fopen("output.txt", "w");
+    int num = 42;
+    fprintf(file, "The answer is: %d\n", num);
+    fclose(file);
+
+sprintf: Writes formatted output to a string.
+
+    Prototype: int sprintf(char *str, const char *format, ...);
+    Example:
+
+    c
+
+    char buffer[50];
+    int num = 42;
+    sprintf(buffer, "The answer is: %d", num);
+    printf("%s\n", buffer);
+
+vprintf: Writes formatted output to the standard output (stdout) using a variable argument list (va_list).
+
+    Prototype: int vprintf(const char *format, va_list arg);
+    Example:
+
+    c
+
+    void print_numbers(const char *format, ...) {
+        va_list args;
+        va_start(args, format);
+        vprintf(format, args);
+        va_end(args);
+    }
+    print_numbers("Numbers: %d, %d, %d\n", 1, 2, 3);
+
+vfprintf: Writes formatted output to a specified file stream using a variable argument list (va_list).
+
+    Prototype: int vfprintf(FILE *stream, const char *format, va_list arg);
+    Example:
+
+    c
+
+    void log_message(FILE *file, const char *format, ...) {
+        va_list args;
+        va_start(args, format);
+        vfprintf(file, format, args);
+        va_end(args);
+    }
+    FILE *file = fopen("log.txt", "w");
+    log_message(file, "Error code: %d\n", 404);
+    fclose(file);
+
+vsprintf: Writes formatted output to a string using a variable argument list (va_list).
+
+    Prototype: int vsprintf(char *str, const char *format, va_list arg);
+    Example:
+
+    c
+
+    void format_string(char *str, const char *format, ...) {
+        va_list args;
+        va_start(args, format);
+        vsprintf(str, format, args);
+        va_end(args);
+    }
+    char buffer[50];
+    format_string(buffer, "Hello %s!", "world");
+    printf("%s\n", buffer);
+
+snprintf: Writes formatted output to a string with a size limit.
+
+    Prototype: int snprintf(char *str, size_t size, const char *format, ...);
+    Example:
+
+    c
+
+    char buffer[10];
+    int num = 12345;
+    snprintf(buffer, sizeof(buffer), "Number: %d", num);
+    printf("%s\n", buffer);
+
+vsnprintf: Writes formatted output to a string with a size limit using a variable argument list (va_list).
+
+    Prototype: int vsnprintf(char *str, size_t size, const char *format, va_list arg);
+    Example:
+
+    c
+
+void format_limited(char *str, size_t size, const char *format, ...) {
+    va_list args;
+    va_start(args, format);
+    vsnprintf(str, size, format, args);
+    va_end(args);
+}
+char buffer[10];
+format_limited(buffer, sizeof(buffer), "Value: %d", 1000);
+printf("%s\n", buffer);
+

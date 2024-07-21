@@ -1,0 +1,22 @@
+••• Listar versiones
+go list -m -versions "paquete"
+go list -m -versions golang.org/x/text
+
+••• Actualizar paquetes a versiones nuevas
+go get golang.org/x/text
+
+••• Actualizar paquetes a una version especifica
+go get golang.org/x/text@v1.3.1
+
+••• Ver que dependencias importan un paquete
+go mod graph
+
+••• Iterar una structura
+func (c *Course) PrintCourse() {
+	val := reflect.ValueOf(c).Elem()
+	for i := 0; i < val.NumField(); i++ {
+		field := val.Field(i)
+		fmt.Printf("%v\n", field)
+	}
+
+}

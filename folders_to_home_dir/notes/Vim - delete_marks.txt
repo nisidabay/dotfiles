@@ -1,0 +1,5 @@
+To delete the text between the two marks
+----------------------------------------
+
+:'a,'bd and press Enter.
+

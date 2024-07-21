@@ -1,0 +1,7 @@
+Python comprehension
+--------------------
+
+[ k*k for k in range(1, n+1) ] list comprehension
+{ k*k for k in range(1, n+1) } set comprehension
+( k*k for k in range(1, n+1) ) generator comprehension
+{ k: k*k for k in range(1, n+1) } dictionary comprehension

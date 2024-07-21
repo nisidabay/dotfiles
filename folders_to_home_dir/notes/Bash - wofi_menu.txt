@@ -1,0 +1,14 @@
+Create a menu with wofi for shell scripts
+-----------------------------------------
+
+declare -a shortcuts
+shortcuts = (
+"option1: Do something"
+"option2: Do something more"
+)
+
+# Use wofi --dmenu to display the list of shortcuts and get user input
+choice=$(printf '%s\n' "${shortcuts[@]}" | wofi --dmenu --insensitive --lines 20 
+--font "Monospace 14" --prompt "Select an option")
+
+

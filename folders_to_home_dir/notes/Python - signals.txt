@@ -1,0 +1,16 @@
+# Signals in Python
+-------------------
+
+import signal 
+import time
+import sys
+
+def signal_handler(signum, frame): 
+    print(f"Received signal {signum}.Exiting...") 
+    sys.exit(0)
+
+signal.signal(signal.SIGINT, signal_handler)
+
+print("Press Ctrl+C to exit.") 
+    while True: 
+        time.sleep(1)

@@ -1,0 +1,76 @@
+Using git rebase
+----------------
+
+1. In main
+
+    Switch to the main Branch and Fetch Updates:
+        Commands:
+
+        * git checkout main 
+        * git fetch origin main
+
+        Purpose: Ensures you have the latest updates from the main branch.
+
+2. In development
+
+    Switch to the development Branch and Fetch Updates:
+        Commands:
+
+        * git checkout development
+        * git fetch origin development
+
+    Purpose: Switches to your development branch and fetches updates.
+
+3. In development 
+
+    Rebase development onto main
+
+    Command:
+
+    * git rebase main
+
+    Purpose: Applies the changes made in development on top of the latest
+    changes in main. This step may result in conflicts that need resolution.
+
+4. Fix Conflicts (if any) and Continue Rebase:
+
+    Commands:
+
+    # Fix conflicts in any affected files
+    * git add <fixed-files>
+    * git rebase --continue
+
+    Purpose: If conflicts occur during the rebase, resolve them, stage the
+    resolved files, and continue the rebase process.
+
+5. Back in main
+
+    Switch to the main Branch and Merge development into main:
+    Commands:
+
+    * git checkout main 
+    * git merge development
+
+    Purpose: Integrates the combined changes from both main and development into
+    main. This approach is more typical than rebasing main onto development as
+    it avoids rewriting the history of main.
+
+6. Push Changes to Remote:
+
+    Command:
+
+    * git push
+
+    Purpose: Uploads the updated main branch to the remote repository.
+
+General Notes
+
+    This workflow is a common practice in collaborative development, where
+    feature or development branches are periodically updated with changes from
+    main (or master), and then those branches are merged back into main upon
+    completion of the work.
+
+    It's important to regularly integrate changes from main into long-lived
+    branches like development to minimize conflicts and keep the branch in sync
+    with the main line of development.
+

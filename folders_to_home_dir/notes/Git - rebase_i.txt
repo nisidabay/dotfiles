@@ -1,0 +1,13 @@
+Git rebase -i
+-------------
+
+* pick: Apply the commit as-is.
+* reword: Edit the commit message.
+* edit: Stop and let you edit the commit message.
+* squash: Combine the commit with the previous commit. Write a new commit
+  message.
+* fixup: Combine the commit with the previous commit and discard the commit
+  message. Keeps the previous commit message.
+* break: Stop the rebase and continue later with git rebase --continue.
+* drop: Remove the commit.
+

@@ -1,0 +1,5 @@
+Login directly into github
+--------------------------
+
+sudo pacman -S github-cli
+gh auth login

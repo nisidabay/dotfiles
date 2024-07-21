@@ -1,0 +1,40 @@
+Cherry-pick
+-----------
+Purpose
+git cherry-pick is used to apply changes from specific commits in one branch to
+your current branch. This allows you to selectively integrate changes
+without merging all the changes from another branch.
+
+Checkout the Master Branch
+Command: git checkout master
+Use: Switches to the master branch before applying the cherry-pick. It's
+important to be on the branch where you want the changes to be applied.
+
+Find the Commit Hash
+Command: git log feature-branch 
+Use: Lists the commit history of feature-branch so you can identify the commit
+hashes (IDs) of the changes you want to cherry-pick.
+
+Cherry-Pick the Commit
+Command: git cherry-pick abc123
+Use: Applies the changes from the commit with hash abc123 to the current branch
+(master in this case).
+
+Handling Conflicts
+**If conflicts arise during cherry-picking, Git will pause the process, allowing
+you to resolve the conflicts manually.
+
+Add the Resolved Files
+Command: git add <filename>
+Use: Stages the resolved files after you have manually resolved any conflicts.
+
+Continue Cherry-Picking
+Command: git cherry-pick --continue
+Use: Once conflicts are resolved and changes are staged, this command continues
+the cherry-picking process.
+
+Cherry-Pick Multiple Commits
+Command: git cherry-pick abc123 def456 ghi789
+Use: Allows you to cherry-pick multiple commits in a single command. This is
+efficient for applying several non-sequential changes from another branch.
+

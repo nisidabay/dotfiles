@@ -1,0 +1,1 @@
+_dotfiles/folders_to_home_dir/Applications/export_network_names.sh

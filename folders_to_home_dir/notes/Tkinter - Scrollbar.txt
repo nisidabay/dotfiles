@@ -1,0 +1,20 @@
+1. Create widget
+----------------
+self.play_list = tk.Listbox(
+    top_frame, font="Helvetica 12 bold", selectmode=tk.SINGLE
+)
+
+2. Create Scrollbar
+-------------------
+self.scroll_bar = ttk.Scrollbar(
+    self.play_list, orient=tk.VERTICAL, command=self.play_list.yview
+)
+
+3. Configure widget to accept Scrollbar
+---------------------------------------
+self.play_list.configure(yscrollcommand=self.scroll_bar.set)
+
+4. Pack widget and Scrollbar
+----------------------------
+self.play_list.pack()
+self.scroll_bar.pack()

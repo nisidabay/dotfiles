@@ -1,0 +1,5 @@
+To find the parent repository's root
+git rev-parse --git-common-dir
+
+To find the root of the repository you're in
+git rev-parse --show-toplevel

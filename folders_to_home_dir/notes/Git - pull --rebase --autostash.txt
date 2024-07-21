@@ -1,0 +1,15 @@
+git pull --rebase --autostash
+-----------------------------
+
+    What it does: This command updates your local branch with changes from a
+    remote branch. It does this by rebasing your local changes on top of the
+    incoming changes, which creates a linear history. The --autostash option
+    automatically stashes any uncommitted changes you have before the rebase and
+    then reapplies them afterwards.
+
+    When to use it: Use this command when you want to update your local branch
+    with changes from the remote branch, and you have local modifications that
+    you don't want to commit just yet. It's particularly useful for maintaining
+    a clean and linear commit history without the need for manual stashing and
+    unstashing of local changes.
+

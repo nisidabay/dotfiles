@@ -1,0 +1,9 @@
+CTRL-X CTRL-L Search backwards for a line that starts with the
+CTRL-X_CTRL-P Completing keywords in current file									
+CTRL-X CTRL-N Search forwards for words that start with the keyword
+CTRL-X CTRL-V		Complete commands
+CTRL-X CTRL-F		Complete filenames
+
+:jumps show the jump list
+12CTRL-O Go to jump 12
+:cle Clears jump list

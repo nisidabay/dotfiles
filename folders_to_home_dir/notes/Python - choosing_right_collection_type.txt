@@ -1,0 +1,56 @@
+From: Robust Python. Write clean and maintainable code. Patric Viafore
+
+List
+----
+This is a collection to be iterated over. It is mutable: able to be changed at any
+time. Very rarely do you expect to be retrieving specific elements from the mid‐
+dle of the list (using a static list index). There may be duplicate elements. The
+cookbooks on a shelf might be stored in a list.
+
+String
+------
+An immutable collection of characters. The name of a cookbook would be a
+string.
+
+Generator
+---------
+A collection to be iterated over, and never indexed into. Each element access is
+performed lazily, so it may take time and/or resources through each loop itera‐
+tion. They are great for computationally expensive or infinite collections. An
+online database of recipes might be returned as a generator; you don’t want to
+fetch all the recipes in the world when the user is only going to look at the
+first 10 results of a search.
+
+Tuple
+-----
+An immutable collection. You do not expect it to change, so it is more likely to
+extract specific elements from the middle of the tuple (either through indices
+or unpacking). It is very rarely iterated over. The information about a specific
+cook‐ book might be represented as a tuple, such as (cookbook_name, author, page
+count).
+
+Set
+---
+An iterable collection that contains no duplicates. You cannot rely on ordering
+of elements. The ingredients in a cookbook might be stored as a set.
+
+Dictionary
+----------
+A mapping from keys to values. Keys are unique across the dictionary. Dictionar‐
+ies are typically iterated over, or indexed into using dynamic keys. A
+cookbook’s index is a great example of a key to value mapping (from topic to
+page number.)
+
+frozenset
+---------
+A set that is immutable.
+
+OrderedDict
+-----------
+A dictionary that preserves order of elements based on insertion time. As of
+CPython 3.6 and Python 3.7, built-in dictionaries will also preserve order of
+ele‐ ments based on insertion of time.
+
+defaultdict
+-----------
+A dictionary that provides a default value if the key is missing.
