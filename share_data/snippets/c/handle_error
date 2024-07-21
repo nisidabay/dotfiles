@@ -1,0 +1,6 @@
+#include <stdio.h>
+#include <stdlib.h>
+void handle_error(const char *msg) {
+  perror(msg);        // Print the error message
+  exit(EXIT_FAILURE); // Exit the program
+}
