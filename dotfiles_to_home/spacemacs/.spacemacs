@@ -41,6 +41,7 @@ This function should only modify configuration layer settings."
      python
      auto-completion
      better-defaults
+     c-c++
      emacs-lisp
      git
      go
@@ -614,6 +615,8 @@ before packages are loaded."
   ;; Keybinding for decreasing a number at point
   (define-key evil-normal-state-map (kbd "C-c -") 'evil-numbers/dec-at-pt)
 
+  ;; Compile C code with clang
+  (setq-default c-c++-default-compiler 'clang)
   ;; Load languages for using org
   (org-babel-do-load-languages
    'org-babel-load-languages
@@ -621,6 +624,7 @@ before packages are loaded."
      (shell . t)
      (lua . t)
      (lisp . t)
+     (c . t)
      ;; Add other languages here
      ))
 
@@ -704,4 +708,24 @@ This function is called at the very end of Spacemacs initialization."
  ;; If there is more than one, they won't work right.
  )
 )
+)
+(defun dotspacemacs/emacs-custom-settings ()
+  "Emacs custom settings.
+This is an auto-generated function, do not modify its content directly, use
+Emacs customize menu instead.
+This function is called at the very end of Spacemacs initialization."
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(org-agenda-files '("~/agenda/todolist.org"))
+ '(package-selected-packages
+   '(ccls company-c-headers company-rtags company-ycmd cpp-auto-include disaster flycheck-rtags flycheck-ycmd gendoxy google-c-style helm-rtags rtags ycmd request-deferred doom-modeline shrink-path nerd-icons spaceline-all-the-icons memoize dap-mode lsp-docker bui yasnippet-snippets yapfify xterm-color xkcd xclip ws-butler writeroom-mode winum which-key web-beautify volatile-highlights vim-powerline vi-tilde-fringe uuidgen unfill undo-tree treemacs-projectile treemacs-persp treemacs-magit treemacs-icons-dired treemacs-evil toc-org terminal-here term-cursor symon symbol-overlay string-inflection string-edit-at-point sphinx-doc spacemacs-whitespace-cleanup spacemacs-purpose-popwin spaceline space-doc smeargle slime shell-pop restart-emacs request ranger rainbow-delimiters quickrun pytest pylookup pyenv-mode pydoc py-isort prettier-js popwin poetry pippel pipenv pip-requirements pdf-view-restore pcre2el password-generator paradox overseer orgit-forge org-superstar org-rich-yank org-projectile org-present org-pomodoro org-mime org-download org-contrib org-cliplink open-junk-file npm-mode nose nodejs-repl nameless mwim multi-vterm multi-term multi-line mu4e-alert mmm-mode markdown-toc lsp-ui lsp-treemacs lsp-python-ms lsp-pyright lsp-origami lorem-ipsum livid-mode live-py-mode link-hint json-reformat json-navigator json-mode js2-refactor js-doc inspector info+ indent-guide importmagic hybrid-mode hungry-delete htmlize holy-mode hl-todo highlight-parentheses highlight-numbers highlight-indentation hide-comnt helm-xref helm-themes helm-swoop helm-pydoc helm-purpose helm-projectile helm-org-rifle helm-org helm-mu helm-mode-manager helm-make helm-lsp helm-ls-git helm-git-grep helm-descbinds helm-company helm-comint helm-c-yasnippet helm-ag google-translate golden-ratio godoctor go-tag go-rename go-impl go-guru go-gen-test go-fill-struct go-eldoc gnuplot gitignore-templates git-timemachine git-modes git-messenger git-link gh-md flycheck-pos-tip flycheck-package flycheck-elsa flx-ido fancy-battery eyebrowse expand-region evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-textobj-line evil-surround evil-org evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-lisp-state evil-lion evil-indent-plus evil-iedit-state evil-goggles evil-exchange evil-evilified-state evil-escape evil-easymotion evil-collection evil-cleverparens evil-args evil-anzu eval-sexp-fu eshell-z eshell-prompt-extras esh-help emr elisp-slime-nav elisp-def editorconfig dumb-jump drag-stuff dotenv-mode dired-quick-sort diminish devdocs define-word cython-mode company-lua company-go company-anaconda column-enforce-mode code-cells clean-aindent-mode centered-cursor-mode blacken auto-highlight-symbol auto-compile all-the-icons aggressive-indent ace-link ace-jump-helm-line)))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
 )
