@@ -1,0 +1,225 @@
+# Spotify credentials (replace with your own)
+#!/usr/bin/env python3
+"""
+Spotify Integration with Polybar using Spotipy for OAuth authentication.
+
+This script fetches and displays information about the currently playing track on Spotify using Spotipy,
+and integrates it with Polybar to show track info and control playback.
+
+Dependencies:
+- spotipy
+
+Usage:
+1. Ensure spotipy is installed in your virtual environment.
+2. Run this script.
+3. Integrate with Polybar using a custom module to execute this script.
+
+Configuration options are available as global variables.
+"""
+
+import json
+import os
+import signal
+import threading
+import time
+import webbrowser
+from http.server import BaseHTTPRequestHandler, HTTPServer
+from unicodedata import east_asian_width
+
+import spotipy
+from spotipy.oauth2 import SpotifyOAuth
+
+# Config options
+MESSAGE_DISPLAY_LEN = 21  # Length of media info string before scrolling
+FONT_INDEX = 1  # Font index for Polybar
+UPDATE_DELAY = 0.3  # Update speed in seconds
+CONTROL_CHARS = ["󰒮", "󰐊", "󰏤", "󰒭"]  # Previous, Play, Pause, Next glyphs
+DISPLAY_PLAYER_PREFIX = {"spotify": "", "default": ""}
+METADATA_FIELDS = ["name", "artists"]  # Metadata fields to display
+METADATA_SEPARATOR = "-"  # Separator for metadata fields
+HIDE_OUTPUT = False  # Hide text if no player is available
+
+SPOTIPY_CLIENT_ID = "b7198509416e429598715914f8158dce"
+
+SPOTIPY_CLIENT_SECRET = "adf5d67c07774ab09a86b270557780ba"
+
+SPOTIPY_REDIRECT_URI = "http://localhost:8888/callback"
+# Spotify credentials (replace with your own)
+
+
+# Default initialization
+current_player = None
+message = None
+display_text = ""
+display_prefix = ""
+display_suffix = ""
+status_paused = False
+token_info = None
+
+# Spotify authentication
+sp_oauth = SpotifyOAuth(
+    client_id=SPOTIPY_CLIENT_ID,
+    client_secret=SPOTIPY_CLIENT_SECRET,
+    redirect_uri=SPOTIPY_REDIRECT_URI,
+    scope="user-read-playback-state,user-modify-playback-state",
+)
+
+# Load token info from file if it exists
+if os.path.exists(".cache"):
+    with open(".cache", "r") as f:
+        token_info = json.load(f)
+
+if not token_info:
+    auth_url = sp_oauth.get_authorize_url()
+
+    class OAuthHandler(BaseHTTPRequestHandler):
+        def do_GET(self):
+            global token_info
+            code = self.path.split("?code=")[-1]
+            token_info = sp_oauth.get_access_token(code)
+            with open(".cache", "w") as f:
+                json.dump(token_info, f)
+            self.send_response(200)
+            self.send_header("Content-type", "text/html")
+            self.end_headers()
+            self.wfile.write(b"Authentication successful. You can close this window.")
+            shutdown_server()
+
+    def shutdown_server():
+        def stop_server(server):
+            server.shutdown()
+
+        threading.Thread(target=stop_server, args=(httpd,)).start()
+
+    httpd = HTTPServer(("localhost", 8888), OAuthHandler)
+    threading.Thread(target=httpd.serve_forever).start()
+    webbrowser.open(auth_url)
+    print("Please complete the authentication in your browser.")
+    httpd.serve_forever()
+
+sp = spotipy.Spotify(auth=token_info["access_token"])
+
+
+def get_status() -> str:
+    """Get the playback status of Spotify."""
+    try:
+        playback = sp.current_playback()
+        if playback and playback["is_playing"]:
+            return "Playing"
+        return "Paused"
+    except Exception:
+        return ""
+
+
+def get_metadata() -> dict:
+    """Get the metadata of the currently playing track."""
+    try:
+        track = sp.current_playback()["item"]
+        return {
+            "name": track["name"],
+            "artists": ", ".join(artist["name"] for artist in track["artists"]),
+        }
+    except Exception:
+        return {}
+
+
+def update_prefix_suffix(status: str = ""):
+    """Update the prefix and suffix for the display text."""
+    global display_prefix, display_suffix, status_paused
+
+    prev_button = f"%%{{A:playerctl previous :}}{CONTROL_CHARS[0]}%%{{A}}"
+    play_button = f"%%{{A:playerctl play :}}{CONTROL_CHARS[1]}%%{{A}}"
+    pause_button = f"%%{{A:playerctl pause :}}{CONTROL_CHARS[2]}%%{{A}}"
+    next_button = f"%%{{A:playerctl next :}}{CONTROL_CHARS[3]}%%{{A}}"
+
+    suffix = f"| {prev_button} "
+    if status == "Playing":
+        suffix += pause_button
+        status_paused = False
+    else:
+        suffix += play_button
+        status_paused = True
+    suffix += f" {next_button}"
+
+    display_suffix = suffix
+    display_prefix = DISPLAY_PLAYER_PREFIX.get(
+        "spotify", DISPLAY_PLAYER_PREFIX["default"]
+    )
+
+
+def update_message():
+    """Update the message to be displayed in Polybar."""
+    global message, display_text
+
+    status = get_status()
+    metadata_obj = get_metadata()
+
+    metadata_string_list = []
+    for field in METADATA_FIELDS:
+        result = metadata_obj.get(field, f"No {field}")
+        metadata_string_list.append(result)
+
+    metadata_string = f" {METADATA_SEPARATOR} ".join(metadata_string_list)
+    if visual_len(metadata_string) > MESSAGE_DISPLAY_LEN:
+        metadata_string = f" {metadata_string} |"
+
+    update_prefix_suffix(status)
+    tmp_message = metadata_string
+
+    if message != tmp_message:
+        message = tmp_message
+        display_text = message
+
+
+def scroll():
+    """Scroll the display text if it exceeds the display length."""
+    global display_text
+    if not status_paused and visual_len(display_text) > MESSAGE_DISPLAY_LEN:
+        display_text = display_text[1:] + display_text[0]
+    elif visual_len(display_text) < MESSAGE_DISPLAY_LEN:
+        display_text += " " * (MESSAGE_DISPLAY_LEN - visual_len(display_text))
+
+
+def visual_len(text: str) -> int:
+    """Calculate the visual length of the text, considering wide characters."""
+    return sum(2 if east_asian_width(ch) in "WF" else 1 for ch in text)
+
+
+def make_visual_len(text: str, visual_desired_length: int) -> str:
+    """Adjust text to the desired visual length by truncating or padding with spaces."""
+    visual_length = 0
+    altered_text = ""
+    for char in text:
+        if visual_length < visual_desired_length:
+            visual_length += 2 if east_asian_width(char) in "WF" else 1
+            altered_text += char
+        else:
+            break
+    if visual_length == visual_desired_length + 1:
+        altered_text = altered_text[:-1] + " "
+    elif visual_length < visual_desired_length:
+        altered_text += " " * (visual_desired_length - visual_length)
+    return altered_text
+
+
+def print_text():
+    """Print the formatted text to Polybar."""
+    if HIDE_OUTPUT:
+        print("", flush=True)
+        return
+    scroll()
+    formatted_text = f"{display_prefix} %%{{T{FONT_INDEX}}}{make_visual_len(display_text, MESSAGE_DISPLAY_LEN)}%{{T-}}{display_suffix}"
+    print(formatted_text, flush=True)
+
+
+def main():
+    """Main function to continuously update and display track information."""
+    while True:
+        time.sleep(UPDATE_DELAY)
+        update_message()
+        print_text()
+
+
+if __name__ == "__main__":
+    signal.signal(signal.SIGUSR1, lambda *args: None)  # No-op handler for signals
+    main()
