@@ -240,50 +240,57 @@ keymap.set("n", "<leader>wdl", ":VimwikiDiaryGenerateLinks<CR>", { silent = true
 keymap.set("n", "<leader>wt", ":VimwikiTable<CR>", { silent = true, desc = "Wiki Create table" })
 keymap.set("n", "<leader>wtoc", ":VimwikiTOC<CR>", { silent = true, desc = "Wiki Create TOC" })
 keymap.set("n", "<leader>kal", ":Calendar<CR>", { silent = true, desc = "Calendar" })
+
+-- Open files
 keymap.set("n", "gx", ":!xdg-open <cfile><CR>", { silent = true, desc = "Open Link" })
 keymap.set("v", "gx", ":!xdg-open <cfile><CR>", { silent = true, desc = "Open Link" })
+
+--Tagbar
 keymap.set("v", "F8", ":TagbarToogle<CR>", { silent = true, desc = "Open TOC" })
 
--- Edit nvim keymaps and options
+-- Configuration. Edit nvim keymaps and options
 keymap.set("n", "<leader>ek", ":edit ~/.config/nvim/lua/nisidabay/core/keymaps.lua<CR>", { desc = "Edit keymaps" })
 keymap.set("n", "<leader>eo", ":edit ~/.config/nvim/lua/nisidabay/core/options.lua<CR>", { desc = "Edit options" })
 
 -- Telescope
---keymap.set("n", "<leader>t", ":Telescope<CR>", { silent = true, desc = "Open Telescope" })
+keymap.set("n", "<leader>t", ":Telescope<CR>", { silent = true, desc = "Open Telescope" })
 
-vim.api.nvim_set_keymap(
-  "n",
-  "<F4>",
-  ':lua require("dap").terminate()<CR>',
-  { noremap = true, silent = true, desc = "DAP: Terminate" }
-)
-vim.api.nvim_set_keymap(
-  "n",
-  "<F5>",
-  ':lua require("dap").continue()<CR>',
-  { noremap = true, silent = true, desc = "DAP: Continue Debugging" }
-)
-vim.api.nvim_set_keymap(
-  "n",
-  "<F6>",
-  ':lua require("dap").toggle_breakpoint()<CR>',
-  { noremap = true, silent = true, desc = "DAP: Toggle Breakpoint" }
-)
-vim.api.nvim_set_keymap(
-  "n",
-  "<F7>",
-  ':lua require("dap").step_into()<CR>',
-  { noremap = true, silent = true, desc = "DAP: Step Into" }
-)
-vim.api.nvim_set_keymap(
-  "n",
-  "<F8>",
-  ':lua require("dap").step_out()<CR>',
-  { noremap = true, silent = true, desc = "DAP: Step Out" }
-)
-vim.api.nvim_set_keymap(
-  "n",
-  "<F9>",
-  ':lua require("dap").step_over()<CR>',
-  { noremap = true, silent = true, desc = "DAP: Step Over" }
-)
+-- Google
+keymap.set("n", "og", ":!xdg-open https://www.google.com/<CR>", { silent = true, desc = "Open Google" })
+
+-- vim.api.nvim_set_keymap(
+--   "n",
+--   "<F4>",
+--   ':lua require("dap").terminate()<CR>',
+--   { noremap = true, silent = true, desc = "DAP: Terminate" }
+-- )
+-- vim.api.nvim_set_keymap(
+--   "n",
+--   "<F5>",
+--   ':lua require("dap").continue()<CR>',
+--   { noremap = true, silent = true, desc = "DAP: Continue Debugging" }
+-- )
+-- vim.api.nvim_set_keymap(
+--   "n",
+--   "<F6>",
+--   ':lua require("dap").toggle_breakpoint()<CR>',
+--   { noremap = true, silent = true, desc = "DAP: Toggle Breakpoint" }
+-- )
+-- vim.api.nvim_set_keymap(
+--   "n",
+--   "<F7>",
+--   ':lua require("dap").step_into()<CR>',
+--   { noremap = true, silent = true, desc = "DAP: Step Into" }
+-- )
+-- vim.api.nvim_set_keymap(
+--   "n",
+--   "<F8>",
+--   ':lua require("dap").step_out()<CR>',
+--   { noremap = true, silent = true, desc = "DAP: Step Out" }
+-- )
+-- vim.api.nvim_set_keymap(
+--   "n",
+--   "<F9>",
+--   ':lua require("dap").step_over()<CR>',
+--   { noremap = true, silent = true, desc = "DAP: Step Over" }
+-- )
