@@ -385,4 +385,4 @@ let g:termdebug_wide=1
 nnoremap <leader>og :!xdg-open https://www.google.com/<CR>
 
 " Mapping to open a terminal
-nnoremap <leader>ot :terminal<CR>
+nnoremap <leader>to :terminal<CR>
