@@ -99,6 +99,7 @@ inoremap <leader>9 <Esc>yyp<c-v>$r-A<CR>
 nnoremap <leader>gc :!gcc -Wall -Wextra -g -std=c11 -o %< %<.c<CR>
 nnoremap <leader>gcp :!g++ -Wall -Wextra -g -std=c++17 -o %< %<.cpp<CR>
 nnoremap <leader>gcn :!gcc -Wall -Wextra -g -std=c11 -o %< -lncurses %<.c<CR>
+nnoremap <leader>gcm :!gcc -Wall -Wextra -g -std=c11 -o %< -lncurses -lmenu %<.c<CR>
 nnoremap <leader>gcs :!gcc -Wall -Wextra -g -std=c11 -o %< -lsqlite3 %<.c<CR>
 nnoremap <leader>cf :%!clang-format<CR>
 
@@ -305,20 +306,20 @@ nnoremap <leader>b :set nomore <Bar> :ls <Bar> :set more <CR>:b<leader>
 nnoremap <silent> <leader>cab :update <bar> %bd <bar> e# <bar> bd# <CR><CR>
 
 " Disable arrow keys
-no <down> <Nop>
-no <up> <Nop>
-no <left> <Nop>
-no <right> <Nop>
+" no <down> <Nop>
+" no <up> <Nop>
+" no <left> <Nop>
+" no <right> <Nop>
 
-ino <down> <Nop>
-ino <up> <Nop>
-ino <left> <Nop>
-ino <right> <Nop>
+" ino <down> <Nop>
+" ino <up> <Nop>
+" ino <left> <Nop>
+" ino <right> <Nop>
 
-vno <down> <Nop>
-vno <up> <Nop>
-vno <left> <Nop>
-vno <right> <Nop>
+" vno <down> <Nop>
+" vno <up> <Nop>
+" vno <left> <Nop>
+" vno <right> <Nop>
 
 " Some abbreviations
 iabbr clm Carlos Lacaci Moya
@@ -377,4 +378,8 @@ nnoremap <silent> <leader> dn: <plug>(coc-diagnostic-next)
 " Load termdebug
 let g:termdebug_wide=1
 
+" Open google
+nnoremap <leader>og :!xdg-open https://www.google.com/<CR>
 
+" Mapping to open a terminal
+nnoremap <leader>ot :terminal<CR>
