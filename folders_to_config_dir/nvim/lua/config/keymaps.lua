@@ -190,6 +190,8 @@ keymap.set("x", "<leader>u", ":normal ^x <CR><Esc>", { desc = "Uncomment line in
 -- Save selected chunk in vmode
 keymap.set("x", "<leader>s", ':w <C-R>=input("Save to file: ")<CR><Esc>', { desc = "Save selected chunk" })
 
+keymap.set("n", "<leader>wf", ':w <C-R>=input("Save to file: ")<CR><Esc>', { desc = "Save selected chunk" })
+
 -- Spelling
 keymap.set("n", "<F2>", ":setlocal spell spelllang=es_es<CR>", { silent = true, desc = "Spanish spelling" })
 keymap.set("n", "<F3>", ":setlocal spell spelllang=en_us<CR>", { silent = true, desc = "English spelling" })
@@ -215,12 +217,6 @@ keymap.set(
   { silent = true, desc = "Show buffers" }
 )
 
-keymap.set(
-  "n",
-  "<leader>ws",
-  ':w !sudo tee <C-R>=input("Save to file: ")<CR> > /dev/null<CR>',
-  { silent = true, desc = "Save buffer as sudo" }
-)
 keymap.set(
   "n",
   "<leader>cab",
