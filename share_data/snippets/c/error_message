@@ -1,0 +1,17 @@
+#include <errno.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main(void) {
+
+  FILE *fp;
+  const char *filename = "example.txt";
+  if ((fp = fopen(filename, "a")) == NULL) {
+    fprintf(stderr, "Cannot open file %s: %s\n", filename, strerror(errno));
+    exit(EXIT_FAILURE);
+  }
+
+  return 0;
+}
+

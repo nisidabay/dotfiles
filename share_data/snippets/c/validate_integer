@@ -1,0 +1,10 @@
+#include <stdio.h>
+// Function to validate integer input
+int validate_integer(int *ptr) {
+  if (scanf("%d", ptr) != 1) {
+    puts("Failed to read integer.");
+    return -1;
+  }
+  return 1;
+}
+

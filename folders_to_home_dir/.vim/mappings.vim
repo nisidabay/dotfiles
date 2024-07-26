@@ -131,10 +131,13 @@ vnoremap <leader>c :normal I#<CR><Esc>
 vnoremap <leader>u :normal ^x <CR><Esc>
 
 " Save selected text in vmode
-vnoremap <leader>s :w <C-R>=input("Save to file: ")<CR><Esc>
+vnoremap <leader>s :<C-U>write <C-R>=input("Save to file: ")<CR>
 
-" Write as sudo
-nnoremap <leader>ws :w !sudo tee <C-R>=input("Save to file: ")<CR> > /dev/null<Esc>
+" Save file as normal user
+nnoremap <leader>wf :execute ':write ' . input('Save to file: ')<CR>
+
+" Save file as sudo
+nnoremap <leader>ws :execute ':write !sudo tee ' . input('Save to file: ') . ' > /dev/null' <CR>
 
 " Set language
 nnoremap <F2> :setlocal spell spelllang=es<CR>

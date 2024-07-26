@@ -1,0 +1,4 @@
+  if (scanf("%d", &position) != 1) {
+    puts("Failed to read integer. Exiting.\n");
+    exit(EXIT_FAILURE);
+  }
