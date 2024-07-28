@@ -1,0 +1,38 @@
+/*
+*
+Print file information
+*/
+#include <stdio.h>
+#include <sys/stat.h>
+#include <time.h>
+
+void print_stat(struct stat *fileStat) {
+  printf("File: \n");
+  printf("Device: \t\t%ld\n", (long)fileStat->st_dev);
+  printf("Inode: \t\t\t%ld\n", (long)fileStat->st_ino);
+  printf("Protection: \t\t%o\n", fileStat->st_mode);
+  printf("Number of hard links: \t%ld\n", (long)fileStat->st_nlink);
+  printf("User ID of owner: \t%ld\n", (long)fileStat->st_uid);
+  printf("Group ID of owner: \t%ld\n", (long)fileStat->st_gid);
+  printf("Device type (if inode device): %ld\n", (long)fileStat->st_rdev);
+  printf("Total size, in bytes: \t%ld\n", (long)fileStat->st_size);
+  printf("Blocksize for filesystem I/O: %ld\n", (long)fileStat->st_blksize);
+  printf("Number of 512B blocks allocated: %ld\n", (long)fileStat->st_blocks);
+
+  // Print the last access, modification, and status change times
+  printf("Last access time: \t%s", ctime(&fileStat->st_atime));
+  printf("Last modification time: %s", ctime(&fileStat->st_mtime));
+  printf("Last status change time: %s", ctime(&fileStat->st_ctime));
+}
+
+int main() {
+  struct stat fileStat;
+  if (stat("example.txt", &fileStat) < 0) {
+    perror("stat");
+    return 1;
+  }
+
+  print_stat(&fileStat);
+
+  return 0;
+}
