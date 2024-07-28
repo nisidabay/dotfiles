@@ -8,7 +8,7 @@ remoterepository = Remote-Gmail
 
 [Repository Local-Gmail]
 type = GmailMaildir
-localfolders = /mnt/Mail/gmail
+localfolders = Mail/gmail
 
 [Repository Remote-Gmail]
 type = Gmail
