@@ -177,8 +177,8 @@ autoload -Uz compinit
 zstyle ':completion:*' menu select
 fpath+=~/.zfunc
 
-
-# bun completions
+ 
+# bun package manager completions.
 [ -s "/home/nisidabay/.local/share/reflex/bun/_bun" ] && source "/home/nisidabay/.local/share/reflex/bun/_bun"
 
 # bun
@@ -188,7 +188,20 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 # master-pdf-editor
 export PATH="/opt/master-pdf-editor-4/masterpdfeditor4:$PATH"
 
-
-
-
+# Navigate directory trees interactively
 source /home/nisidabay/.config/broot/launcher/bash/br
+
+# Function to show git log, filter commits with fzf, and show details of the selected commit 
+gl() {
+    echo "--- git log"
+    local commit_hash
+    commit_hash=$(git log --oneline --graph --all | fzf | sed 's/^[* ]*//;s/\(^[a-f0-9]\{8\}\).*/\1/')
+
+    echo "DEBUG: Selected commit hash: $commit_hash"  # Debug output
+
+    if [[ -n "$commit_hash" ]]; then
+        git show "$commit_hash"
+    else
+        echo "No commit selected."
+    fi
+}
