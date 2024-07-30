@@ -113,9 +113,12 @@ source "$HOME/.cache/wal/colors.sh"
 # Set "bat" as the man pager if available
 # -----------------------------------------------------
 
-if command -v bat &>/dev/null; then
-    export MANPAGER="sh -c 'less -R | bat -l man -p'"
-fi
+# if command -v bat &>/dev/null; then
+#     export MANPAGER="sh -c 'less -R | bat -l man -p'"
+# fi
+
+# Set nvim as man pager
+export MANPAGER="nvim +Man!"
 
 # -----------------------------------------------------
 # Set Vi Mode and key bindings
