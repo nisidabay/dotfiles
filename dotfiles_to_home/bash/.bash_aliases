@@ -4,32 +4,32 @@
 
 # Aliases for mac
 if [[ $(uname -s) == "Darwin" ]]; then
-	alias alacritty="~/bin/alacritty.sh"
-	alias cat="/opt/local/bin/bat"
-	alias ls="/opt/local/bin/lsd"
+    alias alacritty="~/bin/alacritty.sh"
+    alias cat="/opt/local/bin/bat"
+    alias ls="/opt/local/bin/lsd"
 elif [[ $(uname -s) == "Linux" ]]; then
-	alias cat="/usr/bin/bat"
-	alias ls="/usr/bin/lsd"
+    alias cat="/usr/bin/bat"
+    alias ls="/usr/bin/lsd"
 fi
 if [[ $(hostname) == "msi" ]]; then
 
-	# Move to preferred folders
-	alias des="echo --- Downloads;cd /mnt/Downloads"
-	alias down="echo --- Downloads;cd /mnt/Downloads"
-	alias doc="echo --- Documents;cd /mnt/Documents"
-	alias mov="echo --- Movies;cd /mnt/Movies"
-	alias mus="echo --- Music;cd /mnt/Music"
-	alias pic="echo --- Pictures;cd /mnt/Pictures"
-	alias ref="echo --- Refactor;cd /mnt/Downloads/Refactor"
+    # Move to preferred folders
+    alias des="echo --- Downloads;cd /mnt/Downloads"
+    alias down="echo --- Downloads;cd /mnt/Downloads"
+    alias doc="echo --- Documents;cd /mnt/Documents"
+    alias mov="echo --- Movies;cd /mnt/Movies"
+    alias mus="echo --- Music;cd /mnt/Music"
+    alias pic="echo --- Pictures;cd /mnt/Pictures"
+    alias ref="echo --- Refactor;cd /mnt/Downloads/Refactor"
 else
-	# Move to preferred folders
-	alias des="echo --- Downloads;cd ~/Downloads"
-	alias down="echo --- Downloads;cd ~/Downloads"
-	alias doc="echo --- Documents;cd ~/Documents"
-	alias mov="echo --- Movies;cd ~/Movies"
-	alias mus="echo --- Music;cd ~/Music"
-	alias pic="echo --- Pictures;cd ~/Pictures"
-	alias ref="echo --- Refactor;cd ~/Downloads/Refactor"
+    # Move to preferred folders
+    alias des="echo --- Downloads;cd ~/Downloads"
+    alias down="echo --- Downloads;cd ~/Downloads"
+    alias doc="echo --- Documents;cd ~/Documents"
+    alias mov="echo --- Movies;cd ~/Movies"
+    alias mus="echo --- Music;cd ~/Music"
+    alias pic="echo --- Pictures;cd ~/Pictures"
+    alias ref="echo --- Refactor;cd ~/Downloads/Refactor"
 
 fi
 
@@ -69,7 +69,7 @@ alias gec="echo --- git edit configuration;git config --global -e"
 alias gd='echo --- git diff;pretty_diff'
 alias gds='echo --- git diff staged status;git diff --staged --name-status'
 alias gf="echo --- git fetch;git fetch --all -p"
-alias gl="echo --- git log;git log --oneline --graph --all"
+#alias gl='echo --- git log; git log --oneline --graph --all'
 alias gls="echo --- git ls-files;git ls-files"
 alias gpc="echo --- git log;preview_changes"
 alias gpl="echo --- git pull;git pull --rebase --autostash"
@@ -222,486 +222,486 @@ alias unlock-packman='~/dotfiles/scripts/unlock-pacman.sh'
 # Function to display reminders
 # -----------------------------------------------------
 function remind() {
-	local SOUND=$HOME/bin/justdo/complete.ogg
-	local COUNT="$#"
-	local COMMAND="$1"
-	local MESSAGE="$1"
-	local OP="$2"
-	shift 2
-	local WHEN="$@"
-	# Display help if no parameters or help command
-	if [[ $COUNT -eq 0 || "$COMMAND" == "help" || "$COMMAND" == "--help" || "$COMMAND" == "-h" ]]; then
-		echo "COMMAND"
-		echo "    remind <message> <time>"
-		echo "    remind <command>"
-		echo
-		echo "DESCRIPTION"
-		echo "    Displays notification at specified time"
-		echo
-		echo "EXAMPLES"
-		echo '    remind "Hi there" now'
-		echo '    remind "Time to wake up" in 5 minutes'
-		echo '    remind "Dinner" in 1 hour'
-		echo '    remind "Take a break" at noon'
-		echo '    remind "Are you ready?" at 13:00'
-		echo '    remind list'
-		echo '    remind clear'
-		echo '    remind help'
-		echo
-		return
-	fi
-	# Check presence of AT command
-	if ! which at >/dev/null; then
-		echo "remind: AT utility is required but not installed on your system. Install it with your package manager of choice, for example 'sudo apt install at'."
-		return
-	fi
-	# Run commands: list, clear
-	if [[ $COUNT -eq 1 ]]; then
-		if [[ "$COMMAND" == "list" ]]; then
-			at -l
-		elif [[ "$COMMAND" == "clear" ]]; then
-			at -r $(atq | cut -f1)
-		else
-			echo "remind: unknown command $COMMAND. Type 'remind' without any parameters to see syntax."
-		fi
-		return
-	fi
-	# Determine time of notification
-	if [[ "$OP" == "in" ]]; then
-		local TIME="now + $WHEN"
-	elif [[ "$OP" == "at" ]]; then
-		local TIME="$WHEN"
-	elif [[ "$OP" == "now" ]]; then
-		local TIME="now"
-	else
-		echo "remind: invalid time operator $OP"
-		return
-	fi
+    local SOUND=$HOME/bin/justdo/complete.ogg
+    local COUNT="$#"
+    local COMMAND="$1"
+    local MESSAGE="$1"
+    local OP="$2"
+    shift 2
+    local WHEN="$@"
+    # Display help if no parameters or help command
+    if [[ $COUNT -eq 0 || "$COMMAND" == "help" || "$COMMAND" == "--help" || "$COMMAND" == "-h" ]]; then
+        echo "COMMAND"
+        echo "    remind <message> <time>"
+        echo "    remind <command>"
+        echo
+        echo "DESCRIPTION"
+        echo "    Displays notification at specified time"
+        echo
+        echo "EXAMPLES"
+        echo '    remind "Hi there" now'
+        echo '    remind "Time to wake up" in 5 minutes'
+        echo '    remind "Dinner" in 1 hour'
+        echo '    remind "Take a break" at noon'
+        echo '    remind "Are you ready?" at 13:00'
+        echo '    remind list'
+        echo '    remind clear'
+        echo '    remind help'
+        echo
+        return
+    fi
+    # Check presence of AT command
+    if ! which at >/dev/null; then
+        echo "remind: AT utility is required but not installed on your system. Install it with your package manager of choice, for example 'sudo apt install at'."
+        return
+    fi
+    # Run commands: list, clear
+    if [[ $COUNT -eq 1 ]]; then
+        if [[ "$COMMAND" == "list" ]]; then
+            at -l
+        elif [[ "$COMMAND" == "clear" ]]; then
+            at -r $(atq | cut -f1)
+        else
+            echo "remind: unknown command $COMMAND. Type 'remind' without any parameters to see syntax."
+        fi
+        return
+    fi
+    # Determine time of notification
+    if [[ "$OP" == "in" ]]; then
+        local TIME="now + $WHEN"
+    elif [[ "$OP" == "at" ]]; then
+        local TIME="$WHEN"
+    elif [[ "$OP" == "now" ]]; then
+        local TIME="now"
+    else
+        echo "remind: invalid time operator $OP"
+        return
+    fi
 
-	# Schedule the notification with sound
-	notify-send "Reminder scheduled at $TIME"
-	echo "/usr/bin/paplay '$SOUND' && notify-send '$MESSAGE'" | at "$TIME"
-	# # Schedule the notification
-	# notify-send "Reminder scheduled at $TIME"
-	# echo "notify-send '$MESSAGE'" | at "$TIME" && /usr/bin/paplay "$SOUND"
+    # Schedule the notification with sound
+    notify-send "Reminder scheduled at $TIME"
+    echo "/usr/bin/paplay '$SOUND' && notify-send '$MESSAGE'" | at "$TIME"
+    # # Schedule the notification
+    # notify-send "Reminder scheduled at $TIME"
+    # echo "notify-send '$MESSAGE'" | at "$TIME" && /usr/bin/paplay "$SOUND"
 }
 if [ -n "$BASH_VERSION" ]; then
-	export -f remind
+    export -f remind
 fi
 
 # -----------------------------------------------------
 # Function for archive extraction
 # -----------------------------------------------------
 function ex() {
-	if [ -f "$1" ]; then
-		case $1 in
-		*.tar.bz2) tar xjf "$1" ;;
-		*.tar.gz) tar xzf "$1" ;;
-		*.bz2) bunzip2 "$1" ;;
-		*.rar) unrar x "$1" ;;
-		*.gz) gunzip "$1" ;;
-		*.tar) tar xf "$1" ;;
-		*.tbz2) tar xjf "$1" ;;
-		*.tgz) tar xzf "$1" ;;
-		*.zip) unzip "$1" ;;
-		*.Z) uncompress "$1" ;;
-		*.7z) 7z x "$1" ;;
-		*.deb) ar x "$1" ;;
-		*.tar.xz) tar xf "$1" ;;
-		*.tar.zst) unzstd "$1" ;;
-		*) echo "'$1' cannot be extracted via ex()" ;;
-		esac
-	else
-		echo "'$1' is not a valid file"
-	fi
+    if [ -f "$1" ]; then
+        case $1 in
+        *.tar.bz2) tar xjf "$1" ;;
+        *.tar.gz) tar xzf "$1" ;;
+        *.bz2) bunzip2 "$1" ;;
+        *.rar) unrar x "$1" ;;
+        *.gz) gunzip "$1" ;;
+        *.tar) tar xf "$1" ;;
+        *.tbz2) tar xjf "$1" ;;
+        *.tgz) tar xzf "$1" ;;
+        *.zip) unzip "$1" ;;
+        *.Z) uncompress "$1" ;;
+        *.7z) 7z x "$1" ;;
+        *.deb) ar x "$1" ;;
+        *.tar.xz) tar xf "$1" ;;
+        *.tar.zst) unzstd "$1" ;;
+        *) echo "'$1' cannot be extracted via ex()" ;;
+        esac
+    else
+        echo "'$1' is not a valid file"
+    fi
 }
 
 if [ -n "$BASH_VERSION" ]; then
-	export -f ex
+    export -f ex
 fi
 
 # -----------------------------------------------------
 # Function to search files with fzf and edit with Vim
 # -----------------------------------------------------
 function sf() {
-	# Save current directory
-	current_directory=$(pwd)
-	local oldIFS="$IFS"
+    # Save current directory
+    current_directory=$(pwd)
+    local oldIFS="$IFS"
 
-	# Use 'fd' and 'fzf' to select a file in $HOME
-	files=$(fd . --hidden --exclude .git --full-path "$HOME" 2>/dev/null | fzf --preview 'bat --color=always --style=plain --line-range=:100 {}' --ansi --reverse)
+    # Use 'fd' and 'fzf' to select a file in $HOME
+    files=$(fd . --hidden --exclude .git --full-path "$HOME" 2>/dev/null | fzf --preview 'bat --color=always --style=plain --line-range=:100 {}' --ansi --reverse)
 
-	IFS="$oldIFS"
+    IFS="$oldIFS"
 
-	if [[ -n "$files" ]]; then
-		# Edit each selected file with Vim
-		for file in $files; do
-			vim "$file"
-		done
-	fi
+    if [[ -n "$files" ]]; then
+        # Edit each selected file with Vim
+        for file in $files; do
+            vim "$file"
+        done
+    fi
 
-	# Restore original directory
-	cd "$current_directory" || return
+    # Restore original directory
+    cd "$current_directory" || return
 
 }
 if [ -n "$BASH_VERSION" ]; then
-	export -f sf
+    export -f sf
 fi
 
 # -----------------------------------------------------
 # Function to search diary files in vimwiki
 # -----------------------------------------------------
 function wi() {
-	# Store the current directory and change to the diary location.
-	pushd . >/dev/null
-	cd ~/vimwiki/diary || {
-		echo "Diary directory not found."
-		exit 1
-	}
+    # Store the current directory and change to the diary location.
+    pushd . >/dev/null
+    cd ~/vimwiki/diary || {
+        echo "Diary directory not found."
+        exit 1
+    }
 
-	# Check for the shell type and prompt the user accordingly
-	local word
-	if [[ -n "$BASH_VERSION" ]]; then
-		read -r -p "Enter the word to search for in the diary: " word
-	elif [[ -n "$ZSH_VERSION" ]]; then
-		echo -n "Enter the word to search for in the diary: "
-		read word
-	else
-		echo "Unsupported shell."
-		return 1
-	fi
+    # Check for the shell type and prompt the user accordingly
+    local word
+    if [[ -n "$BASH_VERSION" ]]; then
+        read -r -p "Enter the word to search for in the diary: " word
+    elif [[ -n "$ZSH_VERSION" ]]; then
+        echo -n "Enter the word to search for in the diary: "
+        read word
+    else
+        echo "Unsupported shell."
+        return 1
+    fi
 
-	# Set IFS to handle filenames with newlines only.
-	local oldIFS="$IFS"
-	IFS=$'\n'
+    # Set IFS to handle filenames with newlines only.
+    local oldIFS="$IFS"
+    IFS=$'\n'
 
-	# Use 'rg' to search for the word within the current directory, use 'fzf' to select a file.
-	local file=$(rg --files-with-matches "$word" . | fzf --ansi --preview 'bat --color=always --style=plain --line-range=:100 {}' --reverse)
+    # Use 'rg' to search for the word within the current directory, use 'fzf' to select a file.
+    local file=$(rg --files-with-matches "$word" . | fzf --ansi --preview 'bat --color=always --style=plain --line-range=:100 {}' --reverse)
 
-	# Restore the original IFS.
-	IFS="$oldIFS"
+    # Restore the original IFS.
+    IFS="$oldIFS"
 
-	# If a file is selected, open it in Vim.
-	if [[ -n $file ]]; then
-		vim "$file"
-	else
-		echo "No file selected."
-	fi
+    # If a file is selected, open it in Vim.
+    if [[ -n $file ]]; then
+        vim "$file"
+    else
+        echo "No file selected."
+    fi
 
-	# Return to the original directory.
-	popd >/dev/null || exit 1
+    # Return to the original directory.
+    popd >/dev/null || exit 1
 }
 
 # Export the function if running under Bash.
 if [[ -n "$BASH_VERSION" ]]; then
-	export -f wi
+    export -f wi
 fi
 
 # -----------------------------------------------------
 # Function to search inside vimwiki files
 # -----------------------------------------------------
 function ws() {
-	pushd . || exit
-	cd ~/vimwiki || exit
+    pushd . || exit
+    cd ~/vimwiki || exit
 
-	# Store the result of the 'ag' command in the 'file' variable using 'fzf' for interactive selection.
-	local file
-	local oldIFS="$IFS"
-	IFS=$'\n'
+    # Store the result of the 'ag' command in the 'file' variable using 'fzf' for interactive selection.
+    local file
+    local oldIFS="$IFS"
+    IFS=$'\n'
 
-	# Use 'rg' to search for the word and 'cut' to extract filenames, then 'fzf' for interactive selection.
-	file=$(rg --files ~/vimwiki/ | fzf --header="Type to search" --ansi --preview 'bat --color=always --style=plain --line-range=:100 {}' --reverse)
+    # Use 'rg' to search for the word and 'cut' to extract filenames, then 'fzf' for interactive selection.
+    file=$(rg --files ~/vimwiki/ | fzf --header="Type to search" --ansi --preview 'bat --color=always --style=plain --line-range=:100 {}' --reverse)
 
-	IFS="$oldIFS"
+    IFS="$oldIFS"
 
-	# If a file is selected, open it in Vim.
-	if [[ -n "$file" ]]; then
-		vim "$file"
-	fi
+    # If a file is selected, open it in Vim.
+    if [[ -n "$file" ]]; then
+        vim "$file"
+    fi
 
-	# Return to the original directory.
-	popd >/dev/null || exit
+    # Return to the original directory.
+    popd >/dev/null || exit
 }
 if [ -n "$BASH_VERSION" ]; then
-	export -f ws
+    export -f ws
 fi
 
 # -----------------------------------------------------
 # Function to run the selected command from history
 # -----------------------------------------------------
 function hs() {
-	selected=$(fc -rln 1 | fzf --header="History search")
-	if [[ -n "$selected" ]]; then
-		command=$(echo "$selected" | sed -E 's/^[[:space:]]*[0-9]+[[:space:]]*[0-9-]+[[:space:]]*[0-9:]+//')
-		history -s "!$command"
-		eval "$command"
-	fi
+    selected=$(fc -rln 1 | fzf --header="History search")
+    if [[ -n "$selected" ]]; then
+        command=$(echo "$selected" | sed -E 's/^[[:space:]]*[0-9]+[[:space:]]*[0-9-]+[[:space:]]*[0-9:]+//')
+        history -s "!$command"
+        eval "$command"
+    fi
 }
 if [ -n "$BASH_VERSION" ]; then
-	export -f hs
+    export -f hs
 fi
 
 # -----------------------------------------------------
 # Function to open vimwiki
 # -----------------------------------------------------
 function ww() {
-	# Store the current directory and change to the diary location.
-	pushd "$(pwd)" >/dev/null || exit
-	cd "$HOME/vimwiki/" || exit
+    # Store the current directory and change to the diary location.
+    pushd "$(pwd)" >/dev/null || exit
+    cd "$HOME/vimwiki/" || exit
 
-	vim index.md
+    vim index.md
 
-	# Return to the original directory.
-	popd >/dev/null || exit
+    # Return to the original directory.
+    popd >/dev/null || exit
 }
 if [ -n "$BASH_VERSION" ]; then
-	export -f ww
+    export -f ww
 fi
 
 # -----------------------------------------------------
 # Function to select directory to move into
 # -----------------------------------------------------
 cdc() {
-	# Unalias ls, bound to lsd
-	unalias ls
-	# Set the home directory and the current working directory
-	local home_dir="$HOME"
-	local working_dir
-	working_dir=$(pwd)
+    # Unalias ls, bound to lsd
+    unalias ls
+    # Set the home directory and the current working directory
+    local home_dir="$HOME"
+    local working_dir
+    working_dir=$(pwd)
 
-	# Change to the home directory if the current working directory is not home
-	if [ "$home_dir" != "$working_dir" ]; then
-		cd "$home_dir" || {
-			echo "Failed to change to home directory"
-			return 1
-		}
-	fi
+    # Change to the home directory if the current working directory is not home
+    if [ "$home_dir" != "$working_dir" ]; then
+        cd "$home_dir" || {
+            echo "Failed to change to home directory"
+            return 1
+        }
+    fi
 
-	# Display directories to change to, starting from the home directory, and use fzf to select one
-	local change_to
-	change_to=$(ls -d */ | fzf --header="Choose directory to move into")
+    # Display directories to change to, starting from the home directory, and use fzf to select one
+    local change_to
+    change_to=$(ls -d */ | fzf --header="Choose directory to move into")
 
-	# Handle if no directory was selected
-	if [ -z "$change_to" ]; then
-		echo "No directory selected."
-		return 1
-	fi
+    # Handle if no directory was selected
+    if [ -z "$change_to" ]; then
+        echo "No directory selected."
+        return 1
+    fi
 
-	# Change to the selected directory
-	cd "$change_to" || {
-		echo "Failed to change to selected directory"
-		return 1
-	}
+    # Change to the selected directory
+    cd "$change_to" || {
+        echo "Failed to change to selected directory"
+        return 1
+    }
 }
 
 # Export the function if running in a bash shell
 if [ -n "$BASH_VERSION" ]; then
-	export -f cdc
+    export -f cdc
 fi
 # -----------------------------------------------------
 # Function to preview changes in Git
 # -----------------------------------------------------
 function preview_changes() {
 
-	# Check if git-delta is installed
-	if ! command -v delta &>/dev/null; then
-		echo "git-delta is not installed. Attempting to install it using yay..."
-		if ! yay -S git-delta --noconfirm; then
-			echo "Failed to install git-delta. Please install it manually."
-			return 1
-		fi
-	fi
+    # Check if git-delta is installed
+    if ! command -v delta &>/dev/null; then
+        echo "git-delta is not installed. Attempting to install it using yay..."
+        if ! yay -S git-delta --noconfirm; then
+            echo "Failed to install git-delta. Please install it manually."
+            return 1
+        fi
+    fi
 
-	local file=$(git -c color.status=always status --short |
-		fzf --height 100% --ansi \
-			--preview '(git diff HEAD --color=always -- {-1} | sed 1,4d | delta --hunk-header-style=omit)' \
-			--preview-window right:65% |
-		cut -c4- |
-		sed 's/.* -> //' |
-		tr -d '\n')
+    local file=$(git -c color.status=always status --short |
+        fzf --height 100% --ansi \
+            --preview '(git diff HEAD --color=always -- {-1} | sed 1,4d | delta --hunk-header-style=omit)' \
+            --preview-window right:65% |
+        cut -c4- |
+        sed 's/.* -> //' |
+        tr -d '\n')
 
-	if [[ -n "$file" ]]; then
-		vim "$file"
-	else
-		echo "No file selected or found."
-	fi
+    if [[ -n "$file" ]]; then
+        vim "$file"
+    else
+        echo "No file selected or found."
+    fi
 }
 
 if [ -n "$BASH_VERSION" ]; then
-	export -f preview_changes
+    export -f preview_changes
 fi
 
 function pretty_diff() {
-	# Check if git-delta is installed
-	if ! command -v delta &>/dev/null; then
-		echo "git-delta is not installed. Attempting to install it using yay..."
-		if ! yay -S git-delta --noconfirm; then
-			echo "Failed to install git-delta. Please install it manually."
-			return 1
-		fi
-	fi
+    # Check if git-delta is installed
+    if ! command -v delta &>/dev/null; then
+        echo "git-delta is not installed. Attempting to install it using yay..."
+        if ! yay -S git-delta --noconfirm; then
+            echo "Failed to install git-delta. Please install it manually."
+            return 1
+        fi
+    fi
 
-	# Use fzf to select a file from the Git repository and preview changes with delta
-	local file=$(git -c color.status=always status --short |
-		fzf --height 100% --ansi \
-			--preview '(git diff HEAD --color=always -- {-1} | sed 1,4d | delta --hunk-header-style=omit)' \
-			--preview-window right:65% |
-		cut -c4- |
-		sed 's/.* -> //' |
-		tr -d '\n')
+    # Use fzf to select a file from the Git repository and preview changes with delta
+    local file=$(git -c color.status=always status --short |
+        fzf --height 100% --ansi \
+            --preview '(git diff HEAD --color=always -- {-1} | sed 1,4d | delta --hunk-header-style=omit)' \
+            --preview-window right:65% |
+        cut -c4- |
+        sed 's/.* -> //' |
+        tr -d '\n')
 
-	# Check if a file was selected
-	if [[ -n "$file" ]]; then
-		vim "$file"
-	else
-		echo "No file selected or found."
-	fi
+    # Check if a file was selected
+    if [[ -n "$file" ]]; then
+        vim "$file"
+    else
+        echo "No file selected or found."
+    fi
 }
 
 if [ -n "$BASH_VERSION" ]; then
-	export -f pretty_diff
+    export -f pretty_diff
 fi
 
 function commit_each() {
-	# Check if there are files to commit
-	if [ "$(git diff --cached --name-only | wc -l)" -eq 0 ]; then
-		echo "No files to commit."
-		return 0
-	fi
+    # Check if there are files to commit
+    if [ "$(git diff --cached --name-only | wc -l)" -eq 0 ]; then
+        echo "No files to commit."
+        return 0
+    fi
 
-	# Loop through each file that is staged for commit
-	for file in $(git diff --cached --name-only); do
-		_status=$(git diff --cached --name-status "$file")
+    # Loop through each file that is staged for commit
+    for file in $(git diff --cached --name-only); do
+        _status=$(git diff --cached --name-status "$file")
 
-		#gum style --bold  "$(echo "File to commit ${file} with status: $_status")" --background="#2596be"
-		gum style --bold "$(echo "File to commit with status: ${_status}")" --background="#2596be"
-		if ! gum confirm; then
-			echo 'Aborting'
-			continue
-		else
-			gum style --bold "Add the commit message" --background="#be2596"
-			sleep 2
-		fi
+        #gum style --bold  "$(echo "File to commit ${file} with status: $_status")" --background="#2596be"
+        gum style --bold "$(echo "File to commit with status: ${_status}")" --background="#2596be"
+        if ! gum confirm; then
+            echo 'Aborting'
+            continue
+        else
+            gum style --bold "Add the commit message" --background="#be2596"
+            sleep 2
+        fi
 
-		# Create a temporary file for the commit message
-		TMPFILE=$(mktemp)
+        # Create a temporary file for the commit message
+        TMPFILE=$(mktemp)
 
-		# Open the TMPFILE in Vim and insert the file name at the top
-		${EDITOR:-nvim} +"normal iCommitting: $file" "$TMPFILE"
-		commit_msg=$(cat "${TMPFILE}")
-		#echo "$commit_msg"
-		sleep 2
+        # Open the TMPFILE in Vim and insert the file name at the top
+        ${EDITOR:-nvim} +"normal iCommitting: $file" "$TMPFILE"
+        commit_msg=$(cat "${TMPFILE}")
+        #echo "$commit_msg"
+        sleep 2
 
-		# Commit the file with the user's message
-		git commit -m "$commit_msg" "$file"
-		rm -f "$TMPFILE" >/dev/null
+        # Commit the file with the user's message
+        git commit -m "$commit_msg" "$file"
+        rm -f "$TMPFILE" >/dev/null
 
-	done
+    done
 
-	if [ "$(git diff --cached --name-only | wc -l)" -eq 0 ]; then
-		gum style --bold "All files commited" --background="#be2596"
-	fi
+    if [ "$(git diff --cached --name-only | wc -l)" -eq 0 ]; then
+        gum style --bold "All files commited" --background="#be2596"
+    fi
 }
 
 if [ -n "$BASH_VERSION" ]; then
-	export -f commit_each
+    export -f commit_each
 fi
 
 function _mkdir() {
-	# Create a directory
+    # Create a directory
 
-	USAGE="Usage: makedir 'dirname' [octal:permission]"
-	local d="$1"
-	local p=${2:-0755}
+    USAGE="Usage: makedir 'dirname' [octal:permission]"
+    local d="$1"
+    local p=${2:-0755}
 
-	[ $# -eq 0 ] && {
-		echo "$USAGE"
-		exit 1
-	}
+    [ $# -eq 0 ] && {
+        echo "$USAGE"
+        exit 1
+    }
 
-	[ ! -d "$d" ] && mkdir -v -m "$p" -p "$d"
-	cd "$d" || exit
+    [ ! -d "$d" ] && mkdir -v -m "$p" -p "$d"
+    cd "$d" || exit
 
 }
 
 if [ -n "$BASH_VERSION" ]; then
-	export -f _mkdir
+    export -f _mkdir
 fi
 
 function sr() {
-	# Show resources at ~/bin/python_nuggets_univ/resources
-	pushd "$(pwd)" || exit
-	cd ~/bin/python_nuggets_univ/resources || exit
+    # Show resources at ~/bin/python_nuggets_univ/resources
+    pushd "$(pwd)" || exit
+    cd ~/bin/python_nuggets_univ/resources || exit
 
-	local file
-	local oldIFS="$IFS"
-	IFS=$'\n'
+    local file
+    local oldIFS="$IFS"
+    IFS=$'\n'
 
-	# Use 'rg' to list files, filtering for PDF and image files, then 'fzf' for interactive selection.
-	file=$(rg --files . | grep -Ei '\.(pdf|jpg|jpeg|png|gif)$' | fzf --header="Type to search for PDFs/Images" --ansi --preview '
+    # Use 'rg' to list files, filtering for PDF and image files, then 'fzf' for interactive selection.
+    file=$(rg --files . | grep -Ei '\.(pdf|jpg|jpeg|png|gif)$' | fzf --header="Type to search for PDFs/Images" --ansi --preview '
     case {} in
         *.pdf|*.jpg|*.jpeg|*.png|*.gif) echo "Preview not available for graphical files." ;;
         *) echo "File type not supported for preview." ;;
     esac
     ' --preview-window=right:70%:wrap --reverse)
 
-	IFS="$oldIFS"
+    IFS="$oldIFS"
 
-	# Determine how to open the file based on its extension.
-	if [[ -n "$file" ]]; then
-		case "$file" in
+    # Determine how to open the file based on its extension.
+    if [[ -n "$file" ]]; then
+        case "$file" in
 
-		*.pdf)
-			zathura "$file" >/dev/null 2>&1 &
-			xclip -sel clip "$file"
-			;;
-		*.jpg | *.jpeg | *.png | *.gif)
-			sxiv "$file" >/dev/null 2>&1 &
-			xclip -sel clip "$file"
-			;;
-		*)
-			echo "File type not supported for viewing."
-			;;
-		esac
-	fi
+        *.pdf)
+            zathura "$file" >/dev/null 2>&1 &
+            xclip -sel clip "$file"
+            ;;
+        *.jpg | *.jpeg | *.png | *.gif)
+            sxiv "$file" >/dev/null 2>&1 &
+            xclip -sel clip "$file"
+            ;;
+        *)
+            echo "File type not supported for viewing."
+            ;;
+        esac
+    fi
 
-	popd >/dev/null || exit
+    popd >/dev/null || exit
 }
 
 if [ -n "$BASH_VERSION" ]; then
-	export -f sr
+    export -f sr
 fi
 
 function ov() {
 
-	# Check if vifm is already running
-	vifm=$(pgrep vifm)
-	if [ -n "$vifm" ]; then
-		echo "vifm is already running"
-	else
-		bash -c 'vifm'
-	fi
+    # Check if vifm is already running
+    vifm=$(pgrep vifm)
+    if [ -n "$vifm" ]; then
+        echo "vifm is already running"
+    else
+        bash -c 'vifm'
+    fi
 }
 
 if [ -n "$BASH_VERSION" ]; then
-	export -f ov
+    export -f ov
 fi
 
 # Function to restart lf and lfub
 function restart_lf() {
-	# if pgrep lf >/dev/null; then
-	#     pkill -HUP lf
-	# fi
+    # if pgrep lf >/dev/null; then
+    #     pkill -HUP lf
+    # fi
 
-	if pgrep lfub >/dev/null; then
-		pkill -HUP lfub
-	fi
+    if pgrep lfub >/dev/null; then
+        pkill -HUP lfub
+    fi
 
-	# Start a new instance of lfub
-	lfub
+    # Start a new instance of lfub
+    lfub
 }
 
 # Export the function if running in Bash
 if [ -n "$BASH_VERSION" ]; then
-	export -f restart_lf
+    export -f restart_lf
 fi
