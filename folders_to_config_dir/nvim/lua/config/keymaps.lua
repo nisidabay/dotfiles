@@ -244,10 +244,6 @@ keymap.set("v", "gx", ":!xdg-open <cfile><CR>", { silent = true, desc = "Open Li
 --Tagbar
 keymap.set("v", "F8", ":TagbarToogle<CR>", { silent = true, desc = "Open TOC" })
 
--- Configuration. Edit nvim keymaps and options
-keymap.set("n", "<leader>ek", ":edit ~/.config/nvim/lua/nisidabay/core/keymaps.lua<CR>", { desc = "Edit keymaps" })
-keymap.set("n", "<leader>eo", ":edit ~/.config/nvim/lua/nisidabay/core/options.lua<CR>", { desc = "Edit options" })
-
 -- Telescope
 keymap.set("n", "<leader>t", ":Telescope<CR>", { silent = true, desc = "Open Telescope" })
 
