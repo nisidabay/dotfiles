@@ -42,8 +42,9 @@ alias ~="cd ~"
 alias bin="echo --- bin;cd ~/bin"
 
 # lf filemanager
-alias lf='restart_lf'
-
+if [[ $(uname -s) == "Linux" ]]; then
+    alias lf='restart_lf'
+fi
 # Virtual Environments
 alias ve="echo --- virtual env; source ~/bin/venv_toogle.sh"
 
