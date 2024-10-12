@@ -12,8 +12,8 @@ Account gmail
 
 MaildirStore gmail-local
 SubFolders Verbatim
-Path Mail/   # Adjust the path as needed
-Inbox Mail/gmail/INBOX
+Path /mnt/Mail/   # Adjust the path as needed
+Inbox mnt/Mail/gmail/INBOX
 
 Channel gmail
 Master :gmail-remote:
