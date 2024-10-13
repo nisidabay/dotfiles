@@ -43,8 +43,9 @@ alias bin="echo --- bin;cd ~/bin"
 
 # lf filemanager
 if [[ $(uname -s) == "Linux" ]]; then
-    alias lf='restart_lf'
+alias lf='restart_lf'
 fi
+
 # Virtual Environments
 alias ve="echo --- virtual env; source ~/bin/venv_toogle.sh"
 
@@ -95,8 +96,9 @@ alias k="echo --- kill;kill -9"
 alias sh='echo ---take snapshot;grim -g "$(slurp)" - | wl-copy'
 
 # Emacs
-alias e="echo --- emacs client;emacsclient -c -a 'emacs' &"
-alias ed="echo --- emacs daemon;/usr/bin/emacs --daemon &"
+alias e="echo  --doom emacs;doom run"
+# alias e="echo --- emacs client;emacsclient -c -a 'emacs' &"
+# alias ed="echo --- emacs daemon;/usr/bin/emacs --daemon &"
 
 # IP address
 alias myip="ip addr | awk '/192/ {print "$1"}' | cut -d' ' -f6 | cut -d'/' -f1"

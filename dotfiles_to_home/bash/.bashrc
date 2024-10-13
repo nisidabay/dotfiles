@@ -198,3 +198,9 @@ function yy() {
     fi
     rm -f -- "$tmp"
 }
+
+# Open cursor from cmd line
+cursor (){
+        /home/nisidabay/Applications/cursor-0.41.3x86_64_b16e5157723d668b2b15d3033ea4401a.AppImage "$@"
+}
+export DOOMDIR="$HOME/.config/doom"
